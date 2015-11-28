@@ -23,7 +23,7 @@
   
 
   // APPROACH 3
-  
+  /*
   $tags = `git tag`;
   
   $parts = preg_split('/\s+/', $tags); 
@@ -32,6 +32,18 @@
   $latestfirst = array_reverse($parts);
   
   $tagname = $latestfirst['1']; 
+  //grab the first part 
+  */
+  
+  
+  // APPROACH 4 - for local VMs too!
+  
+  //list the tags found in .git
+  $tags = scandir('../.git/refs/tags', 1);
+  
+  $latestfirst = array_reverse($tags);
+  
+  $tagname = $tags['0']; 
   //grab the first part 
 
 ?>

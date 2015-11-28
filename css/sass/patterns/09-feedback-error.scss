@@ -1,0 +1,7 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '_4-colours.scss';
+
+.feedback--error {
+	background-color: $error;
+	border-bottom: 0.2em solid darken($error,5%);
+}

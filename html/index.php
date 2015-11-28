@@ -139,12 +139,12 @@
         <h1 class="guidance" id="intro">Introduction</h1>
         <br/>
         <p class="guidance">
-          For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
+          For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
         </p>
         <br/>
         <h2 class="guidance">Browser Tests</h2>
         <p class="guidance">
-          This guide has been tested for compliance and functionality to the coverage extent described in the STP tender document - the browser list is also summarised in the <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">readme on Github</a>. There will doubtless be other browser bugs uncovered, which should be filed as <a href="https://github.com/kinworks/stp-style-guide/issues" target="_blank">issues on Github</a>.
+          This guide has been tested for compliance and functionality to the coverage extent described in the STP tender document - the browser list is also summarised in the <a href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">readme on Github</a>. There will doubtless be other browser bugs uncovered, which should be filed as <a href="https://github.com/kinworks/sfe-style-guide/issues" target="_blank">issues on Github</a>.
         </p>
         
         <div class="pattern elements-heading">
@@ -171,7 +171,7 @@
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   CSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/css/sass/_1-normalize.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/css/sass/_1-normalize.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -206,7 +206,7 @@
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   SCSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/css/sass/_3-defaults.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/css/sass/_3-defaults.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -238,7 +238,7 @@
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   SCSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/css/sass/_2-mixins.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/css/sass/_2-mixins.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -326,7 +326,7 @@
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   SCSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/css/sass/_4-colours.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/css/sass/_4-colours.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -364,7 +364,7 @@
                 To use the Typekit webfonts and fallbacks selected for STP's digital branding, you'll need: 
               </p>
               <ul class="guidance">
-                <li>The webfont loader script (<a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">here,</a> minified)</li>
+                <li>The webfont loader script (<a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">here,</a> minified)</li>
                 <li>The &lt;script&gt; found in 'Markup' (right) in your &lt;head&gt;, and; </li>
                 <li>the fallback CSS (right)</li>
               </ul>
@@ -385,7 +385,7 @@
                   <li role="tab" id="tab-wfl-css" aria-controls="tab-wfl-css-panel" aria-selected="false" data-tabgroup="wfl">
                     CSS
                   </li>
-                  <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">
+                  <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">
                     <li role="tab" class="linkout">
                       Webfontloader.min.js &raquo;
                     </li>

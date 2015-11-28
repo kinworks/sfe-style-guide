@@ -1,0 +1,14 @@
+---
+- name: Create Nginx config in sites-available and link to sites-enabled
+  sudo: yes
+  # Get our Nginx conf found in roles/nginx-config/templates
+  template: src={{ nginx_config_file }}.j2 dest=/etc/nginx/sites-available/default
+  
+- name: Symlink newly created Nginx config file into sites-enabled
+  sudo: yes  
+  file: path=/etc/nginx/sites-enabled/default 
+        src=/etc/nginx/sites-available/default 
+        state=link 
+        force=yes
+  notify:
+    - Restart Nginx

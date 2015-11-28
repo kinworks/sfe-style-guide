@@ -1,0 +1,24 @@
+---
+#   ¯\_(ツ)_/¯
+# This role only works on remotes, because vagrant doesn't like ansible 'pause'. 
+# This is fine, because vagrant boxes mount our working directory locally anyway at /vagrant/html.
+# So we don't need the local vagrant box to connect to the repo by SSH because we do that from our host.
+# Read more about the issue at https://github.com/ansible/ansible-modules-core/issues/656
+
+- name: check if an ssh key exists
+  stat: path=~/.ssh/id_rsa
+  register: ssh_keyfile
+
+- name: set up an ssh key for access (e.g. for remote git usage)
+  shell: "ssh-keygen -t rsa -f ~/.ssh/id_rsa -N '' "
+  when: ssh_keyfile.stat.exists == False
+  
+- name: get the public key
+  command: "cat ~/.ssh/id_rsa.pub"
+  register: key
+  
+  # Spit out the public key when provisioning
+- debug: var="{{ key.stdout }}"
+  
+  # This will die here if you run this role with vagrant:
+- pause: prompt="Copy the SSH key output above to the access key settings on Github / Bitbucket and then hit return to continue..."

@@ -1,0 +1,4 @@
+---
+- name: Remove root authorized_keys file
+  sudo: yes
+  shell: rm -rf /root/.ssh/authorized_keys

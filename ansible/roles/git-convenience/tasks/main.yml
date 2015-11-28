@@ -1,0 +1,10 @@
+# Check if git-convenience tools are installed:
+
+- stat: path=~/.git-shortcuts.sh
+  register: git_convenience_installed
+  
+  # If not, install git-convenience tools - see https://github.com/kinworks/git-convenience-no-rebase-with-tags
+  
+- name: Install Git-convenience tools
+  shell: "wget https://raw.githubusercontent.com/kinworks/git-convenience-no-rebase-with-tags/master/setup.sh && /bin/bash setup.sh && rm setup.sh"  
+  when: git_convenience_installed.stat.exists == False

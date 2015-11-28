@@ -1,0 +1,72 @@
+---
+- name: Create a tmp folder in our repo
+  local_action: file path=../tmp state=directory 
+  
+  
+- name: Add a .gitignore file to our new tmp folder in repo
+  local_action: file path=../tmp/.gitignore state=touch
+    
+    
+- name: Add * to local tmp/.gitignore if not already there
+  local_action: lineinfile dest=../tmp/.gitignore line="*"
+
+
+- name: Check if the user exists
+  stat: path=/home/kindev/
+  register: user_existence
+  
+  
+- name: If the user does not exist then get rid of the existing passwordfile
+  local_action: shell rm -rf ../tmp/passwordfile-kindev
+  when: user_existence.stat.exists == False  
+  
+  
+- name: Create user account with 30-char password and save password to repo/tmp on control machine 
+  sudo: yes
+  user: name=kindev 
+        state=present 
+        shell=/bin/bash 
+        password="{{ lookup('password', '../../../../tmp/passwordfile-kindev chars=ascii_letters,digits,hexdigits length=30') }}"
+  when: user_existence.stat.exists == False
+  
+  
+- name: Grant user passwordless sudo
+  sudo: yes
+  lineinfile: dest=/etc/sudoers line="kindev ALL=(ALL) NOPASSWD:ALL"
+  
+  
+- name: Check for existing SSH key for {{ repo_name }}-{{ server_name }} on our local machine
+  local_action: stat path="~/.ssh/id_{{ repo_name }}-{{ friendly_name }}"
+  register: key_existence
+  
+  
+- name: Create new passphrase-less SSH key on local machine if not already existing
+  local_action: shell ssh-keygen -t rsa -N '' -f ~/.ssh/id_"{{ repo_name }}"-"{{ friendly_name }}"
+  when: key_existence.stat.exists == False
+  register: notify_key
+  
+  
+- name: Put new SSH key from local machine into authorized_keys on remote
+  sudo: yes
+  authorized_key: user=kindev 
+                  key="{{ lookup('file', '~/.ssh/id_' + repo_name + '-' +  friendly_name + '.pub') }}"
+                  state=present
+
+
+- name: Notify user if there is a new password...
+  shell: echo "###    Kindev user password for {{ server_name }} saved to your local repo under tmp/passwordfile-kindev - save the password which is {{ lookup('file', '../../../../tmp/passwordfile-kindev') }} - in 1Password or similar and delete the file. Files in tmp/ are untracked by Git."
+  register: notify_details
+  when: user_existence.stat.exists == False
+  
+  
+- name: Notify user if there is a new key...
+  shell: echo "###    A new key has been created for connecting to this remote server on your local machine at ~/.ssh/id_{{ repo_name }}-{{ friendly_name }}, and this key has been copied to authorized_keys on the remote server so you should be able to connect to it now."
+  register: notify_key_details
+  when: notify_key != ''
+  
+  
+# Spit out a message about the key
+- debug: msg="{{ notify_key_details.stdout }}"  
+  
+# Spit out the password for us to save
+- debug: msg="{{ notify_details }}"

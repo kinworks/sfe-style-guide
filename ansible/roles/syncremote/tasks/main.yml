@@ -1,0 +1,9 @@
+---
+- name: rsync resource dir from remote to local
+  synchronize: mode=pull src={{project_webroot}}/sites/default/files/ dest=../html/sites/default/files/ rsync_opts=--ignore-existing
+  
+- name: update local repo
+  pause: prompt="Files may have been synced from remote, check you local repo. gaa, gc, and git push"
+  
+- name: tag new release
+  pause: prompt="tag new release in the repo. check existing tags via git tag, then add via git tag -a [tag verison] -m and then git tag push origin --tags"

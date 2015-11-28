@@ -1,0 +1,37 @@
+---
+# This role should only be used on remotes.
+# This is because vagrant boxes mount our project's working directory locally anyway at /vagrant/html.
+# So we don't need the local vagrant box to connect to the repo by SSH because we do that from our host.
+
+- name: Install Git for version control
+  sudo: yes
+  apt: pkg=git state=present
+  
+  
+- name: Configure git attributes 
+  shell: git config --global user.email "{{ repo_name }}@{{ friendly_name }}" &&
+         git config --global user.name "{{ repo_name }}@{{ friendly_name }}"
+  
+  # We're gonna get an interactive prompt about unknown hosts when we clone from BB / Github,
+  # unless first we add their keys to known_hosts:
+ 
+- name: Check if known_hosts exists, and create it if not
+  file: path=~/.ssh/known_hosts state=touch
+  
+- name: ssh-keyscan Bitbucket and add them to known_hosts
+  shell: "ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts 2>/dev/null"
+
+- name: Check if /var/www exists, and create it if not
+  sudo: yes
+  file: path=/var/www state=directory owner=kindev group=kindev
+  
+  # Check if the project has already been cloned to this machine:
+  
+- stat: path=/var/www/{{ repo_name }}
+  register: repo_path
+  
+  # Now if it doesn't exist, get on with cloning the project repo to /var/www (again, this only runs on remotes, so that location is hardcoded)
+
+- name: Clone the project repo
+  shell: "cd /var/www && yes '' | git clone -q {{ repo_clone_address }}"
+  when: repo_path.stat.exists == False

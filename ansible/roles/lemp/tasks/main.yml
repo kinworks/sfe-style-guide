@@ -1,0 +1,27 @@
+---
+- name: install php5 and related libs
+  sudo: yes
+  apt: name={{item}} state=present
+  with_items:
+    - php5-fpm
+    - php5-mysql
+    - php5-gd
+    - php5-curl
+
+
+- name: secure php config
+  sudo: yes
+  lineinfile: dest=/etc/php5/fpm/php.ini regexp="{{item.regexp}}" line="{{item.line}}"
+  with_items:
+    - { regexp: '^;cgi.fix_pathinfo', line: 'cgi.fix_pathinfo=0'}
+    - { regexp: '^upload_max_filesize', line: 'upload_max_filesize = {{lemp_upload_max_filesize}}'}
+    - { regexp: '^post_max_size', line: 'post_max_size = {{lemp_post_max_size}}'}
+    
+
+- name: set the hostname to repo_name-friendly_name
+  sudo: yes
+  template: src=hostname.j2 dest=/etc/hostname
+
+- name: Configure the hostname in /etc/hosts to match the hostname so sendmail works ok
+  sudo: yes
+  template: src=hosts.j2 dest=/etc/hosts mode=0644

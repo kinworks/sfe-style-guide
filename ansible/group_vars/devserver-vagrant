@@ -1,0 +1,10 @@
+---
+server_name: localhost:8080
+friendly_name: vagrantbox
+project_webroot: /vagrant/html
+backup_dir: /vagrant/backups
+nginx_config_file: local-default
+connection: local
+ansible_ssh_user: vagrant
+ansible_ssh_host: 127.0.0.1
+ansible_ssh_port: 2222

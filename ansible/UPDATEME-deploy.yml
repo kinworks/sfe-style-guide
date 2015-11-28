@@ -1,0 +1,21 @@
+---
+- name: deploy update
+  hosts: webservers
+  vars:
+    
+    - repo_name: scotlandonscreen
+    
+    - repo_address: git@bitbucket.org:kinworks/scotlandonscreen.git
+    
+    - server_webserver_name: scotlandonscreen.org.uk
+    
+    # The URL for the dev remote
+    - server_devserver_remote_name: dev.scotlandonscreen.org.uk
+    
+  vars_prompt:
+    - name: "release_version"
+      prompt: "what tag version?"
+      private: no
+      
+  roles:
+    - git-release

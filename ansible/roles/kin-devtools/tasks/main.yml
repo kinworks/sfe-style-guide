@@ -1,0 +1,16 @@
+---
+- name: Install Node.js
+  sudo: yes
+  apt: pkg=nodejs-legacy state=present
+
+- name: Install Node Package Manager (NPM)
+  sudo: yes
+  apt: pkg=npm state=present
+  
+- name: Install Build Dependencies
+  shell: "cd /vagrant && npm install"
+  
+- name: Configure Grunt path
+  shell: "touch ~/.bash_profile && 
+          echo export PATH=/vagrant/node_modules/.bin:$PATH >> ~/.bash_profile && 
+          . ~/.bash_profile"

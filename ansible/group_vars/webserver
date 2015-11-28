@@ -1,0 +1,10 @@
+---
+server_name: "{{ server_webserver_name }}"
+friendly_name: webserver
+project_webroot: "/var/www/{{ repo_name }}/html"
+backup_dir: "/var/www/{{ repo_name }}/backups"
+nginx_config_file: remote-default
+ansible_ssh_user: kindev
+ansible_ssh_port: 22
+ansible_ssh_private_key_file: ~/.ssh/id_{{ repo_name }}-{{ friendly_name }}
+ANSIBLE_HOST_KEY_CHECKING: False

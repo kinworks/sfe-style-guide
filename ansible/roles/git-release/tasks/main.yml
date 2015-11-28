@@ -1,0 +1,9 @@
+---
+- name: reset remote repo
+  shell: git reset --hard chdir=/var/www/{{ repo_name }}
+
+- name: deploy release
+  git: repo={{repo_address}} dest=/var/www/{{ repo_name }} version={{release_version}} clone=no
+  
+- name: database reminder
+  pause: prompt="Manually do any admin changes in the remote. Once done do a republish all."

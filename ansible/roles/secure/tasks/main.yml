@@ -1,0 +1,76 @@
+---
+- name: Update apt package index
+  sudo: yes
+  apt: update_cache=yes cache_valid_time=3600
+  
+- name: Update all installed packages
+  sudo: yes
+  apt: upgrade=safe
+  
+- name: Set Timezone
+  sudo: yes
+  shell: "echo 'Europe/London' > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata"
+  
+- name: Install NTP
+  sudo: yes
+  apt: name=ntp state=present 
+  
+- name: Firewall Allow SSH
+  sudo: yes
+  ufw: rule=limit port=ssh proto=tcp
+  
+- name: Firewall Allow TCP on 80
+  sudo: yes
+  ufw: rule=allow port=80 proto=tcp
+  
+- name: Firewall Allow SSL on 443
+  sudo: yes
+  ufw: rule=allow port=443 proto=tcp
+  
+- name: Firewall Allow SMTP on 25
+  sudo: yes
+  ufw: rule=allow port=25 proto=tcp
+  
+- name: Enable the Firewall
+  sudo: yes
+  ufw: state=enabled
+  
+- name: Ensure firewall starts on reboot
+  sudo: yes
+  service: name=ufw state=started enabled=yes
+      
+- name: Install fail2ban
+  sudo: yes
+  apt: name=fail2ban state=present
+  
+- name: Ensure fail2ban starts on reboot
+  sudo: yes
+  service: name=fail2ban state=started enabled=yes
+  
+- name: Install package for automatic upgrades
+  sudo: yes
+  apt: name=unattended-upgrades state=present
+  
+- name: Configure APT update intervals
+  sudo: yes
+  copy: src=../files/apt_periodic dest=/etc/apt/apt.conf.d/10periodic
+      
+- name: Create swapfile
+  sudo: yes
+  shell: "fallocate -l 4G /swapfile"
+  
+- name: Set correct permissions for swapfile
+  sudo: yes
+  shell: "chmod 600 /swapfile"
+  
+- name: Set correct permissions for swapfile
+  sudo: yes
+  shell: "chmod 600 /swapfile"
+  
+- name: Format the file for swap
+  sudo: yes
+  shell: "mkswap /swapfile"
+  
+- name: Tell system that it can use the file for swap
+  sudo: yes
+  shell: "swapon /swapfile"

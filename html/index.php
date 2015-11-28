@@ -144,7 +144,7 @@
         <br/>
         <h2 class="guidance">Browser Tests</h2>
         <p class="guidance">
-          This guide has been tested for compliance and functionality to the coverage extent described in the STP tender document - the browser list is also summarised in the <a href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">readme on Github</a>. There will doubtless be other browser bugs uncovered, which should be filed as <a href="https://github.com/kinworks/sfe-style-guide/issues" target="_blank">issues on Github</a>.
+          This guide has been tested for compliance and functionality to the coverage extent appropriate having monitored 6 months of traffic to each of the SFE web properties - the browser list is also summarised in the <a href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">readme on Github</a>. There will doubtless be other browser bugs uncovered, which should be filed as <a href="https://github.com/kinworks/sfe-style-guide/issues" target="_blank">issues on Github</a>.
         </p>
         
         <div class="pattern elements-heading">
@@ -361,7 +361,7 @@
                 To mitigate this, we use the <a href="https://github.com/typekit/webfontloader" target="_blank">Webfont Loader (GitHub)</a> co-developed by Google and Typekit which handles the loading of the webfont(s) in and updates the &lt;html&gt; tag with classes we can use to set typeface choices in CSS while the document is loading or if the fonts have failed to load.
               </p> 
               <p class="guidance">
-                To use the Typekit webfonts and fallbacks selected for STP's digital branding, you'll need: 
+                To use the Typekit webfonts and fallbacks selected for SFE's digital branding, you'll need: 
               </p>
               <ul class="guidance">
                 <li>The webfont loader script (<a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">here,</a> minified)</li>
@@ -370,7 +370,7 @@
               </ul>
               
               <p class="guidance">
-                The current kit ID, from a Typekit account owned by STP, is <b>ovp2cfb</b> and weighs around 98kb.
+                The current kit ID, from a Typekit account owned by SFE, is <b>ovp2cfb</b> and weighs around 98kb.
               </p>
               
               <p class="guidance">
@@ -519,10 +519,7 @@
         
             <h2 class="guidance">Footer Block</h2>
             <p class="guidance">
-              This is the footer block style to be on all STP web properties.
-            </p>
-            <p class="guidance">
-              When using this pattern, be sure to verify the hardcoded links to the top-level sections of scotlandtowns.org have not changed on the main site. <b>At time of writing, these URLs do not exist but will at STP launch.</b> If using this pattern on an external site, or subdomain of scotlandstowns.org, the links could open in a new window/tab at your discretion.
+              This is the footer block style to be on all SFE web properties (with the exception of the main SFE website).
             </p>
   
             <p class="guidance">

@@ -26,15 +26,15 @@ module.exports = function(grunt) {
         dist: {
             files: [{
                 expand: true,
-                cwd: 'html/sites/all/themes/sos/css/sass',
+                cwd: 'html/css/sass',
                 src: ['**/*.scss'],
-                dest: 'html/sites/all/themes/sos/css/output',
+                dest: 'html/css/output',
                 ext: '.css'
             }]
         }
     },
     
-    grunticon: {
+    /* grunticon: {
 	  icons: {
 	    files: [{
               // required config
@@ -115,12 +115,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    */
 
     watch: {
       sass: {
-        files: 'html/sites/all/themes/sos/css/sass/*.scss',
+        files: 'html/css/sass/*.scss',
         tasks: ['sass'],
       },
+      /*
       svgmin: {
         files: 'html/sites/all/themes/sos/icons/raw/*',
         tasks: ['svgmin'],
@@ -137,12 +139,13 @@ module.exports = function(grunt) {
         files: 'html/sites/all/themes/sos/js/concatenated.js',
         tasks: ['uglify'],
       }
+      */
     },
 
   });
 
 
   // Default task.
-  grunt.registerTask('default', ['svgmin', 'grunticon','concat', 'uglify', 'sass' ]);
+  grunt.registerTask('default', [/* 'svgmin', 'grunticon','concat', 'uglify', */ 'sass' ]);
 
 };

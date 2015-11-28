@@ -1,7 +1,10 @@
 {
-"version": 3,
-"mappings": "AAAA,gBAAiB;EAChB,aAAa,EAAE,YAAY;EAC3B,MAAM,EAAE,IAAI",
-"sources": ["../../sass/patterns/10-abbreviations.scss"],
-"names": [],
-"file": "10-abbreviations.css"
+	"version": 3,
+	"file": "10-abbreviations.css",
+	"sources": [
+		"../../../../10-abbreviations.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AAAA,AAAY;EACX,AAAe;EACf,AAAQ",
+	"names": []
 }

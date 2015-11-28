@@ -1,7 +1,11 @@
 {
-"version": 3,
-"mappings": "AAGA,SAAU;EACT,gBAAgB,ECsBN,OAAO;EDrBjB,aAAa,EAAE,mBAAgC;EAC/C,WAAW,EAAE,GAAG;EAChB,OAAO,EAAE,WAAW;EACpB,MAAM,EAAE,WAAW",
-"sources": ["../../sass/patterns/08-feedback.scss","../../sass/_4-colours.scss"],
-"names": [],
-"file": "08-feedback.css"
+	"version": 3,
+	"file": "08-feedback.css",
+	"sources": [
+		"../../../../08-feedback.scss",
+		"../../../../../_4-colours.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AAGA;EACC,ACsBU;EDrBV,AAAe;EACf,AAAa;EACb,AAAS;EACT,AAAQ",
+	"names": []
 }

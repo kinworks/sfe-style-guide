@@ -1,7 +1,10 @@
 {
-"version": 3,
-"mappings": "AAAA,EAAG;EACD,UAAU,EAAE,aAAa;EACzB,YAAY,EAAE,CAAC;EACf,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;;AAGZ,EAAG;EACD,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;;;AAGrB;KACM;EACJ,MAAM,EAAE,aAAa;EACrB,SAAS,EAAE,GAAG;;;AAGhB,EAAG;EACD,aAAa,EAAE,GAAG;;;AAGpB,YAAa;EACX,OAAO,EAAE,sBAAuB;EAChC,iBAAiB,EAAE,IAAI",
-"sources": ["../../sass/patterns/04-list-unordered.scss"],
-"names": [],
-"file": "04-list-unordered.css"
+	"version": 3,
+	"file": "04-list-unordered.css",
+	"sources": [
+		"../../../../04-list-unordered.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AAAA;EACE,AAAY;EACZ,AAAc;EACd,AAAQ;EACR,AAAS;;AAGX;EACE,AAAY;EACZ,AAAe;;AAGjB,AAAG,AAAI,AAAG;EAER,AAAQ;EACR,AAAW;;AAGb;EACE,AAAe;;AAGjB,AAAG,AAAE;EACH,AAA2B;EAC3B,AAAmB",
+	"names": []
 }

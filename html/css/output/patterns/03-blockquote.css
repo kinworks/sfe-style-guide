@@ -8,38 +8,30 @@
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.3em;
-  color: #00a2bb;
-}
+  color: #00A2BB; }
 
 blockquote.quote__blockquote {
-  margin: 0;
-}
+  margin: 0; }
 
 .quote__blockquote:before {
-  content: '“';
-}
+  content: '“'; }
 .quote__blockquote:after {
-  content: '”';
-}
+  content: '”'; }
 .quote__blockquote:before, .quote__blockquote:after {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #c3c3c3;
-}
+  color: #C3C3C3; }
 
 .quote em {
-  font-style: normal;
-}
+  font-style: normal; }
 
 .quote__caption {
   font-style: italic;
   font-size: 0.8em;
-  color: #1a1919;
-  margin-top: 0.8em;
-}
-.quote__caption:before {
-  content: "— ";
-}
+  color: #1A1919;
+  margin-top: 0.8em; }
+  .quote__caption:before {
+    content: "— "; }
 
 /*# sourceMappingURL=03-blockquote.css.map */

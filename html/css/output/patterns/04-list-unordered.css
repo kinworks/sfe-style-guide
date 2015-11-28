@@ -2,27 +2,21 @@ ul {
   list-style: circle inside;
   padding-left: 0;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 ol {
   list-style: none;
-  counter-reset: item;
-}
+  counter-reset: item; }
 
-ul ul,
-ul ol {
+ul ul, ul ol {
   margin: 1em 0 1em 2em;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 li {
-  margin-bottom: 1em;
-}
+  margin-bottom: 1em; }
 
 ol li:before {
-  content: counters(item,".") " ";
-  counter-increment: item;
-}
+  content: counters(item, ".") " ";
+  counter-increment: item; }
 
 /*# sourceMappingURL=04-list-unordered.css.map */

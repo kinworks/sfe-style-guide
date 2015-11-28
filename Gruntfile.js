@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         options: {
             sourceMap: true
         },
-        dist: {
+        compile: {
             files: [{
                 expand: true,
                 cwd: 'html/css/sass',

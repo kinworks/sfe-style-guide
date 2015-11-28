@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider "virtualbox" do |vb|
     # workaround to bug in mysql 5.6, see https://bugs.launchpad.net/ubuntu/+source/mysql-5.6/+bug/1312936
     vb.memory = 1024
-    vb.name = "sos_server"
+    vb.name = "sfe-styleguide"
   end
   
   config.vm.synced_folder "html/", "/vagrant/html", :owner=> 'vagrant', :group=>'www-data', :mount_options => ['dmode=775', 'fmode=775']

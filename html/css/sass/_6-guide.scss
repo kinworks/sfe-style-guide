@@ -22,11 +22,16 @@
 }
 
 .nav-wrapper__list .test-mode {
-  background-color: #952121
+  background-color: #952121;
 }
 
 .nav-wrapper__list li:nth-child(2n) {
   background-color: #121212;
+}
+
+.nav-wrapper__list li.nav-wrapper__list__heading {
+  color: #ce4d4d;
+  background-color: #fff;
 }
 
 .nav-wrapper__list a {
@@ -162,7 +167,12 @@ h2.guidance {
 }
 
 h2.guidance {
-  margin-bottom: 1.4em;
+  margin-bottom: 0.4em;
+}
+
+.pattern__back-to-top {
+  display: inline-block;
+  margin-bottom: 1em;
 }
 
 p.guidance {

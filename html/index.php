@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STP Style Guide</title>
+    <title>SFE Style Guide</title>
     <script>
       window.STYLE_GUIDE = {
         ctm: false
@@ -75,7 +75,29 @@
         <li class="test-mode">
           <a href="/?mode=test">Hide Nav (Test mode)</a>
         </li>
-        
+        <li class="nav-wrapper__list__heading">Development Guide:</li>
+        <li>
+          <a href="/#intro">Intro, Browser tests</a>
+        </li>
+        <li>
+          <a href="/#reset">Global CSS Reset</a>
+        </li>
+        <li>
+          <a href="/#defaults">CSS 'Defaults'</a>
+        </li>
+        <li>
+          <a href="/#mixins">SASS Mixins</a>
+        </li>
+        <li>
+          <a href="/#colour">Colour Palette</a>
+        </li>
+        <li>
+          <a href="/#typography">Typography</a>
+        </li>
+        <li>
+          <a href="/#layout">Layout</a>
+        </li>
+        <li class="nav-wrapper__list__heading">Patterns:</li>
         <!-- Above are manual sections, and after here:
           Iterates through every partial html file and lists it, also displaying a code panel for the styles and markup -->
         <?php
@@ -114,7 +136,7 @@
         <?php if($_GET['mode'] == 'test'): ?>
              <a href="/">Show Nav (Exit Test mode)</a>  
             <?php endif; ?>
-        <h1 class="guidance">Introduction</h1>
+        <h1 class="guidance" id="intro">Introduction</h1>
         <br/>
         <p class="guidance">
           For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
@@ -132,10 +154,10 @@
         
       <?php // CSS reset pattern box ======================================================?>
         
-        <div class="pattern">
+        <div class="pattern" id="reset">
             <div class="display">
               <h2 class="guidance">Global CSS reset</h2>
-        
+              <a class="pattern__back-to-top" href="/">Back to top &#8673;</a>
               <p class="guidance">
                 The baseline for this style guide consists of a CSS reset and a small set of common 'defaults'. These should be used when implementing code from this style guide, or the appropriate steps taken to make sure your replicated component behaves in the same way if you choose not to use them.
               </p>
@@ -167,10 +189,10 @@
     
     <?php // CSS defaults pattern box ====================================================== ?>
         
-        <div class="pattern">
+        <div class="pattern" id="defaults">
             <div class="display">
               <h2 class="guidance">Our 'defaults'</h2>
-        
+              <a class="pattern__back-to-top" href="/">Back to top &#8673;</a>
               <p class="guidance">
                 The baseline for this style guide consists of a CSS reset and a small set of common 'defaults'. These should be used when implementing code from this style guide, or the appropriate steps taken to make sure your replicated component behaves in the same way if you choose not to use them.
               </p>
@@ -202,10 +224,10 @@
     
     <?php // Mixins pattern box ====================================================== ?>
         
-        <div class="pattern">
+        <div class="pattern" id="mixins">
             <div class="display">
               <h2 class="guidance">Our SASS Mixins</h2>
-        
+              <a class="pattern__back-to-top" href="/">Back to top &#8673;</a>
               <p class="guidance">
                 A handful of these will be used for items in this style guide. Usage is entirely optional, but they're useful — and if you're copying code from the style guide containing a mixin, you'll need the appropriate section of this file too. 
               </p>
@@ -234,10 +256,10 @@
           
         <?php // COLOUR / COLOR / COLUUÜUR ==============================================?>
           
-          <div class="pattern">
+          <div class="pattern" id="colour">
             <h1 class="guidance">Colour</h1>
           </div>
-          
+          <br/><a class="pattern__back-to-top" href="/">Back to top &#8673;</a>
           <div class="pattern colour">
             <div class="display">
                <div class="swatches">
@@ -322,10 +344,11 @@
           
     <?php // TYPOGRAPHY ============================================?>
   
-          <div class="pattern">
+          <div class="pattern" id="typography">
             <h1 class="guidance">Typography</h1>
           </div>
-          
+          <br/>
+          <a class="pattern__back-to-top" href="/">Back to top &#8673;</a>
           <?php // Webfont loading ============ ?>
           
           <div class="pattern webfontloader">
@@ -415,7 +438,7 @@
           
     <?php // HEADER BLOCK PATTERN FOR EXTERNAL SITES ==================== ?>
       
-          <div class="pattern">
+          <div class="pattern" id="layout">
             <h1 class="guidance">Layout</h1>
           </div>
           <div class="pattern pattern-header">
@@ -872,7 +895,7 @@
         ?>
           <div class="pattern elements-heading" id="<?php echo str_replace('-',' ', substr(basename($file, ".html"), 3)) ;?>">
             <h2 class="guidance"><?php echo str_replace('-',' ', substr(basename($file, ".html"), 3)) ;?></h2>
-            <a class="pattern__back-to-top" href="">Back to top 
+            <a class="pattern__back-to-top" href="/">Back to top 
               &#8673;</a>
           </div>
         

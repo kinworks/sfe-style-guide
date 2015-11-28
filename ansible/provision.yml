@@ -34,3 +34,4 @@
      - { role: lemp, when: "server_name == 'localhost:8080'" }
        # only executed if a vagrant box e.g. dev gets devtools
      - { role: kin-devtools, when: "server_name == 'localhost:8080'" }
+     - { role: start-grunt-watch, when: "server_name == 'localhost:8080'" }

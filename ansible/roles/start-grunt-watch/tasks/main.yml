@@ -1,0 +1,5 @@
+---
+- name: Configure .bash_profile for vagrant user to CD and start grunt watch
+  sudo: yes
+  # Get our bash profile found in roles/start-grunt-watch/templates
+  template: src=bash_profile.j2 dest=/home/vagrant/.bash_profile

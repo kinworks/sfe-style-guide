@@ -15,6 +15,7 @@
   box-sizing: border-box;
 }
 
+
 // Tell webkit to jog on with its auto-margins
 
 * {
@@ -28,6 +29,7 @@
   -webkit-padding-end: 0;
 }
 
+
 // Remove the webkit glow on forms when focused on, but be sure 
 // to replace it with an outline of some kind - this should then 
 // be overridden when styling focus throughout the document 
@@ -38,15 +40,38 @@
 // tabbing through. By @decadecity - 
 // https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus 
 
-*:focus {
-  outline: 0.1em solid orange;
+a,
+input,
+button,
+textarea,
+select {
+  &:focus {
+    outline: 0.1em solid orange;
+  }
 }
-.js *:focus {
-  outline-width: 0px;
+.js {
+  a, 
+  input, 
+  button, 
+  textarea, 
+  select { 
+    &:focus {
+      outline-width: 0px;
+    }
+  }
 }
-.keyboard *:focus {
-  outline-width: 0.1em;
+.keyboard {
+  a,
+  input,
+  button,
+  textarea,
+  select {
+    &:focus {
+      outline-width: 0.1em;
+    }
+  }
 }
+
 
 // Let us decide how to style form input submit buttons 
 // on mobile browsers
@@ -59,6 +84,7 @@ input[type='submit']
    border-radius: 0;  
 }
 
+
 // Clearfix
 
 .clearfix:before, .clearfix:after {
@@ -68,3 +94,39 @@ input[type='submit']
 }
 
 .clearfix:after {clear: both;}
+
+
+// We'll set our own margins for p tags
+
+p {
+  margin: 0;
+}
+
+
+// Skip to content
+.skip-to-content {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #1b75bc;
+  color: #fff;
+  z-index: 10;
+  outline: none;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  text-decoration: underline;
+  &:focus,
+  &:active {
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}

@@ -338,13 +338,13 @@ td, th {
   -webkit-padding-start: 0;
   -webkit-padding-end: 0; }
 
-*:focus {
+a:focus, input:focus, button:focus, textarea:focus, select:focus {
   outline: 0.1em solid orange; }
 
-.js *:focus {
+.js a:focus, .js input:focus, .js button:focus, .js textarea:focus, .js select:focus {
   outline-width: 0px; }
 
-.keyboard *:focus {
+.keyboard a:focus, .keyboard input:focus, .keyboard button:focus, .keyboard textarea:focus, .keyboard select:focus {
   outline-width: 0.1em; }
 
 input[type='submit'] {
@@ -360,6 +360,33 @@ input[type='submit'] {
 
 .clearfix:after {
   clear: both; }
+
+p {
+  margin: 0; }
+
+.skip-to-content {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #1b75bc;
+  color: #fff;
+  z-index: 10;
+  outline: none;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  text-decoration: underline; }
+  .skip-to-content:focus, .skip-to-content:active {
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto; }
 
 body, .wf-loading body, .wf-inactive body {
   font-family: Frutiger, "Frutiger Linotype", Univers, 

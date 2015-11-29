@@ -96,14 +96,24 @@
 
 .guide .styleguide {
   background-color: #fff;
-  padding: 1.5em 1.4em;
+  padding: 0;
 }
 
 .guide .pattern {
   clear: both;
   overflow: hidden;
   border-bottom: 0.1em #959595 solid;
-  padding: 2em 0 0.5em 0;
+  padding: 2em 8% 1.5em 8%;
+  @media only all and (min-width: 41em) {
+    padding: 2em 5% 1.5em 5%;
+  }
+}
+
+.guide .pattern.outside {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .guide .pattern .display, 
@@ -173,6 +183,11 @@ h2.guidance {
 .pattern__back-to-top {
   display: inline-block;
   margin-bottom: 1em;
+  margin-left: 8%;
+}
+
+.pattern .pattern__back-to-top {
+  margin-left: 0;
 }
 
 p.guidance {

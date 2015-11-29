@@ -548,13 +548,22 @@ font-family: "franklin-gothic-urw";
 
 .guide .styleguide {
   background-color: #fff;
-  padding: 1.5em 1.4em; }
+  padding: 0; }
 
 .guide .pattern {
   clear: both;
   overflow: hidden;
   border-bottom: 0.1em #959595 solid;
-  padding: 2em 0 0.5em 0; }
+  padding: 2em 8% 1.5em 8%; }
+  @media only all and (min-width: 41em) {
+    .guide .pattern {
+      padding: 2em 5% 1.5em 5%; } }
+
+.guide .pattern.outside {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%; }
 
 .guide .pattern .display, .guide .pattern .panels {
   width: 90%;
@@ -610,7 +619,11 @@ h2.guidance {
 
 .pattern__back-to-top {
   display: inline-block;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  margin-left: 8%; }
+
+.pattern .pattern__back-to-top {
+  margin-left: 0; }
 
 p.guidance {
   margin-bottom: 1.4em;
@@ -1248,8 +1261,7 @@ colour as the block, give the title text a little more breathing room vertically
 @media only all and (min-width: 41em) {
   .container {
     margin: 0 auto;
-    width: 90%;
-    max-width: 80em; }
+    width: 100%; }
   .header__contents {
     width: 90%;
     margin: 0 auto;

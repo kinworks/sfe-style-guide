@@ -131,21 +131,23 @@
       </div>
       
       <div id="js-binder" class="styleguide container">
-      
-        <?php // ReadMe ?>
-        <?php if($_GET['mode'] == 'test'): ?>
-             <a href="/">Show Nav (Exit Test mode)</a>  
-            <?php endif; ?>
-        <h1 class="guidance" id="intro">Introduction</h1>
-        <br/>
-        <p class="guidance">
-          For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
-        </p>
-        <br/>
-        <h2 class="guidance">Browser Tests</h2>
-        <p class="guidance">
-          This guide has been tested for compliance and functionality to the coverage extent appropriate having monitored 6 months of traffic to each of the SFE web properties - the browser list is also summarised in the <a href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">readme on Github</a>. There will doubtless be other browser bugs uncovered, which should be filed as <a href="https://github.com/kinworks/sfe-style-guide/issues" target="_blank">issues on Github</a>.
-        </p>
+        
+        <div class="pattern">
+          <?php // ReadMe ?>
+          <?php if($_GET['mode'] == 'test'): ?>
+               <a href="/">Show Nav (Exit Test mode)</a>  
+              <?php endif; ?>
+          <h1 class="guidance" id="intro">Introduction</h1>
+          <br/>
+          <p class="guidance">
+            For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
+          </p>
+          <br/>
+          <h2 class="guidance">Browser Tests</h2>
+          <p class="guidance">
+            This guide has been tested for compliance and functionality to the coverage extent appropriate having monitored 6 months of traffic to each of the SFE web properties - the browser list is also summarised in the <a href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">readme on Github</a>. There will doubtless be other browser bugs uncovered, which should be filed as <a href="https://github.com/kinworks/sfe-style-guide/issues" target="_blank">issues on Github</a>.
+          </p>
+        </div>
         
         <div class="pattern elements-heading">
           <h1 class="guidance">Core Assets</h1>

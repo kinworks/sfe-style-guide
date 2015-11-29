@@ -171,7 +171,7 @@
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   CSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/css/sass/_1-normalize.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/css/sass/_1-normalize.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -218,7 +218,7 @@
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   SCSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/css/sass/_3-defaults.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/css/sass/_3-defaults.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -250,7 +250,7 @@
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   SCSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/css/sass/_2-mixins.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/css/sass/_2-mixins.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -338,7 +338,7 @@
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   SCSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/css/sass/_4-colours.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/css/sass/_4-colours.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -376,7 +376,7 @@
                 To use the Typekit webfonts and fallbacks selected for SFE's digital branding, you'll need: 
               </p>
               <ul class="guidance">
-                <li>The webfont loader script (<a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">here,</a> minified)</li>
+                <li>The webfont loader script (<a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/js/webfontloader.min.js" target="_blank">here,</a> minified)</li>
                 <li>The &lt;script&gt; found in 'Markup' (right) in your &lt;head&gt;, and; </li>
                 <li>the fallback CSS (right)</li>
               </ul>
@@ -397,7 +397,7 @@
                   <li role="tab" id="tab-wfl-css" aria-controls="tab-wfl-css-panel" aria-selected="false" data-tabgroup="wfl">
                     CSS
                   </li>
-                  <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">
+                  <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/js/webfontloader.min.js" target="_blank">
                     <li role="tab" class="linkout">
                       Webfontloader.min.js &raquo;
                     </li>

@@ -200,6 +200,18 @@
         <p class="guidance">
           The item of highest priority in our 'defaults' is probably the decision to <a href="http://quirksmode.org/css/user-interface/boxsizing.html" tagrte="_blank">use IE's box model for everything;</a> otherwise, you can choose to include these as a global defaults file (as we do) or selectively implement features from it to help you achieve the same end visual behaviours for the components in this style guide.
         </p>
+        <p class="guidance">
+        The full list of defaults is as follows:
+        <ul>
+          <li>Box model default;</li>
+          <li>Disable Webkit's UA margins and padding;</li>
+          <li>@Decadecity's a11y keyboard focus pattern CSS;</li>
+          <li>Disable browsers tweaking the appearance of submit controls;</li>
+          <li>Clearfix utility class;</li>
+          <li>Disabling UA margins on the &lt;p&gt; tag;</li>
+          <li>'Skip to content' a11y pattern CSS.</li>
+        </ul>  
+        </p>
             </div>
             <div class="js-tab-ui panels">
               <ul class="js-tabs-list" role="tablist">

@@ -384,7 +384,7 @@
               </ul>
               
               <p class="guidance">
-                The current kit ID, from a Typekit account owned by SFE, is <b>bkn2mmh</b> and weighs around 98kb.
+                The current kit ID, from a Typekit account owned by SFE, is <strong>bkn2mmh</strong> and weighs around 170kb.
               </p>
               
               <p class="guidance">

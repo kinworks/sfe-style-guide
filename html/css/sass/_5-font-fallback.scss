@@ -6,23 +6,17 @@
 body,
 .wf-loading body,
 .wf-inactive body {
-  font-family: Frutiger, "Frutiger Linotype", Univers, 
-  Calibri, "Myriad Pro", Myriad, 
-  "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", 
-  Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;  
   font-style: normal;
   //letter-spacing: -0.04em;
   //line-height: 273%;
-  font-size: 1em;
+  font-size: 1em !important;
 }
 
 // Loaded Webfont
 .wf-active body {
-  font-family: "franklin-gothic-urw", Frutiger, "Frutiger Linotype", 
-  Univers, Calibri, "Myriad Pro", 
-  Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", 
-  Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Open Sans", Helvetica, Arial, sans-serif;
   //letter-spacing: 0;
   //line-height: 280%;
-  font-size: 1em;
+  font-size: 1em !important;
 }

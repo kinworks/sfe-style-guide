@@ -389,19 +389,13 @@ p {
     clip: auto; }
 
 body, .wf-loading body, .wf-inactive body {
-  font-family: Frutiger, "Frutiger Linotype", Univers, 
-  Calibri, "Myriad Pro", Myriad, 
-  "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", 
-  Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-style: normal;
-  font-size: 1em; }
+  font-size: 1em !important; }
 
 .wf-active body {
-  font-family: "franklin-gothic-urw", Frutiger, "Frutiger Linotype", 
-  Univers, Calibri, "Myriad Pro", 
-  Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", 
-  Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em; }
+  font-family: "proxima-nova", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1em !important; }
 
 .heading {
   font-weight: 600;

@@ -1,5 +1,5 @@
 .heading {
-  font-weight: 500; //Medium - see below
+  font-weight: 600; //Semibold - see below
   font-style: normal;
   margin: 0 0 1em 0;
   text-transform: uppercase;
@@ -77,25 +77,25 @@ a {
   border-bottom: 0.1em dotted $white;
 }
 
-//// Franklin Gothic URW - Typekit Weights and Styles available 
-// in the STP Kit for reference;
+//// Proxima Nova - Typekit Weights and Styles available 
+// in the SFE Kit for reference;
 
 /* Light 
   font-weight: 300;
   font-style: normal;
-
-// Book 
-  font-weight: 400;
-  font-style: normal;
-
-// Book Italic 
-  font-weight: 400;
+  
+// Light Italic 
+  font-weight: 300;
   font-style: italic;
 
-// Medium 
-  font-weight: 500;
+// Regular 
+  font-weight: 400;
+  font-style: normal;
+
+// Semibold
+  font-weight: 600;
   font-style: normal;
   
-font-family: "franklin-gothic-urw";
+font-family: "proxima-nova";
 
 //////// */

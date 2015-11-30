@@ -404,7 +404,7 @@ body, .wf-loading body, .wf-inactive body {
   font-size: 1em; }
 
 .heading {
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   margin: 0 0 1em 0;
   text-transform: uppercase; }
@@ -463,20 +463,20 @@ a {
 /* Light 
   font-weight: 300;
   font-style: normal;
-
-// Book 
-  font-weight: 400;
-  font-style: normal;
-
-// Book Italic 
-  font-weight: 400;
+  
+// Light Italic 
+  font-weight: 300;
   font-style: italic;
 
-// Medium 
-  font-weight: 500;
+// Regular 
+  font-weight: 400;
+  font-style: normal;
+
+// Semibold
+  font-weight: 600;
   font-style: normal;
   
-font-family: "franklin-gothic-urw";
+font-family: "proxima-nova";
 
 //////// */
 .nav-wrapper {

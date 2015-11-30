@@ -33,7 +33,7 @@
       <script type="text/javascript">
         // Webfont loader - see https://github.com/typekit/webfontloader for details
   	    WebFontConfig = {
-  	      typekit: { id: 'ovp2cfb' }
+  	      typekit: { id: 'bkn2mmh' }
   	    };
   	    (function() {
   	      var wf = document.createElement('script');
@@ -384,7 +384,7 @@
               </ul>
               
               <p class="guidance">
-                The current kit ID, from a Typekit account owned by SFE, is <b>ovp2cfb</b> and weighs around 98kb.
+                The current kit ID, from a Typekit account owned by SFE, is <b>bkn2mmh</b> and weighs around 98kb.
               </p>
               
               <p class="guidance">

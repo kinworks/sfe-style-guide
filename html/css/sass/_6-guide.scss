@@ -256,7 +256,7 @@ pre {
   background-color: $dark;
 }
 
-.swatches span.charcoal {
+.swatches span.dark-text {
   background-color: $dark-text;
 }
 
@@ -286,6 +286,14 @@ pre {
 
 .swatches span.error {
   background-color: $error;
+}
+
+.swatches span.disabled {
+  background-color: $disabled;
+}
+
+.swatches span.disabled-text {
+  background-color: $disabled-text;
 }
 
 .swatches li b {

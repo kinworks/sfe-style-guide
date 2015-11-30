@@ -294,12 +294,20 @@
                     </li>
                   </ul>
                   
-                  <h2 class="guidance">Modules / Body</h2>
+                  <h2 class="guidance">Text-specific Colours</h2>
                   <ul>
                     <li>
-                      <span class="charcoal"><!--color fill--></span>
+                      <span class="dark-text"><!--color fill--></span>
                       <b>$dark-text</b>
                     </li>
+                    <li>
+                      <span class="disabled-text"><!--color fill--></span>
+                      <b>$disabled-text</b>
+                    </li>
+                  </ul>
+                  
+                  <h2 class="guidance">Modules / Body</h2>
+                  <ul>
                     <li>
                       <span class="white"><!--color fill--></span>
                       <b>$white</b>
@@ -332,6 +340,13 @@
                       <span class="error"><!--color fill--></span>
                       <b>$error</b>
                     </li>
+                    <li>
+                      <span class="disabled"><!--color fill--></span>
+                      <b>$disabled</b>
+                    </li>
+                    <p class="guidance">
+                      <i>See also $disabled-text.</i>
+                    </p>
                   </ul>
                 </div>
             </div>

@@ -677,7 +677,7 @@ pre {
 .swatches span.dark {
   background-color: #003552; }
 
-.swatches span.charcoal {
+.swatches span.dark-text {
   background-color: #002C44; }
 
 .swatches span.white {
@@ -700,6 +700,12 @@ pre {
 
 .swatches span.error {
   background-color: #fcc; }
+
+.swatches span.disabled {
+  background-color: #ccc; }
+
+.swatches span.disabled-text {
+  background-color: #666; }
 
 .swatches li b {
   font-size: 0.8em;

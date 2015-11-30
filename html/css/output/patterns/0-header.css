@@ -1,9 +1,13 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+
 .header {
-  background-color: #1A1919;
+  background-color: #002C44;
   width: 100%;
   margin: 0 0 1.5em 0;
   text-align: center;
-  border-bottom: 0.2em solid #0099b1; }
+  border-bottom: 0.2em solid #0086b4; }
 
 .header__contents {
   width: 100%;
@@ -12,11 +16,11 @@
 .header__title {
   display: inline-block;
   width: 100%;
-  background-color: #01B2CC;
+  background-color: #52CEF4;
   text-align: center;
   padding: 0.8em 1em 1em 1em;
-  border-bottom: 0.4em solid #00A2BB;
-  border-top: 0.2em solid #02defe; }
+  border-bottom: 0.4em solid #008EBE;
+  border-top: 0.2em solid #82dcf7; }
 
 .header__title .heading {
   color: #ffffff;
@@ -57,7 +61,7 @@
     text-align: left;
     width: auto;
     padding: 1.65em 1.8em 1.45em 1.8em;
-    border-bottom: 0.2em solid #0095ac; }
+    border-bottom: 0.2em solid #0083af; }
   .header__logo {
     float: right;
     width: 13.75em;
@@ -68,7 +72,7 @@
     float: left;
     height: 0.5em;
     width: 100%;
-    background-color: #01c8e5;
-    border-top: 0.1em solid #1ce1fe; } }
+    background-color: #6ad5f6;
+    border-top: 0.1em solid #9ae2f9; } }
 
 /*# sourceMappingURL=0-header.css.map */

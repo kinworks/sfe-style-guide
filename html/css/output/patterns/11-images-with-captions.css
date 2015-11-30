@@ -1,3 +1,7 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+
 .image {
   display: inline-block;
   margin: 0 0 2em 0;
@@ -10,11 +14,11 @@
 .image__caption {
   display: inline-block;
   width: 100%;
-  background-color: #d0d0d0;
+  background-color: #d5eef7;
   padding: 0.3em 0.8em 0.4em 0.8em; }
 
 .image__caption a {
-  color: #015966;
-  border-color: #015966; }
+  color: #003552;
+  border-color: #003552; }
 
 /*# sourceMappingURL=11-images-with-captions.css.map */

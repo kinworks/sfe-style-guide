@@ -1,21 +1,28 @@
 //// Brand
 
-$aqua: #01B2CC;
+$light: #52CEF4;
 
-$mid-aqua: #00A2BB;
+$mid: #008EBE;
 
-$dark-aqua: darken($aqua,20%);
+$dark: #003552; 
 
 
 //// Modules / Body
 
-$charcoal: #1A1919;
+$dark-text: #002C44;
 
 $white: #ffffff; // Yes, really.
 
-$grey: #C3C3C3;
+$light-pastel: #C0E6F3;
 
-$shadow: #9f9f9f;
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg),
+    linear-gradient(transparent, transparent);
+    // This trick ensures that our background SVG is only 
+    // used in browsers that support it (a 'coincidence'
+    // feature test: https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image
+}
 
 
 /// Calls to Action / Highlights

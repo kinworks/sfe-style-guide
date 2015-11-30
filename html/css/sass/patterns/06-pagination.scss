@@ -25,33 +25,33 @@ ol.pagination li {
   font-weight: 500;
   text-align: center;
   background-color: $white;
-  border-bottom: 0.2em solid $shadow;
+  border-bottom: 0.2em solid $dark;
   &:hover {
     text-decoration: underline;
-    background-color: $charcoal;
+    background-color: $dark-text;
     color: $white;
-    border-color: darken($shadow,10%);
+    border-color: darken($dark,10%);
   }
 }
 
 .pagination__current a {
-  background-color: $mid-aqua;
+  background-color: $mid;
   color: $white;
-  border-bottom: 0.2em solid lighten($dark-aqua,10%);
+  border-bottom: 0.2em solid lighten($dark,10%);
   cursor: not-allowed;
   &:hover {
     text-decoration: none;
     color: $white;
-    background-color: $mid-aqua;
-    border-color: lighten($dark-aqua,10%);
+    background-color: $mid;
+    border-color: lighten($dark,10%);
   }
 }
 
 .pagination__previous a,
 .pagination__next a {
-  background-color: $mid-aqua;
+  background-color: $mid;
   color: $white;
-  border-bottom: 0.2em solid lighten($dark-aqua,10%);
+  border-bottom: 0.2em solid lighten($dark,10%);
   padding: 0.1em 0.1em;
   height: 2.2em;
   width: 2.2em;
@@ -64,13 +64,13 @@ ol.pagination li {
 
 .pagination__previous.no-more a,
 .pagination__next.no-more a {
-  background-color: $shadow;
-  color: darken($shadow,20%);
-  border-bottom: 0.2em solid darken($shadow,15%);
+  background-color: $dark;
+  color: darken($dark,20%);
+  border-bottom: 0.2em solid darken($dark,15%);
   cursor: not-allowed;
   &:hover {
     text-decoration: none;
-    color: darken($shadow,20%);
-    border-color: darken($shadow,15%);
+    color: darken($dark,20%);
+    border-color: darken($dark,15%);
   }
 }

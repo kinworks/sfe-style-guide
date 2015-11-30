@@ -132,7 +132,7 @@
       
       <div id="js-binder" class="styleguide container">
         
-        <div class="pattern">
+        <div class="guidepattern">
           <?php // ReadMe ?>
           <?php if($_GET['mode'] == 'test'): ?>
                <a href="/">Show Nav (Exit Test mode)</a>  
@@ -149,14 +149,14 @@
           </p>
         </div>
         
-        <div class="pattern elements-heading">
+        <div class="guidepattern elements-heading">
           <h1 class="guidance">Core Assets</h1>
           <br/>
         </div>
         
       <?php // CSS reset pattern box ======================================================?>
         
-        <div class="pattern" id="reset">
+        <div class="guidepattern" id="reset">
             <div class="display">
               <h2 class="guidance">Global CSS reset</h2>
               <a class="pattern__back-to-top" href="/">Back to top &#8673;</a>
@@ -191,7 +191,7 @@
     
     <?php // CSS defaults pattern box ====================================================== ?>
         
-        <div class="pattern" id="defaults">
+        <div class="guidepattern" id="defaults">
             <div class="display">
               <h2 class="guidance">Our 'defaults'</h2>
               <a class="pattern__back-to-top" href="/">Back to top &#8673;</a>
@@ -238,7 +238,7 @@
     
     <?php // Mixins pattern box ====================================================== ?>
         
-        <div class="pattern" id="mixins">
+        <div class="guidepattern" id="mixins">
             <div class="display">
               <h2 class="guidance">Our SASS Mixins</h2>
               <a class="pattern__back-to-top" href="/">Back to top &#8673;</a>
@@ -270,27 +270,27 @@
           
         <?php // COLOUR / COLOR / COLUUÜUR ==============================================?>
           
-          <div class="pattern" id="colour">
-            <h1 class="guidance">Colour</h1>
+          <div class="guidepattern" id="colour">
+            <h1 class="guidance">Colour & Patterns</h1>
           </div>
           <br/><a class="pattern__back-to-top" href="/">Back to top &#8673;</a>
-          <div class="pattern colour">
+          <div class="guidepattern colour">
             <div class="display">
                <div class="swatches">
                  
                   <h2 class="guidance">Brand</h2>
                   <ul>
                     <li>
-                      <span class="aqua"><!--color fill--></span>
-                      <b>$aqua</b>
+                      <span class="light"><!--color fill--></span>
+                      <b>$light</b>
                     </li>
                     <li>
-                      <span class="mid-aqua"><!--color fill--></span>
-                      <b>$mid-aqua</b>
+                      <span class="mid"><!--color fill--></span>
+                      <b>$mid</b>
                     </li>
                     <li>
-                      <span class="dark-aqua"><!--color fill--></span>
-                      <b>$dark-aqua</b>
+                      <span class="dark"><!--color fill--></span>
+                      <b>$dark</b>
                     </li>
                   </ul>
                   
@@ -298,23 +298,23 @@
                   <ul>
                     <li>
                       <span class="charcoal"><!--color fill--></span>
-                      <b>$charcoal</b>
+                      <b>$dark-text</b>
                     </li>
                     <li>
                       <span class="white"><!--color fill--></span>
                       <b>$white</b>
                     </li>
                     <li>
-                      <span class="grey"><!--color fill--></span>
-                      <b>$grey</b>
+                      <span class="light-pastel"><!--color fill--></span>
+                      <b>$light-pastel</b>
                     </li>
                     <li>
-                      <span class="shadow"><!--color fill--></span>
-                      <b>$shadow</b>
+                      <span class="pattern"><!--color fill--></span>
+                      <b>.pattern</b>
                     </li>
                   </ul>
                   
-                  <h2 class="guidance">Calls to Action / Contrast / Feedback</h2>
+                  <h2 class="guidance">Contrast / Feedback</h2>
                   <ul>
                     <li>
                       <span class="purple"><!--color fill--></span>
@@ -358,14 +358,14 @@
           
     <?php // TYPOGRAPHY ============================================?>
   
-          <div class="pattern" id="typography">
+          <div class="guidepattern" id="typography">
             <h1 class="guidance">Typography</h1>
           </div>
           <br/>
           <a class="pattern__back-to-top" href="/">Back to top &#8673;</a>
           <?php // Webfont loading ============ ?>
           
-          <div class="pattern webfontloader">
+          <div class="guidepattern webfontloader">
             <div class="display">
               <h2 class="guidance">Webfont Loader</h2> 
               <p class="guidance">
@@ -422,7 +422,7 @@
             
   <?php // TYPOGRAPHIC HIERARCHY ================================= ?>
   
-        <div class="pattern hierarchy">
+        <div class="guidepattern hierarchy">
             <div class="display">
               <h2 class="guidance">Type hierarchy & styles</h2> 
               <?php echo file_get_contents("guidepatterns/typography.html"); ?>           
@@ -452,10 +452,10 @@
           
     <?php // HEADER BLOCK PATTERN FOR EXTERNAL SITES ==================== ?>
       
-          <div class="pattern" id="layout">
+          <div class="guidepattern" id="layout">
             <h1 class="guidance">Layout</h1>
           </div>
-          <div class="pattern pattern-header">
+          <div class="guidepattern pattern-header">
         
             <h2 class="guidance">Header Block (External Sites / Tools)</h2>
             <p class="guidance">
@@ -529,7 +529,7 @@
             
   <?php // FOOTER BLOCK PATTERN FOR EXTERNAL SITES ==================== ?>
       
-      <div class="pattern pattern-footer">
+      <div class="guidepattern pattern-footer">
         
             <h2 class="guidance">Footer Block</h2>
             <p class="guidance">
@@ -612,13 +612,12 @@
   
   <?php // LAYOUT CAP ==================== ?>
   
-            <div class="pattern pattern-layout-cap">
+            <div class="guidepattern pattern-layout-cap">
               <div class="display">
                 <h2 class="guidance">Layout cap</h2>
       
                 <p class="guidance">The layout width should be capped to a maximum of 80em via a limitation on your layout container, also applied to the header and footer of the site.</p>
-                
-                <p class="guidance">Added in v1.1, This constraint was arrived at having measured the ideal text line length within 50% layout blocks.</p>
+
               </div>
                                            
             <div class="js-tab-ui panels">
@@ -645,249 +644,10 @@
               </div>
             </div>
   
-  <?php // BLOCK LAYOUT PATTERN ==================== ?>
-      
-      <div class="pattern pattern-blocks">
-        
-            <h2 class="guidance">Layout: Blocks</h2>
-            <p class="guidance">
-              Layout across STP sites is handled using modules or 'blocks' against a $grey background. Blocks can be any width or height, provided that certain layout rules are adhered to.
-            </p>
-            <br/>
-            <div class="blocks clearfix">
-              
-              <div class="block block--50">
-                <div class="block__heading">
-                  <span class="heading">Standard Block</span>
-                </div>
-                <div class="block__content">
-                  Standard Block, charcoal heading bar (default bar);
-                  Layout: 50% (.block--50)
-                </div>
-              </div>
-              
-              <div class="block block--50 block--aqua">
-                <div class="block__heading">
-                  <span class="heading">Aqua Block</span>
-                </div>
-                <div class="block__content">
-                  Aqua Block, charcoal heading bar (default bar);
-                  Layout: 50% (.block--50)
-                </div>
-              </div>
-              
-              <div class="block block--75 block--dark-aqua">
-                <div class="block__heading block__heading--aqua">
-                  <span class="heading">Dark Aqua Block</span>
-                </div>
-                <div class="block__content">
-                  Dark Aqua Block, aqua heading bar;
-                  Layout: 75% (.block--75)
-                </div>
-              </div>
-              
-              <div class="block block--25 block--charcoal">
-                <div class="block__heading block__heading--dark-aqua">
-                  <span class="heading">Charcoal Block</span>
-                </div>
-                <div class="block__content">
-                  Charcoal Block, dark aqua heading bar;
-                  Layout: 25% (.block--25)
-                </div>
-              </div>
-              
-              <div class="block block--33 block--trim-bottom-aqua">
-                <div class="block__content">
-                  White Block with aqua bottom trim;
-                  Layout: 33% (.block--33)
-                </div>
-              </div>
-              
-              <div class="block block--33 block--trim-bottom-charcoal">
-                <div class="block__content">
-                  White Block with charcoal bottom trim;
-                  Layout: 33% (.block--33)
-                </div>
-              </div>
-              
-              <div class="block block--33 block--trim-bottom-dark-aqua">
-                <div class="block__content">
-                  White Block with dark aqua bottom trim;
-                  Layout: 33% (.block--33)
-                </div>
-              </div>
-              
-              <div class="block block--25 block--trim-top-aqua">
-                <div class="block__content">
-                  White block with .block--trim-top-aqua;
-                  Layout: 25% (.block--25)
-                </div>
-              </div>
-              
-              <div class="block block--25 block--aqua block--trim-top-dark-aqua">
-                <div class="block__content">
-                  Aqua block with .block--trim-top-dark-aqua;
-                  Layout: 25% (.block--25)
-                </div>
-              </div>
-              
-              <div class="block block--25 block--dark-aqua block--trim-top-charcoal">
-                <div class="block__content">
-                  Dark aqua block with .block--trim-top-charcoal;
-                  Layout: 25% (.block--25)
-                </div>  
-              </div>
-              
-              <div class="block block--25 block--charcoal block--trim-top-dark-aqua">
-                <div class="block__content">
-                  Charcoal Block with .block--trim-top-dark-aqua;
-                  Layout: 25% (.block--25)
-                </div>
-              </div>
-              
-              <div class="block block--66">
-                <div class="block__heading">
-                  <span class="heading">66% Standard Block</span>
-                </div>
-                <div class="block__content">
-                  Standard Block, charcoal heading bar (default bar);
-                  Layout: 66% (.block--66)
-                </div>
-              </div>
-              
-              <div class="block block--33">
-                <div class="block__heading">
-                  <span class="heading">33% Standard Block</span>
-                </div>
-                <div class="block__content">
-                  Standard Block, charcoal heading bar (default bar);
-                  Layout: 33% (.block--33)
-                </div>
-              </div>
-              
-              <div class="block block--100 block--aqua">
-                <div class="block__heading block__heading--aqua">
-                  <span class="heading">100% Aqua Block</span>
-                </div>
-                <div class="block__content">
-                  Aqua Block, aqua heading bar;
-                  Layout: 100% (.block--100)
-                </div>
-              </div>
-              
-              <div class="block block--50 block--trim-bottom-aqua">
-                <div class="block__image block__image--top"
-                  style="background-image: url('guidepatterns/images/banff.jpg');
-                    min-height: 12.5625em">
-                  &nbsp;
-                </div>
-                <div class="block__content">
-                  White Block, block__image--top;
-                  Layout: 50% (.block--50), block--trim-bottom-aqua
-                </div>
-              </div>
-              
-              <div class="block block--50 guide-lastbanff">
-                <div class="block__content">
-                  White Block, block__image--bottom;
-                  Layout: 50% (.block--50)
-                </div>
-                <div class="block__image block__image--bottom"
-                  style="background-image: url('guidepatterns/images/banff.jpg');
-                    height: 12.5625em">
-                  &nbsp;
-                </div>
-              </div>
-              
-              <div class="block block--50">
-                <div class="block__heading">
-                  <span class="heading">Standard Block</span>
-                </div>
-                <div class="block__image block__image--left"
-                  style="background-image: url('guidepatterns/images/edinburgh.jpg');
-                    height: 30em">
-                  &nbsp;
-                </div>
-                <div class="block__content block__content--right">
-                  White Block, with content set to block__content--right and image set to block__image--left;
-                  Layout: 50% (.block--50)
-                </div>
-              </div>
-              
-              <div class="block block--50">
-                <div class="block__heading">
-                  <span class="heading">Standard Block</span>
-                </div>
-                <div class="block__content block__content--left">
-                  White Block, with content set to block__content--left and image set to block__image--right;
-                  Layout: 50% (.block--50)
-                </div>
-                <div class="block__image block__image--right"
-                  style="background-image: url('guidepatterns/images/edinburgh.jpg');
-                    height: 30em">
-                  &nbsp;
-                </div>
-              </div>
-              
-            </div><!--/blocks-->
-            
-            <div class="display">
-              <h2 class="guidance">Block / layout rules & guidance</h2>
-              <ul class="guidance">
-                <li>New in v1.1: Headings and CTAs can be placed directly on the grey background, if that suits your layout: use the .outside class detailed in SCSS here. Note that .outside only covers width alignment, and vertical margin will still be handled by the element within the .outside container.</li>
-                <li>Adding trim to blocks is optional and should be used sparingly, rather than on every block.</li>
-                <li>Bottom trim should only be used on white blocks.</li>
-                <li>Top trim should only be used where there's no heading bar on a block.</li>
-                <li>Feel free to use <a href="http://masonry.desandro.com/" target="_blank">Masonry</a> for layout - we're doing so for news and resource content on the main website.</li>
-                <li>Block width classes are for guidance; the actual widths and implementation for your app can differ, however a 3% side margin and 1em top/bottom margin should be observed regardless.</li>
-                <li>Stacking blocks using media queries (e.g. for tablet sizes, turning a row of block--25 into two rows of block--50) is at your own discretion based on your block content. We don't provide any classes in this style guide for doing these manipulations.</li>
-              </ul>
-              <br/>
-              <h3 class="guidance">For Image Blocks:</h3>
-              <br/>
-              <ul class="guidance">
-                <li>Where possible, a neat solution to scaling images for different viewports is to use them as background images; this is what our examples use, with the image URLs and heights set in markup for demo purposes. If you're able to, looking into a solution for serving scaled images with &lt;picture&gt; or similar would be advantageous, but isn't mandated by this guide.</li>
-                <li>For blocks with a block__image--top, don't set a top trim. Similarly, for blocks with a block__image--bottom, don't set a bottom trim.</li>
-                <li>We've set block__image--left and --right to 50% width, along with the related classes on block__content - but these are sizes that can of course be more adjusted to suit your content.</li>
-              </ul>
-            </div>
-            
-            <div class="js-tab-ui panels">
-                <ul class="js-tabs-list" role="tablist">
-                  <li role="tab" id="tab-blocks-markup" aria-controls="tab-blocks-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="blocks">Markup
-                  </li>
-                  <li role="tab" id="tab-blocks-scss" aria-controls="tab-blocks-scss-panel" aria-selected="false" data-tabgroup="blocks">
-                    SCSS
-                  </li>
-                  <li role="tab" id="tab-blocks-css" aria-controls="tab-blocks-css-panel" aria-selected="false" data-tabgroup="blocks">
-                    Generated CSS
-                  </li>
-                </ul>
-                <div class="source js-panel first" id="tab-blocks-markup-panel" role="tabpanel" aria-labelledby="tab-blocks-markup" data-tabgroup="blocks">
-                  <h2 class="js-panel__title">Markup</h2>
-                  <pre>
-                    <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/blocks.html")); ?></code>
-                  </pre>
-                </div>
-                <div class="style js-panel" id="tab-blocks-scss-panel" role="tabpanel" aria-labelledby="tab-blocks-scss" data-tabgroup="blocks">
-                  <h2 class="js-panel__title">SCSS</h2>
-                  <pre>
-                    <code><?php echo file_get_contents("css/sass/patterns/01-blocks.scss"); ?></code>
-                  </pre>
-                </div>            
-                <div class="style js-panel" id="tab-blocks-css-panel" role="tabpanel" aria-labelledby="tab-blocks-css" data-tabgroup="blocks">
-                  <h2 class="js-panel__title">Generated CSS</h2>
-                  <pre>
-                    <code><?php echo file_get_contents("css/output/patterns/01-blocks.css"); ?></code>
-                  </pre>
-                </div>
-              </div>
-            
-      </div><!--/pattern-->               
-  
+    
     <?php // Heading for elements section ======================== ?>
     
-    <div class="pattern elements-heading">
+    <div class="guidepattern elements-heading">
       <h1 class="guidance">Page Elements Style Guide:</h1>
     </div>
           
@@ -904,13 +664,13 @@
         $scss = ++$i;
         
         ?>
-          <div class="pattern elements-heading" id="<?php echo str_replace('-',' ', substr(basename($file, ".html"), 3)) ;?>">
+          <div class="guidepattern elements-heading" id="<?php echo str_replace('-',' ', substr(basename($file, ".html"), 3)) ;?>">
             <h2 class="guidance"><?php echo str_replace('-',' ', substr(basename($file, ".html"), 3)) ;?></h2>
             <a class="pattern__back-to-top" href="/">Back to top 
               &#8673;</a>
           </div>
         
-          <div class="pattern pattern-<?php echo substr(basename($file, ".html"), 3) ;?>">
+          <div class="guidepattern pattern-<?php echo substr(basename($file, ".html"), 3) ;?>">
             <div class="display">
             <?php include($file); ?>
             </div>

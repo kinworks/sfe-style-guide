@@ -5,9 +5,9 @@
 // sections, then enhanced via media query
 
 .footer {
-  background-color: $mid-aqua;
+  background-color: $mid;
   width: 100%;
-  border-top: 0.8em solid $aqua;
+  border-top: 0.8em solid $light;
   padding: 1em 0 0 0;
 }
 
@@ -20,8 +20,8 @@
   width: 100%;
   padding: 0 5%;
   margin: 0;
-  background-color: $charcoal;
-  border-top: 0.9em solid $dark-aqua;
+  background-color: $dark-text;
+  border-top: 0.9em solid $dark;
   max-width: none;
 }
 
@@ -40,13 +40,13 @@
   max-width: 15.4em;
   height: 2.7em;
   display: inline-block;
-  background-color: $charcoal;
+  background-color: $dark-text;
   margin: 1.6em 0;
-  border-bottom: 0.2em solid darken($dark-aqua,5%);
-  border-top: 0.1em solid lighten($aqua,5%);
+  border-bottom: 0.2em solid darken($dark,5%);
+  border-top: 0.1em solid lighten($light,5%);
   &:hover .heading {
     text-decoration: underline;
-    background-color: darken($dark-aqua,5%);
+    background-color: darken($dark,5%);
   }
 }
 
@@ -92,7 +92,7 @@
 }
 
 .footer__nav a {
-  color: $charcoal;
+  color: $dark-text;
   font-weight: 500;
   text-transform: uppercase;
   &:after {
@@ -105,7 +105,7 @@
 
 .footer__terms {
   margin: 1.5em 0 2em 0;
-  color: $grey;
+  color: $light-pastel;
 }
 
 // Arbitrary breakpoint from handheld -> full layout - 

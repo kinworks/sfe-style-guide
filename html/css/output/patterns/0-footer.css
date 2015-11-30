@@ -1,8 +1,12 @@
 @charset "UTF-8";
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+
 .footer {
-  background-color: #00A2BB;
+  background-color: #008EBE;
   width: 100%;
-  border-top: 0.8em solid #01B2CC;
+  border-top: 0.8em solid #52CEF4;
   padding: 1em 0 0 0; }
 
 .footer__container {
@@ -13,8 +17,8 @@
   width: 100%;
   padding: 0 5%;
   margin: 0;
-  background-color: #1A1919;
-  border-top: 0.9em solid #015966;
+  background-color: #002C44;
+  border-top: 0.9em solid #003552;
   max-width: none; }
 
 .footer__container .heading__medium {
@@ -31,13 +35,13 @@
   max-width: 15.4em;
   height: 2.7em;
   display: inline-block;
-  background-color: #1A1919;
+  background-color: #002C44;
   margin: 1.6em 0;
-  border-bottom: 0.2em solid #00434d;
-  border-top: 0.1em solid #01c8e5; }
+  border-bottom: 0.2em solid #002539;
+  border-top: 0.1em solid #6ad5f6; }
   .footer__twitter:hover .heading {
     text-decoration: underline;
-    background-color: #00434d; }
+    background-color: #002539; }
 
 .footer__twitter .heading {
   font-size: 1em;
@@ -84,7 +88,7 @@
   margin: 0 0 0.8em 0; }
 
 .footer__nav a {
-  color: #1A1919;
+  color: #002C44;
   font-weight: 500;
   text-transform: uppercase; }
   .footer__nav a:after {
@@ -94,7 +98,7 @@
 
 .footer__terms {
   margin: 1.5em 0 2em 0;
-  color: #C3C3C3; }
+  color: #C0E6F3; }
 
 @media only all and (min-width: 41em) {
   .footer {

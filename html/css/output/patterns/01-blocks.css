@@ -1,3 +1,7 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+
 /* Outside blocks
    Sometimes we'll want to add a heading or CTA outside
    of a layout block. For this we use .outside, which 
@@ -18,36 +22,36 @@
   display: inline-block;
   margin-bottom: 1.5em;
   width: 100%;
-  border-bottom: 0.2em solid #9f9f9f; }
+  border-bottom: 0.2em solid #003552; }
 
 /* /// Block colours */
 .block--aqua {
-  background-color: #00A2BB;
-  border-bottom: 0.2em solid #007f92; }
+  background-color: #008EBE;
+  border-bottom: 0.2em solid #007095; }
 
 .block--dark-aqua {
-  background-color: #015966;
+  background-color: #003552;
   color: #ffffff;
-  border-bottom: 0.2em solid #003a43; }
+  border-bottom: 0.2em solid #001e2e; }
 
 .block--charcoal {
-  background-color: #1A1919;
+  background-color: #002C44;
   color: #ffffff;
-  border-bottom: 0.2em solid #4e4b4b; }
+  border-bottom: 0.2em solid #006eaa; }
 
 /* /// Top trim - only for blocks with no header bar */
 .block--trim-top-aqua {
-  border-top: 0.4em solid #01B2CC; }
+  border-top: 0.4em solid #52CEF4; }
 
 .block--trim-top-dark-aqua {
-  border-top: 0.4em solid #015966; }
+  border-top: 0.4em solid #003552; }
 
 .block--trim-top-charcoal {
-  border-top: 0.4em solid #1A1919; }
+  border-top: 0.4em solid #002C44; }
 
 /* /// Bottom trim should only be used on white blocks */
 .block--trim-bottom-aqua {
-  border-bottom: 0.2em solid #007f92; }
+  border-bottom: 0.2em solid #007095; }
   .block--trim-bottom-aqua:after {
     content: "";
     display: inline-block;
@@ -55,10 +59,10 @@
     width: 100%;
     height: 0.3em;
     margin-top: 0.4em;
-    background-color: #00A2BB; }
+    background-color: #008EBE; }
 
 .block--trim-bottom-dark-aqua {
-  border-bottom: 0.2em solid #003a43; }
+  border-bottom: 0.2em solid #001e2e; }
   .block--trim-bottom-dark-aqua:after {
     content: "";
     display: inline-block;
@@ -66,10 +70,10 @@
     width: 100%;
     height: 0.3em;
     margin-top: 0.4em;
-    background-color: #015966; }
+    background-color: #003552; }
 
 .block--trim-bottom-charcoal {
-  border-bottom: 0.2em solid #4e4b4b; }
+  border-bottom: 0.2em solid #006eaa; }
   .block--trim-bottom-charcoal:after {
     content: "";
     display: inline-block;
@@ -77,22 +81,22 @@
     width: 100%;
     height: 0.3em;
     margin-top: 0.4em;
-    background-color: #1A1919; }
+    background-color: #002C44; }
 
 /* /// Block heading bars */
 .block__heading {
   padding: 0.7em 1.4em 0.6em 1.4em;
-  background-color: #1A1919;
+  background-color: #002C44;
   color: #ffffff; }
 
 .block__heading .heading {
   font-size: 1.2em; }
 
 .block__heading--aqua {
-  background-color: #00A2BB; }
+  background-color: #008EBE; }
 
 .block__heading--dark-aqua {
-  background-color: #015966; }
+  background-color: #003552; }
 
 /* Padding tweaks; if using a heading bar the same
 colour as the block, give the title text a little more breathing room vertically */

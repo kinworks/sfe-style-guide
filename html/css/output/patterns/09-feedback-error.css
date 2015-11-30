@@ -1,3 +1,7 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+
 .feedback--error {
   background-color: #fcc;
   border-bottom: 0.2em solid #ffb3b3; }

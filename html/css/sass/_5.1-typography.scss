@@ -2,7 +2,6 @@
   font-weight: 600; //Semibold - see below
   font-style: normal;
   margin: 0 0 1em 0;
-  text-transform: uppercase;
 }
 
 .heading__large {
@@ -24,7 +23,7 @@ ol,
   font-size: 1.1em;
   line-height: 1.3em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 p,
@@ -41,14 +40,9 @@ p,
   font-size: 1em;
 }
 
-.text--aqua {
-  color: $mid-aqua;
-  //WCAG 2 AA Compliant only at >=18pt; ratio 4.31 against $white
-}
-
 b, 
 strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 i, 
@@ -57,19 +51,19 @@ em {
 }
 
 a {
-  color: $mid-aqua;
-  border-bottom: 0.1em dotted $mid-aqua;
+  color: $mid;
+  border-bottom: 0.1em dotted $mid;
   text-decoration: none;
 }
 
 .link--dark-aqua {
-  color: $dark-aqua;
-  border-bottom: 0.1em dotted $dark-aqua;
+  color: $dark;
+  border-bottom: 0.1em dotted $dark;
 }
 
 .link--aqua {
-  color: $aqua;
-  border-bottom: 0.1em dotted $aqua;
+  color: $light;
+  border-bottom: 0.1em dotted $light;
 }
 
 .link--white {

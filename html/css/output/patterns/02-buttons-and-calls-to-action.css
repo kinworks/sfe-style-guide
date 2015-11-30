@@ -1,10 +1,14 @@
 @charset "UTF-8";
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+
 /* Buttons / CTAs */
 .cta {
-  background-color: #00A2BB;
+  background-color: #008EBE;
   color: #fff;
-  border-bottom: 0.2em solid #007688;
-  border-top: 0.1em solid #1ce1fe;
+  border-bottom: 0.2em solid #00688b;
+  border-top: 0.1em solid #9ae2f9;
   display: inline-block;
   padding: 0.6em 1.2em;
   font-weight: 500;
@@ -18,7 +22,7 @@
     content: ' »'; }
   .cta:hover {
     text-decoration: underline;
-    background-color: #00b8d4; }
+    background-color: #00a1d8; }
 
 /* Removes awkward default styles on some inputs for mobile */
 input[type="button"], input[type="reset"], input[type="submit"] {
@@ -33,12 +37,12 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   height: 3em; }
 
 .cta--charcoal {
-  background-color: #1A1919;
-  border-bottom: 0.2em solid #797979;
-  border-top: 0.1em solid #ebebeb; }
+  background-color: #002C44;
+  border-bottom: 0.2em solid #000405;
+  border-top: 0.1em solid #0098eb; }
   .cta--charcoal:hover {
     text-decoration: underline;
-    background-color: #494646; }
+    background-color: #0067a0; }
 
 .cta--blue {
   background-color: #085FB1;
@@ -58,21 +62,21 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
 .cta--white {
   background-color: #ffffff;
-  color: #1A1919;
-  border-bottom: 0.2em solid #9f9f9f;
+  color: #002C44;
+  border-bottom: 0.2em solid #003552;
   border-top: 0.1em solid white; }
   .cta--white:hover {
     text-decoration: underline;
-    background-color: #cdf8ff; }
+    background-color: white; }
 
 .cta--disabled {
-  background-color: #C3C3C3;
-  color: #868686;
-  border-bottom: 0.2em solid #9f9f9f;
-  border-top: 0.1em solid #d0d0d0;
+  background-color: #C0E6F3;
+  color: #00141f;
+  border-bottom: 0.2em solid #003552;
+  border-top: 0.1em solid #d5eef7;
   cursor: not-allowed; }
   .cta--disabled:hover {
-    background-color: #C3C3C3;
+    background-color: #C0E6F3;
     cursor: not-allowed;
     text-decoration: none; }
 

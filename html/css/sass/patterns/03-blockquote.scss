@@ -5,12 +5,12 @@
 	margin: 1.5em 0;
 	border-top: 0.1em solid;
 	border-bottom: 0.1em solid;
-  border-color: lighten($grey,10%);
+  border-color: lighten($light-pastel,10%);
 	padding: 1em 1em;
 	font-style: italic;
 	font-size: 1.4em;
 	line-height: 1.3em;
-	color: $mid-aqua;
+	color: $mid;
 }
 
 blockquote.quote__blockquote {
@@ -29,7 +29,7 @@ blockquote.quote__blockquote {
     font-size: 1.6em;
     vertical-align: -0.2em;
     margin-left: -0.1em;
-    color: $grey;
+    color: $light-pastel;
   }
 }
 
@@ -40,7 +40,7 @@ blockquote.quote__blockquote {
 .quote__caption {
   font-style: italic;
   font-size: 0.8em;
-  color: $charcoal;
+  color: $dark-text;
   margin-top: 0.8em;
   &:before {
     content: "— ";

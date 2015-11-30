@@ -28,7 +28,7 @@ select {
   /* ^ The 0.375em vertically centers text on FF, 
   ignored by Webkit */
   background-color: #fff;
-  border: 0.1em solid $grey;
+  border: 0.1em solid $light-pastel;
   box-shadow: none;
 }
 
@@ -73,7 +73,7 @@ input[type="password"]:focus,
 input[list]:focus,
 textarea:focus,
 select:focus {
-  border: 0.1em solid $mid-aqua;
+  border: 0.1em solid $mid;
   outline: 0; 
 }
 
@@ -107,13 +107,13 @@ input[type="radio"] {
 
 .required {
   font-weight: 400;
-  color: darken($shadow,16%);
+  color: darken($dark,16%);
 }
 
 .format {
   font-weight: 400;
   font-style: italic;
-  color: darken($shadow,16%);
+  color: darken($dark,16%);
   margin-left: 0.75em;
 }
 
@@ -126,8 +126,8 @@ select[multiple] {
 }
 
 textarea[disabled], input[disabled], select[disabled] {
-  background-color: lighten($grey, 10%);
-  color: $shadow;
+  background-color: lighten($light-pastel, 10%);
+  color: $dark;
 }
 
 textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
@@ -135,7 +135,7 @@ textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
 }
 
 select:-internal-list-box option:checked {
-  background-color: $aqua;
+  background-color: $light;
 }
 
 /* Form buttons are covered in the 'Buttons

@@ -1,3 +1,7 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+
 /* /// Responsive Tables */
 /* make each table separate from other ones */
 table {
@@ -50,9 +54,9 @@ tr {
   margin: 0 0 1.5em 0;
   width: 100%;
   font-size: 1.1em;
-  background-color: #dddddd;
-  border-top: 0.2em solid #015966;
-  border-bottom: 0.2em solid #C3C3C3;
+  background-color: #ebf7fb;
+  border-top: 0.2em solid #003552;
+  border-bottom: 0.2em solid #C0E6F3;
   padding: 1em; }
 
 /* Arbitrary breakpoint from handheld -> 
@@ -67,7 +71,7 @@ by side rather than stacked */
     margin: 0 0 2em 0;
     border-style: none;
     border-top-width: 0;
-    border-bottom: 0.2em solid #C3C3C3; }
+    border-bottom: 0.2em solid #C0E6F3; }
   /* Labeling
    * Hide the mobile labels */
   th[data-title]:before, td[data-title]:before {
@@ -110,7 +114,7 @@ by side rather than stacked */
     font-weight: normal; }
   /* Style table */
   thead tr {
-    background-color: #015966; }
+    background-color: #003552; }
   thead tr th {
     color: #fff;
     padding: 0.5em 0.5em 0.5em 0.8em; }
@@ -121,6 +125,6 @@ by side rather than stacked */
     margin: 0 0 0 0.5em;
     padding: 0.8em 0 0 0; }
   tbody tr:nth-child(odd) {
-    background-color: #f6f6f6; } }
+    background-color: white; } }
 
 /*# sourceMappingURL=13-responsive-tables.css.map */

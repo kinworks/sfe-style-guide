@@ -15,11 +15,11 @@
 .image__caption {
   display: inline-block;
   width: 100%;
-  background-color: lighten($grey,5%);
+  background-color: lighten($light-pastel,5%);
   padding: 0.3em 0.8em 0.4em 0.8em;
 }
 
 .image__caption a {
-  color: $dark-aqua;
-  border-color: $dark-aqua;
+  color: $dark;
+  border-color: $dark;
 }

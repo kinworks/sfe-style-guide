@@ -1,3 +1,7 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+
 /* Pagination */
 ol.pagination {
   list-style-type: none; }
@@ -18,28 +22,28 @@ ol.pagination li {
   font-weight: 500;
   text-align: center;
   background-color: #ffffff;
-  border-bottom: 0.2em solid #9f9f9f; }
+  border-bottom: 0.2em solid #003552; }
   .pagination a:hover {
     text-decoration: underline;
-    background-color: #1A1919;
+    background-color: #002C44;
     color: #ffffff;
-    border-color: #868686; }
+    border-color: #00141f; }
 
 .pagination__current a {
-  background-color: #00A2BB;
+  background-color: #008EBE;
   color: #ffffff;
-  border-bottom: 0.2em solid #018699;
+  border-bottom: 0.2em solid #005685;
   cursor: not-allowed; }
   .pagination__current a:hover {
     text-decoration: none;
     color: #ffffff;
-    background-color: #00A2BB;
-    border-color: #018699; }
+    background-color: #008EBE;
+    border-color: #005685; }
 
 .pagination__previous a, .pagination__next a {
-  background-color: #00A2BB;
+  background-color: #008EBE;
   color: #ffffff;
-  border-bottom: 0.2em solid #018699;
+  border-bottom: 0.2em solid #005685;
   padding: 0.1em 0.1em;
   height: 2.2em;
   width: 2.2em; }
@@ -48,13 +52,13 @@ ol.pagination li {
   font-size: 1.5em; }
 
 .pagination__previous.no-more a, .pagination__next.no-more a {
-  background-color: #9f9f9f;
-  color: #6c6c6c;
-  border-bottom: 0.2em solid #797979;
+  background-color: #003552;
+  color: black;
+  border-bottom: 0.2em solid #000405;
   cursor: not-allowed; }
   .pagination__previous.no-more a:hover, .pagination__next.no-more a:hover {
     text-decoration: none;
-    color: #6c6c6c;
-    border-color: #797979; }
+    color: black;
+    border-color: #000405; }
 
 /*# sourceMappingURL=06-pagination.css.map */

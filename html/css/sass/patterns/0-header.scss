@@ -5,12 +5,12 @@
 // sections, then enhanced via media query
 
 .header {
-  background-color: $charcoal;
+  background-color: $dark-text;
   width: 100%;
   margin: 0 0 1.5em 0;
   text-align: center;
   // shadow colour-context tweak
-  border-bottom: 0.2em solid darken($mid-aqua,2%);
+  border-bottom: 0.2em solid darken($mid,2%);
 }
 
 .header__contents {
@@ -21,11 +21,11 @@
 .header__title {
   display: inline-block;
   width: 100%;
-  background-color: $aqua;
+  background-color: $light;
   text-align: center;
   padding: 0.8em 1em 1em 1em;
-  border-bottom: 0.4em solid $mid-aqua;
-  border-top: 0.2em solid lighten($aqua,10%);
+  border-bottom: 0.4em solid $mid;
+  border-top: 0.2em solid lighten($light,10%);
 }
 
 .header__title .heading {
@@ -75,7 +75,7 @@
     text-align: left;
     width: auto;
     padding: 1.65em 1.8em 1.45em 1.8em;
-    border-bottom: 0.2em solid darken($mid-aqua,3%);
+    border-bottom: 0.2em solid darken($mid,3%);
   }
   
   .header__logo {
@@ -90,8 +90,8 @@
     float: left;
     height: 0.5em;
     width: 100%;
-    background-color: lighten($aqua,5%);
-    border-top: 0.1em solid lighten($aqua,15%);
+    background-color: lighten($light,5%);
+    border-top: 0.1em solid lighten($light,15%);
   }
 
 } // End min 41em

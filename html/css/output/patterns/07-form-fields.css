@@ -1,3 +1,7 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+
 /* Forms */
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], input[list], input[type="file"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="range"], input[type="search"], textarea, select {
   display: inline-block;
@@ -8,7 +12,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   /* ^ The 0.375em vertically centers text on FF, 
   ignored by Webkit */
   background-color: #fff;
-  border: 0.1em solid #C3C3C3;
+  border: 0.1em solid #C0E6F3;
   box-shadow: none; }
 
 .checkbox {
@@ -31,7 +35,7 @@ textarea {
   margin-bottom: 1em; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[list]:focus, textarea:focus, select:focus {
-  border: 0.1em solid #00A2BB;
+  border: 0.1em solid #008EBE;
   outline: 0; }
 
 label, legend {
@@ -58,12 +62,12 @@ input[type="radio"] {
 
 .required {
   font-weight: 400;
-  color: #767676; }
+  color: black; }
 
 .format {
   font-weight: 400;
   font-style: italic;
-  color: #767676;
+  color: black;
   margin-left: 0.75em; }
 
 input[type="search"] {
@@ -73,14 +77,14 @@ select[multiple] {
   height: auto; }
 
 textarea[disabled], input[disabled], select[disabled] {
-  background-color: #dddddd;
-  color: #9f9f9f; }
+  background-color: #ebf7fb;
+  color: #003552; }
 
 textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
   cursor: not-allowed; }
 
 select:-internal-list-box option:checked {
-  background-color: #01B2CC; }
+  background-color: #52CEF4; }
 
 /* Form buttons are covered in the 'Buttons
   and calls to action' section above */

@@ -56,7 +56,7 @@
 // Other Guide Styles
 
 .guide {
-  background-color: $grey; 
+  background-color: $light-pastel; 
   line-height: 1.5em;
   font-size: 16px;
   border: none;
@@ -92,7 +92,7 @@
 }
 
 .versioninfo a {
-  //color: $dark-aqua;
+  //color: $dark;
 }
 
 .guide .styleguide {
@@ -100,7 +100,7 @@
   padding: 0;
 }
 
-.guide .pattern {
+.guide .guidepattern {
   clear: both;
   overflow: hidden;
   border-bottom: 0.1em #959595 solid;
@@ -110,20 +110,20 @@
   }
 }
 
-.guide .pattern.outside {
+.guide .guidepattern.outside {
   margin: 0;
   padding: 0;
   width: 100%;
   max-width: 100%;
 }
 
-.guide .pattern .display, 
-.guide .pattern .panels {
+.guide .guidepattern .display, 
+.guide .guidepattern .panels {
   width: 90%;
   display: inline-block;
 }
 
-.lt-ie9 .guide .pattern .panels {
+.lt-ie9 .guide .guidepattern .panels {
   display: none !important;
 }
 
@@ -166,7 +166,7 @@ iframe {
   overflow: visible;
 }
 
-.guide .pattern .panels {
+.guide .guidepattern .panels {
   margin-top: 0.5em;
 }
 
@@ -177,7 +177,7 @@ iframe {
 
 h1.guidance,
 h2.guidance {
-  color: $dark-aqua;
+  color: $dark;
   text-transform: capitalize;
   font-weight: 500;
 }
@@ -192,7 +192,7 @@ h2.guidance {
   margin-left: 5%;
 }
 
-.pattern .pattern__back-to-top {
+.guidepattern .pattern__back-to-top {
   margin-left: 0;
 }
 
@@ -211,7 +211,7 @@ ul.guidance li {
 }
 
 .js-tabs ul.guidance li [aria-selected=true] {
-  color: $charcoal;
+  color: $dark-text;
   background-color: $white;
 }
 
@@ -241,35 +241,35 @@ pre {
   padding: 0.7em;
   margin: 0 2em 2em 0;
   float: left;
-  border-bottom: 0.2em solid $grey;
+  border-bottom: 0.2em solid $light-pastel;
 }
 
-.swatches span.aqua {
-  background-color: $aqua;
+.swatches span.light {
+  background-color: $light;
 }
 
-.swatches span.mid-aqua {
-  background-color: $mid-aqua;
+.swatches span.mid {
+  background-color: $mid;
 }
 
-.swatches span.dark-aqua {
-  background-color: $dark-aqua;
+.swatches span.dark {
+  background-color: $dark;
 }
 
 .swatches span.charcoal {
-  background-color: $charcoal;
+  background-color: $dark-text;
 }
 
 .swatches span.white {
   background-color: $white;
 }
 
-.swatches span.grey {
-  background-color: $grey;
+.swatches span.light-pastel {
+  background-color: $light-pastel;
 }
 
-.swatches span.shadow {
-  background-color: $shadow;
+.swatches span.pattern {
+  background-color: $dark;
 }
 
 .swatches span.purple {
@@ -289,7 +289,8 @@ pre {
 }
 
 .swatches li b {
-  font-size: 0.9em;
+  font-size: 0.8em;
+  font-weight: 300;
 }
 
 .swatches li span {
@@ -329,15 +330,15 @@ pre {
 }
 
 .bg-grey {
-  background-color: $grey;
+  background-color: $light-pastel;
 }
 
 .bg-charcoal {
-  background-color: $charcoal;
+  background-color: $dark-text;
 }
 
 .bg-aqua {
-  background-color: $mid-aqua;
+  background-color: $mid;
 }
 
 .pattern-buttons-and-calls-to-action h2 {
@@ -372,7 +373,7 @@ pre {
 
 .blocks {
   width: 100%;
-  background-color: $grey;
+  background-color: $light-pastel;
   padding: 2em 0 2em 0;
   margin: 0 0 2em 0;
 }
@@ -383,7 +384,7 @@ pre {
 
 .pattern-pagination ol.pagination {
   padding: 2em;
-  background-color: $grey;
+  background-color: $light-pastel;
 }
 
 .blocks .block--66 {
@@ -406,14 +407,14 @@ pre {
     padding: 2em 2.5% 2em 2.5%;
   }
   
-  .guide .pattern .display, 
-  .guide .pattern .panels {
+  .guide .guidepattern .display, 
+  .guide .guidepattern .panels {
     width: 48%;
     float: left;
     margin-top: 0;
   }
   
-  .guide .pattern .panels {
+  .guide .guidepattern .panels {
     margin-left: 4%;
   }
   
@@ -467,7 +468,7 @@ pre {
 }
 
 .hljs {
-  background-color: $charcoal !important;
+  background-color: #101010 !important;
   font-size: 1.1em;
   padding: 1em !important;
   max-height: 17em;
@@ -477,7 +478,7 @@ pre {
   }
   &::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    border: 0.2em solid $charcoal;
+    border: 0.2em solid #101010;
     background-color: rgba(255,255,255,.7);
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,.5);
   }
@@ -534,8 +535,8 @@ pre {
 
 .js-tabs .js-tab-ui [aria-selected=true] {
 	color: #fff;
-	background-color: $charcoal;
-	border: 0.1em solid $charcoal;
+	background-color: #101010;
+	border: 0.1em solid #101010;
 	&:focus {
     border: 0.1em solid #E1BC29;
   }

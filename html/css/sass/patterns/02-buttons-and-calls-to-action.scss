@@ -4,10 +4,10 @@
 /* Buttons / CTAs */
 
 .cta {
-  background-color: $mid-aqua;
+  background-color: $mid;
   color: #fff;
-  border-bottom: 0.2em solid darken($mid-aqua,10%);
-  border-top: 0.1em solid lighten($aqua,15%);
+  border-bottom: 0.2em solid darken($mid,10%);
+  border-top: 0.1em solid lighten($light,15%);
   display: inline-block;
   padding: 0.6em 1.2em;
   font-weight: 500;
@@ -18,7 +18,7 @@
   }
   &:hover {
     text-decoration: underline;
-    background-color: lighten($mid-aqua,5%);
+    background-color: lighten($mid,5%);
   }
 }
 
@@ -42,12 +42,12 @@ input[type="submit"] {
 }
 
 .cta--charcoal {
-  background-color: $charcoal;
-  border-bottom: 0.2em solid darken($shadow,15%);
-  border-top: 0.1em solid lighten($shadow,30%);
+  background-color: $dark-text;
+  border-bottom: 0.2em solid darken($dark,15%);
+  border-top: 0.1em solid lighten($dark,30%);
   &:hover {
     text-decoration: underline;
-    background-color: lighten($charcoal,18%);
+    background-color: lighten($dark-text,18%);
   }
 }
 
@@ -73,23 +73,23 @@ input[type="submit"] {
 
 .cta--white {
   background-color: $white;
-  color: $charcoal;
-  border-bottom: 0.2em solid $shadow;
-  border-top: 0.1em solid lighten($grey,45%);
+  color: $dark-text;
+  border-bottom: 0.2em solid $dark;
+  border-top: 0.1em solid lighten($light-pastel,45%);
   &:hover {
     text-decoration: underline;
-    background-color: lighten($aqua,50%);
+    background-color: lighten($light,50%);
   }
 }
 
 .cta--disabled {
-  background-color: $grey;
-  color: darken($shadow,10%);
-  border-bottom: 0.2em solid $shadow;
-  border-top: 0.1em solid lighten($grey,5%);
+  background-color: $light-pastel;
+  color: darken($dark,10%);
+  border-bottom: 0.2em solid $dark;
+  border-top: 0.1em solid lighten($light-pastel,5%);
   cursor: not-allowed;
   &:hover {
-    background-color: $grey;
+    background-color: $light-pastel;
     cursor: not-allowed;
     text-decoration: none;
   }

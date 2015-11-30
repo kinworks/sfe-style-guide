@@ -62,9 +62,9 @@ tr {
   margin: 0 0 1.5em 0;
   width: 100%;
   font-size: 1.1em;
-  background-color: lighten($grey,10%);
-  border-top: 0.2em solid $dark-aqua;
-  border-bottom: 0.2em solid $grey;
+  background-color: lighten($light-pastel,10%);
+  border-top: 0.2em solid $dark;
+  border-bottom: 0.2em solid $light-pastel;
   padding: 1em;
 }
 
@@ -83,7 +83,7 @@ by side rather than stacked */
     margin: 0 0 2em 0;
     border-style: none;
     border-top-width: 0;
-    border-bottom: 0.2em solid $grey;
+    border-bottom: 0.2em solid $light-pastel;
   }
   
   /* Labeling
@@ -152,7 +152,7 @@ by side rather than stacked */
   /* Style table */
   
   thead tr{
-    background-color: $dark-aqua;
+    background-color: $dark;
   }
   
   thead tr th {
@@ -171,7 +171,7 @@ by side rather than stacked */
   }
   
   tbody tr:nth-child(odd) {
-    background-color: lighten($grey,20%);
+    background-color: lighten($light-pastel,20%);
   }
   
 } // end min 41em

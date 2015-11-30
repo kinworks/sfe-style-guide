@@ -36,6 +36,7 @@
 
 .nav-wrapper__list a {
    color: #fff;
+   font-weight: 300;
    border-bottom: 0.1em dotted #ccc;
    margin: 0;
    padding: 0;
@@ -169,6 +170,11 @@ iframe {
   margin-top: 0.5em;
 }
 
+.guidance strong,
+.guidance b {
+  font-weight: 600;
+}
+
 h1.guidance,
 h2.guidance {
   color: $dark-aqua;
@@ -183,7 +189,7 @@ h2.guidance {
 .pattern__back-to-top {
   display: inline-block;
   margin-bottom: 1em;
-  margin-left: 8%;
+  margin-left: 5%;
 }
 
 .pattern .pattern__back-to-top {

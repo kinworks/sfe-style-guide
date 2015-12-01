@@ -1,39 +1,45 @@
 .heading {
   font-weight: 600; //Semibold - see below
   font-style: normal;
+  color: $dark-text;
   margin: 0 0 1em 0;
 }
 
+.heading--mid {
+  color: $mid;
+}
+
 .heading__large {
-  font-size: 2em;
+  font-size: 2.3em;
 }
 
 .heading__medium {
-  font-size: 1.75em;
+  font-size: 1.9em;
 }
 
 .heading__small {
-  font-size: 1.5em;
+  font-size: 1.7em;
+}
+
+.heading__smallest {
+  font-size: 1.4em;
 }
 
 p,
 ul,
 ol,
 .text {
-  font-size: 1.1em;
-  line-height: 1.3em;
+  font-size: 1.15em;
+  line-height: 1.4em;
   font-style: normal;
   font-weight: 300;
+  color: $dark-text;
 }
 
 p,
 .text {
   margin-bottom: 1.3em;
   max-width: 34em;
-}
-
-.text__lead {
-  font-size: 1.3em;
 }
 
 .text__small {
@@ -56,14 +62,24 @@ a {
   text-decoration: none;
 }
 
-.link--dark-aqua {
-  color: $dark;
+.link--dark {
+  color: $dark-text;
   border-bottom: 0.1em dotted $dark;
 }
 
-.link--aqua {
+.link--mid {
+  color: $mid;
+  border-bottom: 0.1em dotted $mid;
+}
+
+.link--light {
   color: $light;
   border-bottom: 0.1em dotted $light;
+}
+
+.link--light-pastel {
+  color: $light-pastel;
+  border-bottom: 0.1em dotted $light-pastel;
 }
 
 .link--white {

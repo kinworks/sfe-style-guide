@@ -337,36 +337,41 @@ pre {
   padding-top: 3em;
 }
 
-.bg-grey,
-.bg-charcoal,
-.bg-aqua {
+.bg-light-pastel,
+.bg-dark,
+.bg-mid,
+.bg-light {
   padding: 1em;
 }
 
-.bg-grey {
+.bg-light-pastel {
   background-color: $light-pastel;
 }
 
-.bg-charcoal {
-  background-color: $dark-text;
+.bg-dark {
+  background-color: $dark;
 }
 
-.bg-aqua {
+.bg-mid {
   background-color: $mid;
+}
+
+.bg-light {
+  background-color: $light;
 }
 
 .pattern-buttons-and-calls-to-action h2 {
   margin-bottom: 1em;
 }
 
-.pattern-buttons-and-calls-to-action .bg-grey,
-.pattern-buttons-and-calls-to-action .bg-charcoal,
-.pattern-buttons-and-calls-to-action .bg-aqua { 
+.pattern-buttons-and-calls-to-action .bg-light-pastel,
+.pattern-buttons-and-calls-to-action .bg-dark,
+.pattern-buttons-and-calls-to-action .bg-light { 
   margin-top: 2em;
   padding: 1em 1em 0 1em
 }
 
-.pattern-buttons-and-calls-to-action .bg-aqua {
+.pattern-buttons-and-calls-to-action .bg-light {
   margin-bottom: 2em;
 }
 

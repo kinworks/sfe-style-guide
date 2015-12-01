@@ -407,29 +407,34 @@ body, .wf-loading body, .wf-inactive body {
 .heading {
   font-weight: 600;
   font-style: normal;
+  color: #002C44;
   margin: 0 0 1em 0; }
 
+.heading--mid {
+  color: #008EBE; }
+
 .heading__large {
-  font-size: 2em; }
+  font-size: 2.3em; }
 
 .heading__medium {
-  font-size: 1.75em; }
+  font-size: 1.9em; }
 
 .heading__small {
-  font-size: 1.5em; }
+  font-size: 1.7em; }
+
+.heading__smallest {
+  font-size: 1.4em; }
 
 p, ul, ol, .text {
-  font-size: 1.1em;
-  line-height: 1.3em;
+  font-size: 1.15em;
+  line-height: 1.4em;
   font-style: normal;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #002C44; }
 
 p, .text {
   margin-bottom: 1.3em;
   max-width: 34em; }
-
-.text__lead {
-  font-size: 1.3em; }
 
 .text__small {
   font-size: 1em; }
@@ -445,13 +450,21 @@ a {
   border-bottom: 0.1em dotted #008EBE;
   text-decoration: none; }
 
-.link--dark-aqua {
-  color: #003552;
+.link--dark {
+  color: #002C44;
   border-bottom: 0.1em dotted #003552; }
 
-.link--aqua {
+.link--mid {
+  color: #008EBE;
+  border-bottom: 0.1em dotted #008EBE; }
+
+.link--light {
   color: #52CEF4;
   border-bottom: 0.1em dotted #52CEF4; }
+
+.link--light-pastel {
+  color: #C0E6F3;
+  border-bottom: 0.1em dotted #C0E6F3; }
 
 .link--white {
   color: #ffffff;
@@ -743,26 +756,29 @@ pre {
 .hierarchy .panels {
   padding-top: 3em; }
 
-.bg-grey, .bg-charcoal, .bg-aqua {
+.bg-light-pastel, .bg-dark, .bg-mid, .bg-light {
   padding: 1em; }
 
-.bg-grey {
+.bg-light-pastel {
   background-color: #C0E6F3; }
 
-.bg-charcoal {
-  background-color: #002C44; }
+.bg-dark {
+  background-color: #003552; }
 
-.bg-aqua {
+.bg-mid {
   background-color: #008EBE; }
+
+.bg-light {
+  background-color: #52CEF4; }
 
 .pattern-buttons-and-calls-to-action h2 {
   margin-bottom: 1em; }
 
-.pattern-buttons-and-calls-to-action .bg-grey, .pattern-buttons-and-calls-to-action .bg-charcoal, .pattern-buttons-and-calls-to-action .bg-aqua {
+.pattern-buttons-and-calls-to-action .bg-light-pastel, .pattern-buttons-and-calls-to-action .bg-dark, .pattern-buttons-and-calls-to-action .bg-light {
   margin-top: 2em;
   padding: 1em 1em 0 1em; }
 
-.pattern-buttons-and-calls-to-action .bg-aqua {
+.pattern-buttons-and-calls-to-action .bg-light {
   margin-bottom: 2em; }
 
 .pattern-buttons-and-calls-to-action button.cta, .pattern-buttons-and-calls-to-action input.cta {

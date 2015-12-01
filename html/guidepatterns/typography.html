@@ -3,32 +3,36 @@ here - you can set the sizes however you like,
 we just didn't want to define them against specific heading tags 
 (h1, h2 etc) when that might not make sense in all contexts -->
 
-<h1 class="heading heading__large">Large Heading (2em)</h1>
+<h1 class="heading heading__large">Large Heading (2.3em)</h1>
 
-<h2 class="heading heading__medium">Medium Heading (1.75em)</h2>
+<h2 class="heading heading__medium">Medium Heading (1.9em)</h2>
 
-<h3 class="heading heading__small">Small Heading (1.5em)</h3>
+<h2 class="heading heading__medium heading--mid">Alternative Colour [.heading--mid] </h2>
 
-<p class="text text__lead text--aqua">
-This is a lead (or lede), a paragraph in literature that is the opening paragraph of an article, essay, news story or book chapter. It usually occurs together with the headline or title. It precedes the main body of the content. It's set in 1.3em URW Franklin Gothic loaded in from Typekit, in 400 weight. We're using $mid for this text, and never use $light for text on a $white background as it doesn't conform to accessibility requirements for colour contrast.
-</p> 
+<h3 class="heading heading__small">Small Heading (1.6em)</h3>
 
-<p>This is a text paragraph set in 1.1em URW Franklin Gothic loaded in from Typekit. The weight used in 'regular' text is 400. The weight used for <b>bold text</b> is 500. Speaking of formatting, the <i>italic style should probably be in here too.</i></p>
+<h3 class="heading heading__smallest">Smallest Heading (1.4em)</h3>
+
+<p>This is a text paragraph set in 1.15em Proxima Nova loaded in from Typekit. The weight used in 'normal' text is 300 (Proxima Nova Light). The weight used for <b>bold text</b> is 600 (Proxima Nova Semibold). Speaking of formatting, the <i>italic style should probably be in here too.</i> There is no bold italic style intentionally.</p>
 
 <p>
   <a href="#">Links by default are $mid</a> but should be coloured according to their context;
 </p>
 
-<p class="bg-grey">
-  <a href="#" class="link--dark-aqua">Links against $light-pastel are $dark;</a>
+<p class="bg-dark">
+  <a href="#" class="link--white">Links against $dark are $white;</a>
 </p>
 
-<p class="bg-charcoal">
-  <a href="#" class="link--aqua">Links against $dark-text are $light;</a>
+<p class="bg-mid">
+  <a href="#" class="link--white">Links against $mid are $white;</a>
 </p>
 
-<p class="bg-aqua">
-  <a href="#" class="link--white">Links against $mid are $white.</a>
+<p class="bg-light">
+  <a href="#" class="link--dark">Links against $light are $dark-text.</a>
+</p>
+
+<p class="bg-light-pastel">
+  <a href="#" class="link--dark">Links against $light-pastel are $dark-text;</a>
 </p>
 
 <p class="text__small">

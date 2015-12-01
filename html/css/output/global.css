@@ -575,6 +575,9 @@ font-family: "proxima-nova";
     .guide .guidepattern {
       padding: 2em 5% 1.5em 5%; } }
 
+.guide .guidepattern.elements-heading {
+  border-bottom: 0.1em #C0E6F3 solid; }
+
 .guide .guidepattern.outside {
   margin: 0;
   padding: 0;

@@ -52,22 +52,22 @@ input[type="submit"] {
 }
 
 .cta--blue {
-  background-color: $blue;
-  border-bottom: 0.2em solid darken($blue,10%);
-  border-top: 0.1em solid lighten($blue,25%);
+  background-color: $contrast-alt;
+  border-bottom: 0.2em solid darken($contrast-alt,10%);
+  border-top: 0.1em solid lighten($contrast-alt,25%);
   &:hover {
     text-decoration: underline;
-    background-color: lighten($blue,10%);
+    background-color: lighten($contrast-alt,10%);
   }
 }
 
 .cta--purple {
-  background-color: $purple;
-  border-bottom: 0.2em solid darken($purple,12%);
-  border-top: 0.1em solid lighten($purple,25%);
+  background-color: $contrast;
+  border-bottom: 0.2em solid darken($contrast,12%);
+  border-top: 0.1em solid lighten($contrast,25%);
   &:hover {
     text-decoration: underline;
-    background-color: lighten($purple,8%);
+    background-color: lighten($contrast,8%);
   }
 }
 

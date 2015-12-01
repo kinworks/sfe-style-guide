@@ -1,7 +1,10 @@
 @charset "UTF-8";
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 /* Buttons / CTAs */
 .cta {
@@ -45,20 +48,20 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     background-color: #0067a0; }
 
 .cta--blue {
-  background-color: #085FB1;
-  border-bottom: 0.2em solid #064580;
-  border-top: 0.1em solid #429ff6; }
+  background-color: #00A659;
+  border-bottom: 0.2em solid #00733e;
+  border-top: 0.1em solid #26ff9b; }
   .cta--blue:hover {
     text-decoration: underline;
-    background-color: #0a79e2; }
+    background-color: #00d974; }
 
 .cta--purple {
-  background-color: #612B8F;
-  border-bottom: 0.2em solid #411d60;
-  border-top: 0.1em solid #a168d2; }
+  background-color: #dc6f00;
+  border-bottom: 0.2em solid #9f5000;
+  border-top: 0.1em solid #ffae5d; }
   .cta--purple:hover {
     text-decoration: underline;
-    background-color: #7634ae; }
+    background-color: #ff8406; }
 
 .cta--white {
   background-color: #ffffff;

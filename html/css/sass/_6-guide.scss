@@ -42,6 +42,12 @@
    padding: 0;
 }
 
+.fullwidth {
+  float: left;
+  display: block;
+  width: 25em;
+}
+
 // Body
 
 .body-wrapper {
@@ -272,12 +278,12 @@ pre {
   background-color: $dark;
 }
 
-.swatches span.purple {
-  background-color: $purple;
+.swatches span.contrast {
+  background-color: $contrast;
 }
 
-.swatches span.blue {
-  background-color: $blue;
+.swatches span.contrast-alt {
+  background-color: $contrast-alt;
 }
 
 .swatches span.feedback {

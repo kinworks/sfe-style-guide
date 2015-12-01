@@ -1,10 +1,13 @@
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 .feedback {
-  background-color: #D9F2F9;
-  border-bottom: 0.2em solid #b6e6f3;
+  background-color: #bff8ed;
+  border-bottom: 0.2em solid #9af4e3;
   font-weight: 500;
   padding: 0.8em 1.4em;
   margin: 0 0 1.5em 0; }

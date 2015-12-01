@@ -390,7 +390,10 @@ p {
 
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 body, .wf-loading body, .wf-inactive body {
   font-family: Helvetica, Arial, sans-serif;
@@ -504,6 +507,11 @@ font-family: "proxima-nova";
   border-bottom: 0.1em dotted #ccc;
   margin: 0;
   padding: 0; }
+
+.fullwidth {
+  float: left;
+  display: block;
+  width: 25em; }
 
 @media only all and (min-width: 41em) {
   .body-wrapper {
@@ -689,17 +697,17 @@ pre {
 .swatches span.pattern {
   background-color: #003552; }
 
-.swatches span.purple {
-  background-color: #612B8F; }
+.swatches span.contrast {
+  background-color: #dc6f00; }
 
-.swatches span.blue {
-  background-color: #085FB1; }
+.swatches span.contrast-alt {
+  background-color: #00A659; }
 
 .swatches span.feedback {
-  background-color: #D9F2F9; }
+  background-color: #bff8ed; }
 
 .swatches span.error {
-  background-color: #fcc; }
+  background-color: #ffcdb3; }
 
 .swatches span.disabled {
   background-color: #ccc; }
@@ -898,7 +906,10 @@ pre {
 
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 .footer {
   background-color: #008EBE;
@@ -1025,7 +1036,10 @@ pre {
 
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 .header {
   background-color: #002C44;
@@ -1102,7 +1116,10 @@ pre {
 
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 /* Outside blocks
    Sometimes we'll want to add a heading or CTA outside
@@ -1293,7 +1310,10 @@ colour as the block, give the title text a little more breathing room vertically
 
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 /* Buttons / CTAs */
 .cta {
@@ -1337,20 +1357,20 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     background-color: #0067a0; }
 
 .cta--blue {
-  background-color: #085FB1;
-  border-bottom: 0.2em solid #064580;
-  border-top: 0.1em solid #429ff6; }
+  background-color: #00A659;
+  border-bottom: 0.2em solid #00733e;
+  border-top: 0.1em solid #26ff9b; }
   .cta--blue:hover {
     text-decoration: underline;
-    background-color: #0a79e2; }
+    background-color: #00d974; }
 
 .cta--purple {
-  background-color: #612B8F;
-  border-bottom: 0.2em solid #411d60;
-  border-top: 0.1em solid #a168d2; }
+  background-color: #dc6f00;
+  border-bottom: 0.2em solid #9f5000;
+  border-top: 0.1em solid #ffae5d; }
   .cta--purple:hover {
     text-decoration: underline;
-    background-color: #7634ae; }
+    background-color: #ff8406; }
 
 .cta--white {
   background-color: #ffffff;
@@ -1374,7 +1394,10 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 .quote {
   margin: 1.5em 0;
@@ -1455,7 +1478,10 @@ ol ul li:before {
 
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 /* Pagination */
 ol.pagination {
@@ -1518,7 +1544,10 @@ ol.pagination li {
 
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 /* Forms */
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], input[list], input[type="file"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="range"], input[type="search"], textarea, select {
@@ -1608,22 +1637,28 @@ select:-internal-list-box option:checked {
   and calls to action' section above */
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 .feedback {
-  background-color: #D9F2F9;
-  border-bottom: 0.2em solid #b6e6f3;
+  background-color: #bff8ed;
+  border-bottom: 0.2em solid #9af4e3;
   font-weight: 500;
   padding: 0.8em 1.4em;
   margin: 0 0 1.5em 0; }
 
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 .feedback--error {
-  background-color: #fcc;
-  border-bottom: 0.2em solid #ffb3b3; }
+  background-color: #ffcdb3;
+  border-bottom: 0.2em solid #ffbc9a; }
 
 html\:abbr, abbr {
   border-bottom: 0.1em dotted;
@@ -1631,7 +1666,10 @@ html\:abbr, abbr {
 
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 .image {
   display: inline-block;
@@ -1655,7 +1693,10 @@ html\:abbr, abbr {
 /* No styles required! */
 .pattern {
   background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent); }
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 /* /// Responsive Tables */
 /* make each table separate from other ones */

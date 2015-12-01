@@ -325,12 +325,12 @@
                   <h2 class="guidance">Contrast / Feedback</h2>
                   <ul>
                     <li>
-                      <span class="purple"><!--color fill--></span>
-                      <b>$purple</b>
+                      <span class="contrast"><!--color fill--></span>
+                      <b>$contrast</b>
                     </li>
                     <li>
-                      <span class="blue"><!--color fill--></span>
-                      <b>$blue</b>
+                      <span class="contrast-alt"><!--color fill--></span>
+                      <b>$contrast-alt</b>
                     </li>
                     <li>
                       <span class="feedback"><!--color fill--></span>
@@ -344,7 +344,7 @@
                       <span class="disabled"><!--color fill--></span>
                       <b>$disabled</b>
                     </li>
-                    <p class="guidance">
+                    <p class="guidance fullwidth">
                       <i>See also $disabled-text.</i>
                     </p>
                   </ul>

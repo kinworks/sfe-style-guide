@@ -4,7 +4,7 @@
 /* Buttons / CTAs */
 
 .cta {
-  background-color: $mid;
+  background-color: $dark;
   color: #fff;
   border-bottom: 0.2em solid darken($mid,10%);
   border-top: 0.1em solid lighten($light,15%);
@@ -41,17 +41,17 @@ input[type="submit"] {
   height: 3em;
 }
 
-.cta--charcoal {
-  background-color: $dark-text;
-  border-bottom: 0.2em solid darken($dark,15%);
-  border-top: 0.1em solid lighten($dark,30%);
+.cta--mid {
+  background-color: $mid;
+  border-bottom: 0.2em solid darken($mid,15%);
+  border-top: 0.1em solid lighten($mid,30%);
   &:hover {
     text-decoration: underline;
-    background-color: lighten($dark-text,18%);
+    background-color: lighten($mid,18%);
   }
 }
 
-.cta--blue {
+.cta--contrast-alt {
   background-color: $contrast-alt;
   border-bottom: 0.2em solid darken($contrast-alt,10%);
   border-top: 0.1em solid lighten($contrast-alt,25%);
@@ -61,7 +61,7 @@ input[type="submit"] {
   }
 }
 
-.cta--purple {
+.cta--contrast {
   background-color: $contrast;
   border-bottom: 0.2em solid darken($contrast,12%);
   border-top: 0.1em solid lighten($contrast,25%);

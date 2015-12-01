@@ -8,7 +8,7 @@
 
 /* Buttons / CTAs */
 .cta {
-  background-color: #008EBE;
+  background-color: #003552;
   color: #fff;
   border-bottom: 0.2em solid #00688b;
   border-top: 0.1em solid #9ae2f9;
@@ -39,27 +39,27 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   border-right: 0;
   height: 3em; }
 
-.cta--charcoal {
-  background-color: #002C44;
-  border-bottom: 0.2em solid #000405;
-  border-top: 0.1em solid #0098eb; }
-  .cta--charcoal:hover {
+.cta--mid {
+  background-color: #008EBE;
+  border-bottom: 0.2em solid #005572;
+  border-top: 0.1em solid #58d5ff; }
+  .cta--mid:hover {
     text-decoration: underline;
-    background-color: #0067a0; }
+    background-color: #1bc5ff; }
 
-.cta--blue {
+.cta--contrast-alt {
   background-color: #00A659;
   border-bottom: 0.2em solid #00733e;
   border-top: 0.1em solid #26ff9b; }
-  .cta--blue:hover {
+  .cta--contrast-alt:hover {
     text-decoration: underline;
     background-color: #00d974; }
 
-.cta--purple {
+.cta--contrast {
   background-color: #dc6f00;
   border-bottom: 0.2em solid #9f5000;
   border-top: 0.1em solid #ffae5d; }
-  .cta--purple:hover {
+  .cta--contrast:hover {
     text-decoration: underline;
     background-color: #ff8406; }
 

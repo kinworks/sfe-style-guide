@@ -6,76 +6,28 @@
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 .header {
-  background-color: #002C44;
+  background-color: #ffffff;
   width: 100%;
   margin: 0 0 1.5em 0;
-  text-align: center;
-  border-bottom: 0.2em solid #0086b4; }
+  text-align: center; }
 
-.header__contents {
-  width: 100%;
-  margin: 0 auto; }
+.header__part {
+  height: 10.375em;
+  background-repeat: no-repeat; }
 
-.header__title {
-  display: inline-block;
-  width: 100%;
-  background-color: #52CEF4;
-  text-align: center;
-  padding: 0.8em 1em 1em 1em;
-  border-bottom: 0.4em solid #008EBE;
-  border-top: 0.2em solid #82dcf7; }
+.header__part--brand {
+  background-position: left top; }
 
-.header__title .heading {
-  color: #ffffff;
-  margin: 0 auto;
-  line-height: 1.1em;
-  border-bottom: none; }
+.header__search-trigger {
+  background-color: #008EBE; }
 
-.header__logo {
-  display: inline-block;
-  width: 10.3125em;
-  height: 2.71875em;
-  background: url('../../assets/stp-logo.png');
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -ms-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  border-bottom: none;
-  margin: 1.2em 0 0.9em 0; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-    .header__logo {
-      background: url('../../assets/stp-logo@2x.png');
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      -ms-background-size: 100%;
-      -o-background-size: 100%;
-      background-size: 100%; } }
+.header__part--search {
+  background-position: right top; }
 
-@media only all and (min-width: 41em) {
-  .header {
-    padding: 1.7em 0 0 0; }
-  .header__contents {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 80em; }
-  .header__title {
-    float: left;
-    text-align: left;
-    width: auto;
-    padding: 1.65em 1.8em 1.45em 1.8em;
-    border-bottom: 0.2em solid #0083af; }
-  .header__logo {
-    float: right;
-    width: 13.75em;
-    height: 3.625em;
-    margin: 0.3em 0 0.9em 0; }
-  .header__trim {
-    display: inline-block;
-    float: left;
-    height: 0.5em;
-    width: 100%;
-    background-color: #6ad5f6;
-    border-top: 0.1em solid #9ae2f9; } }
+.header__part--brand .icon-sos-logo {
+  margin: 2em 8% 0 8%;
+  width: 84%;
+  height: 5.75em;
+  max-width: 17.8125em; }
 
 /*# sourceMappingURL=0-header.css.map */

@@ -526,6 +526,18 @@ font-family: "proxima-nova";
   display: block;
   width: 25em; }
 
+i {
+  display: inline-block;
+  background-size: 100%;
+  /* But despite its enduring popularity, Phark has drawbacks of its own: chiefly, a performance hit caused by the need to draw a giant 9999px box offscreen. (Yes, the browser really does this.)
+
+My friend Scott Kellum, design director at Treesaver, has now sent me this refactored code for hiding text, which I hereby christen the Kellum Method:*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* Really long strings of text will never flow into the container because they always flow away from the container.
+Performance is dramatically improved because a 9999px box is not drawn. Noticeably so in animations on the iPad 1. */ }
+
 @media only all and (min-width: 41em) {
   .body-wrapper {
     float: left;
@@ -546,6 +558,8 @@ font-family: "proxima-nova";
 .outside {
   display: block;
   margin: 0 auto 1.5em auto !important; }
+  .outside h1 {
+    line-height: 1.2em; }
 
 .outside .heading {
   width: auto;
@@ -1061,77 +1075,29 @@ pre {
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
 .header {
-  background-color: #002C44;
+  background-color: #ffffff;
   width: 100%;
   margin: 0 0 1.5em 0;
-  text-align: center;
-  border-bottom: 0.2em solid #0086b4; }
+  text-align: center; }
 
-.header__contents {
-  width: 100%;
-  margin: 0 auto; }
+.header__part {
+  height: 10.375em;
+  background-repeat: no-repeat; }
 
-.header__title {
-  display: inline-block;
-  width: 100%;
-  background-color: #52CEF4;
-  text-align: center;
-  padding: 0.8em 1em 1em 1em;
-  border-bottom: 0.4em solid #008EBE;
-  border-top: 0.2em solid #82dcf7; }
+.header__part--brand {
+  background-position: left top; }
 
-.header__title .heading {
-  color: #ffffff;
-  margin: 0 auto;
-  line-height: 1.1em;
-  border-bottom: none; }
+.header__search-trigger {
+  background-color: #008EBE; }
 
-.header__logo {
-  display: inline-block;
-  width: 10.3125em;
-  height: 2.71875em;
-  background: url('../../assets/stp-logo.png');
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -ms-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  border-bottom: none;
-  margin: 1.2em 0 0.9em 0; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-    .header__logo {
-      background: url('../../assets/stp-logo@2x.png');
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      -ms-background-size: 100%;
-      -o-background-size: 100%;
-      background-size: 100%; } }
+.header__part--search {
+  background-position: right top; }
 
-@media only all and (min-width: 41em) {
-  .header {
-    padding: 1.7em 0 0 0; }
-  .header__contents {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 80em; }
-  .header__title {
-    float: left;
-    text-align: left;
-    width: auto;
-    padding: 1.65em 1.8em 1.45em 1.8em;
-    border-bottom: 0.2em solid #0083af; }
-  .header__logo {
-    float: right;
-    width: 13.75em;
-    height: 3.625em;
-    margin: 0.3em 0 0.9em 0; }
-  .header__trim {
-    display: inline-block;
-    float: left;
-    height: 0.5em;
-    width: 100%;
-    background-color: #6ad5f6;
-    border-top: 0.1em solid #9ae2f9; } }
+.header__part--brand .icon-sos-logo {
+  margin: 2em 8% 0 8%;
+  width: 84%;
+  height: 5.75em;
+  max-width: 17.8125em; }
 
 .pattern {
   background: url(../../assets/pattern.png);
@@ -1336,7 +1302,7 @@ colour as the block, give the title text a little more breathing room vertically
 
 /* Buttons / CTAs */
 .cta {
-  background-color: #008EBE;
+  background-color: #003552;
   color: #fff;
   border-bottom: 0.2em solid #00688b;
   border-top: 0.1em solid #9ae2f9;
@@ -1367,27 +1333,27 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   border-right: 0;
   height: 3em; }
 
-.cta--charcoal {
-  background-color: #002C44;
-  border-bottom: 0.2em solid #000405;
-  border-top: 0.1em solid #0098eb; }
-  .cta--charcoal:hover {
+.cta--mid {
+  background-color: #008EBE;
+  border-bottom: 0.2em solid #005572;
+  border-top: 0.1em solid #58d5ff; }
+  .cta--mid:hover {
     text-decoration: underline;
-    background-color: #0067a0; }
+    background-color: #1bc5ff; }
 
-.cta--blue {
+.cta--contrast-alt {
   background-color: #00A659;
   border-bottom: 0.2em solid #00733e;
   border-top: 0.1em solid #26ff9b; }
-  .cta--blue:hover {
+  .cta--contrast-alt:hover {
     text-decoration: underline;
     background-color: #00d974; }
 
-.cta--purple {
+.cta--contrast {
   background-color: #dc6f00;
   border-bottom: 0.2em solid #9f5000;
   border-top: 0.1em solid #ffae5d; }
-  .cta--purple:hover {
+  .cta--contrast:hover {
     text-decoration: underline;
     background-color: #ff8406; }
 

@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>SFE Style Guide</title>
     <script>
       window.STYLE_GUIDE = {
@@ -66,6 +66,14 @@
     </style>
     <?php endif; ?>
     
+    <script>
+			/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var a=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];a.rel="stylesheet",a.href=e[o&&n?0:o?1:2],a.media="only x",r.parentNode.insertBefore(a,r),setTimeout(function(){a.media="all"})},a=new t.Image;a.onerror=function(){o(!1)},a.onload=function(){o(1===a.width&&1===a.height)},a.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+
+			grunticon(["assets-icons/output/icons.data.svg.css", "assets-icons/output/icons.data.png.css", "assets-icons/output/icons.fallback.css"]);
+		</script>
+		<noscript><link href="assets-icons/output/icons.fallback.css" rel="stylesheet"></noscript>
+    
   </head>
   <?php include 'functions.php'; ?>
   <body>
@@ -119,13 +127,21 @@
     </div>
     <div class="body-wrapper">
       
+      <header class="header">
+        <div class="header__part header__part--brand icon-header-left">
+          <i class="icon-sos-logo">Scotland on Screen</i>
+        </div>
+        <div class="header__search-trigger">Search</div>
+        <div class="header__part header__part--search icon-header-right"></div>
+      </header>
+      
       <div class="outside">
         <h1>Scottish Film Education: Development Guide</h1>
         
         <h2 class="heading">Release <span class="lowercase"><?php echo $tagname; ?></span></h2>
         <span class="versioninfo">
             <!--NB this is kind of a hack - it assumes the latest version that has been pushed is the version you're looking at - which should be true, but :) -->
-            <a class="cta cta--blue" href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">
+            <a class="cta cta--contrast" href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">
               View on GitHub</a>
         </span>
       </div>
@@ -345,7 +361,7 @@
                       <b>$disabled</b>
                     </li>
                     <p class="guidance fullwidth">
-                      <i>See also $disabled-text.</i>
+                      <em>See also $disabled-text.</em>
                     </p>
                   </ul>
                 </div>

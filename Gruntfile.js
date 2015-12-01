@@ -65,14 +65,14 @@ module.exports = function(grunt) {
       }
     },
     
-    /* grunticon: {
+    grunticon: {
 	  icons: {
 	    files: [{
               // required config
               expand: true,
-              cwd: 'html/sites/all/themes/sos/icons/src',
+              cwd: 'html/assets-icons/src',
               src: ['*.svg', '*.png'],
-              dest: "html/sites/all/themes/sos/icons/output"
+              dest: "html/assets-icons/output"
              }],
 
     options: {
@@ -115,38 +115,14 @@ module.exports = function(grunt) {
         dist: {
             files: [{
                 expand: true,
-                cwd: 'html/sites/all/themes/sos/icons/raw/',
+                cwd: 'html/assets-icons/raw',
                 src: ['*.svg'],
-                dest: "html/sites/all/themes/sos/icons/src/"
+                dest: "html/assets-icons/src"
             }]
         }
     },
 
-    remove: {
-      options: {
-        trace: true
-      },
-      fileList: ['html/sites/all/themes/sos/js/concatenated.js'],
-      //dirList: ['path_to_dir_1', 'path_to_dir2/']
-    },
-    
-    concat: {
-      options: {
-        separator: ';\n'
-      },
-      build: {
-        src: ['html/sites/all/themes/sos/js/source/*.js'],
-        dest: 'html/sites/all/themes/sos/js/concatenated.js',
-      }
-    },
-    uglify: {
-      dist: {
-        files: {
-          'html/sites/all/themes/sos/js/site.min.js': ['html/sites/all/themes/sos/js/concatenated.js']
-        }
-      }
-    },
-    */
+
 
     watch: {
       sass: {
@@ -156,31 +132,21 @@ module.exports = function(grunt) {
       sass_globbing: {
         files: 'html/css/sass/patterns/*.scss',
         tasks: ['sass_globbing'],
-      }
-      /*
+      },
       svgmin: {
-        files: 'html/sites/all/themes/sos/icons/raw/*',
+        files: 'html/assets-icons/raw/*.svg',
         tasks: ['svgmin'],
       },
       grunticon: {
-        files: 'html/sites/all/themes/sos/icons/src/*',
+        files: 'html/assets-icons/src/*.svg',
         tasks: ['grunticon'],
       },
-      jssource: {
-        files: 'html/sites/all/themes/sos/js/source/*.js',
-        tasks: ['concat'],
-      },
-      jsoutput: {
-        files: 'html/sites/all/themes/sos/js/concatenated.js',
-        tasks: ['uglify'],
-      }
-      */
     },
 
   });
 
 
   // Default task.
-  grunt.registerTask('default', [/* 'svgmin', 'grunticon','concat', 'uglify', */ 'sass', 'sass_globbing' ]);
+  grunt.registerTask('default', ['svgmin', 'grunticon', 'sass', 'sass_globbing' ]);
 
 };

@@ -69,7 +69,7 @@ Performance is dramatically improved because a 9999px box is not drawn. Noticeab
 
 .body-wrapper {
   @media only all and (min-width: 41em) {
-    float: left;
+    //float: left;
     width: 75vw;
     margin-left: 25vw;
   }

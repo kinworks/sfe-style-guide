@@ -61,10 +61,19 @@
     
     <?php if($_GET['mode'] == 'test'): ?>
     <style>
-      .nav-wrapper {display: none;}
+      .nav-wrapper.guidenav-collapse {display: none !important;}
       .body-wrapper {width: 100% !important; margin-left: 0;}
     </style>
     <?php endif; ?>
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    
+    <script src="js/tappy.js"></script>
+    
+    <!-- Viljamis' responsive nav - http://responsivenav.com -->
+    <script src="js/responsive-nav.js"></script>
+    
+    <script src="js/site.js"></script>
     
     <script>
 			/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
@@ -77,8 +86,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
   </head>
   <?php include 'functions.php'; ?>
   <body>
-    <div class="nav-wrapper">
-      <div class="nav-wrapper__trigger" id="nav"></div>
+    <div class="nav-wrapper__trigger" id="guidenav-trigger">Show/Hide Guidenav</div>
+    <div class="nav-wrapper guidenav-collapse">
       <ul class="nav-wrapper__list">
         <li class="test-mode">
           <a href="/?mode=test">Hide Nav (Test mode)</a>
@@ -127,13 +136,43 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     </div>
     <div class="body-wrapper">
       
-      <header class="header">
+      <header class="header clearfix">
         <div class="header__part header__part--brand icon-header-left">
           <i class="icon-sos-logo">Scotland on Screen</i>
         </div>
-        <div class="header__search-trigger">Search</div>
-        <div class="header__part header__part--search icon-header-right"></div>
+        <div class="header__search-trigger clearfix" id="search-trigger">
+          <i class="icon-search"></i>
+          <span data-text-swap="Close Search" data-text-original="Search...">Search...</span>
+          <i class="icon-arrow-down">Open this section</i>
+        </div>
+        <div class="header__part header__part--search icon-header-right search-collapse">
+          <div class="search__container clearfix">  
+            <div class="form-item-search-block-form">
+              <label for="edit-search-block-form--2">Search:</label>
+              <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" maxlength="128" class="form-text">
+            </div>
+            <div class="form-actions" id="edit-actions">
+              <input type="submit" id="edit-submit" name="op" value="Go &raquo;" class="form-submit">
+            </div>
+            <div class="search__advanced clearfix">
+              <a href="#">Advanced Search &raquo;</a>
+            </div>
+          </div>
+        </div>
       </header>
+      
+      <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
+        <i class="icon-menu"></i>
+        <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
+        <i class="icon-arrow-down">Open this section</i>
+      </div>  
+      <nav class="nav clearfix nav-collapse">
+        <ul>
+          <li>TOTES</li>
+          <li>A</li>
+          <li>NAVMENU</li>
+        </ul>
+      </nav>  
       
       <div class="outside">
         <h1>Scottish Film Education: Development Guide</h1>
@@ -767,6 +806,26 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         </div>
       </footer>
     </div><!--/body-wrapper-->
+  <script>
+      /* Fix this later
+        var guidenav = responsiveNav(".guidenav-collapse", {
+        customToggle: "guidenav-trigger", // Selector: Specify the ID of a custom toggle
+        navClass: "guidenav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        animate: true, // Boolean: Use CSS3 transitions, true or false
+        transition: 284, // Integer: Speed of the transition, in milliseconds
+      });
+      */
+      
+      var search = responsiveNav(".search-collapse", {
+        customToggle: "search-trigger", // Selector: Specify the ID of a custom toggle
+        navClass: "search-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      });
+      
+      var nav = responsiveNav(".nav-collapse", {
+        customToggle: "nav-trigger", // Selector: Specify the ID of a custom toggle
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      });  
+  </script>
   <script src="js/tabs.js"></script>
   </body>
 </html>

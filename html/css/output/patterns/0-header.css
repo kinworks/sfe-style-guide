@@ -41,6 +41,7 @@
 
 .js .header__search-trigger, .js .nav__trigger {
   display: block;
+  width: 100%;
   padding: 0 8% 0 8%; }
 
 .header__search-trigger {
@@ -133,7 +134,9 @@
   .header__part--search {
     width: 50%;
     float: left; }
-  .search-collapse {
-    margin-top: 0; } }
+  .js .nav__trigger {
+    display: none; }
+  .nav-collapse {
+    display: block; } }
 
 /*# sourceMappingURL=0-header.css.map */

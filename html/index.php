@@ -160,9 +160,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               <a href="#">Advanced Search &raquo;</a>
             </div>
           </div>
-        </div>
+        </div> 
+      </header>
       
-        <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
+      <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
           <div class="trigger__container">
             <i class="icon-menu"></i>
             <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
@@ -175,8 +176,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             <li>A</li>
             <li>NAVMENU</li>
           </ul>
-        </nav>  
-      </header>
+        </nav> 
       
       <div class="outside">
         <h1>Scottish Film Education: Development Guide</h1>

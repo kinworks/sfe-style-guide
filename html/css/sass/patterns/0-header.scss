@@ -52,6 +52,7 @@
 .js .header__search-trigger,
 .js .nav__trigger {
   display: block;
+  width: 100%;
   padding: 0 8% 0 8%;
 }
 
@@ -175,9 +176,13 @@
     float: left;
   }
   
-  // Undo the correction from the last breakpoint
-  .search-collapse {
-    margin-top: 0;
+  // Navigation
+  .js .nav__trigger {
+    display: none;
   }
   
+  .nav-collapse {
+    display: block;
+  }
+    
 } //end min 41em

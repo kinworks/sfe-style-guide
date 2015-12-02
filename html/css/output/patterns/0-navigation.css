@@ -8,5 +8,7 @@
 .main-nav li {
   background-color: #003552;
   margin-bottom: 0; }
+  .main-nav li:nth-child(2n) {
+    background-color: #002a42; }
 
 /*# sourceMappingURL=0-navigation.css.map */

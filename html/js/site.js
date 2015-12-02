@@ -23,6 +23,7 @@ jQuery(function($) {
   var $searchnavicon = $('#search-trigger .icon-search');
   var $searchnavtext = $('#search-trigger span');
   var $searchnavarrow = $('#search-trigger .icon-arrow-down');
+  var $navlink = $('.nav__trigger');
   $searchnavlink.bind("tap", function(e) {
     $searchnavicon.toggleClass('icon-search').toggleClass('icon-close');
     $searchnavarrow.toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');

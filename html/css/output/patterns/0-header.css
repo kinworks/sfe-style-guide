@@ -25,18 +25,23 @@
 
 .header__search-trigger, .nav__trigger {
   display: none; }
+  .header__search-trigger .trigger__container, .nav__trigger .trigger__container {
+    width: 100%;
+    max-width: 17.7em;
+    margin: 0 auto 0 auto; }
   .header__search-trigger .icon-arrow-down, .header__search-trigger .icon-arrow-up, .nav__trigger .icon-arrow-down, .nav__trigger .icon-arrow-up {
     width: 0.625em;
-    margin: 1.375em 5% 0 0;
+    margin: 1.375em 0 0 0;
     float: right; }
   .header__search-trigger .icon-close, .nav__trigger .icon-close {
     width: 1.25em;
     height: 1.3125em;
-    margin: 1.03125em 0.85em 1.03125em 5%;
+    margin: 1.03125em 0.85em 1.03125em 0;
     float: left; }
 
 .js .header__search-trigger, .js .nav__trigger {
-  display: block; }
+  display: block;
+  padding: 0 8% 0 8%; }
 
 .header__search-trigger {
   background-color: #008EBE;
@@ -44,7 +49,7 @@
   .header__search-trigger .icon-search {
     width: 1.6875em;
     height: 1.75em;
-    margin: 0.8125em 0.6em 0.8125em 5%;
+    margin: 0.8125em 0.6em 0.8125em 0;
     float: left; }
   .header__search-trigger span {
     font-size: 1.3em;
@@ -58,7 +63,7 @@
   padding: 1.8em 5% 0 5%; }
   .header__part--search .search__container {
     width: 100%;
-    max-width: 20.323875em;
+    max-width: 20em;
     margin: 0 auto 0 auto;
     text-align: left; }
   .header__part--search .form-item-search-block-form {
@@ -92,7 +97,7 @@
     border: 0.135em solid #003552;
     vertical-align: -2.22em;
     max-width: 4.55625em;
-    height: 2.13em; }
+    height: 2.14em; }
     .header__part--search input[type="submit"]:focus, .header__part--search input[type="submit"]:hover {
       background-color: #008EBE; }
   .header__part--search .search__advanced {
@@ -110,7 +115,7 @@
   .nav__trigger .icon-menu {
     width: 1.5em;
     height: 1.3125em;
-    margin: 1.025em 0.6em 1.025em 5%;
+    margin: 1.025em 0.6em 1.025em 0;
     float: left; }
   .nav__trigger span {
     font-size: 1.3em;
@@ -118,5 +123,17 @@
     margin: 0.7em 0 0 0;
     color: #ffffff;
     float: left; }
+
+@media only all and (min-width: 41em) {
+  .js .header__search-trigger, .no-js .header__search-trigger {
+    display: none; }
+  .header__part--brand {
+    width: 50%;
+    float: left; }
+  .header__part--search {
+    width: 50%;
+    float: left; }
+  .search-collapse {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=0-header.css.map */

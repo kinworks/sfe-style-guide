@@ -141,9 +141,11 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           <i class="icon-sos-logo">Scotland on Screen</i>
         </div>
         <div class="header__search-trigger clearfix" id="search-trigger">
-          <i class="icon-search"></i>
-          <span data-text-swap="Close Search" data-text-original="Search...">Search...</span>
-          <i class="icon-arrow-down">Open this section</i>
+          <div class="trigger__container">  
+            <i class="icon-search"></i>
+            <span data-text-swap="Close Search" data-text-original="Search...">Search...</span>
+            <i class="icon-arrow-down">Open this section</i>
+          </div>
         </div>
         <div class="header__part header__part--search icon-header-right search-collapse">
           <div class="search__container clearfix">  
@@ -159,20 +161,22 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             </div>
           </div>
         </div>
-      </header>
       
-      <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
-        <i class="icon-menu"></i>
-        <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
-        <i class="icon-arrow-down">Open this section</i>
-      </div>  
-      <nav class="nav clearfix nav-collapse">
-        <ul>
-          <li>TOTES</li>
-          <li>A</li>
-          <li>NAVMENU</li>
-        </ul>
-      </nav>  
+        <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
+          <div class="trigger__container">
+            <i class="icon-menu"></i>
+            <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
+            <i class="icon-arrow-down">Open this section</i>
+          </div>
+        </div>  
+        <nav class="nav clearfix nav-collapse">
+          <ul>
+            <li>TOTES</li>
+            <li>A</li>
+            <li>NAVMENU</li>
+          </ul>
+        </nav>  
+      </header>
       
       <div class="outside">
         <h1>Scottish Film Education: Development Guide</h1>

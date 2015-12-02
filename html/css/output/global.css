@@ -973,6 +973,11 @@ pre {
 .js-tabs .js-panel__title {
   display: none; }
 
+@media only all and (min-width: 41em) {
+  .js .guidenav-collapse {
+    position: fixed !important;
+    clip: auto; } }
+
 .pattern {
   background: url(../../assets/pattern.png);
   background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
@@ -1201,7 +1206,7 @@ pre {
     font-size: 1.1em;
     outline: 0;
     border: 0.135em solid #003552;
-    vertical-align: -2.22em;
+    vertical-align: -2.23em;
     max-width: 4.55625em;
     height: 2.14em; }
     .header__part--search input[type="submit"]:focus, .header__part--search input[type="submit"]:hover {
@@ -1243,6 +1248,17 @@ pre {
     display: none; }
   .nav-collapse {
     display: block; } }
+
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.main-nav li {
+  background-color: #003552;
+  margin-bottom: 0; }
 
 .pattern {
   background: url(../../assets/pattern.png);

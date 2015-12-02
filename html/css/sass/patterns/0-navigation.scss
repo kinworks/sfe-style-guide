@@ -1,0 +1,7 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+.main-nav li {
+  background-color: $dark;
+  margin-bottom: 0;
+}

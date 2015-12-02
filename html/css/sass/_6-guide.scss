@@ -601,3 +601,10 @@ pre {
 .js-tabs .js-panel__title {
 	display: none;
 }
+
+@media only all and (min-width: 41em) {
+  .js .guidenav-collapse {
+    position: fixed !important;
+    clip: auto;
+  }
+}

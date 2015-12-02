@@ -136,34 +136,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     </div>
     <div class="body-wrapper">
       
-      <header class="header clearfix">
-        <div class="header__part header__part--brand icon-header-left">
-          <i class="icon-sos-logo">Scotland on Screen</i>
-        </div>
-        <div class="header__search-trigger clearfix" id="search-trigger">
-          <div class="trigger__container">  
-            <i class="icon-search"></i>
-            <span data-text-swap="Close Search" data-text-original="Search...">Search...</span>
-            <i class="icon-arrow-down">Open this section</i>
-          </div>
-        </div>
-        <div class="header__part header__part--search icon-header-right search-collapse">
-          <div class="search__container clearfix">  
-            <div class="form-item-search-block-form">
-              <label for="edit-search-block-form--2">Search:</label>
-              <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" maxlength="128" class="form-text">
-            </div>
-            <div class="form-actions" id="edit-actions">
-              <input type="submit" id="edit-submit" name="op" value="Go &raquo;" class="form-submit">
-            </div>
-            <div class="search__advanced clearfix">
-              <a href="#">Advanced Search &raquo;</a>
-            </div>
-          </div>
-        </div> 
-      </header>
-      
-      <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
+        <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
           <div class="trigger__container">
             <i class="icon-menu"></i>
             <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
@@ -171,12 +144,157 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           </div>
         </div>  
         <nav class="nav clearfix nav-collapse">
-          <ul>
-            <li>TOTES</li>
-            <li>A</li>
-            <li>NAVMENU</li>
-          </ul>
-        </nav> 
+          <ul class="main-nav clearfix">
+            <li class="current-current_page_item">
+              <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
+            </li>
+            <li class="parent clearfix">
+              <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="About Scotland on Screen">
+                About Scotland on Screen
+              </a>
+              <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: About">
+                <span>Pages</span>
+                <div>
+                  <i class="sectionexpander icon-nav-open"></i>
+                </div>
+              </a>
+              <ul class="sub-menu open">
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What Can I Do?">
+                    What Can I Do?
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Latest News &amp; Updates">
+                    Latest News &amp; Updates
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Request Login">
+                    Request Login
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Browse Films">Browse Films</a>
+            </li>
+            <li class="parent clearfix">
+              <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Resources">
+                Resources
+              </a>
+              <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Resources">
+                <span>Resource Types</span>
+                <div>
+                  <i class="sectionexpander icon-nav-open"></i>
+                </div>
+              </a>
+              <ul class="sub-menu open">
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Lesson Guides">
+                    Lesson Guides
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Video Tutorials">
+                    Video Tutorials
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Useful Links">
+                    Useful Links
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="parent clearfix">
+              <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Moving Image Education">
+                Moving Image Education
+              </a>
+              <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Moving Image Education">
+                <span>Pages</span>
+                <div>
+                  <i class="sectionexpander icon-nav-open"></i>
+                </div>
+              </a>
+              <ul class="sub-menu open">
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What Can I Do?">
+                    MIE
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Latest News &amp; Updates">
+                    PAGES
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Request Login">
+                    OF MANY
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What Can I Do?">
+                    MIE
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Latest News &amp; Updates">
+                    PAGES
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Request Login">
+                    OF MANY
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What Can I Do?">
+                    MIE
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Latest News &amp; Updates">
+                    PAGES
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Request Login">
+                    OF MANY
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What Can I Do?">
+                    MIE
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Latest News &amp; Updates">
+                    PAGES
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Request Login">
+                    OF MANY
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What Can I Do?">
+                    MIE
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Latest News &amp; Updates">
+                    PAGES
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Contact Us">Contact Us</a>
+            </li> 
+        </ul>
+        </nav>
       
       <div class="outside">
         <h1>Scottish Film Education: Development Guide</h1>
@@ -524,52 +642,54 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               </div>
           </div>
           
-    <?php // HEADER BLOCK PATTERN FOR EXTERNAL SITES ==================== ?>
+    <?php // HEADER BLOCK PATTERN ==================== ?>
       
           <div class="guidepattern" id="layout">
             <h1 class="guidance">Layout</h1>
           </div>
           <div class="guidepattern pattern-header">
         
-            <h2 class="guidance">Header Block (External Sites / Tools)</h2>
+            <h2 class="guidance">Header Block</h2>
             <p class="guidance">
-              This is the header block style to be used on sites external to — or on a subdomain of — the main STP site at scotlandstowns.org.
+              This is the header block style, currently depicting the header for Scotland on Screen. <a href="/?mode=test#layout">View i in test mode</a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
             </p>
             <p class="guidance">
-              The title heading links to the external site or tool, and the STP logo links to the main site, opening in a new window/tab.
+              There's a lot of tooling used in this heading example. All vector assets are produced in SVG, and passed into a Grunt workflow taking them through SVGMin and Grunticon, meaning all vector assets used on a given SFE website are from a single HTTP request except in browsers that cannot accept Base64-encoded stylesheets, in which case they get auto-generated PNG assets instead. The navigation for search only collapses showing the trigger button if JS successfully loads, and uses <a href="http://responsive-nav.com">Responsive-nav.js</a> for the collapse (the same library used for the core navigation).
             </p>
-            <p class="guidance">
-              For the purposes of this guide, the image asset required is switching to higher resolution PNG based on a media query. Our preferred method would actually be to use the SVG provided in the /assets folder and a PNG fallback, using Modernizr or similar. Either way, resolution independence for all vector-based visual assets is a requirement of any interface built for STP projects.
-            </p>
-            <br/>      
+            <br/>
+          </div>
+      </div>
+      <div class="styleguide container">          
             <header class="header clearfix">
-              <div class="header__contents">
-                <div class="header__title">
-                  <a href="#"><h1 class="heading heading__large">Site Title</h1></a>
-                </div>
-                <a class="header__logo" href="http://www.scotlandstowns.org" 
-                target="_blank" title="Visit Scotland's Towns Partnership"></a>
+              <div class="header__part header__part--brand icon-header-left">
+                <i class="icon-sos-logo">Scotland on Screen</i>
               </div>
-              <div class="header__trim"></div>
-            </header>
-        
-            <div class="display">
-            
-              <header class="header clearfix">
-                <div class="header__contents">
-                  <div class="header__title">
-                    <a href="#"><h1 class="heading heading__large">Site Title</h1></a>
-                  </div>
-                  <a class="header__logo" href="http://www.scotlandstowns.org" 
-                  target="_blank" title="Visit Scotland's Towns Partnership"></a>
+              <div class="header__search-trigger clearfix" id="search-trigger">
+                <div class="trigger__container">  
+                  <i class="icon-search"></i>
+                  <span data-text-swap="Close Search" data-text-original="Search...">Search...</span>
+                  <i class="icon-arrow-down">Open this section</i>
                 </div>
-                <div class="header__trim"></div>
-              </header>
-              
-              <iframe src="guidepatterns/mobileheader.html"></iframe>
-            
-            </div>
-            <div class="js-tab-ui panels">
+              </div>
+              <div class="header__part header__part--search icon-header-right search-collapse">
+                <div class="search__container clearfix">  
+                  <div class="form-item-search-block-form">
+                    <label for="edit-search-block-form--2">Search:</label>
+                    <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" maxlength="128" class="form-text">
+                  </div>
+                  <div class="form-actions" id="edit-actions">
+                    <input type="submit" id="edit-submit" name="op" value="Go &raquo;" class="form-submit">
+                  </div>
+                  <div class="search__advanced clearfix">
+                    <a href="#">Advanced Search &raquo;</a>
+                  </div>
+                </div>
+              </div> 
+            </header>
+      </div>
+      <div class="styleguide container"> 
+        <div class="guidepattern">  
+            <div class="js-tab-ui panels fullwidth">
                 <ul class="js-tabs-list" role="tablist">
                   <li role="tab" id="tab-header-markup" aria-controls="tab-header-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="header">Markup
                   </li>

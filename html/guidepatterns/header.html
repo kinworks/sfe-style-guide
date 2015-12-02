@@ -1,10 +1,32 @@
 <header class="header clearfix">
-  <div class="header__contents">
-    <div class="header__title">
-      <a href="#"><h1 class="heading heading__large">Site Title</h1></a>
-    </div>
-    <a class="header__logo" href="http://www.scotlandstowns.org" 
-    target="_blank" title="Visit Scotland's Towns Partnership"></a>
+
+  <div class="header__part header__part--brand icon-header-left">
+    <i class="icon-sos-logo">Scotland on Screen</i>
   </div>
-  <div class="header__trim"></div>
+  
+  <div class="header__search-trigger clearfix" id="search-trigger">
+    <div class="trigger__container">  
+      <i class="icon-search"></i>
+      <span data-text-swap="Close Search" data-text-original="Search...">Search...</span>
+      <i class="icon-arrow-down">Open this section</i>
+    </div>
+  </div>
+  
+  <div class="header__part header__part--search icon-header-right search-collapse">
+    <div class="search__container clearfix">  
+      
+      <div class="form-item-search-block-form">
+        <label for="edit-search-block-form--2">Search:</label>
+        <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" maxlength="128" class="form-text">
+      </div>
+      <div class="form-actions" id="edit-actions">
+        <input type="submit" id="edit-submit" name="op" value="Go &raquo;" class="form-submit">
+      </div>
+      <div class="search__advanced clearfix">
+        <a href="#">Advanced Search &raquo;</a>
+      </div>
+      
+    </div>
+  </div> 
+  
 </header>

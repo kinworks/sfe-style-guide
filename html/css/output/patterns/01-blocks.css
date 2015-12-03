@@ -5,6 +5,9 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
+.icon-pattern {
+  background-repeat: repeat; }
+
 /* Outside blocks
    Sometimes we'll want to add a heading or CTA outside
    of a layout block. For this we use .outside, which 

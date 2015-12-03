@@ -395,6 +395,9 @@ p {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
+.icon-pattern {
+  background-repeat: repeat; }
+
 /*! responsive-nav.js 1.0.32 by @viljamis */
 .nav-collapse ul, .guidenav-collapse ul, .search-collapse div {
   margin: 0;
@@ -985,6 +988,9 @@ pre {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
+.icon-pattern {
+  background-repeat: repeat; }
+
 .footer {
   background-color: #008EBE;
   width: 100%;
@@ -1115,6 +1121,9 @@ pre {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
+.icon-pattern {
+  background-repeat: repeat; }
+
 .header {
   background-color: #ffffff;
   width: 100%;
@@ -1240,6 +1249,9 @@ pre {
   /* This trick ensures that our background SVG is only 
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
 
 .nav__trigger {
   background-repeat: repeat;
@@ -1445,6 +1457,9 @@ pre {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
+.icon-pattern {
+  background-repeat: repeat; }
+
 /* Outside blocks
    Sometimes we'll want to add a heading or CTA outside
    of a layout block. For this we use .outside, which 
@@ -1639,6 +1654,9 @@ colour as the block, give the title text a little more breathing room vertically
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
+.icon-pattern {
+  background-repeat: repeat; }
+
 /* Buttons / CTAs */
 .cta {
   background-color: #003552;
@@ -1722,6 +1740,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   /* This trick ensures that our background SVG is only 
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
 
 .quote {
   margin: 1.5em 0;
@@ -1807,6 +1828,9 @@ ol ul li:before {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
+.icon-pattern {
+  background-repeat: repeat; }
+
 /* Pagination */
 ol.pagination {
   list-style-type: none; }
@@ -1872,6 +1896,9 @@ ol.pagination li {
   /* This trick ensures that our background SVG is only 
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
 
 /* Forms */
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], input[list], input[type="file"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="range"], input[type="search"], textarea, select {
@@ -1966,6 +1993,9 @@ select:-internal-list-box option:checked {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
+.icon-pattern {
+  background-repeat: repeat; }
+
 .feedback {
   background-color: #bff8ed;
   border-bottom: 0.2em solid #9af4e3;
@@ -1979,6 +2009,9 @@ select:-internal-list-box option:checked {
   /* This trick ensures that our background SVG is only 
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
 
 .feedback--error {
   background-color: #ffcdb3;
@@ -1994,6 +2027,9 @@ html\:abbr, abbr {
   /* This trick ensures that our background SVG is only 
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
 
 .image {
   display: inline-block;
@@ -2021,6 +2057,9 @@ html\:abbr, abbr {
   /* This trick ensures that our background SVG is only 
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
 
 /* /// Responsive Tables */
 /* make each table separate from other ones */

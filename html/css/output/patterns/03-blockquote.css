@@ -6,6 +6,9 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
+.icon-pattern {
+  background-repeat: repeat; }
+
 .quote {
   margin: 1.5em 0;
   border-top: 0.1em solid;

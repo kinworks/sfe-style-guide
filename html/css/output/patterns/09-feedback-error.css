@@ -5,6 +5,9 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
+.icon-pattern {
+  background-repeat: repeat; }
+
 .feedback--error {
   background-color: #ffcdb3;
   border-bottom: 0.2em solid #ffbc9a; }

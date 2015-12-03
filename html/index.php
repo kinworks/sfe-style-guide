@@ -136,13 +136,6 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     </div>
     <div class="body-wrapper">
       
-        <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
-          <div class="trigger__container">
-            <i class="icon-menu"></i>
-            <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
-            <i class="icon-arrow-down">Open this section</i>
-          </div>
-        </div>  
         <nav class="nav clearfix nav-collapse">
           <ul class="main-nav clearfix">
             <li class="current-current_page_item">
@@ -153,12 +146,11 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 About Scotland on Screen
               </a>
               <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: About">
-                <span>Pages</span>
                 <div>
-                  <i class="sectionexpander icon-nav-open"></i>
+                  <i class="sectionexpander icon-arrow-down"></i>
                 </div>
               </a>
-              <ul class="sub-menu open">
+              <ul class="sub-menu">
                 <li>
                   <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What Can I Do?">
                     What Can I Do?
@@ -184,12 +176,12 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 Resources
               </a>
               <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Resources">
-                <span>Resource Types</span>
+                
                 <div>
-                  <i class="sectionexpander icon-nav-open"></i>
+                  <i class="sectionexpander icon-arrow-down"></i>
                 </div>
               </a>
-              <ul class="sub-menu open">
+              <ul class="sub-menu">
                 <li>
                   <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Lesson Guides">
                     Lesson Guides
@@ -212,12 +204,12 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 Moving Image Education
               </a>
               <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Moving Image Education">
-                <span>Pages</span>
+                
                 <div>
-                  <i class="sectionexpander icon-nav-open"></i>
+                  <i class="sectionexpander icon-arrow-down"></i>
                 </div>
               </a>
-              <ul class="sub-menu open">
+              <ul class="sub-menu">
                 <li>
                   <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What Can I Do?">
                     MIE
@@ -295,6 +287,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             </li> 
         </ul>
         </nav>
+        <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
+          <div class="trigger__container">
+            <i class="icon-menu"></i>
+            <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
+            <i class="icon-arrow-up">Open this section</i>
+          </div>
+        </div>  
+
       
       <div class="outside">
         <h1>Scottish Film Education: Development Guide</h1>

@@ -1,10 +1,111 @@
 // StyleGuide Imports (dependencies for this pattern): 
 @import '../_2-mixins.scss'; @import '../_4-colours.scss';
 
+.nav__trigger {
+  background-repeat: repeat;
+  background-color: $dark-text;
+  cursor: pointer;
+  .icon-menu {
+    width: 1.5em;
+    height: 1.3125em;
+    margin: 1.025em 0.6em 1.025em 0;
+    float: left;
+  }
+  span {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 0.7em 0 0 0;
+    color: $white;
+    float: left;
+  }
+}
+
 .main-nav li {
-  background-color: $dark;
+  background-color: scale-color($dark, $lightness: -25%);
   margin-bottom: 0;
   &:nth-child(2n) {
-    background-color: scale-color($dark, $lightness: -20%);
+    background-color: scale-color($dark, $lightness: -40%);
+  }
+}
+
+.main-nav li a {
+  display: inline-block;
+  font-size: 1.1em;
+  color: $white;
+  border-bottom: none;
+  padding: 0.6em 0 0.7em 8%;
+}
+
+// Hide / show sub-section navigation based on JS being available
+.main-nav .parent .sectiontoggle {
+  display: none;
+}
+
+.js .main-nav .parent-item {
+  float: left;
+}
+
+.js .main-nav .parent .sectiontoggle {
+  display: block;
+  float: right;
+  padding: 0;
+  margin: 0.5em 5% 0.5em 0;
+  div {
+   display: inline-block;
+   padding: 0.1em 0.4em;
+   background-color: scale-color($dark, $lightness: -65%);  
+  }
+  .icon-arrow-down,
+  .icon-arrow-up {
+    width: 0.625em;
+    height: 0.625em; 
+  }
+}
+
+.main-nav .sub-menu {
+  clear: both;
+}
+
+.js .main-nav .sub-menu {
+  visibility: hidden;
+  height: 0;
+}
+
+.js .main-nav .sub-menu.open {
+  visibility: visible;
+  height: auto;
+}
+
+.main-nav .sub-menu li {
+  background-color: $dark;
+  &:nth-child(2n) {
+    background-color: scale-color($dark, $lightness: -15%);
+  }
+}
+
+.main-nav .sub-menu li a {
+  font-size: 1em;
+  &:before {
+    content: "— "
+  }
+}
+
+.js .nav__trigger {
+  position: fixed;
+  bottom: 0;
+}
+
+.js nav.nav-collapse {
+  position: fixed !important;
+  bottom: 3.375em;
+}
+
+.js nav.nav-collapse.opened {
+  clip: auto;
+  width: 100%;
+  .sub-menu {
+    max-height: 20em;
+    max-height: 50vh;
+    overflow: scroll;
   }
 }

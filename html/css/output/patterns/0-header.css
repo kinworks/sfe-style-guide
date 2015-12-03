@@ -27,7 +27,7 @@
   display: none; }
   .header__search-trigger .trigger__container, .nav__trigger .trigger__container {
     width: 100%;
-    max-width: 17.7em;
+    max-width: 22em;
     margin: 0 auto 0 auto; }
   .header__search-trigger .icon-arrow-down, .header__search-trigger .icon-arrow-up, .nav__trigger .icon-arrow-down, .nav__trigger .icon-arrow-up {
     width: 0.625em;
@@ -109,21 +109,6 @@
     .header__part--search .search__advanced a:focus, .header__part--search .search__advanced a:hover {
       color: #002C44;
       border-bottom: 0.1em dotted #003552; }
-
-.nav__trigger {
-  background-repeat: repeat;
-  cursor: pointer; }
-  .nav__trigger .icon-menu {
-    width: 1.5em;
-    height: 1.3125em;
-    margin: 1.025em 0.6em 1.025em 0;
-    float: left; }
-  .nav__trigger span {
-    font-size: 1.3em;
-    font-weight: 400;
-    margin: 0.7em 0 0 0;
-    color: #ffffff;
-    float: left; }
 
 @media only all and (min-width: 41em) {
   .js .header__search-trigger, .no-js .header__search-trigger {

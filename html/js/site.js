@@ -8,13 +8,15 @@ jQuery(function($) {
     var $this = $(this),
         $thismenu = $this.next(),
         $icon = $this.find('.sectionexpander');
+    
     $menu.not($thismenu).removeClass('open');
     $thismenu.toggleClass('open');
+    
+    $('.main-nav .active i').not($icon).removeClass('icon-arrow-up').addClass('icon-arrow-down');
     $menulink.not($this).removeClass('active');
     $this.toggleClass('active');
-    $('.sectionexpander').not($icon).removeClass('icon-nav-open').addClass('icon-nav-closed');
-    $icon.toggleClass('icon-nav-closed');
-    $icon.toggleClass('icon-nav-open');
+    $icon.toggleClass('icon-arrow-up');
+    $icon.toggleClass('icon-arrow-down');
     return false;
   });
   
@@ -42,7 +44,7 @@ jQuery(function($) {
   var $navlink = $('#nav-trigger');
   var $navicon = $('#nav-trigger .icon-menu');
   var $navtext = $('#nav-trigger span');
-  var $navarrow = $('#nav-trigger .icon-arrow-down');
+  var $navarrow = $('#nav-trigger .icon-arrow-up');
   $navlink.bind("tap", function(e) {
     $navicon.toggleClass('icon-menu').toggleClass('icon-close');
     $navarrow.toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');

@@ -32,12 +32,13 @@
   
   .trigger__container {
     width: 100%;
-    max-width: 17.7em;
+    max-width: 22em;
     margin: 0 auto 0 auto; 
   }
   .icon-arrow-down,
   .icon-arrow-up {
     width: 0.625em;
+    
     margin: 1.375em 0 0 0;  
     float: right;
   }
@@ -137,24 +138,6 @@
       color: $dark-text;
       border-bottom: 0.1em dotted $dark;
     }
-  }
-}
-
-.nav__trigger {
-  background-repeat: repeat;
-  cursor: pointer;
-  .icon-menu {
-    width: 1.5em;
-    height: 1.3125em;
-    margin: 1.025em 0.6em 1.025em 0;
-    float: left;
-  }
-  span {
-    font-size: 1.3em;
-    font-weight: 400;
-    margin: 0.7em 0 0 0;
-    color: $white;
-    float: left;
   }
 }
 

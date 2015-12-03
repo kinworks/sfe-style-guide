@@ -1357,6 +1357,8 @@ pre {
     height: auto; } }
 
 @media only all and (min-width: 56em) {
+  nav {
+    background-color: #003552; }
   .nav-collapse .main-nav {
     padding: 0 5% 0 5%;
     height: 6em; }
@@ -1376,9 +1378,13 @@ pre {
       margin-right: 0; }
     .main-nav li:hover a {
       text-decoration: underline; }
-  .main-nav li.home, .main-nav li.browse-films, .main-nav li.contact-us {
+  .main-nav li.home, .main-nav li.contact-us {
     width: auto;
     max-width: 10%; }
+  .main-nav li.browse-films {
+    width: 12%; }
+  .main-nav li.resources {
+    max-width: 18%; }
   .main-nav .parent-item {
     max-width: 70%; }
   .js .main-nav .parent .sectiontoggle {
@@ -1409,24 +1415,28 @@ pre {
       text-decoration: underline; } }
 
 @media only all and (min-width: 58.75em) {
-  .main-nav li {
-    width: 20%;
-    margin-right: 2.5%; }
-  .main-nav li.home, .main-nav li.browse-films {
-    width: auto;
-    max-width: 8%; }
-  .main-nav li.resources .parent-item {
-    max-width: 60%; }
   .main-nav li.contact-us {
-    max-width: 12%; } }
+    max-width: 12%; }
+  .main-nav li.resources {
+    max-width: 16%; } }
 
 @media only all and (min-width: 63.9375em) {
-  .main-nav li.home {
-    width: 10%; }
-  .main-nav li.resources, .main-nav li.browse-films {
-    max-width: 16%; }
-  .main-nav li.resources .sectiontoggle {
-    padding-left: 15%; } }
+  .main-nav li.home, .main-nav li.contact-us {
+    width: 8%;
+    max-width: 8%; }
+  .main-nav li.resources {
+    max-width: 14%; }
+  .main-nav li.browse-films {
+    width: 14%; }
+  .main-nav li.contact-us {
+    width: 10%;
+    max-width: 10%; } }
+
+@media only all and (min-width: 71.25em) {
+  nav, .nav-collapse .main-nav {
+    height: 4.8em; }
+  .main-nav li:hover .sub-menu, .main-nav .sub-menu {
+    top: 4.8em; } }
 
 .pattern {
   background: url(../../assets/pattern.png);

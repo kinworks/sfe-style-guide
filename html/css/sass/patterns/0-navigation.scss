@@ -171,6 +171,10 @@
   
   // Build our sections into 6-up, one-row list:
   
+  nav {
+    background-color: $dark;
+  }
+  
   .nav-collapse .main-nav {
     padding: 0 5% 0 5%;
     height: 6em;
@@ -198,10 +202,17 @@
   }
   
   .main-nav li.home,
-  .main-nav li.browse-films,
   .main-nav li.contact-us {
     width: auto;
     max-width: 10%;
+  }
+  
+  .main-nav li.browse-films {
+    width: 12%;  
+  }
+  
+  .main-nav li.resources {
+    max-width: 18%;
   }
   
   .main-nav .parent-item {
@@ -244,44 +255,53 @@
     }
   }
   
-} //end min 55em
+} //end min 56em
 
 @media only all and (min-width: 58.75em) {
-  
-  .main-nav li {
-    width: 20%;
-    margin-right: 2.5%;
-  }
-  
-  .main-nav li.home,
-  .main-nav li.browse-films {
-    width: auto;
-    max-width: 8%;
-  }
-  
-  .main-nav li.resources .parent-item {
-    max-width: 60%;
-  }
   
   .main-nav li.contact-us {
     max-width: 12%;
   }
   
+  .main-nav li.resources {
+    max-width: 16%;
+  }
   
 } //end min 58.75em
 
 @media only all and (min-width: 63.9375em) {
   
-  .main-nav li.home {
-    width: 10%;
+  .main-nav li.home,
+  .main-nav li.contact-us {
+    width: 8%;
+    max-width: 8%;
   }
   
-  .main-nav li.resources,
+  .main-nav li.resources {
+    max-width: 14%;
+  }
+  
   .main-nav li.browse-films {
-    max-width: 16%;
+    width: 14%;
   }
   
-  .main-nav li.resources .sectiontoggle {
-    padding-left: 15%;
+  .main-nav li.contact-us {
+    width: 10%;
+    max-width: 10%;
   }
-}
+
+} // end min 63.9375em
+
+@media only all and (min-width: 71.25em) {
+  
+  nav,
+  .nav-collapse .main-nav {
+    height: 4.8em;
+  }
+  
+  .main-nav li:hover .sub-menu,
+  .main-nav .sub-menu {
+    top: 4.8em;
+  }
+  
+} //end min 71.25em

@@ -115,3 +115,173 @@
     -webkit-overflow-scrolling: touch; 
   }
 }
+
+// Enhanced view
+
+@media only all and (min-width: 41em) {
+  
+  // Remove 'position: fixed' jazz and trigger
+  
+  .nav__trigger {
+    display: none;
+  }
+  
+  .js nav.nav-collapse {
+    position: static !important;
+  }
+  
+  // Build our sections into 3-up, two-row list:
+  
+  .main-nav li {
+    z-index: 5;
+    width: 33.3333%;
+    height: 4.8125em;
+    float: left;
+    border-bottom: 0.1em solid scale-color($dark, $lightness: 10%);
+    &:nth-child(2n) {
+      background-color: inherit;
+    }
+  }
+  
+  .main-nav .parent-item {
+    max-width: 80%;
+  }
+  
+  .js nav.nav-collapse .sub-menu.open {
+    max-height: 85vh;
+    overflow: scroll;
+    //momentum scrolling on mobile webkit, ht/ @chuckle_hound
+    -webkit-overflow-scrolling: touch; 
+  }
+  
+  .main-nav .sub-menu {
+    z-index: 0;
+  }
+  
+  .main-nav .sub-menu li {
+    z-index: 0;
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  
+} //end min 41em
+
+@media only all and (min-width: 56em) {
+  
+  // Build our sections into 6-up, one-row list:
+  
+  .nav-collapse .main-nav {
+    padding: 0 5% 0 5%;
+    height: 6em;
+  }
+  
+  .main-nav li {
+    font-size: 0.9em;
+    font-weight: 400;
+    width: 20%;
+    margin-right: 2.5%;
+    padding: 0.4em 0 1.2em 0;
+    background-color: inherit;
+    height: 6em;
+    float: left;
+    border-bottom: none;
+    &:nth-child(2n) {
+      background-color: inherit;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover a {
+      text-decoration: underline;
+    }
+  }
+  
+  .main-nav li.home,
+  .main-nav li.browse-films,
+  .main-nav li.contact-us {
+    width: auto;
+    max-width: 10%;
+  }
+  
+  .main-nav .parent-item {
+    max-width: 70%;
+  }
+  
+  .js .main-nav .parent .sectiontoggle {
+    float: left;
+    padding-left: 5%;
+  }
+  
+  .main-nav .sub-menu {
+    visibility: hidden;
+  	position: absolute;
+  	left: auto;
+  	top: 6em;
+    left: auto;
+    width: 25%;
+  }
+  
+  .main-nav li:hover .sub-menu {
+    display: block;
+    visibility: visible;
+    height: auto;
+    position: absolute;
+    top: 6em;
+    left: auto;
+    width: 25%;
+  }
+  
+  .main-nav .sub-menu li {
+    height: auto;
+    padding: 0;
+    font-size: 1em;
+    a {
+      text-decoration: none;
+    }
+    &:hover a {
+      text-decoration: underline;
+    }
+  }
+  
+} //end min 55em
+
+@media only all and (min-width: 58.75em) {
+  
+  .main-nav li {
+    width: 20%;
+    margin-right: 2.5%;
+  }
+  
+  .main-nav li.home,
+  .main-nav li.browse-films {
+    width: auto;
+    max-width: 8%;
+  }
+  
+  .main-nav li.resources .parent-item {
+    max-width: 60%;
+  }
+  
+  .main-nav li.contact-us {
+    max-width: 12%;
+  }
+  
+  
+} //end min 58.75em
+
+@media only all and (min-width: 63.9375em) {
+  
+  .main-nav li.home {
+    width: 10%;
+  }
+  
+  .main-nav li.resources,
+  .main-nav li.browse-films {
+    max-width: 16%;
+  }
+  
+  .main-nav li.resources .sectiontoggle {
+    padding-left: 15%;
+  }
+}

@@ -1329,6 +1329,105 @@ pre {
     overflow: scroll;
     -webkit-overflow-scrolling: touch; }
 
+@media only all and (min-width: 41em) {
+  .nav__trigger {
+    display: none; }
+  .js nav.nav-collapse {
+    position: static !important; }
+  .main-nav li {
+    z-index: 5;
+    width: 33.3333%;
+    height: 4.8125em;
+    float: left;
+    border-bottom: 0.1em solid #00517d; }
+    .main-nav li:nth-child(2n) {
+      background-color: inherit; }
+  .main-nav .parent-item {
+    max-width: 80%; }
+  .js nav.nav-collapse .sub-menu.open {
+    max-height: 85vh;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+  .main-nav .sub-menu {
+    z-index: 0; }
+  .main-nav .sub-menu li {
+    z-index: 0;
+    width: 100%;
+    float: none;
+    height: auto; } }
+
+@media only all and (min-width: 56em) {
+  .nav-collapse .main-nav {
+    padding: 0 5% 0 5%;
+    height: 6em; }
+  .main-nav li {
+    font-size: 0.9em;
+    font-weight: 400;
+    width: 20%;
+    margin-right: 2.5%;
+    padding: 0.4em 0 1.2em 0;
+    background-color: inherit;
+    height: 6em;
+    float: left;
+    border-bottom: none; }
+    .main-nav li:nth-child(2n) {
+      background-color: inherit; }
+    .main-nav li:last-child {
+      margin-right: 0; }
+    .main-nav li:hover a {
+      text-decoration: underline; }
+  .main-nav li.home, .main-nav li.browse-films, .main-nav li.contact-us {
+    width: auto;
+    max-width: 10%; }
+  .main-nav .parent-item {
+    max-width: 70%; }
+  .js .main-nav .parent .sectiontoggle {
+    float: left;
+    padding-left: 5%; }
+  .main-nav .sub-menu {
+    visibility: hidden;
+    position: absolute;
+    left: auto;
+    top: 6em;
+    left: auto;
+    width: 25%; }
+  .main-nav li:hover .sub-menu {
+    display: block;
+    visibility: visible;
+    height: auto;
+    position: absolute;
+    top: 6em;
+    left: auto;
+    width: 25%; }
+  .main-nav .sub-menu li {
+    height: auto;
+    padding: 0;
+    font-size: 1em; }
+    .main-nav .sub-menu li a {
+      text-decoration: none; }
+    .main-nav .sub-menu li:hover a {
+      text-decoration: underline; } }
+
+@media only all and (min-width: 58.75em) {
+  .main-nav li {
+    width: 20%;
+    margin-right: 2.5%; }
+  .main-nav li.home, .main-nav li.browse-films {
+    width: auto;
+    max-width: 8%; }
+  .main-nav li.resources .parent-item {
+    max-width: 60%; }
+  .main-nav li.contact-us {
+    max-width: 12%; } }
+
+@media only all and (min-width: 63.9375em) {
+  .main-nav li.home {
+    width: 10%; }
+  .main-nav li.resources, .main-nav li.browse-films {
+    max-width: 16%; }
+  .main-nav li.resources .sectiontoggle {
+    padding-left: 15%; } }
+
 .pattern {
   background: url(../../assets/pattern.png);
   background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);

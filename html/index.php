@@ -137,11 +137,11 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     <div class="body-wrapper">
       
         <nav class="nav clearfix nav-collapse">
-          <ul class="main-nav clearfix">
-            <li class="current-current_page_item">
+          <ul class="main-nav pattern clearfix">
+            <li class="home current-current_page_item">
               <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
             </li>
-            <li class="parent clearfix">
+            <li class="about parent clearfix">
               <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="About Scotland on Screen">
                 About Scotland on Screen
               </a>
@@ -168,10 +168,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="browse-films">
               <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Browse Films">Browse Films</a>
             </li>
-            <li class="parent clearfix">
+            <li class="resources parent clearfix">
               <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Resources">
                 Resources
               </a>
@@ -183,7 +183,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               </a>
               <ul class="sub-menu">
                 <li>
-                  <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Lesson Guides">
+                  <a href="#" class=" js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Lesson Guides">
                     Lesson Guides
                   </a>
                 </li>
@@ -199,7 +199,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 </li>
               </ul>
             </li>
-            <li class="parent clearfix">
+            <li class="moving-image-education parent clearfix">
               <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Moving Image Education">
                 Moving Image Education
               </a>
@@ -282,7 +282,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="contact-us">
               <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Contact Us">Contact Us</a>
             </li> 
         </ul>

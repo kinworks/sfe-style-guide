@@ -92,11 +92,15 @@
 
 .js .nav__trigger {
   position: fixed;
+  //this wee trick fixes position: fixed on most android 2.2 and 2.3
+  -webkit-backface-visibility: hidden;
   bottom: 0;
 }
 
 .js nav.nav-collapse {
   position: fixed !important;
+  //this wee trick fixes position: fixed on most android 2.2 and 2.3
+  -webkit-backface-visibility: hidden;
   bottom: 3.375em;
 }
 
@@ -107,5 +111,7 @@
     max-height: 20em;
     max-height: 50vh;
     overflow: scroll;
+    //momentum scrolling on mobile webkit, ht/ @chuckle_hound
+    -webkit-overflow-scrolling: touch; 
   }
 }

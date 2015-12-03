@@ -1312,10 +1312,12 @@ pre {
 
 .js .nav__trigger {
   position: fixed;
+  -webkit-backface-visibility: hidden;
   bottom: 0; }
 
 .js nav.nav-collapse {
   position: fixed !important;
+  -webkit-backface-visibility: hidden;
   bottom: 3.375em; }
 
 .js nav.nav-collapse.opened {
@@ -1324,7 +1326,8 @@ pre {
   .js nav.nav-collapse.opened .sub-menu {
     max-height: 20em;
     max-height: 50vh;
-    overflow: scroll; }
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
 
 .pattern {
   background: url(../../assets/pattern.png);

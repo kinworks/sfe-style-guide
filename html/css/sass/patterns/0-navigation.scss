@@ -26,6 +26,9 @@
   &:nth-child(2n) {
     background-color: scale-color($dark, $lightness: -40%);
   }
+  &:hover a {
+    text-decoration: underline;
+  }
 }
 
 .main-nav li a {
@@ -76,19 +79,32 @@
   height: auto;
 }
 
-.main-nav .sub-menu li {
-  background-color: $dark;
-  &:nth-child(2n) {
-    background-color: scale-color($dark, $lightness: -15%);
-  }
-}
-
 .main-nav .sub-menu li a {
   font-size: 1em;
+  width: 100%;
   &:before {
     content: "— "
   }
+  text-decoration: none;
 }
+
+.main-nav .sub-menu li {
+  background-color: $dark;
+  &:hover {
+    background-color: scale-color($dark, $lightness: -40%);
+    a {
+      text-decoration: underline;
+    }
+  }
+  &:nth-child(2n) {
+    background-color: scale-color($dark, $lightness: -15%);
+    &:hover {
+      background-color: scale-color($dark, $lightness: -40%);
+    }
+  }
+}
+
+
 
 .js .nav__trigger {
   position: fixed;
@@ -247,12 +263,6 @@
     height: auto;
     padding: 0;
     font-size: 1em;
-    a {
-      text-decoration: none;
-    }
-    &:hover a {
-      text-decoration: underline;
-    }
   }
   
 } //end min 56em

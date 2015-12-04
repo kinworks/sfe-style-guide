@@ -88,28 +88,42 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
   <body class="icon-body-background">
     
     
-    <footer>
-      <div class="footer__top">
-        <div class="footer__top__report-issues">
-          <span>Problems using this site or with its content?</span>
-          <a class="btn">Report an Issue &raquo;</a>
+    <div class="footer__top">
+      <div class="container">
+          <div class="footer__top__report-issues">
+            <span>Problems using this site or with its content?</span>
+            <a class="btn">Report an Issue &raquo;</a>
+          </div>
+          <div class="footer__top__partners">
+            <span>In partnership with:</span>
+            <a href="http://www.educationscotland.gov.uk/" target="_blank">
+              <i class="icon-footer-partner-es">Education Scotland</i>
+            </a>
+            <a href="http://www.nls.uk" target="_blank">
+              <i class="icon-footer-partner-nls">National Library of Scotland</i>
+            </a>
+            <a href="http://www.creativescotland.com" target="_blank">
+              <i class="icon-footer-partner-cs">Creative Scotland</i>
+            </a>
+          </div>
         </div>
-        <div class="footer__top__partners">
-          <span>In partnership with:</span>
-          <i class="icon-footer-partner-es">Education Scotland</i>
-          <i class="icon-footer-partner-nls">National Library of Scotland</i>
-          <i class="icon-footer-partner-cs">Creative Scotland</i>
-        </div>
-      </div>
-      <div class="footer__nav">
-        <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility</a></li>
-          <li><a href="#">Acknowledgements</a></li>
-        </ul>
-      </div>
-      <div class="footer__bottom"></div>
+    </div>
+   <div class="footer__nav">
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Acknowledgements</a></li>
+      </ul>
+    </div>
+    <footer class="icon-pattern">
+      <span class="copyright">
+        &copy; Film Content Licences Provided by the National Library of Scotland. Other Website Content Copyright Scottish Film Limited, Registered in Scotland no. SC478204. All Rights Reserved.
+      </span>
+      <span class="address">
+        Scottish Film Limited, Filmhouse, 88 Lothian Road, Edinburgh, EH3 9BZ
+      </span> 
+      <i class="icon-footer-partner-sfe">Scottish Film Education</i>
     </footer>
     
     

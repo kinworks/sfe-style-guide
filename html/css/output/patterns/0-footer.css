@@ -12,10 +12,20 @@
   background-color: #008EBE;
   padding: 1.2em 8% 1.5em 8%; }
 
+.footer__top__report-issues span, .footer__top__partners span {
+  font-size: 1.25em;
+  color: #ffffff;
+  font-weight: 600;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1em 0; }
+
 .footer__nav {
-  background-color: #007da7; }
+  background-color: #007da7;
+  padding: 1.2em 8% 1.5em 8%; }
 
 footer {
-  background-color: #003552; }
+  background-color: #003552;
+  padding: 1.2em 8% 1.5em 8%; }
 
 /*# sourceMappingURL=0-footer.css.map */

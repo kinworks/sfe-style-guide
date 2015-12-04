@@ -109,7 +109,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         </div>
     </div>
    <div class="footer__nav">
-      <ul>
+      <ul class="container">
         <li><a href="#">Terms of Use</a></li>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Accessibility</a></li>
@@ -117,13 +117,15 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       </ul>
     </div>
     <footer class="icon-pattern">
-      <span class="copyright">
-        &copy; Film Content Licences Provided by the National Library of Scotland. Other Website Content Copyright Scottish Film Limited, Registered in Scotland no. SC478204. All Rights Reserved.
-      </span>
-      <span class="address">
-        Scottish Film Limited, Filmhouse, 88 Lothian Road, Edinburgh, EH3 9BZ
-      </span> 
-      <i class="icon-footer-partner-sfe">Scottish Film Education</i>
+      <div class="container">
+        <span class="copyright">
+          &copy; Film Content Licences Provided by the National Library of Scotland. Other Website Content Copyright Scottish Film Limited, Registered in Scotland no. SC478204. All Rights Reserved.
+        </span>
+        <span class="address">
+          Scottish Film Limited, Filmhouse, 88 Lothian Road, Edinburgh, EH3 9BZ
+        </span> 
+        <i class="icon-footer-partner-sfe">Scottish Film Education</i>
+      </div>
     </footer>
     
     

@@ -1015,11 +1015,21 @@ pre {
   background-color: #008EBE;
   padding: 1.2em 8% 1.5em 8%; }
 
+.footer__top__report-issues span, .footer__top__partners span {
+  font-size: 1.25em;
+  color: #ffffff;
+  font-weight: 600;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1em 0; }
+
 .footer__nav {
-  background-color: #007da7; }
+  background-color: #007da7;
+  padding: 1.2em 8% 1.5em 8%; }
 
 footer {
-  background-color: #003552; }
+  background-color: #003552;
+  padding: 1.2em 8% 1.5em 8%; }
 
 .pattern {
   background: url(../../assets/pattern.png);
@@ -1427,25 +1437,23 @@ body {
   background-repeat: repeat; }
 
 /* Buttons / CTAs */
-.cta {
+.btn {
+  font-size: 1.1em;
   background-color: #003552;
   color: #fff;
-  border-bottom: 0.2em solid #00688b;
-  border-top: 0.1em solid #9ae2f9;
   display: inline-block;
   padding: 0.6em 1.2em;
-  font-weight: 500;
-  text-transform: uppercase;
-  -webkit-transition: background-color 0.12s ease-in-out;
-  -moz-transition: background-color 0.12s ease-in-out;
-  -ms-transition: background-color 0.12s ease-in-out;
-  -o-transition: background-color 0.12s ease-in-out;
-  transition: background-color 0.12s ease-in-out; }
-  .cta:after {
-    content: ' »'; }
-  .cta:hover {
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -ms-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out; }
+  .btn:hover {
     text-decoration: underline;
-    background-color: #00a1d8; }
+    background-color: #005e92; }
 
 /* Removes awkward default styles on some inputs for mobile */
 input[type="button"], input[type="reset"], input[type="submit"] {
@@ -1458,50 +1466,6 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   border-left: 0;
   border-right: 0;
   height: 3em; }
-
-.cta--mid {
-  background-color: #008EBE;
-  border-bottom: 0.2em solid #005572;
-  border-top: 0.1em solid #58d5ff; }
-  .cta--mid:hover {
-    text-decoration: underline;
-    background-color: #1bc5ff; }
-
-.cta--contrast-alt {
-  background-color: #00A659;
-  border-bottom: 0.2em solid #00733e;
-  border-top: 0.1em solid #26ff9b; }
-  .cta--contrast-alt:hover {
-    text-decoration: underline;
-    background-color: #00d974; }
-
-.cta--contrast {
-  background-color: #dc6f00;
-  border-bottom: 0.2em solid #9f5000;
-  border-top: 0.1em solid #ffae5d; }
-  .cta--contrast:hover {
-    text-decoration: underline;
-    background-color: #ff8406; }
-
-.cta--white {
-  background-color: #ffffff;
-  color: #002C44;
-  border-bottom: 0.2em solid #003552;
-  border-top: 0.1em solid white; }
-  .cta--white:hover {
-    text-decoration: underline;
-    background-color: white; }
-
-.cta--disabled {
-  background-color: #C0E6F3;
-  color: #00141f;
-  border-bottom: 0.2em solid #003552;
-  border-top: 0.1em solid #d5eef7;
-  cursor: not-allowed; }
-  .cta--disabled:hover {
-    background-color: #C0E6F3;
-    cursor: not-allowed;
-    text-decoration: none; }
 
 .pattern {
   background: url(../../assets/pattern.png);

@@ -6,10 +6,22 @@
   padding: 1.2em 8% 1.5em 8%;
 }
 
+.footer__top__report-issues span,
+.footer__top__partners span {
+  font-size: 1.25em;
+  color: $white;
+  font-weight: 600;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1em 0;
+}
+
 .footer__nav {
   background-color: scale-color($mid, $lightness: -12%);
+  padding: 1.2em 8% 1.5em 8%;
 }
 
 footer {
   background-color: $dark;
+  padding: 1.2em 8% 1.5em 8%;
 }

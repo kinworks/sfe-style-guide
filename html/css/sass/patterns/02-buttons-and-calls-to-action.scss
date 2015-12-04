@@ -3,22 +3,19 @@
 
 /* Buttons / CTAs */
 
-.cta {
+.btn {
+  font-size: 1.1em;
   background-color: $dark;
   color: #fff;
-  border-bottom: 0.2em solid darken($mid,10%);
-  border-top: 0.1em solid lighten($light,15%);
   display: inline-block;
   padding: 0.6em 1.2em;
-  font-weight: 500;
-  text-transform: uppercase;
-  @include transition(background-color,0.12s); // Kin Mixin
-  &:after {
-    content: ' »';
-  }
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  @include transition(background-color,0.15s); // Kin Mixin
   &:hover {
     text-decoration: underline;
-    background-color: lighten($mid,5%);
+    background-color: scale-color($dark, $lightness: 15%);
   }
 }
 
@@ -39,58 +36,4 @@ input[type="submit"] {
   border-left: 0;
   border-right: 0;
   height: 3em;
-}
-
-.cta--mid {
-  background-color: $mid;
-  border-bottom: 0.2em solid darken($mid,15%);
-  border-top: 0.1em solid lighten($mid,30%);
-  &:hover {
-    text-decoration: underline;
-    background-color: lighten($mid,18%);
-  }
-}
-
-.cta--contrast-alt {
-  background-color: $contrast-alt;
-  border-bottom: 0.2em solid darken($contrast-alt,10%);
-  border-top: 0.1em solid lighten($contrast-alt,25%);
-  &:hover {
-    text-decoration: underline;
-    background-color: lighten($contrast-alt,10%);
-  }
-}
-
-.cta--contrast {
-  background-color: $contrast;
-  border-bottom: 0.2em solid darken($contrast,12%);
-  border-top: 0.1em solid lighten($contrast,25%);
-  &:hover {
-    text-decoration: underline;
-    background-color: lighten($contrast,8%);
-  }
-}
-
-.cta--white {
-  background-color: $white;
-  color: $dark-text;
-  border-bottom: 0.2em solid $dark;
-  border-top: 0.1em solid lighten($light-pastel,45%);
-  &:hover {
-    text-decoration: underline;
-    background-color: lighten($light,50%);
-  }
-}
-
-.cta--disabled {
-  background-color: $light-pastel;
-  color: darken($dark,10%);
-  border-bottom: 0.2em solid $dark;
-  border-top: 0.1em solid lighten($light-pastel,5%);
-  cursor: not-allowed;
-  &:hover {
-    background-color: $light-pastel;
-    cursor: not-allowed;
-    text-decoration: none;
-  }
 }

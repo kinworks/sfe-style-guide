@@ -136,8 +136,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     </div>
     <div class="body-wrapper">
       
-        <nav class="nav clearfix nav-collapse">
-          <ul class="main-nav icon-pattern clearfix">
+        <nav class="nav icon-pattern clearfix nav-collapse">
+          <ul class="main-nav clearfix">
             <li class="home current-current_page_item">
               <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
             </li>

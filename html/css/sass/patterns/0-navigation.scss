@@ -26,9 +26,6 @@
   &:nth-child(2n) {
     background-color: scale-color($dark, $lightness: -40%);
   }
-  &:hover a {
-    text-decoration: underline;
-  }
 }
 
 .main-nav li a {
@@ -85,16 +82,19 @@
   &:before {
     content: "— "
   }
-  text-decoration: none;
+}
+
+.main-nav li:hover a.parent-item {
+  text-decoration: underline;
 }
 
 .main-nav .sub-menu li {
   background-color: $dark;
   &:hover {
     background-color: scale-color($dark, $lightness: -40%);
-    a {
-      text-decoration: underline;
-    }
+  }
+  &:hover a {
+    text-decoration: underline;
   }
   &:nth-child(2n) {
     background-color: scale-color($dark, $lightness: -15%);
@@ -189,11 +189,14 @@
   
   nav {
     background-color: $dark;
+    margin: 0 0 1.5em 0;
   }
   
   .nav-collapse .main-nav {
     padding: 0 5% 0 5%;
     height: 6em;
+    max-width: 90em;
+    margin: 0 auto 0 auto;
   }
   
   .main-nav li {
@@ -211,9 +214,6 @@
     }
     &:last-child {
       margin-right: 0;
-    }
-    &:hover a {
-      text-decoration: underline;
     }
   }
   

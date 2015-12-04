@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="900px" height="524px" viewBox="0 0 900 524" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="100">
+        <g id="body-background">
+            <g id="body-bg" transform="translate(-1.000000, -3.000000)">
+                <path d="M1.27197634,4.33613264 L903.404117,3.1650025 L2.18043825,510.23999 L1.27197634,4.33613264 Z" id="Triangle-2" fill="#f2fcff"></path>
+                <path d="M1.07164413,446.514518 L0.27197634,1.19588232 L794.368025,0.165002496 L1.07164413,446.514518 L1.07164413,446.514518 Z" id="Triangle-1" fill="#e5f9ff"></path>
+            </g>
+        </g>
+    </g>
+</svg>

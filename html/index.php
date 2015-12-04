@@ -85,7 +85,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     
   </head>
   <?php include 'functions.php'; ?>
-  <body>
+  <body class="icon-body-background">
     <div class="nav-wrapper__trigger" id="guidenav-trigger">Show/Hide Guidenav</div>
     <div class="nav-wrapper guidenav-collapse">
       <ul class="nav-wrapper__list">
@@ -112,7 +112,19 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           <a href="/#typography">Typography</a>
         </li>
         <li>
-          <a href="/#layout">Layout</a>
+          <a href="/#layout">Layout:</a>
+        </li>
+        <li>
+          <a href="/#header">— Header</a>
+        </li>
+        <li>
+          <a href="/#nav">— Navigation</a>
+        </li>
+        <li>
+          <a href="/#body">— Body</a>
+        </li>
+        <li>
+          <a href="/#footer">— Footer</a>
         </li>
         <li class="nav-wrapper__list__heading">Patterns:</li>
         <!-- Above are manual sections, and after here:
@@ -134,9 +146,9 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <?php endforeach; ?>
       </ul>
     </div>
-    <div class="body-wrapper">
+    <div class="body-wrapper bg-light-pastel">
       
-      <div class="outside">
+      <div class="outside" <?php if($_GET['mode'] != 'test'):?>style="padding-left: 5%"<?php endif; ?> >
         <h1>Scottish Film Education: Development Guide</h1>
         
         <h2 class="heading">Release <span class="lowercase"><?php echo $tagname; ?></span></h2>
@@ -146,6 +158,9 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               View on GitHub</a>
         </span>
       </div>
+    </div>
+    
+    <div class="body-wrapper">
       
       <div id="js-binder" class="styleguide container">
         
@@ -313,6 +328,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                   
                   <h2 class="guidance">Text-specific Colours</h2>
                   <ul>
+                    <li>
+                      <span class="mid-text"><!--color fill--></span>
+                      <b>$mid-text</b>
+                    </li>
                     <li>
                       <span class="dark-text"><!--color fill--></span>
                       <b>$dark-text</b>
@@ -486,7 +505,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           <div class="guidepattern" id="layout">
             <h1 class="guidance">Layout</h1>
           </div>
-          <div class="guidepattern pattern-header">
+          <div class="guidepattern pattern-header" id="header">
         
             <h2 class="guidance">Header Block</h2>
             <p class="guidance">
@@ -563,11 +582,11 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             
             <?php // NAVIGATION PATTERN ==================== ?>
       
-          <div class="guidepattern pattern-header">
+          <div class="guidepattern pattern-header" id="nav">
         
             <h2 class="guidance">Navigation</h2>
             <p class="guidance">
-              This is the navigation pattern, currently depicting the header for Scotland on Screen. <a href="/?mode=test#layout"><b>You should view it in test mode</b></a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
+              This is the navigation pattern, currently depicting the header for Scotland on Screen. <a href="/?mode=test#nav"><b>You should view it in test mode</b></a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
             </p>
             <p class="guidance">
               This is a very specific and heavily-breakpointed example. The breakpoints for any other site would be very different to SOS. The navigation only collapses showing the trigger button if JS successfully loads, and uses <a href="http://responsive-nav.com">Responsive-nav.js</a> for the collapse (the same library used for the search expansion on the single-column layout). Unlike the search expansion trigger, the navigation trigger is position: fixed to the bottom of the viewport in single-column view.
@@ -739,10 +758,50 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     
     <div class="bodywrapper">
       <div class="styleguide container">  
-            
-  <?php // FOOTER BLOCK PATTERN FOR EXTERNAL SITES ==================== ?>
+
+ <?php // BODY PATTERN  ==================== ?>
       
-        <div class="guidepattern pattern-footer">
+        <div class="guidepattern" id="body">
+        
+            <h2 class="guidance">Body Background</h2>
+            <p class="guidance">
+              The body of each SFE web property has an individual background pattern. Currently this Development guide features the background pattern from Scotland on Screen. We're using Grunticon to apply the SVG with a PNG fallback here, but you can get click to get the individual SVG and PNG assets from the repo for more direct use.
+            </p>
+            
+            <p class="guidance">
+              The image is fixed position and is set to 'background-size: contain;' to size to the viewport, and subsequently to 'background-size: auto;' to retain its original size via media query when the viewport is wider than the size of the original image (for SOS, this is around 56em).
+            </p>
+            <br/>            
+            <div class="js-tab-ui panels fullwidth">
+                <ul class="js-tabs-list" role="tablist">
+                  <li role="tab" id="tab-footer-scss" aria-controls="tab-footer-scss-panel" aria-selected="true" data-tabgroup="footer">
+                    SCSS
+                  </li>
+                  <li role="tab" id="tab-footer-css" aria-controls="tab-footer-css-panel" aria-selected="false" data-tabgroup="footer">
+                    Generated CSS
+                  </li>
+                </ul>
+                <div class="style js-panel first" id="tab-footer-scss-panel" role="tabpanel" aria-labelledby="tab-footer-scss" data-tabgroup="footer">
+                  <h2 class="js-panel__title">SCSS</h2>
+                  <pre>
+                    <code><?php echo file_get_contents("css/sass/patterns/01-body-background.scss"); ?></code>
+                  </pre>
+                </div>            
+                <div class="style js-panel" id="tab-footer-css-panel" role="tabpanel" aria-labelledby="tab-footer-css" data-tabgroup="footer">
+                  <h2 class="js-panel__title">Generated CSS</h2>
+                  <pre>
+                    <code><?php echo file_get_contents("css/output/patterns/01-body-background.css"); ?></code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
+
+
+            
+  <?php // FOOTER BLOCK PATTERN  ==================== ?>
+      
+        <div class="guidepattern pattern-footer" id="footer">
         
             <h2 class="guidance">Footer Block</h2>
             <p class="guidance">

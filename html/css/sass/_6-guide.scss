@@ -2,6 +2,19 @@
 // Style Guide Layout / Styles
 //:::::::::::::::::::::::::::::
 
+body {
+  background-color: $white;
+  background-attachment: fixed;
+  background-size: contain;
+  @media only all and (min-width: 56em) {
+    background-size: auto; 
+  }
+}
+
+.bg-light-pastel {
+  background-color: $light-pastel;
+}
+
 #guidenav-trigger {
   display: none;
 }
@@ -127,7 +140,6 @@ Performance is dramatically improved because a 9999px box is not drawn. Noticeab
 }
 
 .guide .styleguide {
-  background-color: #fff;
   padding: 2em 8% 1.5em 8%;
   @media only all and (min-width: 41em) {
     padding: 2em 5% 1.5em 5%;
@@ -287,6 +299,10 @@ pre {
 
 .swatches span.mid {
   background-color: $mid;
+}
+
+.swatches span.mid-text {
+  background-color: $mid-text;
 }
 
 .swatches span.dark {
@@ -613,6 +629,7 @@ pre {
 @media only all and (min-width: 41em) {
   .js .guidenav-collapse {
     position: fixed !important;
+    top: 0;
     clip: auto;
   }
 }

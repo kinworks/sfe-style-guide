@@ -98,6 +98,7 @@ Performance is dramatically improved because a 9999px box is not drawn. Noticeab
 .outside {
   display: block;
   margin: 0 auto 1.5em auto !important;
+  max-width: 80em;
   h1 {
     line-height: 1.2em;
   }
@@ -127,17 +128,19 @@ Performance is dramatically improved because a 9999px box is not drawn. Noticeab
 
 .guide .styleguide {
   background-color: #fff;
-  padding: 0;
+  padding: 2em 8% 1.5em 8%;
+  @media only all and (min-width: 41em) {
+    padding: 2em 5% 1.5em 5%;
+  }
 }
 
 .guide .guidepattern {
   clear: both;
   overflow: hidden;
   border-bottom: 0.1em #959595 solid;
-  padding: 2em 8% 1.5em 8%;
-  @media only all and (min-width: 41em) {
-    padding: 2em 5% 1.5em 5%;
-  }
+  max-width: 80em;
+  padding: 2.5em 0 2.5em 0;
+  margin: 0 auto 0 auto;
 }
 
 .guide .guidepattern.elements-heading {
@@ -463,6 +466,11 @@ pre {
   
   .guide .guidepattern .panels {
     margin-left: 4%;
+  }
+  
+  .guide .guidepattern .panels.fullwidth {
+    width: 90%;
+    margin-left: 0;
   }
   
   .guide .pattern-footer .hljs {

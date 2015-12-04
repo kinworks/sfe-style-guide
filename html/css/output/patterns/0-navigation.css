@@ -25,6 +25,9 @@
     color: #ffffff;
     float: left; }
 
+.main-nav {
+  font-size: 1em; }
+
 .main-nav li {
   background-color: #00283e;
   margin-bottom: 0; }
@@ -33,7 +36,7 @@
 
 .main-nav li a {
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #ffffff;
   border-bottom: none;
   padding: 0.6em 0 0.7em 8%; }
@@ -69,7 +72,7 @@
   height: auto; }
 
 .main-nav .sub-menu li a {
-  font-size: 1em;
+  font-size: 1.1em;
   width: 100%; }
   .main-nav .sub-menu li a:before {
     content: "— "; }
@@ -137,11 +140,11 @@
 @media only all and (min-width: 56em) {
   nav {
     background-color: #003552;
-    margin: 0 0 1.5em 0; }
+    margin: 0 0 1.5em 0;
+    padding: 0 5% 0 5%; }
   .nav-collapse .main-nav {
-    padding: 0 5% 0 5%;
     height: 6em;
-    max-width: 90em;
+    max-width: 80em;
     margin: 0 auto 0 auto; }
   .main-nav li {
     font-size: 0.9em;
@@ -173,7 +176,7 @@
     visibility: hidden;
     position: absolute;
     left: auto;
-    top: 6em;
+    margin-top: 6em;
     left: auto;
     width: 25%; }
   .main-nav li:hover .sub-menu {
@@ -181,12 +184,13 @@
     visibility: visible;
     height: auto;
     position: absolute;
-    top: 6em;
+    margin-top: 6em;
     left: auto;
-    width: 25%; }
+    width: auto;
+    margin-left: 0.8em; }
   .main-nav .sub-menu li {
     height: auto;
-    padding: 0;
+    padding: 0 1em 0 0;
     font-size: 1em; } }
 
 @media only all and (min-width: 58.75em) {
@@ -209,8 +213,16 @@
 
 @media only all and (min-width: 71.25em) {
   nav, .nav-collapse .main-nav {
-    height: 4.8em; }
+    height: 5.4em; }
   .main-nav li:hover .sub-menu, .main-nav .sub-menu {
-    top: 4.8em; } }
+    margin-top: 5.4em; } }
+
+@media only all and (min-width: 82.25em) {
+  .main-nav li.about a.parent-item {
+    max-width: 60%; } }
+
+@media only all and (min-width: 96.25em) {
+  .main-nav li.about a.parent-item {
+    max-width: 55%; } }
 
 /*# sourceMappingURL=0-navigation.css.map */

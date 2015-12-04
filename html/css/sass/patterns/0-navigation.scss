@@ -20,6 +20,10 @@
   }
 }
 
+.main-nav {
+  font-size: 1em;
+}
+
 .main-nav li {
   background-color: scale-color($dark, $lightness: -25%);
   margin-bottom: 0;
@@ -30,7 +34,7 @@
 
 .main-nav li a {
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: $white;
   border-bottom: none;
   padding: 0.6em 0 0.7em 8%;
@@ -77,7 +81,7 @@
 }
 
 .main-nav .sub-menu li a {
-  font-size: 1em;
+  font-size: 1.1em;
   width: 100%;
   &:before {
     content: "— "
@@ -190,12 +194,12 @@
   nav {
     background-color: $dark;
     margin: 0 0 1.5em 0;
+    padding: 0 5% 0 5%;
   }
   
   .nav-collapse .main-nav {
-    padding: 0 5% 0 5%;
     height: 6em;
-    max-width: 90em;
+    max-width: 80em;
     margin: 0 auto 0 auto;
   }
   
@@ -244,7 +248,7 @@
     visibility: hidden;
   	position: absolute;
   	left: auto;
-  	top: 6em;
+  	margin-top: 6em;
     left: auto;
     width: 25%;
   }
@@ -254,14 +258,15 @@
     visibility: visible;
     height: auto;
     position: absolute;
-    top: 6em;
+    margin-top: 6em;
     left: auto;
-    width: 25%;
+    width: auto;
+    margin-left: 0.8em;
   }
   
   .main-nav .sub-menu li {
     height: auto;
-    padding: 0;
+    padding: 0 1em 0 0;
     font-size: 1em;
   }
   
@@ -306,12 +311,28 @@
   
   nav,
   .nav-collapse .main-nav {
-    height: 4.8em;
+    height: 5.4em;
   }
   
   .main-nav li:hover .sub-menu,
   .main-nav .sub-menu {
-    top: 4.8em;
+    margin-top: 5.4em;
   }
   
 } //end min 71.25em
+
+@media only all and (min-width: 82.25em) {
+  
+  .main-nav li.about a.parent-item {
+    max-width: 60%;
+  }
+  
+} // end min 82.25em
+
+@media only all and (min-width: 96.25em) {
+  
+  .main-nav li.about a.parent-item {
+    max-width: 55%;
+  }
+  
+} // end min 96.25em

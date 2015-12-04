@@ -596,7 +596,8 @@ Performance is dramatically improved because a 9999px box is not drawn. Noticeab
 
 .outside {
   display: block;
-  margin: 0 auto 1.5em auto !important; }
+  margin: 0 auto 1.5em auto !important;
+  max-width: 80em; }
   .outside h1 {
     line-height: 1.2em; }
 
@@ -617,16 +618,18 @@ Performance is dramatically improved because a 9999px box is not drawn. Noticeab
 
 .guide .styleguide {
   background-color: #fff;
-  padding: 0; }
+  padding: 2em 8% 1.5em 8%; }
+  @media only all and (min-width: 41em) {
+    .guide .styleguide {
+      padding: 2em 5% 1.5em 5%; } }
 
 .guide .guidepattern {
   clear: both;
   overflow: hidden;
   border-bottom: 0.1em #959595 solid;
-  padding: 2em 8% 1.5em 8%; }
-  @media only all and (min-width: 41em) {
-    .guide .guidepattern {
-      padding: 2em 5% 1.5em 5%; } }
+  max-width: 80em;
+  padding: 2.5em 0 2.5em 0;
+  margin: 0 auto 0 auto; }
 
 .guide .guidepattern.elements-heading {
   border-bottom: 0.1em #C0E6F3 solid; }
@@ -879,6 +882,9 @@ pre {
     margin-top: 0; }
   .guide .guidepattern .panels {
     margin-left: 4%; }
+  .guide .guidepattern .panels.fullwidth {
+    width: 90%;
+    margin-left: 0; }
   .guide .pattern-footer .hljs {
     min-height: 50em; }
   .webfontloader .hljs {
@@ -1269,6 +1275,9 @@ pre {
     color: #ffffff;
     float: left; }
 
+.main-nav {
+  font-size: 1em; }
+
 .main-nav li {
   background-color: #00283e;
   margin-bottom: 0; }
@@ -1277,7 +1286,7 @@ pre {
 
 .main-nav li a {
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #ffffff;
   border-bottom: none;
   padding: 0.6em 0 0.7em 8%; }
@@ -1313,7 +1322,7 @@ pre {
   height: auto; }
 
 .main-nav .sub-menu li a {
-  font-size: 1em;
+  font-size: 1.1em;
   width: 100%; }
   .main-nav .sub-menu li a:before {
     content: "— "; }
@@ -1381,11 +1390,11 @@ pre {
 @media only all and (min-width: 56em) {
   nav {
     background-color: #003552;
-    margin: 0 0 1.5em 0; }
+    margin: 0 0 1.5em 0;
+    padding: 0 5% 0 5%; }
   .nav-collapse .main-nav {
-    padding: 0 5% 0 5%;
     height: 6em;
-    max-width: 90em;
+    max-width: 80em;
     margin: 0 auto 0 auto; }
   .main-nav li {
     font-size: 0.9em;
@@ -1417,7 +1426,7 @@ pre {
     visibility: hidden;
     position: absolute;
     left: auto;
-    top: 6em;
+    margin-top: 6em;
     left: auto;
     width: 25%; }
   .main-nav li:hover .sub-menu {
@@ -1425,12 +1434,13 @@ pre {
     visibility: visible;
     height: auto;
     position: absolute;
-    top: 6em;
+    margin-top: 6em;
     left: auto;
-    width: 25%; }
+    width: auto;
+    margin-left: 0.8em; }
   .main-nav .sub-menu li {
     height: auto;
-    padding: 0;
+    padding: 0 1em 0 0;
     font-size: 1em; } }
 
 @media only all and (min-width: 58.75em) {
@@ -1453,183 +1463,17 @@ pre {
 
 @media only all and (min-width: 71.25em) {
   nav, .nav-collapse .main-nav {
-    height: 4.8em; }
+    height: 5.4em; }
   .main-nav li:hover .sub-menu, .main-nav .sub-menu {
-    top: 4.8em; } }
+    margin-top: 5.4em; } }
 
-.pattern {
-  background: url(../../assets/pattern.png);
-  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+@media only all and (min-width: 82.25em) {
+  .main-nav li.about a.parent-item {
+    max-width: 60%; } }
 
-.icon-pattern {
-  background-repeat: repeat; }
-
-/* Outside blocks
-   Sometimes we'll want to add a heading or CTA outside
-   of a layout block. For this we use .outside, which 
-   should be applied to a container around the object */
-.outside {
-  width: 100%;
-  padding-left: 1.4em; }
-  @media only all and (min-width: 41em) {
-    .outside {
-      width: 90%;
-      margin: 0 auto;
-      padding: 0;
-      max-width: 80em; } }
-
-/* Blocks - Mobile-first styles */
-.block {
-  background-color: #ffffff;
-  display: inline-block;
-  margin-bottom: 1.5em;
-  width: 100%;
-  border-bottom: 0.2em solid #003552; }
-
-/* /// Block colours */
-.block--aqua {
-  background-color: #008EBE;
-  border-bottom: 0.2em solid #007095; }
-
-.block--dark-aqua {
-  background-color: #003552;
-  color: #ffffff;
-  border-bottom: 0.2em solid #001e2e; }
-
-.block--charcoal {
-  background-color: #002C44;
-  color: #ffffff;
-  border-bottom: 0.2em solid #006eaa; }
-
-/* /// Top trim - only for blocks with no header bar */
-.block--trim-top-aqua {
-  border-top: 0.4em solid #52CEF4; }
-
-.block--trim-top-dark-aqua {
-  border-top: 0.4em solid #003552; }
-
-.block--trim-top-charcoal {
-  border-top: 0.4em solid #002C44; }
-
-/* /// Bottom trim should only be used on white blocks */
-.block--trim-bottom-aqua {
-  border-bottom: 0.2em solid #007095; }
-  .block--trim-bottom-aqua:after {
-    content: "";
-    display: inline-block;
-    float: left;
-    width: 100%;
-    height: 0.3em;
-    margin-top: 0.4em;
-    background-color: #008EBE; }
-
-.block--trim-bottom-dark-aqua {
-  border-bottom: 0.2em solid #001e2e; }
-  .block--trim-bottom-dark-aqua:after {
-    content: "";
-    display: inline-block;
-    float: left;
-    width: 100%;
-    height: 0.3em;
-    margin-top: 0.4em;
-    background-color: #003552; }
-
-.block--trim-bottom-charcoal {
-  border-bottom: 0.2em solid #006eaa; }
-  .block--trim-bottom-charcoal:after {
-    content: "";
-    display: inline-block;
-    float: left;
-    width: 100%;
-    height: 0.3em;
-    margin-top: 0.4em;
-    background-color: #002C44; }
-
-/* /// Block heading bars */
-.block__heading {
-  padding: 0.7em 1.4em 0.6em 1.4em;
-  background-color: #002C44;
-  color: #ffffff; }
-
-.block__heading .heading {
-  font-size: 1.2em; }
-
-.block__heading--aqua {
-  background-color: #008EBE; }
-
-.block__heading--dark-aqua {
-  background-color: #003552; }
-
-/* Padding tweaks; if using a heading bar the same
-colour as the block, give the title text a little more breathing room vertically */
-.block--aqua .block__heading--aqua, .block--dark-aqua .block__heading--dark-aqua, .block--charcoal .block__heading {
-  padding: 1.2em 1.4em 0.4em 1.4em; }
-
-.block--charcoal .block__heading--aqua, .block--charcoal .block__heading--dark-aqua {
-  padding: 0.7em 1.4em 0.6em 1.4em; }
-
-/* /// Block Content */
-.block__content {
-  padding: 1.2em 1.4em 1.4em 1.4em;
-  margin: 0 0 0 0;
-  font-size: 1.1em;
-  line-height: 1.3em; }
-
-.block__content--left {
-  width: 50%;
-  float: left; }
-
-.block__content--right {
-  width: 50%;
-  float: right; }
-
-/* /// Blocks with Images */
-.block__image {
-  background-position: center;
-  background-repeat: no-repeat; }
-
-.block__image--top {
-  margin-bottom: 0.5em; }
-
-.block__image--bottom {
-  margin-top: 0.5em; }
-
-.block__image--right {
-  width: 50%;
-  float: right; }
-
-.block__image--left {
-  width: 50%;
-  float: left; }
-
-.block__image--right, .block__image--left {
-  background-position: center bottom; }
-
-@media only all and (min-width: 41em) {
-  /* Block changes */
-  .block {
-    margin: 0 1.5% 2em 1.5%;
-    float: left; }
-  /* Layout Classes */
-  .block--25 {
-    width: 22%; }
-  .block--33 {
-    width: 30.3%; }
-  .block--40 {
-    width: 37%; }
-  .block--50 {
-    width: 47%; }
-  .block--60 {
-    width: 57%; }
-  .block--66 {
-    width: 63.6%; }
-  .block--75 {
-    width: 72%; }
-  .block--100 {
-    width: 97%; } }
+@media only all and (min-width: 96.25em) {
+  .main-nav li.about a.parent-item {
+    max-width: 55%; } }
 
 .container {
   margin: 0;
@@ -1645,14 +1489,14 @@ colour as the block, give the title text a little more breathing room vertically
   .header__contents {
     width: 90%;
     margin: 0 auto;
-    max-width: 80em; }
+    max-width: 90em; }
   .footer__container {
     width: 90%;
     margin: 0 auto;
-    max-width: 80em; }
+    max-width: 90em; }
   .footer__terms {
     margin: 1.5em auto 2em auto;
-    max-width: 80em; } }
+    max-width: 90em; } }
 
 .pattern {
   background: url(../../assets/pattern.png);

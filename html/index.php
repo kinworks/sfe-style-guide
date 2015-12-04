@@ -86,6 +86,33 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
   </head>
   <?php include 'functions.php'; ?>
   <body class="icon-body-background">
+    
+    
+    <footer>
+      <div class="footer__top">
+        <div class="footer__top__report-issues">
+          <span>Problems using this site or with its content?</span>
+          <a class="btn">Report an Issue &raquo;</a>
+        </div>
+        <div class="footer__top__partners">
+          <span>In partnership with:</span>
+          <i class="icon-footer-partner-es">Education Scotland</i>
+          <i class="icon-footer-partner-nls">National Library of Scotland</i>
+          <i class="icon-footer-partner-cs">Creative Scotland</i>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <ul>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Acknowledgements</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom"></div>
+    </footer>
+    
+    
     <div class="nav-wrapper__trigger" id="guidenav-trigger">Show/Hide Guidenav</div>
     <div class="nav-wrapper guidenav-collapse">
       <ul class="nav-wrapper__list">

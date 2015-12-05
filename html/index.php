@@ -88,13 +88,13 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
   <body class="icon-body-background">
     
     
-    <div class="footer__top">
+    <div class="footer__top clearfix">
       <div class="container">
           <div class="footer__top__report-issues">
             <span>Problems using this site or with its content?</span>
             <a class="btn">Report an Issue &raquo;</a>
           </div>
-          <div class="footer__top__partners">
+          <div class="footer__top__partners clearfix">
             <span>In partnership with:</span>
             <a href="http://www.educationscotland.gov.uk/" target="_blank">
               <i class="icon-footer-partner-es">Education Scotland</i>
@@ -102,14 +102,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             <a href="http://www.nls.uk" target="_blank">
               <i class="icon-footer-partner-nls">National Library of Scotland</i>
             </a>
-            <a href="http://www.creativescotland.com" target="_blank">
+            <a class="partner-cs" href="http://www.creativescotland.com" target="_blank">
               <i class="icon-footer-partner-cs">Creative Scotland</i>
             </a>
           </div>
         </div>
     </div>
    <div class="footer__nav">
-      <ul class="container">
+      <ul class="container clearfix">
         <li><a href="#">Terms of Use</a></li>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Accessibility</a></li>
@@ -119,12 +119,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     <footer class="icon-pattern">
       <div class="container">
         <span class="copyright">
-          &copy; Film Content Licences Provided by the National Library of Scotland. Other Website Content Copyright Scottish Film Limited, Registered in Scotland no. SC478204. All Rights Reserved.
+          &copy; Film Content Licences Provided by the National Library of Scotland. Other Website Content Copyright Scottish Film Limited, Registered in Scotland no. SC478204. <br/>All Rights Reserved.
         </span>
         <span class="address">
           Scottish Film Limited, Filmhouse, 88 Lothian Road, Edinburgh, EH3 9BZ
         </span> 
-        <i class="icon-footer-partner-sfe">Scottish Film Education</i>
+        <a href="http://www.scottishfilm.education" target="_blank">
+          <i class="icon-footer-partner-sfe">Scottish Film Education</i>
+        </a>
       </div>
     </footer>
     

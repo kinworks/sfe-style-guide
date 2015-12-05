@@ -12,6 +12,7 @@
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 1.5em;
+  border-bottom: none;
   @include transition(background-color,0.15s); // Kin Mixin
   &:hover {
     text-decoration: underline;

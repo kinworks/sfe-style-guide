@@ -50,7 +50,8 @@ select {
   }
 }
 .js {
-  a, 
+  a,
+  .btn, 
   input, 
   button, 
   textarea, 
@@ -62,6 +63,7 @@ select {
 }
 .keyboard {
   a,
+  .btn,
   input,
   button,
   textarea,

@@ -14,8 +14,8 @@
 .footer__top__partners span {
   font-size: 1.25em;
   color: $white;
-  font-weight: 600;
-  display: inline-block;
+  font-weight: 400;
+  display: block;
   width: 100%;
   max-width: 14.125em;
   margin: 0 0 1em 0;
@@ -28,6 +28,7 @@
 .footer__top__partners i {
   width: 100%;
   margin: 0 0 2em 0;
+  display: block;
 }
 
 .icon-footer-partner-es {
@@ -52,7 +53,8 @@
 
 .footer__nav {
   background-color: scale-color($mid, $lightness: -12%);
-  padding: 1.5em 8% 1.1em 8%;
+  padding: 1em 8% 0.5em 8%;
+  text-align: center;
 }
 
 .footer__nav li {
@@ -67,12 +69,175 @@
 
 footer {
   background-color: $dark;
-  padding: 1.8em 8% 2.5em 8%;
+  padding: 2.4em 8% 3.5em 8%;
+  text-align: center;
 }
 
 footer span {
-  color: $white;
   display: inline-block;
   margin: 0 0 2em 0;
+  color: $white;
+  font-weight: 300;
+  text-align: center;
   line-height: 1.3em;
 }
+
+footer i {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only all and (min-width: 26.25em) {
+  
+  .footer__nav li {
+    width: 44%;
+    float: left;
+    margin-top: 0.5em;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 1em;
+    }
+  }
+  
+} // end min 26.25em
+
+@media only all and (min-width: 32.5em) {
+  
+  .footer__top,
+  .footer__top span {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .footer__top__partners {
+    a {
+      width: 50%;
+      float: left;
+      text-align: center;
+    }
+    .partner-cs {
+      width: 100%;
+    }
+    .icon-footer-partner-es {
+      margin: 0.3em auto 2.2em auto;
+    }
+    .icon-footer-partner-nls {
+      margin: 0 auto 2.5em auto;
+    }
+    .icon-footer-partner-cs {
+      display: inline-block;
+      clear: both;
+      float: none;
+      margin: 0 auto 1em auto;
+    }
+  }
+  
+} // end min 32.5em
+
+@media only all and (min-width: 45em) {
+  
+  .footer__top__partners {
+    a {
+      width: 30%;
+      margin-right: 5%;
+      float: left;
+      text-align: center;
+    }
+    .partner-cs {
+      width: 30%;
+      margin-right: 0;
+    }
+    .icon-footer-partner-es {
+      margin: 0.3em auto 1.7em auto;
+    }
+    .icon-footer-partner-nls {
+      margin: 0 auto 2em auto;
+    }
+    .icon-footer-partner-cs {
+      display: inline-block;
+      clear: both;
+      float: none;
+      margin: 0 auto 1em auto;
+    }
+  }
+
+  .footer__nav li {
+    width: 25%;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: auto;
+    }
+  }
+  
+  footer span {
+    max-width: 80%;
+  }
+  
+} // end min 45em
+
+@media only all and (min-width: 63.9375em) {
+  
+  .footer__top__report-issues span,
+  .footer__top__partners span {
+    text-align: left;
+    max-width: 13.25em;
+    font-size: 1.1em;
+  }
+  
+  .footer__top__report-issues {
+    width: 25%;
+    float: right;
+    text-align: left;
+  }
+   
+  .footer__top__partners {
+    width: 65%;
+    margin-right: 10%;
+    float: left;
+    text-align: left;
+  }
+  
+  .footer__top__partners span {
+    margin-bottom: 1em;
+  }
+  
+  .footer__top__partners a {
+    text-align: left;
+    margin-right: 10%;
+  }
+  
+  .footer__top__partners .partner-cs {
+    width: 20%;
+    margin-right: 0;
+  }
+  
+  .footer__top__partners .icon-footer-partner-es {
+    margin: 0.3em 0 0 0;
+  }
+  .footer__top__partners .icon-footer-partner-nls,
+  .footer__top__partners .icon-footer-partner-cs { 
+    margin: 0 0 0.5em 0;
+  }
+  
+  footer span {
+    max-width: 70%;
+  }
+    
+} // end min 63.9375em
+
+@media only all and (min-width: 82.25em) {
+  
+  .footer__top__report-issues {
+    width: 20%;
+    float: right;
+    text-align: left;
+  }
+   
+  .footer__top__partners {
+    width: 60%;
+    margin-right: 20%;
+    float: left;
+    text-align: left;
+  }
+  
+} //end min 82.25em

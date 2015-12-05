@@ -6,6 +6,10 @@
   padding: 1.2em 8% 1.5em 8%;
 }
 
+.footer__top__report-issues {
+  margin-bottom: 0.5em;
+}
+
 .footer__top__report-issues span,
 .footer__top__partners span {
   font-size: 1.25em;
@@ -13,15 +17,62 @@
   font-weight: 600;
   display: inline-block;
   width: 100%;
+  max-width: 14.125em;
   margin: 0 0 1em 0;
+}
+
+.footer__top__partners span {
+  margin: 0 0 2em 0;
+}
+
+.footer__top__partners i {
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+.icon-footer-partner-es {
+  max-width: 11.375em;
+  height: 4.6875em;
+}
+.icon-footer-partner-nls {
+  max-width: 12.25em;
+  height: 7.0625em;
+}
+.icon-footer-partner-cs {
+  max-width: 8.3125em;
+  height: 5.25em;
+  margin: 0;
+}
+
+.icon-footer-partner-sfe {
+  width: 100%;
+  max-width: 13.75em;
+  height: 5.8125em;
 }
 
 .footer__nav {
   background-color: scale-color($mid, $lightness: -12%);
-  padding: 1.2em 8% 1.5em 8%;
+  padding: 1.5em 8% 1.1em 8%;
+}
+
+.footer__nav li {
+  list-style-type: none;
+}
+
+.footer__nav li a {
+  font-size: 1em;
+  font-weight: 400;
+  color: $white;
 }
 
 footer {
   background-color: $dark;
-  padding: 1.2em 8% 1.5em 8%;
+  padding: 1.8em 8% 2.5em 8%;
+}
+
+footer span {
+  color: $white;
+  display: inline-block;
+  margin: 0 0 2em 0;
+  line-height: 1.3em;
 }

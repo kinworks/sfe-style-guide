@@ -10,7 +10,7 @@
 
 .footer__top {
   background-color: #008EBE;
-  padding: 1.2em 8% 1.5em 8%; }
+  padding: 2em 8% 1.5em 8%; }
 
 .footer__top__report-issues {
   margin-bottom: 0.5em; }
@@ -55,7 +55,7 @@
 
 .footer__nav {
   background-color: #007da7;
-  padding: 1em 8% 0.5em 8%;
+  padding: 1.5em 8% 0.5em 8%;
   text-align: center; }
 
 .footer__nav li {
@@ -112,6 +112,8 @@ footer i {
     clear: both;
     float: none;
     margin: 0 auto 1em auto; }
+  .footer__nav {
+    padding: 1em 8% 0.5em 8%; }
   footer i {
     display: inline-block;
     width: 13.75em; } }

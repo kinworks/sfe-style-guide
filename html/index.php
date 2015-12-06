@@ -86,51 +86,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
   </head>
   <?php include 'functions.php'; ?>
   <body class="icon-body-background">
-    
-    
-    <div class="footer__top clearfix">
-      <div class="container">
-          <div class="footer__top__report-issues">
-            <span>Problems using this site or with its content?</span>
-            <a class="btn">Report an Issue &raquo;</a>
-          </div>
-          <div class="footer__top__partners clearfix">
-            <span>In partnership with:</span>
-            <a href="http://www.educationscotland.gov.uk/" target="_blank">
-              <i class="icon-footer-partner-es">Education Scotland</i>
-            </a>
-            <a href="http://www.nls.uk" target="_blank">
-              <i class="icon-footer-partner-nls">National Library of Scotland</i>
-            </a>
-            <a class="partner-cs" href="http://www.creativescotland.com" target="_blank">
-              <i class="icon-footer-partner-cs">Creative Scotland</i>
-            </a>
-          </div>
-        </div>
-    </div>
-   <div class="footer__nav">
-      <ul class="container clearfix">
-        <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Accessibility</a></li>
-        <li><a href="#">Acknowledgements</a></li>
-      </ul>
-    </div>
-    <footer class="icon-pattern">
-      <div class="container">
-        <span class="copyright">
-          &copy; Film Content Licences Provided by the National Library of Scotland. Other Website Content Copyright Scottish Film Limited, Registered in Scotland no. SC478204. <br/>All Rights Reserved.
-        </span>
-        <span class="address">
-          Scottish Film Limited, Filmhouse, 88 Lothian Road, Edinburgh, EH3 9BZ
-        </span> 
-        <a href="http://www.scottishfilm.education" target="_blank">
-          <i class="icon-footer-partner-sfe">Scottish Film Education</i>
-        </a>
-      </div>
-    </footer>
-    
-    
+        
     <div class="nav-wrapper__trigger" id="guidenav-trigger">Show/Hide Guidenav</div>
     <div class="nav-wrapper guidenav-collapse">
       <ul class="nav-wrapper__list">
@@ -627,7 +583,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             
             <?php // NAVIGATION PATTERN ==================== ?>
       
-          <div class="guidepattern pattern-header" id="nav">
+          <div class="guidepattern pattern-nav" id="nav">
         
             <h2 class="guidance">Navigation</h2>
             <p class="guidance">
@@ -641,7 +597,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       </div>
       
     <div class="bodywrapper">         
-          <nav class="nav icon-pattern clearfix nav-collapse">
+        <nav class="nav icon-pattern clearfix nav-collapse">
           <ul class="main-nav clearfix">
             <li class="home current-current_page_item">
               <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
@@ -791,15 +747,54 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Contact Us">Contact Us</a>
             </li> 
         </ul>
-        </nav>
-        <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
-          <div class="trigger__container">
-            <i class="icon-menu"></i>
-            <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
-            <i class="icon-arrow-up">Open this section</i>
-          </div>
-        </div>  
+      </nav>
+      <div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
+        <div class="trigger__container">
+          <i class="icon-menu"></i>
+          <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
+          <i class="icon-arrow-up">Open this section</i>
+        </div>
+      </div>  
+      
     </div>
+    
+    <div class="bodywrapper">    
+      <div class="styleguide container" id="nav">
+        <div class="guidepattern nav">
+
+            <div class="js-tab-ui panels fullwidth">
+                <ul class="js-tabs-list" role="tablist">
+                  <li role="tab" id="tab-nav-markup" aria-controls="tab-nav-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="nav">Markup
+                  </li>
+                  <li role="tab" id="tab-nav-scss" aria-controls="tab-nav-scss-panel" aria-selected="false" data-tabgroup="nav">
+                    SCSS
+                  </li>
+                  <li role="tab" id="tab-nav-css" aria-controls="tab-nav-css-panel" aria-selected="false" data-tabgroup="nav">
+                    Generated CSS
+                  </li>
+                </ul>
+                <div class="source js-panel first" id="tab-nav-markup-panel" role="tabpanel" aria-labelledby="tab-nav-markup" data-tabgroup="nav">
+                  <h2 class="js-panel__title">Markup</h2>
+                  <pre>
+                    <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/navigation.html")); ?></code>
+                  </pre>
+                </div>
+                <div class="style js-panel" id="tab-nav-scss-panel" role="tabpanel" aria-labelledby="tab-nav-scss" data-tabgroup="nav">
+                  <h2 class="js-panel__title">SCSS</h2>
+                  <pre>
+                    <code><?php echo file_get_contents("css/sass/patterns/0-header.scss"); ?></code>
+                  </pre>
+                </div>
+                <div class="style js-panel" id="tab-nav-css-panel" role="tabpanel" aria-labelledby="tab-nav-css" data-tabgroup="nav">
+                  <h2 class="js-panel__title">CSS</h2>
+                  <pre>
+                    <code><?php echo file_get_contents("css/output/patterns/0-header.css"); ?></code>
+                  </pre>
+                </div>
+
+              </div>
+          </div> 
+
     
     <div class="bodywrapper">
       <div class="styleguide container">  
@@ -819,20 +814,20 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             <br/>            
             <div class="js-tab-ui panels fullwidth">
                 <ul class="js-tabs-list" role="tablist">
-                  <li role="tab" id="tab-footer-scss" aria-controls="tab-footer-scss-panel" aria-selected="true" data-tabgroup="footer">
+                  <li role="tab" id="tab-bodybg-scss" aria-controls="tab-bodybg-scss-panel" aria-selected="true" data-tabgroup="bodybg">
                     SCSS
                   </li>
-                  <li role="tab" id="tab-footer-css" aria-controls="tab-footer-css-panel" aria-selected="false" data-tabgroup="footer">
+                  <li role="tab" id="tab-bodybg-css" aria-controls="tab-bodybg-css-panel" aria-selected="false" data-tabgroup="bodybg">
                     Generated CSS
                   </li>
                 </ul>
-                <div class="style js-panel first" id="tab-footer-scss-panel" role="tabpanel" aria-labelledby="tab-footer-scss" data-tabgroup="footer">
+                <div class="style js-panel first" id="tab-bodybg-scss-panel" role="tabpanel" aria-labelledby="tab-bodybg-scss" data-tabgroup="bodybg">
                   <h2 class="js-panel__title">SCSS</h2>
                   <pre>
                     <code><?php echo file_get_contents("css/sass/patterns/01-body-background.scss"); ?></code>
                   </pre>
                 </div>            
-                <div class="style js-panel" id="tab-footer-css-panel" role="tabpanel" aria-labelledby="tab-footer-css" data-tabgroup="footer">
+                <div class="style js-panel" id="tab-bodybg-css-panel" role="tabpanel" aria-labelledby="tab-bodybg-css" data-tabgroup="bodybg">
                   <h2 class="js-panel__title">Generated CSS</h2>
                   <pre>
                     <code><?php echo file_get_contents("css/output/patterns/01-body-background.css"); ?></code>
@@ -840,10 +835,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 </div>
               </div>
             </div>
-
-
-
-            
+  
   <?php // FOOTER BLOCK PATTERN  ==================== ?>
       
         <div class="guidepattern pattern-footer" id="footer">
@@ -857,45 +849,59 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               For the purposes of this guide, the image asset required is switching to higher resolution PNG based on a media query. Our preferred method would actually be to use the SVG provided in the /assets folder and a PNG fallback, using Modernizr or similar. Either way, resolution independence for all vector-based visual assets is a requirement of any interface built for STP projects.
             </p>
             <br/>     
-            <footer class="footer">
-              <div class="footer__container clearfix">
-                <h1 class="heading heading__medium">Scotland's Towns Partnership</h1>
-                <a class="footer__twitter clearfix" href="https://twitter.com/ScotlandsTowns" target="_blank">
-                  <span class="heading heading__small">Follow us on Twitter &raquo;</span>
-                  <span class="icon"></span>
+           </div>
+      </div>
+    </div>
+  </div>  
+    <div class="bodywrapper">
+            
+        <div class="footer__top clearfix">
+          <div class="container">
+              <div class="footer__top__report-issues">
+                <span>Problems using this site or with its content?</span>
+                <a class="btn">Report an Issue &raquo;</a>
+              </div>
+              <div class="footer__top__partners clearfix">
+                <span>In partnership with:</span>
+                <a href="http://www.educationscotland.gov.uk/" target="_blank">
+                  <i class="icon-footer-partner-es">Education Scotland</i>
                 </a>
-                <nav class="footer__nav clearfix">
-                  <ul>
-                    <li><a href="http://www.scotlandstowns.org/">Home</a></li>
-                    <li><a href="http://www.scotlandstowns.org/news-and-resources">News &amp; Resources</a></li>
-                    <li><a href="http://www.scotlandstowns.org/community">Community</a></li>
-                    <li><a href="http://www.scotlandstowns.org/about-us">About Us</a></li>
-                    <li><a href="http://www.scotlandstowns.org/get-involved">Get Involved</a></li>
-                  </ul>
-                </nav>
-                
+                <a href="http://www.nls.uk" target="_blank">
+                  <i class="icon-footer-partner-nls">National Library of Scotland</i>
+                </a>
+                <a class="partner-cs" href="http://www.creativescotland.com" target="_blank">
+                  <i class="icon-footer-partner-cs">Creative Scotland</i>
+                </a>
               </div>
-              <div class="footer__container footer__container--dark clearfix">
-                <div class="footer__terms">
-                  <p class="text__small">
-                    &copy; 2015 Scotland's Towns Ltd. Registered in Scotland No. SC419769. All Rights Reserved. 
-                  </p>
-                </div>
-              </div>
-            </footer>
-            
-            <br/>
-        
-            <div class="display">
-            
-              <iframe class="thicker" src="guidepatterns/mobilefooter.html"></iframe>
-  
-              <br/>
-                        
-              <iframe class="thinner" src="guidepatterns/mobilefooter.html"></iframe>
-            
             </div>
-            <div class="js-tab-ui panels">
+        </div>
+       <div class="footer__nav">
+          <ul class="container clearfix">
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Acknowledgements</a></li>
+          </ul>
+        </div>
+        <footer class="icon-pattern">
+          <div class="container">
+            <span class="copyright">
+              &copy; Film Content Licences Provided by the National Library of Scotland. Other Website Content Copyright Scottish Film Limited, Registered in Scotland no. SC478204. <br/>All Rights Reserved.
+            </span>
+            <span class="address">
+              Scottish Film Limited, Filmhouse, 88 Lothian Road, Edinburgh, EH3 9BZ
+            </span> 
+            <a href="http://www.scottishfilm.education" target="_blank">
+              <i class="icon-footer-partner-sfe">Scottish Film Education</i>
+            </a>
+          </div>
+        </footer>
+    </div>
+    
+    <div class="bodywrapper">
+      <div class="styleguide container">                    
+          <div class="guidepattern pattern-footer">  
+            <div class="js-tab-ui panels fullwidth">
                 <ul class="js-tabs-list" role="tablist">
                   <li role="tab" id="tab-footer-markup" aria-controls="tab-footer-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="footer">Markup
                   </li>
@@ -925,7 +931,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                   </pre>
                 </div>
               </div>
-            </div>
+
   
   <?php // LAYOUT CAP ==================== ?>
   
@@ -933,11 +939,11 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               <div class="display">
                 <h2 class="guidance">Layout cap</h2>
       
-                <p class="guidance">The layout width should be capped to a maximum of 80em via a limitation on your layout container, also applied to the header and footer of the site.</p>
+                <p class="guidance">We've decided, in terms of optimal width to view the site at being informed by the best reading length for text blocks, that a layout capped to a maximum of 80em is currently best across SFE web properties. We do this as a limitation using a utility class of  'container', which is applied in various places throughout our existing patterns.</p>
 
               </div>
                                            
-            <div class="js-tab-ui panels">
+              <div class="js-tab-ui panels">
                 <ul class="js-tabs-list" role="tablist">
                   <li role="tab" id="tab-layout-cap-scss" aria-controls="tab-layout-cap-scss-panel" aria-selected="true" data-tabgroup="layout-cap">
                     SCSS

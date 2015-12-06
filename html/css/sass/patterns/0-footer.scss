@@ -3,7 +3,7 @@
 
 .footer__top {
   background-color: $mid;
-  padding: 1.2em 8% 1.5em 8%;
+  padding: 2em 8% 1.5em 8%;
 }
 
 .footer__top__report-issues {
@@ -58,7 +58,7 @@ footer a {
 
 .footer__nav {
   background-color: scale-color($mid, $lightness: -12%);
-  padding: 1em 8% 0.5em 8%;
+  padding: 1.5em 8% 0.5em 8%;
   text-align: center;
 }
 
@@ -138,6 +138,10 @@ footer i {
       float: none;
       margin: 0 auto 1em auto;
     }
+  }
+  
+  .footer__nav {
+    padding: 1em 8% 0.5em 8%;
   }
   
   footer i {

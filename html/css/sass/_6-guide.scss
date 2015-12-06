@@ -189,24 +189,6 @@ iframe {
   height: 15em;
 }
 
-.guide .pattern-footer iframe.thicker {
-  outline: 0;
-  border: 0;
-  width: 100%;
-  max-width: 40em;
-  height: 33em;
-  overflow: hidden;
-}
-
-.guide .pattern-footer iframe.thinner {
-  outline: 0;
-  border: 0;
-  width: 100%;
-  max-width: 30em;
-  height: 33em;
-  overflow: hidden;
-}
-
 .guide .pattern-responsive-tables iframe {
   outline: 0;
   border: 0;
@@ -490,7 +472,7 @@ pre {
   }
   
   .guide .pattern-footer .hljs {
-    min-height: 50em;
+    min-height: 25em;
   }
   
   .webfontloader .hljs {

@@ -939,7 +939,9 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               <div class="display">
                 <h2 class="guidance">Layout cap</h2>
       
-                <p class="guidance">We've decided, in terms of optimal width to view the site at being informed by the best reading length for text blocks, that a layout capped to a maximum of 80em is currently best across SFE web properties. We do this as a limitation using a utility class of  'container', which is applied in various places throughout our existing patterns.</p>
+                <p class="guidance">We've concluded that in terms of optimal maximum viewing width, the site's layout should cap at a width informed by the best reading length for text blocks. This cap is a maximum of 80em across SFE web properties. We do this as a limitation using a utility class of  'container', which is applied in various places throughout our existing patterns.</p>
+                
+                <p class="guidance">In the footer__nav, this is applied to the &lt;ul&gt; that resides inside, meaning that the blue bar containing it is always 100% and the &lt;ul&gt; for navigation items is centered and a maximum of 80em wide.
 
               </div>
                                            

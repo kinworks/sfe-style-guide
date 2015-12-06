@@ -1584,7 +1584,7 @@ body {
   padding: 0.6em 1.2em;
   font-weight: 600;
   cursor: pointer;
-  margin-bottom: 1.5em;
+  margin: 0 1em 1.5em 0;
   border-bottom: none;
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
@@ -1594,6 +1594,31 @@ body {
   .btn:hover {
     text-decoration: underline;
     background-color: #005e92; }
+
+.btn--mid {
+  background-color: #008EBE; }
+  .btn--mid:hover {
+    background-color: #00b2ee; }
+
+.btn--light {
+  background-color: #52CEF4; }
+  .btn--light:hover {
+    background-color: #6cd5f6; }
+
+.btn--light-pastel {
+  background-color: #C0E6F3; }
+  .btn--light-pastel:hover {
+    background-color: #c9eaf5; }
+
+.btn--contrast {
+  background-color: #dc6f00; }
+  .btn--contrast:hover {
+    background-color: #ff8509; }
+
+.btn--contrast-alt {
+  background-color: #00A659; }
+  .btn--contrast-alt:hover {
+    background-color: #00da75; }
 
 /* Removes awkward default styles on some inputs for mobile */
 input[type="button"], input[type="reset"], input[type="submit"] {

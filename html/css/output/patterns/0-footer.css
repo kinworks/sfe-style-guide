@@ -65,6 +65,8 @@
   font-size: 1em;
   font-weight: 400;
   color: #ffffff; }
+  .footer__nav li a:hover {
+    border-bottom: 0.1em dotted #ffffff; }
 
 footer {
   background-color: #003552;

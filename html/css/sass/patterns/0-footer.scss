@@ -25,6 +25,11 @@
   margin: 0 0 2em 0;
 }
 
+.footer__top__partners a,
+footer a {
+  border-bottom: 0;
+}
+
 .footer__top__partners i {
   width: 100%;
   margin: 0 0 2em 0;
@@ -74,8 +79,8 @@ footer {
 }
 
 footer span {
-  display: inline-block;
-  margin: 0 0 2em 0;
+  display: block;
+  margin: 0 auto 2em auto;
   color: $white;
   font-weight: 300;
   text-align: center;
@@ -130,6 +135,11 @@ footer i {
       float: none;
       margin: 0 auto 1em auto;
     }
+  }
+  
+  footer i {
+    display: inline-block;
+    width: 13.75em;
   }
   
 } // end min 32.5em

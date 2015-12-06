@@ -27,6 +27,9 @@
 .footer__top__partners span {
   margin: 0 0 2em 0; }
 
+.footer__top__partners a, footer a {
+  border-bottom: 0; }
+
 .footer__top__partners i {
   width: 100%;
   margin: 0 0 2em 0;
@@ -69,8 +72,8 @@ footer {
   text-align: center; }
 
 footer span {
-  display: inline-block;
-  margin: 0 0 2em 0;
+  display: block;
+  margin: 0 auto 2em auto;
   color: #ffffff;
   font-weight: 300;
   text-align: center;
@@ -106,7 +109,10 @@ footer i {
     display: inline-block;
     clear: both;
     float: none;
-    margin: 0 auto 1em auto; } }
+    margin: 0 auto 1em auto; }
+  footer i {
+    display: inline-block;
+    width: 13.75em; } }
 
 @media only all and (min-width: 45em) {
   .footer__top__partners a {

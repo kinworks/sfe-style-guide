@@ -8,6 +8,18 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--dark {
+  background-color: #003552; }
+
+.bg--mid {
+  background-color: #008EBE; }
+
+.bg--light {
+  background-color: #52CEF4; }
+
+.bg--light-pastel {
+  background-color: #C0E6F3; }
+
 /* Forms */
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], input[list], input[type="file"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="range"], input[type="search"], textarea, select {
   display: inline-block;
@@ -83,8 +95,8 @@ select[multiple] {
   height: auto; }
 
 textarea[disabled], input[disabled], select[disabled] {
-  background-color: #ebf7fb;
-  color: #003552; }
+  background-color: #ccc;
+  color: #666; }
 
 textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
   cursor: not-allowed; }

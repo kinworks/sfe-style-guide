@@ -8,6 +8,18 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--dark {
+  background-color: #003552; }
+
+.bg--mid {
+  background-color: #008EBE; }
+
+.bg--light {
+  background-color: #52CEF4; }
+
+.bg--light-pastel {
+  background-color: #C0E6F3; }
+
 /* Buttons / CTAs */
 .btn {
   font-size: 1.1em;
@@ -18,40 +30,79 @@
   font-weight: 600;
   cursor: pointer;
   margin: 0 1em 1.5em 0;
-  border-bottom: none;
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   -ms-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out; }
+  transition: background-color 0.15s ease-in-out;
+  border-top: none;
+  border-bottom: 0.2em solid #001a29; }
   .btn:hover {
     text-decoration: underline;
-    background-color: #005e92; }
+    box-shadow: inset 0 0 0 0.2em #0088d2;
+    background-color: #005e92;
+    border-bottom: 0.2em solid #002235; }
 
 .btn--mid {
-  background-color: #008EBE; }
+  background-color: #008EBE;
+  border-bottom: 0.2em solid #006385; }
   .btn--mid:hover {
-    background-color: #00b2ee; }
+    box-shadow: inset 0 0 0 0.2em #1fc6ff;
+    background-color: #008EBE;
+    border-bottom: 0.2em solid #0080ab; }
 
 .btn--light {
-  background-color: #52CEF4; }
+  background-color: #52CEF4;
+  color: #002C44;
+  border-bottom: 0.2em solid #0ea7d7; }
   .btn--light:hover {
-    background-color: #6cd5f6; }
+    box-shadow: inset 0 0 0 0.2em #97e2f8;
+    background-color: #52CEF4;
+    border-bottom: 0.2em solid #15bdf0; }
 
 .btn--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #C0E6F3;
+  color: #002C44;
+  border-bottom: 0.2em solid #77c9e5; }
   .btn--light-pastel:hover {
-    background-color: #c9eaf5; }
+    box-shadow: inset 0 0 0 0.2em #d9f0f8;
+    background-color: #C0E6F3;
+    border-bottom: 0.2em solid #9bd8ec; }
 
 .btn--contrast {
-  background-color: #dc6f00; }
+  background-color: #dc6f00;
+  border-bottom: 0.2em solid #844300; }
   .btn--contrast:hover {
-    background-color: #ff8509; }
+    box-shadow: inset 0 0 0 0.2em #ff9a34;
+    background-color: #dc6f00;
+    border-bottom: 0.2em solid #9a4e00; }
 
 .btn--contrast-alt {
-  background-color: #00A659; }
+  background-color: #00A659;
+  border-bottom: 0.2em solid #006435; }
   .btn--contrast-alt:hover {
-    background-color: #00da75; }
+    box-shadow: inset 0 0 0 0.2em #00eb7e;
+    background-color: #00A659;
+    border-bottom: 0.2em solid #008547; }
+
+.btn--white {
+  background-color: #ffffff;
+  border-bottom: 0.2em solid #b3b3b3;
+  color: #002C44; }
+  .btn--white:hover {
+    box-shadow: inset 0 0 0 0.2em #C0E6F3;
+    background-color: #ffffff;
+    border-bottom: 0.2em solid #b3b3b3; }
+
+.btn--disabled {
+  background-color: #ccc;
+  border-bottom: 0.2em solid #b3b3b3;
+  color: #666; }
+  .btn--disabled:hover {
+    text-decoration: none;
+    box-shadow: none;
+    background-color: #ccc;
+    border-bottom: 0.2em solid #b3b3b3; }
 
 /* Removes awkward default styles on some inputs for mobile */
 input[type="button"], input[type="reset"], input[type="submit"] {

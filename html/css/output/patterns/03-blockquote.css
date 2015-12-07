@@ -9,16 +9,28 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--dark {
+  background-color: #003552; }
+
+.bg--mid {
+  background-color: #008EBE; }
+
+.bg--light {
+  background-color: #52CEF4; }
+
+.bg--light-pastel {
+  background-color: #C0E6F3; }
+
 .quote {
   margin: 1.5em 0;
   border-top: 0.1em solid;
   border-bottom: 0.1em solid;
-  border-color: #ebf7fb;
+  border-color: #C0E6F3;
   padding: 1em 1em;
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.3em;
-  color: #008EBE; }
+  color: #0079A1; }
 
 blockquote.quote__blockquote {
   margin: 0; }
@@ -31,7 +43,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #C0E6F3; }
+  color: #52CEF4; }
 
 .quote em {
   font-style: normal; }

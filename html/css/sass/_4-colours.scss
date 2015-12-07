@@ -47,3 +47,22 @@ $feedback: #bff8ed;
 $error: #ffcdb3;
 
 $disabled: #ccc;
+
+
+/// Background utility classes
+
+.bg--dark {
+  background-color: $dark;
+}
+
+.bg--mid {
+  background-color: $mid;
+}
+
+.bg--light {
+  background-color: $light;
+}
+
+.bg--light-pastel {
+  background-color: $light-pastel;
+}

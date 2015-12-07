@@ -8,6 +8,18 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--dark {
+  background-color: #003552; }
+
+.bg--mid {
+  background-color: #008EBE; }
+
+.bg--light {
+  background-color: #52CEF4; }
+
+.bg--light-pastel {
+  background-color: #C0E6F3; }
+
 .header {
   background-color: #ffffff;
   width: 100%;

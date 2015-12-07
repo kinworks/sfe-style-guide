@@ -126,8 +126,8 @@ select[multiple] {
 }
 
 textarea[disabled], input[disabled], select[disabled] {
-  background-color: lighten($light-pastel, 10%);
-  color: $dark;
+  background-color: #ccc;
+  color: #666;
 }
 
 textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {

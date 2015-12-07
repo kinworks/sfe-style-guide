@@ -366,47 +366,17 @@ pre {
   padding-top: 3em;
 }
 
-.bg-light-pastel,
-.bg-dark,
-.bg-mid,
-.bg-light {
-  padding: 1em;
-}
-
-.bg-light-pastel {
-  background-color: $light-pastel;
-}
-
-.bg-dark {
-  background-color: $dark;
-}
-
-.bg-mid {
-  background-color: $mid;
-}
-
-.bg-light {
-  background-color: $light;
-}
-
 .pattern-buttons-and-calls-to-action h2 {
   margin-bottom: 1em;
 }
 
-.pattern-buttons-and-calls-to-action .bg-light-pastel,
-.pattern-buttons-and-calls-to-action .bg-dark,
-.pattern-buttons-and-calls-to-action .bg-light { 
+.bg { 
   margin-top: 2em;
-  padding: 1em 1em 0 1em
+  padding: 1.5em 1.5em 1.5em 1.5em
 }
 
-.pattern-buttons-and-calls-to-action .bg-light {
+.pattern-buttons-and-calls-to-action .bg--light-pastel {
   margin-bottom: 2em;
-}
-
-.pattern-buttons-and-calls-to-action button.cta,
-.pattern-buttons-and-calls-to-action input.cta {
-  margin-bottom: 3em;
 }
 
 .pattern-buttons-and-calls-to-action .panels,

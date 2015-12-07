@@ -12,42 +12,85 @@
   font-weight: 600;
   cursor: pointer;
   margin: 0 1em 1.5em 0;
-  border-bottom: none;
   @include transition(background-color,0.15s); // Kin Mixin
+  border-top: none;
+  border-bottom: 0.2em solid scale-color($dark, $lightness: -50%);
   &:hover {
     text-decoration: underline;
+    box-shadow: inset 0 0 0 0.2em scale-color($dark, $lightness: 30%);
     background-color: scale-color($dark, $lightness: 15%);
+    border-bottom: 0.2em solid scale-color($dark, $lightness: -35%);
   }
 }
 
 .btn--mid {
   background-color: $mid;
+  border-bottom: 0.2em solid scale-color($mid, $lightness: -30%);
   &:hover {
-    background-color: scale-color($mid, $lightness: 15%);
+    box-shadow: inset 0 0 0 0.2em scale-color($mid, $lightness: 30%);
+    background-color: $mid;
+    border-bottom: 0.2em solid scale-color($mid, $lightness: -10%);
   }
 }
 .btn--light {
   background-color: $light;
+  color: $dark-text;
+  border-bottom: 0.2em solid scale-color($light, $lightness: -30%);
   &:hover {
-    background-color: scale-color($light, $lightness: 15%);
+    box-shadow: inset 0 0 0 0.2em scale-color($light, $lightness: 40%);
+    background-color: $light;
+    border-bottom: 0.2em solid scale-color($light, $lightness: -20%);
   }
 }
 .btn--light-pastel {
   background-color: $light-pastel;
+  color: $dark-text;
+  border-bottom: 0.2em solid scale-color($light-pastel, $lightness: -20%);
   &:hover {
-    background-color: scale-color($light-pastel, $lightness: 15%);
+    box-shadow: inset 0 0 0 0.2em scale-color($light-pastel, $lightness: 40%);
+    background-color: $light-pastel;
+    border-bottom: 0.2em solid scale-color($light-pastel, $lightness: -10%);
   }
 }
 .btn--contrast {
   background-color: $contrast;
+  border-bottom: 0.2em solid scale-color($contrast, $lightness: -40%);
   &:hover {
-    background-color: scale-color($contrast, $lightness: 15%);
+    box-shadow: inset 0 0 0 0.2em scale-color($contrast, $lightness: 30%);
+    background-color: $contrast;
+    border-bottom: 0.2em solid scale-color($contrast, $lightness: -30%);
   }
 }
 .btn--contrast-alt {
   background-color: $contrast-alt;
+  border-bottom: 0.2em solid scale-color($contrast-alt, $lightness: -40%);
   &:hover {
-    background-color: scale-color($contrast-alt, $lightness: 15%);
+    box-shadow: inset 0 0 0 0.2em scale-color($contrast-alt, $lightness: 20%);
+    background-color: $contrast-alt;
+    border-bottom: 0.2em solid scale-color($contrast-alt, $lightness: -20%);
+  }
+}
+
+.btn--white {
+  background-color: $white;
+  border-bottom: 0.2em solid scale-color($white, $lightness: -30%);
+  color: $dark-text;
+  &:hover {
+    box-shadow: inset 0 0 0 0.2em $light-pastel;
+    background-color: $white;
+    border-bottom: 0.2em solid scale-color($white, $lightness: -30%);
+  }
+}
+
+.btn--disabled {
+  background-color: #ccc;
+  border-bottom: 0.2em solid scale-color($white, $lightness: -30%);
+  color: #666;
+  &:hover {
+    text-decoration: none;
+    box-shadow: none;
+    background-color: #ccc;
+    border-bottom: 0.2em solid scale-color($white, $lightness: -30%);
   }
 }
 

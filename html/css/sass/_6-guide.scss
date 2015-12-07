@@ -396,10 +396,6 @@ pre {
   margin: 0 0 2em 0;
 }
 
-.pattern-form-fields form {
-  width: 60%;
-}
-
 .blocks .block--66 {
     margin-bottom: 4em;
   }
@@ -407,6 +403,19 @@ pre {
 .blocks .guide-lastbanff {
   margin-bottom: 5em;
 }
+
+.guide .guidepattern.pattern-tab-ui .display {
+  width: 100%;
+  float: none;
+  margin: 2em 0 6em 0;
+}
+
+.guide .guidepattern.pattern-tab-ui .panels {
+  width: 100%;
+  float: none;
+  margin-top: 0;
+}
+
 
 @media only all and (min-width: 41em) {
   iframe {
@@ -425,6 +434,10 @@ pre {
     width: 48%;
     float: left;
     margin-top: 0;
+  }
+    
+  .guide .guidepattern.pattern-tab-ui .panels {
+    margin-left: 0;
   }
   
   .guide .guidepattern .panels {

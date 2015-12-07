@@ -85,7 +85,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     
   </head>
   <?php include 'functions.php'; ?>
-  <body class="icon-body-background">
+  <body class="icon-body-background" id="js-binder">
         
     <div class="nav-wrapper__trigger" id="guidenav-trigger">Show/Hide Guidenav</div>
     <div class="nav-wrapper guidenav-collapse">
@@ -163,7 +163,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     
     <div class="body-wrapper">
       
-      <div id="js-binder" class="styleguide container">
+      <div class="styleguide container">
         
         <div class="guidepattern">
           <?php // ReadMe ?>

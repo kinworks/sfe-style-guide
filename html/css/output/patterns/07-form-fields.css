@@ -22,9 +22,11 @@
 
 /* Forms */
 form {
+  width: 90%;
   max-width: 100%;
   background-color: #003552;
-  padding: 2em; }
+  padding: 2em;
+  margin: 0 0 2em 0; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], input[list], input[type="file"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="range"], input[type="search"], textarea, select {
   font-size: 1.1em;

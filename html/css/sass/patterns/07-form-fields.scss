@@ -4,9 +4,11 @@
 /* Forms */
 
 form {
+  width: 90%;
   max-width: 100%;
   background-color: $dark;
   padding: 2em;
+  margin: 0 0 2em 0;
 }
 
 input[type="email"],

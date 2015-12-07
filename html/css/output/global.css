@@ -1923,7 +1923,13 @@ ol.pagination li {
   background-color: #C0E6F3; }
 
 /* Forms */
+form {
+  max-width: 100%;
+  background-color: #003552;
+  padding: 2em; }
+
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], input[list], input[type="file"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="range"], input[type="search"], textarea, select {
+  font-size: 1.1em;
   display: inline-block;
   height: 2.375em;
   width: 100%;
@@ -1932,7 +1938,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   /* ^ The 0.375em vertically centers text on FF, 
   ignored by Webkit */
   background-color: #fff;
-  border: 0.1em solid #C0E6F3;
+  border: 0.2em solid #003552;
   box-shadow: none; }
 
 .checkbox {
@@ -1955,14 +1961,15 @@ textarea {
   margin-bottom: 1em; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[list]:focus, textarea:focus, select:focus {
-  border: 0.1em solid #008EBE;
+  border: 0.2em solid #dc6f00;
   outline: 0; }
 
 label, legend {
   display: block;
-  font-size: 1em;
+  color: #ffffff;
+  font-size: 1.1em;
   margin-bottom: 0.4em;
-  font-weight: 500; }
+  font-weight: 300; }
 
 fieldset {
   padding: 0;
@@ -1978,16 +1985,20 @@ input[type="checkbox"] {
 
 input[type="radio"] {
   display: inline-block;
-  margin-bottom: 0.5em; }
+  margin: 0 0.5em 0.5em 0; }
+
+input[type="file"] {
+  background-color: #001a29;
+  color: #ffffff; }
 
 .required {
   font-weight: 400;
-  color: black; }
+  color: #ffcdb3; }
 
 .format {
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
-  color: black;
+  color: #C0E6F3;
   margin-left: 0.75em; }
 
 input[type="search"] {

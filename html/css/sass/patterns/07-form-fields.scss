@@ -3,6 +3,12 @@
 
 /* Forms */
 
+form {
+  max-width: 100%;
+  background-color: $dark;
+  padding: 2em;
+}
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -20,6 +26,7 @@ input[type="range"],
 input[type="search"],
 textarea,
 select {
+  font-size: 1.1em;
   display: inline-block;
   height: 2.375em;
   width: 100%;
@@ -28,7 +35,7 @@ select {
   /* ^ The 0.375em vertically centers text on FF, 
   ignored by Webkit */
   background-color: #fff;
-  border: 0.1em solid $light-pastel;
+  border: 0.2em solid $dark;
   box-shadow: none;
 }
 
@@ -73,16 +80,17 @@ input[type="password"]:focus,
 input[list]:focus,
 textarea:focus,
 select:focus {
-  border: 0.1em solid $mid;
+  border: 0.2em solid $contrast;
   outline: 0; 
 }
 
 label,
 legend {
   display: block;
-  font-size: 1em;
+  color: $white;
+  font-size: 1.1em;
   margin-bottom: 0.4em;
-  font-weight: 500; 
+  font-weight: 300; 
 }
 
 fieldset {
@@ -102,18 +110,23 @@ input[type="checkbox"] {
 
 input[type="radio"] {
   display: inline-block;
-  margin-bottom: 0.5em;
+  margin: 0 0.5em 0.5em 0;
+}
+
+input[type="file"] {
+  background-color: scale-color($dark, $lightness: -50%);
+  color: $white;
 }
 
 .required {
   font-weight: 400;
-  color: darken($dark,16%);
+  color: $error;
 }
 
 .format {
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
-  color: darken($dark,16%);
+  color: $light-pastel;
   margin-left: 0.75em;
 }
 

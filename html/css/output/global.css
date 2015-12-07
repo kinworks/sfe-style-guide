@@ -1784,7 +1784,7 @@ blockquote.quote__blockquote {
     content: "— "; }
 
 ul {
-  list-style: circle inside;
+  list-style: disc inside;
   padding-left: 0;
   margin: 0;
   padding: 0; }
@@ -1792,6 +1792,9 @@ ul {
 ol {
   list-style: none;
   counter-reset: item; }
+
+ul ul {
+  list-style: circle inside; }
 
 ul ul, ul ol {
   margin: 1em 0 1em 2em;
@@ -1801,7 +1804,7 @@ li {
   margin-bottom: 1em; }
 
 ol li:before {
-  content: counters(item, ".") " ";
+  content: counters(item, ".");
   counter-increment: item; }
 
 ol {
@@ -1818,7 +1821,7 @@ li {
   margin-bottom: 1em; }
 
 ol li:before {
-  content: counters(item, ".") " ";
+  content: counters(item, ".") ". ";
   counter-increment: item; }
 
 ol ul li:before {

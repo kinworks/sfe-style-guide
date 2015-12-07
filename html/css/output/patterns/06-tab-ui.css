@@ -51,7 +51,6 @@
   .js-tabs .tabs .tabs__print-all a {
     display: inline-block;
     width: 100%;
-    text-align: right;
     border-bottom: none; }
   .js-tabs .tabs .tabs__print-all:hover {
     text-decoration: underline; }
@@ -109,7 +108,8 @@
     padding: 0.2em 1em 0.85em 0;
     border-bottom: 0.15em solid #52bbde; }
     .js-tabs .tabs .tabs__print-all a {
-      color: #002C44; }
+      color: #002C44;
+      text-align: right; }
   .js-tabs .tabs.js-tab-ui [aria-selected=true] {
     color: #008EBE;
     font-weight: 600;

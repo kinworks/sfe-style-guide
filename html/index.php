@@ -155,7 +155,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <h2 class="heading">Release <span class="lowercase"><?php echo $tagname; ?></span></h2>
         <span class="versioninfo">
             <!--NB this is kind of a hack - it assumes the latest version that has been pushed is the version you're looking at - which should be true, but :) -->
-            <a class="cta cta--contrast" href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">
+            <a class="btn btn--contrast" href="https://github.com/kinworks/sfe-style-guide/tree/<?php echo $tagname; ?>" target="_blank">
               View on GitHub</a>
         </span>
       </div>

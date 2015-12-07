@@ -37,7 +37,6 @@
   a {
     display: inline-block;
     width: 100%;
-    text-align: right;
     border-bottom: none;
   }
   &:hover {
@@ -119,6 +118,7 @@
   	border-bottom: 0.15em solid scale-color($light-pastel, $lightness: -30%);
   	a {
       color: $dark-text;
+      text-align: right;
   	}
   	&:hover {
     	//text-decoration: none;

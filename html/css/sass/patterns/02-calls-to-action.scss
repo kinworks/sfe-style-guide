@@ -1,0 +1,154 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+// Clearfix
+
+.cta:before, .cta:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.cta:after {clear: both;}
+
+.cta {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1.5em 0;
+  padding: 0.8em;
+  background-color: $mid;
+  border-left: 1em solid $dark-text;
+  border-bottom: none;
+}
+
+.cta span {
+  display: inline-block;
+  padding-bottom: 0.5em;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: $white;
+}
+
+.cta .icon-circle-arrow {
+  width: 2.125em;
+  height: 2.125em;
+}
+
+// Alternatives
+
+.cta--light {
+  background-color: $light-pastel;
+  span {
+    color: $dark;
+  }
+}
+
+.cta.icon-pattern {
+  border-color: scale-color($dark, $lightness: -40%);
+}
+
+.cta--no-circle {
+  div {display: none}
+}
+
+.cta--block {
+  border: none;
+  padding: 1.5em;
+  span {
+    font-weight: 600;
+  }
+}
+
+.cta--block.icon-pattern {
+  p {color: $white};
+}
+
+@media only all and (min-width: 20em) {
+  
+  .cta {
+    border-left: 1.5em solid $dark-text;
+  }
+  
+  .cta span {
+    width: 80%;
+    float: left;
+  }
+  
+  .cta div {
+    width: 20%;
+    float: right;
+    text-align: right;
+    padding-top: 0.5em;
+  }
+  
+  // Alternatives
+  
+  .cta--no-circle {
+    span {
+      width: 100%;
+      padding-bottom: 0.8em;
+    }
+  }
+   
+  .cta--block {
+    border: none;
+    span {
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
+    p {
+      width: 80%;
+      float: left;
+    }
+  }
+  
+  .cta--block.cta--no-circle {
+    span,
+    p {
+      width: 100%;
+    }
+  }
+  
+} //end min 20em
+
+@media only all and (min-width: 30em) {
+  
+  .cta {
+    padding: 1em;
+  }
+  
+  .cta span {
+    font-size: 1.4em;
+    padding: 0;
+  }
+  
+  .cta div {
+    padding-top: 0.4em;
+  }
+  
+  // alternatives
+  
+  .cta--block {
+    padding: 1.7em;
+  }
+  
+} // end min 30em
+
+@media only all and (min-width: 32.5em) {
+  
+  .cta span {
+    font-size: 1.5em;
+    padding-top: 0.4em;
+  }
+  
+  // Alternatives
+  
+  .cta--no-circle {
+    padding: 1.5em 1em 1.5em 1em;
+    span {
+      padding-top: 0;
+    }
+  }
+  
+} //end min 32.5em
+

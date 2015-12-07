@@ -463,6 +463,9 @@ body, .wf-loading body, .wf-inactive body {
 .heading--mid {
   color: #008EBE; }
 
+.heading--pairing {
+  margin: 0 0 0.15em 0; }
+
 .heading__large {
   font-size: 2.3em; }
 

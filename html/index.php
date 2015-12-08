@@ -147,9 +147,9 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <?php endforeach; ?>
       </ul>
     </div>
-    <div class="body-wrapper bg-light-pastel">
+    <div class="body-wrapper heading-wrapper bg--dark">
       
-      <div class="outside" <?php if($_GET['mode'] != 'test'):?>style="padding-left: 5%"<?php endif; ?> >
+      <div class="outside container">
         <h1>Scottish Film Education: Development Guide</h1>
         
         <h2 class="heading">Release <span class="lowercase"><?php echo $tagname; ?></span></h2>
@@ -518,8 +518,9 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             <br/>
           </div>
       </div>
+    </div>
       
-    <div class="bodywrapper">         
+    <div class="body-wrapper outsider">         
             <header class="header clearfix">
               <div class="header__part header__part--brand icon-header-left">
                 <i class="icon-sos-logo">Scotland on Screen</i>
@@ -546,7 +547,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 </div>
               </div> 
             </header>
-      </div>
+    </div>
+    <div class="body-wrapper">
       <div class="styleguide container"> 
         <div class="guidepattern">  
             <div class="js-tab-ui panels fullwidth">
@@ -595,8 +597,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             <br/>
           </div>
       </div>
-      
-    <div class="bodywrapper">         
+    </div>  
+    <div class="body-wrapper outsider">         
         <nav class="nav icon-pattern clearfix nav-collapse">
           <ul class="main-nav clearfix">
             <li class="home current-current_page_item">
@@ -758,7 +760,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       
     </div>
     
-    <div class="bodywrapper">    
+    <div class="body-wrapper">    
       <div class="styleguide container" id="nav">
         <div class="guidepattern nav">
 
@@ -852,8 +854,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
            </div>
       </div>
     </div>
-  </div>  
-    <div class="bodywrapper">
+  </div>
+    </div>  
+  
+  <div class="body-wrapper outsider">
             
         <div class="footer__top clearfix">
           <div class="container">
@@ -898,7 +902,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         </footer>
     </div>
     
-    <div class="bodywrapper">
+    <div class="body-wrapper">
       <div class="styleguide container">                    
           <div class="guidepattern pattern-footer">  
             <div class="js-tab-ui panels fullwidth">

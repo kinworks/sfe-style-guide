@@ -85,13 +85,33 @@ Performance is dramatically improved because a 9999px box is not drawn. Noticeab
 // Body
 
 .body-wrapper {
+  padding: 0 8%;
   @media only all and (min-width: 41em) {
     //float: left;
     width: 75vw;
     margin-left: 25vw;
+    padding: 0 5%;
   }
 }
 
+.body-wrapper.outsider {
+  padding: 0;
+  margin-top: 2em;
+  @media only all and (min-width: 41em) {
+    width: 75vw;
+    margin-left: 25vw;
+    padding: 0;
+  }
+}
+
+.heading-wrapper {
+  padding-top: 1em;
+  padding-bottom: 0.6em;
+  color: $white;
+  & .heading {
+    color: $white;
+  }
+}
 
 // Other Guide Styles
 
@@ -140,9 +160,8 @@ Performance is dramatically improved because a 9999px box is not drawn. Noticeab
 }
 
 .guide .styleguide {
-  padding: 2em 8% 1.5em 8%;
   @media only all and (min-width: 41em) {
-    padding: 2em 5% 1.5em 5%;
+   // padding: 2em 5% 1.5em 5%;
   }
 }
 
@@ -226,7 +245,6 @@ h2.guidance {
 .pattern__back-to-top {
   display: inline-block;
   margin-bottom: 1em;
-  margin-left: 5%;
 }
 
 .guidepattern .pattern__back-to-top {

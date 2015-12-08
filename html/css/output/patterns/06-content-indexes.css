@@ -88,6 +88,9 @@
   font-style: italic; }
 
 @media only all and (min-width: 41em) {
+  .list__jump-nav ol {
+    max-width: 80%;
+    margin: 0 auto; }
   .list__content .list__content__item span {
     display: inline; }
     .list__content .list__content__item span:before {

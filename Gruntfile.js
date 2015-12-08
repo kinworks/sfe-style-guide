@@ -6,15 +6,10 @@ module.exports = function(grunt) {
   //grunt.file.setBase('./')
 
   grunt.loadNpmTasks('grunt-grunticon');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-sass-globbing');
-  grunt.loadNpmTasks('grunt-remove');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  //grunt.loadNpmTasks('grunt-simple-watch');
-      //"grunt-simple-watch": "~0.1.2", (for package.json)
 
 
   // Project configuration.

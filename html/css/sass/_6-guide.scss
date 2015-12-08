@@ -29,6 +29,7 @@ body {
      position: fixed;
      overflow-y: scroll;
      float: left;
+     border-right: 0.15em solid #222;
    }
 }
 
@@ -580,6 +581,10 @@ pre {
 	margin: 0 0.25em 0.25em 0;
 }
 
+.js-tabs .panels a {
+  border-bottom: none;
+}
+
 @media (min-width:19.25em) {
 	.js-tabs [role=tab] {
 		display: inline-block;
@@ -595,6 +600,12 @@ pre {
 	&:focus {
     border: 0.1em solid #E1BC29;
   }
+}
+
+.js-tabs .js-tab-ui .linkout[aria-selected=true] {
+  color: #000;
+	background-color: #eaeaea;
+	border-color: #ccc;
 }
 
 /* Prevent FOUC */

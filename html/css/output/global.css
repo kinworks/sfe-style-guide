@@ -564,7 +564,8 @@ body {
       height: 100vh;
       position: fixed;
       overflow-y: scroll;
-      float: left; } }
+      float: left;
+      border-right: 0.15em solid #222; } }
 
 .nav-wrapper__list li {
   list-style-type: none;
@@ -975,6 +976,9 @@ pre {
   line-height: 2.75;
   margin: 0 0.25em 0.25em 0; }
 
+.js-tabs .panels a {
+  border-bottom: none; }
+
 @media (min-width: 19.25em) {
   .js-tabs [role=tab] {
     display: inline-block;
@@ -987,6 +991,11 @@ pre {
   border: 0.1em solid #101010; }
   .js-tabs .js-tab-ui [aria-selected=true]:focus {
     border: 0.1em solid #E1BC29; }
+
+.js-tabs .js-tab-ui .linkout[aria-selected=true] {
+  color: #000;
+  background-color: #eaeaea;
+  border-color: #ccc; }
 
 /* Prevent FOUC */
 .js-tabs .js-panel {

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "06-list-of-items.css",
+	"sources": [
+		"../../../../06-list-of-items.scss",
+		"../../../../../_2-mixins.scss",
+		"../../../../../_4-colours.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AEwBA;EACE,AAAY;EACZ,AAAwC;;;;;AAO1C;EACE,AAAmB;;AAmBrB;EACE,AAhDK;;AAmDP;EACE,AAtDI;;AAyDN;EACE,AA5DM;;AA+DR;EACE,AA5Ca;;AFnBf;EACE,AAAQ;;AAGV;EACE,AAAS;EACT,AEaa;;AFVf,AAAO;EACL,AAAQ;;AAGV,AAAO;EACL,AAAiB;;AAInB,AAAO,AAAY;EACf,AAAS;AAEb,AAAO,AAAa,AAAC;EACjB,AEZQ;EFaR,AEbQ;EFcR,AAAe;AAEnB,AAAO,AAAY;EACf,AAAS;;AAKb,AAAc,AAAY;EACtB,AAAS;AAEb,AAAc,AAAa;EACvB,AE1BQ;EF2BR,AE3BQ;AF6BZ,AAAc,AAAa,AAAC;EACxB,AAAO;EACP,AAAe",
+	"names": []
+}

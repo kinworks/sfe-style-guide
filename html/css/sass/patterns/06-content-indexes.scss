@@ -1,0 +1,94 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+.list__jump-nav {
+  padding: 1em;
+  width: 100%;
+  background-color: $light-pastel;
+  text-align: center;
+  margin: 0 0 2em 0;
+}
+
+.list__jump-nav .heading {
+  font-size: 1.2em;
+}
+
+.list__jump-nav ol{ 
+  list-style: none;
+  text-align: center;
+}
+
+.list__jump-nav li {
+  list-style-type: none;
+  display: inline-block;
+  a {
+    display: inline-block;
+    width: 1.7em;
+    padding: 0.2em 0;
+    margin: 0 0.3em 0.2em 0.3em;
+    @include border-radius(1em);
+    text-align: center;
+    border-bottom: none;
+    background-color: $dark;
+    color: $white;
+    font-weight: 3 00;
+  }
+  &:nth-child(2n) a {
+    background-color: scale-color($dark, $lightness: 10%);
+  }
+  &:hover a {
+    background-color: $mid;
+  }
+  &:before {
+    content: none;
+    counter-increment: none;
+  }
+  &.not-available a {
+    background-color: $light-pastel;
+    color: $mid-text;
+    cursor: not-allowed;
+    &:hover {
+      background-color: $light-pastel;
+    }
+  }
+}
+
+// Listing content styles
+
+.list__content {}
+
+.list__content ol{ 
+  list-style: none;
+  margin: 0 0 1.5em 0;
+}
+
+.list__content .list__content__item {
+  margin: 0 0 1em 0;
+  &:before {
+    content: none;
+    counter-increment: none;
+  }
+}
+
+.list__content .list__content__item a {
+  display: inline;
+  margin: 0 0.2em 0 0;
+  font-weight: 400;
+}
+
+.list__content .list__content__item span {
+  display: block;
+  margin: 0.5em 0 0 0;
+  font-style: italic;
+}
+
+@media only all and (min-width: 41em) {
+  
+  .list__content .list__content__item span {
+    display: inline;
+    &:before {
+      content: "— ";
+    }
+  }
+
+} //end min 41em;

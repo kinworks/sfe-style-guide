@@ -694,6 +694,10 @@ iframe {
 .guide .guidepattern .panels {
   margin-top: 0.5em; }
 
+.guide .guidepattern.pattern-content-indexes .display, .guide .guidepattern.pattern-content-indexes .panels {
+  width: 100%;
+  margin: 0 0 1.5em 0; }
+
 .guidance strong, .guidance b {
   font-weight: 600; }
 
@@ -1950,6 +1954,100 @@ ol li:before {
 ol ul li:before {
   content: " ";
   counter-increment: none; }
+
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
+
+.bg--dark {
+  background-color: #003552; }
+
+.bg--mid {
+  background-color: #008EBE; }
+
+.bg--light {
+  background-color: #52CEF4; }
+
+.bg--light-pastel {
+  background-color: #C0E6F3; }
+
+.list__jump-nav {
+  padding: 1em;
+  width: 100%;
+  background-color: #C0E6F3;
+  text-align: center;
+  margin: 0 0 2em 0; }
+
+.list__jump-nav .heading {
+  font-size: 1.2em; }
+
+.list__jump-nav ol {
+  list-style: none;
+  text-align: center; }
+
+.list__jump-nav li {
+  list-style-type: none;
+  display: inline-block; }
+  .list__jump-nav li a {
+    display: inline-block;
+    width: 1.7em;
+    padding: 0.2em 0;
+    margin: 0 0.3em 0.2em 0.3em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    text-align: center;
+    border-bottom: none;
+    background-color: #003552;
+    color: #ffffff;
+    font-weight: 3 00; }
+  .list__jump-nav li:nth-child(2n) a {
+    background-color: #00517d; }
+  .list__jump-nav li:hover a {
+    background-color: #008EBE; }
+  .list__jump-nav li:before {
+    content: none;
+    counter-increment: none; }
+  .list__jump-nav li.not-available a {
+    background-color: #C0E6F3;
+    color: #0079A1;
+    cursor: not-allowed; }
+    .list__jump-nav li.not-available a:hover {
+      background-color: #C0E6F3; }
+
+.list__content ol {
+  list-style: none;
+  margin: 0 0 1.5em 0; }
+
+.list__content .list__content__item {
+  margin: 0 0 1em 0; }
+  .list__content .list__content__item:before {
+    content: none;
+    counter-increment: none; }
+
+.list__content .list__content__item a {
+  display: inline;
+  margin: 0 0.2em 0 0;
+  font-weight: 400; }
+
+.list__content .list__content__item span {
+  display: block;
+  margin: 0.5em 0 0 0;
+  font-style: italic; }
+
+@media only all and (min-width: 41em) {
+  .list__content .list__content__item span {
+    display: inline; }
+    .list__content .list__content__item span:before {
+      content: "— "; } }
 
 .pattern {
   background: url(../../assets/pattern.png);

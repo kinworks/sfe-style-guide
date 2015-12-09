@@ -159,6 +159,28 @@
     float: left;
   }
   
+  // This has the same effect as .container class; these fixes will
+  // constrain the header items to an 80em width
+  
+  .header__part--brand {
+    text-align: left;
+  }
+  .header__part--brand .icon-sos-logo {
+    margin: 2em 0 0 10%;
+  }
+  .header__part--search {
+    text-align: right;
+    padding: 1.8em 5% 0 0;
+  }
+  .header__part--search .search__container {
+    margin: 0 0 0 0;
+    float: right;
+    max-width: 18em;
+  }
+  .header__part--search .search__advanced {
+    max-width: 12em;
+  }
+  
   // Navigation
   .js .nav__trigger {
     display: none;
@@ -186,10 +208,8 @@
     padding: 1.8em 0 0 0;
   }
   .header__part--search .search__container {
-    margin: 0 0 0 21em;
-  }
-  .header__part--search .search__advanced {
-    max-width: 20em;
+    margin: 0 0 0 22em;
+    float: none;
   }
   
   

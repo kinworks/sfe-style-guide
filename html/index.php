@@ -62,7 +62,8 @@
     <?php if($_GET['mode'] == 'test'): ?>
     <style>
       .nav-wrapper.guidenav-collapse {display: none !important;}
-      .body-wrapper {width: 100% !important; margin-left: 0;}
+      .body-wrapper,
+      .body-wrapper.outsider {width: 100% !important; margin-left: 0;}
     </style>
     <?php endif; ?>
     

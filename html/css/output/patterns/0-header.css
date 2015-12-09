@@ -139,4 +139,17 @@
   .nav-collapse {
     display: block; } }
 
+@media only all and (min-width: 88.75em) {
+  .header__part--brand {
+    text-align: right; }
+  .header__part--brand .icon-sos-logo {
+    margin: 2em 22.5em 0 0; }
+  .header__part--search {
+    text-align: left;
+    padding: 1.8em 0 0 0; }
+  .header__part--search .search__container {
+    margin: 0 0 0 21em; }
+  .header__part--search .search__advanced {
+    max-width: 20em; } }
+
 /*# sourceMappingURL=0-header.css.map */

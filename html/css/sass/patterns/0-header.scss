@@ -169,3 +169,28 @@
   }
     
 } //end min 41em
+
+@media only all and (min-width: 88.75em) {
+  
+  // This has the same effect as .container class; these fixes will
+  // constrain the header items to an 80em width
+  
+  .header__part--brand {
+    text-align: right;
+  }
+  .header__part--brand .icon-sos-logo {
+    margin: 2em 22.5em 0 0;
+  }
+  .header__part--search {
+    text-align: left;
+    padding: 1.8em 0 0 0;
+  }
+  .header__part--search .search__container {
+    margin: 0 0 0 21em;
+  }
+  .header__part--search .search__advanced {
+    max-width: 20em;
+  }
+  
+  
+} //end min 88.75em

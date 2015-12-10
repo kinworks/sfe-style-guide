@@ -18,7 +18,7 @@ This guide was built after the completition of the [Scottish Film Education webs
 
 ### v0.3.0
 - Readme; extensive updates / original draft.
-- Deployment; ongoing work on
+- Deployment; ongoing work on this
 
 ## More than a Style Guide
 

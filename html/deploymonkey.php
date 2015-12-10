@@ -1,1 +1,1 @@
-<?php `sh deploy.sh`; ?>
+<?php `/bin/bash deploy.sh`; ?>

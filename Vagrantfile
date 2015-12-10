@@ -10,7 +10,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
 
   # Forward port 80 on the VM to map to 8080 on our host machine
-  config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network "forwarded_port", guest: 80, host: 7777
+
+  # set vagrant ssh port to 3333 instead of default 2222
+  config.vm.network :forwarded_port, guest: 22, host: 3333, id: "ssh"
 
   # Virtualbox config
   config.vm.provider "virtualbox" do |vb|
@@ -35,6 +38,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.playbook = "ansible/provision.yml"
     ansible.limit = "all"
     #ansible.verbose = "vvvv"
-    ansible.extra_vars = { ansible_ssh_user: 'vagrant', ansible_ssh_host: '127.0.0.1', ansible_ssh_port: '2222' }
+    ansible.extra_vars = { ansible_ssh_user: 'vagrant', ansible_ssh_host: '127.0.0.1', ansible_ssh_port: '3333' }
   end
 end

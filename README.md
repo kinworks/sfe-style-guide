@@ -18,7 +18,7 @@ This guide was built after the completition of the [Scottish Film Education webs
 
 ### v0.3.0
 - Readme; extensive updates / original draft.
-- Deployment; ongoing work on this area............
+- Deployment; the guide now deploys to [http://style.sfe.kin.works](http://style.sfe.kin.works) when a new tag is pushed to Github.
 
 ## More than a Style Guide
 

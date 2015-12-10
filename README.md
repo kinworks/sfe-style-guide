@@ -20,7 +20,7 @@ This guide was built after the completition of the [Scottish Film Education webs
 - Readme; extensive updates / original draft.
 - Deployment; 
 
-## Not just a Style Guide
+## More than a Style Guide
 
 SFE wishes to codify not only visual appearance and interactive behaviour in this guide, but also the best practies expected for development and testing. For this reason, some patterns or items are around best practice (regarding, for example, webfont delivery) rather than simply a pattern library or style guide. 
 

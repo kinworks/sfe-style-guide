@@ -27,11 +27,11 @@
   roles:
        # only execute some if not a vagrant box, basically - server_name set in group_vars/
        # note: extra doublequotes round 'when' value due to colon for port confusing parser
-     - { role: git-clone, when: "server_name != 'localhost:8080'" }
+     - { role: git-clone, when: "server_name != 'localhost:7777'" }
        # only execute some if we *are* a vagrant box
-     - { role: nginx, when: "server_name == 'localhost:8080'" }
-     - { role: nginx-config, when: "server_name == 'localhost:8080'" }
-     - { role: lemp, when: "server_name == 'localhost:8080'" }
+     - { role: nginx, when: "server_name == 'localhost:7777'" }
+     - { role: nginx-config, when: "server_name == 'localhost:7777'" }
+     - { role: lemp, when: "server_name == 'localhost:7777'" }
        # only executed if a vagrant box e.g. dev gets devtools
-     - { role: kin-devtools, when: "server_name == 'localhost:8080'" }
-     - { role: start-grunt-watch, when: "server_name == 'localhost:8080'" }
+     - { role: kin-devtools, when: "server_name == 'localhost:7777'" }
+     - { role: start-grunt-watch, when: "server_name == 'localhost:7777'" }

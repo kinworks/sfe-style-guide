@@ -1,5 +1,5 @@
 ---
-server_name: localhost:8080
+server_name: localhost:7777
 friendly_name: vagrantbox
 project_webroot: /vagrant/html
 backup_dir: /vagrant/backups

@@ -1,6 +1,6 @@
 sfe-style-guide
 ===============
-###_An Development Guide for Scottish Film Education_
+###_A Development Guide for Scottish Film Education_
 
 **Author**: Kin ([http://kin.works](http://kin.works))
 

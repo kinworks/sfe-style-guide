@@ -1,5 +1,7 @@
 wall DeployMonkey running SFE Style Guide Deploy;
 
+wait 15;
+
 git pull --no-edit origin master;
 
 # Get new tags from remote

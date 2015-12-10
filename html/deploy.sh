@@ -7,6 +7,8 @@ git pull --no-edit origin master;
 # Get new tags from remote
 git fetch --tags;
 
+git pull --no-edit origin master;
+
 # Get latest tag name
 latestTag=$(git describe --tags `git rev-list --tags --max-count=1`);
 

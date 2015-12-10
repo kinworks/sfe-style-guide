@@ -1,1 +1,1 @@
-<?php `/bin/bash deploy.sh`; ?>
+<?php `git fetch --tags && /bin/bash deploy.sh`; ?>

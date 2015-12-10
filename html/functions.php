@@ -41,9 +41,21 @@
   //list the tags found in .git
   $tags = scandir('../.git/refs/tags', 1);
   
-  $latestfirst = array_reverse($tags);
+  // skip . and .. items listed first in our directory!
+  $byetags = array_pop($tags);
+  $byetags = array_pop($tags);
   
-  $tagname = $tags['0']; 
+  $latest = 0;
+  $tagname = '';
+  
+  foreach($tags as $tag) {
+    $modtime = filemtime('../.git/refs/tags/'.$tag);
+    if ($modtime > $latest) {$tagname = $tag; $latest = $modtime;}
+  }
+  
+  //$latestfirst = array_reverse($tags);
+  
+  //$tagname = $tags['0']; 
   //grab the first part 
 
 ?>

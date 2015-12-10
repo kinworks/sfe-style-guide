@@ -22,74 +22,81 @@ This guide was built after the completition of the [Scottish Film Education webs
 
 ## More than a Style Guide
 
-SFE wishes to codify not only visual appearance and interactive behaviour in this guide, but also the best practies expected for development and testing. For this reason, some patterns or items are around best practice (regarding, for example, webfont delivery) rather than simply a pattern library or style guide. 
+SFE wishes to codify not only visual appearance and interactive behaviour in this guide, but also the best practies expected for development and testing. For this reason, some patterns or items are around best practice (regarding, for example, webfont delivery) rather than only the elements typically found pattern library or style guide. 
 
 
 ## Testing Coverage
-The guideline list of functional and compliant browsers from the STP tender is as follows:
+We've studied six months' traffic to the SFE web properties Scotland on Screen, Languages on Screen and Screening Shorts, and prepared the following list of browsers for testing against.
 
-- MS Internet Explorer 8 and above: Compliant
-- MS Internet Explorer 6 & 7: Functional
-- Google Chrome (Latest Version, Windows): Compliant
-- Mozilla Firefox (Latest Version, Windows): Compliant
-- Safari 7, OS X: Compliant
-- Google Chrome (Latest Version, OS X): Compliant
-- Mozilla Firefox (Latest Version, OS X): Compliant
-- Mobile Safari on iOS 8.x: Compliant
-- Google Chrome on iOS 8.x: Compliant
-- Mobile Safari on iOS 7.x: Compliant
-- Google Chrome on iOS 7.x: Compliant
-- Mobile Safari on iOS 6.x: Compliant
-- Mobile Safari on iOS 5.x: Functional
-- Google Chrome on Android 4.x: Compliant
-- 'Browser' on Android 4.x: Compliant
-- 'Browser' on Android 2.3.x: Functional
-- Internet Explorer (10) on Windows Phone 8.x: Functional
-- BlackBerry Browser on Blackberry OS 7.x: Functional
+### Source Material
+You can review a flat image of the data from our 'Testing Explorer' spreadsheet [in the repo under /stats/](https://github.com/kinworks/sfe-style-guide/blob/master/stats/All-Sites-Combined-6mo-to-7th-dec-2015.png). This covers the period 7th June 2015 to 7th December 2015.
 
-The Style Guide components and patterns have been tested as functional / compliant as appropriate across these browsers, making it a pragmatic baseline to develop web projects for STP from.
+### What does 'Support' mean?
+When building for SFE, or really the web in general, it's best not to consider browsers 'supported' or 'unsupported', but rather through use of web standards, progressive enhancement and best practices aim to work well in all browsers. So, rather than divide browsers into 'yes' and 'no' categories, we've studied the current usage data and drawn conclusions about the scope of testing necessary.
+
+#### 'Compliant' Browsers
+The design should be reasonably consistent, optimised and fully functional in the following browsers:
+
+##### Android
+Testing should be carried out across a range of tablet / phone handset sizes.
+- 6.x: Stock Browser (Google Chrome)
+- 5.x: Stock Browser (Google Chrome)
+- 4.x: Stock Browser (Android Browser or Google Chrome)
+
+##### Apple iOS
+Testing should be carried out across a range of tablet / phone handset sizes.
+- 9.x: Stock Browser (Safari); In-app webview;
+- 8.x: Stock Browser (Safari); In-app webview;
+
+##### Windows Phone
+Testing should be carried out across a range of tablet / phone handset sizes.
+- 8.1: Internet Explorer;
+
+##### Microsoft Windows
+Testing should be carried out across a range of tablet / desktop devices, with a suitable platform mix - across Windows 10, Windows 7, Windows XP and Windows 8.1.
+- Microsoft Edge: Latest version & Previous version;
+- Internet Explorer 10;
+- Internet Explorer 9;
+- Google Chrome: Latest version & Previous version;
+- Firefox: Latest version & Previous version;
+
+##### Mac OS X
+Testing should be carried out across common desktop viewports.
+- Safari 9 (10.11 El Capitan);
+- Safari 8 (10.10 Yosemite);
+- Safari 7 (10.9 Mavericks);
+- Google Chrome: Latest version & Previous version;
+- Firefox: Latest version & Previous version;
+
+#### 'Functional' Browsers
+The features of the site should be fully functional within reason, with sensible fallbacks in place, but the design standards may begin to slip if necessary. 
+
+##### Apple iOS
+Testing should be carried out on both handset and tablet devices.
+- 7.x: Stock Browser (Safari); In-app webview;
+
+##### Microsoft Windows
+- Internet Explorer 8;
+
+##### BlackBerry
+- BlackBerry Browser on BB10.
+
+#### The Legacy IE 'Question'
+
+In our reports across 30,000 users of SFE properties, the total 6-month usage of Internet Explorer versions 6 and 7 was 0.1% and 0.26% of all users respectively.
+
+In addition to low user demand, the continued usage of these browsers is problematic for the web as a whole, and SFE looks to do their part in this by encouraging users to upgrade where possible. In future, this will be added to the styleguide via a banner message to be displayed on these browsers.
 
 
 ## Known Bugs
 
-- Buttons: IE9: &lt;button&gt; or &lt;input&gt; elements with .cta set on them have a brightly coloured border-bottom rather than a darker shade as a pseudo-shadow. This seems to be due to a [bug in IE9](http://stackoverflow.com/questions/11165061/ie9-input-button-element-border-color-issue). 
-
-- Guide: Responsive Tables pattern: It appears that the responsive table pattern seems broken in the guide in certain browsers, however the pattern itself is fine and it's simply the fact that the mobile view is shown in an iframe that causes the bug.
+- Development Guide » Responsive Tables pattern: It appears that the responsive table pattern seems broken in the guide in certain browsers, however the pattern itself is fine and it's simply the fact that the mobile view is shown in an iframe that causes the bug.
 
 
-## Working on this repo
+## Todo
 
-### Pull Requests
-
-We welcome pull requests, however allowing PRs on this repository is not a guarantee that they will be accepted. Feel free to open issues for discussion prior to filing a PR.
-
-### Requirements
-
-You'll need the following tools:
-
-- PHP 5.x or later;
-- [Ruby](https://www.ruby-lang.org/en/documentation/) 2.x or later;
-	- Ruby Gem: [Sass](https://rubygems.org/gems/sass) 3.3 or later;
-	- Ruby Gem: [Sass-globbing](https://rubygems.org/gems/sass-globbing) 1.1 or later.
-	
-### SCSS Compilation
-
-We tend to alias a [Sass watch](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass) command in ```~/.bash_profile``` for ease of use; this is quite different for a style guide as we don't want a minified output, and we require the ```sass-globbing``` plugin (see 'Requirements') to just find all our .scss files and import them for use in the guide without having to specify every single one.
-
-#### Compilation Command
-
-```sass --watch -r sass-globbing --style expanded css/sass:css/output```
-
-#### As a bash alias
-
-```alias stylewatch='sass --watch -r sass-globbing --style expanded css/sass:css/output'```
-
-_Don't forget to [source your bash_profile again](http://stackoverflow.com/questions/4608187/how-to-reload-bash-profile-from-the-command-line) after editing it, or the alias won't work._
-
-## Merge drivers for Git: committing compiled SCSS
-
-It may seem strange that the repo contains the compiled SCSS, however this is for easy deployment and CI. To ensure the generated CSS from the remote doesn't clash with your local copy when pulling, run the following commands in your local repo to tell Git to use the merge driver 'keepRemote' included in the repo and referenced from css/output/.gitattributes when pulling:
-
-```git config merge.keepRemote.name "Always prefer remote files for this folder"```
-
-```git config merge.keepRemote.driver "sh keepRemote.sh %O %A %B"```
+- Details on build tools used to create and maintain this guide;
+- Details on getting started contributing to this repo via Ansible, Vagrant, VirtualBox and Git;
+- Details on Git merge driver behaviour;
+- Toggle for switching mode betweeen the colour palettes and patterns for various SFE properties.
+- We welcome pull requests, however allowing PRs on this repository is not a guarantee that they will be accepted. Feel free to open issues for discussion prior to filing a PR.

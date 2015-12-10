@@ -1,6 +1,6 @@
-wall DeployMonkey running SFE Style Guide Deploy;
+#!/bin/bash
 
-wait 15;
+wall DeployMonkey running SFE Style Guide Deploy;
 
 # Get new tags from remote
 git fetch --tags;

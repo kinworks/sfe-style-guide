@@ -2,12 +2,10 @@ wall DeployMonkey running SFE Style Guide Deploy;
 
 wait 15;
 
-git pull --no-edit origin master;
-
 # Get new tags from remote
 git fetch --tags;
 
-git pull --no-edit origin master;
+git fetch --quiet --tags origin master;
 
 # Get latest tag name
 latestTag=$(git describe --tags `git rev-list --tags --max-count=1`);

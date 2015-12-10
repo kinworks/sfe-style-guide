@@ -1,4 +1,4 @@
-wall DeployMonkey running STP Style Guide Deploy;
+wall DeployMonkey running SFE Style Guide Deploy;
 
 git pull --no-edit origin master;
 
@@ -11,4 +11,4 @@ latestTag=$(git describe --tags `git rev-list --tags --max-count=1`);
 # Checkout latest tag
 git checkout $latestTag;
 
-wall DeployMonkey successfully deployed STP Style Guide $latestTag;
+wall DeployMonkey successfully deployed SFE Style Guide $latestTag to http://style.sfe.kin.works;

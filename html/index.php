@@ -74,7 +74,7 @@
     <!-- Viljamis' responsive nav - http://responsivenav.com -->
     <script src="js/responsive-nav.js"></script>
     
-    <script src="js/site.js"></script>
+    <script src="js/responsive-nav-extend.js"></script>
     
     <script>
 			/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */

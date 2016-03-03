@@ -623,8 +623,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     <div class="body-wrapper outsider">         
         <nav class="nav icon-pattern clearfix nav-collapse">
           <ul class="main-nav clearfix">
-            <li class="home current-current_page_item">
-              <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
+            <li class="home">
+              <a href="#" class="js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
             </li>
             <li class="about parent clearfix">
               <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="About Scotland on Screen">

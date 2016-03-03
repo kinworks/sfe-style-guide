@@ -28,8 +28,21 @@
   text-align: center;
   margin: 0 0 2em 0; }
 
-.list__jump-nav .heading {
-  font-size: 1.2em; }
+.list__jump-nav h2.heading:first-child {
+  display: block;
+  font-size: 1.4em;
+  margin: 0 0 1em 0;
+  color: #002C44; }
+
+.list__jump-nav__select {
+  display: none; }
+
+.js .list__jump-nav__select {
+  display: inline-block;
+  margin: 0 0 0.5em 0; }
+
+.js .list__jump-nav ol {
+  display: none; }
 
 .list__jump-nav ol {
   list-style: none;
@@ -67,9 +80,24 @@
     .list__jump-nav li.not-available a:hover {
       background-color: #C0E6F3; }
 
+.list__content .heading {
+  color: #002C44; }
+
+.list__content .heading span {
+  font-weight: 300;
+  color: #C0E6F3;
+  display: inline-block;
+  margin: 0 0.5em 0 0.2em; }
+
+.list__content__back-to-top {
+  font-size: 0.82em;
+  font-weight: 300;
+  font-style: italic;
+  color: #0079A1; }
+
 .list__content ol {
   list-style: none;
-  margin: 0 0 1.5em 0; }
+  margin: 0 0 2.5em 0; }
 
 .list__content .list__content__item {
   margin: 0 0 1em 0; }
@@ -87,13 +115,41 @@
   margin: 0.5em 0 0 0;
   font-style: italic; }
 
+@media only all and (min-width: 30em) {
+  .js .list__jump-nav__select {
+    display: none; }
+  .js .list__jump-nav ol {
+    display: inline-block; } }
+
 @media only all and (min-width: 41em) {
+  .list__jump-nav {
+    margin: 0 0 3em 0; }
   .list__jump-nav ol {
     max-width: 80%;
     margin: 0 auto; }
   .list__content .list__content__item span {
     display: inline; }
     .list__content .list__content__item span:before {
-      content: "— "; } }
+      content: "— "; }
+  .list__content ol {
+    margin: 0 0 3.5em 0; } }
+
+@media only all and (min-width: 56em) {
+  .list__content {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 4%;
+    -webkit-column-gap: 4%;
+    column-gap: 4%; }
+  .list__content__container {
+    display: inline-block;
+    width: 90%;
+    margin-right: 10%;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    /* Makes effect only in Firefox v20+ */
+    break-inside: avoid;
+    /* IE10+, Opera 11.1—12.1 */ } }
 
 /*# sourceMappingURL=06-content-indexes.css.map */

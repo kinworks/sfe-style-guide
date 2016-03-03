@@ -22,13 +22,18 @@
 
 /* Pagination */
 ol.pagination {
-  list-style-type: none; }
+  list-style-type: none;
+  font-size: 1em;
+  margin: 0 0 2em 0; }
 
 ol.pagination li {
   display: inline-block; }
   ol.pagination li:before {
     content: " ";
     counter-increment: none; }
+
+.pagination .heading--small {
+  font-size: 1.4em; }
 
 .pagination a {
   display: inline-block;
@@ -39,14 +44,14 @@ ol.pagination li {
   font-size: 1.1em;
   font-weight: 500;
   text-align: center;
-  background-color: #008EBE;
+  background-color: #003552;
   color: #ffffff; }
   .pagination a:hover {
     text-decoration: underline;
-    background-color: #002C44; }
+    background-color: #008EBE; }
 
 .pagination__current a {
-  background-color: #003552;
+  background-color: #008EBE;
   color: #ffffff;
   cursor: not-allowed;
   border: none; }
@@ -58,7 +63,7 @@ ol.pagination li {
   background-color: #003552;
   color: #ffffff;
   border-bottom: none;
-  padding: 0.1em 0.1em;
+  padding: 0.35em 0.1em;
   height: 2.2em;
   width: 2.2em; }
 

@@ -5,6 +5,8 @@
 
 ol.pagination {
   list-style-type: none;
+  font-size: 1em;
+  margin: 0 0 2em 0;
 }
 
 ol.pagination li {
@@ -13,6 +15,10 @@ ol.pagination li {
   content: " "; 
   counter-increment: none; 
   }
+}
+
+.pagination .heading--small {
+  font-size: 1.4em;
 }
 
 .pagination a {
@@ -24,16 +30,16 @@ ol.pagination li {
   font-size: 1.1em;
   font-weight: 500;
   text-align: center;
-  background-color: $mid;
+  background-color: $dark;
   color: $white;
   &:hover {
     text-decoration: underline;
-    background-color: $dark-text;
+    background-color: $mid;
   }
 }
 
 .pagination__current a {
-  background-color: $dark;
+  background-color: $mid;
   color: $white;
   cursor: not-allowed;
   border: none;
@@ -48,7 +54,7 @@ ol.pagination li {
   background-color: $dark;
   color: $white;
   border-bottom: none;
-  padding: 0.1em 0.1em;
+  padding: 0.35em 0.1em;
   height: 2.2em;
   width: 2.2em;
 }

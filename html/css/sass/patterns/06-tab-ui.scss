@@ -13,7 +13,7 @@
   display: inline-block;
   width: 100%;
 	padding: 0 0 0 0.2em;
-	margin: 0 0 1.5em 0;
+	margin: 0 0 0 0;
 	background-color: scale-color($light-pastel, $lightness: 30%);
 }
 
@@ -24,6 +24,8 @@
   margin: 0 0 0.2em 0;
   background-color: $mid;
   color: $white;
+  line-height: 2.75;
+  cursor: pointer;
   &:hover {
     text-decoration: underline;
   }
@@ -34,6 +36,7 @@
   display: block;
   text-align: center;
   padding: 0.5em 0 0.2em 0;
+  margin: 0;
   a {
     display: inline-block;
     width: 100%;
@@ -44,15 +47,15 @@
   }
 }
 
-.js-tabs .tabs.js-tab-ui [aria-selected=true] {
+.js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
   background-color: $dark;
   border: none;
 }
 
 @media only all and (min-width: 41em) {
   
-  .js-tabs .tabs li,
-  .js-tabs .tabs.js-tab-ui [aria-selected=true] {
+  .js-tabs .tabs .js-tabs-list li,
+  .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
     border-right: 0.2em solid scale-color($light-pastel, $lightness: 30%);
   }
   
@@ -86,8 +89,8 @@
   	box-shadow: 0 0.5em 0.5em 0em $white;
   }
   
-  .js-tabs .tabs li,
-  .js-tabs .tabs.js-tab-ui [aria-selected=true] {
+  .js-tabs .tabs .js-tabs-list li,
+  .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
     border-right: none;
   }
 
@@ -114,18 +117,16 @@
   	text-align: right;
   	margin: 0 0 0 0;
   	width: 15%;
-  	padding: 0.2em 1em 0.85em 0;
+  	padding: 0.2em 1em 0.86em 0;
   	border-bottom: 0.15em solid scale-color($light-pastel, $lightness: -30%);
   	a {
       color: $dark-text;
       text-align: right;
-  	}
-  	&:hover {
-    	//text-decoration: none;
+      text-decoration: underline;
   	}
   }
-  
-  .js-tabs .tabs.js-tab-ui [aria-selected=true] {
+ 
+  .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
   	color: $mid;
   	font-weight: 600;
   	background-color: $white;
@@ -139,6 +140,13 @@
       color: $dark;
       outline: none;
     }
+  }
+  
+  .js-tabs .tabs.js-tab-ui .js-tabs-list .tabs__print-all[aria-selected=true] {
+	  background-color: inherit;
+	  border: 0;
+	  font-weight: 400;
+	  border-bottom: 0.15em solid scale-color($light-pastel, $lightness: -30%);
   }
 
 } // end min 56em

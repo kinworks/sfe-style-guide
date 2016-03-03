@@ -2,8 +2,39 @@
   This component is used for long indexes of items, such as browsing Film Clips or categorised Video Tutorials. In the case of division by category heading, rather than alphabetical use, the 'Jump to' navigation block would not be used.
 </p>
 
-<div class="list__jump-nav">
+<div class="list__jump-nav" id="top">
   <h4 class="heading heading__smallest">Jump to:</h4>
+  <label for="select-nav" class="hidden">Jump to a letter in this index:</label>
+  <select id="select-nav" class="list__jump-nav__select js-ga-event" data-ga-cat='Browse Films' data-ga-label='Mobile select jump-to-letter nav'>
+    <option value="" selected="selected">Select Letter:</option>  
+    <option value="##" title="Go to items beginning with #">#</option>
+		<option value="#A" title="Go to items beginning with A">A</option>
+    <option value="#B" title="Go to items beginning with B">B</option>
+    <option value="#C" title="Go to items beginning with C">C</option>
+    <option value="#D" title="Go to items beginning with D">D</option>
+    <option value="#E" title="Go to items beginning with E">E</option>
+    <option value="#F" title="Go to items beginning with F">F</option>
+    <option value="#G" title="Go to items beginning with G">G</option>
+    <option value="#H" title="Go to items beginning with H">H</option>
+    <option value="#I" title="Go to items beginning with I">I</option>
+    <option value="#J" title="Go to items beginning with J">J</option>
+    <option value="#K" title="Go to items beginning with K">K</option>
+    <option value="#L" title="Go to items beginning with L">L</option>
+    <option value="#M" title="Go to items beginning with M">M</option>
+    <option value="#N" title="Go to items beginning with N">N</option>
+    <option value="#O" title="Go to items beginning with O">O</option>
+    <option value="#P" title="Go to items beginning with P">P</option>
+    <option disabled value="#Q" title="Go to items beginning with Q">Q (none)</option>
+    <option value="#R" title="Go to items beginning with R">R</option>
+    <option value="#S" title="Go to items beginning with S">S</option>
+    <option value="#T" title="Go to items beginning with T">T</option>
+    <option value="#U" title="Go to items beginning with U">U</option>
+    <option value="#V" title="Go to items beginning with V">V</option>
+    <option value="#W" title="Go to items beginning with W">W</option>
+    <option disabled value="#X" title="Go to items beginning with X">X (none)</option>
+    <option value="#Y" title="Go to items beginning with Y">Y</option>
+    <option disabled value="#Z" title="Go to items beginning with Z">Z (none)</option>
+  </select>
   <ol>
     <li>
       <a href="#numbers">#</a>
@@ -90,33 +121,48 @@
 </div>
 
 <div class="list__content">
-  <ol id="numbers">
-    <h4 class="heading heading__smallest">#</h4>
-    <li class="list__content__item">
-      <a href="#">123 Goes to Market</a>
-      <span>The life and times of numbers 1, 2 and 3</span>
-    </li>
-    <li class="list__content__item">
-      <a href="#">456 Have a Party</a>
-      <span>The numbers find an old barn to host their shindig</span>
-    </li>
-    <li class="list__content__item">
-      <a href="#">789 and Went to Jail</a>
-      <span>A documentary piece on number cannibalism in the workplace</span>
-    </li>
-  </ol>
-  <ol id="A">
-    <h4 class="heading heading__smallest">A</h4>
-    <li class="list__content__item">
-      <a href="#">All About Apples</a>
-      <span>Alliterative look at the nation's favourite fruit of 2015</span>
-    </li>
-  </ol>
-  <ol id="B">
-    <h4 class="heading heading__smallest">B</h4>
-    <li class="list__content__item">
-      <a href="#">Bees Being Brilliant Basejumpers</a>
-      <span>There is neither rhyme nor reason for such a title to exist</span>
-    </li>
-  </ol>
+	<div class="list__content__container">
+	  <ol>
+	    <h3 id="numbers" class="heading heading__smallest">#
+		    <span>—</span>
+		    <a class="list__content__back-to-top js-ga-event" href="#top" title="Go back to the top of the page" data-ga-cat="Browse Films" data-ga-label="Back to top Link">Back to Top</a>
+	    </h3>
+	    <li class="list__content__item">
+	      <a href="#">123 Goes to Market</a>
+	      <span>The life and times of numbers 1, 2 and 3</span>
+	    </li>
+	    <li class="list__content__item">
+	      <a href="#">456 Have a Party</a>
+	      <span>The numbers find an old barn to host their shindig</span>
+	    </li>
+	    <li class="list__content__item">
+	      <a href="#">789 and Went to Jail</a>
+	      <span>A documentary piece on number cannibalism in the workplace</span>
+	    </li>
+	  </ol>
+	</div>
+	<div class="list__content__container">
+	  <ol>
+	    <h3 id="A" class="heading heading__smallest">A
+	    	<span>—</span>
+		    <a class="list__content__back-to-top js-ga-event" href="#top" title="Go back to the top of the page" data-ga-cat="Browse Films" data-ga-label="Back to top Link">Back to Top</a>
+	    </h3>
+	    <li class="list__content__item">
+	      <a href="#">All About Apples</a>
+	      <span>Alliterative look at the nation's favourite fruit of 2015</span>
+	    </li>
+	  </ol>
+	</div>
+	<div class="list__content__container">
+	  <ol>
+	    <h3 id="B" class="heading heading__smallest">B
+	    	<span>—</span>
+		    <a class="list__content__back-to-top js-ga-event" href="#top" title="Go back to the top of the page" data-ga-cat="Browse Films" data-ga-label="Back to top Link">Back to Top</a>
+	    </h3>
+	    <li class="list__content__item">
+	      <a href="#">Bees Being Brilliant Basejumpers</a>
+	      <span>There is neither rhyme nor reason for such a title to exist</span>
+	    </li>
+	  </ol>
+	</div>
 </div>

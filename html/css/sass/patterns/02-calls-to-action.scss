@@ -19,6 +19,13 @@
   background-color: $mid;
   border-left: 1em solid $dark-text;
   border-bottom: none;
+  @include transition(background-color, 0.2s, ease-in-out); 
+  &:hover {
+    background-color: scale-color($mid, $lightness: 5%);
+  }
+  &:hover span {
+    text-decoration: underline;
+  }
 }
 
 .cta span {
@@ -40,6 +47,9 @@
   background-color: $light-pastel;
   span {
     color: $dark;
+  }
+  &:hover {
+    background-color: scale-color($light-pastel, $lightness: 10%);
   }
 }
 
@@ -67,18 +77,20 @@
   
   .cta {
     border-left: 1.5em solid $dark-text;
+    padding: 0.5em 0.8em 0.5em 0.8em;
   }
   
   .cta span {
     width: 80%;
     float: left;
+    padding: 0;
   }
   
   .cta div {
     width: 20%;
     float: right;
     text-align: right;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
   }
   
   // Alternatives
@@ -114,16 +126,12 @@
 @media only all and (min-width: 30em) {
   
   .cta {
-    padding: 1em;
+    padding: 0.6em 0.8em 0.6em 0.8em;
   }
   
   .cta span {
-    font-size: 1.4em;
-    padding: 0;
-  }
-  
-  .cta div {
-    padding-top: 0.4em;
+    font-size: 1.3em;
+    padding: 0.4em 0 0 0;
   }
   
   // alternatives
@@ -136,11 +144,6 @@
 
 @media only all and (min-width: 32.5em) {
   
-  .cta span {
-    font-size: 1.5em;
-    padding-top: 0.4em;
-  }
-  
   // Alternatives
   
   .cta--no-circle {
@@ -148,6 +151,14 @@
     span {
       padding-top: 0;
     }
+  }
+  
+} //end min 32.5em
+
+@media only all and (min-width: 58.75em) {
+  
+  .cta {
+    padding: 0.6em 1.2em 0.6em 1.2em;
   }
   
 } //end min 32.5em

@@ -2120,7 +2120,16 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   padding: 0.8em;
   background-color: #008EBE;
   border-left: 1em solid #002C44;
-  border-bottom: none; }
+  border-bottom: none;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out; }
+  .cta:hover {
+    background-color: #009ace; }
+  .cta:hover span {
+    text-decoration: underline; }
 
 .cta span {
   display: inline-block;
@@ -2137,6 +2146,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   background-color: #C0E6F3; }
   .cta--light span {
     color: #003552; }
+  .cta--light:hover {
+    background-color: #c6e9f4; }
 
 .cta.icon-pattern {
   border-color: #002031; }
@@ -2155,15 +2166,17 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
 @media only all and (min-width: 20em) {
   .cta {
-    border-left: 1.5em solid #002C44; }
+    border-left: 1.5em solid #002C44;
+    padding: 0.5em 0.8em 0.5em 0.8em; }
   .cta span {
     width: 80%;
-    float: left; }
+    float: left;
+    padding: 0; }
   .cta div {
     width: 20%;
     float: right;
     text-align: right;
-    padding-top: 0.5em; }
+    padding-top: 0.3em; }
   .cta--no-circle span {
     width: 100%;
     padding-bottom: 0.8em; }
@@ -2180,23 +2193,22 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
 @media only all and (min-width: 30em) {
   .cta {
-    padding: 1em; }
+    padding: 0.6em 0.8em 0.6em 0.8em; }
   .cta span {
-    font-size: 1.4em;
-    padding: 0; }
-  .cta div {
-    padding-top: 0.4em; }
+    font-size: 1.3em;
+    padding: 0.4em 0 0 0; }
   .cta--block {
     padding: 1.7em; } }
 
 @media only all and (min-width: 32.5em) {
-  .cta span {
-    font-size: 1.5em;
-    padding-top: 0.4em; }
   .cta--no-circle {
     padding: 1.5em 1em 1.5em 1em; }
     .cta--no-circle span {
       padding-top: 0; } }
+
+@media only all and (min-width: 58.75em) {
+  .cta {
+    padding: 0.6em 1.2em 0.6em 1.2em; } }
 
 .pattern {
   background: url(../../assets/pattern.png);

@@ -4,6 +4,10 @@
 //::: PURPOSE: Default non-reset browser / box model fixes, 
 //::: any other default choices we use across projects.
 
+.hidden {
+	display: none;
+}
+
 // Make everything to behave as IE box model - 
 // see http://quirksmode.org/css/user-interface/boxsizing.html
 

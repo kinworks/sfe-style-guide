@@ -480,16 +480,16 @@ body, .wf-loading body, .wf-inactive body {
 .heading--pairing {
   margin: 0 0 0.15em 0; }
 
-.heading__large {
+.heading--large {
   font-size: 2.3em; }
 
-.heading__medium {
+.heading--medium {
   font-size: 1.9em; }
 
-.heading__small {
+.heading--small {
   font-size: 1.7em; }
 
-.heading__smallest {
+.heading--smallest {
   font-size: 1.4em; }
 
 p, ul, ol, .text {
@@ -503,7 +503,7 @@ p, .text {
   margin-bottom: 1.3em;
   max-width: 34em; }
 
-.text__small {
+.text--small {
   font-size: 1em; }
 
 b, strong {
@@ -536,6 +536,46 @@ a {
 .link--white {
   color: #ffffff;
   border-bottom: 0.1em dotted #ffffff; }
+
+.node-type-page .wysiwyg, .node-type-film-clip .js-panel .wysiwyg, .node-type-lesson-guide .js-panel .wysiwyg, .useful-links .view-content, .video-tutorials__list.wysiwyg, .node-type-video-tutorial .wysiwyg, .node-type-news-article .wysiwyg {
+  margin: 0 0 2em 0; }
+  .node-type-page .wysiwyg img, .node-type-film-clip .js-panel .wysiwyg img, .node-type-lesson-guide .js-panel .wysiwyg img, .useful-links .view-content img, .video-tutorials__list.wysiwyg img, .node-type-video-tutorial .wysiwyg img, .node-type-news-article .wysiwyg img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0.6em 0 0.2em 0; }
+  .node-type-page .wysiwyg ul, .node-type-page .wysiwyg ol, .node-type-film-clip .js-panel .wysiwyg ul, .node-type-film-clip .js-panel .wysiwyg ol, .node-type-lesson-guide .js-panel .wysiwyg ul, .node-type-lesson-guide .js-panel .wysiwyg ol, .useful-links .view-content ul, .useful-links .view-content ol, .video-tutorials__list.wysiwyg ul, .video-tutorials__list.wysiwyg ol, .node-type-video-tutorial .wysiwyg ul, .node-type-video-tutorial .wysiwyg ol, .node-type-news-article .wysiwyg ul, .node-type-news-article .wysiwyg ol {
+    margin: 0 0 1.5em 0;
+    max-width: 34em; }
+    .node-type-page .wysiwyg ul li p, .node-type-page .wysiwyg ol li p, .node-type-film-clip .js-panel .wysiwyg ul li p, .node-type-film-clip .js-panel .wysiwyg ol li p, .node-type-lesson-guide .js-panel .wysiwyg ul li p, .node-type-lesson-guide .js-panel .wysiwyg ol li p, .useful-links .view-content ul li p, .useful-links .view-content ol li p, .video-tutorials__list.wysiwyg ul li p, .video-tutorials__list.wysiwyg ol li p, .node-type-video-tutorial .wysiwyg ul li p, .node-type-video-tutorial .wysiwyg ol li p, .node-type-news-article .wysiwyg ul li p, .node-type-news-article .wysiwyg ol li p {
+      font-size: 1em;
+      display: inline; }
+  .node-type-page .wysiwyg em, .node-type-film-clip .js-panel .wysiwyg em, .node-type-lesson-guide .js-panel .wysiwyg em, .useful-links .view-content em, .video-tutorials__list.wysiwyg em, .node-type-video-tutorial .wysiwyg em, .node-type-news-article .wysiwyg em {
+    display: inline-block;
+    max-width: 34em; }
+  .node-type-page .wysiwyg h1, .node-type-film-clip .js-panel .wysiwyg h1, .node-type-lesson-guide .js-panel .wysiwyg h1, .useful-links .view-content h1, .video-tutorials__list.wysiwyg h1, .node-type-video-tutorial .wysiwyg h1, .node-type-news-article .wysiwyg h1 {
+    color: #0079A1;
+    margin: 0 0 0.4em 0; }
+  .node-type-page .wysiwyg h2, .node-type-film-clip .js-panel .wysiwyg h2, .node-type-lesson-guide .js-panel .wysiwyg h2, .useful-links .view-content h2, .video-tutorials__list.wysiwyg h2, .node-type-video-tutorial .wysiwyg h2, .node-type-news-article .wysiwyg h2 {
+    font-size: 1.8em;
+    margin: 1.1em 0 0.5em 0; }
+  .node-type-page .wysiwyg h2:first-child, .node-type-film-clip .js-panel .wysiwyg h2:first-child, .node-type-lesson-guide .js-panel .wysiwyg h2:first-child, .useful-links .view-content h2:first-child, .video-tutorials__list.wysiwyg h2:first-child, .node-type-video-tutorial .wysiwyg h2:first-child, .node-type-news-article .wysiwyg h2:first-child {
+    margin: 0 0 0.5em 0; }
+  .node-type-page .wysiwyg h3, .node-type-film-clip .js-panel .wysiwyg h3, .node-type-lesson-guide .js-panel .wysiwyg h3, .useful-links .view-content h3, .video-tutorials__list.wysiwyg h3, .node-type-video-tutorial .wysiwyg h3, .node-type-news-article .wysiwyg h3 {
+    font-size: 1.5em;
+    margin: 1.3em 0 0.6em 0; }
+  .node-type-page .wysiwyg h4, .node-type-page .wysiwyg h6, .node-type-film-clip .js-panel .wysiwyg h4, .node-type-film-clip .js-panel .wysiwyg h6, .node-type-lesson-guide .js-panel .wysiwyg h4, .node-type-lesson-guide .js-panel .wysiwyg h6, .useful-links .view-content h4, .useful-links .view-content h6, .video-tutorials__list.wysiwyg h4, .video-tutorials__list.wysiwyg h6, .node-type-video-tutorial .wysiwyg h4, .node-type-video-tutorial .wysiwyg h6, .node-type-news-article .wysiwyg h4, .node-type-news-article .wysiwyg h6 {
+    color: #0079A1;
+    font-size: 1.5em;
+    margin: 1.3em 0 0.6em 0; }
+  .node-type-page .wysiwyg h5, .node-type-page .wysiwyg h6, .node-type-film-clip .js-panel .wysiwyg h5, .node-type-film-clip .js-panel .wysiwyg h6, .node-type-lesson-guide .js-panel .wysiwyg h5, .node-type-lesson-guide .js-panel .wysiwyg h6, .useful-links .view-content h5, .useful-links .view-content h6, .video-tutorials__list.wysiwyg h5, .video-tutorials__list.wysiwyg h6, .node-type-video-tutorial .wysiwyg h5, .node-type-video-tutorial .wysiwyg h6, .node-type-news-article .wysiwyg h5, .node-type-news-article .wysiwyg h6 {
+    font-size: 1.5em;
+    margin: 1.3em 0 0.6em 0; }
+  .node-type-page .wysiwyg a:hover, .node-type-film-clip .js-panel .wysiwyg a:hover, .node-type-lesson-guide .js-panel .wysiwyg a:hover, .useful-links .view-content a:hover, .video-tutorials__list.wysiwyg a:hover, .node-type-video-tutorial .wysiwyg a:hover, .node-type-news-article .wysiwyg a:hover {
+    color: #002C44;
+    border-bottom: 0.1em dotted #002C44; }
+  .node-type-page .wysiwyg .item-list ul li .views-field-title, .node-type-film-clip .js-panel .wysiwyg .item-list ul li .views-field-title, .node-type-lesson-guide .js-panel .wysiwyg .item-list ul li .views-field-title, .useful-links .view-content .item-list ul li .views-field-title, .video-tutorials__list.wysiwyg .item-list ul li .views-field-title, .node-type-video-tutorial .wysiwyg .item-list ul li .views-field-title, .node-type-news-article .wysiwyg .item-list ul li .views-field-title {
+    display: inline; }
 
 /* Light 
   font-weight: 300;

@@ -14,19 +14,19 @@
   margin: 0 0 0.15em 0;
 }
 
-.heading__large {
+.heading--large {
   font-size: 2.3em;
 }
 
-.heading__medium {
+.heading--medium {
   font-size: 1.9em;
 }
 
-.heading__small {
+.heading--small {
   font-size: 1.7em;
 }
 
-.heading__smallest {
+.heading--smallest {
   font-size: 1.4em;
 }
 
@@ -47,7 +47,7 @@ p,
   max-width: 34em;
 }
 
-.text__small {
+.text--small {
   font-size: 1em;
 }
 
@@ -91,6 +91,80 @@ a {
   color: $white;
   border-bottom: 0.1em dotted $white;
 }
+
+// Utility class for adjustments on user-edited content
+
+.node-type-page .wysiwyg,
+.node-type-film-clip .js-panel .wysiwyg,
+.node-type-lesson-guide .js-panel .wysiwyg,
+.useful-links .view-content,
+.video-tutorials__list.wysiwyg,
+.node-type-video-tutorial .wysiwyg,
+.node-type-news-article .wysiwyg {
+  
+  margin: 0 0 2em 0;
+  
+  img {
+	  width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0.6em 0 0.2em 0;
+  }
+  
+  ul, ol {
+    margin: 0 0 1.5em 0;
+    max-width: 34em;
+    li p {
+      font-size: 1em;
+      display: inline;
+    }
+  }
+  
+  em {
+    display: inline-block;
+    max-width: 34em;
+  }
+  
+  h1 {
+    color: $mid-text;
+    margin: 0 0 0.4em 0;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin: 1.1em 0 0.5em 0;
+  }
+  
+  h2:first-child {
+    margin: 0 0 0.5em 0;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    margin: 1.3em 0 0.6em 0;
+  }
+  
+  h4, h6 {
+    color: $mid-text;
+    font-size: 1.5em;
+    margin: 1.3em 0 0.6em 0;
+  }
+  
+  h5, h6 {
+    font-size: 1.5em;
+    margin: 1.3em 0 0.6em 0;
+  }
+  
+  a:hover {
+    color: $dark-text;
+    border-bottom: 0.1em dotted $dark-text;
+  }
+  
+  .item-list ul li .views-field-title {
+    display: inline;
+  }
+  
+} //wysiwyg
 
 //// Proxima Nova - Typekit Weights and Styles available 
 // in the SFE Kit for reference;

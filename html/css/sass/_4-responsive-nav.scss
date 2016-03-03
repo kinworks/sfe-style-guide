@@ -3,8 +3,8 @@
 /*! responsive-nav.js 1.0.32 by @viljamis */
 
 .nav-collapse ul,
-.guidenav-collapse ul,
-.search-collapse div {
+.login-collapse .login__container,
+.search-collapse .search__container {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -18,7 +18,7 @@
   display: block;
 }
 
-.js .guidenav-collapse,
+.js .login-collapse,
 .js .search-collapse,
 .js .nav-collapse {
   clip: rect(0 0 0 0);
@@ -29,11 +29,12 @@
   zoom: 1;
 }
 
-.guidenav-collapse.opened,
+.login-collapse.opened,
 .search-collapse.opened,
 .nav-collapse.opened {
   max-height: 9999px;
-
+  clip: auto;
+  width: 100%;
 }
 
 .disable-pointer-events {

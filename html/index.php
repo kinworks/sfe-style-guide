@@ -123,6 +123,9 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           <a href="/#nav">— Navigation</a>
         </li>
         <li>
+          <a href="/#login">— Login Bar</a>
+        </li>
+        <li>
           <a href="/#body">— Body</a>
         </li>
         <li>
@@ -583,6 +586,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 </div>
               </div>
             </div>
+           
             
             <?php // NAVIGATION PATTERN ==================== ?>
       
@@ -798,9 +802,114 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               </div>
           </div> 
 
-    
     <div class="bodywrapper">
       <div class="styleguide container">  
+	      
+	      <?php // LOGIN BLOCK PATTERN ==================== ?>
+      
+          <div class="guidepattern pattern-header" id="login">
+        
+            <h2 class="guidance">Login Bar</h2>
+            <p class="guidance">
+              This is the login bar style, for regular login and SSO options. <a href="/?mode=test#layout"><b>View it in test mode</b></a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
+            </p>
+            <p class="guidance">
+	            Please excuse the state of the markup for this example, as portions of it are controlled by Drupal modules, and this has been copied back into the Style guide from the Scotland on Screen site.
+            </p>
+          </div>
+      </div>
+    </div>
+      </div></div>
+      
+    <div class="body-wrapper outsider">         
+            
+            <div style="width: 100%; height: 0.3em; background-color: #002E48;"></div>
+            <div class="login login-collapse">
+				      <div class="login__container">
+				        <div class="login__trigger login__trigger--top cta icon-pattern clearfix  js-ga-event" id="login__trigger__top" data-ga-cat='Login' data-ga-label='Mobile - Top Login Close Toggled'>
+				          <div class="login__trigger--top__container">  
+				            <span>Close Login</span>
+				            <div><i class="icon-arrow-up">Close Login Block</i></div>
+				          </div>
+				        </div>
+				        <div class="login__sso clearfix">
+				          <div class="container">
+				            <div class="login__sso__block login__sso__block--rm-unify">
+				              <span class="sso__block__label">
+				                School Students &amp; Teachers:
+				              </span>
+				              <a href="/rmunify_login" class="btn btn--white js-ga-event" data-ga-cat="Login" data-ga-label="RM Unify Clicked">Log in with Glow</a>            </div>
+				            <div class="login__sso__block login__sso__block--shibboleth">
+				              <span class="sso__block__label">
+				                Students and Lecturers:
+				              </span>
+				              <a class="btn btn--contrast-alt js-ga-event" data-ga-cat='Login' data-ga-label='Shibboleth Clicked' href="https://scotlandonscreen.org.uk/Shibboleth.sso/Login?target=https%3A%2F%2Fscotlandonscreen.org.uk%2F%3Fq%3Dshib_login%2Fbrowse-films">
+				  Log in with Shibboleth  
+				</a>            </div>
+				          </div>
+				        </div>
+				                <div class="login__cms clearfix">
+				          <div class="container">
+				            <span class="login__cms__label">
+				              Or, using a Scotland on Screen login:
+				            </span>
+				            <form action="/browse-films?destination=browse-films" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+				  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+				 <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+				</div>
+				<div class="form-item form-type-password form-item-pass">
+				  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+				 <input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+				</div>
+				<input type="hidden" name="form_build_id" value="form-M3MU65nPyGY_iEDEsYBRGnsr73n7qCJoEVLZcu3b6zE" />
+				<input type="hidden" name="form_id" value="user_login_block" />
+				<div class="form-actions form-wrapper" id="edit-actions--2"><input class="btn btn--light-pastel js-ga-event form-submit" data-ga-cat="Login" data-ga-label="Login with site account submitted" type="submit" id="edit-submit--2" name="op" value="Log in" /></div></div></form>          </div>
+				        </div>
+				              </div>
+				    </div>
+				    <div class="container login__container--trigger">
+				      <div class="login__trigger cta icon-pattern clearfix js-ga-event" id="login__trigger" data-ga-cat='Login' data-ga-label='Login Area Toggled'>
+				        <span data-text-swap="Close" data-text-original="Log in">Log in</span>
+				        <div><i class="icon-arrow-down">Open Login Block</i></div>
+				      </div>
+				    </div>
+            
+    </div>
+    <div class="body-wrapper">
+      <div class="styleguide container"> 
+        <div class="guidepattern">  
+            <div class="js-tab-ui panels fullwidth">
+                <ul class="js-tabs-list" role="tablist">
+                  <li role="tab" id="tab-header-markup" aria-controls="tab-header-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="header">Markup
+                  </li>
+                  <li role="tab" id="tab-header-scss" aria-controls="tab-header-scss-panel" aria-selected="false" data-tabgroup="header">
+                    SCSS
+                  </li>
+                  <li role="tab" id="tab-header-css" aria-controls="tab-header-css-panel" aria-selected="false" data-tabgroup="header">
+                    Generated CSS
+                  </li>
+                </ul>
+                <div class="source js-panel first" id="tab-header-markup-panel" role="tabpanel" aria-labelledby="tab-header-markup" data-tabgroup="header">
+                  <h2 class="js-panel__title">Markup</h2>
+                  <pre>
+                    <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/login.html")); ?></code>
+                  </pre>
+                </div>
+                <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
+                  <h2 class="js-panel__title">SCSS</h2>
+                  <pre>
+                    <code><?php echo file_get_contents("css/sass/patterns/0-login.scss"); ?></code>
+                  </pre>
+                </div>            
+                <div class="style js-panel" id="tab-header-css-panel" role="tabpanel" aria-labelledby="tab-header-css" data-tabgroup="header">
+                  <h2 class="js-panel__title">Generated CSS</h2>
+                  <pre>
+                    <code><?php echo file_get_contents("css/output/patterns/0-login.css"); ?></code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
 
  <?php // BODY PATTERN  ==================== ?>
       
@@ -1049,6 +1158,12 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         transition: 284, // Integer: Speed of the transition, in milliseconds
       });
       */
+      
+      var login = responsiveNav(".login-collapse", {
+        customToggle: "login__trigger", // Selector: Specify the ID of a custom toggle
+        navClass: "login-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        animate: false,                    // Boolean: Use CSS3 transitions, true or false
+      });
       
       var search = responsiveNav(".search-collapse", {
         customToggle: "search-trigger", // Selector: Specify the ID of a custom toggle

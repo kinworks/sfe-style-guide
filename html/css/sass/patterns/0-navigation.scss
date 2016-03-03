@@ -5,6 +5,8 @@
   background-repeat: repeat;
   background-color: $dark-text;
   cursor: pointer;
+  z-index: 100;
+  border-top: 0.3em solid scale-color($dark, $lightness: -40%);
   .icon-menu {
     width: 1.5em;
     height: 1.3125em;
@@ -22,6 +24,7 @@
 
 .main-nav {
   font-size: 1em;
+  z-index: 100;
 }
 
 .main-nav li {
@@ -38,6 +41,11 @@
   color: $white;
   border-bottom: none;
   padding: 0.6em 0 0.7em 8%;
+}
+
+.main-nav li a.active {
+	color: scale-color($contrast, $lightness: 60%);
+	text-decoration: underline;
 }
 
 // Hide / show sub-section navigation based on JS being available
@@ -88,8 +96,12 @@
   }
 }
 
-.main-nav li:hover a.parent-item {
+.main-nav li:hover a {
   text-decoration: underline;
+}
+
+.main-nav li:hover .sub-menu a {
+  text-decoration: none;
 }
 
 .main-nav .sub-menu li {
@@ -119,22 +131,39 @@
 
 .js nav.nav-collapse {
   position: fixed !important;
+  z-index: 100;
   //this wee trick fixes position: fixed on most android 2.2 and 2.3
   -webkit-backface-visibility: hidden;
   bottom: 3.375em;
 }
 
-.js nav.nav-collapse.opened {
-  clip: auto;
-  width: 100%;
-  .sub-menu {
-    max-height: 20em;
-    max-height: 50vh;
-    overflow: scroll;
-    //momentum scrolling on mobile webkit, ht/ @chuckle_hound
-    -webkit-overflow-scrolling: touch; 
-  }
+.js nav.nav-collapse .main-nav ul.sub-menu.open {
+  width: auto;
+  max-height: 20em;
+  max-height: 55vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  //hide vertical scrollbar in webkit, and then in IE10+:
+  &:-webkit-scrollbar { width: 0 !important }
+  -ms-overflow-style: none;
+  //momentum scrolling on mobile webkit, ht/ @chuckle_hound
+  -webkit-overflow-scrolling: touch; 
 }
+
+// For the benefit of Windows Phone 8 IEmobile:
+
+@media only all and (max-width: 41em) {
+	
+	.js .nav-collapse ul {
+		display: none;
+	}
+	
+	.js .nav-collapse.opened ul {
+		display: block;
+	}
+	
+} //max-width 41em
+
 
 // Enhanced view
 
@@ -148,12 +177,13 @@
   
   .js nav.nav-collapse {
     position: static !important;
+    border-bottom: 0.3em solid $mid;
   }
   
   // Build our sections into 3-up, two-row list:
   
   .main-nav li {
-    z-index: 5;
+    z-index: 100;
     width: 33.3333%;
     height: 4.8125em;
     float: left;
@@ -172,14 +202,21 @@
     overflow: scroll;
     //momentum scrolling on mobile webkit, ht/ @chuckle_hound
     -webkit-overflow-scrolling: touch; 
+    min-width: 33.333%;
+    position: absolute;
+    margin-top: 4.7em;
+    li a {
+      padding: 0.7em 1.5em 0.7em 1em;
+    }
   }
+
   
   .main-nav .sub-menu {
-    z-index: 0;
+    z-index: 100;
   }
   
   .main-nav .sub-menu li {
-    z-index: 0;
+    z-index: 100;
     width: 100%;
     float: none;
     height: auto;
@@ -193,7 +230,7 @@
   
   nav {
     background-color: $dark;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 0 0;
     padding: 0 5% 0 5%;
   }
   
@@ -219,12 +256,16 @@
     &:last-child {
       margin-right: 0;
     }
+    a {
+      height: 6em;
+    }
   }
   
   .main-nav li.home,
   .main-nav li.contact-us {
     width: auto;
-    max-width: 10%;
+    max-width: 5%;
+    margin-right: 5%;
   }
   
   .main-nav li.browse-films {
@@ -248,9 +289,12 @@
     visibility: hidden;
   	position: absolute;
   	left: auto;
-  	margin-top: 6em;
+  	margin-top: 5.9em;
     left: auto;
     width: 25%;
+    a {
+      height: auto;
+    }
   }
   
   .main-nav li:hover .sub-menu {
@@ -258,10 +302,21 @@
     visibility: visible;
     height: auto;
     position: absolute;
-    margin-top: 6em;
+    margin-top: 5.9em;
     left: auto;
     width: auto;
     margin-left: 0.8em;
+    li a {
+      padding: 0.6em 1em 0.6em 1em;
+    }
+  }
+
+  .js nav.nav-collapse .main-nav ul.sub-menu.open {
+    margin: 4.7em 0 0 0.8em;
+    min-width: initial;
+    li a {
+      padding: 0.6em 1em 0.6em 1em;
+    }
   }
   
   .main-nav .sub-menu li {
@@ -275,7 +330,7 @@
 @media only all and (min-width: 58.75em) {
   
   .main-nav li.contact-us {
-    max-width: 12%;
+    max-width: 7%;
   }
   
   .main-nav li.resources {
@@ -286,10 +341,10 @@
 
 @media only all and (min-width: 63.9375em) {
   
-  .main-nav li.home,
-  .main-nav li.contact-us {
+  .main-nav li.home {
     width: 8%;
     max-width: 8%;
+    margin-right: 2%;
   }
   
   .main-nav li.resources {
@@ -303,20 +358,33 @@
   .main-nav li.contact-us {
     width: 10%;
     max-width: 10%;
+    margin-right: 2%;
   }
 
 } // end min 63.9375em
 
-@media only all and (min-width: 71.25em) {
+@media only all and (min-width: 68.125em) {
   
   nav,
   .nav-collapse .main-nav {
-    height: 5.4em;
+    height: 4.9em;
+  }
+  
+  .main-nav li {
+    height: 4.5em;
+  }
+  
+  .nav-collapse .main-nav li a {
+    height: 4em;
   }
   
   .main-nav li:hover .sub-menu,
   .main-nav .sub-menu {
-    margin-top: 5.4em;
+    margin-top: 4.7em;
+  }
+  
+  .main-nav .sub-menu li a {
+    height: auto;
   }
   
 } //end min 71.25em

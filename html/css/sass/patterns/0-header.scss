@@ -18,6 +18,7 @@
 
 .header__part--brand {
   background-position: left top;
+  a {border-bottom: none;}
   .icon-sos-logo {
     margin: 2em 8% 0 8%;
     width: 84%;
@@ -38,7 +39,6 @@
   .icon-arrow-down,
   .icon-arrow-up {
     width: 0.625em;
-    
     margin: 1.375em 0 0 0;  
     float: right;
   }
@@ -60,6 +60,7 @@
 .header__search-trigger {
   background-color: $mid;
   cursor: pointer;
+  border-bottom: 0.3em solid $dark;
   .icon-search {
     width: 1.6875em;
     height: 1.75em;
@@ -73,11 +74,20 @@
     color: $white;
     float: left;
   }
+  &.active {
+    border-bottom: none;
+  }
 }
 
 .header__part--search {
   background-position: right top;
-  padding: 1.8em 5% 0 5%;
+  border-bottom: 0.3em solid $dark;
+  form {
+    background-color: inherit;
+    margin: 0;
+    width: 100%;
+    padding: 3.1em 0 0 0;
+  }
   .search__container {
     width: 100%;
     max-width: 20em;
@@ -92,6 +102,7 @@
     display: inline-block;
   }
   label {
+    display: none;
     font-size: 1.3em;
     font-weight: 600;
   }
@@ -120,7 +131,6 @@
     font-size: 1.1em;
     outline: 0;
     border: 0.135em solid $dark;
-    vertical-align: -2.23em;
     max-width: 4.55625em;
     height: 2.14em;
     &:focus,
@@ -130,7 +140,7 @@
   }
   .search__advanced {
     display: inline-block;
-    font-size: 1.125em;
+    font-size: 1em;
     font-weight: 300;
     padding-top: 0.5em;
     a:focus,
@@ -138,6 +148,14 @@
       color: $dark-text;
       border-bottom: 0.1em dotted $dark;
     }
+  }
+  // Fix / Hide Drupal junk *sigh*
+  .block.block-search {
+    //display: none; 
+  }
+  .form-item, 
+  .form-actions {
+    margin: 0;
   }
 }
 
@@ -157,7 +175,22 @@
   .header__part--search {
     width: 50%;
     float: left;
+    border-bottom: none;
   }
+  
+  .header__part--search {
+    form {
+      padding: 1.3em 0 0 0;
+      width: 90%;
+      float: right;
+    }
+    .search__container {
+      text-align: right;
+    }
+  }
+  
+  
+
   
   // This has the same effect as .container class; these fixes will
   // constrain the header items to an 80em width

@@ -32,6 +32,8 @@
 
 .header__part--brand {
   background-position: left top; }
+  .header__part--brand a {
+    border-bottom: none; }
   .header__part--brand .icon-sos-logo {
     margin: 2em 8% 0 8%;
     width: 84%;
@@ -61,7 +63,8 @@
 
 .header__search-trigger {
   background-color: #008EBE;
-  cursor: pointer; }
+  cursor: pointer;
+  border-bottom: 0.3em solid #003552; }
   .header__search-trigger .icon-search {
     width: 1.6875em;
     height: 1.75em;
@@ -73,10 +76,17 @@
     margin: 0.7em 0 0 0;
     color: #ffffff;
     float: left; }
+  .header__search-trigger.active {
+    border-bottom: none; }
 
 .header__part--search {
   background-position: right top;
-  padding: 1.8em 5% 0 5%; }
+  border-bottom: 0.3em solid #003552; }
+  .header__part--search form {
+    background-color: inherit;
+    margin: 0;
+    width: 100%;
+    padding: 3.1em 0 0 0; }
   .header__part--search .search__container {
     width: 100%;
     max-width: 20em;
@@ -89,6 +99,7 @@
     max-width: 13.92em;
     display: inline-block; }
   .header__part--search label {
+    display: none;
     font-size: 1.3em;
     font-weight: 600; }
   .header__part--search input[type="text"] {
@@ -111,19 +122,20 @@
     font-size: 1.1em;
     outline: 0;
     border: 0.135em solid #003552;
-    vertical-align: -2.23em;
     max-width: 4.55625em;
     height: 2.14em; }
     .header__part--search input[type="submit"]:focus, .header__part--search input[type="submit"]:hover {
       background-color: #008EBE; }
   .header__part--search .search__advanced {
     display: inline-block;
-    font-size: 1.125em;
+    font-size: 1em;
     font-weight: 300;
     padding-top: 0.5em; }
     .header__part--search .search__advanced a:focus, .header__part--search .search__advanced a:hover {
       color: #002C44;
       border-bottom: 0.1em dotted #003552; }
+  .header__part--search .form-item, .header__part--search .form-actions {
+    margin: 0; }
 
 @media only all and (min-width: 41em) {
   .js .header__search-trigger, .no-js .header__search-trigger {
@@ -133,7 +145,14 @@
     float: left; }
   .header__part--search {
     width: 50%;
-    float: left; }
+    float: left;
+    border-bottom: none; }
+  .header__part--search form {
+    padding: 1.3em 0 0 0;
+    width: 90%;
+    float: right; }
+  .header__part--search .search__container {
+    text-align: right; }
   .header__part--brand {
     text-align: left; }
   .header__part--brand .icon-sos-logo {

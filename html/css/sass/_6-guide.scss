@@ -66,23 +66,6 @@ body {
   width: 25em;
 }
 
-// Icon pattern
-
-i {
-  display: inline-block;
-  background-size: 100%;
-  /* "But despite its enduring popularity, Phark has drawbacks of its own: chiefly, a performance hit caused by the need to draw a giant 9999px box offscreen. (Yes, the browser really does this.)
-
-My friend Scott Kellum, design director at Treesaver, has now sent me this refactored code for hiding text, which I hereby christen the Kellum Method:"*/
-
-  text-indent: 110%;
-  white-space: nowrap;
-  overflow: hidden;
-
-/* Really long strings of text will never flow into the container because they always flow away from the container.
-Performance is dramatically improved because a 9999px box is not drawn. Noticeably so in animations on the iPad 1. */
-}
-
 // Body
 
 .body-wrapper {

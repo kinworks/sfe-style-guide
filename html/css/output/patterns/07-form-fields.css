@@ -22,11 +22,20 @@
 
 /* Forms */
 form {
-  width: 90%;
-  max-width: 100%;
+  display: inline-block;
+  width: 100%;
+  max-width: 36em;
   background-color: #003552;
-  padding: 2em;
-  margin: 0 0 2em 0; }
+  padding: 1em 1em 0em 1em;
+  margin: 1.5em 0 2em 0; }
+
+form p {
+  color: #ffffff; }
+
+form a {
+  color: #ffffff; }
+  form a:hover {
+    border-color: #ffffff; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], input[list], input[type="file"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="range"], input[type="search"], textarea, select {
   font-size: 1.1em;
@@ -39,7 +48,20 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   ignored by Webkit */
   background-color: #fff;
   border: 0.2em solid #003552;
-  box-shadow: none; }
+  box-shadow: none;
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], input[list], input[type="file"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="range"], input[type="search"] {
+  max-width: 20em; }
+
+.form-item {
+  margin: 0 0 1.5em 0; }
+  .form-item input[type="email"], .form-item input[type="number"], .form-item input[type="search"], .form-item input[type="text"], .form-item input[type="tel"], .form-item input[type="url"], .form-item input[type="password"], .form-item input[list], .form-item input[type="file"], .form-item input[type="date"], .form-item input[type="month"], .form-item input[type="week"], .form-item input[type="time"], .form-item input[type="range"], .form-item input[type="search"], .form-item textarea, .form-item select {
+    margin-bottom: 0.5em; }
+  .form-item .description {
+    color: #C0E6F3;
+    font-size: 1em; }
 
 .checkbox {
   display: inline-block;
@@ -91,8 +113,8 @@ input[type="file"] {
   background-color: #001a29;
   color: #ffffff; }
 
-.required {
-  font-weight: 400;
+.form-required {
+  font-weight: 300;
   color: #ffcdb3; }
 
 .format {
@@ -117,6 +139,19 @@ textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
 select:-internal-list-box option:checked {
   background-color: #52CEF4; }
 
+.messages {
+  background-image: none !important;
+  padding: 1.2em 1em !important;
+  margin: 1em 0 2em 0 !important; }
+  .messages ul li {
+    font-weight: 600; }
+  .messages p {
+    margin: 0; }
+
 /* Form buttons are covered in the 'Buttons
   and calls to action' section above */
+@media only all and (min-width: 30em) {
+  form {
+    padding: 2em 2em 0.5em 2em; } }
+
 /*# sourceMappingURL=07-form-fields.css.map */

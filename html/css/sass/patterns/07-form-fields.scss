@@ -4,11 +4,23 @@
 /* Forms */
 
 form {
-  width: 90%;
-  max-width: 100%;
+  display: inline-block;
+  width: 100%;
+  max-width: 36em;
   background-color: $dark;
-  padding: 2em;
-  margin: 0 0 2em 0;
+  padding: 1em 1em 0em 1em;
+  margin: 1.5em 0 2em 0;
+}
+
+form p {
+  color: $white;
+}
+
+form a {
+  color: $white;
+  &:hover {
+    border-color: $white;
+  }
 }
 
 input[type="email"],
@@ -39,6 +51,55 @@ select {
   background-color: #fff;
   border: 0.2em solid $dark;
   box-shadow: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[list],
+input[type="file"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="range"],
+input[type="search"] {
+  max-width: 20em;
+}
+
+.form-item {
+  margin: 0 0 1.5em 0;
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  input[list],
+  input[type="file"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="range"],
+  input[type="search"],
+  textarea,
+  select {
+    margin-bottom: 0.5em;
+  }
+  
+  .description {
+    color: $light-pastel;
+    font-size: 1em;
+  }
+  
 }
 
 .checkbox {
@@ -120,8 +181,8 @@ input[type="file"] {
   color: $white;
 }
 
-.required {
-  font-weight: 400;
+.form-required {
+  font-weight: 300;
   color: $error;
 }
 
@@ -153,6 +214,23 @@ select:-internal-list-box option:checked {
   background-color: $light;
 }
 
+// Say goodbye to Drupal's bitmap form message iconography:
+
+.messages {
+	background-image: none !important;
+	padding: 1.2em 1em !important;
+	margin: 1em 0 2em 0 !important;
+	ul li {font-weight: 600;}
+	p {margin: 0;}
+}
+
 /* Form buttons are covered in the 'Buttons
   and calls to action' section above */
 
+@media only all and (min-width: 30em) {
+
+    form {
+      padding: 2em 2em 0.5em 2em;
+    }
+
+} // min 30em;

@@ -1,0 +1,68 @@
+//// Brand
+
+$light: #52CEF4;
+
+$mid: #008EBE;
+
+$dark: #003552; 
+
+
+//// Text-specific colours
+
+$mid-text: #0079A1;
+
+$dark-text: #002C44;
+
+$disabled-text: #666;
+
+
+//// Modules / Body
+
+$white: #ffffff; // Yes, really.
+
+$light-pastel: #C0E6F3;
+
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg),
+    linear-gradient(transparent, transparent);
+    /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */
+}
+
+.icon-pattern {
+  background-repeat: repeat;
+}
+
+
+/// Calls to Action / Highlights
+
+$contrast: #dc6f00; // WCAG: Only 18pt+ text
+
+$contrast-alt: #00A659;
+
+$feedback: #bff8ed;
+
+$error: #ffcdb3;
+
+$disabled: #ccc;
+
+
+/// Background utility classes
+
+.bg--dark {
+  background-color: $dark;
+}
+
+.bg--mid {
+  background-color: $mid;
+}
+
+.bg--light {
+  background-color: $light;
+}
+
+.bg--light-pastel {
+  background-color: $light-pastel;
+}

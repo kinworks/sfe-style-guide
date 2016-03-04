@@ -1,0 +1,198 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
+
+.bg--dark {
+  background-color: #003552; }
+
+.bg--mid {
+  background-color: #008EBE; }
+
+.bg--light {
+  background-color: #52CEF4; }
+
+.bg--light-pastel {
+  background-color: #C0E6F3; }
+
+.footer__top {
+  background-color: #008EBE;
+  padding: 2em 8% 1.5em 8%; }
+
+.footer__top__report-issues {
+  margin-bottom: 0.5em; }
+
+.footer__top__report-issues span, .footer__top__partners span {
+  font-size: 1.25em;
+  color: #ffffff;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  max-width: 14.125em;
+  margin: 0 0 1em 0; }
+
+.footer__top__partners span {
+  margin: 0 0 2em 0; }
+
+.footer__top__partners a, footer a {
+  border-bottom: 0; }
+
+.footer__top__partners i {
+  width: 100%;
+  margin: 0 0 2em 0;
+  display: block; }
+
+.icon-footer-partner-es {
+  max-width: 11.375em;
+  height: 4.6875em; }
+
+.icon-footer-partner-nls {
+  max-width: 12.25em;
+  height: 6.906875em; }
+
+.icon-footer-partner-cs {
+  max-width: 8.3125em;
+  height: 5.25em;
+  margin: 0; }
+
+.icon-footer-partner-sfe {
+  width: 100%;
+  max-width: 13.75em;
+  height: 5.8125em; }
+
+.footer__nav {
+  background-color: #007da7;
+  padding: 1.5em 8% 0.5em 8%;
+  text-align: center; }
+
+.footer__nav li {
+  list-style-type: none; }
+
+.footer__nav li a {
+  font-size: 1em;
+  font-weight: 400;
+  color: #ffffff; }
+  .footer__nav li a:hover {
+    border-bottom: 0.1em dotted #ffffff; }
+
+footer {
+  background-color: #003552;
+  padding: 2.4em 8% 3.5em 8%;
+  text-align: center; }
+
+footer span {
+  display: block;
+  margin: 0 auto 2em auto;
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.3em; }
+
+footer i {
+  display: block;
+  margin: 0 auto; }
+
+@media only all and (min-width: 26.25em) {
+  .footer__nav li {
+    width: 44%;
+    float: left;
+    margin-top: 0.5em; }
+    .footer__nav li:nth-child(1), .footer__nav li:nth-child(2) {
+      margin-bottom: 1em; } }
+
+@media only all and (min-width: 32.5em) {
+  .footer__top, .footer__top span {
+    text-align: center;
+    max-width: 100%; }
+  .footer__top__partners a {
+    width: 50%;
+    float: left;
+    text-align: center; }
+  .footer__top__partners .partner-cs {
+    width: 100%; }
+  .footer__top__partners .icon-footer-partner-es {
+    margin: 0.3em auto 2.2em auto; }
+  .footer__top__partners .icon-footer-partner-nls {
+    margin: 0 auto 2.5em auto; }
+  .footer__top__partners .icon-footer-partner-cs {
+    display: inline-block;
+    clear: both;
+    float: none;
+    margin: 0 auto 1em auto; }
+  .footer__nav {
+    padding: 1em 8% 0.5em 8%; }
+  footer i {
+    display: inline-block;
+    width: 13.75em; } }
+
+@media only all and (min-width: 45em) {
+  .footer__top__partners a {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+    text-align: center; }
+  .footer__top__partners .partner-cs {
+    width: 30%;
+    margin-right: 0; }
+  .footer__top__partners .icon-footer-partner-es {
+    margin: 0.3em auto 1.7em auto; }
+  .footer__top__partners .icon-footer-partner-nls {
+    margin: 0 auto 2em auto; }
+  .footer__top__partners .icon-footer-partner-cs {
+    display: inline-block;
+    clear: both;
+    float: none;
+    margin: 0 auto 1em auto; }
+  .footer__nav li {
+    width: 25%; }
+    .footer__nav li:nth-child(1), .footer__nav li:nth-child(2) {
+      margin-bottom: auto; }
+  footer span {
+    max-width: 80%; } }
+
+@media only all and (min-width: 63.9375em) {
+  .footer__top__report-issues span, .footer__top__partners span {
+    text-align: left;
+    max-width: 13.25em;
+    font-size: 1.2em; }
+  .footer__top__report-issues {
+    width: 25%;
+    float: right;
+    text-align: left; }
+  .footer__top__partners {
+    width: 65%;
+    margin-right: 10%;
+    float: left;
+    text-align: left; }
+  .footer__top__partners span {
+    margin-bottom: 1em; }
+  .footer__top__partners a {
+    text-align: left;
+    margin-right: 10%; }
+  .footer__top__partners .partner-cs {
+    width: 20%;
+    margin-right: 0; }
+  .footer__top__partners .icon-footer-partner-es {
+    margin: 0.3em 0 0 0; }
+  .footer__top__partners .icon-footer-partner-nls, .footer__top__partners .icon-footer-partner-cs {
+    margin: 0 0 0.5em 0; }
+  footer span {
+    max-width: 70%; } }
+
+@media only all and (min-width: 82.25em) {
+  .footer__top__report-issues {
+    width: 20%;
+    float: right;
+    text-align: left; }
+  .footer__top__partners {
+    width: 60%;
+    margin-right: 20%;
+    float: left;
+    text-align: left; } }
+
+/*# sourceMappingURL=0-footer.css.map */

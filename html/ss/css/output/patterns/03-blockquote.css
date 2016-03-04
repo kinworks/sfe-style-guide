@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
+
+.bg--dark {
+  background-color: #003552; }
+
+.bg--mid {
+  background-color: #008EBE; }
+
+.bg--light {
+  background-color: #52CEF4; }
+
+.bg--light-pastel {
+  background-color: #C0E6F3; }
+
+.quote {
+  margin: 1.5em 0;
+  border-top: 0.1em solid;
+  border-bottom: 0.1em solid;
+  border-color: #C0E6F3;
+  padding: 1em 1em;
+  font-style: italic;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  color: #0079A1; }
+
+blockquote.quote__blockquote {
+  margin: 0; }
+
+.quote__blockquote:before {
+  content: '“'; }
+.quote__blockquote:after {
+  content: '”'; }
+.quote__blockquote:before, .quote__blockquote:after {
+  font-size: 1.6em;
+  vertical-align: -0.2em;
+  margin-left: -0.1em;
+  color: #52CEF4; }
+
+.quote em {
+  font-style: normal; }
+
+.quote__caption {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #002C44;
+  margin-top: 0.8em; }
+  .quote__caption:before {
+    content: "— "; }
+
+/*# sourceMappingURL=03-blockquote.css.map */

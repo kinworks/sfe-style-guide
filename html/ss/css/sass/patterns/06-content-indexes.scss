@@ -1,0 +1,173 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+.list__jump-nav {
+  padding: 1em;
+  width: 100%;
+  background-color: $light-pastel;
+  text-align: center;
+  margin: 0 0 2em 0;
+}
+
+.list__jump-nav h2.heading:first-child {
+	display: block;
+  font-size: 1.4em;
+  margin: 0 0 1em 0;
+  color: $dark-text;
+}
+
+.list__jump-nav__select {
+  display: none;
+}
+
+.js .list__jump-nav__select {
+  display: inline-block;
+  margin: 0 0 0.5em 0;
+}
+
+.js .list__jump-nav ol {
+  display: none;
+}
+
+.list__jump-nav ol { 
+  list-style: none;
+  text-align: center;
+}
+
+.list__jump-nav li {
+  list-style-type: none;
+  display: inline-block;
+  a {
+    display: inline-block;
+    width: 1.7em;
+    padding: 0.2em 0;
+    margin: 0 0.3em 0.2em 0.3em;
+    @include border-radius(1em);
+    text-align: center;
+    border-bottom: none;
+    background-color: $dark;
+    color: $white;
+    font-weight: 3 00;
+  }
+  &:nth-child(2n) a {
+    background-color: scale-color($dark, $lightness: 10%);
+  }
+  &:hover a {
+    background-color: $mid;
+  }
+  &:before {
+    content: none;
+    counter-increment: none;
+  }
+  &.not-available a {
+    background-color: $light-pastel;
+    color: $mid-text;
+    cursor: not-allowed;
+    &:hover {
+      background-color: $light-pastel;
+    }
+  }
+}
+
+// Listing content styles
+
+.list__content .heading {
+  color: $dark-text;
+}
+
+.list__content .heading span {
+  font-weight: 300;
+  color: $light-pastel;
+  display: inline-block;
+  margin: 0 0.5em 0 0.2em;
+}
+
+.list__content__back-to-top {
+  font-size: 0.82em;
+  font-weight: 300;
+  font-style: italic;
+  color: $mid-text;
+}
+
+.list__content ol{ 
+  list-style: none;
+  margin: 0 0 2.5em 0;
+}
+
+.list__content .list__content__item {
+  margin: 0 0 1em 0;
+  &:before {
+    content: none;
+    counter-increment: none;
+  }
+}
+
+.list__content .list__content__item a {
+  display: inline;
+  margin: 0 0.2em 0 0;
+  font-weight: 400;
+}
+
+.list__content .list__content__item span {
+  display: block;
+  margin: 0.5em 0 0 0;
+  font-style: italic;
+}
+
+@media only all and (min-width: 30em) {
+  
+  .js .list__jump-nav__select {
+    display: none;
+  }
+  
+  .js .list__jump-nav ol {
+    display: inline-block;
+  }
+
+} // min 30em
+
+@media only all and (min-width: 41em) {
+  
+  .list__jump-nav {
+    margin: 0 0 3em 0;
+  }
+  
+  .list__jump-nav ol { 
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .list__content .list__content__item span {
+    display: inline;
+    &:before {
+      content: "— ";
+    }
+  }
+  
+  .list__content ol{ 
+    margin: 0 0 3.5em 0;
+  }
+
+} //end min 41em;
+
+@media only all and (min-width: 56em) {
+
+  .list__content { 
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 4%;
+    -webkit-column-gap: 4%;
+    column-gap: 4%;
+  }
+  
+  .list__content__container {
+    display: inline-block;
+    width: 90%;
+    margin-right: 10%;
+    -webkit-column-break-inside: avoid;
+            page-break-inside: avoid; /* Makes effect only in Firefox v20+ */
+                 break-inside: avoid; /* IE10+, Opera 11.1—12.1 */
+  }
+    
+} // min 56em

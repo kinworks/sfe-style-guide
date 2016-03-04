@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "09-feedback-error.css",
+	"sources": [
+		"../../../../../09-feedback-error.scss",
+		"../../../../../../_4-colours.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "ACwBA;EACE,AAAY;EACZ,AAAwC;;;;;AAO1C;EACE,AAAmB;;AAmBrB;EACE,AAhDK;;AAmDP;EACE,AAtDI;;AAyDN;EACE,AA5DM;;AA+DR;EACE,AA5Ca;;ADnBf;EACC,AC0CO;EDzCP,AAAe",
+	"names": []
+}

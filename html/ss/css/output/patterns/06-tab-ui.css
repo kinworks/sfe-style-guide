@@ -1,0 +1,146 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
+
+.bg--dark {
+  background-color: #003552; }
+
+.bg--mid {
+  background-color: #008EBE; }
+
+.bg--light {
+  background-color: #52CEF4; }
+
+.bg--light-pastel {
+  background-color: #C0E6F3; }
+
+.tabs {
+  margin-bottom: 3em; }
+
+.tabs [role=tablist] {
+  display: none; }
+
+.js-tabs .tabs [role=tablist] {
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 0 0.2em;
+  margin: 0 0 0 0;
+  background-color: #d3eef7; }
+
+.js-tabs .tabs [role=tab] {
+  display: block;
+  list-style: none;
+  text-align: center;
+  margin: 0 0 0.2em 0;
+  background-color: #008EBE;
+  color: #ffffff;
+  line-height: 2.75;
+  cursor: pointer; }
+  .js-tabs .tabs [role=tab]:hover {
+    text-decoration: underline; }
+
+.js-tabs .tabs .tabs__print-all {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  padding: 0.5em 0 0.2em 0;
+  margin: 0; }
+  .js-tabs .tabs .tabs__print-all a {
+    display: inline-block;
+    width: 100%;
+    border-bottom: none; }
+  .js-tabs .tabs .tabs__print-all:hover {
+    text-decoration: underline; }
+
+.js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
+  background-color: #003552;
+  border: none; }
+
+@media only all and (min-width: 41em) {
+  .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
+    border-right: 0.2em solid #d3eef7; }
+  .js-tabs .tabs [role=tab] {
+    display: inline-block;
+    width: 50%;
+    list-style: none;
+    text-align: center;
+    margin: 0 0 0.3em 0; }
+  .js-tabs .tabs .tabs__print-all {
+    list-style-type: none;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    background-color: #008EBE;
+    padding: 0.65em 0 0.65em 0; }
+    .js-tabs .tabs .tabs__print-all a {
+      color: #ffffff;
+      border-bottom: none; } }
+
+@media only all and (min-width: 56em) {
+  .js-tabs .tabs [role=tablist] {
+    padding: 0;
+    box-shadow: 0 0.5em 0.5em 0em #ffffff; }
+  .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
+    border-right: none; }
+  .js-tabs .tabs [role=tab] {
+    display: inline-block;
+    width: 28.333%;
+    cursor: pointer;
+    color: #002C44;
+    font-weight: 400;
+    background-color: inherit;
+    list-style: none;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0.2em 1em 0.2em 1em;
+    border-bottom: 0.15em solid #52bbde; }
+  .js-tabs .tabs .tabs__print-all {
+    display: inline-block;
+    font-weight: 400;
+    background-color: inherit;
+    list-style: none;
+    text-align: right;
+    margin: 0 0 0 0;
+    width: 15%;
+    padding: 0.2em 1em 0.86em 0;
+    border-bottom: 0.15em solid #52bbde; }
+    .js-tabs .tabs .tabs__print-all a {
+      color: #002C44;
+      text-align: right;
+      text-decoration: underline; }
+  .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
+    color: #008EBE;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 0.15em solid #52bbde;
+    border-color: #52bbde;
+    border-bottom: 0.15em solid #ffffff; }
+    .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true]:focus {
+      border-color: #dc6f00;
+      border-bottom: 0.15em solid #ffffff;
+      text-decoration: underline;
+      color: #003552;
+      outline: none; }
+  .js-tabs .tabs.js-tab-ui .js-tabs-list .tabs__print-all[aria-selected=true] {
+    background-color: inherit;
+    border: 0;
+    font-weight: 400;
+    border-bottom: 0.15em solid #52bbde; } }
+
+/* Prevent FOUC */
+.js-tabs .tabs .js-panel {
+  display: none; }
+
+.js-tabs .tabs .js-panel.first {
+  display: block; }
+
+.js-tabs .tabs .js-panel__title {
+  display: none; }
+
+/*# sourceMappingURL=06-tab-ui.css.map */

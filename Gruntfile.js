@@ -19,21 +19,39 @@ module.exports = function(grunt) {
         options: {
             sourceMap: true
         },
-        compile: {
+        compilesos: {
             files: [{
                 expand: true,
-                cwd: 'html/css/sass',
+                cwd: 'html/sos/css/sass',
                 src: ['*.scss'],
-                dest: 'html/css/output',
+                dest: 'html/sos/css/output',
                 ext: '.css'
             }]
         },
-        patterns: {
+        patternssos: {
             files: [{
                 expand: true,
-                cwd: 'html/css/sass/patterns',
+                cwd: 'html/sos/css/sass/patterns',
                 src: ['*.scss'],
-                dest: 'html/css/output/patterns',
+                dest: 'html/sos/css/output/patterns',
+                ext: '.css'
+            }]
+        },
+        compiless: {
+            files: [{
+                expand: true,
+                cwd: 'html/ss/css/sass',
+                src: ['*.scss'],
+                dest: 'html/ss/css/output',
+                ext: '.css'
+            }]
+        },
+        patternsss: {
+            files: [{
+                expand: true,
+                cwd: 'html/ss/css/sass/patterns',
+                src: ['*.scss'],
+                dest: 'html/ss/css/output/patterns',
                 ext: '.css'
             }]
         }
@@ -51,7 +69,8 @@ module.exports = function(grunt) {
     sass_globbing: {
       patterns: {
         files: {
-          'html/css/sass/_Patterns-ImportMap.scss': 'html/css/sass/patterns/*.scss',
+          'html/sos/css/sass/_Patterns-ImportMap.scss': 'html/sos/css/sass/patterns/*.scss',
+          'html/ss/css/sass/_Patterns-ImportMap.scss': 'html/ss/css/sass/patterns/*.scss',
         },
         options: {
           useSingleQuotes: false,
@@ -60,15 +79,24 @@ module.exports = function(grunt) {
       }
     },
     
-    grunticon: {
+  grunticon: {
 	  icons: {
-	    files: [{
-              // required config
+	    files: [
+	    				{
+              // SoS config
               expand: true,
-              cwd: 'html/assets-icons/src',
+              cwd: 'html/sos/assets-icons/src',
               src: ['*.svg', '*.png'],
-              dest: "html/assets-icons/output"
-             }],
+              dest: "html/sos/assets-icons/output"
+             },
+             {
+              // SS config
+              expand: true,
+              cwd: 'html/ss/assets-icons/src',
+              src: ['*.svg', '*.png'],
+              dest: "html/ss/assets-icons/output"
+             }
+            ],
 
     options: {
 
@@ -94,7 +122,7 @@ module.exports = function(grunt) {
               // This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""
               cssbasepath: ""
            }
-        }
+        }    
       },
     
     svgmin: {
@@ -108,12 +136,21 @@ module.exports = function(grunt) {
             ]
         },
         dist: {
-            files: [{
+          files: 
+            [
+            	{
                 expand: true,
-                cwd: 'html/assets-icons/raw',
+                cwd: 'html/sos/assets-icons/raw',
                 src: ['*.svg'],
-                dest: "html/assets-icons/src"
-            }]
+                dest: "html/sos/assets-icons/src"
+            	},
+            	{
+                expand: true,
+                cwd: 'html/ss/assets-icons/raw',
+                src: ['*.svg'],
+                dest: "html/ss/assets-icons/src"
+            	}
+            ]
         }
     },
 
@@ -121,20 +158,24 @@ module.exports = function(grunt) {
 
     watch: {
       sass: {
-        files: 'html/css/sass/*.scss',
-        tasks: ['sass'],
+        files: ['html/sos/css/sass/*.scss',
+        			 'html/ss/css/sass/*.scss'],
+        tasks: ['sass']
       },
       sass_globbing: {
-        files: 'html/css/sass/patterns/*.scss',
-        tasks: ['sass_globbing'],
+        files: ['html/sos/css/sass/patterns/*.scss',
+        			 'html/ss/css/sass/patterns/*.scss'],
+        tasks: ['sass_globbing']
       },
       svgmin: {
-        files: 'html/assets-icons/raw/*.svg',
-        tasks: ['svgmin'],
+        files: ['html/sos/assets-icons/raw/*.svg',
+        			 'html/ss/assets-icons/raw/*.svg'],
+        tasks: ['svgmin']
       },
       grunticon: {
-        files: 'html/assets-icons/src/*.svg',
-        tasks: ['grunticon'],
+        files: ['html/sos/assets-icons/src/*.svg',
+        			 'html/ss/assets-icons/src/*.svg'],
+        tasks: ['grunticon']
       },
     },
 

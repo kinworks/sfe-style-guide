@@ -1,0 +1,51 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+.subnav {
+  margin: 0 0 4em 0;
+}
+
+.subnav em {
+  display: inline-block;
+  font-size: 1.1em;
+  margin: 0 0 1em 0;
+}
+
+.subnav ul {
+  list-style-type: none;
+}
+
+.subnav .subnav__item {
+  &:before {
+    content: "— ";
+  }
+  & a:hover {
+    color: $dark-text;
+    border-color: $dark-text;
+    border-bottom: 0.1em solid;
+  }
+}
+
+.subnav .subnav__item.subnav__item--parent {
+  margin: 0 0 0.5em 0;
+  &:before {
+    content: "";
+  }
+  a {
+    font-weight: 400;
+    color: $dark-text;
+    border-color: $dark-text;
+    &:hover {
+      color: $mid-text;
+      border-color: $mid-text;
+    }
+  }
+}
+
+.subnav .subnav__item.subnav__item--current {
+  a {
+    border-bottom: none;
+    color: $dark-text;
+    cursor: not-allowed;
+  }
+}

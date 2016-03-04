@@ -19,6 +19,13 @@ body {
   display: none;
 }
 
+.heading-wrapper.heading--themeselect {
+	padding-top: 1.5em;
+	select {
+		max-width: 20em;
+	}
+}
+
 // Navigation Menu
 
 .nav-wrapper {

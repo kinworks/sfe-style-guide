@@ -613,6 +613,11 @@ body {
 #guidenav-trigger {
   display: none; }
 
+.heading-wrapper.heading--themeselect {
+  padding-top: 1.5em; }
+  .heading-wrapper.heading--themeselect select {
+    max-width: 20em; }
+
 .nav-wrapper {
   background-color: #101010; }
   @media only all and (min-width: 41em) {

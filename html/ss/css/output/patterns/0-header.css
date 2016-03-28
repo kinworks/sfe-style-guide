@@ -21,10 +21,13 @@
   background-color: #C0E6F3; }
 
 .header {
-  background-color: #ffffff;
+  background-color: #5C251B;
   width: 100%;
   margin: 0;
   text-align: center; }
+
+.header * {
+  border: 0.1em solid #000; }
 
 .header__part {
   height: 10.375em;

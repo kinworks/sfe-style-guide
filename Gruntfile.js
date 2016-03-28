@@ -79,51 +79,83 @@ module.exports = function(grunt) {
       }
     },
     
-  grunticon: {
-	  icons: {
-	    files: [
-	    				{
+  grunticon: 
+  	{
+	  sosicons: 
+	  		{
+		    files: 
+		    		[{
               // SoS config
               expand: true,
               cwd: 'html/sos/assets-icons/src',
               src: ['*.svg', '*.png'],
               dest: "html/sos/assets-icons/output"
-             },
-             {
+	          
+            }],
+			options: 
+						{
+	      	    // optional config properties
+	
+	     	      // CSS filenames
+	      	      datasvgcss: "icons.data.svg.css",
+	      	      datapngcss: "icons.data.png.css",
+	      	      urlpngcss: "icons.fallback.css",
+	
+	      	      // preview HTML filename
+	      	      previewhtml: "preview.html",
+	
+	      	      // Unicon loader code snippet filename
+	              loadersnippet: "unicon.loaderjavascript.txt",
+	
+	              // folder name (within dest) for png output
+	              pngfolder: "./png",
+	
+	              // prefix for CSS classnames
+	              cssprefix: ".icon-",
+	
+	              // This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""
+	              cssbasepath: ""
+		 				}
+        },   
+   
+   ssicons: 
+   			{
+		    files: 
+		    		[{
               // SS config
               expand: true,
               cwd: 'html/ss/assets-icons/src',
               src: ['*.svg', '*.png'],
               dest: "html/ss/assets-icons/output"
-             }
-            ],
-
-    options: {
-
-      	    // optional config properties
-
-     	      // CSS filenames
-      	      datasvgcss: "icons.data.svg.css",
-      	      datapngcss: "icons.data.png.css",
-      	      urlpngcss: "icons.fallback.css",
-
-      	      // preview HTML filename
-      	      previewhtml: "preview.html",
-
-      	      // Unicon loader code snippet filename
-              loadersnippet: "unicon.loaderjavascript.txt",
-
-              // folder name (within dest) for png output
-              pngfolder: "./png",
-
-              // prefix for CSS classnames
-              cssprefix: ".icon-",
-
-              // This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""
-              cssbasepath: ""
-           }
-        }    
-      },
+	          }],
+				
+			options: 
+						{
+	      	    // optional config properties
+	     	      // CSS filenames
+	      	      datasvgcss: "icons.data.svg.css",
+	      	      datapngcss: "icons.data.png.css",
+	      	      urlpngcss: "icons.fallback.css",
+	
+	      	      // preview HTML filename
+	      	      previewhtml: "preview.html",
+	
+	      	      // Unicon loader code snippet filename
+	              loadersnippet: "unicon.loaderjavascript.txt",
+	
+	              // folder name (within dest) for png output
+	              pngfolder: "./png",
+	
+	              // prefix for CSS classnames
+	              cssprefix: ".icon-",
+	
+	              // This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""
+	              cssbasepath: ""
+           
+	     	    }
+			 	}      
+		
+		},
     
     svgmin: {
         options: {

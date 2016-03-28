@@ -5,11 +5,14 @@
 // sections, then enhanced via media query
 
 .header {
-  background-color: $white;
+  background-color: $header;
   width: 100%;
   margin: 0;
   text-align: center;
 }
+
+// REMOVE
+.header * {border: 0.1em solid #000;}
 
 .header__part {
   height: 10.375em;

@@ -618,6 +618,9 @@ body {
   .heading-wrapper.heading--themeselect select {
     max-width: 20em; }
 
+.sitename {
+  color: #C0E6F3; }
+
 .nav-wrapper {
   background-color: #101010; }
   @media only all and (min-width: 41em) {

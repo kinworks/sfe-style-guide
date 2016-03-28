@@ -1,6 +1,11 @@
 // StyleGuide Imports (dependencies for this pattern): 
 @import '../_2-mixins.scss'; @import '../_4-colours.scss';
 
+.icon-lock-white {
+	width: 1em;
+	height: 1.375em;
+}
+
 .nav__trigger {
   background-repeat: repeat;
   background-color: $dark-text;
@@ -28,10 +33,14 @@
 }
 
 .main-nav li {
-  background-color: scale-color($dark, $lightness: -25%);
+  background-color: $mid;
   margin-bottom: 0;
   &:nth-child(2n) {
-    background-color: scale-color($dark, $lightness: -40%);
+    background-color: $dark;
+  }
+  .icon-lock-white {
+	  vertical-align: -0.3em;
+	  margin-right: 0.4em;
   }
 }
 
@@ -44,7 +53,7 @@
 }
 
 .main-nav li a.active {
-	color: scale-color($contrast, $lightness: 60%);
+	color: $white;
 	text-decoration: underline;
 }
 
@@ -175,12 +184,25 @@
     display: none;
   }
   
-  .js nav.nav-collapse {
-    position: static !important;
-    border-bottom: 0.3em solid $mid;
+  .main-nav li {
+	  background-color: scale-color($darkest, $lightness: -15%);
+	  .icon-lock-white {
+		  display: block;
+		  float: left;
+		  margin-right: 0.6em;
+	  }
   }
   
-  // Build our sections into 3-up, two-row list:
+  .main-nav li a.active {
+		color: $light-pastel; 
+	}
+  
+  .js nav.nav-collapse {
+    position: static !important;
+    border-bottom: 0.3em solid $light;
+  }
+  
+  // Build our sections into 3-up - 2up, two-row list:
   
   .main-nav li {
     z-index: 100;
@@ -191,7 +213,15 @@
     &:nth-child(2n) {
       background-color: inherit;
     }
-  }
+    &:nth-child(4),
+		&:nth-child(5) {
+			width: 50%; 
+			background-color: $darkest;
+		}
+		&:nth-child(4) {
+			border-right: 0.1em solid $mid;
+		}
+	}
   
   .main-nav .parent-item {
     max-width: 80%;
@@ -210,6 +240,12 @@
     }
   }
 
+	.js nav.nav-collapse .main-nav li:nth-child(4),
+	.js nav.nav-collapse .main-nav li:nth-child(5) {
+		.sub-menu.open {
+			min-width: 50%; 
+		}
+	}
   
   .main-nav .sub-menu {
     z-index: 100;
@@ -241,13 +277,19 @@
   }
   
   .main-nav li {
+	  &:nth-child(4),
+		&:nth-child(5) {
+			width: auto;
+			background-color: inherit;
+			border: 0;
+		}
+		text-align: center;
     font-size: 0.9em;
     font-weight: 400;
-    width: 20%;
     margin-right: 2.5%;
     padding: 0.4em 0 1.2em 0;
     background-color: inherit;
-    height: 6em;
+    height: auto;
     float: left;
     border-bottom: none;
     &:nth-child(2n) {
@@ -257,32 +299,54 @@
       margin-right: 0;
     }
     a {
-      height: 6em;
+      height: auto;
+    }
+    &:nth-child(1) {
+	    width: 10%;
+    }
+    &:nth-child(2) {
+	    width: 22%;
+    }
+    &:nth-child(3) {
+	    width: 27%;
+    }
+    &:nth-child(4) {
+	    width: 13%;
+    }
+    &:nth-child(5) {
+	    width: 18%;
+	    margin-right: 0;
     }
   }
   
-  .main-nav li.home,
-  .main-nav li.contact-us {
-    width: auto;
-    max-width: 5%;
-    margin-right: 5%;
+  .main-nav li .icon-lock-white {
+	  float: none;
+	  background-size: 1em 1.375em;
+	  margin: 0 auto 0.5em auto; 
   }
   
-  .main-nav li.browse-films {
-    width: 12%;  
-  }
-  
-  .main-nav li.resources {
-    max-width: 18%;
-  }
-  
+  .main-nav li a,
   .main-nav .parent-item {
-    max-width: 70%;
+	  text-align: center;
+	  width: 100%;
+	  max-width: 100%;
+	  padding-left: 0;
+  }
+  
+  .main-nav li.home,
+  .main-nav li.about {
+	  a {
+		  margin-top: 1.875em;
+	  }
   }
   
   .js .main-nav .parent .sectiontoggle {
-    float: left;
-    padding-left: 5%;
+    float: none;
+    padding: 0;
+    display: block;
+    width: 100%;
+    //padding-right: 10%;
+    margin: 0;
   }
   
   .main-nav .sub-menu {
@@ -302,9 +366,10 @@
     visibility: visible;
     height: auto;
     position: absolute;
-    margin-top: 5.9em;
+    margin-top: 1.1em;
     left: auto;
     width: auto;
+    max-width: 25%;
     margin-left: 0.8em;
     li a {
       padding: 0.6em 1em 0.6em 1em;
@@ -312,7 +377,7 @@
   }
 
   .js nav.nav-collapse .main-nav ul.sub-menu.open {
-    margin: 4.7em 0 0 0.8em;
+    margin: 1.1em 0 0 0.8em;
     min-width: initial;
     li a {
       padding: 0.6em 1em 0.6em 1em;
@@ -321,86 +386,123 @@
   
   .main-nav .sub-menu li {
     height: auto;
+    width: 100%;
+    float: left;
     padding: 0 1em 0 0;
     font-size: 1em;
+    &:nth-child(1),
+    &:nth-child(2),    
+    &:nth-child(3),
+    &:nth-child(4),    
+    &:nth-child(5) {
+	    width: 100%;
+    }
+  }
+  
+  .main-nav .sub-menu li a {
+	  float: left;
+	  display: inline-block;
+	  width: auto;
+	  text-align: left;
+	  margin: 0;
+  }
+  
+  .main-nav .sub-menu li .icon-lock-white {
+	  float: left;
+	  display: inline-block;
+	  margin: 0 0.6em 0 0;
   }
   
 } //end min 56em
 
-@media only all and (min-width: 58.75em) {
+@media only all and (min-width: 64em) {
   
-  .main-nav li.contact-us {
-    max-width: 7%;
+	.main-nav li {
+		text-align: left;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-right: 2.5%;
+    padding: 0.4em 0 1.2em 0;
+    background-color: inherit;
+    height: auto;
+    float: left;
+    border-bottom: none;
+    &:nth-child(2n) {
+      background-color: inherit;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      height: auto;
+    }
+    &:nth-child(1) {
+	    width: 10%;
+    }
+    &:nth-child(2) {
+	    width: 22%;
+    }
+    &:nth-child(3) {
+	    width: 27%;
+    }
+    &:nth-child(4) {
+	    width: 13%;
+    }
+    &:nth-child(5) {
+	    width: 18%;
+	    margin-right: 0;
+    }
   }
   
-  .main-nav li.resources {
-    max-width: 16%;
+  .main-nav li .icon-lock-white {
+	  float: none;
+	  background-size: 1em 1.375em;
+	  margin: 0 auto 0.5em auto; 
   }
   
-} //end min 58.75em
+  .main-nav li a,
+  .main-nav .parent-item {
+	  text-align: center;
+	  width: 100%;
+	  max-width: 100%;
+	  padding-left: 0;
+  }
+  
+  .main-nav li.home,
+  .main-nav li.about {
+	  a {
+		  margin-top: 1.875em;
+	  }
+  }
+  
+  .js .main-nav .parent .sectiontoggle {
+    float: none;
+    padding: 0;
+    display: block;
+    width: 100%;
+    //padding-right: 10%;
+    margin: 0;
+  }
+
+  
+} //end min 64em
 
 @media only all and (min-width: 63.9375em) {
   
-  .main-nav li.home {
-    width: 8%;
-    max-width: 8%;
-    margin-right: 2%;
-  }
   
-  .main-nav li.resources {
-    max-width: 14%;
-  }
-  
-  .main-nav li.browse-films {
-    width: 14%;
-  }
-  
-  .main-nav li.contact-us {
-    width: 10%;
-    max-width: 10%;
-    margin-right: 2%;
-  }
-
 } // end min 63.9375em
 
 @media only all and (min-width: 68.125em) {
   
-  nav,
-  .nav-collapse .main-nav {
-    height: 4.9em;
-  }
-  
-  .main-nav li {
-    height: 4.5em;
-  }
-  
-  .nav-collapse .main-nav li a {
-    height: 4em;
-  }
-  
-  .main-nav li:hover .sub-menu,
-  .main-nav .sub-menu {
-    margin-top: 4.7em;
-  }
-  
-  .main-nav .sub-menu li a {
-    height: auto;
-  }
-  
+    
 } //end min 71.25em
 
 @media only all and (min-width: 82.25em) {
   
-  .main-nav li.about a.parent-item {
-    max-width: 60%;
-  }
-  
-} // end min 82.25em
+  } // end min 82.25em
 
 @media only all and (min-width: 96.25em) {
   
-  .main-nav li.about a.parent-item {
-    max-width: 55%;
-  }
+ 
   
 } // end min 96.25em

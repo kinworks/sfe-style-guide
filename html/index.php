@@ -173,7 +173,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     </div>
     
     <div class="body-wrapper heading-wrapper heading--themeselect bg--mid">
-	    <h2 class="heading heading--smallest">You are viewing this style guide in the <span style="color: #111"> 
+	    <h2 class="heading heading--smallest">You are viewing this style guide in the <span class="sitename"> 
 		    
 		  <?php include('stylenav.php'); ?>  
 		    	    

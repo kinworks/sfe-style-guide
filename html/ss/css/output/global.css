@@ -519,7 +519,7 @@ i, em {
   font-style: italic; }
 
 a {
-  color: #8A2C1E;
+  color: #C8412A;
   border-bottom: 0.1em dotted #8A2C1E;
   text-decoration: none; }
 
@@ -620,6 +620,9 @@ body {
   padding-top: 1.5em; }
   .heading-wrapper.heading--themeselect select {
     max-width: 20em; }
+
+.sitename {
+  color: #F8826F; }
 
 .nav-wrapper {
   background-color: #101010; }
@@ -826,7 +829,7 @@ pre {
   padding: 0.7em;
   margin: 0 2em 2em 0;
   float: left;
-  border-bottom: 0.2em solid #F8826F; }
+  border-bottom: 0.2em solid #ccc; }
 
 .swatches span.light {
   background-color: #C8412A; }
@@ -838,6 +841,12 @@ pre {
   background-color: #8A2C1E; }
 
 .swatches span.dark {
+  background-color: #5C261B; }
+
+.swatches span.darkest {
+  background-color: #222121; }
+
+.swatches span.dark-red-text {
   background-color: #5C261B; }
 
 .swatches span.dark-text {
@@ -855,8 +864,14 @@ pre {
 .swatches span.contrast {
   background-color: #008FBB; }
 
+.swatches span.contrast-light {
+  background-color: #00A3DA; }
+
 .swatches span.contrast-alt {
   background-color: #5AA641; }
+
+.swatches span.contrast-alt-light {
+  background-color: #83BF52; }
 
 .swatches span.feedback {
   background-color: #bff8ed; }
@@ -1684,6 +1699,10 @@ footer i {
 .bg--light-pastel {
   background-color: #F8826F; }
 
+.icon-lock-white {
+  width: 1em;
+  height: 1.375em; }
+
 .nav__trigger {
   background-repeat: repeat;
   background-color: #222121;
@@ -1707,10 +1726,13 @@ footer i {
   z-index: 100; }
 
 .main-nav li {
-  background-color: #451d14;
+  background-color: #8A2C1E;
   margin-bottom: 0; }
   .main-nav li:nth-child(2n) {
-    background-color: #371710; }
+    background-color: #5C261B; }
+  .main-nav li .icon-lock-white {
+    vertical-align: -0.3em;
+    margin-right: 0.4em; }
 
 .main-nav li a {
   display: inline-block;
@@ -1720,7 +1742,7 @@ footer i {
   padding: 0.6em 0 0.7em 8%; }
 
 .main-nav li a.active {
-  color: #7ee1ff;
+  color: #ffffff;
   text-decoration: underline; }
 
 .main-nav .parent .sectiontoggle {
@@ -1807,9 +1829,17 @@ footer i {
 @media only all and (min-width: 41em) {
   .nav__trigger {
     display: none; }
+  .main-nav li {
+    background-color: #1d1c1c; }
+    .main-nav li .icon-lock-white {
+      display: block;
+      float: left;
+      margin-right: 0.6em; }
+  .main-nav li a.active {
+    color: #F8826F; }
   .js nav.nav-collapse {
     position: static !important;
-    border-bottom: 0.3em solid #8A2C1E; }
+    border-bottom: 0.3em solid #C8412A; }
   .main-nav li {
     z-index: 100;
     width: 33.3333%;
@@ -1818,6 +1848,11 @@ footer i {
     border-bottom: 0.1em solid #7a3224; }
     .main-nav li:nth-child(2n) {
       background-color: inherit; }
+    .main-nav li:nth-child(4), .main-nav li:nth-child(5) {
+      width: 50%;
+      background-color: #222121; }
+    .main-nav li:nth-child(4) {
+      border-right: 0.1em solid #8A2C1E; }
   .main-nav .parent-item {
     max-width: 80%; }
   .js nav.nav-collapse .sub-menu.open {
@@ -1829,6 +1864,8 @@ footer i {
     margin-top: 4.7em; }
     .js nav.nav-collapse .sub-menu.open li a {
       padding: 0.7em 1.5em 0.7em 1em; }
+  .js nav.nav-collapse .main-nav li:nth-child(4) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(5) .sub-menu.open {
+    min-width: 50%; }
   .main-nav .sub-menu {
     z-index: 100; }
   .main-nav .sub-menu li {
@@ -1847,34 +1884,53 @@ footer i {
     max-width: 80em;
     margin: 0 auto 0 auto; }
   .main-nav li {
+    text-align: center;
     font-size: 0.9em;
     font-weight: 400;
-    width: 20%;
     margin-right: 2.5%;
     padding: 0.4em 0 1.2em 0;
     background-color: inherit;
-    height: 6em;
+    height: auto;
     float: left;
     border-bottom: none; }
+    .main-nav li:nth-child(4), .main-nav li:nth-child(5) {
+      width: auto;
+      background-color: inherit;
+      border: 0; }
     .main-nav li:nth-child(2n) {
       background-color: inherit; }
     .main-nav li:last-child {
       margin-right: 0; }
     .main-nav li a {
-      height: 6em; }
-  .main-nav li.home, .main-nav li.contact-us {
-    width: auto;
-    max-width: 5%;
-    margin-right: 5%; }
-  .main-nav li.browse-films {
-    width: 12%; }
-  .main-nav li.resources {
-    max-width: 18%; }
-  .main-nav .parent-item {
-    max-width: 70%; }
+      height: auto; }
+    .main-nav li:nth-child(1) {
+      width: 10%; }
+    .main-nav li:nth-child(2) {
+      width: 22%; }
+    .main-nav li:nth-child(3) {
+      width: 27%; }
+    .main-nav li:nth-child(4) {
+      width: 13%; }
+    .main-nav li:nth-child(5) {
+      width: 18%;
+      margin-right: 0; }
+  .main-nav li .icon-lock-white {
+    float: none;
+    background-size: 1em 1.375em;
+    margin: 0 auto 0.5em auto; }
+  .main-nav li a, .main-nav .parent-item {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0; }
+  .main-nav li.home a, .main-nav li.about a {
+    margin-top: 1.875em; }
   .js .main-nav .parent .sectiontoggle {
-    float: left;
-    padding-left: 5%; }
+    float: none;
+    padding: 0;
+    display: block;
+    width: 100%;
+    margin: 0; }
   .main-nav .sub-menu {
     visibility: hidden;
     position: absolute;
@@ -1889,61 +1945,82 @@ footer i {
     visibility: visible;
     height: auto;
     position: absolute;
-    margin-top: 5.9em;
+    margin-top: 1.1em;
     left: auto;
     width: auto;
+    max-width: 25%;
     margin-left: 0.8em; }
     .main-nav li:hover .sub-menu li a {
       padding: 0.6em 1em 0.6em 1em; }
   .js nav.nav-collapse .main-nav ul.sub-menu.open {
-    margin: 4.7em 0 0 0.8em;
+    margin: 1.1em 0 0 0.8em;
     min-width: initial; }
     .js nav.nav-collapse .main-nav ul.sub-menu.open li a {
       padding: 0.6em 1em 0.6em 1em; }
   .main-nav .sub-menu li {
     height: auto;
+    width: 100%;
+    float: left;
     padding: 0 1em 0 0;
-    font-size: 1em; } }
-
-@media only all and (min-width: 58.75em) {
-  .main-nav li.contact-us {
-    max-width: 7%; }
-  .main-nav li.resources {
-    max-width: 16%; } }
-
-@media only all and (min-width: 63.9375em) {
-  .main-nav li.home {
-    width: 8%;
-    max-width: 8%;
-    margin-right: 2%; }
-  .main-nav li.resources {
-    max-width: 14%; }
-  .main-nav li.browse-films {
-    width: 14%; }
-  .main-nav li.contact-us {
-    width: 10%;
-    max-width: 10%;
-    margin-right: 2%; } }
-
-@media only all and (min-width: 68.125em) {
-  nav, .nav-collapse .main-nav {
-    height: 4.9em; }
-  .main-nav li {
-    height: 4.5em; }
-  .nav-collapse .main-nav li a {
-    height: 4em; }
-  .main-nav li:hover .sub-menu, .main-nav .sub-menu {
-    margin-top: 4.7em; }
+    font-size: 1em; }
+    .main-nav .sub-menu li:nth-child(1), .main-nav .sub-menu li:nth-child(2), .main-nav .sub-menu li:nth-child(3), .main-nav .sub-menu li:nth-child(4), .main-nav .sub-menu li:nth-child(5) {
+      width: 100%; }
   .main-nav .sub-menu li a {
-    height: auto; } }
+    float: left;
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    margin: 0; }
+  .main-nav .sub-menu li .icon-lock-white {
+    float: left;
+    display: inline-block;
+    margin: 0 0.6em 0 0; } }
 
-@media only all and (min-width: 82.25em) {
-  .main-nav li.about a.parent-item {
-    max-width: 60%; } }
-
-@media only all and (min-width: 96.25em) {
-  .main-nav li.about a.parent-item {
-    max-width: 55%; } }
+@media only all and (min-width: 64em) {
+  .main-nav li {
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-right: 2.5%;
+    padding: 0.4em 0 1.2em 0;
+    background-color: inherit;
+    height: auto;
+    float: left;
+    border-bottom: none; }
+    .main-nav li:nth-child(2n) {
+      background-color: inherit; }
+    .main-nav li:last-child {
+      margin-right: 0; }
+    .main-nav li a {
+      height: auto; }
+    .main-nav li:nth-child(1) {
+      width: 10%; }
+    .main-nav li:nth-child(2) {
+      width: 22%; }
+    .main-nav li:nth-child(3) {
+      width: 27%; }
+    .main-nav li:nth-child(4) {
+      width: 13%; }
+    .main-nav li:nth-child(5) {
+      width: 18%;
+      margin-right: 0; }
+  .main-nav li .icon-lock-white {
+    float: none;
+    background-size: 1em 1.375em;
+    margin: 0 auto 0.5em auto; }
+  .main-nav li a, .main-nav .parent-item {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0; }
+  .main-nav li.home a, .main-nav li.about a {
+    margin-top: 1.875em; }
+  .js .main-nav .parent .sectiontoggle {
+    float: none;
+    padding: 0;
+    display: block;
+    width: 100%;
+    margin: 0; } }
 
 .pattern {
   background: url(../../assets/pattern.png);

@@ -39,7 +39,7 @@
   // APPROACH 4 - for local VMs too!
   
   //list the tags found in .git
-  $tags = scandir('../.git/refs/tags', 1);
+  $tags = scandir('../../.git/refs/tags', 1);
   
   // skip . and .. items listed first in our directory!
   $byetags = array_pop($tags);
@@ -49,7 +49,7 @@
   $tagname = '';
   
   foreach($tags as $tag) {
-    $modtime = filemtime('../.git/refs/tags/'.$tag);
+    $modtime = filemtime('../../.git/refs/tags/'.$tag);
     if ($modtime > $latest) {$tagname = $tag; $latest = $modtime;}
   }
   

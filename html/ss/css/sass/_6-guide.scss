@@ -26,6 +26,10 @@ body {
 	}
 }
 
+.sitename {
+	color: $light-pastel;
+}
+
 // Navigation Menu
 
 .nav-wrapper {
@@ -287,7 +291,7 @@ pre {
   padding: 0.7em;
   margin: 0 2em 2em 0;
   float: left;
-  border-bottom: 0.2em solid $light-pastel;
+  border-bottom: 0.2em solid #ccc;
 }
 
 .swatches span.light {
@@ -304,6 +308,14 @@ pre {
 
 .swatches span.dark {
   background-color: $dark;
+}
+
+.swatches span.darkest {
+  background-color: $darkest;
+}
+
+.swatches span.dark-red-text {
+  background-color: $dark-red-text;
 }
 
 .swatches span.dark-text {
@@ -326,8 +338,16 @@ pre {
   background-color: $contrast;
 }
 
+.swatches span.contrast-light {
+  background-color: $contrast-light;
+}
+
 .swatches span.contrast-alt {
   background-color: $contrast-alt;
+}
+
+.swatches span.contrast-alt-light {
+  background-color: $contrast-alt-light;
 }
 
 .swatches span.feedback {

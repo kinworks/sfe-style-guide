@@ -8,17 +8,20 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 /* /// Responsive Tables */
 /* make each table separate from other ones */
@@ -72,9 +75,9 @@ tr {
   margin: 0 0 1.5em 0;
   width: 100%;
   font-size: 1.1em;
-  background-color: #ebf7fb;
-  border-top: 0.2em solid #003552;
-  border-bottom: 0.2em solid #C0E6F3;
+  background-color: #faaca0;
+  border-top: 0.2em solid #5C261B;
+  border-bottom: 0.2em solid #F8826F;
   padding: 1em; }
 
 td {
@@ -92,7 +95,7 @@ by side rather than stacked */
     margin: 0 0 2em 0;
     border-style: none;
     border-top-width: 0;
-    border-bottom: 0.2em solid #C0E6F3; }
+    border-bottom: 0.2em solid #F8826F; }
   /* Labeling
    * Hide the mobile labels */
   th[data-title]:before, td[data-title]:before {
@@ -135,7 +138,7 @@ by side rather than stacked */
     font-weight: normal; }
   /* Style table */
   thead tr {
-    background-color: #003552; }
+    background-color: #5C261B; }
   thead tr th {
     color: #fff;
     padding: 0.5em 0.5em 0.5em 0.8em; }
@@ -146,6 +149,6 @@ by side rather than stacked */
     margin: 0 0 0 0.5em;
     padding: 0.8em 0 0 0; }
   tbody tr:nth-child(odd) {
-    background-color: white; } }
+    background-color: #fdd6d0; } }
 
 /*# sourceMappingURL=13-responsive-tables.css.map */

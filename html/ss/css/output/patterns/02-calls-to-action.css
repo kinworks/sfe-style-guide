@@ -8,17 +8,20 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 .cta:before, .cta:after {
   display: table;
@@ -33,8 +36,8 @@
   width: 100%;
   margin: 0 0 1.5em 0;
   padding: 0.8em;
-  background-color: #008EBE;
-  border-left: 1em solid #002C44;
+  background-color: #8A2C1E;
+  border-left: 1em solid #222121;
   border-bottom: none;
   -webkit-transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
@@ -42,7 +45,7 @@
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out; }
   .cta:hover {
-    background-color: #009ace; }
+    background-color: #983021; }
   .cta:hover span {
     text-decoration: underline; }
 
@@ -58,14 +61,14 @@
   height: 2.125em; }
 
 .cta--light {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
   .cta--light span {
-    color: #003552; }
+    color: #5C261B; }
   .cta--light:hover {
-    background-color: #c6e9f4; }
+    background-color: #f98e7d; }
 
 .cta.icon-pattern {
-  border-color: #002031; }
+  border-color: #371710; }
 
 .cta--no-circle div {
   display: none; }
@@ -81,7 +84,7 @@
 
 @media only all and (min-width: 20em) {
   .cta {
-    border-left: 1.5em solid #002C44;
+    border-left: 1.5em solid #222121;
     padding: 0.5em 0.8em 0.5em 0.8em; }
   .cta span {
     width: 80%;

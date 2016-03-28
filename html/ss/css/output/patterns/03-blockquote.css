@@ -9,28 +9,31 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 .quote {
   margin: 1.5em 0;
   border-top: 0.1em solid;
   border-bottom: 0.1em solid;
-  border-color: #C0E6F3;
+  border-color: #F8826F;
   padding: 1em 1em;
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.3em;
-  color: #0079A1; }
+  color: #8A2C1E; }
 
 blockquote.quote__blockquote {
   margin: 0; }
@@ -43,7 +46,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #52CEF4; }
+  color: #C8412A; }
 
 .quote em {
   font-style: normal; }
@@ -51,7 +54,7 @@ blockquote.quote__blockquote {
 .quote__caption {
   font-style: italic;
   font-size: 0.8em;
-  color: #002C44;
+  color: #222121;
   margin-top: 0.8em; }
   .quote__caption:before {
     content: "— "; }

@@ -1,17 +1,21 @@
 //// Brand
 
-$light: #52CEF4;
+$light: #C8412A;
 
-$mid: #008EBE; 
+$mid: #8A2C1E; 
 
-$dark: #003552; 
+$dark: #5C261B; 
+
+$darkest: #222121;
 
 
 //// Text-specific colours
 
-$mid-text: #0079A1;
+$mid-text: $mid;
 
-$dark-text: #002C44;
+$dark-text: $darkest;
+
+$dark-red-text: $dark;
 
 $disabled-text: #666;
 
@@ -20,7 +24,7 @@ $disabled-text: #666;
 
 $white: #ffffff; // Yes, really.
 
-$light-pastel: #C0E6F3;
+$light-pastel: #F8826F;
 
 .pattern {
   background: url(../../assets/pattern.png);
@@ -38,9 +42,13 @@ $light-pastel: #C0E6F3;
 
 /// Calls to Action / Highlights
 
-$contrast: #dc6f00; // WCAG: Only 18pt+ text
+$contrast: #008FBB; // WCAG 2 AA Compliant (18pt+)
 
-$contrast-alt: #00A659;
+$contrast-light: #00A3DA; // Don't use for text
+
+$contrast-alt: #5AA641; // WCAG 2 AA Compliant (18pt+)
+
+$contrast-alt-light: #83BF52; // Don't use for text
 
 $feedback: #bff8ed;
 
@@ -50,6 +58,10 @@ $disabled: #ccc;
 
 
 /// Background utility classes
+
+.bg--darkest {
+  background-color: $darkest;
+}
 
 .bg--dark {
   background-color: $dark;

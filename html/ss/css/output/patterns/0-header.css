@@ -8,26 +8,26 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 .header {
   background-color: #5C251B;
   width: 100%;
   margin: 0;
   text-align: center; }
-
-.header * {
-  border: 0.1em solid #000; }
 
 .header__part {
   height: 10.375em;
@@ -37,7 +37,7 @@
   background-position: left top; }
   .header__part--brand a {
     border-bottom: none; }
-  .header__part--brand .icon-sos-logo {
+  .header__part--brand .icon-ss-logo {
     margin: 2em 8% 0 8%;
     width: 84%;
     height: 5.75em;
@@ -65,9 +65,9 @@
   padding: 0 8% 0 8%; }
 
 .header__search-trigger {
-  background-color: #008EBE;
+  background-color: #008FBB;
   cursor: pointer;
-  border-bottom: 0.3em solid #003552; }
+  border-bottom: 0.3em solid #00A3DA; }
   .header__search-trigger .icon-search {
     width: 1.6875em;
     height: 1.75em;
@@ -84,7 +84,7 @@
 
 .header__part--search {
   background-position: right top;
-  border-bottom: 0.3em solid #003552; }
+  border-bottom: 0.3em solid #5C261B; }
   .header__part--search form {
     background-color: inherit;
     margin: 0;
@@ -107,11 +107,11 @@
     font-weight: 600; }
   .header__part--search input[type="text"] {
     font-size: 1.1em;
-    border: 0.135em solid #003552;
+    border: 0.135em solid #C8412A;
     padding: 0.36em;
     height: 2.1375em; }
     .header__part--search input[type="text"]:focus {
-      border: 0.135em solid #008EBE; }
+      border: 0.135em solid #F8826F; }
   .header__part--search input[type="text"], .header__part--search input[type="submit"] {
     width: 100%;
     margin: 0; }
@@ -121,22 +121,27 @@
     float: left; }
   .header__part--search input[type="submit"] {
     color: #ffffff;
-    background-color: #003552;
+    background-color: #C8412A;
     font-size: 1.1em;
     outline: 0;
-    border: 0.135em solid #003552;
+    border: 0.135em solid #C8412A;
     max-width: 4.55625em;
     height: 2.14em; }
     .header__part--search input[type="submit"]:focus, .header__part--search input[type="submit"]:hover {
-      background-color: #008EBE; }
+      background-color: #F8826F;
+      border: 0.135em solid #F8826F;
+      color: #8A2C1E; }
   .header__part--search .search__advanced {
     display: inline-block;
     font-size: 1em;
     font-weight: 300;
     padding-top: 0.5em; }
+    .header__part--search .search__advanced a {
+      border-color: #ffffff;
+      color: #ffffff; }
     .header__part--search .search__advanced a:focus, .header__part--search .search__advanced a:hover {
-      color: #002C44;
-      border-bottom: 0.1em dotted #003552; }
+      color: #F8826F;
+      border-bottom: 0.1em dotted #C8412A; }
   .header__part--search .form-item, .header__part--search .form-actions {
     margin: 0; }
 

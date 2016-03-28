@@ -9,22 +9,25 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: #C0E6F3;
+  background-color: #F8826F;
   text-align: center;
   margin: 0 0 2em 0; }
 
@@ -32,7 +35,7 @@
   display: block;
   font-size: 1.4em;
   margin: 0 0 1em 0;
-  color: #002C44; }
+  color: #222121; }
 
 .list__jump-nav__select {
   display: none; }
@@ -63,29 +66,29 @@
     /* stops bg color from leaking outside the border: */
     text-align: center;
     border-bottom: none;
-    background-color: #003552;
+    background-color: #5C261B;
     color: #ffffff;
     font-weight: 3 00; }
   .list__jump-nav li:nth-child(2n) a {
-    background-color: #00517d; }
+    background-color: #7a3224; }
   .list__jump-nav li:hover a {
-    background-color: #008EBE; }
+    background-color: #8A2C1E; }
   .list__jump-nav li:before {
     content: none;
     counter-increment: none; }
   .list__jump-nav li.not-available a {
-    background-color: #C0E6F3;
-    color: #0079A1;
+    background-color: #F8826F;
+    color: #8A2C1E;
     cursor: not-allowed; }
     .list__jump-nav li.not-available a:hover {
-      background-color: #C0E6F3; }
+      background-color: #F8826F; }
 
 .list__content .heading {
-  color: #002C44; }
+  color: #222121; }
 
 .list__content .heading span {
   font-weight: 300;
-  color: #C0E6F3;
+  color: #F8826F;
   display: inline-block;
   margin: 0 0.5em 0 0.2em; }
 
@@ -93,7 +96,7 @@
   font-size: 0.82em;
   font-weight: 300;
   font-style: italic;
-  color: #0079A1; }
+  color: #8A2C1E; }
 
 .list__content ol {
   list-style: none;

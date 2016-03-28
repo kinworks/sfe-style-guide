@@ -8,24 +8,27 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 /* Forms */
 form {
   display: inline-block;
   width: 100%;
   max-width: 36em;
-  background-color: #003552;
+  background-color: #5C261B;
   padding: 1em 1em 0em 1em;
   margin: 1.5em 0 2em 0; }
 
@@ -47,7 +50,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   /* ^ The 0.375em vertically centers text on FF, 
   ignored by Webkit */
   background-color: #fff;
-  border: 0.2em solid #003552;
+  border: 0.2em solid #5C261B;
   box-shadow: none;
   -webkit-appearance: none;
   border-radius: 0; }
@@ -60,7 +63,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   .form-item input[type="email"], .form-item input[type="number"], .form-item input[type="search"], .form-item input[type="text"], .form-item input[type="tel"], .form-item input[type="url"], .form-item input[type="password"], .form-item input[list], .form-item input[type="file"], .form-item input[type="date"], .form-item input[type="month"], .form-item input[type="week"], .form-item input[type="time"], .form-item input[type="range"], .form-item input[type="search"], .form-item textarea, .form-item select {
     margin-bottom: 0.5em; }
   .form-item .description {
-    color: #C0E6F3;
+    color: #F8826F;
     font-size: 1em; }
 
 .checkbox {
@@ -83,7 +86,7 @@ textarea {
   margin-bottom: 1em; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[list]:focus, textarea:focus, select:focus {
-  border: 0.2em solid #dc6f00;
+  border: 0.2em solid #008FBB;
   outline: 0; }
 
 label, legend {
@@ -110,7 +113,7 @@ input[type="radio"] {
   margin: 0 0.5em 0.5em 0; }
 
 input[type="file"] {
-  background-color: #001a29;
+  background-color: #2e130e;
   color: #ffffff; }
 
 .form-required {
@@ -120,7 +123,7 @@ input[type="file"] {
 .format {
   font-weight: 300;
   font-style: italic;
-  color: #C0E6F3;
+  color: #F8826F;
   margin-left: 0.75em; }
 
 input[type="search"] {
@@ -137,7 +140,7 @@ textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
   cursor: not-allowed; }
 
 select:-internal-list-box option:checked {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .messages {
   background-image: none !important;

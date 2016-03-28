@@ -9,24 +9,27 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 .items {
   margin: 0 0 3em 0; }
 
 .items--block {
   padding: 1.5em 1.5em 1em 1.5em;
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 .items .heading__smallest {
   margin: 0 0 0.6em 0; }
@@ -37,8 +40,8 @@
 .items .items__item:before {
   content: "— "; }
 .items .items__item a:hover {
-  color: #002C44;
-  border-color: #002C44;
+  color: #222121;
+  border-color: #222121;
   border-bottom: 0.1em solid; }
 .items .items__item:after {
   content: " »"; }
@@ -46,10 +49,10 @@
 .items--block .items__item:before {
   content: none; }
 .items--block .items__item a {
-  color: #002C44;
-  border-color: #002C44; }
+  color: #222121;
+  border-color: #222121; }
 .items--block .items__item a:hover {
-  color: #001f30;
+  color: #181717;
   border-bottom: 0.1em solid; }
 
 /*# sourceMappingURL=06-list-of-items.css.map */

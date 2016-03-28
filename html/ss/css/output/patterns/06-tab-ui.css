@@ -8,17 +8,20 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 .tabs {
   margin-bottom: 3em; }
@@ -31,14 +34,14 @@
   width: 100%;
   padding: 0 0 0 0.2em;
   margin: 0 0 0 0;
-  background-color: #d3eef7; }
+  background-color: #faa89a; }
 
 .js-tabs .tabs [role=tab] {
   display: block;
   list-style: none;
   text-align: center;
   margin: 0 0 0.2em 0;
-  background-color: #008EBE;
+  background-color: #8A2C1E;
   color: #ffffff;
   line-height: 2.75;
   cursor: pointer; }
@@ -59,12 +62,12 @@
     text-decoration: underline; }
 
 .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-  background-color: #003552;
+  background-color: #5C261B;
   border: none; }
 
 @media only all and (min-width: 41em) {
   .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-    border-right: 0.2em solid #d3eef7; }
+    border-right: 0.2em solid #faa89a; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 50%;
@@ -76,7 +79,7 @@
     display: inline-block;
     width: 50%;
     text-align: center;
-    background-color: #008EBE;
+    background-color: #8A2C1E;
     padding: 0.65em 0 0.65em 0; }
     .js-tabs .tabs .tabs__print-all a {
       color: #ffffff;
@@ -92,14 +95,14 @@
     display: inline-block;
     width: 28.333%;
     cursor: pointer;
-    color: #002C44;
+    color: #222121;
     font-weight: 400;
     background-color: inherit;
     list-style: none;
     text-align: center;
     margin: 0 0 0 0;
     padding: 0.2em 1em 0.2em 1em;
-    border-bottom: 0.15em solid #52bbde; }
+    border-bottom: 0.15em solid #f02b0c; }
   .js-tabs .tabs .tabs__print-all {
     display: inline-block;
     font-weight: 400;
@@ -109,29 +112,29 @@
     margin: 0 0 0 0;
     width: 15%;
     padding: 0.2em 1em 0.86em 0;
-    border-bottom: 0.15em solid #52bbde; }
+    border-bottom: 0.15em solid #f02b0c; }
     .js-tabs .tabs .tabs__print-all a {
-      color: #002C44;
+      color: #222121;
       text-align: right;
       text-decoration: underline; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-    color: #008EBE;
+    color: #8A2C1E;
     font-weight: 600;
     background-color: #ffffff;
-    border: 0.15em solid #52bbde;
-    border-color: #52bbde;
+    border: 0.15em solid #f02b0c;
+    border-color: #f02b0c;
     border-bottom: 0.15em solid #ffffff; }
     .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true]:focus {
-      border-color: #dc6f00;
+      border-color: #008FBB;
       border-bottom: 0.15em solid #ffffff;
       text-decoration: underline;
-      color: #003552;
+      color: #5C261B;
       outline: none; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list .tabs__print-all[aria-selected=true] {
     background-color: inherit;
     border: 0;
     font-weight: 400;
-    border-bottom: 0.15em solid #52bbde; } }
+    border-bottom: 0.15em solid #f02b0c; } }
 
 /* Prevent FOUC */
 .js-tabs .tabs .js-panel {

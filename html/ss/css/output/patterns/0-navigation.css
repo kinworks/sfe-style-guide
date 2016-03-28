@@ -9,24 +9,27 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 .nav__trigger {
   background-repeat: repeat;
-  background-color: #002C44;
+  background-color: #222121;
   cursor: pointer;
   z-index: 100;
-  border-top: 0.3em solid #002031; }
+  border-top: 0.3em solid #371710; }
   .nav__trigger .icon-menu {
     width: 1.5em;
     height: 1.3125em;
@@ -44,10 +47,10 @@
   z-index: 100; }
 
 .main-nav li {
-  background-color: #00283e;
+  background-color: #451d14;
   margin-bottom: 0; }
   .main-nav li:nth-child(2n) {
-    background-color: #002031; }
+    background-color: #371710; }
 
 .main-nav li a {
   display: inline-block;
@@ -57,7 +60,7 @@
   padding: 0.6em 0 0.7em 8%; }
 
 .main-nav li a.active {
-  color: #ffc68b;
+  color: #7ee1ff;
   text-decoration: underline; }
 
 .main-nav .parent .sectiontoggle {
@@ -74,7 +77,7 @@
   .js .main-nav .parent .sectiontoggle div {
     display: inline-block;
     padding: 0.1em 0.4em;
-    background-color: #00131d; }
+    background-color: #200d09; }
   .js .main-nav .parent .sectiontoggle .icon-arrow-down, .js .main-nav .parent .sectiontoggle .icon-arrow-up {
     width: 0.625em;
     height: 0.625em; }
@@ -103,15 +106,15 @@
   text-decoration: none; }
 
 .main-nav .sub-menu li {
-  background-color: #003552; }
+  background-color: #5C261B; }
   .main-nav .sub-menu li:hover {
-    background-color: #002031; }
+    background-color: #371710; }
   .main-nav .sub-menu li:hover a {
     text-decoration: underline; }
   .main-nav .sub-menu li:nth-child(2n) {
-    background-color: #002d46; }
+    background-color: #4e2017; }
     .main-nav .sub-menu li:nth-child(2n):hover {
-      background-color: #002031; }
+      background-color: #371710; }
 
 .js .nav__trigger {
   position: fixed;
@@ -146,13 +149,13 @@
     display: none; }
   .js nav.nav-collapse {
     position: static !important;
-    border-bottom: 0.3em solid #008EBE; }
+    border-bottom: 0.3em solid #8A2C1E; }
   .main-nav li {
     z-index: 100;
     width: 33.3333%;
     height: 4.8125em;
     float: left;
-    border-bottom: 0.1em solid #00517d; }
+    border-bottom: 0.1em solid #7a3224; }
     .main-nav li:nth-child(2n) {
       background-color: inherit; }
   .main-nav .parent-item {
@@ -176,7 +179,7 @@
 
 @media only all and (min-width: 56em) {
   nav {
-    background-color: #003552;
+    background-color: #5C261B;
     margin: 0 0 0 0;
     padding: 0 5% 0 5%; }
   .nav-collapse .main-nav {

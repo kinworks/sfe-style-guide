@@ -8,20 +8,23 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 .footer__top {
-  background-color: #008EBE;
+  background-color: #8A2C1E;
   padding: 2em 8% 1.5em 8%; }
 
 .footer__top__report-issues {
@@ -66,7 +69,7 @@
   height: 5.8125em; }
 
 .footer__nav {
-  background-color: #007da7;
+  background-color: #79271a;
   padding: 1.5em 8% 0.5em 8%;
   text-align: center; }
 
@@ -81,7 +84,7 @@
     border-bottom: 0.1em dotted #ffffff; }
 
 footer {
-  background-color: #003552;
+  background-color: #5C261B;
   padding: 2.4em 8% 3.5em 8%;
   text-align: center; }
 

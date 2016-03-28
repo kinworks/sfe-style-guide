@@ -8,17 +8,20 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 .login__trigger.cta, .logout__trigger.cta {
   font-size: 0.9em;
@@ -26,7 +29,7 @@
   padding: 0.5em 0.8em 0.5em 0.8em;
   margin: 0 auto 0 auto;
   display: block;
-  border-left: 1em solid #002C44;
+  border-left: 1em solid #222121;
   cursor: pointer; }
   .login__trigger.cta .icon-arrow-down, .login__trigger.cta .icon-arrow-up, .login__trigger.cta .icon-arrow-right, .logout__trigger.cta .icon-arrow-down, .logout__trigger.cta .icon-arrow-up, .logout__trigger.cta .icon-arrow-right {
     width: 0.625em;
@@ -60,7 +63,7 @@
   padding: 1.5em 8% 1.5em 8%; }
 
 .login__sso {
-  background-color: #0079A1; }
+  background-color: #8A2C1E; }
   .login__sso .sso__block__label {
     width: 100%;
     font-size: 1.2em;
@@ -70,11 +73,11 @@
   .login__sso .login__sso__block--shibboleth .btn {
     margin-bottom: 0; }
     .login__sso .login__sso__block--shibboleth .btn:hover {
-      box-shadow: inset 0 0 0 0.2em #00be66; }
+      box-shadow: inset 0 0 0 0.2em #62b446; }
 
 .login__cms {
   padding-top: 2em;
-  background-color: #003552; }
+  background-color: #5C261B; }
   .login__cms .login__cms__label {
     font-size: 1.2em;
     color: #ffffff;
@@ -91,7 +94,7 @@
     margin: 0;
     padding: 0; }
   .login__cms .item-list a {
-    color: #C0E6F3; }
+    color: #F8826F; }
     .login__cms .item-list a:hover {
       color: #ffffff;
       border-bottom: 0.1em dotted #ffffff; }
@@ -107,17 +110,17 @@
 
 @media only all and (min-width: 41em) {
   .login__trigger.cta, .logout__trigger.cta {
-    background-color: #0079A1;
+    background-color: #8A2C1E;
     background-image: none; }
   .login__trigger--top.cta {
-    background-color: #001f30;
+    background-color: #181717;
     padding: 0.7em 8% 0.5em 8%; }
     .login__trigger--top.cta:hover {
-      background-color: #002C44; }
+      background-color: #222121; }
   .login__trigger--top.cta .login__trigger--top__container {
     max-width: 10em; }
   .login__sso {
-    background-color: #008EBE;
+    background-color: #8A2C1E;
     padding-bottom: 2em; }
     .login__sso .login__sso__block {
       width: 50%;

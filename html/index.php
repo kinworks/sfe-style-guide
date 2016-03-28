@@ -6,10 +6,7 @@
   
   <?php
 	  	$site = 'sos';
-	  	
-			if($_GET['site'] == 'ss') {
-	  	$site = 'ss';
-  	} ?>
+	?>
   
   <head>
     <meta charset="utf-8">
@@ -92,16 +89,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 		</script>
 		<noscript><link href="<?php echo $site; ?>/assets-icons/output/icons.fallback.css" rel="stylesheet"></noscript>
     
-    <script>
-				$(function() {
-					$('#theme').on('change', function(e){
-					    var locAppend = $(this).find('option:selected').val(),
-					        locSnip   = window.location.href.split('?')[0];
-					    console.log(locSnip);
-					    window.location.href = locSnip + locAppend;
-					});
-				});
-			</script>
+    <script type="text/javascript" src="/js/guide.js"></script>
     
   </head>
   <?php include 'functions.php'; ?>
@@ -154,7 +142,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <!-- Above are manual sections, and after here:
           Iterates through every partial html file and lists it, also displaying a code panel for the styles and markup -->
         <?php
-        $files = glob("patterns/*.html");
+        $files = glob($site."/patterns/*.html");
         sort($files);
         $i=1;
         foreach ($files as $file):
@@ -186,18 +174,9 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     
     <div class="body-wrapper heading-wrapper heading--themeselect bg--mid">
 	    <h2 class="heading heading--smallest">You are viewing this style guide in the <span style="color: #111"> 
-		    <?php if ($site == 'sos'): ?>Scotland on Screen 
-		    <?php elseif ($site == 'ss'): ?>Screening Shorts
-		    <?php endif; ?>
-				</span> theme.
-			</h2>
-			
-			<select id="theme" style="color: black;">
-				<option>Select Theme...</option>
-				<option value="?site=sos">Scotland on Screen</option>
-				<option value="?site=ss">Screening Shorts</option>
-			</select>
-	    
+		    
+		  <?php include('stylenav.php'); ?>  
+		    	    
     </div>
     
     <div class="body-wrapper">
@@ -499,7 +478,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <div class="source js-panel first" id="tab-wfl-markup-panel" role="tabpanel" aria-labelledby="tab-wfl-markup" data-tabgroup="wfl">
                   <h2 class="js-panel__title">Markup</h2>
                   <pre>
-                    <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/webfontloading.html")); ?></code>
+                    <code><?php echo htmlspecialchars(file_get_contents($site."/guidepatterns/webfontloading.html")); ?></code>
                   </pre>
                 </div>
                 <div class="style js-panel" id="tab-wfl-css-panel" role="tabpanel" aria-labelledby="tab-wfl-css" data-tabgroup="wfl">
@@ -516,7 +495,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <div class="guidepattern hierarchy">
             <div class="display">
               <h2 class="guidance">Type hierarchy & styles</h2> 
-              <?php echo file_get_contents("guidepatterns/typography.html"); ?>           
+              <?php echo file_get_contents($site."/guidepatterns/typography.html"); ?>           
             </div>
             <div class="js-tab-ui panels">
                 <ul class="js-tabs-list" role="tablist">
@@ -529,7 +508,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <div class="source js-panel first" id="tab-hierarchy-markup-panel" role="tabpanel" aria-labelledby="tab-hierarchy-markup" data-tabgroup="hierarchy">
                   <h2 class="js-panel__title">Markup</h2>
                   <pre>
-                    <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/typography.html")); ?></code>
+                    <code><?php echo htmlspecialchars(file_get_contents($site."/guidepatterns/typography.html")); ?></code>
                   </pre>
                 </div>
                 <div class="style js-panel" id="tab-hierarchy-css-panel" role="tabpanel" aria-labelledby="tab-hierarchy-css" data-tabgroup="hierarchy">
@@ -565,7 +544,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
       <div class="header__part header__part--brand icon-header-left">
         <a href="/" title="Go to Homepage" data-ga-cat='Header' data-ga-label='Logo Clicked' class="js-ga-event">
-          <i class="icon-sos-logo">Scotland on Screen</i>
+          <i class="icon-<?php echo $site; ?>-logo">{{Site Name}} Logo</i>
         </a>
       </div>
       
@@ -621,7 +600,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <div class="source js-panel first" id="tab-header-markup-panel" role="tabpanel" aria-labelledby="tab-header-markup" data-tabgroup="header">
                   <h2 class="js-panel__title">Markup</h2>
                   <pre>
-                    <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/header.html")); ?></code>
+                    <code><?php echo htmlspecialchars(file_get_contents($site."/guidepatterns/header.html")); ?></code>
                   </pre>
                 </div>
                 <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
@@ -835,7 +814,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <div class="source js-panel first" id="tab-nav-markup-panel" role="tabpanel" aria-labelledby="tab-nav-markup" data-tabgroup="nav">
                   <h2 class="js-panel__title">Markup</h2>
                   <pre>
-                    <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/navigation.html")); ?></code>
+                    <code><?php echo htmlspecialchars(file_get_contents($site."/guidepatterns/navigation.html")); ?></code>
                   </pre>
                 </div>
                 <div class="style js-panel" id="tab-nav-scss-panel" role="tabpanel" aria-labelledby="tab-nav-scss" data-tabgroup="nav">
@@ -944,7 +923,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <div class="source js-panel first" id="tab-header-markup-panel" role="tabpanel" aria-labelledby="tab-header-markup" data-tabgroup="header">
                   <h2 class="js-panel__title">Markup</h2>
                   <pre>
-                    <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/login.html")); ?></code>
+                    <code><?php echo htmlspecialchars(file_get_contents($site."/guidepatterns/login.html")); ?></code>
                   </pre>
                 </div>
                 <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
@@ -1081,7 +1060,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <div class="source js-panel first" id="tab-footer-markup-panel" role="tabpanel" aria-labelledby="tab-footer-markup" data-tabgroup="footer">
                   <h2 class="js-panel__title">Markup</h2>
                   <pre>
-                    <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/footer.html")); ?></code>
+                    <code><?php echo htmlspecialchars(file_get_contents($site."/guidepatterns/footer.html")); ?></code>
                   </pre>
                 </div>
                 <div class="style js-panel" id="tab-footer-scss-panel" role="tabpanel" aria-labelledby="tab-footer-scss" data-tabgroup="footer">
@@ -1146,7 +1125,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           
           //Iterates through every partial html file and embeds it, also displaying a code panel for the styles and markup ?>
         <?php
-        $files = glob("patterns/*.html");
+        $files = glob($site."/patterns/*.html");
         sort($files);
         $i=1;
         foreach ($files as $file):

@@ -11,9 +11,6 @@
   text-align: center;
 }
 
-// REMOVE
-.header * {border: 0.1em solid #000;}
-
 .header__part {
   height: 10.375em;
   background-repeat: no-repeat;
@@ -22,7 +19,7 @@
 .header__part--brand {
   background-position: left top;
   a {border-bottom: none;}
-  .icon-sos-logo {
+  .icon-ss-logo {
     margin: 2em 8% 0 8%;
     width: 84%;
     height: 5.75em;
@@ -61,9 +58,9 @@
 }
 
 .header__search-trigger {
-  background-color: $mid;
+  background-color: $contrast;
   cursor: pointer;
-  border-bottom: 0.3em solid $dark;
+  border-bottom: 0.3em solid $contrast-light;
   .icon-search {
     width: 1.6875em;
     height: 1.75em;
@@ -111,11 +108,11 @@
   }
   input[type="text"] {
    font-size: 1.1em;
-   border: 0.135em solid $dark; 
+   border: 0.135em solid $light; 
    padding: 0.36em;
    height: 2.1375em;
    &:focus {
-     border: 0.135em solid $mid;
+     border: 0.135em solid $light-pastel;
    }
   }
   input[type="text"],
@@ -130,15 +127,17 @@
   }
   input[type="submit"] {
     color: $white;
-    background-color: $dark;
+    background-color: $light;
     font-size: 1.1em;
     outline: 0;
-    border: 0.135em solid $dark;
+    border: 0.135em solid $light;
     max-width: 4.55625em;
     height: 2.14em;
     &:focus,
     &:hover {
-      background-color: $mid;
+      background-color: $light-pastel;
+      border: 0.135em solid $light-pastel;
+      color: $mid;
     }
   }
   .search__advanced {
@@ -146,10 +145,14 @@
     font-size: 1em;
     font-weight: 300;
     padding-top: 0.5em;
+    a {
+	    border-color: $white;
+	    color: $white;
+	  }
     a:focus,
     a:hover {
-      color: $dark-text;
-      border-bottom: 0.1em dotted $dark;
+      color: $light-pastel;
+      border-bottom: 0.1em dotted $light;
     }
   }
   // Fix / Hide Drupal junk *sigh*

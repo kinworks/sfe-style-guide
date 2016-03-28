@@ -8,17 +8,20 @@
 .icon-pattern {
   background-repeat: repeat; }
 
+.bg--darkest {
+  background-color: #222121; }
+
 .bg--dark {
-  background-color: #003552; }
+  background-color: #5C261B; }
 
 .bg--mid {
-  background-color: #008EBE; }
+  background-color: #8A2C1E; }
 
 .bg--light {
-  background-color: #52CEF4; }
+  background-color: #C8412A; }
 
 .bg--light-pastel {
-  background-color: #C0E6F3; }
+  background-color: #F8826F; }
 
 /* Pagination */
 ol.pagination {
@@ -44,14 +47,14 @@ ol.pagination li {
   font-size: 1.1em;
   font-weight: 500;
   text-align: center;
-  background-color: #003552;
+  background-color: #5C261B;
   color: #ffffff; }
   .pagination a:hover {
     text-decoration: underline;
-    background-color: #008EBE; }
+    background-color: #8A2C1E; }
 
 .pagination__current a {
-  background-color: #008EBE;
+  background-color: #8A2C1E;
   color: #ffffff;
   cursor: not-allowed;
   border: none; }
@@ -60,7 +63,7 @@ ol.pagination li {
     color: #ffffff; }
 
 .pagination__previous a, .pagination__next a {
-  background-color: #003552;
+  background-color: #5C261B;
   color: #ffffff;
   border-bottom: none;
   padding: 0.35em 0.1em;

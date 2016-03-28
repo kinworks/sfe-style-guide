@@ -1,0 +1,46 @@
+<!-- We hook to classes to set the type sizes
+here - you can set the sizes however you like,
+we just didn't want to define them against specific heading tags 
+(h1, h2 etc) when that might not make sense in all contexts -->
+
+<h1 class="heading heading--large">Large Heading (2.3em)</h1>
+
+<h2 class="heading heading--medium">Medium Heading (1.9em)</h2>
+
+<h2 class="heading heading--medium heading--mid">Alternative Colour [.heading--mid] </h2>
+
+<h1 class="heading heading--large heading--pairing">Modifier heading--pairing...</h1>
+<h2 class="heading heading--medium heading--mid">(...strips bottom margin from the heading)</h2>
+
+<h3 class="heading heading--small">Small Heading (1.6em)</h3>
+
+<h3 class="heading heading--smallest">Smallest Heading (1.4em)</h3>
+
+<p>This is a text paragraph set in 1.15em Proxima Nova loaded in from Typekit. The weight used in 'normal' text is 300 (Proxima Nova Light). The weight used for <b>bold text</b> is 600 (Proxima Nova Semibold). Speaking of formatting, the <em>italic style should probably be in here too.</em> There is no bold italic style intentionally.</p>
+
+<p>
+  <a href="#">Links by default are $mid-text</a> but should be coloured according to their context;
+</p>
+
+<p class="bg bg--dark">
+  <a href="#" class="link--white">Links against $dark are $white;</a>
+</p>
+
+<p class="bg bg--mid">
+  <a href="#" class="link--white">Links against $mid are $white;</a>
+</p>
+
+<p class="bg bg--light">
+  <a href="#" class="link--dark">Links against $light are $dark-text.</a>
+</p>
+
+<p class="bg bg--light-pastel">
+  <a href="#" class="link--dark">Links against $light-pastel are $dark-text;</a>
+</p>
+
+<p class="text--small">
+Small text (1em) is used only for footer content, footnotes or 
+legal conditions / credits.  
+</p>
+
+<br/>

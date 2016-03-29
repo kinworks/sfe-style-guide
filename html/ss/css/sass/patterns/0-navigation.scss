@@ -361,6 +361,7 @@
     }
   }
   
+  
   .main-nav li:hover .sub-menu {
     display: block;
     visibility: visible;
@@ -369,12 +370,20 @@
     margin-top: 1.1em;
     left: auto;
     width: auto;
-    max-width: 25%;
+    max-width: 30%;
     margin-left: 0.8em;
     li a {
       padding: 0.6em 1em 0.6em 1em;
     }
   }
+  
+  .js nav.nav-collapse .main-nav li:nth-child(4),
+	.js nav.nav-collapse .main-nav li:nth-child(5) {
+		.sub-menu.open {
+			min-width: 30%; 
+			max-width: 30%;
+		}
+	}
 
   .js nav.nav-collapse .main-nav ul.sub-menu.open {
     margin: 1.1em 0 0 0.8em;
@@ -388,6 +397,7 @@
     height: auto;
     width: 100%;
     float: left;
+    background-color: scale-color($dark, $lightness: 5%);
     padding: 0 1em 0 0;
     font-size: 1em;
     &:nth-child(1),
@@ -475,6 +485,19 @@
 	  }
   }
   
+  .js nav.nav-collapse .main-nav li .sub-menu,
+  .js nav.nav-collapse .main-nav li .sub-menu.open,
+  .js nav.nav-collapse .main-nav li:nth-child(4) .sub-menu.open, 
+  .js nav.nav-collapse .main-nav li:nth-child(5) .sub-menu.open {
+	  min-width: auto;
+	  width: 23%; 
+	}
+  
+  .main-nav li.home .sub-menu a, 
+  .main-nav li.about .sub-menu a {
+	  margin-top: 0;
+  }
+  
   .js .main-nav .parent .sectiontoggle {
     float: none;
     padding: 0;
@@ -487,13 +510,79 @@
   
 } //end min 64em
 
-@media only all and (min-width: 63.9375em) {
-  
-  
-} // end min 63.9375em
 
-@media only all and (min-width: 68.125em) {
+@media only all and (min-width: 71.25em) {
   
+  .main-nav li {
+	  padding-bottom: 0.55em;
+    a {
+	    text-align: left;
+      height: auto;
+      float: left;
+    }
+    &:nth-child(1) {
+	    width: 8%;
+	    margin-right: 7%;
+    }
+    &:nth-child(2) {
+	    width: 17%;
+	    margin-right: 5%;
+	    a {
+		    width: 85%;
+	    }
+    }
+    &:nth-child(3) {
+	    width: 19%;
+	    margin-right: 7%;
+    }
+    &:nth-child(4) {
+	    width: 15%;
+	    margin-right: 8%;
+    }
+    &:nth-child(5) {
+	    width: 8%;
+	    margin-right: 0;
+	    a {
+		    width: 85%;
+	    }
+    }
+  }
+  
+	.main-nav .parent-item {
+		width: 80%;
+		text-align: left;
+	} 
+	
+	.nav-collapse .main-nav {
+		height: 5em;
+	}
+  
+  .main-nav li .icon-lock-white {
+	  float: left;
+	  background-size: 1em 1.375em;
+	  margin: 0 0.7em 0.5em 0; 
+  }
+  
+  .main-nav li.home,
+  .main-nav li.about {
+	  a {
+		  margin-top: 0;
+	  }
+  }
+  
+  .js nav.nav-collapse .main-nav ul.sub-menu,
+  .js nav.nav-collapse .main-nav ul.sub-menu.open {
+	  margin: 5.1em 0 0 0;
+  }
+  
+  .js .main-nav .parent .sectiontoggle {
+    float: left;
+    padding: 0;
+    display: inline-block;
+    width: 10%;
+    //padding-right: 10%;
+    margin: 0.5em 0 0 0;
+  }
     
 } //end min 71.25em
 

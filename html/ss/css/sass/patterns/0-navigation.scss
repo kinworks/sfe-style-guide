@@ -514,7 +514,7 @@
 @media only all and (min-width: 71.25em) {
   
   .main-nav li {
-	  padding-bottom: 0.55em;
+	  padding-bottom: 0;
     a {
 	    text-align: left;
       height: auto;
@@ -524,9 +524,15 @@
 	    width: 8%;
 	    margin-right: 7%;
     }
+    &:nth-child(1),
+    &:nth-child(4) {
+	    a {
+	    	padding-bottom: 2em;
+	    }
+    }
     &:nth-child(2) {
 	    width: 17%;
-	    margin-right: 5%;
+	    margin-right: 6%;
 	    a {
 		    width: 85%;
 	    }
@@ -537,7 +543,7 @@
     }
     &:nth-child(4) {
 	    width: 15%;
-	    margin-right: 8%;
+	    margin-right: 7%;
     }
     &:nth-child(5) {
 	    width: 8%;
@@ -554,7 +560,7 @@
 	} 
 	
 	.nav-collapse .main-nav {
-		height: 5em;
+		height: 4.5em;
 	}
   
   .main-nav li .icon-lock-white {
@@ -572,7 +578,7 @@
   
   .js nav.nav-collapse .main-nav ul.sub-menu,
   .js nav.nav-collapse .main-nav ul.sub-menu.open {
-	  margin: 5.1em 0 0 0;
+	  margin: 4.6em 0 0 0;
   }
   
   .js .main-nav .parent .sectiontoggle {
@@ -586,12 +592,45 @@
     
 } //end min 71.25em
 
-@media only all and (min-width: 82.25em) {
+@media only all and (min-width: 74em) {
   
-  } // end min 82.25em
-
-@media only all and (min-width: 96.25em) {
+  .main-nav li {
+    &:nth-child(1) {
+	    width: 8%;
+	    margin-right: 8%;
+    }
+    &:nth-child(2) {
+	    width: 17%;
+	    margin-right: 7%;
+	    a {
+		    width: 85%;
+	    }
+    }
+    &:nth-child(3) {
+	    width: 19%;
+	    margin-right: 6%;
+	    .parent-item {
+		    width: 70%;
+		    max-width: 8.5em;
+	    }
+    }
+    &:nth-child(4) {
+	    width: 15%;
+	    margin-right: 7%;
+	    .parent-item {
+		    width: 70%;
+		    max-width: 7em;
+	    }
+    }
+    &:nth-child(5) {
+	    width: 14%;
+	    margin-right: 0;
+	    a {
+		    width: 85%;
+		    max-width: 7.8em;
+		    padding-bottom: 2em;
+		 	}
+    }
+  }
   
- 
-  
-} // end min 96.25em
+} // end min 74em

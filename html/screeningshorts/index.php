@@ -842,7 +842,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 				              <span class="sso__block__label">
 				                School Students &amp; Teachers:
 				              </span>
-				              <a href="/rmunify_login" class="btn btn--white js-ga-event" data-ga-cat="Login" data-ga-label="RM Unify Clicked">Log in with Glow</a>            </div>
+				              <a href="/rmunify_login" class="btn btn--contrast js-ga-event" data-ga-cat="Login" data-ga-label="RM Unify Clicked">Log in with Glow</a>            </div>
 				            <div class="login__sso__block login__sso__block--shibboleth">
 				              <span class="sso__block__label">
 				                Students and Lecturers:

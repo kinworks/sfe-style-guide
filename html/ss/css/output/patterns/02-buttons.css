@@ -46,6 +46,14 @@
     background-color: #893928;
     border-bottom: 0.2em solid #3c1912; }
 
+.btn--darkest {
+  background-color: #222121;
+  border-bottom: 0.2em solid #181717; }
+  .btn--darkest:hover {
+    box-shadow: inset 0 0 0 0.2em #656262;
+    background-color: #383737;
+    border-bottom: 0.2em solid #1f1e1e; }
+
 .btn--mid {
   background-color: #8A2C1E;
   border-bottom: 0.2em solid #611f15; }

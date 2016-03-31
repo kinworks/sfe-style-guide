@@ -6,11 +6,25 @@
   padding: 2em 8% 1.5em 8%;
 }
 
-.footer__top__report-issues {
+.footer__top__report-issues,
+.footer__top__twitter {
   margin-bottom: 0.5em;
 }
 
+.footer__top__twitter {
+	.btn {
+		padding-left: 0.9em;
+	}
+	.icon-footer-twitter {
+		width: 1.5em;
+		height: 1.2em;
+		margin: 0 0.6em 0 0;
+		vertical-align: -0.3em;
+	}
+}
+
 .footer__top__report-issues span,
+.footer__top__twitter span,
 .footer__top__partners span {
   font-size: 1.25em;
   color: $white;
@@ -98,7 +112,7 @@ footer i {
 @media only all and (min-width: 26.25em) {
   
   .footer__nav li {
-    width: 44%;
+    width: 50%;
     float: left;
     margin-top: 0.5em;
     &:nth-child(1),
@@ -118,25 +132,17 @@ footer i {
   }
 
   .footer__top__partners {
+	  text-align: center;
+	  margin-bottom: 1.5em;
     a {
-      width: 50%;
-      float: left;
+      width: 45%;
+      max-width: 13.75em;
+      display: inline-block;
+      margin: 0 auto;
       text-align: center;
     }
-    .partner-cs {
-      width: 100%;
-    }
-    .icon-footer-partner-es {
-      margin: 0.3em auto 2.2em auto;
-    }
-    .icon-footer-partner-nls {
-      margin: 0 auto 2.5em auto;
-    }
-    .icon-footer-partner-cs {
-      display: inline-block;
-      clear: both;
-      float: none;
-      margin: 0 auto 1em auto;
+    i {
+	    margin: 0 auto;
     }
   }
   
@@ -153,31 +159,34 @@ footer i {
 
 @media only all and (min-width: 45em) {
   
-  .footer__top__partners {
-    a {
-      width: 30%;
-      margin-right: 5%;
-      float: left;
-      text-align: center;
-    }
-    .partner-cs {
-      width: 30%;
-      margin-right: 0;
-    }
-    .icon-footer-partner-es {
-      margin: 0.3em auto 1.7em auto;
-    }
-    .icon-footer-partner-nls {
-      margin: 0 auto 2em auto;
-    }
-    .icon-footer-partner-cs {
-      display: inline-block;
-      clear: both;
-      float: none;
-      margin: 0 auto 1em auto;
-    }
+  .footer__top__report-issues {
+	  padding-right: 10%;
+	  width: 55%;
   }
-
+  
+  .footer__top__report-issues,
+  .footer__top__twitter {
+	  float: left;
+    text-align: center;
+    span {
+	    text-align: center;
+	    max-width: 17em;
+	    margin: 0 auto 1em auto; 
+    }
+  } 
+  
+  .footer__top__twitter {
+	  width: 45%;
+	  span {
+		  margin-bottom: 2.1em;
+	  }
+  }
+  
+  .footer__top__partners span {
+	  margin: 1.2em 0 1.2em 0;
+	  display: inline-block;
+  }
+ 
   .footer__nav li {
     width: 25%;
     &:nth-child(1),
@@ -192,69 +201,61 @@ footer i {
   
 } // end min 45em
 
-@media only all and (min-width: 63.9375em) {
+@media only all and (min-width: 71.25em) {
+  
+  .footer__top {
+	  padding: 2em 5% 1.5em 5%;
+  }
   
   .footer__top__report-issues span,
+  .footer__top__twitter span,
   .footer__top__partners span {
     text-align: left;
     max-width: 13.25em;
     font-size: 1.2em;
+    margin: 0 0 1em 0;
   }
   
   .footer__top__report-issues {
-    width: 25%;
+    width: 20%;
     float: right;
     text-align: left;
+    padding: 0;
+  }
+  
+  .footer__top__twitter {
+    width: 30%;
+    float: right;
+    text-align: left;
+    padding: 0;
+    span {
+	    margin-bottom: 2.1em;
+    }
   }
    
   .footer__top__partners {
-    width: 65%;
-    margin-right: 10%;
+    width: 50%;
+    //margin-right: 10%;
     float: left;
     text-align: left;
   }
   
   .footer__top__partners span {
-    margin-bottom: 1em;
+	  margin: 0em 0 1.4em 0;
+	  display: block;
   }
   
   .footer__top__partners a {
-    text-align: left;
-    margin-right: 10%;
+		float: left;
   }
   
-  .footer__top__partners .partner-cs {
-    width: 20%;
-    margin-right: 0;
-  }
-  
-  .footer__top__partners .icon-footer-partner-es {
-    margin: 0.3em 0 0 0;
-  }
-  .footer__top__partners .icon-footer-partner-nls,
-  .footer__top__partners .icon-footer-partner-cs { 
-    margin: 0 0 0.5em 0;
+  .footer__top__partners i {
+	  margin: 0 15% 0 0;
+	  display: inline-block;
   }
   
   footer span {
     max-width: 70%;
   }
     
-} // end min 63.9375em
-
-@media only all and (min-width: 82.25em) {
-  
-  .footer__top__report-issues {
-    width: 20%;
-    float: right;
-    text-align: left;
-  }
-   
-  .footer__top__partners {
-    width: 60%;
-    margin-right: 20%;
-    float: left;
-    text-align: left;
-  }
-  
-} //end min 82.25em
+} // end min 71.25em

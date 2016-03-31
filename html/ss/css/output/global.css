@@ -1464,7 +1464,7 @@ footer i {
 @media only all and (min-width: 88.75em) {
   .header__part--brand {
     text-align: right; }
-  .header__part--brand .icon-sos-logo {
+  .header__part--brand .icon-ss-logo {
     margin: 2em 22.5em 0 0; }
   .header__part--search {
     text-align: left;
@@ -2041,7 +2041,7 @@ footer i {
       width: 8%;
       margin-right: 7%; }
     .main-nav li:nth-child(1) a, .main-nav li:nth-child(4) a {
-      padding-bottom: 2em; }
+      padding-bottom: 1.4em; }
     .main-nav li:nth-child(2) {
       width: 17%;
       margin-right: 6%; }
@@ -2083,7 +2083,7 @@ footer i {
     width: 8%;
     margin-right: 8%; }
   .main-nav li:nth-child(2) {
-    width: 17%;
+    width: 15%;
     margin-right: 7%; }
     .main-nav li:nth-child(2) a {
       width: 85%; }
@@ -2105,7 +2105,9 @@ footer i {
     .main-nav li:nth-child(5) a {
       width: 85%;
       max-width: 7.8em;
-      padding-bottom: 2em; } }
+      padding-bottom: 2em; }
+    .main-nav li:nth-child(5) .sub-menu a {
+      max-width: 100%; } }
 
 .pattern {
   background: url(../../assets/pattern.png);

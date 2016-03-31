@@ -527,7 +527,7 @@
     &:nth-child(1),
     &:nth-child(4) {
 	    a {
-	    	padding-bottom: 2em;
+	    	padding-bottom: 1.4em;
 	    }
     }
     &:nth-child(2) {
@@ -600,7 +600,7 @@
 	    margin-right: 8%;
     }
     &:nth-child(2) {
-	    width: 17%;
+	    width: 15%;
 	    margin-right: 7%;
 	    a {
 		    width: 85%;
@@ -629,6 +629,9 @@
 		    width: 85%;
 		    max-width: 7.8em;
 		    padding-bottom: 2em;
+		 	}
+		 	.sub-menu a {
+			 	max-width: 100%;
 		 	}
     }
   }

@@ -984,9 +984,6 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <a href="http://www.educationscotland.gov.uk/" target="_blank">
                   <i class="icon-footer-partner-es">Education Scotland</i>
                 </a>
-                <a href="http://www.nls.uk" target="_blank">
-                  <i class="icon-footer-partner-nls">National Library of Scotland</i>
-                </a>
                 <a class="partner-cs" href="http://www.creativescotland.com" target="_blank">
                   <i class="icon-footer-partner-cs">Creative Scotland</i>
                 </a>
@@ -1004,7 +1001,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <footer class="icon-pattern">
           <div class="container">
             <span class="copyright">
-              &copy; Film Content Licences Provided by the National Library of Scotland. Other Website Content Copyright Scottish Film Limited, Registered in Scotland no. SC478204. <br/>All Rights Reserved.
+              &copy; Copyright Scottish Film Limited, Registered in Scotland no. SC478204. <br/>All Rights Reserved.
             </span>
             <span class="address">
               Scottish Film Limited, Filmhouse, 88 Lothian Road, Edinburgh, EH3 9BZ

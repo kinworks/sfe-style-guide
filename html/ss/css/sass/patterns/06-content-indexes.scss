@@ -4,7 +4,7 @@
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: $light-pastel;
+  background-color: scale-color($light-pastel, $lightness: 85%);
   text-align: center;
   margin: 0 0 2em 0;
 }
@@ -60,11 +60,11 @@
     counter-increment: none;
   }
   &.not-available a {
-    background-color: $light-pastel;
+    background-color: inherit;
     color: $mid-text;
     cursor: not-allowed;
     &:hover {
-      background-color: $light-pastel;
+      background-color: inherit;
     }
   }
 }
@@ -77,7 +77,7 @@
 
 .list__content .heading span {
   font-weight: 300;
-  color: $light-pastel;
+  color: scale-color($light-pastel, $lightness: 75%);
   display: inline-block;
   margin: 0 0.5em 0 0.2em;
 }

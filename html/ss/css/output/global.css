@@ -2641,7 +2641,7 @@ ol ul li:before {
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: #F8826F;
+  background-color: #feece9;
   text-align: center;
   margin: 0 0 2em 0; }
 
@@ -2691,18 +2691,18 @@ ol ul li:before {
     content: none;
     counter-increment: none; }
   .list__jump-nav li.not-available a {
-    background-color: #F8826F;
+    background-color: inherit;
     color: #8A2C1E;
     cursor: not-allowed; }
     .list__jump-nav li.not-available a:hover {
-      background-color: #F8826F; }
+      background-color: inherit; }
 
 .list__content .heading {
   color: #222121; }
 
 .list__content .heading span {
   font-weight: 300;
-  color: #F8826F;
+  color: #fde0db;
   display: inline-block;
   margin: 0 0.5em 0 0.2em; }
 

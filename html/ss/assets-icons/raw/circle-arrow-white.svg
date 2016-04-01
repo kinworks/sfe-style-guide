@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
-    <title>circle-arrow</title>
+    <title>circle-arrow-white</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="circle-arrow">
-            <circle id="Oval-1" fill="#C8412A" cx="18" cy="18" r="17"></circle>
-            <path d="M13,26 L28,17.4993073 L13,9 L13,26" id="Fill-13" fill="#FFFFFF"></path>
+        <g id="circle-arrow-white" fill="#FDFDFD">
+            <path d="M18,35 C27.3888407,35 35,27.3888407 35,18 C35,8.61115925 27.3888407,1 18,1 C8.61115925,1 1,8.61115925 1,18 C1,27.3888407 8.61115925,35 18,35 Z M13,26 L28,17.4993073 L13,9 L13,26 Z" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>

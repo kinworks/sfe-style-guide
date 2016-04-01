@@ -56,19 +56,24 @@
   font-weight: 400;
   color: #ffffff; }
 
-.cta .icon-circle-arrow {
+.cta .icon-circle-arrow, .cta .icon-circle-arrow-white {
   width: 2.125em;
   height: 2.125em; }
 
 .cta--light {
-  background-color: #F8826F; }
+  background-color: #008FBB;
+  border-color: #00A3DA; }
   .cta--light span {
-    color: #5C261B; }
+    color: #ffffff; }
   .cta--light:hover {
-    background-color: #f98e7d; }
+    background-color: #00a0d2; }
+
+.cta--light-alt {
+  background-color: #5AA641;
+  border-color: #83BF52; }
 
 .cta.icon-pattern {
-  border-color: #371710; }
+  border-color: #C8412A; }
 
 .cta--no-circle div {
   display: none; }
@@ -84,8 +89,12 @@
 
 @media only all and (min-width: 20em) {
   .cta {
-    border-left: 1.5em solid #222121;
+    border-left: 1.5em solid #5C261B;
     padding: 0.5em 0.8em 0.5em 0.8em; }
+  .cta--light {
+    border-color: #00A3DA; }
+  .cta--light-alt {
+    border-color: #83BF52; }
   .cta span {
     width: 80%;
     float: left;

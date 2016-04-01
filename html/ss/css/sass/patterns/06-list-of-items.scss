@@ -7,7 +7,7 @@
 
 .items--block {
   padding: 1.5em 1.5em 1em 1.5em;
-  background-color: $light-pastel;
+  background-color: scale-color($contrast-alt, $lightness: 85%);
 }
 
 .items .heading__smallest {

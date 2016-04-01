@@ -977,11 +977,11 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           <div class="container">
               <div class="footer__top__report-issues">
                 <span>Problems using this site or with its content?</span>
-                <a class="btn btn--darkest">Report an Issue &raquo;</a>
+                <a class="btn btn--light-pastel">Report an Issue &raquo;</a>
               </div>
               <div class="footer__top__twitter">
                 <span>Elsewhere:</span>
-                <a class="btn btn--contrast" href="http://www.twitter.com/movingimageed" target="_blank"><i class="icon-footer-twitter">Twitter Icon</i>Follow Us on Twitter &raquo;</a>
+                <a class="btn btn--darkest" href="http://www.twitter.com/movingimageed" target="_blank"><i class="icon-footer-twitter">Twitter Icon</i>Follow Us on Twitter &raquo;</a>
               </div>
               <div class="footer__top__partners clearfix">
                 <span>In partnership with:</span>

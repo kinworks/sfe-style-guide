@@ -3,7 +3,7 @@
 
 .feedback {
 	background-color: $feedback;
-	border-bottom: 0.2em solid darken($feedback,8%);
+	border-bottom: 0.2em solid scale-color($feedback, $lightness: -30%);
 	font-weight: 500;
 	padding: 0.8em 1.4em;
 	margin: 0 0 1.5em 0;

@@ -874,7 +874,7 @@ pre {
   background-color: #83BF52; }
 
 .swatches span.feedback {
-  background-color: #bff8ed; }
+  background-color: #5dd9ff; }
 
 .swatches span.error {
   background-color: #ffcdb3; }
@@ -3215,7 +3215,7 @@ textarea {
   margin-bottom: 1em; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[list]:focus, textarea:focus, select:focus {
-  border: 0.2em solid #008FBB;
+  border: 0.2em solid #F8826F;
   outline: 0; }
 
 label, legend {
@@ -3312,8 +3312,8 @@ select:-internal-list-box option:checked {
   background-color: #F8826F; }
 
 .feedback {
-  background-color: #bff8ed;
-  border-bottom: 0.2em solid #9af4e3;
+  background-color: #5dd9ff;
+  border-bottom: 0.2em solid #00bbf4;
   font-weight: 500;
   padding: 0.8em 1.4em;
   margin: 0 0 1.5em 0; }

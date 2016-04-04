@@ -2945,12 +2945,18 @@ ol.pagination li {
 .subnav ul {
   list-style-type: none; }
 
-.subnav .subnav__item:before {
-  content: "— "; }
-.subnav .subnav__item a:hover {
-  color: #222121;
-  border-color: #222121;
-  border-bottom: 0.1em solid; }
+.subnav .subnav__item, .subnav .subnav__item.subnav__item--sub-parent {
+  color: #C8412A; }
+  .subnav .subnav__item:before, .subnav .subnav__item.subnav__item--sub-parent:before {
+    content: "— "; }
+  .subnav .subnav__item a:hover, .subnav .subnav__item.subnav__item--sub-parent a:hover {
+    color: #222121;
+    border-color: #222121;
+    border-bottom: 0.1em solid; }
+  .subnav .subnav__item ul li a, .subnav .subnav__item.subnav__item--sub-parent ul li a {
+    color: #C8412A; }
+  .subnav .subnav__item ul li a.active, .subnav .subnav__item.subnav__item--sub-parent ul li a.active {
+    color: #222121; }
 
 .subnav .subnav__item.subnav__item--parent {
   margin: 0 0 0.5em 0; }
@@ -2964,7 +2970,11 @@ ol.pagination li {
       color: #8A2C1E;
       border-color: #8A2C1E; }
 
-.subnav .subnav__item.subnav__item--current a {
+.subnav .subnav__item.subnav__item--sub-parent a {
+  color: #222121;
+  border-color: #222121; }
+
+.subnav .subnav__item a.active {
   border-bottom: none;
   color: #222121;
   cursor: not-allowed; }

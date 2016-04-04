@@ -15,7 +15,9 @@
   list-style-type: none;
 }
 
-.subnav .subnav__item {
+.subnav .subnav__item,
+.subnav .subnav__item.subnav__item--sub-parent {
+	color: $light;
   &:before {
     content: "— ";
   }
@@ -23,6 +25,12 @@
     color: $dark-text;
     border-color: $dark-text;
     border-bottom: 0.1em solid;
+  }
+  ul li a {
+	  color: $light;
+  }
+  ul li a.active {
+	  color: $dark-text;
   }
 }
 
@@ -42,10 +50,13 @@
   }
 }
 
-.subnav .subnav__item.subnav__item--current {
-  a {
+.subnav .subnav__item.subnav__item--sub-parent a {
+	color: $dark-text;
+	border-color: $dark-text;
+}
+
+.subnav .subnav__item a.active {
     border-bottom: none;
     color: $dark-text;
     cursor: not-allowed;
-  }
 }

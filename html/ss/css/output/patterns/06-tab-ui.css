@@ -33,7 +33,7 @@
   display: inline-block;
   width: 100%;
   padding: 0 0 0 0.2em;
-  margin: 0 0 0 0;
+  margin: 0 0 1em 0;
   background-color: #faa89a; }
 
 .js-tabs .tabs [role=tab] {
@@ -93,7 +93,7 @@
     border-right: none; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
-    width: 28.333%;
+    width: 25%;
     cursor: pointer;
     color: #222121;
     font-weight: 400;

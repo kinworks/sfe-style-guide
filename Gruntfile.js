@@ -172,9 +172,7 @@ module.exports = function(grunt) {
 	              cssbasepath: ""
            
 	     	    }
-			 	}      
-		
-		},
+			 	},      
 		
 		mieicons: 
    			{

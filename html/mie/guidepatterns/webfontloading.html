@@ -1,0 +1,18 @@
+// Inside the document HEAD, as a script tag:
+
+<![if (gt IE 8)]>  
+  script type="text/javascript"
+    // Webfont loader - see https://github.com/typekit/webfontloader for details
+    WebFontConfig = {
+      typekit: { id: 'ovp2cfb' }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('js/webfontloader.min.js');
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  /script
+<![endif]>

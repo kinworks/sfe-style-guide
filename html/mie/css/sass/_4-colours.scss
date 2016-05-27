@@ -1,0 +1,86 @@
+//// Brand
+
+$light: #C8412A;
+
+$mid: #8A2C1E; 
+
+$dark: #5C261B; 
+
+$darkest: #222121;
+
+
+//// Text-specific colours
+
+$mid-text: $mid;
+
+$dark-text: $darkest;
+
+$dark-red-text: $dark;
+
+$disabled-text: #666;
+
+
+//// Modules / Body
+
+$white: #ffffff; // Yes, really.
+
+$light-pastel: #F8826F;
+
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg),
+    linear-gradient(transparent, transparent);
+    /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */
+}
+
+.icon-pattern {
+  background-repeat: repeat;
+}
+
+
+/// Calls to Action / Highlights
+
+$contrast: #008FBB; // WCAG 2 AA Compliant (18pt+)
+
+$contrast-light: #00A3DA; // Don't use for text
+
+$contrast-alt: #5AA641; // WCAG 2 AA Compliant (18pt+)
+
+$contrast-alt-light: #83BF52; // Don't use for text
+
+$feedback: scale-color($contrast, $lightness: 50%);
+
+$error: #ffcdb3;
+
+$disabled: #ccc;
+
+
+/// Background utility classes
+
+.bg--darkest {
+  background-color: $darkest;
+}
+
+.bg--dark {
+  background-color: $dark;
+}
+
+.bg--mid {
+  background-color: $mid;
+}
+
+.bg--light {
+  background-color: $light;
+}
+
+.bg--light-pastel {
+  background-color: $light-pastel;
+}
+
+//// Misc Colour Class settings
+
+// The header on SS is a custom colour variant
+
+$header: #5C251B;

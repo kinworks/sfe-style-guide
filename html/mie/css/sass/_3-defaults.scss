@@ -1,0 +1,155 @@
+//::::::::::::::::::::::::::
+//::  Kin Defaults  ::::::::
+//::::::::::::::::::::::::::
+//::: PURPOSE: Default non-reset browser / box model fixes, 
+//::: any other default choices we use across projects.
+
+.hidden {
+	display: none;
+}
+
+// Make everything to behave as IE box model - 
+// see http://quirksmode.org/css/user-interface/boxsizing.html
+
+* {
+  -webkit-box-sizing: border-box; // Safari <= 5
+  -moz-box-sizing: border-box; // Firefox <= 19
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+// Tell webkit to jog on with its auto-margins
+
+* {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-before: 0em;
+  -webkit-padding-after: 0em;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+}
+
+
+// Remove the webkit glow on forms when focused on, but be sure 
+// to replace it with an outline of some kind - this should then 
+// be overridden when styling focus throughout the document 
+
+// This ties in with the script tag in our header that sets an outline 
+// on every item for focus, then if JS is present removes it;
+// then uses JS to listen for keyboard use and re-applies for those
+// tabbing through. By @decadecity - 
+// https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus 
+
+a,
+input,
+button,
+textarea,
+select {
+  &:focus {
+    outline: 0.1em solid orange;
+  }
+}
+.js {
+  a,
+  .btn, 
+  input, 
+  button, 
+  textarea, 
+  select { 
+    &:focus {
+      outline-width: 0px;
+    }
+  }
+}
+.keyboard {
+  a,
+  .btn,
+  input,
+  button,
+  textarea,
+  select {
+    &:focus {
+      outline-width: 0.1em;
+    }
+  }
+}
+
+
+// Let us decide how to style form input submit buttons 
+// on mobile browsers
+
+input[type='submit']
+{
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   border-radius: 0;  
+}
+
+
+// Clearfix
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {clear: both;}
+
+
+// We'll set our own margins for p tags
+
+p {
+  margin: 0;
+}
+
+
+// Skip to content
+.skip-to-content {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #1b75bc;
+  color: #fff;
+  z-index: 10;
+  outline: none;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  text-decoration: underline;
+  &:focus,
+  &:active {
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+// Icon pattern
+
+i {
+  display: inline-block;
+  background-size: 100%;
+  /* "But despite its enduring popularity, Phark has drawbacks of its own: chiefly, a performance hit caused by the need to draw a giant 9999px box offscreen. (Yes, the browser really does this.)
+
+My friend Scott Kellum, design director at Treesaver, has now sent me this refactored code for hiding text, which I hereby christen the Kellum Method:"*/
+
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+
+/* Really long strings of text will never flow into the container because they always flow away from the container.
+Performance is dramatically improved because a 9999px box is not drawn. Noticeably so in animations on the iPad 1. */
+}

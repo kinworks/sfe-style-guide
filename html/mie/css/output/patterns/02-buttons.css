@@ -1,0 +1,130 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
+
+.bg--darkest {
+  background-color: #222121; }
+
+.bg--dark {
+  background-color: #5C261B; }
+
+.bg--mid {
+  background-color: #8A2C1E; }
+
+.bg--light {
+  background-color: #C8412A; }
+
+.bg--light-pastel {
+  background-color: #F8826F; }
+
+/* Buttons / CTAs */
+.btn {
+  font-size: 1.13em;
+  background-color: #5C261B;
+  color: #fff;
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 1em 1.5em 0;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -ms-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  border-top: none;
+  border-bottom: 0.2em solid #2e130e; }
+  .btn:hover {
+    text-decoration: underline;
+    box-shadow: inset 0 0 0 0.2em #b74b36;
+    background-color: #893928;
+    border-bottom: 0.2em solid #3c1912; }
+
+.btn--darkest {
+  background-color: #222121;
+  border-bottom: 0.2em solid #181717; }
+  .btn--darkest:hover {
+    box-shadow: inset 0 0 0 0.2em #656262;
+    background-color: #383737;
+    border-bottom: 0.2em solid #1f1e1e; }
+
+.btn--mid {
+  background-color: #8A2C1E;
+  border-bottom: 0.2em solid #611f15; }
+  .btn--mid:hover {
+    box-shadow: inset 0 0 0 0.2em #d44e3a;
+    background-color: #8A2C1E;
+    border-bottom: 0.2em solid #7c281b; }
+
+.btn--light {
+  background-color: #C8412A;
+  color: #ffffff;
+  border-bottom: 0.2em solid #8c2d1d; }
+  .btn--light:hover {
+    box-shadow: inset 0 0 0 0.2em #e3897a;
+    background-color: #C8412A;
+    border-bottom: 0.2em solid #a03422; }
+
+.btn--light-pastel {
+  background-color: #F8826F;
+  color: #222121;
+  border-bottom: 0.2em solid #f5472b; }
+  .btn--light-pastel:hover {
+    box-shadow: inset 0 0 0 0.2em #fbb4a9;
+    background-color: #F8826F;
+    border-bottom: 0.2em solid #f6644d; }
+
+.btn--contrast {
+  background-color: #008FBB;
+  border-bottom: 0.2em solid #005670; }
+  .btn--contrast:hover {
+    box-shadow: inset 0 0 0 0.2em #1dcaff;
+    background-color: #008FBB;
+    border-bottom: 0.2em solid #006483; }
+
+.btn--contrast-alt {
+  background-color: #5AA641;
+  border-bottom: 0.2em solid #366427; }
+  .btn--contrast-alt:hover {
+    box-shadow: inset 0 0 0 0.2em #77c05f;
+    background-color: #5AA641;
+    border-bottom: 0.2em solid #488534; }
+
+.btn--white {
+  background-color: #ffffff;
+  border-bottom: 0.2em solid #b3b3b3;
+  color: #222121; }
+  .btn--white:hover {
+    box-shadow: inset 0 0 0 0.2em #F8826F;
+    background-color: #ffffff;
+    border-bottom: 0.2em solid #b3b3b3; }
+
+.btn--disabled {
+  background-color: #ccc;
+  border-bottom: 0.2em solid #b3b3b3;
+  color: #666; }
+  .btn--disabled:hover {
+    text-decoration: none;
+    box-shadow: none;
+    background-color: #ccc;
+    border-bottom: 0.2em solid #b3b3b3; }
+
+/* Removes awkward default styles on some inputs for mobile */
+input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* Removes awkward UA side borders set, and pads to right height */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  border-left: 0;
+  border-right: 0;
+  height: 3em; }
+
+/*# sourceMappingURL=02-buttons.css.map */

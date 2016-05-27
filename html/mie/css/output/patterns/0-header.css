@@ -1,0 +1,194 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
+
+.bg--darkest {
+  background-color: #222121; }
+
+.bg--dark {
+  background-color: #5C261B; }
+
+.bg--mid {
+  background-color: #8A2C1E; }
+
+.bg--light {
+  background-color: #C8412A; }
+
+.bg--light-pastel {
+  background-color: #F8826F; }
+
+.header {
+  background-color: #5C251B;
+  width: 100%;
+  margin: 0;
+  text-align: center; }
+
+.header__part {
+  height: 10.375em;
+  background-repeat: no-repeat; }
+
+.header__part--brand {
+  background-position: left top; }
+  .header__part--brand a {
+    border-bottom: none; }
+  .header__part--brand .icon-ss-logo {
+    margin: 2em 8% 0 8%;
+    width: 84%;
+    height: 5.75em;
+    max-width: 17.8125em; }
+
+.header__search-trigger, .nav__trigger {
+  display: none; }
+  .header__search-trigger .trigger__container, .nav__trigger .trigger__container {
+    width: 100%;
+    max-width: 22em;
+    margin: 0 auto 0 auto; }
+  .header__search-trigger .icon-arrow-down, .header__search-trigger .icon-arrow-up, .nav__trigger .icon-arrow-down, .nav__trigger .icon-arrow-up {
+    width: 0.625em;
+    margin: 1.375em 0 0 0;
+    float: right; }
+  .header__search-trigger .icon-close, .nav__trigger .icon-close {
+    width: 1.25em;
+    height: 1.3125em;
+    margin: 1.03125em 0.85em 1.03125em 0;
+    float: left; }
+
+.js .header__search-trigger, .js .nav__trigger {
+  display: block;
+  width: 100%;
+  padding: 0 8% 0 8%; }
+
+.header__search-trigger {
+  background-color: #008FBB;
+  cursor: pointer;
+  border-bottom: 0.3em solid #00A3DA; }
+  .header__search-trigger .icon-search {
+    width: 1.6875em;
+    height: 1.75em;
+    margin: 0.8125em 0.6em 0.8125em 0;
+    float: left; }
+  .header__search-trigger span {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 0.7em 0 0 0;
+    color: #ffffff;
+    float: left; }
+  .header__search-trigger.active {
+    border-bottom: none; }
+
+.header__part--search {
+  background-position: right top;
+  border-bottom: 0.3em solid #5C261B; }
+  .header__part--search form {
+    background-color: inherit;
+    margin: 0;
+    width: 100%;
+    padding: 3.1em 0 0 0; }
+  .header__part--search .search__container {
+    width: 100%;
+    max-width: 20em;
+    margin: 0 auto 0 auto;
+    text-align: left; }
+  .header__part--search .form-item-search-block-form {
+    float: left;
+    text-align: left;
+    width: 75%;
+    max-width: 13.92em;
+    display: inline-block; }
+  .header__part--search label {
+    display: none;
+    font-size: 1.3em;
+    font-weight: 600; }
+  .header__part--search input[type="text"] {
+    font-size: 1.1em;
+    border: 0.135em solid #C8412A;
+    padding: 0.36em;
+    height: 2.1375em; }
+    .header__part--search input[type="text"]:focus {
+      border: 0.135em solid #F8826F; }
+  .header__part--search input[type="text"], .header__part--search input[type="submit"] {
+    width: 100%;
+    margin: 0; }
+  .header__part--search .form-actions {
+    width: 25%;
+    display: inline-block;
+    float: left; }
+  .header__part--search input[type="submit"] {
+    color: #ffffff;
+    background-color: #C8412A;
+    font-size: 1.1em;
+    outline: 0;
+    border: 0.135em solid #C8412A;
+    max-width: 4.55625em;
+    height: 2.14em; }
+    .header__part--search input[type="submit"]:focus, .header__part--search input[type="submit"]:hover {
+      background-color: #F8826F;
+      border: 0.135em solid #F8826F;
+      color: #8A2C1E; }
+  .header__part--search .search__advanced {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 300;
+    padding-top: 0.5em; }
+    .header__part--search .search__advanced a {
+      border-color: #ffffff;
+      color: #ffffff; }
+    .header__part--search .search__advanced a:focus, .header__part--search .search__advanced a:hover {
+      color: #F8826F;
+      border-bottom: 0.1em dotted #C8412A; }
+  .header__part--search .form-item, .header__part--search .form-actions {
+    margin: 0; }
+
+@media only all and (min-width: 41em) {
+  .js .header__search-trigger, .no-js .header__search-trigger {
+    display: none; }
+  .header__part--brand {
+    width: 50%;
+    float: left; }
+  .header__part--search {
+    width: 50%;
+    float: left;
+    border-bottom: none; }
+  .header__part--search form {
+    padding: 1.3em 0 0 0;
+    width: 90%;
+    float: right; }
+  .header__part--search .search__container {
+    text-align: right; }
+  .header__part--brand {
+    text-align: left; }
+  .header__part--brand .icon-sos-logo {
+    margin: 2em 0 0 10%; }
+  .header__part--search {
+    text-align: right;
+    padding: 1.8em 5% 0 0; }
+  .header__part--search .search__container {
+    margin: 0 0 0 0;
+    float: right;
+    max-width: 18em; }
+  .header__part--search .search__advanced {
+    max-width: 12em; }
+  .js .nav__trigger {
+    display: none; }
+  .nav-collapse {
+    display: block; } }
+
+@media only all and (min-width: 88.75em) {
+  .header__part--brand {
+    text-align: right; }
+  .header__part--brand .icon-ss-logo {
+    margin: 2em 22.5em 0 0; }
+  .header__part--search {
+    text-align: left;
+    padding: 1.8em 0 0 0; }
+  .header__part--search .search__container {
+    margin: 0 0 0 22em;
+    float: none; } }
+
+/*# sourceMappingURL=0-header.css.map */

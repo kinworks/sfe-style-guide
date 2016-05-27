@@ -1,0 +1,85 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
+
+.bg--darkest {
+  background-color: #222121; }
+
+.bg--dark {
+  background-color: #5C261B; }
+
+.bg--mid {
+  background-color: #8A2C1E; }
+
+.bg--light {
+  background-color: #C8412A; }
+
+.bg--light-pastel {
+  background-color: #F8826F; }
+
+/* Pagination */
+ol.pagination {
+  list-style-type: none;
+  font-size: 1em;
+  margin: 0 0 2em 0; }
+
+ol.pagination li {
+  display: inline-block; }
+  ol.pagination li:before {
+    content: " ";
+    counter-increment: none; }
+
+.pagination .heading--small {
+  font-size: 1.4em; }
+
+.pagination a {
+  display: inline-block;
+  margin: 0 0.5em 0.5em 0;
+  padding: 0.51em 0.5em;
+  height: 2.2em;
+  min-width: 2.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+  background-color: #5C261B;
+  color: #ffffff; }
+  .pagination a:hover {
+    text-decoration: underline;
+    background-color: #8A2C1E; }
+
+.pagination__current a {
+  background-color: #8A2C1E;
+  color: #ffffff;
+  cursor: not-allowed;
+  border: none; }
+  .pagination__current a:hover {
+    text-decoration: underline;
+    color: #ffffff; }
+
+.pagination__previous a, .pagination__next a {
+  background-color: #5C261B;
+  color: #ffffff;
+  border-bottom: none;
+  padding: 0.35em 0.1em;
+  height: 2.2em;
+  width: 2.2em; }
+
+.pagination__previous span, .pagination__next span {
+  font-size: 1.5em; }
+
+.pagination__previous.no-more a, .pagination__next.no-more a {
+  background-color: #ccc;
+  color: #555;
+  cursor: not-allowed;
+  border-bottom: none; }
+  .pagination__previous.no-more a:hover, .pagination__next.no-more a:hover {
+    text-decoration: none;
+    color: #555; }
+
+/*# sourceMappingURL=06-pagination.css.map */

@@ -1,0 +1,640 @@
+//:::::::::::::::::::::::::::::
+// Style Guide Layout / Styles
+//:::::::::::::::::::::::::::::
+
+body {
+  background-color: $white;
+  background-attachment: fixed;
+  background-size: contain;
+  @media only all and (min-width: 56em) {
+    background-size: auto; 
+  }
+}
+
+.bg-light-pastel {
+  background-color: $light-pastel;
+}
+
+#guidenav-trigger {
+  display: none;
+}
+
+.heading-wrapper.heading--themeselect {
+	padding-top: 1.5em;
+	select {
+		max-width: 20em;
+	}
+}
+
+.sitename {
+	color: $light-pastel;
+}
+
+// Navigation Menu
+
+.nav-wrapper {
+   background-color: #101010;
+   @media only all and (min-width: 41em) {
+     width: 25vw;
+     height: 100vh;
+     position: fixed;
+     overflow-y: scroll;
+     float: left;
+     border-right: 0.15em solid #222;
+   }
+}
+
+.nav-wrapper__list li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.65em 1.25em 0.85em;
+}
+
+.nav-wrapper__list .test-mode {
+  background-color: #952121;
+}
+
+.nav-wrapper__list li:nth-child(2n) {
+  background-color: #121212;
+}
+
+.nav-wrapper__list li.nav-wrapper__list__heading {
+  color: #ce4d4d;
+  background-color: #fff;
+}
+
+.nav-wrapper__list a {
+   color: #fff;
+   font-weight: 300;
+   border-bottom: 0.1em dotted #ccc;
+   margin: 0;
+   padding: 0;
+}
+
+.fullwidth {
+  float: left;
+  display: block;
+  width: 25em;
+}
+
+// Body
+
+.body-wrapper {
+  padding: 0 8%;
+  @media only all and (min-width: 41em) {
+    //float: left;
+    width: 75vw;
+    margin-left: 25vw;
+    padding: 0 5%;
+  }
+}
+
+.body-wrapper.outsider {
+  padding: 0;
+  margin-top: 2em;
+  @media only all and (min-width: 41em) {
+    width: 75vw;
+    margin-left: 25vw;
+    padding: 0;
+  }
+}
+
+.heading-wrapper {
+  padding-top: 1em;
+  padding-bottom: 0.6em;
+  color: $white;
+  & .heading {
+    color: $white;
+  }
+}
+
+// Other Guide Styles
+
+.guide {
+  background-color: $light-pastel; 
+  line-height: 1.5em;
+  font-size: 16px;
+  border: none;
+  color: #333; 
+}
+
+.guide body {
+  border: none;
+  font-size: 16px;
+}
+
+.outside {
+  display: block;
+  margin: 0 auto 1.5em auto !important;
+  max-width: 80em;
+  h1 {
+    line-height: 1.2em;
+  }
+}
+
+.outside .heading {
+  width: auto;
+  margin-right: 0.6em;
+  display: inline;
+  vertical-align: -0.15em;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.versioninfo {
+  font-size: 1.1em;
+  color: #222;
+  display: inline;
+  margin: 0 auto 1.5em auto;
+}
+
+.versioninfo a {
+  //color: $dark;
+}
+
+.guide .styleguide {
+  @media only all and (min-width: 41em) {
+   // padding: 2em 5% 1.5em 5%;
+  }
+}
+
+.guide .guidepattern {
+  clear: both;
+  overflow: hidden;
+  border-bottom: 0.1em #959595 solid;
+  max-width: 80em;
+  padding: 2.5em 0 2.5em 0;
+  margin: 0 auto 0 auto;
+}
+
+.guide .guidepattern.elements-heading {
+  border-bottom: 0.1em $light-pastel solid;
+} 
+
+.guide .guidepattern.outside {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.guide .guidepattern .display, 
+.guide .guidepattern .panels {
+  width: 90%;
+  display: inline-block;
+}
+
+.lt-ie9 .guide .guidepattern .panels {
+  display: none !important;
+}
+
+iframe {
+  display: none;
+}
+
+.guide .pattern-header iframe {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  max-width: 30em;
+  overflow: hidden;
+  height: 15em;
+}
+
+.guide .pattern-responsive-tables iframe {
+  outline: 0;
+  border: 0;
+  width: 30em;
+  height: 35em;
+  overflow: visible;
+}
+
+.guide .guidepattern .panels {
+  margin-top: 0.5em;
+}
+
+.guide .guidepattern.pattern-content-indexes .display,
+.guide .guidepattern.pattern-content-indexes .panels {
+  width: 100%;
+  margin: 0 0 1.5em 0;
+}
+
+.guidance strong,
+.guidance b {
+  font-weight: 600;
+}
+
+h1.guidance,
+h2.guidance {
+  color: $dark;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+h2.guidance {
+  margin-bottom: 0.4em;
+}
+
+.pattern__back-to-top {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.guidepattern .pattern__back-to-top {
+  margin-left: 0;
+}
+
+p.guidance {
+  margin-bottom: 1.4em;
+  font-size: 1.1em;
+}
+
+ul.guidance li {
+  list-style-type: none;
+  &:before {
+    content: "— ";
+  }
+  margin: 0 0 1.3em 1em;
+  font-size: 1em;
+}
+
+.js-tabs ul.guidance li [aria-selected=true] {
+  color: $dark-text;
+  background-color: $white;
+}
+
+pre {
+  margin: 1em 0 1em 0;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.swatches h2 {
+  width: 100%;
+  float: left;
+  margin: 1em 0 1.3em 0;
+}
+
+.swatches ul {
+  list-style-type: none;
+}
+
+.swatches li {
+  width: 6.4em;
+  height: 8em;
+  border: 0.1em solid #ddd;
+  padding: 0.7em;
+  margin: 0 2em 2em 0;
+  float: left;
+  border-bottom: 0.2em solid #ccc;
+}
+
+.swatches span.light {
+  background-color: $light;
+}
+
+.swatches span.mid {
+  background-color: $mid;
+}
+
+.swatches span.mid-text {
+  background-color: $mid-text;
+}
+
+.swatches span.dark {
+  background-color: $dark;
+}
+
+.swatches span.darkest {
+  background-color: $darkest;
+}
+
+.swatches span.dark-red-text {
+  background-color: $dark-red-text;
+}
+
+.swatches span.dark-text {
+  background-color: $dark-text;
+}
+
+.swatches span.white {
+  background-color: $white;
+}
+
+.swatches span.light-pastel {
+  background-color: $light-pastel;
+}
+
+.swatches span.pattern {
+  background-color: $dark;
+}
+
+.swatches span.contrast {
+  background-color: $contrast;
+}
+
+.swatches span.contrast-light {
+  background-color: $contrast-light;
+}
+
+.swatches span.contrast-alt {
+  background-color: $contrast-alt;
+}
+
+.swatches span.contrast-alt-light {
+  background-color: $contrast-alt-light;
+}
+
+.swatches span.feedback {
+  background-color: $feedback;
+}
+
+.swatches span.error {
+  background-color: $error;
+}
+
+.swatches span.disabled {
+  background-color: $disabled;
+}
+
+.swatches span.disabled-text {
+  background-color: $disabled-text;
+}
+
+.swatches li b {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.swatches li span {
+  display: inline-block;
+  width: 5em;
+  height: 4.5em;
+  border: 0.1em solid #ddd;
+  margin: 0 0 0.2em 0;
+}
+
+.display .webfontloader ul li {
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+  &::before {
+   content: "— "; 
+  }
+}
+
+.webfontloader .display ul {
+  margin-bottom: 3em;
+}
+
+.hierarchy h2.guidance {
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  border-bottom: 0.1em solid #ccc;
+}
+
+.hierarchy .panels {
+  padding-top: 3em;
+}
+
+.pattern-buttons-and-calls-to-action h2 {
+  margin-bottom: 1em;
+}
+
+.bg { 
+  margin-top: 2em;
+  padding: 1.5em 1.5em 1.5em 1.5em
+}
+
+.pattern-buttons-and-calls-to-action .bg--light-pastel {
+  margin-bottom: 2em;
+}
+
+.pattern-buttons-and-calls-to-action .panels,
+.pattern-buttons-and-calls-to-action .panels div {
+  margin-top: 0;
+}
+
+.pattern-buttons-and-calls-to-action .cta {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.blocks {
+  width: 100%;
+  background-color: $light-pastel;
+  padding: 2em 0 2em 0;
+  margin: 0 0 2em 0;
+}
+
+.blocks .block--66 {
+    margin-bottom: 4em;
+  }
+  
+.blocks .guide-lastbanff {
+  margin-bottom: 5em;
+}
+
+.guide .guidepattern.pattern-tab-ui .display {
+  width: 100%;
+  float: none;
+  margin: 2em 0 6em 0;
+}
+
+.guide .guidepattern.pattern-tab-ui .panels {
+  width: 100%;
+  float: none;
+  margin-top: 0;
+}
+
+
+@media only all and (min-width: 41em) {
+  iframe {
+    display: block;
+  }  
+}
+
+@media only all and (min-width: 74em) {
+  
+  .blocks {
+    padding: 2em 2.5% 2em 2.5%;
+  }
+  
+  .guide .guidepattern .display, 
+  .guide .guidepattern .panels {
+    width: 48%;
+    float: left;
+    margin-top: 0;
+  }
+    
+  .guide .guidepattern.pattern-tab-ui .panels {
+    margin-left: 0;
+  }
+  
+  .guide .guidepattern .panels {
+    margin-left: 4%;
+  }
+  
+  .guide .guidepattern .panels.fullwidth {
+    width: 90%;
+    margin-left: 0;
+  }
+  
+  .guide .pattern-footer .hljs {
+    min-height: 25em;
+  }
+  
+  .webfontloader .hljs {
+    min-height: 26em;
+    max-height: 26em;
+  }
+  
+  .hierarchy .hljs {
+    max-height: 42em;
+  }
+  
+  .pattern-buttons-and-calls-to-action .hljs {
+    max-height: 50em;
+    padding: 1em;
+  }
+  
+  .pattern-blocks .hljs {
+    max-height: 43em;
+  }
+  
+  .pattern-form-fields .hljs {
+    max-height: 130em;
+  }
+
+  .pattern-site-favicon .hljs {
+    height: 8.75em;
+  }
+  
+  .pattern-responsive-tables .hljs {
+    max-height: 50em;
+  }
+  
+  .colour .hljs {
+    max-height: 50em;
+  }
+  
+}
+
+/* =======================
+  Code Blocks
+========================*/
+
+.hljs,
+.hljs * {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+.hljs {
+  background-color: #101010 !important;
+  font-size: 1.1em;
+  padding: 1em !important;
+  max-height: 17em;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    border: 0.2em solid #101010;
+    background-color: rgba(255,255,255,.7);
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.5);
+  }
+}
+
+.source pre,
+.style pre {
+  margin-top: -1.75em;
+}
+
+.panels ul li {
+  border: 0.1em solid #eaeaea;
+  &:focus {
+    border: 0.1em solid #E1BC29;
+  }
+}
+
+.panels ul li.linkout {
+  background-color: #fff;
+  color: #01B2CC;
+}
+
+/* ==========================================================================
+   Tabbed UI
+   ========================================================================== */
+
+/* Tabs
+   ========================================================================== */
+[role=tablist] {
+  display: none;
+}
+.js-tabs [role=tablist] {
+  display: inline;
+	padding: 0;
+}
+
+.js-tabs [role=tab] {
+	cursor: pointer;
+	color: #000;
+	background-color: #eaeaea;
+	list-style: none;
+	text-align: center;
+	line-height: 2.75;
+	margin: 0 0.25em 0.25em 0;
+}
+
+.js-tabs .panels a {
+  border-bottom: none;
+}
+
+@media (min-width:19.25em) {
+	.js-tabs [role=tab] {
+		display: inline-block;
+		width: auto;
+		padding: 0em 1.4em;
+	}
+}
+
+.js-tabs .js-tab-ui [aria-selected=true] {
+	color: #fff;
+	background-color: #101010;
+	border: 0.1em solid #101010;
+	&:focus {
+    border: 0.1em solid #E1BC29;
+  }
+}
+
+.js-tabs .js-tab-ui .linkout[aria-selected=true] {
+  color: #000;
+	background-color: #eaeaea;
+	border-color: #ccc;
+}
+
+/* Prevent FOUC */
+.js-tabs .js-panel {
+	display: none;
+}
+
+.js-tabs .js-panel.first {
+  display: block;
+}
+
+.js-tabs .js-panel__title {
+	display: none;
+}
+
+@media only all and (min-width: 41em) {
+  .js .guidenav-collapse {
+    position: fixed !important;
+    top: 0;
+    clip: auto;
+  }
+}

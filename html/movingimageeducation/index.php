@@ -351,6 +351,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                   
                   <h2 class="guidance">Text-specific Colours</h2>
                   <ul>
+	                  <li>
+                      <span class="link-text"><!--color fill--></span>
+                      <b>$link-text</b>
+                    </li>
                     <li>
                       <span class="mid-text"><!--color fill--></span>
                       <b>$mid-text</b>

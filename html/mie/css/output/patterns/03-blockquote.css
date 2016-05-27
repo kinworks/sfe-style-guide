@@ -13,27 +13,27 @@
   background-color: #222121; }
 
 .bg--dark {
-  background-color: #5C261B; }
+  background-color: #140431; }
 
 .bg--mid {
-  background-color: #8A2C1E; }
+  background-color: #412773; }
 
 .bg--light {
-  background-color: #C8412A; }
+  background-color: #B088BC; }
 
 .bg--light-pastel {
-  background-color: #F8826F; }
+  background-color: #D8ADE5; }
 
 .quote {
   margin: 1.5em 0;
   border-top: 0.1em solid;
   border-bottom: 0.1em solid;
-  border-color: #F8826F;
+  border-color: #D8ADE5;
   padding: 1em 1em;
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.3em;
-  color: #8A2C1E; }
+  color: #412773; }
 
 blockquote.quote__blockquote {
   margin: 0; }
@@ -46,7 +46,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #C8412A; }
+  color: #B088BC; }
 
 .quote em {
   font-style: normal; }

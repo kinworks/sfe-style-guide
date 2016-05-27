@@ -1,15 +1,17 @@
 //// Brand
 
-$light: #C8412A;
+$light: #B088BC;
 
-$mid: #8A2C1E; 
+$mid: #412773; 
 
-$dark: #5C261B; 
+$dark: #140431; 
 
 $darkest: #222121;
 
 
 //// Text-specific colours
+
+$link-text: #5F39AC;
 
 $mid-text: $mid;
 
@@ -24,7 +26,7 @@ $disabled-text: #666;
 
 $white: #ffffff; // Yes, really.
 
-$light-pastel: #F8826F;
+$light-pastel: #D8ADE5;
 
 .pattern {
   background: url(../../assets/pattern.png);

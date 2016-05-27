@@ -12,16 +12,16 @@
   background-color: #222121; }
 
 .bg--dark {
-  background-color: #5C261B; }
+  background-color: #140431; }
 
 .bg--mid {
-  background-color: #8A2C1E; }
+  background-color: #412773; }
 
 .bg--light {
-  background-color: #C8412A; }
+  background-color: #B088BC; }
 
 .bg--light-pastel {
-  background-color: #F8826F; }
+  background-color: #D8ADE5; }
 
 .header {
   background-color: #5C251B;
@@ -84,7 +84,7 @@
 
 .header__part--search {
   background-position: right top;
-  border-bottom: 0.3em solid #5C261B; }
+  border-bottom: 0.3em solid #140431; }
   .header__part--search form {
     background-color: inherit;
     margin: 0;
@@ -107,11 +107,11 @@
     font-weight: 600; }
   .header__part--search input[type="text"] {
     font-size: 1.1em;
-    border: 0.135em solid #C8412A;
+    border: 0.135em solid #B088BC;
     padding: 0.36em;
     height: 2.1375em; }
     .header__part--search input[type="text"]:focus {
-      border: 0.135em solid #F8826F; }
+      border: 0.135em solid #D8ADE5; }
   .header__part--search input[type="text"], .header__part--search input[type="submit"] {
     width: 100%;
     margin: 0; }
@@ -121,16 +121,16 @@
     float: left; }
   .header__part--search input[type="submit"] {
     color: #ffffff;
-    background-color: #C8412A;
+    background-color: #B088BC;
     font-size: 1.1em;
     outline: 0;
-    border: 0.135em solid #C8412A;
+    border: 0.135em solid #B088BC;
     max-width: 4.55625em;
     height: 2.14em; }
     .header__part--search input[type="submit"]:focus, .header__part--search input[type="submit"]:hover {
-      background-color: #F8826F;
-      border: 0.135em solid #F8826F;
-      color: #8A2C1E; }
+      background-color: #D8ADE5;
+      border: 0.135em solid #D8ADE5;
+      color: #412773; }
   .header__part--search .search__advanced {
     display: inline-block;
     font-size: 1em;
@@ -140,8 +140,8 @@
       border-color: #ffffff;
       color: #ffffff; }
     .header__part--search .search__advanced a:focus, .header__part--search .search__advanced a:hover {
-      color: #F8826F;
-      border-bottom: 0.1em dotted #C8412A; }
+      color: #D8ADE5;
+      border-bottom: 0.1em dotted #B088BC; }
   .header__part--search .form-item, .header__part--search .form-actions {
     margin: 0; }
 

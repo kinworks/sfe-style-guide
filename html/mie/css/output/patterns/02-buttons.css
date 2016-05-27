@@ -12,21 +12,21 @@
   background-color: #222121; }
 
 .bg--dark {
-  background-color: #5C261B; }
+  background-color: #140431; }
 
 .bg--mid {
-  background-color: #8A2C1E; }
+  background-color: #412773; }
 
 .bg--light {
-  background-color: #C8412A; }
+  background-color: #B088BC; }
 
 .bg--light-pastel {
-  background-color: #F8826F; }
+  background-color: #D8ADE5; }
 
 /* Buttons / CTAs */
 .btn {
   font-size: 1.13em;
-  background-color: #5C261B;
+  background-color: #140431;
   color: #fff;
   display: inline-block;
   padding: 0.6em 1.2em;
@@ -39,12 +39,12 @@
   -o-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   border-top: none;
-  border-bottom: 0.2em solid #2e130e; }
+  border-bottom: 0.2em solid #0a0219; }
   .btn:hover {
     text-decoration: underline;
-    box-shadow: inset 0 0 0 0.2em #b74b36;
-    background-color: #893928;
-    border-bottom: 0.2em solid #3c1912; }
+    box-shadow: inset 0 0 0 0.2em #480eb0;
+    background-color: #2e0970;
+    border-bottom: 0.2em solid #0d0320; }
 
 .btn--darkest {
   background-color: #222121;
@@ -55,30 +55,30 @@
     border-bottom: 0.2em solid #1f1e1e; }
 
 .btn--mid {
-  background-color: #8A2C1E;
-  border-bottom: 0.2em solid #611f15; }
+  background-color: #412773;
+  border-bottom: 0.2em solid #2e1b51; }
   .btn--mid:hover {
-    box-shadow: inset 0 0 0 0.2em #d44e3a;
-    background-color: #8A2C1E;
-    border-bottom: 0.2em solid #7c281b; }
+    box-shadow: inset 0 0 0 0.2em #6f45c0;
+    background-color: #412773;
+    border-bottom: 0.2em solid #3b2368; }
 
 .btn--light {
-  background-color: #C8412A;
+  background-color: #B088BC;
   color: #ffffff;
-  border-bottom: 0.2em solid #8c2d1d; }
+  border-bottom: 0.2em solid #825291; }
   .btn--light:hover {
-    box-shadow: inset 0 0 0 0.2em #e3897a;
-    background-color: #C8412A;
-    border-bottom: 0.2em solid #a03422; }
+    box-shadow: inset 0 0 0 0.2em #d0b8d7;
+    background-color: #B088BC;
+    border-bottom: 0.2em solid #945fa5; }
 
 .btn--light-pastel {
-  background-color: #F8826F;
+  background-color: #D8ADE5;
   color: #222121;
-  border-bottom: 0.2em solid #f5472b; }
+  border-bottom: 0.2em solid #bb70d2; }
   .btn--light-pastel:hover {
-    box-shadow: inset 0 0 0 0.2em #fbb4a9;
-    background-color: #F8826F;
-    border-bottom: 0.2em solid #f6644d; }
+    box-shadow: inset 0 0 0 0.2em #e8ceef;
+    background-color: #D8ADE5;
+    border-bottom: 0.2em solid #c98edb; }
 
 .btn--contrast {
   background-color: #008FBB;
@@ -101,7 +101,7 @@
   border-bottom: 0.2em solid #b3b3b3;
   color: #222121; }
   .btn--white:hover {
-    box-shadow: inset 0 0 0 0.2em #F8826F;
+    box-shadow: inset 0 0 0 0.2em #D8ADE5;
     background-color: #ffffff;
     border-bottom: 0.2em solid #b3b3b3; }
 

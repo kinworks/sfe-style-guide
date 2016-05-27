@@ -13,21 +13,21 @@
   background-color: #222121; }
 
 .bg--dark {
-  background-color: #5C261B; }
+  background-color: #140431; }
 
 .bg--mid {
-  background-color: #8A2C1E; }
+  background-color: #412773; }
 
 .bg--light {
-  background-color: #C8412A; }
+  background-color: #B088BC; }
 
 .bg--light-pastel {
-  background-color: #F8826F; }
+  background-color: #D8ADE5; }
 
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: #feece9;
+  background-color: #f9f3fb;
   text-align: center;
   margin: 0 0 2em 0; }
 
@@ -66,19 +66,19 @@
     /* stops bg color from leaking outside the border: */
     text-align: center;
     border-bottom: none;
-    background-color: #5C261B;
+    background-color: #140431;
     color: #ffffff;
     font-weight: 3 00; }
   .list__jump-nav li:nth-child(2n) a {
-    background-color: #7a3224; }
+    background-color: #25075b; }
   .list__jump-nav li:hover a {
-    background-color: #8A2C1E; }
+    background-color: #412773; }
   .list__jump-nav li:before {
     content: none;
     counter-increment: none; }
   .list__jump-nav li.not-available a {
     background-color: inherit;
-    color: #8A2C1E;
+    color: #412773;
     cursor: not-allowed; }
     .list__jump-nav li.not-available a:hover {
       background-color: inherit; }
@@ -88,7 +88,7 @@
 
 .list__content .heading span {
   font-weight: 300;
-  color: #fde0db;
+  color: #f5eaf9;
   display: inline-block;
   margin: 0 0.5em 0 0.2em; }
 
@@ -96,7 +96,7 @@
   font-size: 0.82em;
   font-weight: 300;
   font-style: italic;
-  color: #8A2C1E; }
+  color: #412773; }
 
 .list__content ol {
   list-style: none;

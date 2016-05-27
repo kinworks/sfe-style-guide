@@ -8,6 +8,6 @@
 			<select id="theme" style="color: black;">
 				<option>Select Theme...</option>
 				<option value="/">Scotland on Screen</option>
-				<option value="screeningshorts/">Screening Shorts</option>
-				<option value="movingimageeducation/">Moving Image Education</option>
+				<option value="/screeningshorts/">Screening Shorts</option>
+				<option value="/movingimageeducation/">Moving Image Education</option>
 			</select>

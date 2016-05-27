@@ -54,6 +54,24 @@ module.exports = function(grunt) {
                 dest: 'html/ss/css/output/patterns',
                 ext: '.css'
             }]
+        },
+        compilemie: {
+            files: [{
+                expand: true,
+                cwd: 'html/mie/css/sass',
+                src: ['*.scss'],
+                dest: 'html/mie/css/output',
+                ext: '.css'
+            }]
+        },
+        patternssos: {
+            files: [{
+                expand: true,
+                cwd: 'html/mie/css/sass/patterns',
+                src: ['*.scss'],
+                dest: 'html/mie/css/output/patterns',
+                ext: '.css'
+            }]
         }
 
     },
@@ -71,6 +89,7 @@ module.exports = function(grunt) {
         files: {
           'html/sos/css/sass/_Patterns-ImportMap.scss': 'html/sos/css/sass/patterns/*.scss',
           'html/ss/css/sass/_Patterns-ImportMap.scss': 'html/ss/css/sass/patterns/*.scss',
+          'html/mie/css/sass/_Patterns-ImportMap.scss': 'html/mie/css/sass/patterns/*.scss',
         },
         options: {
           useSingleQuotes: false,
@@ -156,6 +175,45 @@ module.exports = function(grunt) {
 			 	}      
 		
 		},
+		
+		mieicons: 
+   			{
+		    files: 
+		    		[{
+              // MIE config
+              expand: true,
+              cwd: 'html/mie/assets-icons/src',
+              src: ['*.svg', '*.png'],
+              dest: "html/mie/assets-icons/output"
+	          }],
+				
+			options: 
+						{
+	      	    // optional config properties
+	     	      // CSS filenames
+	      	      datasvgcss: "icons.data.svg.css",
+	      	      datapngcss: "icons.data.png.css",
+	      	      urlpngcss: "icons.fallback.css",
+	
+	      	      // preview HTML filename
+	      	      previewhtml: "preview.html",
+	
+	      	      // Unicon loader code snippet filename
+	              loadersnippet: "unicon.loaderjavascript.txt",
+	
+	              // folder name (within dest) for png output
+	              pngfolder: "./png",
+	
+	              // prefix for CSS classnames
+	              cssprefix: ".icon-",
+	
+	              // This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""
+	              cssbasepath: ""
+           
+	     	    }
+			 	}      
+		
+		},
     
     svgmin: {
         options: {
@@ -181,6 +239,12 @@ module.exports = function(grunt) {
                 cwd: 'html/ss/assets-icons/raw',
                 src: ['*.svg'],
                 dest: "html/ss/assets-icons/src"
+            	},
+            	{
+                expand: true,
+                cwd: 'html/mie/assets-icons/raw',
+                src: ['*.svg'],
+                dest: "html/mie/assets-icons/src"
             	}
             ]
         }
@@ -191,22 +255,26 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['html/sos/css/sass/*.scss',
-        			 'html/ss/css/sass/*.scss'],
+        			 'html/ss/css/sass/*.scss',
+        			 'html/mie/css/sass/*.scss'],
         tasks: ['sass']
       },
       sass_globbing: {
         files: ['html/sos/css/sass/patterns/*.scss',
-        			 'html/ss/css/sass/patterns/*.scss'],
+        			 'html/ss/css/sass/patterns/*.scss',
+        			 'html/mie/css/sass/patterns/*.scss'],
         tasks: ['sass_globbing']
       },
       svgmin: {
         files: ['html/sos/assets-icons/raw/*.svg',
-        			 'html/ss/assets-icons/raw/*.svg'],
+        			 'html/ss/assets-icons/raw/*.svg',
+        			 'html/mie/assets-icons/raw/*.svg'],
         tasks: ['svgmin']
       },
       grunticon: {
         files: ['html/sos/assets-icons/src/*.svg',
-        			 'html/ss/assets-icons/src/*.svg'],
+        			 'html/ss/assets-icons/src/*.svg',
+        			 'html/mie/assets-icons/src/*.svg'],
         tasks: ['grunticon']
       },
     },

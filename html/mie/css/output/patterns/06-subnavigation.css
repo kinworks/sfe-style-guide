@@ -40,13 +40,13 @@
   .subnav .subnav__item:before, .subnav .subnav__item.subnav__item--sub-parent:before {
     content: "— "; }
   .subnav .subnav__item a:hover, .subnav .subnav__item.subnav__item--sub-parent a:hover {
-    color: #222121;
-    border-color: #222121;
+    color: #140431;
+    border-color: #140431;
     border-bottom: 0.1em solid; }
   .subnav .subnav__item ul li a, .subnav .subnav__item.subnav__item--sub-parent ul li a {
     color: #B088BC; }
   .subnav .subnav__item ul li a.active, .subnav .subnav__item.subnav__item--sub-parent ul li a.active {
-    color: #222121; }
+    color: #140431; }
 
 .subnav .subnav__item.subnav__item--parent {
   margin: 0 0 0.5em 0; }
@@ -54,19 +54,19 @@
     content: ""; }
   .subnav .subnav__item.subnav__item--parent a {
     font-weight: 400;
-    color: #222121;
-    border-color: #222121; }
+    color: #140431;
+    border-color: #140431; }
     .subnav .subnav__item.subnav__item--parent a:hover {
       color: #412773;
       border-color: #412773; }
 
 .subnav .subnav__item.subnav__item--sub-parent a {
-  color: #222121;
-  border-color: #222121; }
+  color: #140431;
+  border-color: #140431; }
 
 .subnav .subnav__item a.active {
   border-bottom: none;
-  color: #222121;
+  color: #140431;
   cursor: not-allowed; }
 
 /*# sourceMappingURL=06-subnavigation.css.map */

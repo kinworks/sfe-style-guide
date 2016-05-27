@@ -5,7 +5,7 @@
 // sections, then enhanced via media query
 
 .header {
-  background-color: $header;
+  background-color: $dark;
   width: 100%;
   margin: 0;
   text-align: center;
@@ -19,11 +19,11 @@
 .header__part--brand {
   background-position: left top;
   a {border-bottom: none;}
-  .icon-ss-logo {
-    margin: 2em 8% 0 8%;
+  .icon-mie-logo {
+    margin: 1.75em 8% 0.75em 8%;
     width: 84%;
-    height: 5.75em;
-    max-width: 17.8125em;
+    height: 7.375em;
+    max-width: 18.1875em;
   }
 }
 
@@ -58,9 +58,9 @@
 }
 
 .header__search-trigger {
-  background-color: $contrast;
+  background-color: $mid;
   cursor: pointer;
-  border-bottom: 0.3em solid $contrast-light;
+  border-bottom: 0.3em solid scale-color($mid, $lightness: -30%);
   .icon-search {
     width: 1.6875em;
     height: 1.75em;
@@ -86,13 +86,15 @@
     background-color: inherit;
     margin: 0;
     width: 100%;
-    padding: 3.1em 0 0 0;
   }
   .search__container {
     width: 100%;
     max-width: 20em;
     margin: 0 auto 0 auto;
-    text-align: left;
+    padding: 0.5em 0 0 0;
+    text-align: center;
+    background-position: center top;
+    height: 14.8125em;
   }
   .form-item-search-block-form {
     float: left;
@@ -145,6 +147,7 @@
     font-size: 1em;
     font-weight: 300;
     padding-top: 0.5em;
+    margin: 0 auto;
     a {
 	    border-color: $white;
 	    color: $white;
@@ -187,16 +190,15 @@
   .header__part--search {
     form {
       padding: 1.3em 0 0 0;
-      width: 90%;
+      width: 100%;
       float: right;
     }
     .search__container {
       text-align: right;
+      padding: 0;
     }
   }
   
-  
-
   
   // This has the same effect as .container class; these fixes will
   // constrain the header items to an 80em width
@@ -204,17 +206,18 @@
   .header__part--brand {
     text-align: left;
   }
-  .header__part--brand .icon-sos-logo {
-    margin: 2em 0 0 10%;
+  .header__part--brand .icon-mie-logo {
+    margin: 1.75em 0 0.75em 10%;
   }
   .header__part--search {
     text-align: right;
-    padding: 1.8em 5% 0 0;
+    padding: 0 5% 0 0;
   }
   .header__part--search .search__container {
     margin: 0 0 0 0;
     float: right;
     max-width: 18em;
+    padding: 1.5em 0 0 0;
   }
   .header__part--search .search__advanced {
     max-width: 12em;
@@ -239,12 +242,12 @@
   .header__part--brand {
     text-align: right;
   }
-  .header__part--brand .icon-ss-logo {
-    margin: 2em 22.5em 0 0;
+  .header__part--brand .icon-mie-logo {
+    margin: 1.75em 22.5em 0.75em 0;
   }
   .header__part--search {
     text-align: left;
-    padding: 1.8em 0 0 0;
+    padding: 0;
   }
   .header__part--search .search__container {
     margin: 0 0 0 22em;

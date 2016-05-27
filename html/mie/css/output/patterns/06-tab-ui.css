@@ -95,7 +95,7 @@
     display: inline-block;
     width: 25%;
     cursor: pointer;
-    color: #222121;
+    color: #140431;
     font-weight: 400;
     background-color: inherit;
     list-style: none;
@@ -114,7 +114,7 @@
     padding: 0.2em 1em 0.86em 0;
     border-bottom: 0.15em solid #ac51c8; }
     .js-tabs .tabs .tabs__print-all a {
-      color: #222121;
+      color: #140431;
       text-align: right;
       text-decoration: underline; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
@@ -125,7 +125,7 @@
     border-color: #ac51c8;
     border-bottom: 0.15em solid #ffffff; }
     .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true]:focus {
-      border-color: #008FBB;
+      border-color: #D96E10;
       border-bottom: 0.15em solid #ffffff;
       text-decoration: underline;
       color: #140431;

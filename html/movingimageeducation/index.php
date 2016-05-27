@@ -343,10 +343,6 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                       <span class="dark"><!--color fill--></span>
                       <b>$dark</b>
                     </li>
-                    <li>
-                      <span class="darkest"><!--color fill--></span>
-                      <b>$darkest</b>
-                    </li>
                   </ul>
                   
                   <h2 class="guidance">Text-specific Colours</h2>
@@ -358,10 +354,6 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                     <li>
                       <span class="mid-text"><!--color fill--></span>
                       <b>$mid-text</b>
-                    </li>
-                    <li>
-                      <span class="dark-red-text"><!--color fill--></span>
-                      <b>$dark-red-text</b>
                     </li>
                     <li>
                       <span class="dark-text"><!--color fill--></span>
@@ -548,7 +540,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
             <h2 class="guidance">Header Block</h2>
             <p class="guidance">
-              This is the header block style, currently depicting the header for Scotland on Screen. <a href="/?mode=test#layout"><b>View it in test mode</b></a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
+              This is the header block style, currently depicting the header for Scotland on Screen. <a href="?mode=test#layout"><b>View it in test mode</b></a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
             </p>
             <p class="guidance">
               There's a lot of tooling used in this heading example. All vector assets are produced in SVG, and passed into a Grunt workflow taking them through SVGMin and Grunticon, meaning all vector assets used on a given SFE website are from a single HTTP request except in browsers that cannot accept Base64-encoded stylesheets, in which case they get auto-generated PNG assets instead. The navigation for search only collapses showing the trigger button if JS successfully loads, and uses <a href="http://responsive-nav.com">Responsive-nav.js</a> for the collapse (the same library used for the core navigation).
@@ -562,7 +554,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             
             <header class="header clearfix">
 
-      <div class="header__part header__part--brand icon-header-left">
+      <div class="header__part header__part--brand">
         <a href="/" title="Go to Homepage" data-ga-cat='Header' data-ga-label='Logo Clicked' class="js-ga-event">
           <i class="icon-<?php echo $site; ?>-logo">{{Site Name}} Logo</i>
         </a>
@@ -576,8 +568,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         </div>
       </div>
       
-      <div class="header__part header__part--search icon-header-right search-collapse">
-        <div class="search__container clearfix">  
+      <div class="header__part header__part--search search-collapse">
+        <div class="search__container icon-header-right clearfix">  
           
             <div class="region region-search">
     <div id="block-search-form" class="block block-search">

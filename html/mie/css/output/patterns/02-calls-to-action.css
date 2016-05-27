@@ -37,7 +37,7 @@
   margin: 0 0 1.5em 0;
   padding: 0.8em;
   background-color: #412773;
-  border-left: 1em solid #222121;
+  border-left: 1em solid #140431;
   border-bottom: none;
   -webkit-transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
@@ -61,18 +61,18 @@
   height: 2.125em; }
 
 .cta--light {
-  background-color: #008FBB;
-  border-color: #00A3DA; }
+  background-color: #D96E10;
+  border-color: #FBA458; }
   .cta--light span {
     color: #ffffff; }
   .cta--light:hover {
-    background-color: #00a0d2; }
+    background-color: #eb7711; }
 
 .cta--light-alt {
-  background-color: #5AA641;
-  border-color: #83BF52; }
+  background-color: #6381BF;
+  border-color: #90AEEC; }
   .cta--light-alt:hover {
-    background-color: #62b446; }
+    background-color: #6e8ac3; }
 
 .cta.icon-pattern {
   border-color: #B088BC; }
@@ -118,9 +118,9 @@
     border-left: 1.5em solid #140431;
     padding: 0.5em 0.8em 0.5em 0.8em; }
   .cta--light {
-    border-color: #00A3DA; }
+    border-color: #FBA458; }
   .cta--light-alt {
-    border-color: #83BF52; }
+    border-color: #90AEEC; }
   .cta span {
     width: 80%;
     float: left;

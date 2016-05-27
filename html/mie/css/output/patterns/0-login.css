@@ -29,7 +29,7 @@
   padding: 0.5em 0.8em 0.5em 0.8em;
   margin: 0 auto 0 auto;
   display: block;
-  border-left: 1em solid #222121;
+  border-left: 1em solid #140431;
   cursor: pointer; }
   .login__trigger.cta .icon-arrow-down, .login__trigger.cta .icon-arrow-up, .login__trigger.cta .icon-arrow-right, .logout__trigger.cta .icon-arrow-down, .logout__trigger.cta .icon-arrow-up, .logout__trigger.cta .icon-arrow-right {
     width: 0.625em;
@@ -73,7 +73,7 @@
   .login__sso .login__sso__block--shibboleth .btn {
     margin-bottom: 0; }
     .login__sso .login__sso__block--shibboleth .btn:hover {
-      box-shadow: inset 0 0 0 0.2em #62b446; }
+      box-shadow: inset 0 0 0 0.2em #6e8ac3; }
 
 .login__cms {
   padding-top: 2em;
@@ -113,10 +113,10 @@
     background-color: #412773;
     background-image: none; }
   .login__trigger--top.cta {
-    background-color: #181717;
+    background-color: #0e0322;
     padding: 0.7em 8% 0.5em 8%; }
     .login__trigger--top.cta:hover {
-      background-color: #222121; }
+      background-color: #140431; }
   .login__trigger--top.cta .login__trigger--top__container {
     max-width: 10em; }
   .login__sso {

@@ -1,11 +1,6 @@
 // StyleGuide Imports (dependencies for this pattern): 
 @import '../_2-mixins.scss'; @import '../_4-colours.scss';
 
-.icon-lock-white {
-	width: 1em;
-	height: 1.375em;
-}
-
 .nav__trigger {
   background-repeat: repeat;
   background-color: $dark-text;
@@ -30,6 +25,10 @@
 .main-nav {
   font-size: 1em;
   z-index: 100;
+}
+
+.secondary-nav-spaceholder {
+	display: none;
 }
 
 .main-nav li {
@@ -186,32 +185,44 @@
   
   .main-nav li {
 	  background-color: scale-color($darkest, $lightness: -15%);
-	  .icon-lock-white {
-		  display: block;
-		  float: left;
-		  margin-right: 0.6em;
-	  }
   }
   
   .main-nav li a.active {
-		color: $light-pastel; 
+		color: $white;
+		text-decoration: underline; 
 	}
   
   .js nav.nav-collapse {
     position: static !important;
-    border-bottom: 0.3em solid $light;
   }
   
   // Build our sections into 3-up - 2up, two-row list:
   
+  .secondary-nav-spaceholder {
+	  display: inline-block;
+	  width: 100%;
+	  background-color: $mid;
+	  padding: 1em 5% 1em 5%;
+	  color: $white;
+  }
+  
   .main-nav li {
     z-index: 100;
-    width: 33.3333%;
-    height: 4.8125em;
+    height: 3.6em;
+    padding: 0 5% 0 5%;
+    text-align: center;
     float: left;
     border-bottom: 0.1em solid scale-color($dark, $lightness: 10%);
-    &:nth-child(2n) {
-      background-color: inherit;
+    &:nth-child(1) {
+      width: 30%;
+    }    
+    &:nth-child(2) {
+      //background-color: inherit;
+      padding: 0 2% 0 2%;
+      width: 35%;
+    }
+    &:nth-child(3) {
+      width: 35%;
     }
     &:nth-child(4),
 		&:nth-child(5) {
@@ -234,7 +245,7 @@
     -webkit-overflow-scrolling: touch; 
     min-width: 33.333%;
     position: absolute;
-    margin-top: 4.7em;
+    margin-top: 3.6em;
     li a {
       padding: 0.7em 1.5em 0.7em 1em;
     }

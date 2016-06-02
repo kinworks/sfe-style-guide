@@ -1703,10 +1703,6 @@ footer i {
 .bg--light-pastel {
   background-color: #D8ADE5; }
 
-.icon-lock-white {
-  width: 1em;
-  height: 1.375em; }
-
 .nav__trigger {
   background-repeat: repeat;
   background-color: #140431;
@@ -1728,6 +1724,9 @@ footer i {
 .main-nav {
   font-size: 1em;
   z-index: 100; }
+
+.secondary-nav-spaceholder {
+  display: none; }
 
 .main-nav li {
   background-color: #412773;
@@ -1835,23 +1834,31 @@ footer i {
     display: none; }
   .main-nav li {
     background-color: #1d1c1c; }
-    .main-nav li .icon-lock-white {
-      display: block;
-      float: left;
-      margin-right: 0.6em; }
   .main-nav li a.active {
-    color: #D8ADE5; }
+    color: #ffffff;
+    text-decoration: underline; }
   .js nav.nav-collapse {
-    position: static !important;
-    border-bottom: 0.3em solid #B088BC; }
+    position: static !important; }
+  .secondary-nav-spaceholder {
+    display: inline-block;
+    width: 100%;
+    background-color: #412773;
+    padding: 1em 5% 1em 5%;
+    color: #ffffff; }
   .main-nav li {
     z-index: 100;
-    width: 33.3333%;
-    height: 4.8125em;
+    height: 3.6em;
+    padding: 0 5% 0 5%;
+    text-align: center;
     float: left;
     border-bottom: 0.1em solid #25075b; }
-    .main-nav li:nth-child(2n) {
-      background-color: inherit; }
+    .main-nav li:nth-child(1) {
+      width: 30%; }
+    .main-nav li:nth-child(2) {
+      padding: 0 2% 0 2%;
+      width: 35%; }
+    .main-nav li:nth-child(3) {
+      width: 35%; }
     .main-nav li:nth-child(4), .main-nav li:nth-child(5) {
       width: 50%;
       background-color: #222121; }
@@ -1865,7 +1872,7 @@ footer i {
     -webkit-overflow-scrolling: touch;
     min-width: 33.333%;
     position: absolute;
-    margin-top: 4.7em; }
+    margin-top: 3.6em; }
     .js nav.nav-collapse .sub-menu.open li a {
       padding: 0.7em 1.5em 0.7em 1em; }
   .js nav.nav-collapse .main-nav li:nth-child(4) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(5) .sub-menu.open {

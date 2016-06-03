@@ -1,3 +1,20 @@
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+
+/////////////    WARNING
+
+//////////////////////////////////////////
+//////////////////////////////////////////
+//////////////////////////////////////////
+
+// I've commented out some sections of this gruntfile to run compilation faster for MIE. To compile the whole Styleguide, you'll need to uncomment the sections marked with 
+// UNCOMMENT_TO_RUN
+
 module.exports = function(grunt) {
 
 
@@ -19,6 +36,8 @@ module.exports = function(grunt) {
         options: {
             sourceMap: true
         },
+        // UNCOMMENT_TO_RUN
+        /*
         compilesos: {
             files: [{
                 expand: true,
@@ -55,6 +74,7 @@ module.exports = function(grunt) {
                 ext: '.css'
             }]
         },
+        */
         compilemie: {
             files: [{
                 expand: true,
@@ -64,7 +84,7 @@ module.exports = function(grunt) {
                 ext: '.css'
             }]
         },
-        patternssos: {
+        patternsmie: {
             files: [{
                 expand: true,
                 cwd: 'html/mie/css/sass/patterns',
@@ -87,8 +107,11 @@ module.exports = function(grunt) {
     sass_globbing: {
       patterns: {
         files: {
+          // UNCOMMENT_TO_RUN
+         /*
           'html/sos/css/sass/_Patterns-ImportMap.scss': 'html/sos/css/sass/patterns/*.scss',
           'html/ss/css/sass/_Patterns-ImportMap.scss': 'html/ss/css/sass/patterns/*.scss',
+          */
           'html/mie/css/sass/_Patterns-ImportMap.scss': 'html/mie/css/sass/patterns/*.scss',
         },
         options: {
@@ -100,6 +123,8 @@ module.exports = function(grunt) {
     
   grunticon: 
   	{
+	  // UNCOMMENT_TO_RUN
+        /*
 	  sosicons: 
 	  		{
 		    files: 
@@ -173,6 +198,7 @@ module.exports = function(grunt) {
            
 	     	    }
 			 	},      
+		*/
 		
 		mieicons: 
    			{
@@ -226,6 +252,8 @@ module.exports = function(grunt) {
         dist: {
           files: 
             [
+            	// UNCOMMENT_TO_RUN
+								/*
             	{
                 expand: true,
                 cwd: 'html/sos/assets-icons/raw',
@@ -238,6 +266,7 @@ module.exports = function(grunt) {
                 src: ['*.svg'],
                 dest: "html/ss/assets-icons/src"
             	},
+            	*/
             	{
                 expand: true,
                 cwd: 'html/mie/assets-icons/raw',
@@ -252,26 +281,30 @@ module.exports = function(grunt) {
 
     watch: {
       sass: {
-        files: ['html/sos/css/sass/*.scss',
-        			 'html/ss/css/sass/*.scss',
+        files: [// UNCOMMENT_TO_RUN
+        /* 'html/sos/css/sass/*.scss',
+        			 'html/ss/css/sass/*.scss',*/
         			 'html/mie/css/sass/*.scss'],
         tasks: ['sass']
       },
       sass_globbing: {
-        files: ['html/sos/css/sass/patterns/*.scss',
-        			 'html/ss/css/sass/patterns/*.scss',
+        files: [// UNCOMMENT_TO_RUN
+        /* 'html/sos/css/sass/patterns/*.scss',
+        			 'html/ss/css/sass/patterns/*.scss',*/
         			 'html/mie/css/sass/patterns/*.scss'],
         tasks: ['sass_globbing']
       },
       svgmin: {
-        files: ['html/sos/assets-icons/raw/*.svg',
-        			 'html/ss/assets-icons/raw/*.svg',
+        files: [// UNCOMMENT_TO_RUN
+        /*'html/sos/assets-icons/raw/*.svg',
+        			 'html/ss/assets-icons/raw/*.svg',*/
         			 'html/mie/assets-icons/raw/*.svg'],
         tasks: ['svgmin']
       },
       grunticon: {
-        files: ['html/sos/assets-icons/src/*.svg',
-        			 'html/ss/assets-icons/src/*.svg',
+        files: [// UNCOMMENT_TO_RUN
+        /*'html/sos/assets-icons/src/*.svg',
+        			 'html/ss/assets-icons/src/*.svg',*/
         			 'html/mie/assets-icons/src/*.svg'],
         tasks: ['grunticon']
       },

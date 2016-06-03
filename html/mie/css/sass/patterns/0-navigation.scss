@@ -32,10 +32,10 @@
 }
 
 .main-nav li {
-  background-color: $mid;
+  background-color: scale-color($contrast-alt, $lightness: -5%);
   margin-bottom: 0;
   &:nth-child(2n) {
-    background-color: $dark;
+    background-color: scale-color($contrast-alt, $lightness: -14%);
   }
   .icon-lock-white {
 	  vertical-align: -0.3em;
@@ -113,22 +113,20 @@
 }
 
 .main-nav .sub-menu li {
-  background-color: $dark;
+  background-color: scale-color($mid, $lightness: -20%);
   &:hover {
-    background-color: scale-color($dark, $lightness: -40%);
+    background-color: scale-color($mid, $lightness: -45%);
   }
   &:hover a {
     text-decoration: underline;
   }
   &:nth-child(2n) {
-    background-color: scale-color($dark, $lightness: -15%);
+    background-color: scale-color($mid, $lightness: -35%);
     &:hover {
-      background-color: scale-color($dark, $lightness: -40%);
+      background-color: scale-color($mid, $lightness: -55%);
     }
   }
 }
-
-
 
 .js .nav__trigger {
   position: fixed;
@@ -184,7 +182,10 @@
   }
   
   .main-nav li {
-	  background-color: scale-color($darkest, $lightness: -15%);
+	  background-color: scale-color($contrast-alt, $lightness: -15%);
+	  &:nth-child(2) {
+		  background-color: scale-color($contrast-alt, $lightness: -25%);
+	  }
   }
   
   .main-nav li a.active {
@@ -200,6 +201,7 @@
   
   .secondary-nav-spaceholder {
 	  display: inline-block;
+	  text-align: center;
 	  width: 100%;
 	  background-color: $mid;
 	  padding: 1em 5% 1em 5%;
@@ -209,30 +211,57 @@
   .main-nav li {
     z-index: 100;
     height: 3.6em;
-    padding: 0 5% 0 5%;
+    padding: 0;
     text-align: center;
     float: left;
     border-bottom: 0.1em solid scale-color($dark, $lightness: 10%);
     &:nth-child(1) {
-      width: 30%;
+      width: 25%;
+    /*  padding: 0;
+      a {
+	      width: 100%;
+	      padding: 0.8em 5% 1em 5%;
+      }*/
     }    
+    &:nth-child(1),
+    &:nth-child(5) {
+	    padding: 0;
+      a {
+	      width: 100%;
+	      padding: 0.8em 5% 1em 5%;
+      }
+    }
     &:nth-child(2) {
-      //background-color: inherit;
-      padding: 0 2% 0 2%;
-      width: 35%;
+      width: 37%;
     }
     &:nth-child(3) {
-      width: 35%;
+      width: 38%;
     }
+    &:nth-child(4) {
+			border-right: 0.1em solid $mid;
+		}
     &:nth-child(4),
 		&:nth-child(5) {
 			width: 50%; 
 			background-color: $darkest;
 		}
-		&:nth-child(4) {
-			border-right: 0.1em solid $mid;
+	}
+	
+	//Make the open submenu the same width as the section it's opened from,
+	//even though they vary in width at our current breakpoint
+	.js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open {
+		width: 37%;
+	}
+	.js nav.nav-collapse .main-nav li:nth-child(3) .sub-menu.open {
+		width: 38%;
+	}
+	.js nav.nav-collapse .main-nav li:nth-child(4),
+	.js nav.nav-collapse .main-nav li:nth-child(5) {
+		.sub-menu.open {
+			min-width: 50%; 
 		}
 	}
+	
   
   .main-nav .parent-item {
     max-width: 80%;
@@ -245,18 +274,12 @@
     -webkit-overflow-scrolling: touch; 
     min-width: 33.333%;
     position: absolute;
-    margin-top: 3.6em;
+    margin-top: 3.5em;
+    text-align: left;
     li a {
       padding: 0.7em 1.5em 0.7em 1em;
     }
   }
-
-	.js nav.nav-collapse .main-nav li:nth-child(4),
-	.js nav.nav-collapse .main-nav li:nth-child(5) {
-		.sub-menu.open {
-			min-width: 50%; 
-		}
-	}
   
   .main-nav .sub-menu {
     z-index: 100;
@@ -267,6 +290,7 @@
     width: 100%;
     float: none;
     height: auto;
+    text-align: left;
   }
   
 } //end min 41em

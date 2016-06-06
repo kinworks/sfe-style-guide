@@ -20,7 +20,7 @@
     color: $white;
     float: left;
   }
-}
+}2
 
 .main-nav {
   font-size: 1em;
@@ -204,7 +204,7 @@
 	  text-align: center;
 	  width: 100%;
 	  background-color: $mid;
-	  padding: 1em 5% 1em 5%;
+	  padding: 1.1em 5% 1.2em 5%;
 	  color: $white;
   }
   
@@ -214,7 +214,7 @@
     padding: 0;
     text-align: center;
     float: left;
-    border-bottom: 0.1em solid scale-color($contrast-alt, $lightness: -30%);
+    //border-bottom: 0.1em solid scale-color($contrast-alt, $lightness: -30%);
     &:nth-child(1) {
       width: 25%;
     /*  padding: 0;
@@ -228,7 +228,7 @@
 	    padding: 0;
       a {
 	      width: 100%;
-	      padding: 0.8em 5% 1em 5%;
+	      padding: 0.9em 5% 1em 5%;
       }
     }
     &:nth-child(2) {
@@ -265,7 +265,7 @@
   
   .js .main-nav .parent-item {
     float: none;
-    padding-top: 0.8em;
+    padding-top: 0.9em;
   }
   
   .js .main-nav .parent .sectiontoggle {
@@ -280,7 +280,7 @@
     -webkit-overflow-scrolling: touch; 
     min-width: 33.333%;
     position: absolute;
-    margin-top: 0.35em;
+    margin-top: 0.39em;
     text-align: left;
     li a {
       padding: 0.7em 1.5em 0.7em 1em;
@@ -297,6 +297,7 @@
     float: none;
     height: auto;
     text-align: left;
+    border: none;
     &:nth-child(4) {
 	    background-color: scale-color($mid, $lightness: -35%);
 	    &:hover {
@@ -313,9 +314,9 @@
   
 } //end min 41em
 
-@media only all and (min-width: 56em) {
+@media only all and (min-width: 59em) {
   
-  // Build our sections into 6-up, one-row list:
+  // Build our sections into 5-up, one-row list:
   
   nav {
     background-color: $dark;
@@ -342,7 +343,7 @@
     margin-right: 2.5%;
     padding: 0.4em 0 1.2em 0;
     background-color: inherit;
-    height: auto;
+    height: 100%;
     float: left;
     border-bottom: none;
     &:nth-child(2n) {
@@ -355,27 +356,21 @@
       height: auto;
     }
     &:nth-child(1) {
-	    width: 10%;
+	    width: 12%;
     }
     &:nth-child(2) {
-	    width: 22%;
+	    width: 20%;
     }
     &:nth-child(3) {
-	    width: 27%;
+	    width: 20%;
     }
     &:nth-child(4) {
-	    width: 13%;
+	    width: 20%;
     }
     &:nth-child(5) {
 	    width: 18%;
 	    margin-right: 0;
     }
-  }
-  
-  .main-nav li .icon-lock-white {
-	  float: none;
-	  background-size: 1em 1.375em;
-	  margin: 0 auto 0.5em auto; 
   }
   
   .main-nav li a,
@@ -387,9 +382,9 @@
   }
   
   .main-nav li.home,
-  .main-nav li.about {
+  .main-nav li.browse-films {
 	  a {
-		  margin-top: 1.875em;
+		  margin-top: 0.375em;
 	  }
   }
   
@@ -405,45 +400,69 @@
   .main-nav .sub-menu {
     visibility: hidden;
   	position: absolute;
-  	left: auto;
-  	margin-top: 5.9em;
-    left: auto;
-    width: 25%;
+  	margin-top: 1.2em;
+    left: 0;
+    width: 100%;
     a {
       height: auto;
     }
   }
-  
+ 
   
   .main-nav li:hover .sub-menu {
+	  background-color: $mid;
     display: block;
     visibility: visible;
     height: auto;
     position: absolute;
-    margin-top: 1.1em;
-    left: auto;
-    width: auto;
-    max-width: 30%;
-    margin-left: 0.8em;
-    li a {
-      padding: 0.6em 1em 0.6em 1em;
-    }
+    margin-top: 1.2em;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 0.4em 4% 0.4em 4%;
   }
   
-  .js nav.nav-collapse .main-nav li:nth-child(4),
-	.js nav.nav-collapse .main-nav li:nth-child(5) {
-		.sub-menu.open {
-			min-width: 30%; 
-			max-width: 30%;
-		}
+  .main-nav .sub-menu li a {
+	  font-size: 1.1em;
+	  width: 100%;
+	  &:before {
+	    content: none;
+	  }
+	  &:after {
+		  content: " »";
+	  }
+	}
+  
+  .js nav.nav-collapse .main-nav ul.sub-menu li {
+	  width: auto;
+	  text-align: center;
+	  display: inline-block;
+	  background-color: $mid;
+	  padding: 0;
+	  margin: 0 2% 0 2%;
+	  float: none;
+	  a {
+		  padding: 0.4em 0.5em 0.4em 0.5em;
+	  }
+	  &:hover a {
+		  text-decoration: underline;
+		  background-color: $dark;
+	  }
+	}
+	
+	.js nav.nav-collapse .main-nav ul.sub-menu li a {
+	  width: 100%;
+	  text-align: center;
+	  background-color: $mid;
 	}
 
   .js nav.nav-collapse .main-nav ul.sub-menu.open {
-    margin: 1.1em 0 0 0.8em;
+    margin: 1.2em 0 0 0;
+    padding: 0.4em 4% 0.4em 4%;
+    text-align: center;
     min-width: initial;
-    li a {
-      padding: 0.6em 1em 0.6em 1em;
-    }
+    background-color: $mid;
   }
   
   .main-nav .sub-menu li {
@@ -469,99 +488,14 @@
 	  text-align: left;
 	  margin: 0;
   }
-  
-  .main-nav .sub-menu li .icon-lock-white {
-	  float: left;
-	  display: inline-block;
-	  margin: 0 0.6em 0 0;
-  }
-  
-} //end min 56em
 
-@media only all and (min-width: 64em) {
-  
-	.main-nav li {
-		text-align: left;
-    font-size: 0.9em;
-    font-weight: 400;
-    margin-right: 2.5%;
-    padding: 0.4em 0 1.2em 0;
-    background-color: inherit;
-    height: auto;
-    float: left;
-    border-bottom: none;
-    &:nth-child(2n) {
-      background-color: inherit;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-    a {
-      height: auto;
-    }
-    &:nth-child(1) {
-	    width: 10%;
-    }
-    &:nth-child(2) {
-	    width: 22%;
-    }
-    &:nth-child(3) {
-	    width: 27%;
-    }
-    &:nth-child(4) {
-	    width: 13%;
-    }
-    &:nth-child(5) {
-	    width: 18%;
-	    margin-right: 0;
-    }
-  }
-  
-  .main-nav li .icon-lock-white {
-	  float: none;
-	  background-size: 1em 1.375em;
-	  margin: 0 auto 0.5em auto; 
-  }
-  
-  .main-nav li a,
-  .main-nav .parent-item {
-	  text-align: center;
+  .js nav.nav-collapse .main-nav li:nth-child(3) .sub-menu.open,
+  .js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open {
 	  width: 100%;
-	  max-width: 100%;
-	  padding-left: 0;
-  }
-  
-  .main-nav li.home,
-  .main-nav li.about {
-	  a {
-		  margin-top: 1.875em;
-	  }
-  }
-  
-  .js nav.nav-collapse .main-nav li .sub-menu,
-  .js nav.nav-collapse .main-nav li .sub-menu.open,
-  .js nav.nav-collapse .main-nav li:nth-child(4) .sub-menu.open, 
-  .js nav.nav-collapse .main-nav li:nth-child(5) .sub-menu.open {
-	  min-width: auto;
-	  width: 23%; 
-	}
-  
-  .main-nav li.home .sub-menu a, 
-  .main-nav li.about .sub-menu a {
-	  margin-top: 0;
-  }
-  
-  .js .main-nav .parent .sectiontoggle {
-    float: none;
-    padding: 0;
-    display: block;
-    width: 100%;
-    //padding-right: 10%;
-    margin: 0;
   }
 
   
-} //end min 64em
+} //end min 59em
 
 
 @media only all and (min-width: 71.25em) {
@@ -575,31 +509,25 @@
     }
     &:nth-child(1) {
 	    width: 8%;
-	    margin-right: 7%;
-    }
-    &:nth-child(1),
-    &:nth-child(4) {
-	    a {
-	    	padding-bottom: 1.4em;
-	    }
+	    margin-right: 5%;
     }
     &:nth-child(2) {
-	    width: 17%;
-	    margin-right: 6%;
+	    width: 18%;
+	    margin-right: 7%;
 	    a {
 		    width: 85%;
 	    }
     }
     &:nth-child(3) {
-	    width: 19%;
-	    margin-right: 7%;
+	    width: 16%;
+	    margin-right: 8%;
     }
     &:nth-child(4) {
 	    width: 15%;
 	    margin-right: 7%;
     }
     &:nth-child(5) {
-	    width: 8%;
+	    width: 16%;
 	    margin-right: 0;
 	    a {
 		    width: 85%;
@@ -607,23 +535,18 @@
     }
   }
   
-	.main-nav .parent-item {
+	.js .main-nav .parent-item {
 		width: 80%;
 		text-align: left;
+		padding-top: 0.6em;
 	} 
 	
 	.nav-collapse .main-nav {
-		height: 4.5em;
+		height: 3.4em;
 	}
-  
-  .main-nav li .icon-lock-white {
-	  float: left;
-	  background-size: 1em 1.375em;
-	  margin: 0 0.7em 0.5em 0; 
-  }
-  
+ 
   .main-nav li.home,
-  .main-nav li.about {
+  .main-nav li.browse-films {
 	  a {
 		  margin-top: 0;
 	  }
@@ -631,11 +554,12 @@
   
   .js nav.nav-collapse .main-nav ul.sub-menu,
   .js nav.nav-collapse .main-nav ul.sub-menu.open {
-	  margin: 4.6em 0 0 0;
+	  margin: 0.3em 0 0 0;
+	  width: 100%;
   }
   
   .js .main-nav .parent .sectiontoggle {
-    float: left;
+    float: right;
     padding: 0;
     display: inline-block;
     width: 10%;
@@ -647,46 +571,8 @@
 
 @media only all and (min-width: 74em) {
   
-  .main-nav li {
-    &:nth-child(1) {
-	    width: 8%;
-	    margin-right: 8%;
-    }
-    &:nth-child(2) {
-	    width: 15%;
-	    margin-right: 7%;
-	    a {
-		    width: 85%;
-	    }
-    }
-    &:nth-child(3) {
-	    width: 19%;
-	    margin-right: 6%;
-	    .parent-item {
-		    width: 70%;
-		    max-width: 8.5em;
-	    }
-    }
-    &:nth-child(4) {
-	    width: 15%;
-	    margin-right: 7%;
-	    .parent-item {
-		    width: 70%;
-		    max-width: 7em;
-	    }
-    }
-    &:nth-child(5) {
-	    width: 14%;
-	    margin-right: 0;
-	    a {
-		    width: 85%;
-		    max-width: 7.8em;
-		    padding-bottom: 2em;
-		 	}
-		 	.sub-menu a {
-			 	max-width: 100%;
-		 	}
-    }
+  .js .main-nav {
+	  max-width: 69.57em;
   }
   
-} // end min 74em
+} // end min 74em*/

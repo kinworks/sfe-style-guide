@@ -34,7 +34,7 @@
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: #f9f3fb;
+  background-color: #f3edf5;
   text-align: center;
   margin: 0 0 2em 0; }
 
@@ -73,13 +73,15 @@
     /* stops bg color from leaking outside the border: */
     text-align: center;
     border-bottom: none;
-    background-color: #140431;
+    background-color: #412773;
     color: #ffffff;
     font-weight: 3 00; }
+  .list__jump-nav li a:hover {
+    background-color: #5f39a8; }
   .list__jump-nav li:nth-child(2n) a {
-    background-color: #25075b; }
-  .list__jump-nav li:hover a {
-    background-color: #412773; }
+    background-color: #8F4F97; }
+  .list__jump-nav li:nth-child(2n) a:hover {
+    background-color: #a25daa; }
   .list__jump-nav li:before {
     content: none;
     counter-increment: none; }

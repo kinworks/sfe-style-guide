@@ -340,6 +340,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                       <b>$mid</b>
                     </li>
                     <li>
+                      <span class="mid-bright"><!--color fill--></span>
+                      <b>$mid-bright</b>
+                    </li>
+                    <li>
                       <span class="dark"><!--color fill--></span>
                       <b>$dark</b>
                     </li>

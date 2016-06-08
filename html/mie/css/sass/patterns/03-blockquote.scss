@@ -3,9 +3,9 @@
 
 .quote {
 	margin: 1.5em 0;
-	border-top: 0.1em solid;
-	border-bottom: 0.1em solid;
-  border-color: $light-pastel;
+	border-top: 0.08em solid;
+	border-bottom: 0.08em solid;
+  border-color: scale-color($mid, $lightness: 30%);
 	padding: 1em 1em;
 	font-style: italic;
 	font-size: 1.4em;
@@ -41,6 +41,56 @@ blockquote.quote__blockquote {
   font-style: italic;
   font-size: 0.8em;
   color: $dark-text;
+  margin-top: 0.8em;
+  &:before {
+    content: "— ";
+  }
+}
+
+
+// Pull-out style quote:
+
+.quote--pullout {
+	margin: 1.5em 0;
+	border-left: 0.276em solid;
+  border-color: $contrast-alt;
+	padding: 0.3em 1em 0.2em 1em;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.9em;
+	line-height: 1.3em;
+	color: $mid-bright;
+}
+
+blockquote.quote__blockquote {
+  margin: 0; // Firefox default override
+}
+
+.quote__blockquote {
+  &:before {
+    content: '“';
+  }
+  &:after {
+    content: '”';
+  }
+  &:before,
+  &:after {
+    font-size: 1.6em;
+    vertical-align: -0.2em;
+    margin-left: -0.1em;
+    color: $mid;
+  }
+}
+
+.quote em {
+	font-style: normal;
+}
+
+.quote__caption {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: $dark;
   margin-top: 0.8em;
   &:before {
     content: "— ";

@@ -844,6 +844,9 @@ pre {
 .swatches span.mid {
   background-color: #412773; }
 
+.swatches span.mid-bright {
+  background-color: #8F4F97; }
+
 .swatches span.link-text {
   background-color: #5F39AC; }
 
@@ -2609,9 +2612,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
 .quote {
   margin: 1.5em 0;
-  border-top: 0.1em solid;
-  border-bottom: 0.1em solid;
-  border-color: #D8ADE5;
+  border-top: 0.08em solid;
+  border-bottom: 0.08em solid;
+  border-color: #6f45c0;
   padding: 1em 1em;
   font-style: italic;
   font-size: 1.4em;
@@ -2637,6 +2640,42 @@ blockquote.quote__blockquote {
 .quote__caption {
   font-style: italic;
   font-size: 0.8em;
+  color: #140431;
+  margin-top: 0.8em; }
+  .quote__caption:before {
+    content: "— "; }
+
+.quote--pullout {
+  margin: 1.5em 0;
+  border-left: 0.276em solid;
+  border-color: #6381BF;
+  padding: 0.3em 1em 0.2em 1em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.9em;
+  line-height: 1.3em;
+  color: #8F4F97; }
+
+blockquote.quote__blockquote {
+  margin: 0; }
+
+.quote__blockquote:before {
+  content: '“'; }
+.quote__blockquote:after {
+  content: '”'; }
+.quote__blockquote:before, .quote__blockquote:after {
+  font-size: 1.6em;
+  vertical-align: -0.2em;
+  margin-left: -0.1em;
+  color: #412773; }
+
+.quote em {
+  font-style: normal; }
+
+.quote__caption {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.7em;
   color: #140431;
   margin-top: 0.8em; }
   .quote__caption:before {

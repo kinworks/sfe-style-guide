@@ -27,7 +27,7 @@
     border-bottom: 0.1em solid;
   }
   ul li a {
-	  color: $light;
+	  color: scale-color($mid-bright, $saturation: 20%);
   }
   ul li a.active {
 	  color: $dark-text;

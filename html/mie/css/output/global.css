@@ -1744,9 +1744,15 @@ footer i {
   border-bottom: none;
   padding: 0.6em 0 0.7em 8%; }
 
-.main-nav li a.active {
+.main-nav li .active {
   color: #ffffff;
   text-decoration: underline; }
+
+.main-nav li .sub-menu .active {
+  text-decoration: none;
+  background-color: #140431; }
+  .main-nav li .sub-menu .active:before {
+    content: "» "; }
 
 .main-nav .parent .sectiontoggle {
   display: none; }
@@ -1848,6 +1854,8 @@ footer i {
     background-color: #412773;
     padding: 1.1em 5% 1.2em 5%;
     color: #ffffff; }
+    .secondary-nav-spaceholder span {
+      font-size: 1.1em; }
   .main-nav li {
     z-index: 100;
     height: 3.6em;
@@ -2034,7 +2042,13 @@ footer i {
     text-align: left;
     margin: 0; }
   .js nav.nav-collapse .main-nav li:nth-child(3) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open {
-    width: 100%; } }
+    width: 100%; }
+  .js nav.nav-collapse .main-nav li ul.sub-menu li .active {
+    text-decoration: underline;
+    background-color: #140431;
+    cursor: not-allowed; }
+    .js nav.nav-collapse .main-nav li ul.sub-menu li .active:before, .js nav.nav-collapse .main-nav li ul.sub-menu li .active:after {
+      content: none; } }
 
 @media only all and (min-width: 71.25em) {
   .main-nav li {

@@ -651,10 +651,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <nav class="nav icon-pattern clearfix nav-collapse">
 				  <ul class="main-nav clearfix">
 				    <li class="home">
-				      <a href="#" class="js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
+				      <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
 				    </li>
 				    <li class="getting-started parent clearfix">
-				      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Getting Started">
+				      <a href="#" class="parent-item js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Getting Started">
 				        Getting Started
 				      </a>
 				      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Getting Started">
@@ -669,7 +669,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 				          </a>
 				        </li>
 				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Moving Image and the Curriculum">
+				          <a href="#" class="js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Background">
 				            Background
 				          </a>
 				        </li>
@@ -774,7 +774,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 				</nav>
 				<div class="secondary-nav-spaceholder">
 					<div class="container">
-						Welcome to movingimageeducation.org!
+						<span>Welcome to movingimageeducation.org!</span>
 					</div>
 				</div>
 				<div class="nav__trigger icon-pattern clearfix" id="nav-trigger">

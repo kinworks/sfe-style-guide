@@ -51,9 +51,17 @@
   padding: 0.6em 0 0.7em 8%;
 }
 
-.main-nav li a.active {
+.main-nav li .active {
 	color: $white;
 	text-decoration: underline;
+}
+
+.main-nav li .sub-menu .active {
+	text-decoration: none;
+	background-color: $dark;
+	&:before {
+		content: "» "
+	}
 }
 
 // Hide / show sub-section navigation based on JS being available
@@ -206,6 +214,9 @@
 	  background-color: $mid;
 	  padding: 1.1em 5% 1.2em 5%;
 	  color: $white;
+	  span {
+		  font-size: 1.1em;
+	  }
   }
   
   .main-nav li {
@@ -493,6 +504,16 @@
   .js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open {
 	  width: 100%;
   }
+  
+	.js nav.nav-collapse .main-nav li ul.sub-menu li .active {
+		text-decoration: underline;
+		background-color: $dark;
+		cursor: not-allowed;
+		&:before,
+		&:after {
+			content: none;
+		}
+	}
 
   
 } //end min 59em

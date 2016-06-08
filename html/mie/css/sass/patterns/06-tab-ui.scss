@@ -93,8 +93,11 @@
   .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
     border-right: none;
   }
-
   
+  .js-tabs .tabs [role=tablist] {
+		background-color: scale-color($contrast-alt, $lightness: 40%);
+	}
+
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 25%;

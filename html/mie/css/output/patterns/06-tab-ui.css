@@ -98,6 +98,8 @@
     box-shadow: 0 0.5em 0.5em 0em #ffffff; }
   .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
     border-right: none; }
+  .js-tabs .tabs [role=tablist] {
+    background-color: #a1b3d9; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 25%;

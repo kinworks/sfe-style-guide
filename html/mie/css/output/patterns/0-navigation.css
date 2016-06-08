@@ -312,7 +312,7 @@
     width: 100%; }
     .main-nav .sub-menu a {
       height: auto; }
-  .main-nav li:hover .sub-menu {
+  .main-nav li:hover .sub-menu, .main-nav li.section-active .sub-menu {
     background-color: #412773;
     display: block;
     visibility: visible;

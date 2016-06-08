@@ -420,7 +420,8 @@
   }
  
   
-  .main-nav li:hover .sub-menu {
+  .main-nav li:hover .sub-menu,
+  .main-nav li.section-active .sub-menu {
 	  background-color: $mid;
     display: block;
     visibility: visible;

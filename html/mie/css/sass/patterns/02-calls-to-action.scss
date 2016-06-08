@@ -63,6 +63,22 @@
   }
 }
 
+.cta.cta--dark {
+	background-color: $dark;
+	border-left: none;
+	&:hover {
+		border-left: none;
+	}
+}
+
+.cta.cta--light--no-border {
+	background-color: $contrast;
+	border-left: none;
+	&:hover {
+		border-left: none;
+	}
+}
+
 .cta.icon-pattern {
   border-color: $light;
 }

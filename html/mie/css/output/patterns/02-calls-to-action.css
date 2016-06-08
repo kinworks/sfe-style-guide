@@ -81,6 +81,18 @@
   .cta--light-alt:hover {
     background-color: #6e8ac3; }
 
+.cta.cta--dark {
+  background-color: #140431;
+  border-left: none; }
+  .cta.cta--dark:hover {
+    border-left: none; }
+
+.cta.cta--light--no-border {
+  background-color: #D96E10;
+  border-left: none; }
+  .cta.cta--light--no-border:hover {
+    border-left: none; }
+
 .cta.icon-pattern {
   border-color: #B088BC; }
 

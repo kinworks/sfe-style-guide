@@ -29,7 +29,9 @@
   padding: 0.5em 0.8em 0.5em 0.8em;
   margin: 0 auto 0 auto;
   display: block;
-  border-left: 1em solid #140431;
+  background-color: #140431;
+  background-image: none;
+  border-left: 1em solid #412773;
   cursor: pointer; }
   .login__trigger.cta .icon-arrow-down, .login__trigger.cta .icon-arrow-up, .login__trigger.cta .icon-arrow-right, .logout__trigger.cta .icon-arrow-down, .logout__trigger.cta .icon-arrow-up, .logout__trigger.cta .icon-arrow-right {
     width: 0.625em;
@@ -50,7 +52,9 @@
 .login__trigger--top.cta {
   max-width: 100%;
   text-align: center;
-  padding: 0.5em 8% 0.5em 5%; }
+  padding: 0.5em 8% 0.1em 5%; }
+  .login__trigger--top.cta:hover {
+    background-color: #3b5790; }
 
 .login__trigger--top.cta .login__trigger--top__container {
   display: inline-block;

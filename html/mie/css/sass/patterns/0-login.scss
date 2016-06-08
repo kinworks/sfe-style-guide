@@ -8,7 +8,9 @@
   padding: 0.5em 0.8em 0.5em 0.8em;
   margin: 0 auto 0 auto;
   display: block;
-  border-left: 1em solid $dark-text;
+  background-color: $dark;
+  background-image: none;
+  border-left: 1em solid $mid;
   cursor: pointer;
   .icon-arrow-down,
   .icon-arrow-up,
@@ -36,7 +38,10 @@
 .login__trigger--top.cta {
   max-width: 100%;
   text-align: center;
-  padding: 0.5em 8% 0.5em 5%;
+  padding: 0.5em 8% 0.1em 5%;
+  &:hover {
+	  background-color: scale-color($contrast-alt, $lightness: -30%);
+  }
 }
 
 .login__trigger--top.cta .login__trigger--top__container {

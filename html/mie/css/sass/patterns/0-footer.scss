@@ -2,29 +2,37 @@
 @import '../_2-mixins.scss'; @import '../_4-colours.scss';
 
 .footer__top {
-  background-color: $mid;
+  background-color: $dark;
   padding: 2em 8% 1.5em 8%;
 }
 
-.footer__top__report-issues,
-.footer__top__twitter {
+.footer__top__report-issues{
   margin-bottom: 0.5em;
 }
 
-.footer__top__twitter {
-	.btn {
-		padding-left: 0.9em;
-	}
-	.icon-footer-twitter {
-		width: 1.5em;
-		height: 1.2em;
-		margin: 0 0.6em 0 0;
-		vertical-align: -0.3em;
-	}
+.footer__top__menu {
+	margin-bottom: 2.4em;
+}
+
+.footer__top__menu a {
+	display: block;
+	color: $white;
+	font-size: 1.2em;
+	margin: 0 0 0.7em 0;
+	border: none;
+ 	&:before {
+	 	content: "— ";
+ 	}
+ 	&:after {
+	 	content: " »";
+ 	}
+ 	&:hover {
+	 	text-decoration: underline;
+ 	}
 }
 
 .footer__top__report-issues span,
-.footer__top__twitter span,
+.footer__top__menu span,
 .footer__top__partners span {
   font-size: 1.25em;
   color: $white;
@@ -130,6 +138,12 @@ footer i {
     text-align: center;
     max-width: 100%;
   }
+  
+  .footer__top__menu a {
+	  &:before {
+		  content: none;
+	  }
+  }
 
   .footer__top__partners {
 	  text-align: center;
@@ -161,13 +175,13 @@ footer i {
   
   .footer__top__report-issues {
 	  padding-right: 10%;
-	  width: 55%;
+	  width: 60%;
+	  text-align: center;
   }
   
   .footer__top__report-issues,
-  .footer__top__twitter {
-	  float: left;
-    text-align: center;
+  .footer__top__menu {
+	  float: right;
     span {
 	    text-align: center;
 	    max-width: 17em;
@@ -175,8 +189,9 @@ footer i {
     }
   } 
   
-  .footer__top__twitter {
-	  width: 45%;
+  .footer__top__menu {
+	  width: 40%;
+	  text-align: left;
 	  span {
 		  margin-bottom: 2.1em;
 	  }
@@ -208,7 +223,7 @@ footer i {
   }
   
   .footer__top__report-issues span,
-  .footer__top__twitter span,
+  .footer__top__menu span,
   .footer__top__partners span {
     text-align: left;
     max-width: 13.25em;
@@ -217,14 +232,14 @@ footer i {
   }
   
   .footer__top__report-issues {
-    width: 20%;
+    width: 30%;
     float: right;
     text-align: left;
     padding: 0;
   }
   
-  .footer__top__twitter {
-    width: 30%;
+  .footer__top__menu {
+    width: 20%;
     float: right;
     text-align: left;
     padding: 0;

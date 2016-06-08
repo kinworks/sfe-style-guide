@@ -379,6 +379,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                       <span class="pattern"><!--color fill--></span>
                       <b>.pattern</b>
                     </li>
+                    <li>
+                      <span class="icon-pattern-dark"><!--color fill--></span>
+                      <b>.pattern-dark</b>
+                    </li>
                   </ul>
                   
                   <h2 class="guidance">Contrast / Feedback</h2>
@@ -994,13 +998,13 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             
         <div class="footer__top clearfix">
           <div class="container">
+              <div class="footer__top__menu">
+                <a href="#" target="_blank">Contact Us</a>
+                <a href="#" target="_blank">Copyright Restrictions</a>
+              </div>
               <div class="footer__top__report-issues">
                 <span>Problems using this site or with its content?</span>
-                <a class="btn btn--light-pastel">Report an Issue &raquo;</a>
-              </div>
-              <div class="footer__top__twitter">
-                <span>Elsewhere:</span>
-                <a class="btn btn--darkest" href="http://www.twitter.com/movingimageed" target="_blank"><i class="icon-footer-twitter">Twitter Icon</i>Follow Us on Twitter &raquo;</a>
+                <a class="btn btn--contrast-alt">Report an Issue &raquo;</a>
               </div>
               <div class="footer__top__partners clearfix">
                 <span>In partnership with:</span>
@@ -1021,7 +1025,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             <li><a href="#">Acknowledgements</a></li>
           </ul>
         </div>
-        <footer class="icon-pattern">
+        <footer class="icon-pattern-dark">
           <div class="container">
             <span class="copyright">
               &copy; Copyright Scottish Film Limited, Registered in Scotland no. SC478204. <br/>All Rights Reserved.

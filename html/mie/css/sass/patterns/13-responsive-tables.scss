@@ -62,9 +62,9 @@ tr {
   margin: 0 0 1.5em 0;
   width: 100%;
   font-size: 1.1em;
-  background-color: lighten($light-pastel,10%);
+  background-color: scale-color($contrast-alt, $lightness: 85%);
   border-top: 0.2em solid $dark;
-  border-bottom: 0.2em solid $light-pastel;
+  border-bottom: 0.2em solid scale-color($contrast-alt, $lightness: 60%);
   padding: 1em;
 }
 
@@ -87,7 +87,7 @@ by side rather than stacked */
     margin: 0 0 2em 0;
     border-style: none;
     border-top-width: 0;
-    border-bottom: 0.2em solid $light-pastel;
+    border-bottom: 0.2em solid scale-color($contrast-alt, $lightness: 60%);
   }
   
   /* Labeling

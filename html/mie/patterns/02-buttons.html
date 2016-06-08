@@ -1,5 +1,4 @@
 <a href="#" class="btn">✔ Standard Button</a>
-<a href="#" class="btn btn--darkest">✔ Darkest Button</a>
 <a href="#" class="btn btn--mid">✔ Mid Button</a>
 <a href="#" class="btn btn--light">✔ Light Button</a>
 <a href="#" class="btn btn--contrast">✔ Contrast Button</a>
@@ -9,40 +8,42 @@
 <a href="#" class="btn btn--light-pastel">x Light-pastel</a>
 
 <div class="bg bg--dark">
-	<a href="#" class="btn btn--darkest">x Darkest Button</a>
-  <a href="#" class="btn btn--mid">✔ Mid Button</a>
+<!--Don't use standard or mid CTA on Dark backgrounds-->
+	<a href="#" class="btn">x Standard Button</a>
+  <a href="#" class="btn btn--mid">x Mid Button</a>
   <a href="#" class="btn btn--light">✔ Light Button</a>
   <a href="#" class="btn btn--contrast">✔ Contrast Button</a>
   <a href="#" class="btn btn--contrast-alt">✔ Contrast-alt Button</a>
     <a href="#" class="btn btn--white">✔ White</a>
   <a href="#" class="btn btn--light-pastel">✔ Light-pastel</a>
-  <!--Don't use standard CTA on Dark backgrounds-->
-  <a href="#" class="btn">x Standard Button</a>
+  
 </div>
 
 <div class="bg bg--mid">
-  <a href="#" class="btn">x Standard Button</a>
-  <a href="#" class="btn btn--darkest">✔ Darkest Button</a>
+  
   <a href="#" class="btn btn--contrast">✔ Contrast Button</a>
   <a href="#" class="btn btn--contrast-alt">✔ Contrast-alt Button</a>
     <a href="#" class="btn btn--white">✔ White</a>
   <a href="#" class="btn btn--light-pastel">✔ Light-pastel</a>
-  <!--Don't use Mid or Light CTA on Dark backgrounds-->
+  <a href="#" class="btn btn--light">✔ Light Button</a>
+  <!--Don't use Mid or Standard CTA on Mid backgrounds-->
+  <a href="#" class="btn">x Standard Button</a>
   <a href="#" class="btn btn--mid">x Mid Button</a>
-  <a href="#" class="btn btn--light">x Light Button</a>
+  
 </div>
 
 <div class="bg bg--light-pastel">
   <a href="#" class="btn">✔ Standard Button</a>
-  <a href="#" class="btn btn--darkest">✔ Darkest Button</a>
   <a href="#" class="btn btn--mid">✔ Mid Button</a>
-  <a href="#" class="btn btn--light">✔ Light Button</a>
   <a href="#" class="btn btn--contrast">✔ Contrast Button</a>
   <a href="#" class="btn btn--contrast-alt">✔ Contrast-alt Button</a>
-  <a href="#" class="btn btn--white">✔ White</a>
-  <!--Don't use Light-pastel CTA on Light-pastel backgrounds-->
+  <!--Don't use White, Light-pastel or light CTA on Light-pastel backgrounds-->
   <a href="#" class="btn btn--light-pastel">x Light-pastel</a>
+  <a href="#" class="btn btn--light">x Light Button</a>
+  <a href="#" class="btn btn--white">x White</a>
 </div>
+
+<br/><br/>
   
 <button name="button-btn" class="btn">&lt;button&gt; element with .btn</button>
 

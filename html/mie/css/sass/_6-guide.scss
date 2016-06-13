@@ -306,6 +306,22 @@ pre {
   background-color: $mid-bright;
 }
 
+.swatches span.section-alpha {
+  background-color: $section-alpha;
+}
+
+.swatches span.section-beta {
+  background-color: $section-beta;
+}
+
+.swatches span.section-gamma {
+  background-color: $section-gamma;
+}
+
+.swatches span.section-delta {
+  background-color: $section-delta;
+}
+
 .swatches span.link-text {
   background-color: $link-text;
 }
@@ -375,7 +391,7 @@ pre {
 }
 
 .swatches li b {
-  font-size: 0.8em;
+  font-size: 0.65em;
   font-weight: 300;
 }
 

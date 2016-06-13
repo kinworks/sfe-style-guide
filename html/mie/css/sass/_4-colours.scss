@@ -10,8 +10,20 @@ $dark: #140431;
 
 $darkest: #222121;
 
+//// Section-specific colours
+
+$section-alpha: #00855B;
+
+$section-beta: #094085;//#215C59;
+
+$section-gamma: #0080A6;
+
+$section-delta: #760B5E;//#A60080;
+
 
 //// Text-specific colours
+/////// A11Y: These will validate to WCAG 2.0 
+///////////// for AA small text (4.5:1)
 
 $link-text: #5F39AC;
 

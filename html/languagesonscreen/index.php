@@ -158,6 +158,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <?php endforeach; ?>
       </ul>
     </div>
+    
     <div class="body-wrapper heading-wrapper bg--dark">
       
       <div class="outside container">
@@ -558,7 +559,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             
             <header class="header clearfix">
 
-      <div class="header__part header__part--brand">
+      <div class="header__part header__part--brand icon-header-left">
         <a href="/" title="Go to Homepage" data-ga-cat='Header' data-ga-label='Logo Clicked' class="js-ga-event">
           <i class="icon-<?php echo $site; ?>-logo">{{Site Name}} Logo</i>
         </a>
@@ -572,8 +573,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         </div>
       </div>
       
-      <div class="header__part header__part--search search-collapse">
-        <div class="search__container icon-header-right clearfix">  
+      <div class="header__part header__part--search icon-header-right search-collapse">
+        <div class="search__container  clearfix">  
           
             <div class="region region-search">
     <div id="block-search-form" class="block block-search">

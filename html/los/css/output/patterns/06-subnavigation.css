@@ -19,7 +19,7 @@
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -36,7 +36,7 @@
   list-style-type: none; }
 
 .subnav .subnav__item, .subnav .subnav__item.subnav__item--sub-parent {
-  color: #6BB64C; }
+  color: #61A445; }
   .subnav .subnav__item:before, .subnav .subnav__item.subnav__item--sub-parent:before {
     content: "— "; }
   .subnav .subnav__item a:hover, .subnav .subnav__item.subnav__item--sub-parent a:hover {

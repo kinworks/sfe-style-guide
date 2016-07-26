@@ -18,13 +18,13 @@
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
 
 .header {
-  background-color: #44693C;
+  background-color: #112F0A;
   width: 100%;
   margin: 0;
   text-align: center; }
@@ -37,7 +37,7 @@
   background-position: left top; }
   .header__part--brand a {
     border-bottom: none; }
-  .header__part--brand .icon-mie-logo {
+  .header__part--brand .icon-los-logo {
     margin: 1.75em 8% 0.75em 8%;
     width: 84%;
     height: 7.375em;
@@ -65,7 +65,7 @@
   padding: 0 8% 0 8%; }
 
 .header__search-trigger {
-  background-color: #588D49;
+  background-color: #61A445;
   cursor: pointer;
   border-bottom: 0.3em solid #3e6333; }
   .header__search-trigger .icon-search {
@@ -109,7 +109,7 @@
     font-weight: 600; }
   .header__part--search input[type="text"] {
     font-size: 1.1em;
-    border: 0.135em solid #6BB64C;
+    border: 0.135em solid #112F0A;
     padding: 0.36em;
     height: 2.1375em; }
     .header__part--search input[type="text"]:focus {
@@ -123,16 +123,16 @@
     float: left; }
   .header__part--search input[type="submit"] {
     color: #ffffff;
-    background-color: #6BB64C;
+    background-color: #112F0A;
     font-size: 1.1em;
     outline: 0;
-    border: 0.135em solid #6BB64C;
+    border: 0.135em solid #112F0A;
     max-width: 4.55625em;
     height: 2.14em; }
     .header__part--search input[type="submit"]:focus, .header__part--search input[type="submit"]:hover {
-      background-color: #A1EA83;
+      background-color: #588D49;
       border: 0.135em solid #A1EA83;
-      color: #588D49; }
+      color: #ffffff; }
   .header__part--search .search__advanced {
     display: inline-block;
     font-size: 1em;
@@ -144,7 +144,7 @@
       color: #ffffff; }
     .header__part--search .search__advanced a:focus, .header__part--search .search__advanced a:hover {
       color: #A1EA83;
-      border-bottom: 0.1em dotted #6BB64C; }
+      border-bottom: 0.1em dotted #61A445; }
   .header__part--search .form-item, .header__part--search .form-actions {
     margin: 0; }
 
@@ -155,6 +155,7 @@
     width: 50%;
     float: left; }
   .header__part--search {
+    background-position: left center;
     width: 50%;
     float: left;
     border-bottom: none; }
@@ -167,7 +168,7 @@
     padding: 0; }
   .header__part--brand {
     text-align: left; }
-  .header__part--brand .icon-mie-logo {
+  .header__part--brand .icon-los-logo {
     margin: 1.75em 0 0.75em 10%; }
   .header__part--search {
     text-align: right;
@@ -184,14 +185,22 @@
   .nav-collapse {
     display: block; } }
 
+@media only all and (min-width: 59em) {
+  .header__part--search {
+    background-position: left top;
+    float: right;
+    max-width: 25em; } }
+
 @media only all and (min-width: 88.75em) {
   .header__part--brand {
     text-align: right; }
-  .header__part--brand .icon-mie-logo {
+  .header__part--brand .icon-los-logo {
     margin: 1.75em 22.5em 0.75em 0; }
   .header__part--search {
     text-align: left;
-    padding: 0; }
+    padding: 0;
+    max-width: none;
+    background-position: right top; }
   .header__part--search .search__container {
     margin: 0 0 0 22em;
     float: none; } }

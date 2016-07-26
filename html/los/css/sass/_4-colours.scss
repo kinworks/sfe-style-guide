@@ -1,6 +1,6 @@
 //// Brand
 
-$light: #6BB64C;
+$light: #61A445; // WCAG 2.0 for AA 18pt+ text
 
 $mid: #588D49; 
 
@@ -19,7 +19,7 @@ $section-delta: red;
 /////// A11Y: These will validate to WCAG 2.0 
 ///////////// for AA small text (4.5:1)
 
-$link-text: #5F39AC;
+$link-text: #793EAC;
 
 $mid-text: $mid;
 

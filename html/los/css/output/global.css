@@ -423,7 +423,7 @@ Performance is dramatically improved because a 9999px box is not drawn. Noticeab
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -480,9 +480,6 @@ body, .wf-loading body, .wf-inactive body {
   margin: 0 0 1em 0;
   line-height: 1.2em; }
 
-.heading--mid {
-  color: #6BB64C; }
-
 .heading--pairing {
   margin: 0 0 0.15em 0; }
 
@@ -490,20 +487,26 @@ body, .wf-loading body, .wf-inactive body {
   font-size: 2.3em; }
 
 .heading--medium {
-  font-size: 1.9em; }
+  font-size: 1.9em;
+  color: #252626; }
 
 .heading--small {
-  font-size: 1.7em; }
+  font-size: 1.7em;
+  color: #252626; }
 
 .heading--smallest {
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  color: #252626; }
+
+.heading--mid {
+  color: #61A445; }
 
 p, ul, ol, .text {
   font-size: 1.15em;
   line-height: 1.4em;
   font-style: normal;
   font-weight: 300;
-  color: #44693C; }
+  color: #252626; }
 
 p, .text {
   margin-bottom: 1.3em;
@@ -519,8 +522,8 @@ i, em {
   font-style: italic; }
 
 a {
-  color: #5F39AC;
-  border-bottom: 0.1em dotted #588D49;
+  color: #793EAC;
+  border-bottom: 0.1em dotted #793EAC;
   text-decoration: none; }
 
 .link--dark {
@@ -532,8 +535,8 @@ a {
   border-bottom: 0.1em dotted #588D49; }
 
 .link--light {
-  color: #6BB64C;
-  border-bottom: 0.1em dotted #6BB64C; }
+  color: #61A445;
+  border-bottom: 0.1em dotted #61A445; }
 
 .link--light-pastel {
   color: #A1EA83;
@@ -832,13 +835,13 @@ pre {
   border-bottom: 0.2em solid #ccc; }
 
 .swatches span.light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .swatches span.mid {
   background-color: #588D49; }
 
 .swatches span.link-text {
-  background-color: #5F39AC; }
+  background-color: #793EAC; }
 
 .swatches span.dark-text {
   background-color: #44693C; }
@@ -1107,7 +1110,7 @@ pre {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -1317,13 +1320,13 @@ footer i {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
 
 .header {
-  background-color: #44693C;
+  background-color: #112F0A;
   width: 100%;
   margin: 0;
   text-align: center; }
@@ -1336,7 +1339,7 @@ footer i {
   background-position: left top; }
   .header__part--brand a {
     border-bottom: none; }
-  .header__part--brand .icon-mie-logo {
+  .header__part--brand .icon-los-logo {
     margin: 1.75em 8% 0.75em 8%;
     width: 84%;
     height: 7.375em;
@@ -1364,7 +1367,7 @@ footer i {
   padding: 0 8% 0 8%; }
 
 .header__search-trigger {
-  background-color: #588D49;
+  background-color: #61A445;
   cursor: pointer;
   border-bottom: 0.3em solid #3e6333; }
   .header__search-trigger .icon-search {
@@ -1408,7 +1411,7 @@ footer i {
     font-weight: 600; }
   .header__part--search input[type="text"] {
     font-size: 1.1em;
-    border: 0.135em solid #6BB64C;
+    border: 0.135em solid #112F0A;
     padding: 0.36em;
     height: 2.1375em; }
     .header__part--search input[type="text"]:focus {
@@ -1422,16 +1425,16 @@ footer i {
     float: left; }
   .header__part--search input[type="submit"] {
     color: #ffffff;
-    background-color: #6BB64C;
+    background-color: #112F0A;
     font-size: 1.1em;
     outline: 0;
-    border: 0.135em solid #6BB64C;
+    border: 0.135em solid #112F0A;
     max-width: 4.55625em;
     height: 2.14em; }
     .header__part--search input[type="submit"]:focus, .header__part--search input[type="submit"]:hover {
-      background-color: #A1EA83;
+      background-color: #588D49;
       border: 0.135em solid #A1EA83;
-      color: #588D49; }
+      color: #ffffff; }
   .header__part--search .search__advanced {
     display: inline-block;
     font-size: 1em;
@@ -1443,7 +1446,7 @@ footer i {
       color: #ffffff; }
     .header__part--search .search__advanced a:focus, .header__part--search .search__advanced a:hover {
       color: #A1EA83;
-      border-bottom: 0.1em dotted #6BB64C; }
+      border-bottom: 0.1em dotted #61A445; }
   .header__part--search .form-item, .header__part--search .form-actions {
     margin: 0; }
 
@@ -1454,6 +1457,7 @@ footer i {
     width: 50%;
     float: left; }
   .header__part--search {
+    background-position: left center;
     width: 50%;
     float: left;
     border-bottom: none; }
@@ -1466,7 +1470,7 @@ footer i {
     padding: 0; }
   .header__part--brand {
     text-align: left; }
-  .header__part--brand .icon-mie-logo {
+  .header__part--brand .icon-los-logo {
     margin: 1.75em 0 0.75em 10%; }
   .header__part--search {
     text-align: right;
@@ -1483,14 +1487,22 @@ footer i {
   .nav-collapse {
     display: block; } }
 
+@media only all and (min-width: 59em) {
+  .header__part--search {
+    background-position: left top;
+    float: right;
+    max-width: 25em; } }
+
 @media only all and (min-width: 88.75em) {
   .header__part--brand {
     text-align: right; }
-  .header__part--brand .icon-mie-logo {
+  .header__part--brand .icon-los-logo {
     margin: 1.75em 22.5em 0.75em 0; }
   .header__part--search {
     text-align: left;
-    padding: 0; }
+    padding: 0;
+    max-width: none;
+    background-position: right top; }
   .header__part--search .search__container {
     margin: 0 0 0 22em;
     float: none; } }
@@ -1515,7 +1527,7 @@ footer i {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -1719,7 +1731,7 @@ footer i {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -2139,7 +2151,7 @@ footer i {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -2230,7 +2242,7 @@ body {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -2267,13 +2279,13 @@ body {
     border-bottom: 0.2em solid #4f7f42; }
 
 .btn--light {
-  background-color: #6BB64C;
+  background-color: #61A445;
   color: #ffffff;
-  border-bottom: 0.2em solid #4b8034; }
+  border-bottom: 0.2em solid #447330; }
   .btn--light:hover {
-    box-shadow: inset 0 0 0 0.2em #a6d394;
-    background-color: #6BB64C;
-    border-bottom: 0.2em solid #55933c; }
+    box-shadow: inset 0 0 0 0.2em #9ece8a;
+    background-color: #61A445;
+    border-bottom: 0.2em solid #4e8337; }
 
 .btn--light-pastel {
   background-color: #A1EA83;
@@ -2351,7 +2363,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -2420,7 +2432,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     border-left: none; }
 
 .cta.icon-pattern {
-  border-color: #6BB64C; }
+  border-color: #61A445; }
 
 .cta--no-circle div {
   display: none; }
@@ -2542,7 +2554,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -2569,7 +2581,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #6BB64C; }
+  color: #61A445; }
 
 .quote em {
   font-style: normal; }
@@ -2683,7 +2695,7 @@ ol ul li:before {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -2691,7 +2703,7 @@ ol ul li:before {
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: #e9f4e4;
+  background-color: #e7f3e2;
   text-align: center;
   margin: 0 0 2em 0; }
 
@@ -2841,7 +2853,7 @@ ol ul li:before {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -2897,7 +2909,7 @@ ol ul li:before {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -2982,7 +2994,7 @@ ol.pagination li {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -2999,7 +3011,7 @@ ol.pagination li {
   list-style-type: none; }
 
 .subnav .subnav__item, .subnav .subnav__item.subnav__item--sub-parent {
-  color: #6BB64C; }
+  color: #61A445; }
   .subnav .subnav__item:before, .subnav .subnav__item.subnav__item--sub-parent:before {
     content: "— "; }
   .subnav .subnav__item a:hover, .subnav .subnav__item.subnav__item--sub-parent a:hover {
@@ -3052,7 +3064,7 @@ ol.pagination li {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -3202,7 +3214,7 @@ ol.pagination li {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -3324,7 +3336,7 @@ textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
   cursor: not-allowed; }
 
 select:-internal-list-box option:checked {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .messages {
   background-image: none !important;
@@ -3361,7 +3373,7 @@ select:-internal-list-box option:checked {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -3393,7 +3405,7 @@ select:-internal-list-box option:checked {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -3427,7 +3439,7 @@ html\:abbr, abbr {
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }

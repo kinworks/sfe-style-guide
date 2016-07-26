@@ -6,10 +6,6 @@
   line-height: 1.2em;
 }
 
-.heading--mid {
-  color: $light;
-}
-
 .heading--pairing {
   margin: 0 0 0.15em 0;
 }
@@ -20,15 +16,23 @@
 
 .heading--medium {
   font-size: 1.9em;
+  color: $default-text;
 }
 
 .heading--small {
   font-size: 1.7em;
+  color: $default-text;
 }
 
 .heading--smallest {
   font-size: 1.4em;
+  color: $default-text;
 }
+
+.heading--mid {
+  color: $light;
+}
+
 
 p,
 ul,
@@ -38,7 +42,7 @@ ol,
   line-height: 1.4em;
   font-style: normal;
   font-weight: 300;
-  color: $dark-text;
+  color: $default-text;
 }
 
 p,
@@ -63,7 +67,7 @@ em {
 
 a {
   color: $link-text;
-  border-bottom: 0.1em dotted $mid;
+  border-bottom: 0.1em dotted $link-text;
   text-decoration: none;
 }
 

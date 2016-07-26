@@ -18,7 +18,7 @@
   background-color: #588D49; }
 
 .bg--light {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .bg--light-pastel {
   background-color: #A1EA83; }
@@ -140,7 +140,7 @@ textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
   cursor: not-allowed; }
 
 select:-internal-list-box option:checked {
-  background-color: #6BB64C; }
+  background-color: #61A445; }
 
 .messages {
   background-image: none !important;

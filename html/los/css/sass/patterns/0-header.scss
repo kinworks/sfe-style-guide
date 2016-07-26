@@ -5,7 +5,7 @@
 // sections, then enhanced via media query
 
 .header {
-  background-color: $dark;
+  background-color: $darkest;
   width: 100%;
   margin: 0;
   text-align: center;
@@ -19,7 +19,7 @@
 .header__part--brand {
   background-position: left top;
   a {border-bottom: none;}
-  .icon-mie-logo {
+  .icon-los-logo {
     margin: 1.75em 8% 0.75em 8%;
     width: 84%;
     height: 7.375em;
@@ -58,7 +58,7 @@
 }
 
 .header__search-trigger {
-  background-color: $mid;
+  background-color: $light;
   cursor: pointer;
   border-bottom: 0.3em solid scale-color($mid, $lightness: -30%);
   .icon-search {
@@ -110,7 +110,7 @@
   }
   input[type="text"] {
    font-size: 1.1em;
-   border: 0.135em solid $light; 
+   border: 0.135em solid $darkest; 
    padding: 0.36em;
    height: 2.1375em;
    &:focus {
@@ -129,17 +129,17 @@
   }
   input[type="submit"] {
     color: $white;
-    background-color: $light;
+    background-color: $darkest;
     font-size: 1.1em;
     outline: 0;
-    border: 0.135em solid $light;
+    border: 0.135em solid $darkest;
     max-width: 4.55625em;
     height: 2.14em;
     &:focus,
     &:hover {
-      background-color: $light-pastel;
+      background-color: $mid;
       border: 0.135em solid $light-pastel;
-      color: $mid;
+      color: $white;
     }
   }
   .search__advanced {
@@ -182,6 +182,7 @@
     float: left;
   }
   .header__part--search {
+	  background-position: left center;
     width: 50%;
     float: left;
     border-bottom: none;
@@ -206,7 +207,7 @@
   .header__part--brand {
     text-align: left;
   }
-  .header__part--brand .icon-mie-logo {
+  .header__part--brand .icon-los-logo {
     margin: 1.75em 0 0.75em 10%;
   }
   .header__part--search {
@@ -234,6 +235,23 @@
     
 } //end min 41em
 
+@media only all and (min-width: 51em) {
+	
+	
+	
+} // end min 51em
+
+
+@media only all and (min-width: 59em) {
+	
+	.header__part--search {
+ 	 	background-position: left top;
+ 	 	float: right;
+ 	 	max-width: 25em;
+ 	}
+	
+} // end min 59em
+
 @media only all and (min-width: 88.75em) {
   
   // This has the same effect as .container class; these fixes will
@@ -242,12 +260,14 @@
   .header__part--brand {
     text-align: right;
   }
-  .header__part--brand .icon-mie-logo {
+  .header__part--brand .icon-los-logo {
     margin: 1.75em 22.5em 0.75em 0;
   }
   .header__part--search {
     text-align: left;
     padding: 0;
+    max-width: none;
+    background-position: right top;
   }
   .header__part--search .search__container {
     margin: 0 0 0 22em;

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.pattern-dark {
+  background: url(../../assets/pattern-dark.png);
+  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern, .icon-pattern-dark {
+  background-repeat: repeat; }
+
+.bg--darkest {
+  background-color: #222121; }
+
+.bg--dark {
+  background-color: #140431; }
+
+.bg--mid {
+  background-color: #412773; }
+
+.bg--light {
+  background-color: #B088BC; }
+
+.bg--light-pastel {
+  background-color: #D8ADE5; }
+
+.items {
+  margin: 0 0 3em 0; }
+
+.items--block {
+  padding: 1.5em 1.5em 1em 1.5em;
+  background-color: #e8ecf5; }
+
+.items .heading__smallest {
+  margin: 0 0 0.6em 0; }
+
+.items ul {
+  list-style-type: none; }
+
+.items .items__item:before {
+  content: "— "; }
+.items .items__item a:hover {
+  color: #140431;
+  border-color: #140431;
+  border-bottom: 0.1em solid; }
+.items .items__item:after {
+  content: " »"; }
+
+.items--block .items__item:before {
+  content: none; }
+.items--block .items__item a {
+  color: #140431;
+  border-color: #140431; }
+.items--block .items__item a:hover {
+  color: #0e0322;
+  border-bottom: 0.1em solid; }
+
+/*# sourceMappingURL=06-list-of-items.css.map */

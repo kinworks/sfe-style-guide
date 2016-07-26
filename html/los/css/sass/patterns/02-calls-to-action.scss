@@ -1,0 +1,253 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+// Clearfix
+
+.cta:before, .cta:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.cta:after {clear: both;}
+
+.cta {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1.5em 0;
+  padding: 0.8em;
+  background-color: $mid;
+  border-left: 1em solid $dark-text;
+  border-bottom: none;
+  @include transition(background-color, 0.2s, ease-in-out); 
+  &:hover {
+    background-color: scale-color($mid, $lightness: 5%);
+  }
+  &:hover span {
+    text-decoration: underline;
+  }
+}
+
+.cta span {
+  display: inline-block;
+  padding-bottom: 0.5em;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: $white;
+}
+
+.cta .icon-circle-arrow,
+.cta .icon-circle-arrow-white {
+  width: 2.125em;
+  height: 2.125em;
+}
+
+// Alternatives
+
+.cta--light {
+  background-color: $contrast;
+  border-color: $contrast-light;
+  span {
+    color: $white;
+  }
+  &:hover {
+    background-color: scale-color($contrast, $lightness: 7%);
+  }
+}
+
+.cta--light-alt {
+	background-color: $contrast-alt;
+  border-color: $contrast-alt-light;
+  &:hover {
+    background-color: scale-color($contrast-alt, $lightness: 7%);
+  }
+}
+
+.cta.cta--dark {
+	background-color: $dark;
+	border-left: none;
+	&:hover {
+		border-left: none;
+	}
+}
+
+.cta.cta--light--no-border {
+	background-color: $contrast;
+	border-left: none;
+	&:hover {
+		border-left: none;
+	}
+}
+
+.cta.icon-pattern {
+  border-color: $light;
+}
+
+.cta--no-circle {
+  div {display: none}
+}
+
+.cta--block {
+  border: none;
+  padding: 1.5em;
+  span {
+    font-weight: 600;
+  }
+}
+
+.cta--block.icon-pattern {
+  p {color: $white};
+}
+
+.cta--lockable {
+	width: auto;
+	min-width: 15em;
+	border-left: none;
+	background-color: $darkest;
+	color: $white;
+	div {
+		float: none;
+		display: inline-block;
+	}
+	span {
+		color: $white;
+		width: 55%;
+		height: 2em;
+		//float: left;
+		display: inline-block;
+		margin-left: 0.8em;
+	}
+	.cta--lockable__lock {
+		width: 1.375em;
+		margin-left: 0.2em;
+	}
+	.icon-lock-red {
+		width: 1.375em;
+		height: 1.875em;
+	}
+	&:hover {
+		background-color: scale-color($darkest, $lightness: 9%);
+	} 
+}
+
+@media only all and (min-width: 20em) {
+  
+  .cta {
+    border-left: 1.5em solid $dark;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+  }
+  
+  .cta--light {
+	  border-color: $contrast-light;
+  }
+  
+  .cta--light-alt {
+	  border-color: $contrast-alt-light;
+  }
+  
+  .cta span {
+    width: 80%;
+    float: left;
+    padding: 0;
+  }
+  
+  .cta div {
+    width: 20%;
+    float: right;
+    text-align: right;
+    padding-top: 0.3em;
+  }
+  
+  .cta.cta--lockable {
+		border-left: none;
+		min-width: 15.5em;
+		span {
+			width: 55%;
+			float: none;
+			vertical-align: 0.5em;
+			height: 1.4em;
+		}
+		div {
+			float: none;
+		}
+		.cta--lockable__lock {
+			vertical-align: 0.1em;	
+		}
+	}
+  
+  // Alternatives
+  
+  .cta--no-circle {
+    span {
+      width: 100%;
+      padding-bottom: 0.8em;
+    }
+  }
+   
+  .cta--block {
+    border: none;
+    span {
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
+    p {
+      width: 80%;
+      float: left;
+    }
+  }
+  
+  .cta--block.cta--no-circle {
+    span,
+    p {
+      width: 100%;
+    }
+  }
+  
+} //end min 20em
+
+@media only all and (min-width: 30em) {
+  
+  .cta {
+    padding: 0.6em 0.8em 0.6em 0.8em;
+  }
+  
+  .cta span {
+    font-size: 1.3em;
+    padding: 0.4em 0 0 0;
+  }
+  
+  .cta.cta--lockable {
+		span {
+			padding: 0;
+		}
+	}
+  
+  // alternatives
+  
+  .cta--block {
+    padding: 1.7em;
+  }
+  
+} // end min 30em
+
+@media only all and (min-width: 32.5em) {
+  
+  // Alternatives
+  
+  .cta--no-circle {
+    padding: 1.5em 1em 1.5em 1em;
+    span {
+      padding-top: 0;
+    }
+  }
+  
+} //end min 32.5em
+
+@media only all and (min-width: 58.75em) {
+  
+  .cta {
+    padding: 0.6em 1.2em 0.6em 1.2em;
+  }
+  
+} //end min 32.5em
+

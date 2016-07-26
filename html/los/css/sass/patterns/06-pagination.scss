@@ -1,0 +1,78 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+/* Pagination */
+
+ol.pagination {
+  list-style-type: none;
+  font-size: 1em;
+  margin: 0 0 2em 0;
+}
+
+ol.pagination li {
+  display: inline-block;
+  &:before { 
+  content: " "; 
+  counter-increment: none; 
+  }
+}
+
+.pagination .heading--small {
+  font-size: 1.4em;
+}
+
+.pagination a {
+  display: inline-block;
+  margin: 0 0.5em 0.5em 0;
+  padding: 0.51em 0.5em;
+  height: 2.2em;
+  min-width: 2.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+  background-color: $mid;
+  color: $white;
+  &:hover {
+    text-decoration: underline;
+    background-color: $contrast-alt;
+  }
+}
+
+.pagination__current a {
+  background-color: $mid-bright;
+  color: $white;
+  cursor: not-allowed;
+  border: none;
+  &:hover {
+    text-decoration: underline;
+    color: $white;
+    background-color: $mid-bright;
+  }
+}
+
+.pagination__previous a,
+.pagination__next a {
+  background-color: $dark;
+  color: $white;
+  border-bottom: none;
+  padding: 0.35em 0.1em;
+  height: 2.2em;
+  width: 2.2em;
+}
+
+.pagination__previous span,
+.pagination__next span{
+  font-size: 1.5em;
+}
+
+.pagination__previous.no-more a,
+.pagination__next.no-more a {
+  background-color: #ccc;
+  color: #555;
+  cursor: not-allowed;
+  border-bottom: none;
+  &:hover {
+    text-decoration: none;
+    color: #555;
+  }
+}

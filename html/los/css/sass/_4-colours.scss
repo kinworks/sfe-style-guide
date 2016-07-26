@@ -1,0 +1,104 @@
+//// Brand
+
+$light: #B088BC;
+
+$mid: #412773; 
+
+$mid-bright: #8F4F97;
+
+$dark: #140431; 
+
+$darkest: #222121;
+
+//// Section-specific colours
+
+$section-alpha: #00855B;
+
+$section-beta: #0456BE;
+
+$section-gamma: #0080A6;
+
+$section-delta: #760B5E;
+
+
+//// Text-specific colours
+/////// A11Y: These will validate to WCAG 2.0 
+///////////// for AA small text (4.5:1)
+
+$link-text: #5F39AC;
+
+$mid-text: $mid;
+
+$dark-text: $dark;
+
+$disabled-text: #666;
+
+
+//// Modules / Body
+
+$white: #ffffff; // Yes, really.
+
+$light-pastel: #D8ADE5;
+
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg),
+    linear-gradient(transparent, transparent);
+    /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */
+}
+
+.pattern-dark {
+  background: url(../../assets/pattern-dark.png);
+  background: url(../../assets/pattern-dark.svg),
+    linear-gradient(transparent, transparent);
+    /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */
+}
+
+.icon-pattern,
+.icon-pattern-dark {
+  background-repeat: repeat;
+}
+
+
+/// Calls to Action / Highlights
+
+$contrast: #D96E10; // WCAG 2 AA Compliant (18pt+)
+
+$contrast-light: #FBA458; // Don't use with white for text
+
+$contrast-alt: #6381BF; // WCAG 2 AA Compliant (18pt+)
+
+$contrast-alt-light: #90AEEC; // Don't use with white for text
+
+$feedback: scale-color($contrast-alt, $lightness: 70%);
+
+$error: #ffcdb3;
+
+$disabled: #ccc;
+
+
+/// Background utility classes
+
+.bg--darkest {
+  background-color: $darkest;
+}
+
+.bg--dark {
+  background-color: $dark;
+}
+
+.bg--mid {
+  background-color: $mid;
+}
+
+.bg--light {
+  background-color: $light;
+}
+
+.bg--light-pastel {
+  background-color: $light-pastel;
+}

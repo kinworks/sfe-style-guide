@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "11-images-with-captions.css",
+	"sources": [
+		"../../../../11-images-with-captions.scss",
+		"../../../../../_4-colours.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "ACwBA;EACE,AAAY;EACZ,AAAwC;;;;;AAO1C;EACE,AAAmB;;AAmBrB;EACE,AAhDK;;AAmDP;EACE,AAtDI;;AAyDN;EACE,AA5DM;;AA+DR;EACE,AA5Ca;;ADnBf;EACE,AAAS;EACT,AAAQ;EACR,AAAW;;AAGb,AAAO;EACL,AAAW;EACX,AAAS;;AAGX;EACE,AAAS;EACT,AAAO;EACP,AAAkB;EAClB,AAAS;;AAGX,AAAgB;EACd,AChBK;EDiBL,ACjBK",
+	"names": []
+}

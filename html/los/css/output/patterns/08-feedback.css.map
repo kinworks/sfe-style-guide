@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "08-feedback.css",
+	"sources": [
+		"../../../../../08-feedback.scss",
+		"../../../../../../_4-colours.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AC0CA;EACE,AAAY;EACZ,AAAwC;;;;;AAO1C;EACE,AAAY;EACZ,AAA6C;;;;;AAO/C,AAAe;EAEb,AAAmB;;AAuBrB;EACE,AA5EQ;;AA+EV;EACE,AAlFK;;AAqFP;EACE,AA1FI;;AA6FN;EACE,AAhGM;;AAmGR;EACE,AA9Da;;ADrCf;EACC,ACwEU;EDvEV,AAAe;EACf,AAAa;EACb,AAAS;EACT,AAAQ",
+	"names": []
+}

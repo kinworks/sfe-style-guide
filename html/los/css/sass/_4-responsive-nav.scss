@@ -1,0 +1,52 @@
+// EDITED VERSION
+
+/*! responsive-nav.js 1.0.32 by @viljamis */
+
+.nav-collapse ul,
+.login-collapse .login__container,
+.search-collapse .search__container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.guidenav-collapse li,
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .login-collapse,
+.js .search-collapse,
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: none;
+  position: relative;
+  display: block;
+ // overflow: hidden;
+  zoom: 1;
+}
+
+.login-collapse.opened,
+.search-collapse.opened,
+.nav-collapse.opened {
+  max-height: 9999px;
+  clip: auto;
+  width: 100%;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}

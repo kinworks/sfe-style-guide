@@ -50,10 +50,10 @@
   display: none; }
 
 .main-nav li {
-  background-color: #232424;
+  background-color: #3c5c35;
   margin-bottom: 0; }
   .main-nav li:nth-child(2n) {
-    background-color: #202121; }
+    background-color: #365430; }
   .main-nav li .icon-lock-white {
     vertical-align: -0.3em;
     margin-right: 0.4em; }
@@ -124,9 +124,9 @@
   .main-nav .sub-menu li:hover a {
     text-decoration: underline; }
   .main-nav .sub-menu li:nth-child(2n) {
-    background-color: #395c2f; }
+    background-color: #3e6333; }
     .main-nav .sub-menu li:nth-child(2n):hover {
-      background-color: #283f21; }
+      background-color: #2c4725; }
 
 .js .nav__trigger {
   position: fixed;

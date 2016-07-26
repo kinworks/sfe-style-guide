@@ -32,10 +32,10 @@
 }
 
 .main-nav li {
-  background-color: scale-color($contrast-alt, $lightness: -5%);
+  background-color: scale-color($dark, $lightness: -12%);
   margin-bottom: 0;
   &:nth-child(2n) {
-    background-color: scale-color($contrast-alt, $lightness: -14%);
+    background-color: scale-color($dark, $lightness: -20%);
   }
   .icon-lock-white {
 	  vertical-align: -0.3em;
@@ -129,9 +129,9 @@
     text-decoration: underline;
   }
   &:nth-child(2n) {
-    background-color: scale-color($mid, $lightness: -35%);
+    background-color: scale-color($mid, $lightness: -30%);
     &:hover {
-      background-color: scale-color($mid, $lightness: -55%);
+      background-color: scale-color($mid, $lightness: -50%);
     }
   }
 }

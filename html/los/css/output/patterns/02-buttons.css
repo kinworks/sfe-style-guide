@@ -5,35 +5,28 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 /* Buttons / CTAs */
 .btn {
   font-size: 1.13em;
-  background-color: #140431;
+  background-color: #44693C;
   color: #fff;
   display: inline-block;
   padding: 0.6em 1.2em;
@@ -46,61 +39,61 @@
   -o-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   border-top: none;
-  border-bottom: 0.2em solid #0a0219; }
+  border-bottom: 0.2em solid #22341e; }
   .btn:hover {
     text-decoration: underline;
-    box-shadow: inset 0 0 0 0.2em #480eb0;
-    background-color: #2e0970;
-    border-bottom: 0.2em solid #0d0320; }
+    box-shadow: inset 0 0 0 0.2em #71a765;
+    background-color: #598a4f;
+    border-bottom: 0.2em solid #2c4427; }
 
 .btn--mid {
-  background-color: #412773;
-  border-bottom: 0.2em solid #2e1b51; }
+  background-color: #588D49;
+  border-bottom: 0.2em solid #3e6333; }
   .btn--mid:hover {
-    box-shadow: inset 0 0 0 0.2em #6f45c0;
-    background-color: #412773;
-    border-bottom: 0.2em solid #3b2368; }
+    box-shadow: inset 0 0 0 0.2em #85b876;
+    background-color: #588D49;
+    border-bottom: 0.2em solid #4f7f42; }
 
 .btn--light {
-  background-color: #B088BC;
+  background-color: #6BB64C;
   color: #ffffff;
-  border-bottom: 0.2em solid #825291; }
+  border-bottom: 0.2em solid #4b8034; }
   .btn--light:hover {
-    box-shadow: inset 0 0 0 0.2em #d0b8d7;
-    background-color: #B088BC;
-    border-bottom: 0.2em solid #945fa5; }
+    box-shadow: inset 0 0 0 0.2em #a6d394;
+    background-color: #6BB64C;
+    border-bottom: 0.2em solid #55933c; }
 
 .btn--light-pastel {
-  background-color: #D8ADE5;
-  color: #140431;
-  border-bottom: 0.2em solid #bb70d2; }
+  background-color: #A1EA83;
+  color: #44693C;
+  border-bottom: 0.2em solid #72df45; }
   .btn--light-pastel:hover {
-    box-shadow: inset 0 0 0 0.2em #e8ceef;
-    background-color: #D8ADE5;
-    border-bottom: 0.2em solid #c98edb; }
+    box-shadow: inset 0 0 0 0.2em #c7f2b5;
+    background-color: #A1EA83;
+    border-bottom: 0.2em solid #89e564; }
 
 .btn--contrast {
-  background-color: #D96E10;
-  border-bottom: 0.2em solid #82420a; }
+  background-color: #793EAC;
+  border-bottom: 0.2em solid #492567; }
   .btn--contrast:hover {
-    box-shadow: inset 0 0 0 0.2em #f2994a;
-    background-color: #D96E10;
-    border-bottom: 0.2em solid #984d0b; }
+    box-shadow: inset 0 0 0 0.2em #a271cc;
+    background-color: #793EAC;
+    border-bottom: 0.2em solid #552b78; }
 
 .btn--contrast-alt {
-  background-color: #6381BF;
-  border-bottom: 0.2em solid #334a7b; }
+  background-color: #252626;
+  border-bottom: 0.2em solid #161717; }
   .btn--contrast-alt:hover {
-    box-shadow: inset 0 0 0 0.2em #829acc;
-    background-color: #6381BF;
-    border-bottom: 0.2em solid #4363a5; }
+    box-shadow: inset 0 0 0 0.2em #505252;
+    background-color: #252626;
+    border-bottom: 0.2em solid #1e1e1e; }
 
 .btn--white {
   background-color: #ffffff;
   border-bottom: 0.2em solid #b3b3b3;
-  color: #140431; }
+  color: #44693C; }
   .btn--white:hover {
-    box-shadow: inset 0 0 0 0.2em #D8ADE5;
+    box-shadow: inset 0 0 0 0.2em #A1EA83;
     background-color: #ffffff;
     border-bottom: 0.2em solid #b3b3b3; }
 

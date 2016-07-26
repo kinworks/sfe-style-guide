@@ -5,30 +5,23 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .cta:before, .cta:after {
   display: table;
@@ -43,8 +36,8 @@
   width: 100%;
   margin: 0 0 1.5em 0;
   padding: 0.8em;
-  background-color: #412773;
-  border-left: 1em solid #140431;
+  background-color: #588D49;
+  border-left: 1em solid #44693C;
   border-bottom: none;
   -webkit-transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
@@ -52,7 +45,7 @@
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out; }
   .cta:hover {
-    background-color: #492c80; }
+    background-color: #5e974e; }
   .cta:hover span {
     text-decoration: underline; }
 
@@ -68,33 +61,33 @@
   height: 2.125em; }
 
 .cta--light {
-  background-color: #D96E10;
-  border-color: #FBA458; }
+  background-color: #793EAC;
+  border-color: red; }
   .cta--light span {
     color: #ffffff; }
   .cta--light:hover {
-    background-color: #eb7711; }
+    background-color: #8343ba; }
 
 .cta--light-alt {
-  background-color: #6381BF;
-  border-color: #90AEEC; }
+  background-color: #252626;
+  border-color: red; }
   .cta--light-alt:hover {
-    background-color: #6e8ac3; }
+    background-color: #343535; }
 
 .cta.cta--dark {
-  background-color: #140431;
+  background-color: #44693C;
   border-left: none; }
   .cta.cta--dark:hover {
     border-left: none; }
 
 .cta.cta--light--no-border {
-  background-color: #D96E10;
+  background-color: #793EAC;
   border-left: none; }
   .cta.cta--light--no-border:hover {
     border-left: none; }
 
 .cta.icon-pattern {
-  border-color: #B088BC; }
+  border-color: #6BB64C; }
 
 .cta--no-circle div {
   display: none; }
@@ -112,7 +105,7 @@
   width: auto;
   min-width: 15em;
   border-left: none;
-  background-color: #222121;
+  background-color: #112F0A;
   color: #ffffff; }
   .cta--lockable div {
     float: none;
@@ -130,16 +123,16 @@
     width: 1.375em;
     height: 1.875em; }
   .cta--lockable:hover {
-    background-color: #363535; }
+    background-color: #1d5111; }
 
 @media only all and (min-width: 20em) {
   .cta {
-    border-left: 1.5em solid #140431;
+    border-left: 1.5em solid #44693C;
     padding: 0.5em 0.8em 0.5em 0.8em; }
   .cta--light {
-    border-color: #FBA458; }
+    border-color: red; }
   .cta--light-alt {
-    border-color: #90AEEC; }
+    border-color: red; }
   .cta span {
     width: 80%;
     float: left;

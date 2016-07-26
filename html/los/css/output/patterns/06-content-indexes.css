@@ -6,35 +6,28 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: #f3edf5;
+  background-color: #e9f4e4;
   text-align: center;
   margin: 0 0 2em 0; }
 
@@ -42,7 +35,7 @@
   display: block;
   font-size: 1.4em;
   margin: 0 0 1em 0;
-  color: #140431; }
+  color: #44693C; }
 
 .list__jump-nav__select {
   display: none; }
@@ -73,31 +66,31 @@
     /* stops bg color from leaking outside the border: */
     text-align: center;
     border-bottom: none;
-    background-color: #412773;
+    background-color: #588D49;
     color: #ffffff;
     font-weight: 3 00; }
   .list__jump-nav li a:hover {
-    background-color: #5f39a8; }
+    background-color: #74ae63; }
   .list__jump-nav li:nth-child(2n) a {
-    background-color: #8F4F97; }
+    background-color: red; }
   .list__jump-nav li:nth-child(2n) a:hover {
-    background-color: #a25daa; }
+    background-color: #ff1f1f; }
   .list__jump-nav li:before {
     content: none;
     counter-increment: none; }
   .list__jump-nav li.not-available a {
     background-color: inherit;
-    color: #412773;
+    color: #588D49;
     cursor: not-allowed; }
     .list__jump-nav li.not-available a:hover {
       background-color: inherit; }
 
 .list__content .heading {
-  color: #140431; }
+  color: #44693C; }
 
 .list__content .heading span {
   font-weight: 300;
-  color: #f5eaf9;
+  color: #e8fae0;
   display: inline-block;
   margin: 0 0.5em 0 0.2em; }
 
@@ -105,7 +98,7 @@
   font-size: 0.82em;
   font-weight: 300;
   font-style: italic;
-  color: #412773; }
+  color: #588D49; }
 
 .list__content ol {
   list-style: none;

@@ -410,30 +410,23 @@ Performance is dramatically improved because a 9999px box is not drawn. Noticeab
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 /*! responsive-nav.js 1.0.32 by @viljamis */
 .nav-collapse ul, .login-collapse .login__container, .search-collapse .search__container {
@@ -483,12 +476,12 @@ body, .wf-loading body, .wf-inactive body {
 .heading {
   font-weight: 600;
   font-style: normal;
-  color: #140431;
+  color: #44693C;
   margin: 0 0 1em 0;
   line-height: 1.2em; }
 
 .heading--mid {
-  color: #B088BC; }
+  color: #6BB64C; }
 
 .heading--pairing {
   margin: 0 0 0.15em 0; }
@@ -510,7 +503,7 @@ p, ul, ol, .text {
   line-height: 1.4em;
   font-style: normal;
   font-weight: 300;
-  color: #140431; }
+  color: #44693C; }
 
 p, .text {
   margin-bottom: 1.3em;
@@ -527,24 +520,24 @@ i, em {
 
 a {
   color: #5F39AC;
-  border-bottom: 0.1em dotted #412773;
+  border-bottom: 0.1em dotted #588D49;
   text-decoration: none; }
 
 .link--dark {
-  color: #140431;
-  border-bottom: 0.1em dotted #140431; }
+  color: #44693C;
+  border-bottom: 0.1em dotted #44693C; }
 
 .link--mid {
-  color: #412773;
-  border-bottom: 0.1em dotted #412773; }
+  color: #588D49;
+  border-bottom: 0.1em dotted #588D49; }
 
 .link--light {
-  color: #B088BC;
-  border-bottom: 0.1em dotted #B088BC; }
+  color: #6BB64C;
+  border-bottom: 0.1em dotted #6BB64C; }
 
 .link--light-pastel {
-  color: #D8ADE5;
-  border-bottom: 0.1em dotted #D8ADE5; }
+  color: #A1EA83;
+  border-bottom: 0.1em dotted #A1EA83; }
 
 .link--white {
   color: #ffffff;
@@ -567,7 +560,7 @@ a {
     display: inline-block;
     max-width: 34em; }
   .node-type-page .wysiwyg h1, .node-type-film-clip .js-panel .wysiwyg h1, .node-type-lesson-guide .js-panel .wysiwyg h1, .useful-links .view-content h1, .video-tutorials__list.wysiwyg h1, .node-type-video-tutorial .wysiwyg h1, .node-type-news-article .wysiwyg h1 {
-    color: #412773;
+    color: #588D49;
     margin: 0 0 0.4em 0; }
   .node-type-page .wysiwyg h2, .node-type-film-clip .js-panel .wysiwyg h2, .node-type-lesson-guide .js-panel .wysiwyg h2, .useful-links .view-content h2, .video-tutorials__list.wysiwyg h2, .node-type-video-tutorial .wysiwyg h2, .node-type-news-article .wysiwyg h2 {
     font-size: 1.8em;
@@ -578,15 +571,15 @@ a {
     font-size: 1.5em;
     margin: 1.3em 0 0.6em 0; }
   .node-type-page .wysiwyg h4, .node-type-page .wysiwyg h6, .node-type-film-clip .js-panel .wysiwyg h4, .node-type-film-clip .js-panel .wysiwyg h6, .node-type-lesson-guide .js-panel .wysiwyg h4, .node-type-lesson-guide .js-panel .wysiwyg h6, .useful-links .view-content h4, .useful-links .view-content h6, .video-tutorials__list.wysiwyg h4, .video-tutorials__list.wysiwyg h6, .node-type-video-tutorial .wysiwyg h4, .node-type-video-tutorial .wysiwyg h6, .node-type-news-article .wysiwyg h4, .node-type-news-article .wysiwyg h6 {
-    color: #412773;
+    color: #588D49;
     font-size: 1.5em;
     margin: 1.3em 0 0.6em 0; }
   .node-type-page .wysiwyg h5, .node-type-page .wysiwyg h6, .node-type-film-clip .js-panel .wysiwyg h5, .node-type-film-clip .js-panel .wysiwyg h6, .node-type-lesson-guide .js-panel .wysiwyg h5, .node-type-lesson-guide .js-panel .wysiwyg h6, .useful-links .view-content h5, .useful-links .view-content h6, .video-tutorials__list.wysiwyg h5, .video-tutorials__list.wysiwyg h6, .node-type-video-tutorial .wysiwyg h5, .node-type-video-tutorial .wysiwyg h6, .node-type-news-article .wysiwyg h5, .node-type-news-article .wysiwyg h6 {
     font-size: 1.5em;
     margin: 1.3em 0 0.6em 0; }
   .node-type-page .wysiwyg a:hover, .node-type-film-clip .js-panel .wysiwyg a:hover, .node-type-lesson-guide .js-panel .wysiwyg a:hover, .useful-links .view-content a:hover, .video-tutorials__list.wysiwyg a:hover, .node-type-video-tutorial .wysiwyg a:hover, .node-type-news-article .wysiwyg a:hover {
-    color: #140431;
-    border-bottom: 0.1em dotted #140431; }
+    color: #44693C;
+    border-bottom: 0.1em dotted #44693C; }
   .node-type-page .wysiwyg .item-list ul li .views-field-title, .node-type-film-clip .js-panel .wysiwyg .item-list ul li .views-field-title, .node-type-lesson-guide .js-panel .wysiwyg .item-list ul li .views-field-title, .useful-links .view-content .item-list ul li .views-field-title, .video-tutorials__list.wysiwyg .item-list ul li .views-field-title, .node-type-video-tutorial .wysiwyg .item-list ul li .views-field-title, .node-type-news-article .wysiwyg .item-list ul li .views-field-title {
     display: inline; }
 
@@ -618,7 +611,7 @@ body {
       background-size: auto; } }
 
 .bg-light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 #guidenav-trigger {
   display: none; }
@@ -629,7 +622,7 @@ body {
     max-width: 20em; }
 
 .sitename {
-  color: #D8ADE5; }
+  color: #A1EA83; }
 
 .nav-wrapper {
   background-color: #101010; }
@@ -694,7 +687,7 @@ body {
     color: #ffffff; }
 
 .guide {
-  background-color: #D8ADE5;
+  background-color: #A1EA83;
   line-height: 1.5em;
   font-size: 16px;
   border: none;
@@ -735,7 +728,7 @@ body {
   margin: 0 auto 0 auto; }
 
 .guide .guidepattern.elements-heading {
-  border-bottom: 0.1em #D8ADE5 solid; }
+  border-bottom: 0.1em #A1EA83 solid; }
 
 .guide .guidepattern.outside {
   margin: 0;
@@ -779,7 +772,7 @@ iframe {
   font-weight: 600; }
 
 h1.guidance, h2.guidance {
-  color: #140431;
+  color: #44693C;
   text-transform: capitalize;
   font-weight: 500; }
 
@@ -805,7 +798,7 @@ ul.guidance li {
     content: "— "; }
 
 .js-tabs ul.guidance li [aria-selected=true] {
-  color: #140431;
+  color: #44693C;
   background-color: #ffffff; }
 
 pre {
@@ -839,67 +832,55 @@ pre {
   border-bottom: 0.2em solid #ccc; }
 
 .swatches span.light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .swatches span.mid {
-  background-color: #412773; }
-
-.swatches span.mid-bright {
-  background-color: #8F4F97; }
-
-.swatches span.section-alpha {
-  background-color: #00855B; }
-
-.swatches span.section-beta {
-  background-color: #0456BE; }
-
-.swatches span.section-gamma {
-  background-color: #0080A6; }
-
-.swatches span.section-delta {
-  background-color: #760B5E; }
+  background-color: #588D49; }
 
 .swatches span.link-text {
   background-color: #5F39AC; }
 
-.swatches span.mid-text {
-  background-color: #412773; }
+.swatches span.dark-text {
+  background-color: #44693C; }
+
+.swatches span.default-text {
+  background-color: #252626; }
 
 .swatches span.dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .swatches span.darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .swatches span.dark-text {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .swatches span.white {
   background-color: #ffffff; }
 
 .swatches span.light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .swatches span.pattern {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .swatches span.pattern-dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .swatches span.contrast {
-  background-color: #D96E10; }
+  background-color: #793EAC; }
 
 .swatches span.contrast-light {
-  background-color: #FBA458; }
+  background-color: red; }
 
 .swatches span.contrast-alt {
-  background-color: #6381BF; }
+  background-color: #252626; }
 
 .swatches span.contrast-alt-light {
-  background-color: #90AEEC; }
+  background-color: red; }
 
 .swatches span.feedback {
-  background-color: #d0d9ec; }
+  background-color: #D7C5E7; }
 
 .swatches span.error {
   background-color: #ffcdb3; }
@@ -957,7 +938,7 @@ pre {
 
 .blocks {
   width: 100%;
-  background-color: #D8ADE5;
+  background-color: #A1EA83;
   padding: 2em 0 2em 0;
   margin: 0 0 2em 0; }
 
@@ -1113,33 +1094,26 @@ pre {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .footer__top {
-  background-color: #140431;
+  background-color: #44693C;
   padding: 2em 8% 1.5em 8%; }
 
 .footer__top__report-issues {
@@ -1200,7 +1174,7 @@ pre {
   height: 5.8125em; }
 
 .footer__nav {
-  background-color: #392265;
+  background-color: #4d7c40;
   padding: 1.5em 8% 0.5em 8%;
   text-align: center; }
 
@@ -1215,7 +1189,7 @@ pre {
     border-bottom: 0.1em dotted #ffffff; }
 
 footer {
-  background-color: #140431;
+  background-color: #44693C;
   padding: 2.4em 8% 3.5em 8%;
   text-align: center; }
 
@@ -1330,33 +1304,26 @@ footer i {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .header {
-  background-color: #140431;
+  background-color: #44693C;
   width: 100%;
   margin: 0;
   text-align: center; }
@@ -1397,9 +1364,9 @@ footer i {
   padding: 0 8% 0 8%; }
 
 .header__search-trigger {
-  background-color: #412773;
+  background-color: #588D49;
   cursor: pointer;
-  border-bottom: 0.3em solid #2e1b51; }
+  border-bottom: 0.3em solid #3e6333; }
   .header__search-trigger .icon-search {
     width: 1.6875em;
     height: 1.75em;
@@ -1416,7 +1383,7 @@ footer i {
 
 .header__part--search {
   background-position: right top;
-  border-bottom: 0.3em solid #140431; }
+  border-bottom: 0.3em solid #44693C; }
   .header__part--search form {
     background-color: inherit;
     margin: 0;
@@ -1441,11 +1408,11 @@ footer i {
     font-weight: 600; }
   .header__part--search input[type="text"] {
     font-size: 1.1em;
-    border: 0.135em solid #B088BC;
+    border: 0.135em solid #6BB64C;
     padding: 0.36em;
     height: 2.1375em; }
     .header__part--search input[type="text"]:focus {
-      border: 0.135em solid #D8ADE5; }
+      border: 0.135em solid #A1EA83; }
   .header__part--search input[type="text"], .header__part--search input[type="submit"] {
     width: 100%;
     margin: 0; }
@@ -1455,16 +1422,16 @@ footer i {
     float: left; }
   .header__part--search input[type="submit"] {
     color: #ffffff;
-    background-color: #B088BC;
+    background-color: #6BB64C;
     font-size: 1.1em;
     outline: 0;
-    border: 0.135em solid #B088BC;
+    border: 0.135em solid #6BB64C;
     max-width: 4.55625em;
     height: 2.14em; }
     .header__part--search input[type="submit"]:focus, .header__part--search input[type="submit"]:hover {
-      background-color: #D8ADE5;
-      border: 0.135em solid #D8ADE5;
-      color: #412773; }
+      background-color: #A1EA83;
+      border: 0.135em solid #A1EA83;
+      color: #588D49; }
   .header__part--search .search__advanced {
     display: inline-block;
     font-size: 1em;
@@ -1475,8 +1442,8 @@ footer i {
       border-color: #ffffff;
       color: #ffffff; }
     .header__part--search .search__advanced a:focus, .header__part--search .search__advanced a:hover {
-      color: #D8ADE5;
-      border-bottom: 0.1em dotted #B088BC; }
+      color: #A1EA83;
+      border-bottom: 0.1em dotted #6BB64C; }
   .header__part--search .form-item, .header__part--search .form-actions {
     margin: 0; }
 
@@ -1535,30 +1502,23 @@ footer i {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .login__trigger.cta, .logout__trigger.cta {
   font-size: 0.9em;
@@ -1566,9 +1526,9 @@ footer i {
   padding: 0.5em 0.8em 0.5em 0.8em;
   margin: 0 auto 0 auto;
   display: block;
-  background-color: #140431;
+  background-color: #44693C;
   background-image: none;
-  border-left: 1em solid #412773;
+  border-left: 1em solid #588D49;
   cursor: pointer; }
   .login__trigger.cta .icon-arrow-down, .login__trigger.cta .icon-arrow-up, .login__trigger.cta .icon-arrow-right, .logout__trigger.cta .icon-arrow-down, .logout__trigger.cta .icon-arrow-up, .logout__trigger.cta .icon-arrow-right {
     width: 0.625em;
@@ -1591,7 +1551,7 @@ footer i {
   text-align: center;
   padding: 0.5em 8% 0.1em 5%; }
   .login__trigger--top.cta:hover {
-    background-color: #3b5790; }
+    background-color: #1a1b1b; }
 
 .login__trigger--top.cta .login__trigger--top__container {
   display: inline-block;
@@ -1604,7 +1564,7 @@ footer i {
   padding: 1.5em 8% 1.5em 8%; }
 
 .login__sso {
-  background-color: #412773; }
+  background-color: #588D49; }
   .login__sso .sso__block__label {
     width: 100%;
     font-size: 1.2em;
@@ -1614,11 +1574,11 @@ footer i {
   .login__sso .login__sso__block--shibboleth .btn {
     margin-bottom: 0; }
     .login__sso .login__sso__block--shibboleth .btn:hover {
-      box-shadow: inset 0 0 0 0.2em #6e8ac3; }
+      box-shadow: inset 0 0 0 0.2em #343535; }
 
 .login__cms {
   padding-top: 2em;
-  background-color: #140431; }
+  background-color: #44693C; }
   .login__cms .login__cms__label {
     font-size: 1.2em;
     color: #ffffff;
@@ -1635,7 +1595,7 @@ footer i {
     margin: 0;
     padding: 0; }
   .login__cms .item-list a {
-    color: #D8ADE5; }
+    color: #A1EA83; }
     .login__cms .item-list a:hover {
       color: #ffffff;
       border-bottom: 0.1em dotted #ffffff; }
@@ -1651,17 +1611,17 @@ footer i {
 
 @media only all and (min-width: 41em) {
   .login__trigger.cta, .logout__trigger.cta {
-    background-color: #412773;
+    background-color: #588D49;
     background-image: none; }
   .login__trigger--top.cta {
-    background-color: #0e0322;
+    background-color: #304a2a;
     padding: 0.7em 8% 0.5em 8%; }
     .login__trigger--top.cta:hover {
-      background-color: #140431; }
+      background-color: #44693C; }
   .login__trigger--top.cta .login__trigger--top__container {
     max-width: 10em; }
   .login__sso {
-    background-color: #412773;
+    background-color: #588D49;
     padding-bottom: 2em; }
     .login__sso .login__sso__block {
       width: 50%;
@@ -1746,37 +1706,30 @@ footer i {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .nav__trigger {
   background-repeat: repeat;
-  background-color: #140431;
+  background-color: #44693C;
   cursor: pointer;
   z-index: 100;
-  border-top: 0.3em solid #0c021d; }
+  border-top: 0.3em solid #293f24; }
   .nav__trigger .icon-menu {
     width: 1.5em;
     height: 1.3125em;
@@ -1797,10 +1750,10 @@ footer i {
   display: none; }
 
 .main-nav li {
-  background-color: #5979bb;
+  background-color: #232424;
   margin-bottom: 0; }
   .main-nav li:nth-child(2n) {
-    background-color: #496bb1; }
+    background-color: #202121; }
   .main-nav li .icon-lock-white {
     vertical-align: -0.3em;
     margin-right: 0.4em; }
@@ -1818,7 +1771,7 @@ footer i {
 
 .main-nav li .sub-menu .active {
   text-decoration: none;
-  background-color: #140431; }
+  background-color: #44693C; }
   .main-nav li .sub-menu .active:before {
     content: "» "; }
 
@@ -1836,7 +1789,7 @@ footer i {
   .js .main-nav .parent .sectiontoggle div {
     display: inline-block;
     padding: 0.1em 0.4em;
-    background-color: #070111; }
+    background-color: #182515; }
   .js .main-nav .parent .sectiontoggle .icon-arrow-down, .js .main-nav .parent .sectiontoggle .icon-arrow-up {
     width: 0.625em;
     height: 0.625em; }
@@ -1865,15 +1818,15 @@ footer i {
   text-decoration: none; }
 
 .main-nav .sub-menu li {
-  background-color: #341f5c; }
+  background-color: #46713a; }
   .main-nav .sub-menu li:hover {
-    background-color: #24153f; }
+    background-color: #304e28; }
   .main-nav .sub-menu li:hover a {
     text-decoration: underline; }
   .main-nav .sub-menu li:nth-child(2n) {
-    background-color: #2a194b; }
+    background-color: #395c2f; }
     .main-nav .sub-menu li:nth-child(2n):hover {
-      background-color: #1d1234; }
+      background-color: #283f21; }
 
 .js .nav__trigger {
   position: fixed;
@@ -1907,9 +1860,9 @@ footer i {
   .nav__trigger {
     display: none; }
   .main-nav li {
-    background-color: #4869af; }
+    background-color: #1f2020; }
     .main-nav li:nth-child(2) {
-      background-color: #3f5d9a; }
+      background-color: #1c1c1c; }
   .main-nav li a.active {
     color: #ffffff;
     text-decoration: underline; }
@@ -1919,7 +1872,7 @@ footer i {
     display: inline-block;
     text-align: center;
     width: 100%;
-    background-color: #412773;
+    background-color: #588D49;
     padding: 1.1em 5% 1.2em 5%;
     color: #ffffff; }
     .secondary-nav-spaceholder span {
@@ -1947,10 +1900,10 @@ footer i {
     .main-nav li:nth-child(3) {
       width: 38%; }
     .main-nav li:nth-child(4) {
-      border-right: 0.15em solid #375186; }
+      border-right: 0.15em solid #181919; }
     .main-nav li:nth-child(4), .main-nav li:nth-child(5) {
       width: 50%;
-      background-color: #1e2b48; }
+      background-color: #0d0d0d; }
   .js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open {
     width: 37%; }
   .js nav.nav-collapse .main-nav li:nth-child(3) .sub-menu.open {
@@ -1983,17 +1936,17 @@ footer i {
     text-align: left;
     border: none; }
     .main-nav .sub-menu li:nth-child(4) {
-      background-color: #2a194b; }
+      background-color: #395c2f; }
       .main-nav .sub-menu li:nth-child(4):hover {
-        background-color: #1d1234; }
+        background-color: #283f21; }
     .main-nav .sub-menu li:nth-child(5) {
-      background-color: #341f5c; }
+      background-color: #46713a; }
       .main-nav .sub-menu li:nth-child(5):hover {
-        background-color: #24153f; } }
+        background-color: #304e28; } }
 
 @media only all and (min-width: 59em) {
   nav {
-    background-color: #140431;
+    background-color: #44693C;
     margin: 0 0 0 0;
     padding: 0 5% 0 5%; }
   .nav-collapse .main-nav {
@@ -2053,7 +2006,7 @@ footer i {
     .main-nav .sub-menu a {
       height: auto; }
   .main-nav li:hover .sub-menu, .main-nav li.section-active .sub-menu {
-    background-color: #412773;
+    background-color: #588D49;
     display: block;
     visibility: visible;
     height: auto;
@@ -2075,7 +2028,7 @@ footer i {
     width: auto;
     text-align: center;
     display: inline-block;
-    background-color: #412773;
+    background-color: #588D49;
     padding: 0;
     margin: 0 2% 0 2%;
     float: none; }
@@ -2083,22 +2036,22 @@ footer i {
       padding: 0.4em 0.5em 0.4em 0.5em; }
     .js nav.nav-collapse .main-nav ul.sub-menu li:hover a {
       text-decoration: underline;
-      background-color: #140431; }
+      background-color: #44693C; }
   .js nav.nav-collapse .main-nav ul.sub-menu li a {
     width: 100%;
     text-align: center;
-    background-color: #412773; }
+    background-color: #588D49; }
   .js nav.nav-collapse .main-nav ul.sub-menu.open {
     margin: 1.2em 0 0 0;
     padding: 0.4em 4% 0.4em 4%;
     text-align: center;
     min-width: initial;
-    background-color: #412773; }
+    background-color: #588D49; }
   .main-nav .sub-menu li {
     height: auto;
     width: 100%;
     float: left;
-    background-color: #1d0646;
+    background-color: #4b7442;
     padding: 0 1em 0 0;
     font-size: 1em; }
     .main-nav .sub-menu li:nth-child(1), .main-nav .sub-menu li:nth-child(2), .main-nav .sub-menu li:nth-child(3), .main-nav .sub-menu li:nth-child(4), .main-nav .sub-menu li:nth-child(5) {
@@ -2113,7 +2066,7 @@ footer i {
     width: 100%; }
   .js nav.nav-collapse .main-nav li ul.sub-menu li .active {
     text-decoration: underline;
-    background-color: #140431;
+    background-color: #44693C;
     cursor: not-allowed; }
     .js nav.nav-collapse .main-nav li ul.sub-menu li .active:before, .js nav.nav-collapse .main-nav li ul.sub-menu li .active:after {
       content: none; } }
@@ -2173,30 +2126,23 @@ footer i {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 body {
   background-color: #ffffff;
@@ -2271,35 +2217,28 @@ body {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 /* Buttons / CTAs */
 .btn {
   font-size: 1.13em;
-  background-color: #140431;
+  background-color: #44693C;
   color: #fff;
   display: inline-block;
   padding: 0.6em 1.2em;
@@ -2312,61 +2251,61 @@ body {
   -o-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   border-top: none;
-  border-bottom: 0.2em solid #0a0219; }
+  border-bottom: 0.2em solid #22341e; }
   .btn:hover {
     text-decoration: underline;
-    box-shadow: inset 0 0 0 0.2em #480eb0;
-    background-color: #2e0970;
-    border-bottom: 0.2em solid #0d0320; }
+    box-shadow: inset 0 0 0 0.2em #71a765;
+    background-color: #598a4f;
+    border-bottom: 0.2em solid #2c4427; }
 
 .btn--mid {
-  background-color: #412773;
-  border-bottom: 0.2em solid #2e1b51; }
+  background-color: #588D49;
+  border-bottom: 0.2em solid #3e6333; }
   .btn--mid:hover {
-    box-shadow: inset 0 0 0 0.2em #6f45c0;
-    background-color: #412773;
-    border-bottom: 0.2em solid #3b2368; }
+    box-shadow: inset 0 0 0 0.2em #85b876;
+    background-color: #588D49;
+    border-bottom: 0.2em solid #4f7f42; }
 
 .btn--light {
-  background-color: #B088BC;
+  background-color: #6BB64C;
   color: #ffffff;
-  border-bottom: 0.2em solid #825291; }
+  border-bottom: 0.2em solid #4b8034; }
   .btn--light:hover {
-    box-shadow: inset 0 0 0 0.2em #d0b8d7;
-    background-color: #B088BC;
-    border-bottom: 0.2em solid #945fa5; }
+    box-shadow: inset 0 0 0 0.2em #a6d394;
+    background-color: #6BB64C;
+    border-bottom: 0.2em solid #55933c; }
 
 .btn--light-pastel {
-  background-color: #D8ADE5;
-  color: #140431;
-  border-bottom: 0.2em solid #bb70d2; }
+  background-color: #A1EA83;
+  color: #44693C;
+  border-bottom: 0.2em solid #72df45; }
   .btn--light-pastel:hover {
-    box-shadow: inset 0 0 0 0.2em #e8ceef;
-    background-color: #D8ADE5;
-    border-bottom: 0.2em solid #c98edb; }
+    box-shadow: inset 0 0 0 0.2em #c7f2b5;
+    background-color: #A1EA83;
+    border-bottom: 0.2em solid #89e564; }
 
 .btn--contrast {
-  background-color: #D96E10;
-  border-bottom: 0.2em solid #82420a; }
+  background-color: #793EAC;
+  border-bottom: 0.2em solid #492567; }
   .btn--contrast:hover {
-    box-shadow: inset 0 0 0 0.2em #f2994a;
-    background-color: #D96E10;
-    border-bottom: 0.2em solid #984d0b; }
+    box-shadow: inset 0 0 0 0.2em #a271cc;
+    background-color: #793EAC;
+    border-bottom: 0.2em solid #552b78; }
 
 .btn--contrast-alt {
-  background-color: #6381BF;
-  border-bottom: 0.2em solid #334a7b; }
+  background-color: #252626;
+  border-bottom: 0.2em solid #161717; }
   .btn--contrast-alt:hover {
-    box-shadow: inset 0 0 0 0.2em #829acc;
-    background-color: #6381BF;
-    border-bottom: 0.2em solid #4363a5; }
+    box-shadow: inset 0 0 0 0.2em #505252;
+    background-color: #252626;
+    border-bottom: 0.2em solid #1e1e1e; }
 
 .btn--white {
   background-color: #ffffff;
   border-bottom: 0.2em solid #b3b3b3;
-  color: #140431; }
+  color: #44693C; }
   .btn--white:hover {
-    box-shadow: inset 0 0 0 0.2em #D8ADE5;
+    box-shadow: inset 0 0 0 0.2em #A1EA83;
     background-color: #ffffff;
     border-bottom: 0.2em solid #b3b3b3; }
 
@@ -2399,30 +2338,23 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .cta:before, .cta:after {
   display: table;
@@ -2437,8 +2369,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   width: 100%;
   margin: 0 0 1.5em 0;
   padding: 0.8em;
-  background-color: #412773;
-  border-left: 1em solid #140431;
+  background-color: #588D49;
+  border-left: 1em solid #44693C;
   border-bottom: none;
   -webkit-transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
@@ -2446,7 +2378,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out; }
   .cta:hover {
-    background-color: #492c80; }
+    background-color: #5e974e; }
   .cta:hover span {
     text-decoration: underline; }
 
@@ -2462,33 +2394,33 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   height: 2.125em; }
 
 .cta--light {
-  background-color: #D96E10;
-  border-color: #FBA458; }
+  background-color: #793EAC;
+  border-color: red; }
   .cta--light span {
     color: #ffffff; }
   .cta--light:hover {
-    background-color: #eb7711; }
+    background-color: #8343ba; }
 
 .cta--light-alt {
-  background-color: #6381BF;
-  border-color: #90AEEC; }
+  background-color: #252626;
+  border-color: red; }
   .cta--light-alt:hover {
-    background-color: #6e8ac3; }
+    background-color: #343535; }
 
 .cta.cta--dark {
-  background-color: #140431;
+  background-color: #44693C;
   border-left: none; }
   .cta.cta--dark:hover {
     border-left: none; }
 
 .cta.cta--light--no-border {
-  background-color: #D96E10;
+  background-color: #793EAC;
   border-left: none; }
   .cta.cta--light--no-border:hover {
     border-left: none; }
 
 .cta.icon-pattern {
-  border-color: #B088BC; }
+  border-color: #6BB64C; }
 
 .cta--no-circle div {
   display: none; }
@@ -2506,7 +2438,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   width: auto;
   min-width: 15em;
   border-left: none;
-  background-color: #222121;
+  background-color: #112F0A;
   color: #ffffff; }
   .cta--lockable div {
     float: none;
@@ -2524,16 +2456,16 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     width: 1.375em;
     height: 1.875em; }
   .cta--lockable:hover {
-    background-color: #363535; }
+    background-color: #1d5111; }
 
 @media only all and (min-width: 20em) {
   .cta {
-    border-left: 1.5em solid #140431;
+    border-left: 1.5em solid #44693C;
     padding: 0.5em 0.8em 0.5em 0.8em; }
   .cta--light {
-    border-color: #FBA458; }
+    border-color: red; }
   .cta--light-alt {
-    border-color: #90AEEC; }
+    border-color: red; }
   .cta span {
     width: 80%;
     float: left;
@@ -2597,41 +2529,34 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .quote {
   margin: 1.5em 0;
   border-top: 0.08em solid;
   border-bottom: 0.08em solid;
-  border-color: #6f45c0;
+  border-color: #85b876;
   padding: 1em 1em;
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.3em;
-  color: #412773; }
+  color: #588D49; }
 
 blockquote.quote__blockquote {
   margin: 0; }
@@ -2644,7 +2569,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #B088BC; }
+  color: #6BB64C; }
 
 .quote em {
   font-style: normal; }
@@ -2652,7 +2577,7 @@ blockquote.quote__blockquote {
 .quote__caption {
   font-style: italic;
   font-size: 0.8em;
-  color: #140431;
+  color: #44693C;
   margin-top: 0.8em; }
   .quote__caption:before {
     content: "— "; }
@@ -2660,13 +2585,13 @@ blockquote.quote__blockquote {
 .quote--pullout {
   margin: 1.5em 0;
   border-left: 0.276em solid;
-  border-color: #6381BF;
+  border-color: #252626;
   padding: 0.3em 1em 0.2em 1em;
   font-style: normal;
   font-weight: 600;
   font-size: 1.9em;
   line-height: 1.3em;
-  color: #8F4F97; }
+  color: red; }
 
 blockquote.quote__blockquote {
   margin: 0; }
@@ -2679,7 +2604,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #412773; }
+  color: #588D49; }
 
 .quote em {
   font-style: normal; }
@@ -2688,7 +2613,7 @@ blockquote.quote__blockquote {
   font-style: normal;
   font-weight: 400;
   font-size: 0.7em;
-  color: #140431;
+  color: #44693C;
   margin-top: 0.8em; }
   .quote__caption:before {
     content: "— "; }
@@ -2745,35 +2670,28 @@ ol ul li:before {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: #f3edf5;
+  background-color: #e9f4e4;
   text-align: center;
   margin: 0 0 2em 0; }
 
@@ -2781,7 +2699,7 @@ ol ul li:before {
   display: block;
   font-size: 1.4em;
   margin: 0 0 1em 0;
-  color: #140431; }
+  color: #44693C; }
 
 .list__jump-nav__select {
   display: none; }
@@ -2812,31 +2730,31 @@ ol ul li:before {
     /* stops bg color from leaking outside the border: */
     text-align: center;
     border-bottom: none;
-    background-color: #412773;
+    background-color: #588D49;
     color: #ffffff;
     font-weight: 3 00; }
   .list__jump-nav li a:hover {
-    background-color: #5f39a8; }
+    background-color: #74ae63; }
   .list__jump-nav li:nth-child(2n) a {
-    background-color: #8F4F97; }
+    background-color: red; }
   .list__jump-nav li:nth-child(2n) a:hover {
-    background-color: #a25daa; }
+    background-color: #ff1f1f; }
   .list__jump-nav li:before {
     content: none;
     counter-increment: none; }
   .list__jump-nav li.not-available a {
     background-color: inherit;
-    color: #412773;
+    color: #588D49;
     cursor: not-allowed; }
     .list__jump-nav li.not-available a:hover {
       background-color: inherit; }
 
 .list__content .heading {
-  color: #140431; }
+  color: #44693C; }
 
 .list__content .heading span {
   font-weight: 300;
-  color: #f5eaf9;
+  color: #e8fae0;
   display: inline-block;
   margin: 0 0.5em 0 0.2em; }
 
@@ -2844,7 +2762,7 @@ ol ul li:before {
   font-size: 0.82em;
   font-weight: 300;
   font-style: italic;
-  color: #412773; }
+  color: #588D49; }
 
 .list__content ol {
   list-style: none;
@@ -2910,37 +2828,30 @@ ol ul li:before {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .items {
   margin: 0 0 3em 0; }
 
 .items--block {
   padding: 1.5em 1.5em 1em 1.5em;
-  background-color: #e8ecf5; }
+  background-color: #dedfdf; }
 
 .items .heading__smallest {
   margin: 0 0 0.6em 0; }
@@ -2951,8 +2862,8 @@ ol ul li:before {
 .items .items__item:before {
   content: "— "; }
 .items .items__item a:hover {
-  color: #140431;
-  border-color: #140431;
+  color: #44693C;
+  border-color: #44693C;
   border-bottom: 0.1em solid; }
 .items .items__item:after {
   content: " »"; }
@@ -2960,10 +2871,10 @@ ol ul li:before {
 .items--block .items__item:before {
   content: none; }
 .items--block .items__item a {
-  color: #140431;
-  border-color: #140431; }
+  color: #44693C;
+  border-color: #44693C; }
 .items--block .items__item a:hover {
-  color: #0e0322;
+  color: #304a2a;
   border-bottom: 0.1em solid; }
 
 .pattern {
@@ -2973,30 +2884,23 @@ ol ul li:before {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 /* Pagination */
 ol.pagination {
@@ -3022,24 +2926,24 @@ ol.pagination li {
   font-size: 1.1em;
   font-weight: 500;
   text-align: center;
-  background-color: #412773;
+  background-color: #588D49;
   color: #ffffff; }
   .pagination a:hover {
     text-decoration: underline;
-    background-color: #6381BF; }
+    background-color: #252626; }
 
 .pagination__current a {
-  background-color: #8F4F97;
+  background-color: red;
   color: #ffffff;
   cursor: not-allowed;
   border: none; }
   .pagination__current a:hover {
     text-decoration: underline;
     color: #ffffff;
-    background-color: #8F4F97; }
+    background-color: red; }
 
 .pagination__previous a, .pagination__next a {
-  background-color: #140431;
+  background-color: #44693C;
   color: #ffffff;
   border-bottom: none;
   padding: 0.35em 0.1em;
@@ -3065,30 +2969,23 @@ ol.pagination li {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .subnav {
   margin: 0 0 4em 0; }
@@ -3102,17 +2999,17 @@ ol.pagination li {
   list-style-type: none; }
 
 .subnav .subnav__item, .subnav .subnav__item.subnav__item--sub-parent {
-  color: #B088BC; }
+  color: #6BB64C; }
   .subnav .subnav__item:before, .subnav .subnav__item.subnav__item--sub-parent:before {
     content: "— "; }
   .subnav .subnav__item a:hover, .subnav .subnav__item.subnav__item--sub-parent a:hover {
-    color: #140431;
-    border-color: #140431;
+    color: #44693C;
+    border-color: #44693C;
     border-bottom: 0.1em solid; }
   .subnav .subnav__item ul li a, .subnav .subnav__item.subnav__item--sub-parent ul li a {
-    color: #9b3fa7; }
+    color: red; }
   .subnav .subnav__item ul li a.active, .subnav .subnav__item.subnav__item--sub-parent ul li a.active {
-    color: #140431; }
+    color: #44693C; }
 
 .subnav .subnav__item.subnav__item--parent {
   margin: 0 0 0.5em 0; }
@@ -3120,19 +3017,19 @@ ol.pagination li {
     content: ""; }
   .subnav .subnav__item.subnav__item--parent a {
     font-weight: 400;
-    color: #140431;
-    border-color: #140431; }
+    color: #44693C;
+    border-color: #44693C; }
     .subnav .subnav__item.subnav__item--parent a:hover {
-      color: #412773;
-      border-color: #412773; }
+      color: #588D49;
+      border-color: #588D49; }
 
 .subnav .subnav__item.subnav__item--sub-parent a {
-  color: #140431;
-  border-color: #140431; }
+  color: #44693C;
+  border-color: #44693C; }
 
 .subnav .subnav__item a.active {
   border-bottom: none;
-  color: #140431;
+  color: #44693C;
   cursor: not-allowed; }
 
 .pattern {
@@ -3142,30 +3039,23 @@ ol.pagination li {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .tabs {
   margin-bottom: 3em; }
@@ -3178,14 +3068,14 @@ ol.pagination li {
   width: 100%;
   padding: 0 0 0 0.2em;
   margin: 0 0 1em 0;
-  background-color: #e4c6ed; }
+  background-color: #bdf0a8; }
 
 .js-tabs .tabs [role=tab] {
   display: block;
   list-style: none;
   text-align: center;
   margin: 0 0 0.2em 0;
-  background-color: #412773;
+  background-color: #588D49;
   color: #ffffff;
   line-height: 2.75;
   cursor: pointer; }
@@ -3206,12 +3096,12 @@ ol.pagination li {
     text-decoration: underline; }
 
 .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-  background-color: #140431;
+  background-color: #44693C;
   border: none; }
 
 @media only all and (min-width: 41em) {
   .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-    border-right: 0.2em solid #e4c6ed; }
+    border-right: 0.2em solid #bdf0a8; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 50%;
@@ -3223,7 +3113,7 @@ ol.pagination li {
     display: inline-block;
     width: 50%;
     text-align: center;
-    background-color: #412773;
+    background-color: #588D49;
     padding: 0.65em 0 0.65em 0; }
     .js-tabs .tabs .tabs__print-all a {
       color: #ffffff;
@@ -3236,19 +3126,19 @@ ol.pagination li {
   .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
     border-right: none; }
   .js-tabs .tabs [role=tablist] {
-    background-color: #a1b3d9; }
+    background-color: #7b7e7e; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 25%;
     cursor: pointer;
-    color: #140431;
+    color: #44693C;
     font-weight: 400;
     background-color: inherit;
     list-style: none;
     text-align: center;
     margin: 0 0 0 0;
     padding: 0.2em 1em 0.2em 1em;
-    border-bottom: 0.15em solid #ac51c8; }
+    border-bottom: 0.15em solid #5ada25; }
   .js-tabs .tabs .tabs__print-all {
     display: inline-block;
     font-weight: 400;
@@ -3258,29 +3148,29 @@ ol.pagination li {
     margin: 0 0 0 0;
     width: 15%;
     padding: 0.2em 1em 0.86em 0;
-    border-bottom: 0.15em solid #ac51c8; }
+    border-bottom: 0.15em solid #5ada25; }
     .js-tabs .tabs .tabs__print-all a {
-      color: #140431;
+      color: #44693C;
       text-align: right;
       text-decoration: underline; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-    color: #412773;
+    color: #588D49;
     font-weight: 600;
     background-color: #ffffff;
-    border: 0.15em solid #ac51c8;
-    border-color: #ac51c8;
+    border: 0.15em solid #5ada25;
+    border-color: #5ada25;
     border-bottom: 0.15em solid #ffffff; }
     .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true]:focus {
-      border-color: #D96E10;
+      border-color: #793EAC;
       border-bottom: 0.15em solid #ffffff;
       text-decoration: underline;
-      color: #140431;
+      color: #44693C;
       outline: none; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list .tabs__print-all[aria-selected=true] {
     background-color: inherit;
     border: 0;
     font-weight: 400;
-    border-bottom: 0.15em solid #ac51c8; } }
+    border-bottom: 0.15em solid #5ada25; } }
 
 /* Prevent FOUC */
 .js-tabs .tabs .js-panel {
@@ -3299,37 +3189,30 @@ ol.pagination li {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 /* Forms */
 form {
   display: inline-block;
   width: 100%;
   max-width: 36em;
-  background-color: #140431;
+  background-color: #44693C;
   padding: 1em 1em 0em 1em;
   margin: 1.5em 0 2em 0; }
 
@@ -3351,7 +3234,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   /* ^ The 0.375em vertically centers text on FF, 
   ignored by Webkit */
   background-color: #fff;
-  border: 0.2em solid #140431;
+  border: 0.2em solid #44693C;
   box-shadow: none;
   -webkit-appearance: none;
   border-radius: 0; }
@@ -3364,7 +3247,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   .form-item input[type="email"], .form-item input[type="number"], .form-item input[type="search"], .form-item input[type="text"], .form-item input[type="tel"], .form-item input[type="url"], .form-item input[type="password"], .form-item input[list], .form-item input[type="file"], .form-item input[type="date"], .form-item input[type="month"], .form-item input[type="week"], .form-item input[type="time"], .form-item input[type="range"], .form-item input[type="search"], .form-item textarea, .form-item select {
     margin-bottom: 0.5em; }
   .form-item .description {
-    color: #D8ADE5;
+    color: #A1EA83;
     font-size: 1em; }
 
 .checkbox {
@@ -3387,7 +3270,7 @@ textarea {
   margin-bottom: 1em; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[list]:focus, textarea:focus, select:focus {
-  border: 0.2em solid #D8ADE5;
+  border: 0.2em solid #A1EA83;
   outline: 0; }
 
 label, legend {
@@ -3414,7 +3297,7 @@ input[type="radio"] {
   margin: 0 0.5em 0.5em 0; }
 
 input[type="file"] {
-  background-color: #0a0219;
+  background-color: #22341e;
   color: #ffffff; }
 
 .form-required {
@@ -3424,7 +3307,7 @@ input[type="file"] {
 .format {
   font-weight: 300;
   font-style: italic;
-  color: #D8ADE5;
+  color: #A1EA83;
   margin-left: 0.75em; }
 
 input[type="search"] {
@@ -3441,7 +3324,7 @@ textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
   cursor: not-allowed; }
 
 select:-internal-list-box option:checked {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .messages {
   background-image: none !important;
@@ -3465,34 +3348,27 @@ select:-internal-list-box option:checked {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .feedback {
-  background-color: #d0d9ec;
-  border-bottom: 0.2em solid #a1b3d8;
+  background-color: #D7C5E7;
+  border-bottom: 0.2em solid #b898d4;
   font-weight: 500;
   padding: 0.8em 1.4em;
   margin: 0 0 1.5em 0; }
@@ -3504,30 +3380,23 @@ select:-internal-list-box option:checked {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .feedback--error {
   background-color: #ffcdb3;
@@ -3545,30 +3414,23 @@ html\:abbr, abbr {
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 /* /// Responsive Tables */
 /* make each table separate from other ones */
@@ -3622,9 +3484,9 @@ tr {
   margin: 0 0 1.5em 0;
   width: 100%;
   font-size: 1.1em;
-  background-color: #e8ecf5;
-  border-top: 0.2em solid #140431;
-  border-bottom: 0.2em solid #c1cde5;
+  background-color: #dedfdf;
+  border-top: 0.2em solid #44693C;
+  border-bottom: 0.2em solid #a7a9a9;
   padding: 1em; }
 
 td {
@@ -3642,7 +3504,7 @@ by side rather than stacked */
     margin: 0 0 2em 0;
     border-style: none;
     border-top-width: 0;
-    border-bottom: 0.2em solid #c1cde5; }
+    border-bottom: 0.2em solid #a7a9a9; }
   /* Labeling
    * Hide the mobile labels */
   th[data-title]:before, td[data-title]:before {
@@ -3685,7 +3547,7 @@ by side rather than stacked */
     font-weight: normal; }
   /* Style table */
   thead tr {
-    background-color: #140431; }
+    background-color: #44693C; }
   thead tr th {
     color: #fff;
     padding: 0.5em 0.5em 0.5em 0.8em; }
@@ -3696,7 +3558,7 @@ by side rather than stacked */
     margin: 0 0 0 0.5em;
     padding: 0.8em 0 0 0; }
   tbody tr:nth-child(odd) {
-    background-color: #fdfafe; } }
+    background-color: #e3f9da; } }
 
 .lt-ie9 .heading, .lt-ie9 h1.guidance, .lt-ie9 h2.guidance, .lt-ie9 h3.guidance {
   font-weight: 700; }

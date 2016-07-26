@@ -5,37 +5,30 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 /* Forms */
 form {
   display: inline-block;
   width: 100%;
   max-width: 36em;
-  background-color: #140431;
+  background-color: #44693C;
   padding: 1em 1em 0em 1em;
   margin: 1.5em 0 2em 0; }
 
@@ -57,7 +50,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   /* ^ The 0.375em vertically centers text on FF, 
   ignored by Webkit */
   background-color: #fff;
-  border: 0.2em solid #140431;
+  border: 0.2em solid #44693C;
   box-shadow: none;
   -webkit-appearance: none;
   border-radius: 0; }
@@ -70,7 +63,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   .form-item input[type="email"], .form-item input[type="number"], .form-item input[type="search"], .form-item input[type="text"], .form-item input[type="tel"], .form-item input[type="url"], .form-item input[type="password"], .form-item input[list], .form-item input[type="file"], .form-item input[type="date"], .form-item input[type="month"], .form-item input[type="week"], .form-item input[type="time"], .form-item input[type="range"], .form-item input[type="search"], .form-item textarea, .form-item select {
     margin-bottom: 0.5em; }
   .form-item .description {
-    color: #D8ADE5;
+    color: #A1EA83;
     font-size: 1em; }
 
 .checkbox {
@@ -93,7 +86,7 @@ textarea {
   margin-bottom: 1em; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[list]:focus, textarea:focus, select:focus {
-  border: 0.2em solid #D8ADE5;
+  border: 0.2em solid #A1EA83;
   outline: 0; }
 
 label, legend {
@@ -120,7 +113,7 @@ input[type="radio"] {
   margin: 0 0.5em 0.5em 0; }
 
 input[type="file"] {
-  background-color: #0a0219;
+  background-color: #22341e;
   color: #ffffff; }
 
 .form-required {
@@ -130,7 +123,7 @@ input[type="file"] {
 .format {
   font-weight: 300;
   font-style: italic;
-  color: #D8ADE5;
+  color: #A1EA83;
   margin-left: 0.75em; }
 
 input[type="search"] {
@@ -147,7 +140,7 @@ textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
   cursor: not-allowed; }
 
 select:-internal-list-box option:checked {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .messages {
   background-image: none !important;

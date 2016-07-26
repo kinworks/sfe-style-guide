@@ -5,30 +5,23 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .login__trigger.cta, .logout__trigger.cta {
   font-size: 0.9em;
@@ -36,9 +29,9 @@
   padding: 0.5em 0.8em 0.5em 0.8em;
   margin: 0 auto 0 auto;
   display: block;
-  background-color: #140431;
+  background-color: #44693C;
   background-image: none;
-  border-left: 1em solid #412773;
+  border-left: 1em solid #588D49;
   cursor: pointer; }
   .login__trigger.cta .icon-arrow-down, .login__trigger.cta .icon-arrow-up, .login__trigger.cta .icon-arrow-right, .logout__trigger.cta .icon-arrow-down, .logout__trigger.cta .icon-arrow-up, .logout__trigger.cta .icon-arrow-right {
     width: 0.625em;
@@ -61,7 +54,7 @@
   text-align: center;
   padding: 0.5em 8% 0.1em 5%; }
   .login__trigger--top.cta:hover {
-    background-color: #3b5790; }
+    background-color: #1a1b1b; }
 
 .login__trigger--top.cta .login__trigger--top__container {
   display: inline-block;
@@ -74,7 +67,7 @@
   padding: 1.5em 8% 1.5em 8%; }
 
 .login__sso {
-  background-color: #412773; }
+  background-color: #588D49; }
   .login__sso .sso__block__label {
     width: 100%;
     font-size: 1.2em;
@@ -84,11 +77,11 @@
   .login__sso .login__sso__block--shibboleth .btn {
     margin-bottom: 0; }
     .login__sso .login__sso__block--shibboleth .btn:hover {
-      box-shadow: inset 0 0 0 0.2em #6e8ac3; }
+      box-shadow: inset 0 0 0 0.2em #343535; }
 
 .login__cms {
   padding-top: 2em;
-  background-color: #140431; }
+  background-color: #44693C; }
   .login__cms .login__cms__label {
     font-size: 1.2em;
     color: #ffffff;
@@ -105,7 +98,7 @@
     margin: 0;
     padding: 0; }
   .login__cms .item-list a {
-    color: #D8ADE5; }
+    color: #A1EA83; }
     .login__cms .item-list a:hover {
       color: #ffffff;
       border-bottom: 0.1em dotted #ffffff; }
@@ -121,17 +114,17 @@
 
 @media only all and (min-width: 41em) {
   .login__trigger.cta, .logout__trigger.cta {
-    background-color: #412773;
+    background-color: #588D49;
     background-image: none; }
   .login__trigger--top.cta {
-    background-color: #0e0322;
+    background-color: #304a2a;
     padding: 0.7em 8% 0.5em 8%; }
     .login__trigger--top.cta:hover {
-      background-color: #140431; }
+      background-color: #44693C; }
   .login__trigger--top.cta .login__trigger--top__container {
     max-width: 10em; }
   .login__sso {
-    background-color: #412773;
+    background-color: #588D49;
     padding-bottom: 2em; }
     .login__sso .login__sso__block {
       width: 50%;

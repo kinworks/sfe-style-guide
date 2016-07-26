@@ -1,25 +1,19 @@
 //// Brand
 
-$light: #B088BC;
+$light: #6BB64C;
 
-$mid: #412773; 
+$mid: #588D49; 
 
-$mid-bright: #8F4F97;
+$dark: #44693C; 
 
-$dark: #140431; 
+$darkest: #112F0A;
 
-$darkest: #222121;
-
-//// Section-specific colours
-
-$section-alpha: #00855B;
-
-$section-beta: #0456BE;
-
-$section-gamma: #0080A6;
-
-$section-delta: #760B5E;
-
+//// OLD
+$mid-bright: red;
+$section-alpha: red;
+$section-beta: red;
+$section-gamma: red;
+$section-delta: red;
 
 //// Text-specific colours
 /////// A11Y: These will validate to WCAG 2.0 
@@ -31,6 +25,8 @@ $mid-text: $mid;
 
 $dark-text: $dark;
 
+$default-text: #252626;
+
 $disabled-text: #666;
 
 
@@ -38,7 +34,7 @@ $disabled-text: #666;
 
 $white: #ffffff; // Yes, really.
 
-$light-pastel: #D8ADE5;
+$light-pastel: #A1EA83;
 
 .pattern {
   background: url(../../assets/pattern.png);
@@ -49,32 +45,22 @@ $light-pastel: #D8ADE5;
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */
 }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg),
-    linear-gradient(transparent, transparent);
-    /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */
-}
-
-.icon-pattern,
-.icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat;
 }
 
 
 /// Calls to Action / Highlights
 
-$contrast: #D96E10; // WCAG 2 AA Compliant (18pt+)
+$contrast: #793EAC; // WCAG 2 AAA Compliant
 
-$contrast-light: #FBA458; // Don't use with white for text
+$contrast-light: red; // Don't use with white for text
 
-$contrast-alt: #6381BF; // WCAG 2 AA Compliant (18pt+)
+$contrast-alt: #252626; // WCAG 2 AAA Compliant
 
-$contrast-alt-light: #90AEEC; // Don't use with white for text
+$contrast-alt-light: red; // Don't use with white for text
 
-$feedback: scale-color($contrast-alt, $lightness: 70%);
+$feedback: #D7C5E7;
 
 $error: #ffcdb3;
 

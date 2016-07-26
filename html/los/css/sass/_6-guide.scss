@@ -302,32 +302,16 @@ pre {
   background-color: $mid;
 }
 
-.swatches span.mid-bright {
-  background-color: $mid-bright;
-}
-
-.swatches span.section-alpha {
-  background-color: $section-alpha;
-}
-
-.swatches span.section-beta {
-  background-color: $section-beta;
-}
-
-.swatches span.section-gamma {
-  background-color: $section-gamma;
-}
-
-.swatches span.section-delta {
-  background-color: $section-delta;
-}
-
 .swatches span.link-text {
   background-color: $link-text;
 }
 
-.swatches span.mid-text {
-  background-color: $mid-text;
+.swatches span.dark-text {
+  background-color: $dark-text;
+}
+
+.swatches span.default-text {
+  background-color: $default-text;
 }
 
 .swatches span.dark {

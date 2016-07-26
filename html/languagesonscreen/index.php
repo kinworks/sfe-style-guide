@@ -340,35 +340,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                       <b>$mid</b>
                     </li>
                     <li>
-                      <span class="mid-bright"><!--color fill--></span>
-                      <b>$mid-bright</b>
-                    </li>
-                    <li>
                       <span class="dark"><!--color fill--></span>
                       <b>$dark</b>
                     </li>
-                  </ul>
-                  
-                  <h2 class="guidance">Section Colours</h2>
-                  <ul>
                     <li>
-                      <span class="section-alpha"><!--color fill--></span>
-                      <b>$section-alpha</b>
-                    </li>
-                    <li>
-                      <span class="section-beta"><!--color fill--></span>
-                      <b>$section-beta</b>
-                    </li>
-                    <li>
-                      <span class="section-gamma"><!--color fill--></span>
-                      <b>$section-gamma</b>
-                    </li>
-                    <li>
-                      <span class="section-delta"><!--color fill--></span>
-                      <b>$section-delta</b>
+                      <span class="darkest"><!--color fill--></span>
+                      <b>$darkest</b>
                     </li>
                   </ul>
-
                   
                   <h2 class="guidance">Text-specific Colours</h2>
                   <ul>
@@ -377,12 +356,12 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                       <b>$link-text</b>
                     </li>
                     <li>
-                      <span class="mid-text"><!--color fill--></span>
-                      <b>$mid-text</b>
-                    </li>
-                    <li>
                       <span class="dark-text"><!--color fill--></span>
                       <b>$dark-text</b>
+                    </li>
+                    <li>
+                      <span class="default-text"><!--color fill--></span>
+                      <b>$default-text</b>
                     </li>
                     <li>
                       <span class="disabled-text"><!--color fill--></span>
@@ -403,10 +382,6 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                     <li>
                       <span class="pattern"><!--color fill--></span>
                       <b>.pattern</b>
-                    </li>
-                    <li>
-                      <span class="icon-pattern-dark"><!--color fill--></span>
-                      <b>.pattern-dark</b>
                     </li>
                   </ul>
                   

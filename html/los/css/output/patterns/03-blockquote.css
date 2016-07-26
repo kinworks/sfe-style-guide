@@ -6,41 +6,34 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .quote {
   margin: 1.5em 0;
   border-top: 0.08em solid;
   border-bottom: 0.08em solid;
-  border-color: #6f45c0;
+  border-color: #85b876;
   padding: 1em 1em;
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.3em;
-  color: #412773; }
+  color: #588D49; }
 
 blockquote.quote__blockquote {
   margin: 0; }
@@ -53,7 +46,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #B088BC; }
+  color: #6BB64C; }
 
 .quote em {
   font-style: normal; }
@@ -61,7 +54,7 @@ blockquote.quote__blockquote {
 .quote__caption {
   font-style: italic;
   font-size: 0.8em;
-  color: #140431;
+  color: #44693C;
   margin-top: 0.8em; }
   .quote__caption:before {
     content: "— "; }
@@ -69,13 +62,13 @@ blockquote.quote__blockquote {
 .quote--pullout {
   margin: 1.5em 0;
   border-left: 0.276em solid;
-  border-color: #6381BF;
+  border-color: #252626;
   padding: 0.3em 1em 0.2em 1em;
   font-style: normal;
   font-weight: 600;
   font-size: 1.9em;
   line-height: 1.3em;
-  color: #8F4F97; }
+  color: red; }
 
 blockquote.quote__blockquote {
   margin: 0; }
@@ -88,7 +81,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #412773; }
+  color: #588D49; }
 
 .quote em {
   font-style: normal; }
@@ -97,7 +90,7 @@ blockquote.quote__blockquote {
   font-style: normal;
   font-weight: 400;
   font-size: 0.7em;
-  color: #140431;
+  color: #44693C;
   margin-top: 0.8em; }
   .quote__caption:before {
     content: "— "; }

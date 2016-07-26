@@ -6,37 +6,30 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .nav__trigger {
   background-repeat: repeat;
-  background-color: #140431;
+  background-color: #44693C;
   cursor: pointer;
   z-index: 100;
-  border-top: 0.3em solid #0c021d; }
+  border-top: 0.3em solid #293f24; }
   .nav__trigger .icon-menu {
     width: 1.5em;
     height: 1.3125em;
@@ -57,10 +50,10 @@
   display: none; }
 
 .main-nav li {
-  background-color: #5979bb;
+  background-color: #232424;
   margin-bottom: 0; }
   .main-nav li:nth-child(2n) {
-    background-color: #496bb1; }
+    background-color: #202121; }
   .main-nav li .icon-lock-white {
     vertical-align: -0.3em;
     margin-right: 0.4em; }
@@ -78,7 +71,7 @@
 
 .main-nav li .sub-menu .active {
   text-decoration: none;
-  background-color: #140431; }
+  background-color: #44693C; }
   .main-nav li .sub-menu .active:before {
     content: "» "; }
 
@@ -96,7 +89,7 @@
   .js .main-nav .parent .sectiontoggle div {
     display: inline-block;
     padding: 0.1em 0.4em;
-    background-color: #070111; }
+    background-color: #182515; }
   .js .main-nav .parent .sectiontoggle .icon-arrow-down, .js .main-nav .parent .sectiontoggle .icon-arrow-up {
     width: 0.625em;
     height: 0.625em; }
@@ -125,15 +118,15 @@
   text-decoration: none; }
 
 .main-nav .sub-menu li {
-  background-color: #341f5c; }
+  background-color: #46713a; }
   .main-nav .sub-menu li:hover {
-    background-color: #24153f; }
+    background-color: #304e28; }
   .main-nav .sub-menu li:hover a {
     text-decoration: underline; }
   .main-nav .sub-menu li:nth-child(2n) {
-    background-color: #2a194b; }
+    background-color: #395c2f; }
     .main-nav .sub-menu li:nth-child(2n):hover {
-      background-color: #1d1234; }
+      background-color: #283f21; }
 
 .js .nav__trigger {
   position: fixed;
@@ -167,9 +160,9 @@
   .nav__trigger {
     display: none; }
   .main-nav li {
-    background-color: #4869af; }
+    background-color: #1f2020; }
     .main-nav li:nth-child(2) {
-      background-color: #3f5d9a; }
+      background-color: #1c1c1c; }
   .main-nav li a.active {
     color: #ffffff;
     text-decoration: underline; }
@@ -179,7 +172,7 @@
     display: inline-block;
     text-align: center;
     width: 100%;
-    background-color: #412773;
+    background-color: #588D49;
     padding: 1.1em 5% 1.2em 5%;
     color: #ffffff; }
     .secondary-nav-spaceholder span {
@@ -207,10 +200,10 @@
     .main-nav li:nth-child(3) {
       width: 38%; }
     .main-nav li:nth-child(4) {
-      border-right: 0.15em solid #375186; }
+      border-right: 0.15em solid #181919; }
     .main-nav li:nth-child(4), .main-nav li:nth-child(5) {
       width: 50%;
-      background-color: #1e2b48; }
+      background-color: #0d0d0d; }
   .js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open {
     width: 37%; }
   .js nav.nav-collapse .main-nav li:nth-child(3) .sub-menu.open {
@@ -243,17 +236,17 @@
     text-align: left;
     border: none; }
     .main-nav .sub-menu li:nth-child(4) {
-      background-color: #2a194b; }
+      background-color: #395c2f; }
       .main-nav .sub-menu li:nth-child(4):hover {
-        background-color: #1d1234; }
+        background-color: #283f21; }
     .main-nav .sub-menu li:nth-child(5) {
-      background-color: #341f5c; }
+      background-color: #46713a; }
       .main-nav .sub-menu li:nth-child(5):hover {
-        background-color: #24153f; } }
+        background-color: #304e28; } }
 
 @media only all and (min-width: 59em) {
   nav {
-    background-color: #140431;
+    background-color: #44693C;
     margin: 0 0 0 0;
     padding: 0 5% 0 5%; }
   .nav-collapse .main-nav {
@@ -313,7 +306,7 @@
     .main-nav .sub-menu a {
       height: auto; }
   .main-nav li:hover .sub-menu, .main-nav li.section-active .sub-menu {
-    background-color: #412773;
+    background-color: #588D49;
     display: block;
     visibility: visible;
     height: auto;
@@ -335,7 +328,7 @@
     width: auto;
     text-align: center;
     display: inline-block;
-    background-color: #412773;
+    background-color: #588D49;
     padding: 0;
     margin: 0 2% 0 2%;
     float: none; }
@@ -343,22 +336,22 @@
       padding: 0.4em 0.5em 0.4em 0.5em; }
     .js nav.nav-collapse .main-nav ul.sub-menu li:hover a {
       text-decoration: underline;
-      background-color: #140431; }
+      background-color: #44693C; }
   .js nav.nav-collapse .main-nav ul.sub-menu li a {
     width: 100%;
     text-align: center;
-    background-color: #412773; }
+    background-color: #588D49; }
   .js nav.nav-collapse .main-nav ul.sub-menu.open {
     margin: 1.2em 0 0 0;
     padding: 0.4em 4% 0.4em 4%;
     text-align: center;
     min-width: initial;
-    background-color: #412773; }
+    background-color: #588D49; }
   .main-nav .sub-menu li {
     height: auto;
     width: 100%;
     float: left;
-    background-color: #1d0646;
+    background-color: #4b7442;
     padding: 0 1em 0 0;
     font-size: 1em; }
     .main-nav .sub-menu li:nth-child(1), .main-nav .sub-menu li:nth-child(2), .main-nav .sub-menu li:nth-child(3), .main-nav .sub-menu li:nth-child(4), .main-nav .sub-menu li:nth-child(5) {
@@ -373,7 +366,7 @@
     width: 100%; }
   .js nav.nav-collapse .main-nav li ul.sub-menu li .active {
     text-decoration: underline;
-    background-color: #140431;
+    background-color: #44693C;
     cursor: not-allowed; }
     .js nav.nav-collapse .main-nav li ul.sub-menu li .active:before, .js nav.nav-collapse .main-nav li ul.sub-menu li .active:after {
       content: none; } }

@@ -5,30 +5,23 @@
     used in browsers that support it (a 'coincidence'
     feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
 
-.pattern-dark {
-  background: url(../../assets/pattern-dark.png);
-  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
-  /* This trick ensures that our background SVG is only 
-    used in browsers that support it (a 'coincidence'
-    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
-
-.icon-pattern, .icon-pattern-dark {
+.icon-pattern {
   background-repeat: repeat; }
 
 .bg--darkest {
-  background-color: #222121; }
+  background-color: #112F0A; }
 
 .bg--dark {
-  background-color: #140431; }
+  background-color: #44693C; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #588D49; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #6BB64C; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #A1EA83; }
 
 .tabs {
   margin-bottom: 3em; }
@@ -41,14 +34,14 @@
   width: 100%;
   padding: 0 0 0 0.2em;
   margin: 0 0 1em 0;
-  background-color: #e4c6ed; }
+  background-color: #bdf0a8; }
 
 .js-tabs .tabs [role=tab] {
   display: block;
   list-style: none;
   text-align: center;
   margin: 0 0 0.2em 0;
-  background-color: #412773;
+  background-color: #588D49;
   color: #ffffff;
   line-height: 2.75;
   cursor: pointer; }
@@ -69,12 +62,12 @@
     text-decoration: underline; }
 
 .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-  background-color: #140431;
+  background-color: #44693C;
   border: none; }
 
 @media only all and (min-width: 41em) {
   .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-    border-right: 0.2em solid #e4c6ed; }
+    border-right: 0.2em solid #bdf0a8; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 50%;
@@ -86,7 +79,7 @@
     display: inline-block;
     width: 50%;
     text-align: center;
-    background-color: #412773;
+    background-color: #588D49;
     padding: 0.65em 0 0.65em 0; }
     .js-tabs .tabs .tabs__print-all a {
       color: #ffffff;
@@ -99,19 +92,19 @@
   .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
     border-right: none; }
   .js-tabs .tabs [role=tablist] {
-    background-color: #a1b3d9; }
+    background-color: #7b7e7e; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 25%;
     cursor: pointer;
-    color: #140431;
+    color: #44693C;
     font-weight: 400;
     background-color: inherit;
     list-style: none;
     text-align: center;
     margin: 0 0 0 0;
     padding: 0.2em 1em 0.2em 1em;
-    border-bottom: 0.15em solid #ac51c8; }
+    border-bottom: 0.15em solid #5ada25; }
   .js-tabs .tabs .tabs__print-all {
     display: inline-block;
     font-weight: 400;
@@ -121,29 +114,29 @@
     margin: 0 0 0 0;
     width: 15%;
     padding: 0.2em 1em 0.86em 0;
-    border-bottom: 0.15em solid #ac51c8; }
+    border-bottom: 0.15em solid #5ada25; }
     .js-tabs .tabs .tabs__print-all a {
-      color: #140431;
+      color: #44693C;
       text-align: right;
       text-decoration: underline; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-    color: #412773;
+    color: #588D49;
     font-weight: 600;
     background-color: #ffffff;
-    border: 0.15em solid #ac51c8;
-    border-color: #ac51c8;
+    border: 0.15em solid #5ada25;
+    border-color: #5ada25;
     border-bottom: 0.15em solid #ffffff; }
     .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true]:focus {
-      border-color: #D96E10;
+      border-color: #793EAC;
       border-bottom: 0.15em solid #ffffff;
       text-decoration: underline;
-      color: #140431;
+      color: #44693C;
       outline: none; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list .tabs__print-all[aria-selected=true] {
     background-color: inherit;
     border: 0;
     font-weight: 400;
-    border-bottom: 0.15em solid #ac51c8; } }
+    border-bottom: 0.15em solid #5ada25; } }
 
 /* Prevent FOUC */
 .js-tabs .tabs .js-panel {

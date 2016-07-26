@@ -32,10 +32,10 @@
 }
 
 .main-nav li {
-  background-color: scale-color($dark, $lightness: -12%);
+  background-color: scale-color($darkest, $lightness: -1%);
   margin-bottom: 0;
   &:nth-child(2n) {
-    background-color: scale-color($dark, $lightness: -20%);
+    background-color: scale-color($darkest, $lightness: -13%);
   }
   .icon-lock-white {
 	  vertical-align: -0.3em;
@@ -51,14 +51,15 @@
   padding: 0.6em 0 0.7em 8%;
 }
 
-.main-nav li .active {
+.main-nav li .active,
+.main-nav li:nth-child(2n) .active {
 	color: $white;
 	text-decoration: underline;
 }
 
 .main-nav li .sub-menu .active {
 	text-decoration: none;
-	background-color: $dark;
+	background-color: scale-color($dark, $lightness: -15%);
 	&:before {
 		content: "» "
 	}

@@ -50,10 +50,10 @@
   display: none; }
 
 .main-nav li {
-  background-color: #3c5c35;
+  background-color: #112f0a;
   margin-bottom: 0; }
   .main-nav li:nth-child(2n) {
-    background-color: #365430; }
+    background-color: #0f2909; }
   .main-nav li .icon-lock-white {
     vertical-align: -0.3em;
     margin-right: 0.4em; }
@@ -65,13 +65,13 @@
   border-bottom: none;
   padding: 0.6em 0 0.7em 8%; }
 
-.main-nav li .active {
+.main-nav li .active, .main-nav li:nth-child(2n) .active {
   color: #ffffff;
   text-decoration: underline; }
 
 .main-nav li .sub-menu .active {
   text-decoration: none;
-  background-color: #44693C; }
+  background-color: #3a5933; }
   .main-nav li .sub-menu .active:before {
     content: "» "; }
 

@@ -1612,9 +1612,12 @@ footer i {
       color: #ffffff;
       border-bottom: 0.1em dotted #ffffff; }
   .login__cms form .btn {
-    margin: 0; }
+    margin: 0;
+    color: #252626; }
   .login__cms input[type=text], .login__cms input[type=password] {
     margin-bottom: 0; }
+    .login__cms input[type=text]:focus, .login__cms input[type=password]:focus {
+      border: 0.2em solid #112F0A; }
 
 @media only all and (min-width: 37em) {
   .login__sso .sso__block__label {

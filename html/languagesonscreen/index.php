@@ -545,7 +545,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
             <h2 class="guidance">Header Block</h2>
             <p class="guidance">
-              This is the header block style, currently depicting the header for Scotland on Screen. <a href="?mode=test#layout"><b>View it in test mode</b></a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
+              This is the header block style, currently depicting the header for Languages on Screen. <a href="?mode=test#layout"><b>View it in test mode</b></a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
             </p>
             <p class="guidance">
               There's a lot of tooling used in this heading example. All vector assets are produced in SVG, and passed into a Grunt workflow taking them through SVGMin and Grunticon, meaning all vector assets used on a given SFE website are from a single HTTP request except in browsers that cannot accept Base64-encoded stylesheets, in which case they get auto-generated PNG assets instead. The navigation for search only collapses showing the trigger button if JS successfully loads, and uses <a href="http://responsive-nav.com">Responsive-nav.js</a> for the collapse (the same library used for the core navigation).
@@ -642,7 +642,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
             <h2 class="guidance">Navigation</h2>
             <p class="guidance">
-              This is the navigation pattern, currently depicting the header for Scotland on Screen. <a href="/?mode=test#nav"><b>You should view it in test mode</b></a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
+              This is the navigation pattern, currently depicting the header for Languages on Screen. <a href="/?mode=test#nav"><b>You should view it in test mode</b></a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
             </p>
             <p class="guidance">
               This is a very specific and heavily-breakpointed example. The breakpoints for any other site would be very different to SOS. The navigation only collapses showing the trigger button if JS successfully loads, and uses <a href="http://responsive-nav.com">Responsive-nav.js</a> for the collapse (the same library used for the search expansion on the single-column layout). Unlike the search expansion trigger, the navigation trigger is position: fixed to the bottom of the viewport in single-column view.
@@ -842,7 +842,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               This is the login bar style, for regular login and SSO options. <a href="/?mode=test#layout"><b>View it in test mode</b></a> and resize the browser window to see the breakpoint switch from single-column to enhanced (~41em).
             </p>
             <p class="guidance">
-	            Please excuse the state of the markup for this example, as portions of it are controlled by Drupal modules, and this has been copied back into the Style guide from the Scotland on Screen site.
+	            Please excuse the state of the markup for this example, as portions of it are controlled by Drupal modules, and this has been copied back into the Style guide from the Languages on Screen site.
             </p>
           </div>
       </div>
@@ -879,7 +879,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 				                <div class="login__cms clearfix">
 				          <div class="container">
 				            <span class="login__cms__label">
-				              Or, using a Scotland on Screen login:
+				              Or, using a Languages on Screen login:
 				            </span>
 				            <form action="/browse-films?destination=browse-films" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
 				  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
@@ -945,7 +945,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
             <h2 class="guidance">Body Background</h2>
             <p class="guidance">
-              The body of each SFE web property has an individual background pattern. Currently this Development guide features the background pattern from Scotland on Screen. We're using Grunticon to apply the SVG with a PNG fallback here, but you can get click to get the individual SVG and PNG assets from the repo for more direct use.
+              The body of each SFE web property has an individual background pattern. Currently this Development guide features the background pattern from Languages on Screen. We're using Grunticon to apply the SVG with a PNG fallback here, but you can get click to get the individual SVG and PNG assets from the repo for more direct use.
             </p>
             
             <p class="guidance">

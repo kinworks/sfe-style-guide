@@ -29,10 +29,14 @@
 
 .items--block {
   padding: 1.5em 1.5em 1em 1.5em;
-  background-color: #dedfdf; }
+  background-color: #d5f6c7; }
 
 .items .heading__smallest {
-  margin: 0 0 0.6em 0; }
+  margin: 0 0 0.8em 0;
+  font-size: 1.3em; }
+
+.items--block .heading {
+  color: #252626; }
 
 .items ul {
   list-style-type: none; }

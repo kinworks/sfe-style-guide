@@ -2010,20 +2010,21 @@ footer i {
     width: 100%; }
     .main-nav .sub-menu a {
       height: auto; }
-  .main-nav li:hover .sub-menu, .js nav.nav-collapse .main-nav ul.sub-menu.open {
+  .main-nav li:hover .sub-menu, .js nav.nav-collapse .main-nav ul.sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(4) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(5) .sub-menu.open {
     background-color: #588D49;
     display: block;
     visibility: visible;
     height: auto;
     position: absolute;
-    margin-top: 0.6em;
+    margin-top: 0.2em;
     left: auto;
     width: 100%;
     max-width: 27%;
+    min-width: inherit;
     margin-left: 0;
     padding: 0; }
-  .js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(4) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(5) .sub-menu.open {
-    width: inherit; }
+  .main-nav li:nth-child(5):hover .sub-menu, .js nav.nav-collapse .main-nav li:nth-child(5) ul.sub-menu.open {
+    max-width: 22%; }
   .main-nav .sub-menu li a {
     font-size: 1.1em;
     width: 100%; }

@@ -3500,7 +3500,7 @@ tr {
   margin: 0 0 1.5em 0;
   width: 100%;
   font-size: 1.1em;
-  background-color: #dedfdf;
+  background-color: #f4f4f4;
   border-top: 0.2em solid #44693C;
   border-bottom: 0.2em solid #a7a9a9;
   padding: 1em; }
@@ -3574,7 +3574,7 @@ by side rather than stacked */
     margin: 0 0 0 0.5em;
     padding: 0.8em 0 0 0; }
   tbody tr:nth-child(odd) {
-    background-color: #e3f9da; } }
+    background-color: #dfefd8; } }
 
 .lt-ie9 .heading, .lt-ie9 h1.guidance, .lt-ie9 h2.guidance, .lt-ie9 h3.guidance {
   font-weight: 700; }

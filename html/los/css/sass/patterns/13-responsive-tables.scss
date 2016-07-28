@@ -62,7 +62,7 @@ tr {
   margin: 0 0 1.5em 0;
   width: 100%;
   font-size: 1.1em;
-  background-color: scale-color($contrast-alt, $lightness: 85%);
+  background-color: scale-color($contrast-alt, $lightness: 95%);
   border-top: 0.2em solid $dark;
   border-bottom: 0.2em solid scale-color($contrast-alt, $lightness: 60%);
   padding: 1em;
@@ -175,7 +175,7 @@ by side rather than stacked */
   }
   
   tbody tr:nth-child(odd) {
-    background-color: lighten($light-pastel,20%);
+    background-color: scale-color($light, $lightness: 80%);
   }
   
 } // end min 41em

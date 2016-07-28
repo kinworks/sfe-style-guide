@@ -996,13 +996,9 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             
         <div class="footer__top clearfix">
           <div class="container">
-              <div class="footer__top__menu">
-                <a href="#" target="_blank">Contact Us</a>
-                <a href="#" target="_blank">Copyright Restrictions</a>
-              </div>
               <div class="footer__top__report-issues">
                 <span>Problems using this site or with its content?</span>
-                <a class="btn btn--contrast-alt">Report an Issue &raquo;</a>
+                <a class="btn btn--light">Report an Issue &raquo;</a>
               </div>
               <div class="footer__top__partners clearfix">
                 <span>In partnership with:</span>
@@ -1023,7 +1019,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
             <li><a href="#">Acknowledgements</a></li>
           </ul>
         </div>
-        <footer class="icon-pattern-dark">
+        <footer class="icon-pattern">
           <div class="container">
             <span class="copyright">
               &copy; Copyright Scottish Film Limited, Registered in Scotland no. SC478204. <br/>All Rights Reserved.

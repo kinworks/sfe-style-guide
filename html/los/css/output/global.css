@@ -1116,29 +1116,13 @@ pre {
   background-color: #A1EA83; }
 
 .footer__top {
-  background-color: #44693C;
+  background-color: #112F0A;
   padding: 2em 8% 1.5em 8%; }
 
 .footer__top__report-issues {
   margin-bottom: 0.5em; }
 
-.footer__top__menu {
-  margin-bottom: 2.4em; }
-
-.footer__top__menu a {
-  display: block;
-  color: #ffffff;
-  font-size: 1.2em;
-  margin: 0 0 0.7em 0;
-  border: none; }
-  .footer__top__menu a:before {
-    content: "— "; }
-  .footer__top__menu a:after {
-    content: " »"; }
-  .footer__top__menu a:hover {
-    text-decoration: underline; }
-
-.footer__top__report-issues span, .footer__top__menu span, .footer__top__partners span {
+.footer__top__report-issues span, .footer__top__partners span {
   font-size: 1.25em;
   color: #ffffff;
   font-weight: 400;
@@ -1161,10 +1145,6 @@ pre {
 .icon-footer-partner-es {
   max-width: 11.375em;
   height: 4.6875em; }
-
-.icon-footer-partner-nls {
-  max-width: 12.25em;
-  height: 6.906875em; }
 
 .icon-footer-partner-cs {
   max-width: 8.3125em;
@@ -1220,8 +1200,6 @@ footer i {
   .footer__top, .footer__top span {
     text-align: center;
     max-width: 100%; }
-  .footer__top__menu a:before {
-    content: none; }
   .footer__top__partners {
     text-align: center;
     margin-bottom: 1.5em; }
@@ -1241,20 +1219,11 @@ footer i {
 
 @media only all and (min-width: 45em) {
   .footer__top__report-issues {
-    padding-right: 10%;
-    width: 60%;
     text-align: center; }
-  .footer__top__report-issues, .footer__top__menu {
-    float: right; }
-    .footer__top__report-issues span, .footer__top__menu span {
-      text-align: center;
-      max-width: 17em;
-      margin: 0 auto 1em auto; }
-  .footer__top__menu {
-    width: 40%;
-    text-align: left; }
-    .footer__top__menu span {
-      margin-bottom: 2.1em; }
+  .footer__top__report-issues span {
+    text-align: center;
+    max-width: 17em;
+    margin: 0 auto 1em auto; }
   .footer__top__partners span {
     margin: 1.2em 0 1.2em 0;
     display: inline-block; }
@@ -1268,7 +1237,7 @@ footer i {
 @media only all and (min-width: 71.25em) {
   .footer__top {
     padding: 2em 5% 1.5em 5%; }
-  .footer__top__report-issues span, .footer__top__menu span, .footer__top__partners span {
+  .footer__top__report-issues span, .footer__top__partners span {
     text-align: left;
     max-width: 13.25em;
     font-size: 1.2em;
@@ -1278,13 +1247,6 @@ footer i {
     float: right;
     text-align: left;
     padding: 0; }
-  .footer__top__menu {
-    width: 20%;
-    float: right;
-    text-align: left;
-    padding: 0; }
-    .footer__top__menu span {
-      margin-bottom: 2.1em; }
   .footer__top__partners {
     width: 50%;
     float: left;

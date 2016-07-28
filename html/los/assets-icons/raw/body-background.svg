@@ -1,47 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="593px" height="348px" viewBox="0 0 593 348" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="537px" height="534px" viewBox="0 0 537 534" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
-    <title>body-background</title>
+    <title>body-bg</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path id="path-1" d="M0,0 L598,3.03945981 L598,344.476191 L0,362.335056 L0,0 Z"></path>
-        <path id="path-3" d="M106.675061,300.143615 C106.675061,367.767993 93.9803771,433.538545 69.5179231,492.337096 C69.5985243,492.417697 106.675061,615.092672 106.675061,681.911039 C106.675061,797.775215 66.9789864,904.329957 0.563625366,988.961182 C247.888304,959.864161 439.839981,749.616018 439.839981,494.473027 C439.839981,241.425665 251.07205,32.7089451 6.64901342,0.831183872 C69.4373219,84.1727898 106.675061,187.86619 106.675061,300.143615 L106.675061,300.143615 Z"></path>
-        <path id="path-5" d="M0.126922182,191.176858 C0.126922182,466.268639 223.110049,689.130864 498.121228,689.130864 C657.268231,689.130864 798.88448,614.373282 890.044399,498.227001 C870.78072,500.483834 851.154336,501.773453 831.245848,501.773453 C668.632995,501.773453 529.837787,421.131986 438.919671,300.51234 C259.86418,277.178303 105.069641,161.55593 38.0900715,0.272996141 C13.6679181,59.0715469 0.126922182,123.55248 0.126922182,191.176858 L0.126922182,191.176858 Z"></path>
-        <path id="path-7" d="M59.5080239,306.010068 C37.5442061,306.010068 21.5851752,302.100912 0.306467337,299.400773 C2.20059474,302.100912 2.11999358,302.020311 3.2484099,303.309929 C4.2156239,304.559247 5.26343906,305.687664 6.10975131,306.81608 C97.0278668,423.526569 233.284138,500.33948 392.632644,500.33948 C412.581433,500.33948 432.167516,499.049862 451.431195,496.793029 C517.846556,412.161804 557.54263,305.607063 557.54263,189.742886 C557.54263,122.924519 544.36434,58.3226845 520.506394,0.0883419022 C444.821899,178.619925 265.645507,306.010068 59.5080239,306.010068 L59.5080239,306.010068 Z"></path>
+        <rect id="path-1" x="0" y="0" width="546" height="544"></rect>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.4">
-        <g id="1-MIE-Home" transform="translate(0.000000, -280.000000)">
-            <g id="body" transform="translate(-2.000000, 279.000000)">
-                <g id="body-background" transform="translate(0.000000, 1.000000)">
-                    <g id="body-bg">
-                        <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"></use>
-                        </mask>
-                        <use id="Mask" xlink:href="#path-1"></use>
-                        <g id="header-backing-copy-2" opacity="0.195020989" style="mix-blend-mode: saturation;" mask="url(#mask-2)">
-                            <g transform="translate(-612.587169, -1017.664944)">
-                                <g id="Group-29" transform="translate(890.382498, 198.941608)">
-                                    <mask id="mask-4" fill="white">
-                                        <use xlink:href="#path-3"></use>
-                                    </mask>
-                                    <g id="Clip-28"></g>
-                                    <path d="M-74.5969622,1064.08147 L514.919968,1064.08147 L514.919968,-74.2891031 L-74.5969622,-74.2891031 L-74.5969622,1064.08147 Z" id="Fill-27" fill="#6381BF" mask="url(#mask-4)"></path>
-                                </g>
-                                <g id="Group-38" transform="translate(0.901724, 689.675788)">
-                                    <mask id="mask-6" fill="white">
-                                        <use xlink:href="#path-5"></use>
-                                    </mask>
-                                    <g id="Clip-37"></g>
-                                    <path d="M-74.9933648,764.331752 L965.245287,764.331752 L965.245287,-74.8875914 L-74.9933648,-74.8875914 L-74.9933648,764.331752 Z" id="Fill-36" fill="#412773" mask="url(#mask-6)"></path>
-                                </g>
-                                <g id="Group-41" transform="translate(439.514928, 691.109760)">
-                                    <mask id="mask-8" fill="white">
-                                        <use xlink:href="#path-7"></use>
-                                    </mask>
-                                    <g id="Clip-40"></g>
-                                    <path d="M-74.8138196,575.459767 L632.703218,575.459767 L632.703218,-74.9916445 L-74.8138196,-74.9916445 L-74.8138196,575.459767 Z" id="Fill-39" fill="#A493D2" mask="url(#mask-8)"></path>
-                                </g>
-                            </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LoS-Visual-Home-V1" transform="translate(0.000000, -235.000000)">
+            <g id="body" transform="translate(-2.000000, 235.000000)">
+                <g id="body-bg">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask-Copy" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)">
+                        <g transform="translate(-10.000000, -294.000000)">
+                            <path d="M354.733927,43.5818201 L1.0908,838.2493 L843.8948,0.0003 L354.733927,43.5818201 Z M1.0908,839.334 L1.0908,839.3343 L-0.0002,839.3343 L1.0908,838.2493 L1.0908,839.12939 L1,839.334 L1.0908,839.334 Z" id="Combined-Shape" fill="#F0F7ED"></path>
+                            <path d="M2.0917,0.0003 L2.0917,838.1783 L374.2047,0.0003 L2.0917,0.0003 Z M1.5787,839.3343 L2.0917,839.3343 L2.0917,838.1783 L1.5787,839.3343 Z" id="Fill-2" fill="#E5F1E2"></path>
                         </g>
                     </g>
                 </g>

@@ -94,144 +94,6 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
   </head>
   <?php include 'functions.php'; ?>
   <body class="icon-body-background" id="js-binder">
-    
-    <div class="body-wrapper outsider">         
-        
-        <nav class="nav icon-pattern clearfix nav-collapse">
-				  <ul class="main-nav clearfix">
-				    <li class="home">
-				      <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
-				    </li>
-				    <li class="resources parent clearfix">
-				      <a href="#" class="parent-item js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Resources">
-				        Resources
-				      </a>
-				      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Resources">
-				        <div>
-				          <i class="sectionexpander icon-arrow-down"></i>
-				        </div>
-				      </a>
-				      <ul class="sub-menu">
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What can I do?">
-				            What can I do?
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Starter Activities">
-				            Starter Activities
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Lesson Guides">
-				            Lesson Guides
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Video Tutorials">
-				            Video Tutorials
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Other Film Activities">
-				            Other Film Activities
-				          </a>
-				        </li>
-				      </ul>
-				    </li>
-				    <li class="browse-films clearfix">
-				      <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Browse Films">
-				        Browse Films
-				      </a>
-				    </li>
-				    <li class="moving-image-education parent clearfix">
-				      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Moving Image Education">
-				        Moving Image Education
-				      </a>
-				      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Moving Image Education">
-				        
-				        <div>
-				          <i class="sectionexpander icon-arrow-down"></i>
-				        </div>
-				      </a>
-				      <ul class="sub-menu">
-				        <li>
-				          <a href="#" class=" js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Benefits of Moving Image Education">
-				            Benefits of Moving Image Education
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="The Compelling Logic of Screen Narratives">
-				            The Logic of Screen Narratives
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Fictional and Factual Texts">
-				            Fictional and Factual Texts 
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Written Punctuation and the Continuity System">
-				            Punctuation and the Continuity System
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Punctuation and Grammar of Moving Image texts">
-				            Moving Image Punctuation & Grammar
-				          </a>
-				        </li>
-				      </ul>
-				    </li>
-				    <li class="about-contact parent clearfix">
-				      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="About / Contact">
-				        About / Contact
-				      </a>
-				      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: About / Contact">
-				        <div>
-				          <i class="sectionexpander icon-arrow-down"></i>
-				        </div>
-				      </a>
-				      <ul class="sub-menu">
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Contact Us">
-				            Contact Us
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Request Login">
-				            Request Login
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Report an Issue">
-				            Report an Issue
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What Can I Do?">
-				            What Can I Do?
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Frequently Asked Questions">
-				            Frequently Asked Questions
-				          </a>
-				        </li>
-				      </ul>
-				    </li>
-				  </ul>
-				</nav>
-				<div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
-				  <div class="trigger__container">
-				    <i class="icon-menu"></i>
-				    <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
-				    <i class="icon-arrow-up">Open this section</i>
-				  </div>
-				</div>
-
-
-    </div>
-
         
     <div class="nav-wrapper__trigger" id="guidenav-trigger">Show/Hide Guidenav</div>
     <div class="nav-wrapper guidenav-collapse">
@@ -789,7 +651,145 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           </div>
       </div>
     </div>  
-    <!--HERE-->    
+    
+    <div class="body-wrapper outsider">         
+        
+        <nav class="nav icon-pattern clearfix nav-collapse">
+				  <ul class="main-nav clearfix">
+				    <li class="home">
+				      <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
+				    </li>
+				    <li class="resources parent clearfix">
+				      <a href="#" class="parent-item js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Resources">
+				        Resources
+				      </a>
+				      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Resources">
+				        <div>
+				          <i class="sectionexpander icon-arrow-down"></i>
+				        </div>
+				      </a>
+				      <ul class="sub-menu">
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What can I do?">
+				            What can I do?
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Starter Activities">
+				            Starter Activities
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Lesson Guides">
+				            Lesson Guides
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Video Tutorials">
+				            Video Tutorials
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Other Film Activities">
+				            Other Film Activities
+				          </a>
+				        </li>
+				      </ul>
+				    </li>
+				    <li class="browse-films clearfix">
+				      <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Browse Films">
+				        Browse Films
+				      </a>
+				    </li>
+				    <li class="moving-image-education parent clearfix">
+				      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Moving Image Education">
+				        Moving Image Education
+				      </a>
+				      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Moving Image Education">
+				        
+				        <div>
+				          <i class="sectionexpander icon-arrow-down"></i>
+				        </div>
+				      </a>
+				      <ul class="sub-menu">
+				        <li>
+				          <a href="#" class=" js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Benefits of Moving Image Education">
+				            Benefits of Moving Image Education
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="The Compelling Logic of Screen Narratives">
+				            The Logic of Screen Narratives
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Fictional and Factual Texts">
+				            Fictional and Factual Texts 
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Written Punctuation and the Continuity System">
+				            Punctuation and the Continuity System
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Punctuation and Grammar of Moving Image texts">
+				            Moving Image Punctuation & Grammar
+				          </a>
+				        </li>
+				      </ul>
+				    </li>
+				    <li class="about-contact parent clearfix">
+				      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="About / Contact">
+				        About / Contact
+				      </a>
+				      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: About / Contact">
+				        <div>
+				          <i class="sectionexpander icon-arrow-down"></i>
+				        </div>
+				      </a>
+				      <ul class="sub-menu">
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Contact Us">
+				            Contact Us
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Request Login">
+				            Request Login
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Report an Issue">
+				            Report an Issue
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What Can I Do?">
+				            What Can I Do?
+				          </a>
+				        </li>
+				        <li>
+				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Frequently Asked Questions">
+				            Frequently Asked Questions
+				          </a>
+				        </li>
+				      </ul>
+				    </li>
+				  </ul>
+				</nav>
+				<div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
+				  <div class="trigger__container">
+				    <i class="icon-menu"></i>
+				    <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
+				    <i class="icon-arrow-up">Open this section</i>
+				  </div>
+				</div>
+
+
+    </div>
+
+       
     <div class="body-wrapper">    
       <div class="styleguide container" id="nav">
         <div class="guidepattern nav">

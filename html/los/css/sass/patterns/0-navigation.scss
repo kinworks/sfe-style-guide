@@ -51,8 +51,7 @@
   padding: 0.6em 0 0.7em 8%;
 }
 
-.main-nav li .active,
-.main-nav li:nth-child(2n) .active {
+.main-nav li .active {
 	color: $white;
 	text-decoration: underline;
 }
@@ -377,6 +376,10 @@
 	  padding-left: 0;
   }
   
+  .main-nav li a.active {
+	  color: scale-color($light-pastel, $lightness: 30%);
+  }
+  
   .main-nav li.home,
   .main-nav li.browse-films {
 	  a {
@@ -526,6 +529,7 @@
     &:nth-child(2) {
 	    width: 15%;
 	    margin-right: 7%;
+	    padding-bottom: 2.8em;
 	    a {
 		    width: 85%;
 	    }
@@ -581,7 +585,7 @@
     
 } //end min 59em
 
-@media only all and (min-width: 63.9375em) {
+@media only all and (min-width: 66.25em) {
 	
 	.main-nav li {
     &:nth-child(1) {
@@ -612,6 +616,10 @@
     }
   }
 
+	.main-nav li:nth-child(5):hover .sub-menu, 
+  .js nav.nav-collapse .main-nav li:nth-child(5) ul.sub-menu.open {
+	  max-width: 23%;
+  }
 	
 } //end min 63.9375em
 
@@ -622,8 +630,11 @@
   }
   
   .main-nav li:hover .sub-menu,
-  .main-nav li.section-active .sub-menu {
-    margin-top: 0.3em;
+  .js nav.nav-collapse .main-nav ul.sub-menu.open,
+  .js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open,
+  .js nav.nav-collapse .main-nav li:nth-child(4) .sub-menu.open {
+    margin-top: 0.2em;
+    max-width: 25%;
   }
   
   .js .main-nav {
@@ -680,8 +691,8 @@
 	    margin-right: 4%;
     }
     &:nth-child(4) {
-	    width: 22%;
-	    margin-right: 9%;
+	    width: 24%;
+	    margin-right: 7%;
     }
     &:nth-child(5) {
 	    width: 15%;
@@ -693,3 +704,17 @@
   }
   
 } // end min 79em*/
+
+@media only all and (min-width: 86em) {
+	
+	.main-nav li {
+		&:nth-child(1) {
+	    margin-right: 7%;
+    }
+    &:nth-child(4) {
+	    width: 22%;
+	    margin-right: 7%;
+    }
+  }
+	
+} // end min 86em*/

@@ -27,7 +27,7 @@
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: #e7f3e2;
+  background-color: #cbf3bb;
   text-align: center;
   margin: 0 0 2em 0; }
 
@@ -72,9 +72,9 @@
   .list__jump-nav li a:hover {
     background-color: #74ae63; }
   .list__jump-nav li:nth-child(2n) a {
-    background-color: red; }
+    background-color: #44693C; }
   .list__jump-nav li:nth-child(2n) a:hover {
-    background-color: #ff1f1f; }
+    background-color: #55834b; }
   .list__jump-nav li:before {
     content: none;
     counter-increment: none; }

@@ -2619,17 +2619,6 @@ blockquote.quote__blockquote {
   .quote__caption:before {
     content: "— "; }
 
-.quote--pullout {
-  margin: 1.5em 0;
-  border-left: 0.276em solid;
-  border-color: #252626;
-  padding: 0.3em 1em 0.2em 1em;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.9em;
-  line-height: 1.3em;
-  color: red; }
-
 blockquote.quote__blockquote {
   margin: 0; }
 
@@ -2728,7 +2717,7 @@ ol ul li:before {
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: #e7f3e2;
+  background-color: #cbf3bb;
   text-align: center;
   margin: 0 0 2em 0; }
 
@@ -2773,9 +2762,9 @@ ol ul li:before {
   .list__jump-nav li a:hover {
     background-color: #74ae63; }
   .list__jump-nav li:nth-child(2n) a {
-    background-color: red; }
+    background-color: #44693C; }
   .list__jump-nav li:nth-child(2n) a:hover {
-    background-color: #ff1f1f; }
+    background-color: #55834b; }
   .list__jump-nav li:before {
     content: none;
     counter-increment: none; }

@@ -4,7 +4,7 @@
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: scale-color($light, $lightness: 85%);
+  background-color: scale-color($light-pastel, $lightness: 45%);
   text-align: center;
   margin: 0 0 2em 0;
 }
@@ -53,10 +53,10 @@
     background-color: scale-color($mid, $lightness: 20%);
   }
   &:nth-child(2n) a {
-    background-color: $mid-bright;
+    background-color: $dark;
   }
   &:nth-child(2n) a:hover {
-	  background-color: scale-color($mid-bright, $lightness: 12%);
+	  background-color: scale-color($dark, $lightness: 12%);
   }
   &:before {
     content: none;

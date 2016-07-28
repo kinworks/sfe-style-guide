@@ -3037,7 +3037,7 @@ ol.pagination li {
     border-color: #44693C;
     border-bottom: 0.1em solid; }
   .subnav .subnav__item ul li a, .subnav .subnav__item.subnav__item--sub-parent ul li a {
-    color: red; }
+    color: #793EAC; }
   .subnav .subnav__item ul li a.active, .subnav .subnav__item.subnav__item--sub-parent ul li a.active {
     color: #44693C; }
 

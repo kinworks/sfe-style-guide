@@ -393,16 +393,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                       <b>$contrast</b>
                     </li>
                     <li>
-                      <span class="contrast-light"><!--color fill--></span>
-                      <b>$contrast-light</b>
-                    </li>
-                    <li>
                       <span class="contrast-alt"><!--color fill--></span>
                       <b>$contrast-alt</b>
-                    </li>
-                    <li>
-                      <span class="contrast-alt-light"><!--color fill--></span>
-                      <b>$contrast-alt-light</b>
                     </li>
                     <li>
                       <span class="feedback"><!--color fill--></span>

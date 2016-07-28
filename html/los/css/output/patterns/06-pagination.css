@@ -51,20 +51,20 @@ ol.pagination li {
   color: #ffffff; }
   .pagination a:hover {
     text-decoration: underline;
-    background-color: #252626; }
+    background-color: #44693C; }
 
 .pagination__current a {
-  background-color: red;
-  color: #ffffff;
+  background-color: #A1EA83;
+  color: #44693C;
   cursor: not-allowed;
   border: none; }
   .pagination__current a:hover {
     text-decoration: underline;
-    color: #ffffff;
-    background-color: red; }
+    color: #44693C;
+    background-color: #A1EA83; }
 
 .pagination__previous a, .pagination__next a {
-  background-color: #44693C;
+  background-color: #334f2d;
   color: #ffffff;
   border-bottom: none;
   padding: 0.35em 0.1em;

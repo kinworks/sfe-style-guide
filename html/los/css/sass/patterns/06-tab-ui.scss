@@ -95,7 +95,7 @@
   }
   
   .js-tabs .tabs [role=tablist] {
-		background-color: scale-color($contrast-alt, $lightness: 40%);
+		background-color: scale-color($light, $lightness: 60%);
 	}
 
   .js-tabs .tabs [role=tab] {
@@ -109,32 +109,15 @@
   	text-align: center;
   	margin: 0 0 0 0;
   	padding: 0.2em 1em 0.2em 1em;
-  	border-bottom: 0.15em solid scale-color($light-pastel, $lightness: -30%);
+  	border-bottom: 0.15em solid $mid;
   }
-  
-  .js-tabs .tabs .tabs__print-all {
-  	display: inline-block;
-  	font-weight: 400;
-  	background-color: inherit;
-  	list-style: none;
-  	text-align: right;
-  	margin: 0 0 0 0;
-  	width: 15%;
-  	padding: 0.2em 1em 0.86em 0;
-  	border-bottom: 0.15em solid scale-color($light-pastel, $lightness: -30%);
-  	a {
-      color: $dark-text;
-      text-align: right;
-      text-decoration: underline;
-  	}
-  }
- 
+   
   .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-  	color: $mid;
+  	color: $dark;
   	font-weight: 600;
   	background-color: $white;
-  	border: 0.15em solid scale-color($light-pastel, $lightness: -30%);
-  	border-color: scale-color($light-pastel, $lightness: -30%);
+  	border: 0.15em solid $mid;
+  	border-color: $mid;
   	border-bottom: 0.15em solid $white;
   	&:focus {
       border-color: $contrast;
@@ -149,7 +132,7 @@
 	  background-color: inherit;
 	  border: 0;
 	  font-weight: 400;
-	  border-bottom: 0.15em solid scale-color($light-pastel, $lightness: -30%);
+	  border-bottom: 0.15em solid $mid;
   }
 
 } // end min 56em

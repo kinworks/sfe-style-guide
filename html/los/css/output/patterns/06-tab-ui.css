@@ -92,7 +92,7 @@
   .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
     border-right: none; }
   .js-tabs .tabs [role=tablist] {
-    background-color: #7b7e7e; }
+    background-color: #bedeb1; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 25%;
@@ -104,27 +104,13 @@
     text-align: center;
     margin: 0 0 0 0;
     padding: 0.2em 1em 0.2em 1em;
-    border-bottom: 0.15em solid #5ada25; }
-  .js-tabs .tabs .tabs__print-all {
-    display: inline-block;
-    font-weight: 400;
-    background-color: inherit;
-    list-style: none;
-    text-align: right;
-    margin: 0 0 0 0;
-    width: 15%;
-    padding: 0.2em 1em 0.86em 0;
-    border-bottom: 0.15em solid #5ada25; }
-    .js-tabs .tabs .tabs__print-all a {
-      color: #44693C;
-      text-align: right;
-      text-decoration: underline; }
+    border-bottom: 0.15em solid #588D49; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-    color: #588D49;
+    color: #44693C;
     font-weight: 600;
     background-color: #ffffff;
-    border: 0.15em solid #5ada25;
-    border-color: #5ada25;
+    border: 0.15em solid #588D49;
+    border-color: #588D49;
     border-bottom: 0.15em solid #ffffff; }
     .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true]:focus {
       border-color: #793EAC;
@@ -136,7 +122,7 @@
     background-color: inherit;
     border: 0;
     font-weight: 400;
-    border-bottom: 0.15em solid #5ada25; } }
+    border-bottom: 0.15em solid #588D49; } }
 
 /* Prevent FOUC */
 .js-tabs .tabs .js-panel {

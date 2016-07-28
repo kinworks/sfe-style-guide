@@ -3228,7 +3228,7 @@ form {
   display: inline-block;
   width: 100%;
   max-width: 36em;
-  background-color: #44693C;
+  background-color: #112F0A;
   padding: 1em 1em 0em 1em;
   margin: 1.5em 0 2em 0; }
 
@@ -3250,7 +3250,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   /* ^ The 0.375em vertically centers text on FF, 
   ignored by Webkit */
   background-color: #fff;
-  border: 0.2em solid #44693C;
+  border: 0.2em solid #112F0A;
   box-shadow: none;
   -webkit-appearance: none;
   border-radius: 0; }
@@ -3286,7 +3286,7 @@ textarea {
   margin-bottom: 1em; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[list]:focus, textarea:focus, select:focus {
-  border: 0.2em solid #A1EA83;
+  border: 0.2em solid #76b959;
   outline: 0; }
 
 label, legend {

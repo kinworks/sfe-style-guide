@@ -7,7 +7,7 @@ form {
   display: inline-block;
   width: 100%;
   max-width: 36em;
-  background-color: $dark;
+  background-color: $darkest;
   padding: 1em 1em 0em 1em;
   margin: 1.5em 0 2em 0;
 }
@@ -49,7 +49,7 @@ select {
   /* ^ The 0.375em vertically centers text on FF, 
   ignored by Webkit */
   background-color: #fff;
-  border: 0.2em solid $dark;
+  border: 0.2em solid $darkest;
   box-shadow: none;
   -webkit-appearance: none;
   border-radius: 0;
@@ -143,7 +143,7 @@ input[type="password"]:focus,
 input[list]:focus,
 textarea:focus,
 select:focus {
-  border: 0.2em solid $light-pastel;
+  border: 0.2em solid scale-color($light, $lightness: 15%);
   outline: 0; 
 }
 

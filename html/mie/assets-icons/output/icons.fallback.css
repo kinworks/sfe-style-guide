@@ -4,6 +4,10 @@
 
 .icon-body-background { background-image: url('png/body-background.png'); background-repeat: no-repeat; }
 
+.icon-callout-tip { background-image: url('png/callout-tip.png'); background-repeat: no-repeat; }
+
+.icon-callout-warning { background-image: url('png/callout-warning.png'); background-repeat: no-repeat; }
+
 .icon-circle-arrow-white { background-image: url('png/circle-arrow-white.png'); background-repeat: no-repeat; }
 
 .icon-circle-arrow { background-image: url('png/circle-arrow.png'); background-repeat: no-repeat; }

@@ -1,0 +1,34 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+.callout {
+	font-size: 1.3em;
+	margin-bottom: 1.5em;
+	padding: 1em 5% 1em 5%;
+	border-bottom: 0.2em solid $contrast;
+	font-style: italic;
+	line-height: 1.4em;
+	background-position: center center;
+	max-width: 29em;
+}
+
+.callout--warning {
+	color: $white;
+	background-color: $contrast;
+	border-color: scale-color($contrast, $lightness: -10%);
+}
+
+.callout--tip {
+	color: $white;
+	background-color: $contrast-alt;
+	border-color: scale-color($contrast-alt, $lightness: -10%);
+}
+
+@media only all and (min-width: 41em) {
+	
+	.callout {
+		padding: 1.5em 2em 1.5em 2em;
+		background-position: 95% center;
+	}
+	
+} //min 41em

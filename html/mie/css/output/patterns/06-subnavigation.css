@@ -37,6 +37,9 @@
 .subnav em {
   display: inline-block;
   font-size: 1.1em;
+  padding: 0.4em 1em 0.4em 1em;
+  background-color: #412773;
+  color: #ffffff;
   margin: 0 0 1em 0; }
 
 .subnav ul {

@@ -103,7 +103,7 @@
     padding: 0.5em 0 0 0;
     text-align: center;
     background-position: center top;
-    height: 14.8125em; }
+    height: 9.8125em; }
   .header__part--search .form-item-search-block-form {
     float: left;
     text-align: left;
@@ -129,7 +129,7 @@
     display: inline-block;
     float: left; }
   .header__part--search input[type="submit"] {
-    color: #ffffff;
+    color: #140431;
     background-color: #B088BC;
     font-size: 1.1em;
     outline: 0;

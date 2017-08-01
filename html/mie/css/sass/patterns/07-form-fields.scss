@@ -167,6 +167,18 @@ fieldset ul {
   list-style-type: none;
 }
 
+.fieldset-description {
+	color: $white;
+	font-size: 1.1em;
+	margin: 0 0 1.5em 0;
+}
+
+
+.field-prefix {
+	color: $white;
+	font-size: 1.1em;
+}
+
 input[type="checkbox"] {
   display: inline; 
 }
@@ -203,7 +215,7 @@ select[multiple] {
 
 textarea[disabled], input[disabled], select[disabled] {
   background-color: #ccc;
-  color: #666;
+  color: #555;
 }
 
 textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {

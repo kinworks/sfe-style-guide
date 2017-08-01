@@ -20,7 +20,7 @@
     color: $white;
     float: left;
   }
-}2
+}
 
 .main-nav {
   font-size: 1em;
@@ -64,6 +64,34 @@
 	}
 }
 
+// Sub-nav <select> browse menu
+
+.subnav-select-innav {
+	display: inline-block;
+	background-color: scale-color($contrast-alt, $lightness: -40%);
+	padding: 1.5em 8% 0.2em 8%;
+	width: 100%;
+	select {
+		max-width: 18.75em;
+		color: $dark;
+		-webkit-appearance: menulist;
+	}
+}
+
+.subnav-select-inpage {
+	margin-bottom: 1.5em;
+	label {
+		color: $mid-text;
+	}
+	select {
+		max-width: 18.75em;
+		-webkit-appearance: menulist;
+	}
+	@media only all and (min-width: 64em) {
+		display: none;
+	}
+}
+
 // Hide / show sub-section navigation based on JS being available
 .main-nav .parent .sectiontoggle {
   display: none;
@@ -73,7 +101,8 @@
   float: left;
 }
 
-.js .main-nav .parent .sectiontoggle {
+.js .main-nav .parent .sectiontoggle,
+.js .subnav-select-innav .sectiontoggle {
   display: block;
   float: right;
   padding: 0;
@@ -205,20 +234,15 @@
     position: static !important;
   }
   
-  // Build our sections into 3-up - 2up, two-row list:
+  // Hide subnav <select> menu
   
-  .secondary-nav-spaceholder {
-	  display: inline-block;
-	  text-align: center;
-	  width: 100%;
-	  background-color: $mid;
-	  padding: 1.1em 5% 1.2em 5%;
-	  color: $white;
-	  span {
-		  font-size: 1.1em;
-	  }
+  .subnav-select-innav {
+	  display: none;
+	  visibility: hidden;
   }
   
+  // Build our sections into 3-up - 2up, two-row list:
+    
   .main-nav li {
     z-index: 100;
     height: 3.6em;
@@ -228,25 +252,25 @@
     //border-bottom: 0.1em solid scale-color($contrast-alt, $lightness: -30%);
     &:nth-child(1) {
       width: 25%;
-    /*  padding: 0;
-      a {
-	      width: 100%;
-	      padding: 0.8em 5% 1em 5%;
-      }*/
     }    
-    &:nth-child(1),
-    &:nth-child(5) {
+    &:nth-child(1) {
 	    padding: 0;
       a {
 	      width: 100%;
-	      padding: 0.9em 5% 1em 5%;
+	      padding: 0.8em 5% 1em 5%;
       }
     }
     &:nth-child(2) {
       width: 37%;
+      .parent-item {
+        padding-left: 26%;
+      }
     }
     &:nth-child(3) {
       width: 38%;
+      .parent-item {
+        padding-left: 30%;
+      }
     }
     &:nth-child(4) {
 			border-right: 0.15em solid scale-color($contrast-alt, $lightness: -35%);
@@ -275,8 +299,9 @@
 	
   
   .js .main-nav .parent-item {
-    float: none;
+    //float: none;
     padding-top: 0.9em;
+    padding-left: 34%;
   }
   
   .js .main-nav .parent .sectiontoggle {
@@ -329,6 +354,18 @@
   
   // Build our sections into 5-up, one-row list:
   
+  .secondary-nav-spaceholder {
+	  display: inline-block;
+	  text-align: center;
+	  width: 100%;
+	  background-color: $mid;
+	  padding: 1.1em 5% 1.1em 5%;
+	  color: $white;
+	  span {
+		  font-size: 1.1em;
+	  }
+  }
+  
   nav {
     background-color: $dark;
     margin: 0 0 0 0;
@@ -342,17 +379,11 @@
   }
   
   .main-nav li {
-	  &:nth-child(4),
-		&:nth-child(5) {
-			width: auto;
-			background-color: inherit;
-			border: 0;
-		}
 		text-align: center;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;
     margin-right: 2.5%;
-    padding: 0.4em 0 1.2em 0;
+    padding: 0.1em 0 1.5em 0;
     background-color: inherit;
     height: 100%;
     float: left;
@@ -371,10 +402,22 @@
     }
     &:nth-child(2) {
 	    width: 20%;
+	    .parent-item {
+  	    padding-left: 0;
+	    }
     }
     &:nth-child(3) {
 	    width: 20%;
+	    .parent-item {
+  	    padding-left: 0;
+	    }
     }
+		&:nth-child(4),
+		&:nth-child(5) {
+			width: auto;
+			background-color: inherit;
+			border: 0;
+		}
     &:nth-child(4) {
 	    width: 20%;
     }
@@ -392,11 +435,14 @@
 	  padding-left: 0;
   }
   
-  .main-nav li.home,
-  .main-nav li.browse-films {
+  .main-nav li.home {
 	  a {
-		  margin-top: 0.375em;
+		  margin-top: 0.175em;
 	  }
+  }
+  
+  .js .main-nav .parent-item {
+    padding-left: 0;
   }
   
   .js .main-nav .parent .sectiontoggle {
@@ -404,14 +450,12 @@
     padding: 0;
     display: block;
     width: 100%;
-    //padding-right: 10%;
-    margin: 0;
+    margin: 0 0 0.8em 0;
   }
   
   .main-nav .sub-menu {
     visibility: hidden;
   	position: absolute;
-  	margin-top: 1.2em;
     left: 0;
     width: 100%;
     a {
@@ -421,18 +465,26 @@
  
   
   .main-nav li:hover .sub-menu,
+  .js nav.nav-collapse .main-nav ul.sub-menu.open {
+	  z-index: 10;
+  }
+  
+  .main-nav li.section-active .sub-menu {
+	  z-index: 0;
+  }
+  
+  .main-nav li:hover .sub-menu,
   .main-nav li.section-active .sub-menu {
 	  background-color: $mid;
     display: block;
     visibility: visible;
     height: auto;
     position: absolute;
-    margin-top: 1.2em;
     left: 0;
     width: 100%;
     max-width: 100%;
     margin-left: 0;
-    padding: 0.4em 4% 0.4em 4%;
+    padding: 0.7em 4% 0.3em 4%;
   }
   
   .main-nav .sub-menu li a {
@@ -450,7 +502,7 @@
 	  width: auto;
 	  text-align: center;
 	  display: inline-block;
-	  background-color: $mid;
+	  background-color: inherit;
 	  padding: 0;
 	  margin: 0 2% 0 2%;
 	  float: none;
@@ -466,12 +518,13 @@
 	.js nav.nav-collapse .main-nav ul.sub-menu li a {
 	  width: 100%;
 	  text-align: center;
-	  background-color: $mid;
+	  background-color: inherit;
 	}
 
   .js nav.nav-collapse .main-nav ul.sub-menu.open {
-    margin: 1.2em 0 0 0;
-    padding: 0.4em 4% 0.4em 4%;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0.7em 4% 0.3em 4%;
     text-align: center;
     min-width: initial;
     background-color: $mid;
@@ -520,6 +573,37 @@
 } //end min 59em
 
 
+// More margin under the nav bar when we're on the section
+// that wraps to two lines
+
+@media only all and (min-width: 59em) and (max-width: 86.875em) {
+	
+	.ancestor-create-films .secondary-nav-spaceholder {
+		display: none;
+	}
+	
+	.ancestor-create-films .nav-collapse {
+		margin-bottom: 8.1em;
+	}
+} // end min 59em max 86.875em
+
+
+// sub menus need extra height when we're on a section that wraps to two lines
+@media only all and (min-width: 59em) and (max-width: 87.82em) {
+  .ancestor-create-films nav.nav-collapse .main-nav li.analyse-film,
+  .ancestor-create-films nav.nav-collapse .main-nav li.getting-started, 
+  .ancestor-create-films nav.nav-collapse .main-nav li.browse-films {
+  	
+  	&:hover .sub-menu,
+  	.sub-menu.open {
+    	min-height: 6.5em;
+    	& li {
+      	padding-top: 1.5em;
+    	}
+  	}
+	}
+} // end min 59em max 87.82em
+
 @media only all and (min-width: 71.25em) {
   
   .main-nav li {
@@ -561,6 +645,7 @@
 		width: 80%;
 		text-align: left;
 		padding-top: 0.6em;
+		float: none;
 	} 
 	
 	.nav-collapse .main-nav {
@@ -581,7 +666,6 @@
   }
   
   .js .main-nav .parent .sectiontoggle {
-    float: right;
     padding: 0;
     display: inline-block;
     width: 10%;
@@ -598,3 +682,12 @@
   }
   
 } // end min 74em*/
+
+@media only all and (min-width: 80em) {
+	
+	.js .main-nav {
+		max-width: 78.57em;
+	}
+  
+	
+} // end min 79em 

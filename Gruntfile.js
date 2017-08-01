@@ -73,7 +73,7 @@ module.exports = function(grunt) {
                 dest: 'html/ss/css/output/patterns',
                 ext: '.css'
             }]
-        },
+        },*/
         
         compilemie: {
             files: [{
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
             }]
         }
 
-				*/
+				/*
 
 				compilelos: {
             files: [{
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
                 dest: 'html/los/css/output/patterns',
                 ext: '.css'
             }]
-        }
+        } */
 
     },
     
@@ -132,11 +132,11 @@ module.exports = function(grunt) {
          /*
           'html/sos/css/sass/_Patterns-ImportMap.scss': 'html/sos/css/sass/patterns/*.scss',
           'html/ss/css/sass/_Patterns-ImportMap.scss': 'html/ss/css/sass/patterns/*.scss',
-          
+          */
           'html/mie/css/sass/_Patterns-ImportMap.scss': 'html/mie/css/sass/patterns/*.scss',
           
-          */
-          'html/los/css/sass/_Patterns-ImportMap.scss': 'html/los/css/sass/patterns/*.scss',
+          /*
+          'html/los/css/sass/_Patterns-ImportMap.scss': 'html/los/css/sass/patterns/*.scss', */
         },
         options: {
           useSingleQuotes: false,
@@ -223,7 +223,7 @@ module.exports = function(grunt) {
 	     	    }
 			 	},      
 		
-		
+		*/
 		mieicons: 
    			{
 		    files: 
@@ -261,7 +261,7 @@ module.exports = function(grunt) {
 	     	    }
 			 	}      
 		
-			 	*/
+			 	/*
 		
 			 	losicons: 
    			{
@@ -272,7 +272,7 @@ module.exports = function(grunt) {
               cwd: 'html/los/assets-icons/src',
               src: ['*.svg', '*.png'],
               dest: "html/los/assets-icons/output"
-	          }],
+	          }], 
 				
 			options: 
 						{
@@ -299,6 +299,7 @@ module.exports = function(grunt) {
            
 	     	    }
 			 	}
+			 	*/
 		
 		},
     
@@ -329,7 +330,7 @@ module.exports = function(grunt) {
                 src: ['*.svg'],
                 dest: "html/ss/assets-icons/src"
             	},
-            	
+            	*/
             	{
                 expand: true,
                 cwd: 'html/mie/assets-icons/raw',
@@ -337,7 +338,7 @@ module.exports = function(grunt) {
                 dest: "html/mie/assets-icons/src"
             	}
             	
-            	*/
+            	/*
             	
             	{
                 expand: true,
@@ -345,7 +346,7 @@ module.exports = function(grunt) {
                 src: ['*.svg'],
                 dest: "html/los/assets-icons/src"
             	}
-            	
+            	*/
             ]
         }
     },
@@ -356,33 +357,37 @@ module.exports = function(grunt) {
       sass: {
         files: [// UNCOMMENT_TO_RUN
         /* 'html/sos/css/sass/*.scss',
-        			 'html/ss/css/sass/*.scss',
-        			 'html/mie/css/sass/*.scss', */
-        			 'html/los/css/sass/*.scss'],
+        			 'html/ss/css/sass/*.scss',*/
+        			 'html/mie/css/sass/*.scss', /*
+        			 'html/los/css/sass/*.scss'], */
+        			 ],
         tasks: ['sass']
       },
       sass_globbing: {
         files: [// UNCOMMENT_TO_RUN
         /* 'html/sos/css/sass/patterns/*.scss',
-        			 'html/ss/css/sass/patterns/*.scss',
-        			 'html/mie/css/sass/patterns/*.scss',*/
-        			 'html/los/css/sass/patterns/*.scss'],
+        			 'html/ss/css/sass/patterns/*.scss',*/
+        			 'html/mie/css/sass/patterns/*.scss',/*
+        			 'html/los/css/sass/patterns/*.scss'],*/
+        			 ],
         tasks: ['sass_globbing']
       },
       svgmin: {
         files: [// UNCOMMENT_TO_RUN
         /*'html/sos/assets-icons/raw/*.svg',
-        			 'html/ss/assets-icons/raw/*.svg',
-        			 'html/mie/assets-icons/raw/*.svg',*/
-        			 'html/los/assets-icons/raw/*.svg'],
+        			 'html/ss/assets-icons/raw/*.svg',*/
+        			 'html/mie/assets-icons/raw/*.svg',/*
+        			 'html/los/assets-icons/raw/*.svg'],*/
+        			 ],
         tasks: ['svgmin']
       },
       grunticon: {
         files: [// UNCOMMENT_TO_RUN
         /*'html/sos/assets-icons/src/*.svg',
-        			 'html/ss/assets-icons/src/*.svg',
-        			 'html/mie/assets-icons/src/*.svg',*/
-        			 'html/los/assets-icons/src/*.svg'],
+        			 'html/ss/assets-icons/src/*.svg',*/
+        			 'html/mie/assets-icons/src/*.svg',
+        			 /* 'html/los/assets-icons/src/*.svg'],*/
+        			 ],
         tasks: ['grunticon']
       },
     },

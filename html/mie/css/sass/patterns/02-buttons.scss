@@ -3,7 +3,8 @@
 
 /* Buttons / CTAs */
 
-.btn {
+.btn,
+#user-login input[type="submit"] {
   font-size: 1.13em;
   background-color: $dark;
   color: #fff;
@@ -23,7 +24,8 @@
   }
 }
 
-.btn--mid {
+.btn--mid,
+#user-login input[type="submit"] {
   background-color: $mid;
   border-bottom: 0.2em solid scale-color($mid, $lightness: -30%);
   &:hover {
@@ -34,7 +36,7 @@
 }
 .btn--light {
   background-color: $light;
-  color: $white;
+  color: $dark-text;
   border-bottom: 0.2em solid scale-color($light, $lightness: -30%);
   &:hover {
     box-shadow: inset 0 0 0 0.2em scale-color($light, $lightness: 40%);
@@ -62,7 +64,7 @@
   }
 }
 .btn--contrast-alt {
-  background-color: $contrast-alt;
+  background-color: scale-color($contrast-alt, $lightness: -7%);
   border-bottom: 0.2em solid scale-color($contrast-alt, $lightness: -40%);
   &:hover {
     box-shadow: inset 0 0 0 0.2em scale-color($contrast-alt, $lightness: 20%);
@@ -85,7 +87,7 @@
 .btn--disabled {
   background-color: #ccc;
   border-bottom: 0.2em solid scale-color($white, $lightness: -30%);
-  color: #666;
+  color: #555;
   &:hover {
     text-decoration: none;
     box-shadow: none;

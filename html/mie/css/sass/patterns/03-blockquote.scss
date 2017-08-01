@@ -6,11 +6,12 @@
 	border-top: 0.08em solid;
 	border-bottom: 0.08em solid;
   border-color: scale-color($mid, $lightness: 30%);
-	padding: 1em 1em;
+	padding: 1em 0 1em 0;
 	font-style: italic;
 	font-size: 1.4em;
 	line-height: 1.3em;
 	color: $mid-text;
+	max-width: 27em;
 }
 
 blockquote.quote__blockquote {
@@ -57,7 +58,7 @@ blockquote.quote__blockquote {
 	padding: 0.3em 1em 0.2em 1em;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 1.9em;
+	font-size: 1.7em;
 	line-height: 1.3em;
 	color: $mid-bright;
 }
@@ -96,3 +97,11 @@ blockquote.quote__blockquote {
     content: "— ";
   }
 }
+
+@media only all and (min-width: 41em) {
+	
+	.quote {
+		padding: 1em 1em 1em 1em;
+	}
+	
+} //min 41em

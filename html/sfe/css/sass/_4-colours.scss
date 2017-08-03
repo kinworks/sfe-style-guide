@@ -13,7 +13,7 @@ $dark: #2D3030;
 
 /// Calls to Action / Highlights
 
-$contrast: #D96E10; // WCAG 2 AA Compliant (18pt+)
+$contrast: #D96E10; // WCAG 2 AA Compliant (18pt+; use $linktext (blue) for smaller)
 
 $contrast-light: #FBA458; // Don't use with white for text
 
@@ -32,7 +32,7 @@ $disabled: #ccc;
 /////// A11Y: These will validate to WCAG 2.0 
 ///////////// for AA small text (4.5:1)
 
-$link-text: $contrast;
+$link-text: #0F72B8;
 
 $mid-text: #437F8F;
 

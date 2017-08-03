@@ -22,7 +22,7 @@
   background-color: #140431; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #98D7E2; }
 
 .bg--light {
   background-color: #B088BC; }
@@ -48,7 +48,7 @@
   list-style: none;
   text-align: center;
   margin: 0 0 0.2em 0;
-  background-color: #412773;
+  background-color: #98D7E2;
   color: #ffffff;
   line-height: 2.75;
   cursor: pointer; }
@@ -86,7 +86,7 @@
     display: inline-block;
     width: 50%;
     text-align: center;
-    background-color: #412773;
+    background-color: #98D7E2;
     padding: 0.65em 0 0.65em 0; }
     .js-tabs .tabs .tabs__print-all a {
       color: #ffffff;
@@ -127,7 +127,7 @@
       text-align: right;
       text-decoration: underline; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-    color: #412773;
+    color: #98D7E2;
     font-weight: 600;
     background-color: #ffffff;
     border: 0.15em solid #ac51c8;

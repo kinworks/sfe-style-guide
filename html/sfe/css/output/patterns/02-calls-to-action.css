@@ -22,7 +22,7 @@
   background-color: #140431; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #98D7E2; }
 
 .bg--light {
   background-color: #B088BC; }
@@ -43,7 +43,7 @@
   width: 100%;
   margin: 0 0 1.5em 0;
   padding: 0.8em;
-  background-color: #412773;
+  background-color: #98D7E2;
   border-left: 1em solid #140431;
   border-bottom: none;
   -webkit-transition: background-color 0.2s ease-in-out;
@@ -52,7 +52,7 @@
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out; }
   .cta:hover {
-    background-color: #492c80; }
+    background-color: #9dd9e3; }
   .cta:hover span {
     text-decoration: underline; }
 

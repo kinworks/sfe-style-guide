@@ -23,7 +23,7 @@
   background-color: #140431; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #98D7E2; }
 
 .bg--light {
   background-color: #B088BC; }
@@ -35,12 +35,12 @@
   margin: 1.5em 0;
   border-top: 0.08em solid;
   border-bottom: 0.08em solid;
-  border-color: #6f45c0;
+  border-color: #b7e3eb;
   padding: 1em 0 1em 0;
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.3em;
-  color: #412773;
+  color: #98D7E2;
   max-width: 27em; }
 
 blockquote.quote__blockquote {
@@ -89,7 +89,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #412773; }
+  color: #98D7E2; }
 
 .quote em {
   font-style: normal; }

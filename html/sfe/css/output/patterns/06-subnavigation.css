@@ -23,7 +23,7 @@
   background-color: #140431; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #98D7E2; }
 
 .bg--light {
   background-color: #B088BC; }
@@ -38,7 +38,7 @@
   display: inline-block;
   font-size: 1.1em;
   padding: 0.4em 1em 0.4em 1em;
-  background-color: #412773;
+  background-color: #98D7E2;
   color: #ffffff;
   margin: 0 0 1em 0; }
 
@@ -67,8 +67,8 @@
     color: #140431;
     border-color: #140431; }
     .subnav .subnav__item.subnav__item--parent a:hover {
-      color: #412773;
-      border-color: #412773; }
+      color: #98D7E2;
+      border-color: #98D7E2; }
 
 .subnav .subnav__item.subnav__item--sub-parent a {
   color: #140431;

@@ -22,7 +22,7 @@
   background-color: #140431; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #98D7E2; }
 
 .bg--light {
   background-color: #B088BC; }
@@ -38,7 +38,7 @@
   display: block;
   background-color: #140431;
   background-image: none;
-  border-left: 1em solid #412773;
+  border-left: 1em solid #98D7E2;
   cursor: pointer; }
   .login__trigger.cta .icon-arrow-down, .login__trigger.cta .icon-arrow-up, .login__trigger.cta .icon-arrow-right, .logout__trigger.cta .icon-arrow-down, .logout__trigger.cta .icon-arrow-up, .logout__trigger.cta .icon-arrow-right {
     width: 0.625em;
@@ -74,7 +74,7 @@
   padding: 1.5em 8% 1.5em 8%; }
 
 .login__sso {
-  background-color: #412773; }
+  background-color: #98D7E2; }
   .login__sso .sso__block__label {
     width: 100%;
     font-size: 1.2em;
@@ -121,7 +121,7 @@
 
 @media only all and (min-width: 41em) {
   .login__trigger.cta, .logout__trigger.cta {
-    background-color: #412773;
+    background-color: #98D7E2;
     background-image: none; }
   .login__trigger--top.cta {
     background-color: #0e0322;
@@ -131,7 +131,7 @@
   .login__trigger--top.cta .login__trigger--top__container {
     max-width: 10em; }
   .login__sso {
-    background-color: #412773;
+    background-color: #98D7E2;
     padding-bottom: 2em; }
     .login__sso .login__sso__block {
       width: 50%;

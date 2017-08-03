@@ -23,7 +23,7 @@
   background-color: #140431; }
 
 .bg--mid {
-  background-color: #412773; }
+  background-color: #98D7E2; }
 
 .bg--light {
   background-color: #B088BC; }
@@ -95,7 +95,7 @@
 .subnav-select-inpage {
   margin-bottom: 1.5em; }
   .subnav-select-inpage label {
-    color: #412773; }
+    color: #98D7E2; }
   .subnav-select-inpage select {
     max-width: 18.75em;
     -webkit-appearance: menulist; }
@@ -146,15 +146,15 @@
   text-decoration: none; }
 
 .main-nav .sub-menu li {
-  background-color: #341f5c; }
+  background-color: #5dc0d1; }
   .main-nav .sub-menu li:hover {
-    background-color: #24153f; }
+    background-color: #2e91a2; }
   .main-nav .sub-menu li:hover a {
     text-decoration: underline; }
   .main-nav .sub-menu li:nth-child(2n) {
-    background-color: #2a194b; }
+    background-color: #36abc0; }
     .main-nav .sub-menu li:nth-child(2n):hover {
-      background-color: #1d1234; }
+      background-color: #257785; }
 
 .js .nav__trigger {
   position: fixed;
@@ -257,20 +257,20 @@
     text-align: left;
     border: none; }
     .main-nav .sub-menu li:nth-child(4) {
-      background-color: #2a194b; }
+      background-color: #36abc0; }
       .main-nav .sub-menu li:nth-child(4):hover {
-        background-color: #1d1234; }
+        background-color: #257785; }
     .main-nav .sub-menu li:nth-child(5) {
-      background-color: #341f5c; }
+      background-color: #5dc0d1; }
       .main-nav .sub-menu li:nth-child(5):hover {
-        background-color: #24153f; } }
+        background-color: #2e91a2; } }
 
 @media only all and (min-width: 59em) {
   .secondary-nav-spaceholder {
     display: inline-block;
     text-align: center;
     width: 100%;
-    background-color: #412773;
+    background-color: #98D7E2;
     padding: 1.1em 5% 1.1em 5%;
     color: #ffffff; }
     .secondary-nav-spaceholder span {
@@ -345,7 +345,7 @@
   .main-nav li.section-active .sub-menu {
     z-index: 0; }
   .main-nav li:hover .sub-menu, .main-nav li.section-active .sub-menu {
-    background-color: #412773;
+    background-color: #98D7E2;
     display: block;
     visibility: visible;
     height: auto;
@@ -385,7 +385,7 @@
     padding: 0.7em 4% 0.3em 4%;
     text-align: center;
     min-width: initial;
-    background-color: #412773; }
+    background-color: #98D7E2; }
   .main-nav .sub-menu li {
     height: auto;
     width: 100%;

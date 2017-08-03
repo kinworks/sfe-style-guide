@@ -16,25 +16,22 @@
 .icon-pattern, .icon-pattern-dark {
   background-repeat: repeat; }
 
-.bg--darkest {
-  background-color: #222121; }
-
 .bg--dark {
-  background-color: #140431; }
+  background-color: #2D3030; }
 
 .bg--mid {
-  background-color: #98D7E2; }
+  background-color: #288098; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #98D7E2; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #bcdfe6; }
 
 .list__jump-nav {
   padding: 1em;
   width: 100%;
-  background-color: #f3edf5;
+  background-color: #f0f9fb;
   text-align: center;
   margin: 0 0 2em 0; }
 
@@ -42,7 +39,7 @@
   display: block;
   font-size: 1.4em;
   margin: 0 0 1em 0;
-  color: #140431; }
+  color: #2D3030; }
 
 .list__jump-nav__select {
   display: none; }
@@ -73,31 +70,31 @@
     /* stops bg color from leaking outside the border: */
     text-align: center;
     border-bottom: none;
-    background-color: #98D7E2;
+    background-color: #288098;
     color: #ffffff;
     font-weight: 3 00; }
   .list__jump-nav li a:hover {
-    background-color: #addfe8; }
+    background-color: #36aaca; }
   .list__jump-nav li:nth-child(2n) a {
-    background-color: #8F4F97; }
+    background-color: #5CC1D4; }
   .list__jump-nav li:nth-child(2n) a:hover {
-    background-color: #a25daa; }
+    background-color: #70c8d9; }
   .list__jump-nav li:before {
     content: none;
     counter-increment: none; }
   .list__jump-nav li.not-available a {
     background-color: inherit;
-    color: #98D7E2;
+    color: #437F8F;
     cursor: not-allowed; }
     .list__jump-nav li.not-available a:hover {
       background-color: inherit; }
 
 .list__content .heading {
-  color: #140431; }
+  color: #2D3030; }
 
 .list__content .heading span {
   font-weight: 300;
-  color: #f5eaf9;
+  color: #eef7f9;
   display: inline-block;
   margin: 0 0.5em 0 0.2em; }
 
@@ -105,7 +102,7 @@
   font-size: 0.82em;
   font-weight: 300;
   font-style: italic;
-  color: #98D7E2; }
+  color: #437F8F; }
 
 .list__content ol {
   list-style: none;

@@ -330,7 +330,11 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                <div class="swatches">
                  
                   <h2 class="guidance">Brand</h2>
-                  <ul>
+                  <ul
+	                 ><li>
+                      <span class="light-pastel"><!--color fill--></span>
+                      <b>$light-pastel</b>
+                    </li>
                     <li>
                       <span class="light"><!--color fill--></span>
                       <b>$light</b>
@@ -349,27 +353,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                     </li>
                   </ul>
                   
-                  <h2 class="guidance">Section Colours</h2>
-                  <ul>
-                    <li>
-                      <span class="section-alpha"><!--color fill--></span>
-                      <b>$section-alpha</b>
-                    </li>
-                    <li>
-                      <span class="section-beta"><!--color fill--></span>
-                      <b>$section-beta</b>
-                    </li>
-                    <li>
-                      <span class="section-gamma"><!--color fill--></span>
-                      <b>$section-gamma</b>
-                    </li>
-                    <li>
-                      <span class="section-delta"><!--color fill--></span>
-                      <b>$section-delta</b>
-                    </li>
-                  </ul>
-
-                  
+                                   
                   <h2 class="guidance">Text-specific Colours</h2>
                   <ul>
 	                  <li>

@@ -15,20 +15,17 @@
 .icon-pattern, .icon-pattern-dark {
   background-repeat: repeat; }
 
-.bg--darkest {
-  background-color: #222121; }
-
 .bg--dark {
-  background-color: #140431; }
+  background-color: #2D3030; }
 
 .bg--mid {
-  background-color: #98D7E2; }
+  background-color: #288098; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #98D7E2; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #bcdfe6; }
 
 .tabs {
   margin-bottom: 3em; }
@@ -41,14 +38,14 @@
   width: 100%;
   padding: 0 0 0 0.2em;
   margin: 0 0 1em 0;
-  background-color: #e4c6ed; }
+  background-color: #d0e9ed; }
 
 .js-tabs .tabs [role=tab] {
   display: block;
   list-style: none;
   text-align: center;
   margin: 0 0 0.2em 0;
-  background-color: #98D7E2;
+  background-color: #288098;
   color: #ffffff;
   line-height: 2.75;
   cursor: pointer; }
@@ -69,12 +66,12 @@
     text-decoration: underline; }
 
 .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-  background-color: #140431;
+  background-color: #2D3030;
   border: none; }
 
 @media only all and (min-width: 41em) {
   .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-    border-right: 0.2em solid #e4c6ed; }
+    border-right: 0.2em solid #d0e9ed; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 50%;
@@ -86,7 +83,7 @@
     display: inline-block;
     width: 50%;
     text-align: center;
-    background-color: #98D7E2;
+    background-color: #288098;
     padding: 0.65em 0 0.65em 0; }
     .js-tabs .tabs .tabs__print-all a {
       color: #ffffff;
@@ -104,14 +101,14 @@
     display: inline-block;
     width: 25%;
     cursor: pointer;
-    color: #140431;
+    color: #2D3030;
     font-weight: 400;
     background-color: inherit;
     list-style: none;
     text-align: center;
     margin: 0 0 0 0;
     padding: 0.2em 1em 0.2em 1em;
-    border-bottom: 0.15em solid #ac51c8; }
+    border-bottom: 0.15em solid #61b4c3; }
   .js-tabs .tabs .tabs__print-all {
     display: inline-block;
     font-weight: 400;
@@ -121,29 +118,29 @@
     margin: 0 0 0 0;
     width: 15%;
     padding: 0.2em 1em 0.86em 0;
-    border-bottom: 0.15em solid #ac51c8; }
+    border-bottom: 0.15em solid #61b4c3; }
     .js-tabs .tabs .tabs__print-all a {
-      color: #140431;
+      color: #2D3030;
       text-align: right;
       text-decoration: underline; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
-    color: #98D7E2;
+    color: #288098;
     font-weight: 600;
     background-color: #ffffff;
-    border: 0.15em solid #ac51c8;
-    border-color: #ac51c8;
+    border: 0.15em solid #61b4c3;
+    border-color: #61b4c3;
     border-bottom: 0.15em solid #ffffff; }
     .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true]:focus {
       border-color: #D96E10;
       border-bottom: 0.15em solid #ffffff;
       text-decoration: underline;
-      color: #140431;
+      color: #2D3030;
       outline: none; }
   .js-tabs .tabs.js-tab-ui .js-tabs-list .tabs__print-all[aria-selected=true] {
     background-color: inherit;
     border: 0;
     font-weight: 400;
-    border-bottom: 0.15em solid #ac51c8; } }
+    border-bottom: 0.15em solid #61b4c3; } }
 
 /* Prevent FOUC */
 .js-tabs .tabs .js-panel {

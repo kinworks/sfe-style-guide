@@ -15,20 +15,17 @@
 .icon-pattern, .icon-pattern-dark {
   background-repeat: repeat; }
 
-.bg--darkest {
-  background-color: #222121; }
-
 .bg--dark {
-  background-color: #140431; }
+  background-color: #2D3030; }
 
 .bg--mid {
-  background-color: #98D7E2; }
+  background-color: #288098; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #98D7E2; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #bcdfe6; }
 
 .feedback {
   background-color: #d0d9ec;

@@ -103,7 +103,7 @@
 	width: auto;
 	min-width: 15em;
 	border-left: none;
-	background-color: $darkest;
+	background-color: $dark;
 	color: $white;
 	div {
 		float: none;
@@ -126,7 +126,7 @@
 		height: 1.875em;
 	}
 	&:hover {
-		background-color: scale-color($darkest, $lightness: 9%);
+		background-color: scale-color($dark, $lightness: 9%);
 	} 
 }
 

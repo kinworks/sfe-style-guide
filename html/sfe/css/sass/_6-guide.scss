@@ -294,6 +294,10 @@ pre {
   border-bottom: 0.2em solid #ccc;
 }
 
+.swatches span.light-pastel {
+  background-color: $light-pastel;
+}
+
 .swatches span.light {
   background-color: $light;
 }
@@ -306,22 +310,6 @@ pre {
   background-color: $mid-bright;
 }
 
-.swatches span.section-alpha {
-  background-color: $section-alpha;
-}
-
-.swatches span.section-beta {
-  background-color: $section-beta;
-}
-
-.swatches span.section-gamma {
-  background-color: $section-gamma;
-}
-
-.swatches span.section-delta {
-  background-color: $section-delta;
-}
-
 .swatches span.link-text {
   background-color: $link-text;
 }
@@ -332,10 +320,6 @@ pre {
 
 .swatches span.dark {
   background-color: $dark;
-}
-
-.swatches span.darkest {
-  background-color: $darkest;
 }
 
 .swatches span.dark-text {

@@ -27,8 +27,29 @@
 .bg--light-pastel {
   background-color: #bcdfe6; }
 
-.feedback--error {
-  background-color: #ffcdb3;
-  border-bottom: 0.2em solid #ffbc9a; }
+.callout {
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+  padding: 1em 5% 1em 5%;
+  border-bottom: 0.2em solid #D96E10;
+  font-style: italic;
+  line-height: 1.4em;
+  background-position: center center;
+  max-width: 29em; }
 
-/*# sourceMappingURL=09-feedback-error.css.map */
+.callout--warning {
+  color: #ffffff;
+  background-color: #D96E10;
+  border-color: #c3630e; }
+
+.callout--tip {
+  color: #ffffff;
+  background-color: #6381BF;
+  border-color: #4e70b7; }
+
+@media only all and (min-width: 41em) {
+  .callout {
+    padding: 1.5em 2em 1.5em 2em;
+    background-position: 95% center; } }
+
+/*# sourceMappingURL=15-callouts.css.map */

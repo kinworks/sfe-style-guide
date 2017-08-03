@@ -16,67 +16,29 @@
 .icon-pattern, .icon-pattern-dark {
   background-repeat: repeat; }
 
-.bg--darkest {
-  background-color: #222121; }
-
 .bg--dark {
-  background-color: #140431; }
+  background-color: #2D3030; }
 
 .bg--mid {
-  background-color: #98D7E2; }
+  background-color: #288098; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #98D7E2; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #bcdfe6; }
 
 .quote {
   margin: 1.5em 0;
   border-top: 0.08em solid;
   border-bottom: 0.08em solid;
-  border-color: #b7e3eb;
+  border-color: #4fb5d1;
   padding: 1em 0 1em 0;
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.3em;
-  color: #98D7E2;
+  color: #437F8F;
   max-width: 27em; }
-
-blockquote.quote__blockquote {
-  margin: 0; }
-
-.quote__blockquote:before {
-  content: '“'; }
-.quote__blockquote:after {
-  content: '”'; }
-.quote__blockquote:before, .quote__blockquote:after {
-  font-size: 1.6em;
-  vertical-align: -0.2em;
-  margin-left: -0.1em;
-  color: #B088BC; }
-
-.quote em {
-  font-style: normal; }
-
-.quote__caption {
-  font-style: italic;
-  font-size: 0.8em;
-  color: #140431;
-  margin-top: 0.8em; }
-  .quote__caption:before {
-    content: "— "; }
-
-.quote--pullout {
-  margin: 1.5em 0;
-  border-left: 0.276em solid;
-  border-color: #6381BF;
-  padding: 0.3em 1em 0.2em 1em;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.7em;
-  line-height: 1.3em;
-  color: #8F4F97; }
 
 blockquote.quote__blockquote {
   margin: 0; }
@@ -95,10 +57,45 @@ blockquote.quote__blockquote {
   font-style: normal; }
 
 .quote__caption {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #2D3030;
+  margin-top: 0.8em; }
+  .quote__caption:before {
+    content: "— "; }
+
+.quote--pullout {
+  margin: 1.5em 0;
+  border-left: 0.276em solid;
+  border-color: #6381BF;
+  padding: 0.3em 1em 0.2em 1em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.7em;
+  line-height: 1.3em;
+  color: #5CC1D4; }
+
+blockquote.quote__blockquote {
+  margin: 0; }
+
+.quote__blockquote:before {
+  content: '“'; }
+.quote__blockquote:after {
+  content: '”'; }
+.quote__blockquote:before, .quote__blockquote:after {
+  font-size: 1.6em;
+  vertical-align: -0.2em;
+  margin-left: -0.1em;
+  color: #288098; }
+
+.quote em {
+  font-style: normal; }
+
+.quote__caption {
   font-style: normal;
   font-weight: 400;
   font-size: 0.7em;
-  color: #140431;
+  color: #2D3030;
   margin-top: 0.8em; }
   .quote__caption:before {
     content: "— "; }

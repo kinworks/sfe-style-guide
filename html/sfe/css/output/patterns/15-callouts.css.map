@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "15-callouts.css",
+	"sources": [
+		"../../../../../15-callouts.scss",
+		"../../../../../../_2-mixins.scss",
+		"../../../../../../_4-colours.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AEiDA;EACE,AAAY;EACZ,AAAwC;;;;;AAO1C;EACE,AAAY;EACZ,AAA6C;;;;;AAO/C,AAAe;EAEb,AAAmB;;AAMrB;EACE,AAlEK;;AAqEP;EACE,AA1EI;;AA6EN;EACE,AAlFM;;AAqFR;EACE,AApFa;;AFDf;EACC,AAAW;EACX,AAAe;EACf,AAAS;EACT,AAAe;EACf,AAAY;EACZ,AAAa;EACb,AAAqB;EACrB,AAAW;;AAGZ;EACC,AE8BO;EF7BP,AEDU;EFEV,AAAc;;AAGf;EACC,AEwBO;EFvBP,AEHc;EFId,AAAc;;AAGf;EAEA;IACE,AAAS;IACT,AAAqB",
+	"names": []
+}

@@ -15,20 +15,17 @@
 .icon-pattern, .icon-pattern-dark {
   background-repeat: repeat; }
 
-.bg--darkest {
-  background-color: #222121; }
-
 .bg--dark {
-  background-color: #140431; }
+  background-color: #2D3030; }
 
 .bg--mid {
-  background-color: #98D7E2; }
+  background-color: #288098; }
 
 .bg--light {
-  background-color: #B088BC; }
+  background-color: #98D7E2; }
 
 .bg--light-pastel {
-  background-color: #D8ADE5; }
+  background-color: #bcdfe6; }
 
 /* /// Responsive Tables */
 /* make each table separate from other ones */
@@ -83,7 +80,7 @@ tr {
   width: 100%;
   font-size: 1.1em;
   background-color: #e8ecf5;
-  border-top: 0.2em solid #140431;
+  border-top: 0.2em solid #2D3030;
   border-bottom: 0.2em solid #c1cde5;
   padding: 1em; }
 
@@ -145,7 +142,7 @@ by side rather than stacked */
     font-weight: normal; }
   /* Style table */
   thead tr {
-    background-color: #140431; }
+    background-color: #2D3030; }
   thead tr th {
     color: #fff;
     padding: 0.5em 0.5em 0.5em 0.8em; }
@@ -156,6 +153,6 @@ by side rather than stacked */
     margin: 0 0 0 0.5em;
     padding: 0.8em 0 0 0; }
   tbody tr:nth-child(odd) {
-    background-color: #fdfafe; } }
+    background-color: white; } }
 
 /*# sourceMappingURL=13-responsive-tables.css.map */

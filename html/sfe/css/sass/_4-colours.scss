@@ -13,17 +13,17 @@ $dark: #2D3030;
 
 /// Calls to Action / Highlights
 
-$contrast: #D96E10; // WCAG 2 AA Compliant (18pt+; use $linktext (blue) for smaller)
+$contrast: #0F72B8; // Same as $linktext
 
-$contrast-light: #FBA458; // Don't use with white for text
+$contrast-light: scale-color($contrast, $lightness: 20%, $saturation: -25%); // Don't use with white for text
 
 $contrast-alt: #6381BF; // WCAG 2 AA Compliant (18pt+)
 
 $contrast-alt-light: #90AEEC; // Don't use with white for text
 
-$feedback: scale-color($contrast-alt, $lightness: 70%);
+$feedback: scale-color($light-pastel, $lightness: 50%);
 
-$error: #ffcdb3;
+$error: #FFF3B3;
 
 $disabled: #ccc;
 

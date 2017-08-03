@@ -31,7 +31,7 @@
   font-size: 1.3em;
   margin-bottom: 1.5em;
   padding: 1em 5% 1em 5%;
-  border-bottom: 0.2em solid #D96E10;
+  border-bottom: 0.2em solid #0F72B8;
   font-style: italic;
   line-height: 1.4em;
   background-position: center center;
@@ -39,8 +39,8 @@
 
 .callout--warning {
   color: #ffffff;
-  background-color: #D96E10;
-  border-color: #c3630e; }
+  background-color: #0F72B8;
+  border-color: #0e67a6; }
 
 .callout--tip {
   color: #ffffff;

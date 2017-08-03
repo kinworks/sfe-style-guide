@@ -131,7 +131,7 @@
     border-color: #61b4c3;
     border-bottom: 0.15em solid #ffffff; }
     .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true]:focus {
-      border-color: #D96E10;
+      border-color: #0F72B8;
       border-bottom: 0.15em solid #ffffff;
       text-decoration: underline;
       color: #2D3030;

@@ -65,12 +65,12 @@
   height: 2.125em; }
 
 .cta--light {
-  background-color: #D96E10;
-  border-color: #FBA458; }
+  background-color: #0F72B8;
+  border-color: #3390d2; }
   .cta--light span {
     color: #ffffff; }
   .cta--light:hover {
-    background-color: #eb7711; }
+    background-color: #117ecc; }
 
 .cta--light-alt {
   background-color: #6381BF;
@@ -85,7 +85,7 @@
     border-left: none; }
 
 .cta.cta--light--no-border {
-  background-color: #D96E10;
+  background-color: #0F72B8;
   border-left: none; }
   .cta.cta--light--no-border:hover {
     border-left: none; }
@@ -134,7 +134,7 @@
     border-left: 1.5em solid #2D3030;
     padding: 0.5em 0.8em 0.5em 0.8em; }
   .cta--light {
-    border-color: #FBA458; }
+    border-color: #3390d2; }
   .cta--light-alt {
     border-color: #90AEEC; }
   .cta span {

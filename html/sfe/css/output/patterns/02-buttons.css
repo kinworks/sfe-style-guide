@@ -77,12 +77,12 @@
     border-bottom: 0.2em solid #9ed1da; }
 
 .btn--contrast {
-  background-color: #D96E10;
-  border-bottom: 0.2em solid #82420a; }
+  background-color: #0F72B8;
+  border-bottom: 0.2em solid #09446e; }
   .btn--contrast:hover {
-    box-shadow: inset 0 0 0 0.2em #f2994a;
-    background-color: #D96E10;
-    border-bottom: 0.2em solid #984d0b; }
+    box-shadow: inset 0 0 0 0.2em #36a2ef;
+    background-color: #0F72B8;
+    border-bottom: 0.2em solid #0a5081; }
 
 .btn--contrast-alt {
   background-color: #5575b9;

@@ -1,0 +1,693 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+.nav__trigger {
+  background-repeat: repeat;
+  background-color: $dark-text;
+  cursor: pointer;
+  z-index: 100;
+  border-top: 0.3em solid scale-color($dark, $lightness: -40%);
+  .icon-menu {
+    width: 1.5em;
+    height: 1.3125em;
+    margin: 1.025em 0.6em 1.025em 0;
+    float: left;
+  }
+  span {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 0.7em 0 0 0;
+    color: $white;
+    float: left;
+  }
+}
+
+.main-nav {
+  font-size: 1em;
+  z-index: 100;
+}
+
+.secondary-nav-spaceholder {
+	display: none;
+}
+
+.main-nav li {
+  background-color: scale-color($contrast-alt, $lightness: -5%);
+  margin-bottom: 0;
+  &:nth-child(2n) {
+    background-color: scale-color($contrast-alt, $lightness: -14%);
+  }
+  .icon-lock-white {
+	  vertical-align: -0.3em;
+	  margin-right: 0.4em;
+  }
+}
+
+.main-nav li a {
+  display: inline-block;
+  font-size: 1.2em;
+  color: $white;
+  border-bottom: none;
+  padding: 0.6em 0 0.7em 8%;
+}
+
+.main-nav li .active {
+	color: $white;
+	text-decoration: underline;
+}
+
+.main-nav li .sub-menu .active {
+	text-decoration: none;
+	background-color: $dark;
+	&:before {
+		content: "» "
+	}
+}
+
+// Sub-nav <select> browse menu
+
+.subnav-select-innav {
+	display: inline-block;
+	background-color: scale-color($contrast-alt, $lightness: -40%);
+	padding: 1.5em 8% 0.2em 8%;
+	width: 100%;
+	select {
+		max-width: 18.75em;
+		color: $dark;
+		-webkit-appearance: menulist;
+	}
+}
+
+.subnav-select-inpage {
+	margin-bottom: 1.5em;
+	label {
+		color: $mid-text;
+	}
+	select {
+		max-width: 18.75em;
+		-webkit-appearance: menulist;
+	}
+	@media only all and (min-width: 64em) {
+		display: none;
+	}
+}
+
+// Hide / show sub-section navigation based on JS being available
+.main-nav .parent .sectiontoggle {
+  display: none;
+}
+
+.js .main-nav .parent-item {
+  float: left;
+}
+
+.js .main-nav .parent .sectiontoggle,
+.js .subnav-select-innav .sectiontoggle {
+  display: block;
+  float: right;
+  padding: 0;
+  margin: 0.5em 5% 0.5em 0;
+  div {
+   display: inline-block;
+   padding: 0.1em 0.4em;
+   background-color: scale-color($dark, $lightness: -65%);  
+  }
+  .icon-arrow-down,
+  .icon-arrow-up {
+    width: 0.625em;
+    height: 0.625em; 
+  }
+}
+
+.main-nav .sub-menu {
+  clear: both;
+}
+
+.js .main-nav .sub-menu {
+  visibility: hidden;
+  height: 0;
+}
+
+.js .main-nav .sub-menu.open {
+  visibility: visible;
+  height: auto;
+}
+
+.main-nav .sub-menu li a {
+  font-size: 1.1em;
+  width: 100%;
+  &:before {
+    content: "— "
+  }
+}
+
+.main-nav li:hover a {
+  text-decoration: underline;
+}
+
+.main-nav li:hover .sub-menu a {
+  text-decoration: none;
+}
+
+.main-nav .sub-menu li {
+  background-color: scale-color($mid, $lightness: -20%);
+  &:hover {
+    background-color: scale-color($mid, $lightness: -45%);
+  }
+  &:hover a {
+    text-decoration: underline;
+  }
+  &:nth-child(2n) {
+    background-color: scale-color($mid, $lightness: -35%);
+    &:hover {
+      background-color: scale-color($mid, $lightness: -55%);
+    }
+  }
+}
+
+.js .nav__trigger {
+  position: fixed;
+  //this wee trick fixes position: fixed on most android 2.2 and 2.3
+  -webkit-backface-visibility: hidden;
+  bottom: 0;
+}
+
+.js nav.nav-collapse {
+  position: fixed !important;
+  z-index: 100;
+  //this wee trick fixes position: fixed on most android 2.2 and 2.3
+  -webkit-backface-visibility: hidden;
+  bottom: 3.375em;
+}
+
+.js nav.nav-collapse .main-nav ul.sub-menu.open {
+  width: auto;
+  max-height: 20em;
+  max-height: 55vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  //hide vertical scrollbar in webkit, and then in IE10+:
+  &:-webkit-scrollbar { width: 0 !important }
+  -ms-overflow-style: none;
+  //momentum scrolling on mobile webkit, ht/ @chuckle_hound
+  -webkit-overflow-scrolling: touch; 
+}
+
+// For the benefit of Windows Phone 8 IEmobile:
+
+@media only all and (max-width: 41em) {
+	
+	.js .nav-collapse ul {
+		display: none;
+	}
+	
+	.js .nav-collapse.opened ul {
+		display: block;
+	}
+	
+} //max-width 41em
+
+
+// Enhanced view
+
+@media only all and (min-width: 41em) {
+  
+  // Remove 'position: fixed' jazz and trigger
+  
+  .nav__trigger {
+    display: none;
+  }
+  
+  .main-nav li {
+	  background-color: scale-color($contrast-alt, $lightness: -15%);
+	  &:nth-child(2) {
+		  background-color: scale-color($contrast-alt, $lightness: -25%);
+	  }
+  }
+  
+  .main-nav li a.active {
+		color: $white;
+		text-decoration: underline; 
+	}
+  
+  .js nav.nav-collapse {
+    position: static !important;
+  }
+  
+  // Hide subnav <select> menu
+  
+  .subnav-select-innav {
+	  display: none;
+	  visibility: hidden;
+  }
+  
+  // Build our sections into 3-up - 2up, two-row list:
+    
+  .main-nav li {
+    z-index: 100;
+    height: 3.6em;
+    padding: 0;
+    text-align: center;
+    float: left;
+    //border-bottom: 0.1em solid scale-color($contrast-alt, $lightness: -30%);
+    &:nth-child(1) {
+      width: 25%;
+    }    
+    &:nth-child(1) {
+	    padding: 0;
+      a {
+	      width: 100%;
+	      padding: 0.8em 5% 1em 5%;
+      }
+    }
+    &:nth-child(2) {
+      width: 37%;
+      .parent-item {
+        padding-left: 26%;
+      }
+    }
+    &:nth-child(3) {
+      width: 38%;
+      .parent-item {
+        padding-left: 30%;
+      }
+    }
+    &:nth-child(4) {
+			border-right: 0.15em solid scale-color($contrast-alt, $lightness: -35%);
+		}
+    &:nth-child(4),
+		&:nth-child(5) {
+			width: 50%; 
+			background-color: scale-color($contrast-alt, $lightness: -65%);
+		}
+	}
+	
+	//Make the open submenu the same width as the section it's opened from,
+	//even though they vary in width at our current breakpoint
+	.js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open {
+		width: 37%;
+	}
+	.js nav.nav-collapse .main-nav li:nth-child(3) .sub-menu.open {
+		width: 38%;
+	}
+	.js nav.nav-collapse .main-nav li:nth-child(4),
+	.js nav.nav-collapse .main-nav li:nth-child(5) {
+		.sub-menu.open {
+			min-width: 50%; 
+		}
+	}
+	
+  
+  .js .main-nav .parent-item {
+    //float: none;
+    padding-top: 0.9em;
+    padding-left: 34%;
+  }
+  
+  .js .main-nav .parent .sectiontoggle {
+	  padding-top: 0.3em;
+	  margin-right: 10%;
+  }
+  
+  .js nav.nav-collapse .sub-menu.open {
+    max-height: 85vh;
+    overflow: scroll;
+    //momentum scrolling on mobile webkit, ht/ @chuckle_hound
+    -webkit-overflow-scrolling: touch; 
+    min-width: 33.333%;
+    position: absolute;
+    margin-top: 0.39em;
+    text-align: left;
+    li a {
+      padding: 0.7em 1.5em 0.7em 1em;
+    }
+  }
+  
+  .main-nav .sub-menu {
+    z-index: 100;
+  }
+  
+  .main-nav .sub-menu li {
+    z-index: 100;
+    width: 100%;
+    float: none;
+    height: auto;
+    text-align: left;
+    border: none;
+    &:nth-child(4) {
+	    background-color: scale-color($mid, $lightness: -35%);
+	    &:hover {
+	      background-color: scale-color($mid, $lightness: -55%);
+	    }
+    }
+    &:nth-child(5) {
+	   	background-color: scale-color($mid, $lightness: -20%);
+		  &:hover {
+		    background-color: scale-color($mid, $lightness: -45%);
+		  }
+    }
+  }
+  
+} //end min 41em
+
+@media only all and (min-width: 59em) {
+  
+  // Build our sections into 5-up, one-row list:
+  
+  .secondary-nav-spaceholder {
+	  display: inline-block;
+	  text-align: center;
+	  width: 100%;
+	  background-color: $mid;
+	  padding: 1.1em 5% 1.1em 5%;
+	  color: $white;
+	  span {
+		  font-size: 1.1em;
+	  }
+  }
+  
+  nav {
+    background-color: $dark;
+    margin: 0 0 0 0;
+    padding: 0 5% 0 5%;
+  }
+  
+  .nav-collapse .main-nav {
+    height: 6em;
+    max-width: 80em;
+    margin: 0 auto 0 auto;
+  }
+  
+  .main-nav li {
+		text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    margin-right: 2.5%;
+    padding: 0.1em 0 1.5em 0;
+    background-color: inherit;
+    height: 100%;
+    float: left;
+    border-bottom: none;
+    &:nth-child(2n) {
+      background-color: inherit;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      height: auto;
+    }
+    &:nth-child(1) {
+	    width: 12%;
+    }
+    &:nth-child(2) {
+	    width: 20%;
+	    .parent-item {
+  	    padding-left: 0;
+	    }
+    }
+    &:nth-child(3) {
+	    width: 20%;
+	    .parent-item {
+  	    padding-left: 0;
+	    }
+    }
+		&:nth-child(4),
+		&:nth-child(5) {
+			width: auto;
+			background-color: inherit;
+			border: 0;
+		}
+    &:nth-child(4) {
+	    width: 20%;
+    }
+    &:nth-child(5) {
+	    width: 18%;
+	    margin-right: 0;
+    }
+  }
+  
+  .main-nav li a,
+  .main-nav .parent-item {
+	  text-align: center;
+	  width: 100%;
+	  max-width: 100%;
+	  padding-left: 0;
+  }
+  
+  .main-nav li.home {
+	  a {
+		  margin-top: 0.175em;
+	  }
+  }
+  
+  .js .main-nav .parent-item {
+    padding-left: 0;
+  }
+  
+  .js .main-nav .parent .sectiontoggle {
+    float: none;
+    padding: 0;
+    display: block;
+    width: 100%;
+    margin: 0 0 0.8em 0;
+  }
+  
+  .main-nav .sub-menu {
+    visibility: hidden;
+  	position: absolute;
+    left: 0;
+    width: 100%;
+    a {
+      height: auto;
+    }
+  }
+ 
+  
+  .main-nav li:hover .sub-menu,
+  .js nav.nav-collapse .main-nav ul.sub-menu.open {
+	  z-index: 10;
+  }
+  
+  .main-nav li.section-active .sub-menu {
+	  z-index: 0;
+  }
+  
+  .main-nav li:hover .sub-menu,
+  .main-nav li.section-active .sub-menu {
+	  background-color: $mid;
+    display: block;
+    visibility: visible;
+    height: auto;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 0.7em 4% 0.3em 4%;
+  }
+  
+  .main-nav .sub-menu li a {
+	  font-size: 1.1em;
+	  width: 100%;
+	  &:before {
+	    content: none;
+	  }
+	  &:after {
+		  content: " »";
+	  }
+	}
+  
+  .js nav.nav-collapse .main-nav ul.sub-menu li {
+	  width: auto;
+	  text-align: center;
+	  display: inline-block;
+	  background-color: inherit;
+	  padding: 0;
+	  margin: 0 2% 0 2%;
+	  float: none;
+	  a {
+		  padding: 0.4em 0.5em 0.4em 0.5em;
+	  }
+	  &:hover a {
+		  text-decoration: underline;
+		  background-color: $dark;
+	  }
+	}
+	
+	.js nav.nav-collapse .main-nav ul.sub-menu li a {
+	  width: 100%;
+	  text-align: center;
+	  background-color: inherit;
+	}
+
+  .js nav.nav-collapse .main-nav ul.sub-menu.open {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0.7em 4% 0.3em 4%;
+    text-align: center;
+    min-width: initial;
+    background-color: $mid;
+  }
+  
+  .main-nav .sub-menu li {
+    height: auto;
+    width: 100%;
+    float: left;
+    background-color: scale-color($dark, $lightness: 5%);
+    padding: 0 1em 0 0;
+    font-size: 1em;
+    &:nth-child(1),
+    &:nth-child(2),    
+    &:nth-child(3),
+    &:nth-child(4),    
+    &:nth-child(5) {
+	    width: 100%;
+    }
+  }
+  
+  .main-nav .sub-menu li a {
+	  float: left;
+	  display: inline-block;
+	  width: auto;
+	  text-align: left;
+	  margin: 0;
+  }
+
+  .js nav.nav-collapse .main-nav li:nth-child(3) .sub-menu.open,
+  .js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open {
+	  width: 100%;
+  }
+  
+	.js nav.nav-collapse .main-nav li ul.sub-menu li .active {
+		text-decoration: underline;
+		background-color: $dark;
+		cursor: not-allowed;
+		&:before,
+		&:after {
+			content: none;
+		}
+	}
+
+  
+} //end min 59em
+
+
+// More margin under the nav bar when we're on the section
+// that wraps to two lines
+
+@media only all and (min-width: 59em) and (max-width: 86.875em) {
+	
+	.ancestor-create-films .secondary-nav-spaceholder {
+		display: none;
+	}
+	
+	.ancestor-create-films .nav-collapse {
+		margin-bottom: 8.1em;
+	}
+} // end min 59em max 86.875em
+
+
+// sub menus need extra height when we're on a section that wraps to two lines
+@media only all and (min-width: 59em) and (max-width: 87.82em) {
+  .ancestor-create-films nav.nav-collapse .main-nav li.analyse-film,
+  .ancestor-create-films nav.nav-collapse .main-nav li.getting-started, 
+  .ancestor-create-films nav.nav-collapse .main-nav li.browse-films {
+  	
+  	&:hover .sub-menu,
+  	.sub-menu.open {
+    	min-height: 6.5em;
+    	& li {
+      	padding-top: 1.5em;
+    	}
+  	}
+	}
+} // end min 59em max 87.82em
+
+@media only all and (min-width: 71.25em) {
+  
+  .main-nav li {
+	  padding-bottom: 0;
+    a {
+	    text-align: left;
+      height: auto;
+      float: left;
+    }
+    &:nth-child(1) {
+	    width: 8%;
+	    margin-right: 5%;
+    }
+    &:nth-child(2) {
+	    width: 18%;
+	    margin-right: 7%;
+	    a {
+		    width: 85%;
+	    }
+    }
+    &:nth-child(3) {
+	    width: 16%;
+	    margin-right: 8%;
+    }
+    &:nth-child(4) {
+	    width: 15%;
+	    margin-right: 7%;
+    }
+    &:nth-child(5) {
+	    width: 16%;
+	    margin-right: 0;
+	    a {
+		    width: 85%;
+	    }
+    }
+  }
+  
+	.js .main-nav .parent-item {
+		width: 80%;
+		text-align: left;
+		padding-top: 0.6em;
+		float: none;
+	} 
+	
+	.nav-collapse .main-nav {
+		height: 3.4em;
+	}
+ 
+  .main-nav li.home,
+  .main-nav li.browse-films {
+	  a {
+		  margin-top: 0;
+	  }
+  }
+  
+  .js nav.nav-collapse .main-nav ul.sub-menu,
+  .js nav.nav-collapse .main-nav ul.sub-menu.open {
+	  margin: 0.3em 0 0 0;
+	  width: 100%;
+  }
+  
+  .js .main-nav .parent .sectiontoggle {
+    padding: 0;
+    display: inline-block;
+    width: 10%;
+    //padding-right: 10%;
+    margin: 0.5em 0 0 0;
+  }
+    
+} //end min 71.25em
+
+@media only all and (min-width: 74em) {
+  
+  .js .main-nav {
+	  max-width: 69.57em;
+  }
+  
+} // end min 74em*/
+
+@media only all and (min-width: 80em) {
+	
+	.js .main-nav {
+		max-width: 78.57em;
+	}
+  
+	
+} // end min 79em 

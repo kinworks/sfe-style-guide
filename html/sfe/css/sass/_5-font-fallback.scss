@@ -1,0 +1,22 @@
+// Font loading and fallback - some of the commented out 
+// lines are potential adjustment tools to tweak the fallback 
+// font to mimick metrics of the webfont for less FOUT issues
+
+// Fallback / load-in font
+body,
+.wf-loading body,
+.wf-inactive body {
+  font-family: Helvetica, Arial, sans-serif;  
+  font-style: normal;
+  //letter-spacing: -0.04em;
+  //line-height: 273%;
+  font-size: 1em !important;
+}
+
+// Loaded Webfont
+.wf-active body {
+  font-family: "proxima-nova", "Open Sans", Helvetica, Arial, sans-serif;
+  //letter-spacing: 0;
+  //line-height: 280%;
+  font-size: 1em !important;
+}

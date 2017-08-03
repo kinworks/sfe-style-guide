@@ -1,0 +1,212 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+.js nav.nav-collapse .main-nav li.getting-started:hover .sub-menu,
+.js nav.nav-collapse .main-nav li.getting-started.section-active .sub-menu,
+.js nav.nav-collapse .main-nav li.getting-started ul.sub-menu.open {
+	background-color: $section-alpha;
+}
+
+.ancestor-getting-started {
+	.breadcrumb a,
+	.subnav li a {
+		color: $section-alpha;
+		border-bottom: 0.1em dotted $section-alpha;
+	}	
+	.subnav .subnav__item:before, 
+	.subnav .subnav__item.subnav__item--sub-parent:before {
+		color: scale-color($section-alpha, $lightness: 15%);
+	}
+	.subnav-select-innav {
+		background-color: scale-color($section-alpha, $saturation: -10%);
+	}
+	.subnav-select-innav,
+	.subnav-select-inpage {
+		select:focus {
+			border-color: scale-color($section-alpha, $lightness: -15%);
+		}
+	}
+}
+
+.js nav.nav-collapse .main-nav li.analyse-film:hover .sub-menu,
+.js nav.nav-collapse .main-nav li.analyse-film.section-active .sub-menu,
+.js nav.nav-collapse .main-nav li.analyse-film ul.sub-menu.open {
+	background-color: $section-beta;
+}
+
+.ancestor-analyse-film {
+	.breadcrumb a,
+	.subnav li a {
+		color: $section-beta;
+		border-bottom: 0.1em dotted $section-beta;
+	}	
+	.subnav .subnav__item:before, 
+	.subnav .subnav__item.subnav__item--sub-parent:before {
+		color: scale-color($section-beta, $lightness: 30%);
+	}
+	.subnav-select-innav {
+		background-color: $section-beta;
+	}
+	.subnav-select-innav,
+	.subnav-select-inpage {
+		select:focus {
+			border-color: scale-color($section-beta, $lightness: -15%);
+		}
+	}
+}
+
+.js nav.nav-collapse .main-nav li.create-films:hover .sub-menu,
+.js nav.nav-collapse .main-nav li.create-films.section-active .sub-menu,
+.js nav.nav-collapse .main-nav li.create-films ul.sub-menu.open {
+	background-color: $section-gamma;
+}
+
+.ancestor-create-films {
+	.breadcrumb a,
+	.subnav li a {
+		color: $section-gamma;
+		border-bottom: 0.1em dotted $section-gamma;
+	}	
+	.subnav .subnav__item:before, 
+	.subnav .subnav__item.subnav__item--sub-parent:before {
+		color: scale-color($section-gamma, $lightness: 15%);
+	}
+	.subnav-select-innav {
+		background-color: scale-color($section-gamma, $lightness: -20%);
+	}
+	.subnav-select-innav,
+	.subnav-select-inpage {
+		select:focus {
+			border-color: scale-color($section-gamma, $lightness: -15%);
+		}
+	}
+}
+
+.js nav.nav-collapse .main-nav li.browse-films:hover .sub-menu,
+.js nav.nav-collapse .main-nav li.browse-films.section-active .sub-menu,
+.js nav.nav-collapse .main-nav li.browse-films ul.sub-menu.open {
+	background-color: $section-delta;
+}
+
+.ancestor-browse-films {
+	.breadcrumb a,
+	.subnav li a {
+		color: $section-delta;
+		border-bottom: 0.1em dotted $section-delta;
+	}	
+	.subnav .subnav__item:before, 
+	.subnav .subnav__item.subnav__item--sub-parent:before {
+		color: scale-color($section-delta, $lightness: 30%);
+	}
+	.subnav-select-innav {
+		background-color: scale-color($section-delta, $saturation: -10%);
+	}
+	.subnav-select-innav,
+	.subnav-select-inpage {
+		select:focus {
+			border-color: scale-color($section-delta, $lightness: -15%);
+		}
+	}
+}
+
+// Narrow screens only; coloured border underneath header for wayfinding
+
+@media only all and (max-width: 41em) {
+
+	.ancestor-getting-started {
+		.header {
+			border-bottom: 0.4em solid $section-alpha;
+		}
+	}
+	
+	.ancestor-analyse-film {
+		.header {
+			border-bottom: 0.4em solid $section-beta;
+		}
+	}
+	
+	.ancestor-create-films {
+		.header {
+			border-bottom: 0.4em solid $section-gamma;
+		}
+	}
+	
+	.ancestor-browse-films {
+		.header {
+			border-bottom: 0.4em solid $section-delta;
+		}
+	}
+	
+} // end max 41em
+
+// Narrow screens only; colorise pull-up menu section when active,
+// and show coloured line for section under the nav.
+
+@media only all and (max-width: 59em) {
+	
+	.main-nav li.getting-started.section-active {
+		background-color: scale-color($section-alpha, $saturation: -20%);
+	}
+	
+	.main-nav li.analyse-film.section-active {
+		background-color: $section-beta;
+	}
+	
+	.main-nav li.create-films.section-active {
+		background-color: scale-color($section-gamma, $lightness: -20%);
+	}
+	
+	.main-nav li.browse-films.section-active {
+		background-color: scale-color($section-delta, $saturation: -10%);
+	}
+	
+	.ancestor-getting-started {
+		.main-nav {
+			border-bottom: 0.4em solid $section-alpha;
+		}
+	}
+	
+	.ancestor-analyse-film {
+		.main-nav {
+			border-bottom: 0.4em solid $section-beta;
+		}
+	}
+	
+	.ancestor-create-films {
+		.main-nav {
+			border-bottom: 0.4em solid $section-gamma;
+		}
+	}
+	
+	.ancestor-browse-films {
+		.main-nav {
+			border-bottom: 0.4em solid $section-delta;
+		}
+	}
+	
+} // end max 59em
+
+
+// Wider-screen one-line nav - active section colours
+
+@media only all and (min-width: 59em) {
+	
+	.ancestor-getting-started .main-nav li.getting-started .sectiontoggle div {
+		background-color: scale-color($section-alpha, $lightness: -25%);
+	}
+	
+	.ancestor-analyse-film .main-nav li.analyse-film .sectiontoggle div {
+		background-color: scale-color($section-beta, $lightness: -10%);
+	}
+	
+	.ancestor-create-films .main-nav li.create-films .sectiontoggle div {
+		background-color: scale-color($section-gamma, $lightness: -20%);
+	}
+	
+	.ancestor-browse-films .main-nav li.browse-films .sectiontoggle div {
+		background-color: scale-color($section-delta, $lightness: -10%);
+	}
+	
+} // end min 59em
+
+

@@ -1,0 +1,37 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.pattern-dark {
+  background: url(../../assets/pattern-dark.png);
+  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern, .icon-pattern-dark {
+  background-repeat: repeat; }
+
+.bg--darkest {
+  background-color: #222121; }
+
+.bg--dark {
+  background-color: #140431; }
+
+.bg--mid {
+  background-color: #412773; }
+
+.bg--light {
+  background-color: #B088BC; }
+
+.bg--light-pastel {
+  background-color: #D8ADE5; }
+
+.feedback--error {
+  background-color: #ffcdb3;
+  border-bottom: 0.2em solid #ffbc9a; }
+
+/*# sourceMappingURL=09-feedback-error.css.map */

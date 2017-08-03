@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "01-body-background.css",
+	"sources": [
+		"../../../../../01-body-background.scss",
+		"../../../../../../_2-mixins.scss",
+		"../../../../../../_4-colours.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AE0CA;EACE,AAAY;EACZ,AAAwC;;;;;AAO1C;EACE,AAAY;EACZ,AAA6C;;;;;AAO/C,AAAe;EAEb,AAAmB;;AAuBrB;EACE,AA5EQ;;AA+EV;EACE,AAlFK;;AAqFP;EACE,AA1FI;;AA6FN;EACE,AAhGM;;AAmGR;EACE,AA9Da;;AFrCf;EACE,AEkCM;EF/BN,AAAuB;EACvB,AAAiB;EACjB;IANF;MAOI,AAAiB",
+	"names": []
+}

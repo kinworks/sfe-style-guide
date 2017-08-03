@@ -1,0 +1,129 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.pattern-dark {
+  background: url(../../assets/pattern-dark.png);
+  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern, .icon-pattern-dark {
+  background-repeat: repeat; }
+
+.bg--darkest {
+  background-color: #222121; }
+
+.bg--dark {
+  background-color: #140431; }
+
+.bg--mid {
+  background-color: #412773; }
+
+.bg--light {
+  background-color: #B088BC; }
+
+.bg--light-pastel {
+  background-color: #D8ADE5; }
+
+/* Buttons / CTAs */
+.btn, #user-login input[type="submit"] {
+  font-size: 1.13em;
+  background-color: #140431;
+  color: #fff;
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 1em 1.5em 0;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -ms-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  border-top: none;
+  border-bottom: 0.2em solid #0a0219; }
+  .btn:hover, #user-login input[type="submit"]:hover {
+    text-decoration: underline;
+    box-shadow: inset 0 0 0 0.2em #480eb0;
+    background-color: #2e0970;
+    border-bottom: 0.2em solid #0d0320; }
+
+.btn--mid, #user-login input[type="submit"] {
+  background-color: #412773;
+  border-bottom: 0.2em solid #2e1b51; }
+  .btn--mid:hover, #user-login input[type="submit"]:hover {
+    box-shadow: inset 0 0 0 0.2em #6f45c0;
+    background-color: #412773;
+    border-bottom: 0.2em solid #3b2368; }
+
+.btn--light {
+  background-color: #B088BC;
+  color: #140431;
+  border-bottom: 0.2em solid #825291; }
+  .btn--light:hover {
+    box-shadow: inset 0 0 0 0.2em #d0b8d7;
+    background-color: #B088BC;
+    border-bottom: 0.2em solid #945fa5; }
+
+.btn--light-pastel {
+  background-color: #D8ADE5;
+  color: #140431;
+  border-bottom: 0.2em solid #bb70d2; }
+  .btn--light-pastel:hover {
+    box-shadow: inset 0 0 0 0.2em #e8ceef;
+    background-color: #D8ADE5;
+    border-bottom: 0.2em solid #c98edb; }
+
+.btn--contrast {
+  background-color: #D96E10;
+  border-bottom: 0.2em solid #82420a; }
+  .btn--contrast:hover {
+    box-shadow: inset 0 0 0 0.2em #f2994a;
+    background-color: #D96E10;
+    border-bottom: 0.2em solid #984d0b; }
+
+.btn--contrast-alt {
+  background-color: #5575b9;
+  border-bottom: 0.2em solid #334a7b; }
+  .btn--contrast-alt:hover {
+    box-shadow: inset 0 0 0 0.2em #829acc;
+    background-color: #6381BF;
+    border-bottom: 0.2em solid #4363a5; }
+
+.btn--white {
+  background-color: #ffffff;
+  border-bottom: 0.2em solid #b3b3b3;
+  color: #140431; }
+  .btn--white:hover {
+    box-shadow: inset 0 0 0 0.2em #D8ADE5;
+    background-color: #ffffff;
+    border-bottom: 0.2em solid #b3b3b3; }
+
+.btn--disabled {
+  background-color: #ccc;
+  border-bottom: 0.2em solid #b3b3b3;
+  color: #555; }
+  .btn--disabled:hover {
+    text-decoration: none;
+    box-shadow: none;
+    background-color: #ccc;
+    border-bottom: 0.2em solid #b3b3b3; }
+
+/* Removes awkward default styles on some inputs for mobile */
+input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* Removes awkward UA side borders set, and pads to right height */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  border-left: 0;
+  border-right: 0;
+  height: 3em; }
+
+/*# sourceMappingURL=02-buttons.css.map */

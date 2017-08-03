@@ -1,0 +1,58 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.pattern-dark {
+  background: url(../../assets/pattern-dark.png);
+  background: url(../../assets/pattern-dark.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern, .icon-pattern-dark {
+  background-repeat: repeat; }
+
+.bg--darkest {
+  background-color: #222121; }
+
+.bg--dark {
+  background-color: #140431; }
+
+.bg--mid {
+  background-color: #412773; }
+
+.bg--light {
+  background-color: #B088BC; }
+
+.bg--light-pastel {
+  background-color: #D8ADE5; }
+
+.callout {
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+  padding: 1em 5% 1em 5%;
+  border-bottom: 0.2em solid #D96E10;
+  font-style: italic;
+  line-height: 1.4em;
+  background-position: center center;
+  max-width: 29em; }
+
+.callout--warning {
+  color: #ffffff;
+  background-color: #D96E10;
+  border-color: #c3630e; }
+
+.callout--tip {
+  color: #ffffff;
+  background-color: #6381BF;
+  border-color: #4e70b7; }
+
+@media only all and (min-width: 41em) {
+  .callout {
+    padding: 1.5em 2em 1.5em 2em;
+    background-position: 95% center; } }
+
+/*# sourceMappingURL=16-callouts.css.map */

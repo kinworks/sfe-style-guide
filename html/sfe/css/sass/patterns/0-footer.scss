@@ -1,0 +1,276 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+.footer__top {
+  background-color: $dark;
+  padding: 2em 8% 1.5em 8%;
+}
+
+.footer__top__report-issues{
+  margin-bottom: 0.5em;
+}
+
+.footer__top__menu {
+	margin-bottom: 2.4em;
+}
+
+.footer__top__menu a {
+	display: block;
+	color: $white;
+	font-size: 1.2em;
+	margin: 0 0 0.7em 0;
+	border: none;
+ 	&:before {
+	 	content: "— ";
+ 	}
+ 	&:after {
+	 	content: " »";
+ 	}
+ 	&:hover {
+	 	text-decoration: underline;
+ 	}
+}
+
+.footer__top__report-issues span,
+.footer__top__menu span,
+.footer__top__partners span {
+  font-size: 1.25em;
+  color: $white;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  max-width: 14.125em;
+  margin: 0 0 1em 0;
+}
+
+.footer__top__partners span {
+  margin: 0 0 2em 0;
+}
+
+.footer__top__partners a,
+footer a {
+  border-bottom: 0;
+}
+
+.footer__top__partners i {
+  width: 100%;
+  margin: 0 0 2em 0;
+  display: block;
+}
+
+.icon-footer-partner-es {
+  max-width: 11.375em;
+  height: 4.6875em;
+}
+.icon-footer-partner-nls {
+  max-width: 12.25em;
+  height: 6.906875em;
+}
+.icon-footer-partner-cs {
+  max-width: 8.3125em;
+  height: 5.25em;
+  margin: 0;
+}
+
+.icon-footer-partner-sfe {
+  width: 100%;
+  max-width: 13.75em;
+  height: 5.8125em;
+}
+
+.footer__nav {
+  background-color: scale-color($mid, $lightness: -12%);
+  padding: 1.5em 8% 0.5em 8%;
+  text-align: center;
+}
+
+.footer__nav li {
+  list-style-type: none;
+}
+
+.footer__nav li a {
+  font-size: 1em;
+  font-weight: 400;
+  color: $white;
+  &:hover {
+    border-bottom: 0.1em dotted $white;
+  }
+}
+
+footer {
+  background-color: $dark;
+  padding: 2.4em 8% 3.5em 8%;
+  text-align: center;
+}
+
+footer span {
+  display: block;
+  margin: 0 auto 2em auto;
+  color: $white;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+footer i {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only all and (min-width: 26.25em) {
+  
+  .footer__nav li {
+    width: 50%;
+    float: left;
+    margin-top: 0.5em;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 1em;
+    }
+  }
+  
+} // end min 26.25em
+
+@media only all and (min-width: 32.5em) {
+  
+  .footer__top,
+  .footer__top span {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .footer__top__menu a {
+	  &:before {
+		  content: none;
+	  }
+  }
+
+  .footer__top__partners {
+	  text-align: center;
+	  margin-bottom: 1.5em;
+    a {
+      width: 45%;
+      max-width: 13.75em;
+      display: inline-block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    i {
+	    margin: 0 auto;
+    }
+  }
+  
+  .footer__nav {
+    padding: 1em 8% 0.5em 8%;
+  }
+  
+  footer i {
+    display: inline-block;
+    width: 13.75em;
+  }
+  
+} // end min 32.5em
+
+@media only all and (min-width: 45em) {
+  
+  .footer__top__report-issues {
+	  padding-right: 10%;
+	  width: 60%;
+	  text-align: center;
+  }
+  
+  .footer__top__report-issues,
+  .footer__top__menu {
+	  float: right;
+    span {
+	    text-align: center;
+	    max-width: 17em;
+	    margin: 0 auto 1em auto; 
+    }
+  } 
+  
+  .footer__top__menu {
+	  width: 40%;
+	  text-align: left;
+	  span {
+		  margin-bottom: 2.1em;
+	  }
+  }
+  
+  .footer__top__partners span {
+	  margin: 1.2em 0 1.2em 0;
+	  display: inline-block;
+  }
+ 
+  .footer__nav li {
+    width: 25%;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: auto;
+    }
+  }
+  
+  footer span {
+    max-width: 80%;
+  }
+  
+} // end min 45em
+
+@media only all and (min-width: 71.25em) {
+  
+  .footer__top {
+	  padding: 2em 5% 1.5em 5%;
+  }
+  
+  .footer__top__report-issues span,
+  .footer__top__menu span,
+  .footer__top__partners span {
+    text-align: left;
+    max-width: 13.25em;
+    font-size: 1.2em;
+    margin: 0 0 1em 0;
+  }
+  
+  .footer__top__report-issues {
+    width: 30%;
+    float: right;
+    text-align: left;
+    padding: 0;
+  }
+  
+  .footer__top__menu {
+    width: 20%;
+    float: right;
+    text-align: left;
+    padding: 0;
+    span {
+	    margin-bottom: 2.1em;
+    }
+  }
+   
+  .footer__top__partners {
+    width: 50%;
+    //margin-right: 10%;
+    float: left;
+    text-align: left;
+  }
+  
+  .footer__top__partners span {
+	  margin: 0em 0 1.4em 0;
+	  display: block;
+  }
+  
+  .footer__top__partners a {
+		float: left;
+  }
+  
+  .footer__top__partners i {
+	  margin: 0 15% 0 0;
+	  display: inline-block;
+  }
+  
+  footer span {
+    max-width: 70%;
+  }
+    
+} // end min 71.25em

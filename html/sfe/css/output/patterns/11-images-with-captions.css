@@ -1,0 +1,42 @@
+.pattern {
+  background: url(../../assets/pattern.png);
+  background: url(../../assets/pattern.svg), linear-gradient(transparent, transparent);
+  /* This trick ensures that our background SVG is only 
+    used in browsers that support it (a 'coincidence'
+    feature test): https://css-tricks.com/a-complete-guide-to-svg-fallbacks/#fallback-svg-css-background-image */ }
+
+.icon-pattern {
+  background-repeat: repeat; }
+
+.bg--dark {
+  background-color: #003552; }
+
+.bg--mid {
+  background-color: #008EBE; }
+
+.bg--light {
+  background-color: #52CEF4; }
+
+.bg--light-pastel {
+  background-color: #C0E6F3; }
+
+.image {
+  display: inline-block;
+  margin: 0 0 2em 0;
+  max-width: 100%; }
+
+.image img {
+  max-width: 100%;
+  display: block; }
+
+.image__caption {
+  display: inline-block;
+  width: 100%;
+  background-color: #d5eef7;
+  padding: 0.3em 0.8em 0.4em 0.8em; }
+
+.image__caption a {
+  color: #003552;
+  border-color: #003552; }
+
+/*# sourceMappingURL=11-images-with-captions.css.map */

@@ -1,0 +1,79 @@
+// Utility class for constraining main 'body' layout width:
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.padme {
+  padding: 0 8% 0 8%;
+}
+
+// Class for the container wrapper round the main site content area
+
+.site__content {
+  margin-top: 1.5em;
+}
+
+// Constrain Video embeds using intrinsic ratios:
+
+.video-container {
+  height: 0;
+  padding-bottom: 56.25%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.video-container iframe,
+.video-container embed,
+.video-container object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media only all and (min-width: 41em) {
+  
+  .padme {
+    padding: 0 5% 0 5%;
+  }
+  
+} // min 41em
+
+@media only all and (min-width: 56em) {
+  
+ .container {
+    max-width: 80em;
+  } 
+  
+} // min 56em
+
+@media only all and (min-width: 79em) and (max-width: 88.75em) {
+  
+  .padme {
+    padding: 0;
+    width: 90%;
+  }
+  
+  .site__content {
+    margin-top: 2em;
+  }
+    
+} // min 79 max 88.75em
+
+@media only all and (min-width: 88.75em) {
+  
+  .padme {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .site__content {
+    margin-top: 2em;
+  }
+  
+} // min 88.75em

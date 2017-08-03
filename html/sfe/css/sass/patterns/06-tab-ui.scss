@@ -1,0 +1,168 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '../_2-mixins.scss'; @import '../_4-colours.scss';
+
+.tabs {
+  margin-bottom: 3em;
+}
+
+.tabs [role=tablist] {
+  display: none;
+}
+
+.js-tabs .tabs [role=tablist] {
+  display: inline-block;
+  width: 100%;
+	padding: 0 0 0 0.2em;
+	margin: 0 0 1em 0;
+	background-color: scale-color($light-pastel, $lightness: 30%);
+}
+
+.js-tabs .tabs [role=tab] {
+  display: block;
+  list-style: none;
+  text-align: center;
+  margin: 0 0 0.2em 0;
+  background-color: $mid;
+  color: $white;
+  line-height: 2.75;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.js-tabs .tabs .tabs__print-all {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  padding: 0.5em 0 0.2em 0;
+  margin: 0;
+  a {
+    display: inline-block;
+    width: 100%;
+    border-bottom: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
+  background-color: $dark;
+  border: none;
+}
+
+@media only all and (min-width: 41em) {
+  
+  .js-tabs .tabs .js-tabs-list li,
+  .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
+    border-right: 0.2em solid scale-color($light-pastel, $lightness: 30%);
+  }
+  
+  .js-tabs .tabs [role=tab] {
+    display: inline-block;
+    width: 50%;
+    list-style: none;
+    text-align: center;
+    margin: 0 0 0.3em 0;
+  }
+  
+  .js-tabs .tabs .tabs__print-all {
+    list-style-type: none;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    background-color: $mid;
+    padding: 0.65em 0 0.65em 0;
+    a {
+      color: $white;
+      border-bottom: none;
+    }
+  }
+
+} //end min 41em
+
+@media only all and (min-width: 56em) {
+  
+  .js-tabs .tabs [role=tablist] {
+  	padding: 0;
+  	box-shadow: 0 0.5em 0.5em 0em $white;
+  }
+  
+  .js-tabs .tabs .js-tabs-list li,
+  .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
+    border-right: none;
+  }
+  
+  .js-tabs .tabs [role=tablist] {
+		background-color: scale-color($contrast-alt, $lightness: 40%);
+	}
+
+  .js-tabs .tabs [role=tab] {
+    display: inline-block;
+    width: 25%;
+  	cursor: pointer;
+  	color: $dark-text;
+  	font-weight: 400;
+  	background-color: inherit;
+  	list-style: none;
+  	text-align: center;
+  	margin: 0 0 0 0;
+  	padding: 0.2em 1em 0.2em 1em;
+  	border-bottom: 0.15em solid scale-color($light-pastel, $lightness: -30%);
+  }
+  
+  .js-tabs .tabs .tabs__print-all {
+  	display: inline-block;
+  	font-weight: 400;
+  	background-color: inherit;
+  	list-style: none;
+  	text-align: right;
+  	margin: 0 0 0 0;
+  	width: 15%;
+  	padding: 0.2em 1em 0.86em 0;
+  	border-bottom: 0.15em solid scale-color($light-pastel, $lightness: -30%);
+  	a {
+      color: $dark-text;
+      text-align: right;
+      text-decoration: underline;
+  	}
+  }
+ 
+  .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
+  	color: $mid;
+  	font-weight: 600;
+  	background-color: $white;
+  	border: 0.15em solid scale-color($light-pastel, $lightness: -30%);
+  	border-color: scale-color($light-pastel, $lightness: -30%);
+  	border-bottom: 0.15em solid $white;
+  	&:focus {
+      border-color: $contrast;
+      border-bottom: 0.15em solid $white;
+      text-decoration: underline;
+      color: $dark;
+      outline: none;
+    }
+  }
+  
+  .js-tabs .tabs.js-tab-ui .js-tabs-list .tabs__print-all[aria-selected=true] {
+	  background-color: inherit;
+	  border: 0;
+	  font-weight: 400;
+	  border-bottom: 0.15em solid scale-color($light-pastel, $lightness: -30%);
+  }
+
+} // end min 56em
+
+/* Prevent FOUC */
+.js-tabs .tabs .js-panel {
+	display: none;
+}
+
+.js-tabs .tabs .js-panel.first {
+  display: block;
+}
+
+.js-tabs .tabs .js-panel__title {
+	display: none;
+}

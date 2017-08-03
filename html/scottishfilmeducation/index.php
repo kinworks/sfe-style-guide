@@ -381,10 +381,6 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                       <b>$white</b>
                     </li>
                     <li>
-                      <span class="light-pastel"><!--color fill--></span>
-                      <b>$light-pastel</b>
-                    </li>
-                    <li>
                       <span class="pattern"><!--color fill--></span>
                       <b>.pattern</b>
                     </li>

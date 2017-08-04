@@ -7,7 +7,7 @@
 }
 
 .heading--mid {
-  color: $light;
+  color: scale-color($mid-bright, $lightness: -24%); //WCAG 2 AA for 18pt+
 }
 
 .heading--pairing {

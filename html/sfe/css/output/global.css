@@ -529,23 +529,23 @@ a {
 
 .link--dark {
   color: #2D3030;
-  border-bottom: 0.1em dotted #2D3030; }
+  border-color: #2D3030; }
 
 .link--mid {
   color: #288098;
-  border-bottom: 0.1em dotted #288098; }
+  border-color: #288098; }
 
 .link--light {
   color: #98D7E2;
-  border-bottom: 0.1em dotted #98D7E2; }
+  border-color: #98D7E2; }
 
 .link--light-pastel {
   color: #bcdfe6;
-  border-bottom: 0.1em dotted #bcdfe6; }
+  border-color: #bcdfe6; }
 
 .link--white {
   color: #ffffff;
-  border-bottom: 0.1em dotted #ffffff; }
+  border-color: #ffffff; }
 
 .node-type-page .wysiwyg, .node-type-film-clip .js-panel .wysiwyg, .node-type-lesson-guide .js-panel .wysiwyg, .useful-links .view-content, .video-tutorials__list.wysiwyg, .node-type-video-tutorial .wysiwyg, .node-type-news-article .wysiwyg {
   margin: 0 0 2em 0; }

@@ -69,27 +69,27 @@ a {
 
 .link--dark {
   color: $dark-text;
-  border-bottom: 0.1em dotted $dark;
+  border-color: $dark;
 }
 
 .link--mid {
   color: $mid;
-  border-bottom: 0.1em dotted $mid;
+  border-color: $mid;
 }
 
 .link--light {
   color: $light;
-  border-bottom: 0.1em dotted $light;
+  border-color: $light;
 }
 
 .link--light-pastel {
   color: $light-pastel;
-  border-bottom: 0.1em dotted $light-pastel;
+  border-color: $light-pastel;
 }
 
 .link--white {
   color: $white;
-  border-bottom: 0.1em dotted $white;
+  border-color: $white;
 }
 
 // Utility class for adjustments on user-edited content

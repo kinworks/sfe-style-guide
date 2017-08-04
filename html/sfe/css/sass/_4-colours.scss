@@ -11,21 +11,7 @@ $mid-bright: #5CC1D4;
 $dark: #2D3030; 
 
 
-/// Calls to Action / Highlights
 
-$contrast: #0F72B8; // Same as $linktext
-
-$contrast-light: scale-color($contrast, $lightness: 20%, $saturation: -25%); // Don't use with white for text
-
-$contrast-alt: #6381BF; // WCAG 2 AA Compliant (18pt+)
-
-$contrast-alt-light: #90AEEC; // Don't use with white for text
-
-$feedback: scale-color($light-pastel, $lightness: 50%);
-
-$error: #FFF3B3;
-
-$disabled: #ccc;
 
 
 //// Text-specific colours
@@ -40,11 +26,26 @@ $dark-text: $dark;
 
 $disabled-text: #666;
 
+/// Calls to Action / Highlights
+
+$contrast: scale-color($link-text, $lightness: -5%); // Slightly darker version of $linktext
+
+$contrast-light: scale-color($contrast, $lightness: 20%, $saturation: -25%);
+
+$contrast-alt: #8F4D97; // WCAG 2 AA Compliant (18pt+)
+
+$contrast-alt-light: scale-color($contrast-alt, $lightness: 20%, $saturation: -25%); 
+
+$feedback: scale-color($light-pastel, $lightness: 50%);
+
+$error: #FFF3B3;
+
+$disabled: #ccc;
+
 
 //// Modules / Body
 
 $white: #ffffff; // Yes, really.
-
 
 
 .pattern {

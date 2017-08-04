@@ -58,7 +58,7 @@
   text-align: center;
   padding: 0.5em 8% 0.1em 5%; }
   .login__trigger--top.cta:hover {
-    background-color: #3b5790; }
+    background-color: #64366a; }
 
 .login__trigger--top.cta .login__trigger--top__container {
   display: inline-block;
@@ -81,7 +81,7 @@
   .login__sso .login__sso__block--shibboleth .btn {
     margin-bottom: 0; }
     .login__sso .login__sso__block--shibboleth .btn:hover {
-      box-shadow: inset 0 0 0 0.2em #6e8ac3; }
+      box-shadow: inset 0 0 0 0.2em #9b54a4; }
 
 .login__cms {
   padding-top: 2em;

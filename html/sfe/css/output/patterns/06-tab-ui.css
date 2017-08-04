@@ -96,7 +96,7 @@
   .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
     border-right: none; }
   .js-tabs .tabs [role=tablist] {
-    background-color: #a1b3d9; }
+    background-color: #c08fc6; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 25%;
@@ -131,7 +131,7 @@
     border-color: #61b4c3;
     border-bottom: 0.15em solid #ffffff; }
     .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true]:focus {
-      border-color: #0F72B8;
+      border-color: #0e6caf;
       border-bottom: 0.15em solid #ffffff;
       text-decoration: underline;
       color: #2D3030;

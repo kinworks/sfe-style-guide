@@ -77,20 +77,20 @@
     border-bottom: 0.2em solid #9ed1da; }
 
 .btn--contrast {
-  background-color: #0F72B8;
-  border-bottom: 0.2em solid #09446e; }
+  background-color: #0e6caf;
+  border-bottom: 0.2em solid #094169; }
   .btn--contrast:hover {
-    box-shadow: inset 0 0 0 0.2em #36a2ef;
-    background-color: #0F72B8;
-    border-bottom: 0.2em solid #0a5081; }
+    box-shadow: inset 0 0 0 0.2em #2f9fee;
+    background-color: #0e6caf;
+    border-bottom: 0.2em solid #0a4c7a; }
 
 .btn--contrast-alt {
-  background-color: #5575b9;
-  border-bottom: 0.2em solid #334a7b; }
+  background-color: #85488c;
+  border-bottom: 0.2em solid #562e5b; }
   .btn--contrast-alt:hover {
-    box-shadow: inset 0 0 0 0.2em #829acc;
-    background-color: #6381BF;
-    border-bottom: 0.2em solid #4363a5; }
+    box-shadow: inset 0 0 0 0.2em #ab6ab3;
+    background-color: #8F4D97;
+    border-bottom: 0.2em solid #723e79; }
 
 .btn--white {
   background-color: #ffffff;

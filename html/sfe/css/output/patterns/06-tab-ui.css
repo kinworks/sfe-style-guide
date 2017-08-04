@@ -96,7 +96,7 @@
   .js-tabs .tabs .js-tabs-list li, .js-tabs .tabs.js-tab-ui .js-tabs-list [aria-selected=true] {
     border-right: none; }
   .js-tabs .tabs [role=tablist] {
-    background-color: #c08fc6; }
+    background-color: #d7ecf0; }
   .js-tabs .tabs [role=tab] {
     display: inline-block;
     width: 25%;

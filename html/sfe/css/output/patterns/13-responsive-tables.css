@@ -79,9 +79,9 @@ tr {
   margin: 0 0 1.5em 0;
   width: 100%;
   font-size: 1.1em;
-  background-color: #efe3f1;
+  background-color: #e9f3f5;
   border-top: 0.2em solid #2D3030;
-  border-bottom: 0.2em solid #d5b4d9;
+  border-bottom: 0.2em solid #cce4e8;
   padding: 1em; }
 
 td {
@@ -99,7 +99,7 @@ by side rather than stacked */
     margin: 0 0 2em 0;
     border-style: none;
     border-top-width: 0;
-    border-bottom: 0.2em solid #d5b4d9; }
+    border-bottom: 0.2em solid #c8dfe2; }
   /* Labeling
    * Hide the mobile labels */
   th[data-title]:before, td[data-title]:before {

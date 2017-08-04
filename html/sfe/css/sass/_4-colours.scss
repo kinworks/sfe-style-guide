@@ -11,24 +11,9 @@ $mid-bright: #5CC1D4;
 $dark: #2D3030; 
 
 
-
-
-
-//// Text-specific colours
-/////// A11Y: These will validate to WCAG 2.0 
-///////////// for AA small text (4.5:1)
-
-$link-text: #0F72B8;
-
-$mid-text: #437F8F;
-
-$dark-text: $dark;
-
-$disabled-text: #666;
-
 /// Calls to Action / Highlights
 
-$contrast: scale-color($link-text, $lightness: -5%); // Slightly darker version of $linktext
+$contrast: scale-color(#0F72B8, $lightness: -5%);
 
 $contrast-light: scale-color($contrast, $lightness: 20%, $saturation: -25%);
 
@@ -41,6 +26,19 @@ $feedback: scale-color($light-pastel, $lightness: 50%);
 $error: #FFF3B3;
 
 $disabled: #ccc;
+
+//// Text-specific colours
+/////// A11Y: These will validate to WCAG 2.0 
+///////////// for AA small text (4.5:1)
+
+$link-text: scale-color($contrast-alt, $lightness: 10%);
+
+$mid-text: #437F8F;
+
+$dark-text: $dark;
+
+$disabled-text: #666;
+
 
 
 //// Modules / Body

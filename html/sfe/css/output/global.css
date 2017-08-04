@@ -523,8 +523,8 @@ i, em {
   font-style: italic; }
 
 a {
-  color: #0F72B8;
-  border-bottom: 0.08em dotted #0F72B8;
+  color: #a057a9;
+  border-bottom: 0.08em dotted #a057a9;
   text-decoration: none; }
 
 .link--dark {
@@ -848,7 +848,7 @@ pre {
   background-color: #5CC1D4; }
 
 .swatches span.link-text {
-  background-color: #0F72B8; }
+  background-color: #a057a9; }
 
 .swatches span.mid-text {
   background-color: #437F8F; }

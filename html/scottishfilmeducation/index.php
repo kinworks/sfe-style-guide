@@ -949,7 +949,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
             <h2 class="guidance">Body Background</h2>
             <p class="guidance">
-              The body of each SFE web property has an individual background pattern. Currently this Development guide features the background pattern from Scotland on Screen. We're using Grunticon to apply the SVG with a PNG fallback here, but you can get click to get the individual SVG and PNG assets from the repo for more direct use.
+              The body of each SFE web property has an individual background pattern. Currently this Development guide features the background pattern from Scottish Film Education. We're using Grunticon to apply the SVG with a PNG fallback here, but you can get click to get the individual SVG and PNG assets from the repo for more direct use.
             </p>
             
             <p class="guidance">

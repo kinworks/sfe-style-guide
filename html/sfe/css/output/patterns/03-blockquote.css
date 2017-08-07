@@ -32,12 +32,12 @@
   margin: 1.5em 0;
   border-top: 0.08em solid;
   border-bottom: 0.08em solid;
-  border-color: #4fb5d1;
+  border-color: #98D7E2;
   padding: 1em 0 1em 0;
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.3em;
-  color: #437F8F;
+  color: #8F4D97;
   max-width: 27em; }
 
 blockquote.quote__blockquote {
@@ -67,13 +67,13 @@ blockquote.quote__blockquote {
 .quote--pullout {
   margin: 1.5em 0;
   border-left: 0.276em solid;
-  border-color: #8F4D97;
+  border-color: #a473aa;
   padding: 0.3em 1em 0.2em 1em;
   font-style: normal;
   font-weight: 600;
   font-size: 1.7em;
   line-height: 1.3em;
-  color: #5CC1D4; }
+  color: #437F8F; }
 
 blockquote.quote__blockquote {
   margin: 0; }
@@ -86,7 +86,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #288098; }
+  color: #a473aa; }
 
 .quote em {
   font-style: normal; }
@@ -99,6 +99,8 @@ blockquote.quote__blockquote {
   margin-top: 0.8em; }
   .quote__caption:before {
     content: "— "; }
+  .quote__caption a {
+    border-bottom: 0.08em dotted #a057a9; }
 
 @media only all and (min-width: 41em) {
   .quote {

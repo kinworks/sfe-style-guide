@@ -34,19 +34,19 @@ ol.pagination li {
   color: $white;
   &:hover {
     text-decoration: underline;
-    background-color: $contrast-alt;
+    background-color: $mid-bright;
   }
 }
 
 .pagination__current a {
-  background-color: $mid-bright;
+  background-color: $contrast-alt;
   color: $white;
   cursor: not-allowed;
   border: none;
   &:hover {
     text-decoration: underline;
     color: $white;
-    background-color: $mid-bright;
+    background-color: scale-color($contrast-alt, $lightness: 15%);
   }
 }
 

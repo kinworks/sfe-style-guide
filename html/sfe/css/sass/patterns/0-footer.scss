@@ -92,8 +92,12 @@ footer a {
   font-size: 1em;
   font-weight: 400;
   color: $white;
+  border-color: $white;
   &:hover {
     border-bottom: 0.1em dotted $white;
+    &:after {
+	    content: " »";
+    }
   }
 }
 

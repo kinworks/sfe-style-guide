@@ -1009,7 +1009,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               </div>
               <div class="footer__top__report-issues">
                 <span>Problems using this site or with its content?</span>
-                <a class="btn btn--contrast-alt">Report an Issue &raquo;</a>
+                <a class="btn btn--contrast">Report an Issue &raquo;</a>
               </div>
               <div class="footer__top__partners clearfix">
                 <span>In partnership with:</span>

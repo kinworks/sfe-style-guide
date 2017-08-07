@@ -100,9 +100,12 @@
 .footer__nav li a {
   font-size: 1em;
   font-weight: 400;
-  color: #ffffff; }
+  color: #ffffff;
+  border-color: #ffffff; }
   .footer__nav li a:hover {
     border-bottom: 0.1em dotted #ffffff; }
+    .footer__nav li a:hover:after {
+      content: " »"; }
 
 footer {
   background-color: #2D3030;

@@ -20,7 +20,7 @@
 
 .subnav .subnav__item,
 .subnav .subnav__item.subnav__item--sub-parent {
-	color: $light;
+	color: $mid-bright;
   &:before {
     content: "— ";
   }
@@ -30,7 +30,8 @@
     border-bottom: 0.1em solid;
   }
   ul li a {
-	  color: scale-color($mid-bright, $saturation: 20%);
+	  color: $link-text;
+	  border-color: $link-text;
   }
   ul li a.active {
 	  color: $dark-text;
@@ -51,6 +52,13 @@
       border-color: $mid-text;
     }
   }
+}
+
+.subnav .subnav__item.subnav__item--current {
+	margin-bottom: 0.7em;
+	&:before {
+	    content: "»» ";
+	  }
 }
 
 .subnav .subnav__item.subnav__item--sub-parent a {

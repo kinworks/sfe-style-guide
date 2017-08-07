@@ -50,13 +50,13 @@
     font-weight: 3 00;
   }
   & a:hover {
-    background-color: scale-color($mid, $lightness: 20%);
+    background-color: scale-color($mid, $lightness: 15%);
   }
   &:nth-child(2n) a {
-    background-color: $mid-bright;
+    background-color: scale-color($mid-bright, $lightness: -20%);
   }
   &:nth-child(2n) a:hover {
-	  background-color: scale-color($mid-bright, $lightness: 12%);
+	  background-color: scale-color($mid-bright, $lightness: -10%);
   }
   &:before {
     content: none;
@@ -80,7 +80,7 @@
 
 .list__content .heading span {
   font-weight: 300;
-  color: scale-color($light-pastel, $lightness: 75%);
+  color: $mid-bright;
   display: inline-block;
   margin: 0 0.5em 0 0.2em;
 }
@@ -90,6 +90,10 @@
   font-weight: 300;
   font-style: italic;
   color: $mid-text;
+  &:hover {
+	  border-bottom: 0.08em solid $link-text;
+	  color: $link-text;
+  }
 }
 
 .list__content ol{ 
@@ -109,6 +113,10 @@
   display: inline;
   margin: 0 0.2em 0 0;
   font-weight: 400;
+	&:hover {
+		color: $mid;
+		border-bottom: 0.08em solid $mid;
+	}
 }
 
 .list__content .list__content__item span {

@@ -80,7 +80,10 @@
 }
 
 .cta.icon-pattern {
-  border-color: $light;
+  border-color: $mid;
+  span {
+	  color: $mid;
+	}
 }
 
 .cta--no-circle {
@@ -95,8 +98,12 @@
   }
 }
 
-.cta--block.icon-pattern {
+.cta--block {
   p {color: $white};
+}
+
+.cta--block.icon-pattern {
+  p {color: $mid-text};
 }
 
 .cta--lockable {
@@ -148,7 +155,7 @@
   .cta span {
     width: 80%;
     float: left;
-    padding: 0;
+    padding: 0.45em 0 0.45em 0;
   }
   
   .cta div {
@@ -212,7 +219,7 @@
   }
   
   .cta span {
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding: 0.4em 0 0 0;
   }
   

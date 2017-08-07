@@ -2500,7 +2500,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     border-left: none; }
 
 .cta.icon-pattern {
-  border-color: #98D7E2; }
+  border-color: #288098; }
+  .cta.icon-pattern span {
+    color: #288098; }
 
 .cta--no-circle div {
   display: none; }
@@ -2511,8 +2513,11 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   .cta--block span {
     font-weight: 600; }
 
-.cta--block.icon-pattern p {
+.cta--block p {
   color: #ffffff; }
+
+.cta--block.icon-pattern p {
+  color: #437F8F; }
 
 .cta--lockable {
   width: auto;
@@ -2549,7 +2554,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   .cta span {
     width: 80%;
     float: left;
-    padding: 0; }
+    padding: 0.45em 0 0.45em 0; }
   .cta div {
     width: 20%;
     float: right;
@@ -2585,7 +2590,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   .cta {
     padding: 0.6em 0.8em 0.6em 0.8em; }
   .cta span {
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding: 0.4em 0 0 0; }
   .cta.cta--lockable span {
     padding: 0; }

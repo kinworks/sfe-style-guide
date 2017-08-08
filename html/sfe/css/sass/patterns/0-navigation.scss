@@ -24,6 +24,7 @@
 .main-nav {
   font-size: 1em;
   z-index: 100;
+  border-top: 0.15em solid #bbb;
 }
 
 .secondary-nav-spaceholder {
@@ -112,7 +113,7 @@
   div {
    display: inline-block;
    padding: 0.1em 0.4em;
-   background-color: scale-color($dark, $lightness: -65%);  
+   background-color: $contrast-alt;  
   }
   .icon-arrow-down,
   .icon-arrow-up {
@@ -183,11 +184,10 @@
 }
 
 .js nav.nav-collapse .main-nav ul.sub-menu.open {
-  width: auto;
+  width: 100%;
   max-height: 20em;
   max-height: 55vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: auto;
   //hide vertical scrollbar in webkit, and then in IE10+:
   &:-webkit-scrollbar { width: 0 !important }
   -ms-overflow-style: none;
@@ -221,15 +221,21 @@
   }
   
   .main-nav li {
-	  background-color: scale-color($contrast-alt, $lightness: -15%);
-	  &:nth-child(2) {
-		  background-color: scale-color($contrast-alt, $lightness: -25%);
+	  background-color: $dark;
+	  &:nth-child(2):not(li ul li),
+	  &:nth-child(3):not(li ul li),
+	  &:nth-child(6):not(li ul li), {
+		  background-color: scale-color($dark, $lightness: -35%);
 	  }
   }
   
-  .main-nav li a.active {
+  .main-nav li a.active:not(.sectiontoggle) {
 		color: $white;
 		text-decoration: underline; 
+		font-weight: normal;
+		&:before {
+			content: " ";
+		}
 	}
   
   .js nav.nav-collapse {
@@ -243,68 +249,54 @@
 	  visibility: hidden;
   }
   
-  // Build our sections into 3-up - 2up, two-row list:
+  .js .main-nav .parent .sectiontoggle,
+	.js .subnav-select-innav .sectiontoggle {
+	  margin: 0.3em 5% 0.5em 0;
+	  div {
+	   display: inline-block;
+	   padding: 0.1em 0.4em 0 0.4em;
+	   background-color: $contrast-alt;  
+	  }
+	}
+
+  
+  // Build our sections into 2-up, three-row list:
     
   .main-nav li {
     z-index: 100;
-    height: 3.6em;
+    height: 3em;
     padding: 0;
-    text-align: center;
+    text-align: left;
     float: left;
-    //border-bottom: 0.1em solid scale-color($contrast-alt, $lightness: -30%);
     &:nth-child(1) {
-      width: 25%;
+      width: 50%;
     }    
-    &:nth-child(1) {
-	    padding: 0;
-      a {
-	      width: 100%;
-	      padding: 0.8em 5% 1em 5%;
-      }
-    }
     &:nth-child(2) {
-      width: 37%;
-      .parent-item {
-        padding-left: 26%;
-      }
+	    width: 50%;
     }
     &:nth-child(3) {
-      width: 38%;
-      .parent-item {
-        padding-left: 30%;
-      }
+      width: 50%;
     }
-    &:nth-child(4) {
-			border-right: 0.15em solid scale-color($contrast-alt, $lightness: -35%);
-		}
+
     &:nth-child(4),
-		&:nth-child(5) {
-			width: 50%; 
-			background-color: scale-color($contrast-alt, $lightness: -65%);
+    &:nth-child(5),
+    &:nth-child(6) {
+			width: 50%;
 		}
-	}
+ 	}
 	
 	//Make the open submenu the same width as the section it's opened from,
 	//even though they vary in width at our current breakpoint
-	.js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open {
-		width: 37%;
-	}
-	.js nav.nav-collapse .main-nav li:nth-child(3) .sub-menu.open {
-		width: 38%;
-	}
+	.js nav.nav-collapse .main-nav li:nth-child(2),
+	.js nav.nav-collapse .main-nav li:nth-child(3),	
 	.js nav.nav-collapse .main-nav li:nth-child(4),
-	.js nav.nav-collapse .main-nav li:nth-child(5) {
+	.js nav.nav-collapse .main-nav li:nth-child(5),
+	.js nav.nav-collapse .main-nav li:nth-child(6) {
 		.sub-menu.open {
 			min-width: 50%; 
 		}
 	}
-	
-  
-  .js .main-nav .parent-item {
-    //float: none;
-    padding-top: 0.9em;
-    padding-left: 34%;
-  }
+
   
   .js .main-nav .parent .sectiontoggle {
 	  padding-top: 0.3em;
@@ -316,9 +308,10 @@
     overflow: scroll;
     //momentum scrolling on mobile webkit, ht/ @chuckle_hound
     -webkit-overflow-scrolling: touch; 
+    width: 100%;
     min-width: 33.333%;
     position: absolute;
-    margin-top: 0.39em;
+    margin-top: 3em;
     text-align: left;
     li a {
       padding: 0.7em 1.5em 0.7em 1em;
@@ -336,18 +329,6 @@
     height: auto;
     text-align: left;
     border: none;
-    &:nth-child(4) {
-	    background-color: scale-color($mid, $lightness: -35%);
-	    &:hover {
-	      background-color: scale-color($mid, $lightness: -55%);
-	    }
-    }
-    &:nth-child(5) {
-	   	background-color: scale-color($mid, $lightness: -20%);
-		  &:hover {
-		    background-color: scale-color($mid, $lightness: -45%);
-		  }
-    }
   }
   
 } //end min 41em
@@ -501,7 +482,7 @@
 	}
   
   .js nav.nav-collapse .main-nav ul.sub-menu li {
-	  width: auto;
+	  width: 100%;
 	  text-align: center;
 	  display: inline-block;
 	  background-color: inherit;

@@ -1904,6 +1904,8 @@ footer i {
 @media only all and (min-width: 41em) {
   .nav__trigger {
     display: none; }
+  .main-nav {
+    border: none; }
   .main-nav li {
     background-color: #2D3030; }
     .main-nav li:nth-child(2), .main-nav li:nth-child(3), .main-nav li:nth-child(6) {
@@ -1969,35 +1971,34 @@ footer i {
   nav {
     background-color: #2D3030;
     margin: 0 0 0 0;
-    padding: 0 5% 0 5%; }
+    padding: 0; }
   .nav-collapse .main-nav {
-    height: 6em;
+    height: 4.7em;
     max-width: 80em;
     margin: 0 auto 0 auto; }
   .main-nav li {
     font-size: 0.9em;
     font-weight: 400;
     width: 20%;
-    margin-right: 2.5%;
-    padding: 0.4em 0 1.2em 0;
+    padding: 0.4em 0 0.8em 0;
     background-color: inherit;
-    height: 6em;
+    height: 5.2em;
     float: left;
     border-bottom: none; }
     .main-nav li:nth-child(2n) {
-      background-color: inherit; }
+      background-color: #282a2a !important; }
     .main-nav li:last-child {
       margin-right: 0; }
-    .main-nav li a {
-      height: 6em; }
-  .main-nav li.home, .main-nav li.contact-us {
-    width: auto;
-    max-width: 5%;
-    margin-right: 5%; }
-  .main-nav li.browse-films {
-    width: 12%; }
-  .main-nav li.resources {
-    max-width: 18%; }
+    .main-nav li:nth-child(1) {
+      padding: 0.4em 2% 0.6em 1.5%; }
+    .main-nav li:nth-child(1), .main-nav li:nth-child(5) {
+      padding: 0.4em 2% 0.6em 1.5%;
+      width: 11%; }
+    .main-nav li:nth-child(2), .main-nav li:nth-child(3), .main-nav li:nth-child(4) {
+      width: 20%; }
+    .main-nav li:nth-child(6) {
+      width: 17%;
+      padding: 0.4em 0 0.6em 1.5%; }
   .main-nav .parent-item {
     max-width: 70%; }
   .js .main-nav .parent .sectiontoggle {
@@ -2007,27 +2008,31 @@ footer i {
     visibility: hidden;
     position: absolute;
     left: auto;
-    margin-top: 5.9em;
-    left: auto;
-    width: 25%; }
+    margin-top: 4.8em;
+    margin-left: 0;
+    width: auto; }
     .main-nav .sub-menu a {
       height: auto; }
+    .main-nav .sub-menu li {
+      width: auto; }
   .main-nav li:hover .sub-menu {
     display: block;
     visibility: visible;
     height: auto;
     position: absolute;
-    margin-top: 5.9em;
+    margin-top: 4.8em;
     left: auto;
     width: auto;
-    margin-left: 0.8em; }
+    margin-left: 0; }
     .main-nav li:hover .sub-menu li a {
       padding: 0.6em 1em 0.6em 1em; }
   .js nav.nav-collapse .main-nav ul.sub-menu.open {
-    margin: 4.7em 0 0 0.8em;
-    min-width: initial; }
+    margin: 4.8em 0 0 0;
+    width: auto; }
     .js nav.nav-collapse .main-nav ul.sub-menu.open li a {
       padding: 0.6em 1em 0.6em 1em; }
+  .js nav.nav-collapse .main-nav li:nth-child(2) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(3) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(4) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(5) .sub-menu.open, .js nav.nav-collapse .main-nav li:nth-child(6) .sub-menu.open {
+    width: auto; }
   .main-nav .sub-menu li {
     height: auto;
     padding: 0 1em 0 0;

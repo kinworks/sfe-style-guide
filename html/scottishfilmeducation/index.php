@@ -158,7 +158,202 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <?php endforeach; ?>
       </ul>
     </div>
+    <div>
+	  
+	  <header class="header clearfix">
+
+      <div class="header__part header__part--brand">
+        <a href="/" title="Go to Homepage" data-ga-cat='Header' data-ga-label='Logo Clicked' class="js-ga-event">
+          <i class="icon-<?php echo $site; ?>-logo">{{Site Name}} Logo</i>
+        </a>
+      </div>
+      
+      <div class="header__search-trigger clearfix js-ga-event" id="search-trigger" data-ga-cat='Search' data-ga-label='Mobile Search Toggled'>
+        <div class="trigger__container">  
+          <i class="icon-search"></i>
+          <span data-text-swap="Close Search" data-text-original="Search...">Search...</span>
+          <i class="icon-arrow-down">Open this section</i>
+        </div>
+      </div>
+      
+      <div class="header__part header__part--search search-collapse">
+        <div class="search__container icon-header-right clearfix">  
+          
+            <div class="region region-search">
+    <div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form action="/browse-films" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-search-block-form">
+  <label for="edit-search-block-form--2">Search: </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search..." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input data-ga-cat="Search" data-ga-label="Search Submitted" class="js-ga-event form-submit" type="submit" id="edit-submit" name="op" value="Go »" /></div><input type="hidden" name="form_build_id" value="form-r4L8Z55MgkT6AUIsd0wJY30yu6ihYBSeT4-2MU038xM" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div></form>  </div>
+</div>
+  </div>
+          <div class="search__advanced clearfix">
+            <a class="js-ga-event" href="/search/node/?t=advanced" data-ga-cat='Search' data-ga-label='Advanced Search Link followed'>Advanced Search &raquo;</a>
+          </div>
+          
+        </div>
+      </div> 
+      
+    </header>
+    <nav class="nav icon-pattern clearfix nav-collapse">
+  <ul class="main-nav clearfix">
+    <li class="home">
+      <a href="#" class="js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
+    </li>
+    <li class="teaching-resources parent clearfix">
+      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Teaching Resources">
+        Teaching Resources
+      </a>
+      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Teaching Resources">
+        <div>
+          <i class="sectionexpander icon-arrow-down"></i>
+        </div>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="European Framework for Film Education">
+            European Framework for Film Education
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Ideas and Values">
+            Ideas and Values
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Discover Film from the Past">
+            Discover Film from the Past
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Engage with Film in All Its Forms">
+            Engage with Film in All Its Forms
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Experience the Art of Film">
+            Experience the Art of Film
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Learn About the World">
+            Learn About the World
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Creativity in Filmmaking">
+            Creativity in Filmmaking
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Experience Film in the Cinema">
+            Experience Film in the Cinema
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="film-and-the-curriculum parent clearfix">
+      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Film and the Curriculum">
+        Film and the Curriculum
+      </a>
+      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Film and the Curriculum">
+        <div>
+          <i class="sectionexpander icon-arrow-down"></i>
+        </div>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="European Framework for Film Education">
+            {{ Multiple Pages to be confirmed }}
+          </a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="our-websites parent clearfix">
+      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Our Websites">
+        Our Websites
+      </a>
+      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Our Websites">
+        <div>
+          <i class="sectionexpander icon-arrow-down"></i>
+        </div>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="https://scotlandonscreen.org.uk" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Scotland on Screen">
+            Scotland on Screen
+          </a>
+        </li>
+        <li>
+          <a href="https://screeningshorts.org.uk" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Screening Shorts">
+            Screening Shorts
+          </a>
+        </li>
+        <li>
+          <a href="https://languagesonscreen.org.uk" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Languages on Screen">
+            Languages on Screen
+          </a>
+        </li>
+        <li>
+          <a href="https://movingimageeducation.org" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Moving Image Education">
+            Moving Image Education
+          </a>
+        </li>
+      </ul>
+    </li>
+		<li class="partners parent clearfix">
+      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Partners">
+        Partners
+      </a>
+		</li>
+    <li class="about-us parent clearfix">
+      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="About Us">
+        About Us
+      </a>
+      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: About Us">
+        <div>
+          <i class="sectionexpander icon-arrow-down"></i>
+        </div>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#" class=" js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What's On">
+            What's On
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="5-19 Programme">
+            5-19 Programme
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Useful Links">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
+  <div class="trigger__container">
+    <i class="icon-menu"></i>
+    <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
+    <i class="icon-arrow-up">Open this section</i>
+  </div>
+</div>
+	  
+    </div></div>
     <div class="body-wrapper heading-wrapper bg--dark">
+      
+      <div class="body-wrapper outsider">
       
       <div class="outside container">
         <h1>Scottish Film Education: Development Guide</h1>
@@ -177,6 +372,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 		    
 		  <?php include('../stylenav.php'); ?>    
 			    
+		</div>
 		</div>
     
     <div class="body-wrapper">
@@ -657,142 +853,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     </div>  
     <div class="body-wrapper outsider">         
         
-        <nav class="nav icon-pattern clearfix nav-collapse">
-				  <ul class="main-nav clearfix">
-				    <li class="home">
-				      <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
-				    </li>
-				    <li class="getting-started parent clearfix">
-				      <a href="#" class="parent-item js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Getting Started">
-				        Getting Started
-				      </a>
-				      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Getting Started">
-				        <div>
-				          <i class="sectionexpander icon-arrow-down"></i>
-				        </div>
-				      </a>
-				      <ul class="sub-menu">
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="What is MIE?">
-				            What's MIE About?
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Background">
-				            Background
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Moving Image and the Curriculum">
-				            Before Watching
-				          </a>
-				        </li>
-				      </ul>
-				    </li>
-				    <li class="analyse-film parent clearfix">
-				      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Analyse Film">
-				        Analyse Film
-				      </a>
-				      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Analyse Film">
-				        
-				        <div>
-				          <i class="sectionexpander icon-arrow-down"></i>
-				        </div>
-				      </a>
-				      <ul class="sub-menu">
-				        <li>
-				          <a href="#" class=" js-ga-event" data-ga-cat="Navigation Item" data-ga-label="3 C's and 3 S's">
-				            3 C's and 3 S's
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Explore">
-				            Explore
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Platforms">
-				            Platforms
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Resources">
-				            Resources
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Media Timeline">
-				            Media Timeline
-				          </a>
-				        </li>
-				      </ul>
-				    </li>
-				    <li class="create-films parent clearfix">
-				      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Create Films">
-				        Create Films
-				      </a>
-				      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Create Films">
-				        <div>
-				          <i class="sectionexpander icon-arrow-down"></i>
-				        </div>
-				      </a>
-				      <ul class="sub-menu">
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Pre-production">
-				            Pre-production
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Production">
-				            Production
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Animation">
-				            Animation
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Documentary">
-				            Documentary
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Found Footage">
-				            Found Footage
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Post-production">
-				            Post-production
-				          </a>
-				        </li>
-				        <li>
-				          <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Screenings">
-				            Screenings
-				          </a>
-				        </li>
-				      </ul>
-				    </li>
-				    <li class="browse-films clearfix">
-				      <a href="#" class="js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Browse Films">
-				        Browse Films
-				      </a>
-				    </li>
-				  </ul>
-				</nav>
-				<div class="secondary-nav-spaceholder">
-					<div class="container">
-						<span>Welcome to movingimageeducation.org!</span>
-					</div>
-				</div>
-				<div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
-				  <div class="trigger__container">
-				    <i class="icon-menu"></i>
-				    <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
-				    <i class="icon-arrow-up">Open this section</i>
-				  </div>
-				</div>
+       
 
 
     </div>

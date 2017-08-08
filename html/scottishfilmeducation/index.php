@@ -201,7 +201,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       </div> 
       
     </header>
-    <nav class="nav icon-pattern clearfix nav-collapse">
+    <nav class="nav clearfix nav-collapse">
   <ul class="main-nav clearfix">
     <li class="home">
       <a href="#" class="js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
@@ -342,7 +342,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     </li>
   </ul>
 </nav>
-<div class="nav__trigger icon-pattern clearfix" id="nav-trigger">
+<div class="nav__trigger clearfix" id="nav-trigger">
   <div class="trigger__container">
     <i class="icon-menu"></i>
     <span data-text-swap="Close Menu" data-text-original="Open Menu">Open Menu</span>
@@ -366,7 +366,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         </span>
       </div>
     </div>
-    
+    </div>
     <div class="body-wrapper heading-wrapper heading--themeselect bg--mid">
 	    <h2 class="heading heading--smallest">You are viewing this style guide in the <span class="sitename"> 
 		    

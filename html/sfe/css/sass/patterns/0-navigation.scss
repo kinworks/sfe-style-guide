@@ -2,21 +2,20 @@
 @import '../_2-mixins.scss'; @import '../_4-colours.scss';
 
 .nav__trigger {
-  background-repeat: repeat;
-  background-color: $dark-text;
+  background-color: $contrast-alt;
   cursor: pointer;
   z-index: 100;
   border-top: 0.3em solid scale-color($dark, $lightness: -40%);
   .icon-menu {
-    width: 1.5em;
-    height: 1.3125em;
-    margin: 1.025em 0.6em 1.025em 0;
+    width: 1.3em;
+    height: 1.1em;
+    margin: 1.025em 0.7em 1.025em 0;
     float: left;
   }
   span {
     font-size: 1.3em;
     font-weight: 400;
-    margin: 0.7em 0 0 0;
+    margin: 0.65em 0 0 0;
     color: $white;
     float: left;
   }
@@ -32,10 +31,10 @@
 }
 
 .main-nav li {
-  background-color: scale-color($contrast-alt, $lightness: -5%);
+  background-color: scale-color($dark, $lightness: -5%);
   margin-bottom: 0;
   &:nth-child(2n) {
-    background-color: scale-color($contrast-alt, $lightness: -14%);
+    background-color: scale-color($dark, $lightness: -14%);
   }
   .icon-lock-white {
 	  vertical-align: -0.3em;
@@ -51,9 +50,12 @@
   padding: 0.6em 0 0.7em 8%;
 }
 
-.main-nav li .active {
-	color: $white;
-	text-decoration: underline;
+.main-nav li a.active:not(.sectiontoggle) {
+	color: $light-pastel;
+	font-weight: bold;
+	&:before {
+		content: "»» ";
+	}
 }
 
 .main-nav li .sub-menu .active {
@@ -150,17 +152,17 @@
 }
 
 .main-nav .sub-menu li {
-  background-color: scale-color($mid, $lightness: -20%);
+  background-color: scale-color($dark, $lightness: 10%);
   &:hover {
-    background-color: scale-color($mid, $lightness: -45%);
+    background-color: scale-color($dark, $lightness: 25%);
   }
   &:hover a {
     text-decoration: underline;
   }
   &:nth-child(2n) {
-    background-color: scale-color($mid, $lightness: -35%);
+    background-color: scale-color($dark, $lightness: 20%);
     &:hover {
-      background-color: scale-color($mid, $lightness: -55%);
+      background-color: scale-color($dark, $lightness: 35%);
     }
   }
 }

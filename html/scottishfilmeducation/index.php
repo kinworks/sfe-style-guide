@@ -5,7 +5,8 @@
 <!--[if gt IE 8]><!--> <html lang="en" class="guide no-js"> <!--<![endif]-->
   
   <?php
-	  	$site = 'sfe'; 	
+	  	$site = 'sfe';
+	  	$csssite = 'sfe/interface'; 	
   	?>
   
   <head>
@@ -26,8 +27,8 @@
       <script src="<?php echo $site; ?>/js/html5shiv.js"></script>
       <style>.panels, iframe {display: none !important;}</style>
     <![endif]-->
-    <link rel="stylesheet" href="../<?php echo $site; ?>/css/output/global.css">
-    <link rel="stylesheet" href="../<?php echo $site; ?>/css/solarized_dark.css">
+    <link rel="stylesheet" href="../<?php echo $csssite; ?>/css/output/global.css">
+    <link rel="stylesheet" href="../<?php echo $csssite; ?>/css/solarized_dark.css">
     <!--[if IE 8]>  
       <script type="text/javascript" src="<?php echo $site; ?>/js/respond.min.js"></script>
     <![endif]-->
@@ -85,9 +86,9 @@
 			/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
 window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var a=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];a.rel="stylesheet",a.href=e[o&&n?0:o?1:2],a.media="only x",r.parentNode.insertBefore(a,r),setTimeout(function(){a.media="all"})},a=new t.Image;a.onerror=function(){o(!1)},a.onload=function(){o(1===a.width&&1===a.height)},a.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
 
-			grunticon(["../<?php echo $site; ?>/assets-icons/output/icons.data.svg.css", "../<?php echo $site; ?>/assets-icons/output/icons.data.png.css", "../<?php echo $site; ?>/assets-icons/output/icons.fallback.css"]);
+			grunticon(["../<?php echo $csssite; ?>/assets-icons/output/icons.data.svg.css", "../<?php echo $csssite; ?>/assets-icons/output/icons.data.png.css", "../<?php echo $csssite; ?>/assets-icons/output/icons.fallback.css"]);
 		</script>
-		<noscript><link href="../<?php echo $site; ?>/assets-icons/output/icons.fallback.css" rel="stylesheet"></noscript>
+		<noscript><link href="../<?php echo $csssite; ?>/assets-icons/output/icons.fallback.css" rel="stylesheet"></noscript>
     
     <script type="text/javascript" src="/js/guide.js"></script>
     
@@ -420,7 +421,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   CSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/<?php echo $site; ?>/css/sass/_1-normalize.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/<?php echo $csssite; ?>/css/sass/_1-normalize.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -430,7 +431,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>" style="display: block;">
                 <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("../".$site."/css/sass/_1-normalize.scss"); ?></code>
+                  <code><?php echo file_get_contents("../".$csssite."/css/sass/_1-normalize.scss"); ?></code>
                 </pre>
               </div>
             </div>
@@ -467,7 +468,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   SCSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/<?php echo $site; ?>/css/sass/_3-defaults.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/<?php echo $csssite; ?>/css/sass/_3-defaults.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -477,7 +478,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>" style="display: block;">
                 <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("../".$site."/css/sass/_3-defaults.scss"); ?></code>
+                  <code><?php echo file_get_contents("../".$csssite."/css/sass/_3-defaults.scss"); ?></code>
                 </pre>
               </div>
             </div>
@@ -499,7 +500,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   SCSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/<?php echo $site; ?>/css/sass/_2-mixins.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/<?php echo $csssite; ?>/css/sass/_2-mixins.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -509,7 +510,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>" style="display: block;">
                 <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("../".$site."/css/sass/_2-mixins.scss"); ?></code>
+                  <code><?php echo file_get_contents("../".$csssite."/css/sass/_2-mixins.scss"); ?></code>
                 </pre>
               </div>
             </div>
@@ -627,7 +628,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                   SCSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/<?php echo $site; ?>/css/sass/_4-colours.scss" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/sfe-style-guide/<?php echo $tagname; ?>/html/<?php echo $csssite; ?>/css/sass/_4-colours.scss" target="_blank">
                   <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                     View Raw File &raquo;
                   </li>
@@ -637,7 +638,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>" style="display: block;">
                 <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("../".$site."/css/sass/_4-colours.scss"); ?></code>
+                  <code><?php echo file_get_contents("../".$csssite."/css/sass/_4-colours.scss"); ?></code>
                 </pre>
               </div>
             </div>
@@ -1029,13 +1030,13 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <div class="style js-panel first" id="tab-bodybg-scss-panel" role="tabpanel" aria-labelledby="tab-bodybg-scss" data-tabgroup="bodybg">
                   <h2 class="js-panel__title">SCSS</h2>
                   <pre>
-                    <code><?php echo file_get_contents("../".$site."/css/sass/patterns/01-body-background.scss"); ?></code>
+                    <code><?php echo file_get_contents("../".$csssite."/css/sass/patterns/01-body-background.scss"); ?></code>
                   </pre>
                 </div>            
                 <div class="style js-panel" id="tab-bodybg-css-panel" role="tabpanel" aria-labelledby="tab-bodybg-css" data-tabgroup="bodybg">
                   <h2 class="js-panel__title">Generated CSS</h2>
                   <pre>
-                    <code><?php echo file_get_contents("../".$site."/css/output/patterns/01-body-background.css"); ?></code>
+                    <code><?php echo file_get_contents("../".$csssite."/css/output/patterns/01-body-background.css"); ?></code>
                   </pre>
                 </div>
               </div>
@@ -1165,13 +1166,13 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
                 <div class="style js-panel first" id="tab-layout-cap-scss-panel" role="tabpanel" aria-labelledby="tab-layout-cap-scss" data-tabgroup="layout-cap">
                   <h2 class="js-panel__title">SCSS</h2>
                   <pre>
-                    <code><?php echo file_get_contents("../".$site."/css/sass/patterns/01-layout-cap.scss"); ?></code>
+                    <code><?php echo file_get_contents("../".$csssite."/css/sass/patterns/01-layout-cap.scss"); ?></code>
                   </pre>
                 </div>            
                 <div class="style js-panel" id="tab-layout-cap-css-panel" role="tabpanel" aria-labelledby="tab-layout-cap-css" data-tabgroup="layout-cap">
                   <h2 class="js-panel__title">Generated CSS</h2>
                   <pre>
-                    <code><?php echo file_get_contents("../".$site."/css/output/patterns/01-layout-cap.css"); ?></code>
+                    <code><?php echo file_get_contents("../".$csssite."/css/output/patterns/01-layout-cap.css"); ?></code>
                   </pre>
                 </div>
               </div>
@@ -1228,13 +1229,13 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
               <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>">
                 <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("../".$site."/css/sass/patterns/".basename($file, ".html").".scss"); ?></code>
+                  <code><?php echo file_get_contents("../".$csssite."/css/sass/patterns/".basename($file, ".html").".scss"); ?></code>
                 </pre>
               </div>
               <div class="style js-panel" id="css<?php echo $css ?>" role="tabpanel" aria-labelledby="tab<?php echo $css ?>" data-tabgroup="<?php echo $i ?>">
                 <h2 class="js-panel__title">Generated CSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("../".$site."/css/output/patterns/".basename($file, ".html").".css"); ?></code>
+                  <code><?php echo file_get_contents("../".$csssite."/css/output/patterns/".basename($file, ".html").".css"); ?></code>
                 </pre>
               </div>
             </div>

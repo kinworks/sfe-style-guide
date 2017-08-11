@@ -2,7 +2,7 @@
 		    <?php elseif ($site == 'ss'): ?>Screening Shorts
 		    <?php elseif ($site == 'mie'): ?>Moving Image Education
 		    <?php elseif ($site == 'los'): ?>Languages on Screen
-		    <?php elseif ($site == 'sfe'): ?>Scottish Film Education
+		    <?php elseif ($site == 'sfe/interface'): ?>Scottish Film Education
 		    <?php endif; ?>
 				</span> theme.
 			</h2>

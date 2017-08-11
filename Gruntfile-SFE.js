@@ -99,18 +99,18 @@ module.exports = function(grunt) {
         compilesfe: {
             files: [{
                 expand: true,
-                cwd: 'html/sfe/css/sass',
+                cwd: 'html/sfe/interface/css/sass',
                 src: ['*.scss'],
-                dest: 'html/sfe/css/output',
+                dest: 'html/sfe/interface/css/output',
                 ext: '.css'
             }]
         },
         patternssfe: {
             files: [{
                 expand: true,
-                cwd: 'html/sfe/css/sass/patterns',
+                cwd: 'html/sfe/interface/css/sass/patterns',
                 src: ['*.scss'],
-                dest: 'html/sfe/css/output/patterns',
+                dest: 'html/sfe/interface/css/output/patterns',
                 ext: '.css'
             }]
         }
@@ -157,7 +157,7 @@ module.exports = function(grunt) {
           'html/mie/css/sass/_Patterns-ImportMap.scss': 'html/mie/css/sass/patterns/*.scss',
           */
           
-          'html/sfe/css/sass/_Patterns-ImportMap.scss': 'html/sfe/css/sass/patterns/*.scss',
+          'html/sfe/interface/css/sass/_Patterns-ImportMap.scss': 'html/sfe/interface/css/sass/patterns/*.scss',
           
           /*
           'html/los/css/sass/_Patterns-ImportMap.scss': 'html/los/css/sass/patterns/*.scss', */
@@ -292,9 +292,9 @@ module.exports = function(grunt) {
 		    		[{
               // MIE config
               expand: true,
-              cwd: 'html/sfe/assets-icons/src',
+              cwd: 'html/sfe/interface/assets-icons/src',
               src: ['*.svg', '*.png'],
-              dest: "html/sfe/assets-icons/output"
+              dest: "html/sfe/interface/assets-icons/output"
 	          }],
 				
 			options: 
@@ -431,7 +431,7 @@ module.exports = function(grunt) {
         /* 'html/sos/css/sass/*.scss',
         			 'html/ss/css/sass/*.scss',
         			 'html/mie/css/sass/*.scss', */
-        			 'html/sfe/css/sass/*.scss', /*
+        			 'html/sfe/interface/css/sass/*.scss', /*
         			 'html/los/css/sass/*.scss'], */
         			 ],
         tasks: ['sass']
@@ -441,7 +441,7 @@ module.exports = function(grunt) {
         /* 'html/sos/css/sass/patterns/*.scss',
         			 'html/ss/css/sass/patterns/*.scss',
         			 'html/mie/css/sass/patterns/*.scss',*/
-	        			'html/sfe/css/sass/patterns/*.scss',/*
+	        			'html/sfe/interface/css/sass/patterns/*.scss',/*
         			 'html/los/css/sass/patterns/*.scss'],*/
         			 ],
         tasks: ['sass_globbing']
@@ -451,7 +451,7 @@ module.exports = function(grunt) {
         /*'html/sos/assets-icons/raw/*.svg',
         			 'html/ss/assets-icons/raw/*.svg',
         			 'html/mie/assets-icons/raw/*.svg',*/
-	        		 'html/sfe/assets-icons/raw/*.svg',/*
+	        		 'html/sfe/interface/assets-icons/raw/*.svg',/*
         			 'html/los/assets-icons/raw/*.svg'],*/
         			 ],
         tasks: ['svgmin']
@@ -461,7 +461,7 @@ module.exports = function(grunt) {
         /*'html/sos/assets-icons/src/*.svg',
         			 'html/ss/assets-icons/src/*.svg',
         			 'html/mie/assets-icons/src/*.svg',*/
-        			 'html/sfe/assets-icons/src/*.svg',/* 
+        			 'html/sfe/interface/assets-icons/src/*.svg',/* 
 	        		 'html/los/assets-icons/src/*.svg'],*/
         			 ],
         tasks: ['grunticon']

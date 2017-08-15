@@ -208,10 +208,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       <a href="#" class="js-ga-event active" data-ga-cat="Navigation Item" data-ga-label="Home">Home</a>
     </li>
     <li class="teaching-resources parent clearfix">
-      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Teaching Resources">
-        Teaching Resources
+      <a href="#" class="parent-item js-ga-event" data-ga-cat="Navigation Item" data-ga-label="Framework">
+        Framework
       </a>
-      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Teaching Resources">
+      <a href="#" class="sectiontoggle js-ga-event" data-ga-cat="Navigation: Section Toggles" data-ga-label="Section Toggled: Framework">
         <div>
           <i class="sectionexpander icon-arrow-down"></i>
         </div>
